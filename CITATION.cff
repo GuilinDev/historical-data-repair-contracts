@@ -5,7 +5,7 @@ title: "Historical-Data Repair Contracts for Gemma Agents"
 authors:
   - family-names: Zhang
     given-names: Guilin
-version: 0.1.0
+version: 0.1.1
 date-released: 2026-10-31
 url: "https://github.com/GuilinDev/historical-data-repair-contracts"
 repository-code: "https://github.com/GuilinDev/historical-data-repair-contracts"

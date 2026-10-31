@@ -33,6 +33,8 @@ def render(source, output, embedded_fonts=False):
     figure_positions=[];table_positions=[]
     def p(text,style=body):
         marked=html.escape(str(text)).replace('\n','<br/>')
+        if marked.startswith('Upstream-test comparison.'):
+            marked='<font name="'+bold+'">Upstream-test comparison.</font>'+marked[len('Upstream-test comparison.'):]
         marked=re.sub(r'\bE_([pq])\b',r'E<sub>\1</sub>',marked)
         marked=re.sub(r'\bx_(32|64)\b',r'x<sub>\1</sub>',marked)
         marked=re.sub(r'https://[^\s<>]+',lambda m:'<link href="'+m.group()+'" color="#1E4557">'+m.group()+'</link>',marked)

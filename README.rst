@@ -1,4 +1,4 @@
-Historical Data Compatibility Repair Resource v0.1.0
+Historical Data Compatibility Repair Resource v0.1.1
 ====================================================
 
 Eight localized repair tasks from six Python projects, with immutable artifacts
@@ -11,8 +11,10 @@ algorithm or stronger discrimination than authentic upstream regression tests.
 Quick start (free verification)
 ------------------------------
 
-Use a native Linux ARM64 machine with Python 3.10+ and a working local Docker
-installation. The tested runtime is CPython3.10.20 with NumPy1.26.4 and
+Static integrity, saved-record and paper-number checks need Python 3.10+;
+they do not require Docker or ARM64. All 65 historical files are released;
+48 were withheld from the agent during repair only. To execute repair behavior,
+use a native Linux ARM64 machine with a working local Docker installation. The tested runtime is CPython3.10.20 with NumPy1.26.4 and
 pandas2.1.4. Native candidate binaries are ARM64. Other architectures have not
 been qualified. From this directory::
 
@@ -158,7 +160,7 @@ Manuscript source and numeric checks
 -----------------------------------
 
 The paper/ directory includes the supplied PDF, audited structured content,
-BibTeX, text with local figure references, and a portable renderer. Three vector
+BibTeX, text with versioned public figure links, and a portable renderer. Three vector
 figures and one complete resource/control/result table accompany the manuscript.
 The bibliography has fifteen research/model/upstream/tool-documentation sources;
 figure software is acknowledged separately. Figure data, generation code and alt text are included; see
@@ -200,3 +202,13 @@ same-document ambiguity wording and three concluding takeaways. Final reviews
 for this PDF are in evidence/independent_review/publication_revision_20261031/.
 Earlier reviews are retained as historical receipts for their recorded hashes.
 No new model calls or GPU experiments were used for this editorial revision.
+
+
+Editorial patch v0.1.1
+----------------------
+
+Paper clarifications and current reviews are under
+evidence/independent_review/patch_revision_20261031/. The route audit retains
+original study-path identities; the model transcript export manifest maps
+original and public redacted bytes. No raw private archive is redistributed.
+The 65 artifact bytes, observations, all model outcomes and figures are unchanged.

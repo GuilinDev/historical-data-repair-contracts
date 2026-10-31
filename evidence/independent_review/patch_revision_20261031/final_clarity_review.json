@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "pdf_sha256": "4de2d5685175e1c4ed92c69362b910dfeab3e555501d6c3edb800a271a349064",
+  "decision": "PASS_V0_1_1_LOCAL_MANUSCRIPT_READY_RELEASE_ACCESS_PENDING",
+  "date": "2026-10-31",
+  "reviewer": "independent scientific and clarity reviewer (/root/prize_panel)",
+  "reviewed_revision": "v0.1.1, including the final bold-prefix correction on page 3",
+  "inputs": {
+    "pdf": {
+      "path": "output/pdf/historical-data-compatibility.pdf",
+      "sha256": "4de2d5685175e1c4ed92c69362b910dfeab3e555501d6c3edb800a271a349064",
+      "pages": 6,
+      "structured_words": 2697,
+      "pdf_extracted_whitespace_words": 2711
+    },
+    "authoring": {
+      "path": "paper/revision_content.json",
+      "sha256": "841fa2bea691bd5ee1829abf4c17e8f520127751243e7fb01402cf2c349db15a"
+    },
+    "final_content": {
+      "path": "paper/final_content.json",
+      "sha256": "fc068d0cd820984880efa43480d01f8e226bcadb929d29ded718e88e3355b646"
+    },
+    "editorial_script": {
+      "path": "scripts/revise_patch_content.py",
+      "sha256": "471676fd9860b0967ba485dac3a1720e01de3cc1594c4e56ef62d94e8d0f64fa"
+    },
+    "page_images": [
+      {
+        "path": "tmp/patch_revision_20261031/page-1.png",
+        "sha256": "2bd59f0002af1967347538b23069038db3950b5e2404e60b36b30448d4910eaf",
+        "inspected": true
+      },
+      {
+        "path": "tmp/patch_revision_20261031/page-2.png",
+        "sha256": "9b93234147744e8468796084431906bd36ff6f5a1bd3fc73fba0cdc16621cd4d",
+        "inspected": true
+      },
+      {
+        "path": "tmp/patch_revision_20261031/page-3.png",
+        "sha256": "37213f38711fadad24215f3a96e8fe24937dc4699e693b100773200af4924495",
+        "inspected": true
+      },
+      {
+        "path": "tmp/patch_revision_20261031/page-4.png",
+        "sha256": "7b3ef6ba9089b97efbe97aaf70b021f00612c4ca000d8b201940caab421d67c3",
+        "inspected": true
+      },
+      {
+        "path": "tmp/patch_revision_20261031/page-5.png",
+        "sha256": "fbf27a62fd89a83537d0cf5e6d1a40cb2da59c4e82d36097db77d675a466ff76",
+        "inspected": true
+      },
+      {
+        "path": "tmp/patch_revision_20261031/page-6.png",
+        "sha256": "3e18382d94b6ea37726c771793192c60bdc36ea6bcd5eda8e65f198685d7f9a3",
+        "inspected": true
+      }
+    ]
+  },
+  "scope": [
+    "Read the complete v0.1.1 content and editorial script and visually inspected all six relevant page images; ignored the explicitly obsolete page-7.png.",
+    "After the last font-only rebuild, inspected the new page 3 again and verified current PDF SHA, six-page count, text extraction and TimesNewRomanPS-BoldMT for the upstream-comparison prefix.",
+    "Compared the table, all figures, contract example, cost and accepted IDs with the archived preceding revision.",
+    "Reverified main summary/results and all 259 trajectory source hashes; did not rerun a model or execute repair candidates.",
+    "Read the local release entry points and import paths to check the static-versus-runtime distinction; verified all 65 packaged historical artifact hashes.",
+    "No API inference, GPU, SSH, new experiment, manuscript edit, release edit or Kaggle action."
+  ],
+  "six_requested_changes": [
+    {
+      "change": "Frozen v0.1.1 availability link",
+      "passed": true,
+      "evidence": "Both actual PDF link annotations use https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.1.",
+      "publication_gate": "Root must publish the authorized v0.1.1 and verify anonymous access and matching assets before final public release/submission. This is separate from manuscript readiness."
+    },
+    {
+      "change": "Agent-visible versus released artifact scope",
+      "passed": true,
+      "evidence": "The local v0.1.1 bundle contains all 65 historical artifact paths with matching hashes. Seventeen are visible in at least one public observation and 48 are withheld from the repair agent. The revised wording distinguishes this run-time split from public release.",
+      "counting_note": "Numeric lineage process repeats may mark later observations withheld even for the same public file; file visibility is the union over its observations. Repeated observations are not new files."
+    },
+    {
+      "change": "OpenRouter provider pinning and no fallback",
+      "passed": true,
+      "evidence": "The method matches the independent route audit: 771 request files use the episode-specific single-provider allowlist and allow_fallbacks=false; 723 response records report the expected providers. The next sentence retains provider/precision confounding and unverified hosted weight revisions.",
+      "audit": "results/paper_review/patch_revision_20261031/reference_route_audit.json"
+    },
+    {
+      "change": "Official competition citation",
+      "passed": true,
+      "evidence": "Reference [5] now uses Elan Markowitz et al., the exact competition title, Kaggle and the official homepage. Its sentence concerns only the listed edit_file default and disclaims measurement of official-harness failure rates.",
+      "source_audit": "results/paper_review/patch_revision_20261031/reference_route_audit.json"
+    },
+    {
+      "change": "Move real upstream comparison into experiments and clarify timeout",
+      "passed": true,
+      "evidence": "Section 3 now reports the completed 12 development attempts / nine snapshots / same two accepts and ten rejects. It explicitly says the preservation-grid timeout was not itself a semantic failure; a separate completed regression already rejected that patch. The development cohort stays separate from the main 32 and literal-output calibration.",
+      "style_correction": "The initially plain prefix was corrected by root. The final PDF prefix is visually bold and uses TimesNewRomanPS-BoldMT."
+    },
+    {
+      "change": "Static checks versus executable repair environment",
+      "passed": true,
+      "evidence": "compat.py integrity returns before installation/Docker invocation; reproduce_main.py --records-only returns before installation/evaluation; paper/verify_numbers.py and its trajectory verifier read saved records using standard-library code. Linux ARM64/Docker remains the qualified environment for repair re-execution. README.md documents the same split.",
+      "review_limit": "This was a source-path audit, not a new cross-platform execution experiment."
+    }
+  ],
+  "compressed_section4_review": {
+    "passed": true,
+    "exploration_budget": "The paragraph still specifies at most 24 exploration rounds, 4,096 output tokens and temperature 0.2; the separately stated final report has 2,048 tokens and temperature zero. These are limits, not achieved token counts.",
+    "context_guard": "120 KB remains the exploration request-context boundary, with the exact 120,000 / 125,578 byte example and bytes-versus-tokens qualification retained in the trajectory paragraph.",
+    "completion": "All 32 are described as having a valid report and decisive evaluation. The shortened definition explicitly separates conversation completion from repair success; underlying validation/report requirements are unchanged.",
+    "acceptance": "Every frozen observation plus source review remains required. The four accepted patches and all denominators are unchanged.",
+    "service_recovery": "Eight rate-limit interruptions, identical saved requests/contexts/candidates, retries beyond the original ceiling and retained recovery evidence remain disclosed.",
+    "csv_case": "The shortened paragraph preserves 6/6 historical initial checks passing, all six restarts failing and all six current-format cases failing. The index-length mismatch after broad legacy dispatch agrees with episode 0a3c0db3ab2e and the retained source/observations.",
+    "no_new_causal_claim": "The tool-error paragraph still says only 5/16 unchanged attempts have exact-match errors and does not infer a causal benefit from a different editor."
+  },
+  "other_wording_changes": {
+    "abstract": "The plural eight-contract resource contribution is now explicit; measured calibration and 4/32 baseline remain unchanged.",
+    "exposure": "Public-project/pretraining overlap is stated directly; the development/new-lineage grouping remains visible and is not promoted to uncontaminated held-out generalization.",
+    "conclusion": "The revised second point is a concrete 60/84 over-rejection and 0/84 corrupting-control observation, not a new universal testing theorem or a claim of beating genuine upstream suites."
+  },
+  "scientific_and_numeric_checks": {
+    "unchanged_display_fields": {
+      "tables": true,
+      "figures": true,
+      "table_notes": true,
+      "contract_example": true,
+      "main_cost_usd": true,
+      "source_policy_accepted_episode_ids": true
+    },
+    "main_summary_and_results_sha_match_prior_audit": true,
+    "trajectory_source_hashes_checked": 259,
+    "artifact_paths_checked": 65,
+    "public_artifact_paths": 17,
+    "withheld_artifact_paths": 48,
+    "all_artifact_hashes_match": true,
+    "reference_first_citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "source_policy_accepted_episode_ids": [
+      "074ae1f3678a",
+      "0e72fdd94c31",
+      "46ae0e9c5565",
+      "53394461271a"
+    ],
+    "native_pandas_scope_retained": true,
+    "researcher_built_controls_distinguished_from_model_attempts": true,
+    "zero_added_upstream_rejection_retained": true,
+    "joblib_exact_mutation_and_fresh_process_semantics_retained": true
+  },
+  "visual_review": {
+    "passed": true,
+    "pages": 6,
+    "notes": [
+      "No clipped text, table, figure or reference was identified.",
+      "The grouped table and joblib pseudocode remain intact on page 2.",
+      "The relocated comparison is visible at the end of Section 3 with the corrected bold prefix.",
+      "All 32 attempt cells remain legible on page 4.",
+      "Static-check scope and the versioned link fit cleanly on page 5.",
+      "Official reference [5], Gröninger and the separate software acknowledgment render correctly on page 6."
+    ]
+  },
+  "blocking_issues": [],
+  "required_manuscript_changes": [],
+  "limitations": [
+    "The versioned public release URL has not been independently verified accessible by this review; root is responsible for publication/access and matching-asset checks.",
+    "This editorial review adds no experiments and no evidence of broader defect prevalence, model capability, new-platform runtime compatibility or evaluator superiority.",
+    "Resource scope remains eight known-defect lineages and one ambiguity-calibration lineage; routing pinning does not attest hosted weight revisions."
+  ],
+  "conclusion": "PASS for the exact final PDF hash above. v0.1.1 satisfies the current scientific/clarity manuscript READY gate. Publish and access-verify the matching versioned artifacts before relying on the availability wording for submission; final Kaggle Submit remains with the user."
+}

@@ -8,7 +8,7 @@ import contextlib
 import io
 
 HERE=Path(__file__).resolve().parent
-PUBLIC=HERE.parent if (HERE.parent/'tasks.json').exists() else HERE.parent/'release/historical-data-compatibility-v0.1.0'
+PUBLIC=HERE.parent if (HERE.parent/'tasks.json').exists() else HERE.parent/'release/historical-data-compatibility-v0.1.1'
 
 
 def main():

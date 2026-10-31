@@ -50,10 +50,10 @@
     "gray": 5.741836481454148
   },
   "pages": 6,
-  "pdf_extracted_whitespace_words": 2685,
+  "pdf_extracted_whitespace_words": 2711,
   "all_figures_vector": true,
   "manual_inspection": "All six final pages viewed at rendered size; no clipping, overlap, missing glyphs, or split main table.",
   "not_claimed": "Automatic accessibility or scientific validity certification",
-  "pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+  "pdf_sha256": "4de2d5685175e1c4ed92c69362b910dfeab3e555501d6c3edb800a271a349064",
   "api_calls": 0
 }

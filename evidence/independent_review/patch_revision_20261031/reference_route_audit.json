@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "decision": "PASS_REFERENCE_AND_ROUTE_METHOD_WORDING",
+  "date": "2026-10-31",
+  "reviewer": "independent reference and methods audit (/root/prize_panel)",
+  "scope": "Read-only primary-source retrieval and frozen code/request-log inspection. No model/API inference, GPU, SSH, experiment, paper edit, release edit, publication or Kaggle draft/submission action.",
+  "official_reference": {
+    "authors": [
+      "Elan Markowitz",
+      "Bryan Perozzi",
+      "Benedek Rózemberczki",
+      "Glenn Cameron",
+      "Hadi Hemmati",
+      "Yuchen Li",
+      "Michael Galkin",
+      "Majid Farhadi",
+      "Ryan Holbrook",
+      "Ashley Oldacre"
+    ],
+    "title": "Google - The Gemma 4 Developer Agent Competition",
+    "year": 2026,
+    "publisher": "Kaggle",
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+    "full_reference": "Elan Markowitz, Bryan Perozzi, Benedek Rózemberczki, Glenn Cameron, Hadi Hemmati, Yuchen Li, Michael Galkin, Majid Farhadi, Ryan Holbrook, and Ashley Oldacre. (2026). Google - The Gemma 4 Developer Agent Competition. Kaggle. https://www.kaggle.com/competitions/gemma-4-developer-agent",
+    "compact_paper_reference": "[5] Elan Markowitz et al. (2026). Google - The Gemma 4 Developer Agent Competition. Kaggle. https://www.kaggle.com/competitions/gemma-4-developer-agent",
+    "citation_location": "Official competition homepage > Citation",
+    "replacement_rationale": "The previous Google and Kaggle / Agent Tools reference described a section rather than using the competition-provided bibliographic attribution. Use the named citation authors and actual competition title, with the homepage URL.",
+    "primary_retrieval": {
+      "method": "web search result for the exact official Kaggle competition page returned complete indexed page text, including Citation and predefined tools. Direct live open/find returned no extractable lines.",
+      "queries": [
+        "site:kaggle.com/competitions/gemma-4-developer-agent \"Citation\"",
+        "site:kaggle.com/competitions/gemma-4-developer-agent \"allow_multiple\""
+      ],
+      "official_page_result_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+      "indexed_crawl_description": "last month for the homepage result; /overview/prizes result was last week and repeated the interface.",
+      "freshness_limit": "This audit uses indexed official content for stable bibliographic metadata/signature, not for current rule changes, counts or deadlines. Root previously read the same interface in authenticated official DOM.",
+      "browser_attempt": "Two hidden iab creation attempts, including after resetting this agent cua runtime, returned Browser is not available: iab. No tab was created and root tab1 was untouched."
+    }
+  },
+  "official_tool_evidence": {
+    "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+    "section_path": [
+      "Model Selection, Budget, and Harness Rules",
+      "Tool, Prompt, and Skill Rules",
+      "The predefined tools available to your agent are",
+      "Item 5"
+    ],
+    "signature": "edit_file(filepath: str, old_string: str, new_string: str, allow_multiple: bool = False) -> str",
+    "supported_claim": "The listed edit_file interface uses string replacement with allow_multiple=False as the default.",
+    "suggested_body_sentence": "The competition's edit_file interface likewise defaults to allow_multiple=False [5].",
+    "necessary_boundary": "This signature supports a shared interface feature. It does not show identical implementation, the frequency of official-harness failures, or the causal effect of location-aware editing.",
+    "recommended_link": "Use the homepage in the bibliography; locate the relevant subsection by the above headings rather than naming the bibliography entry Agent Tools."
+  },
+  "openrouter_route_evidence": {
+    "suggested_method_sentence": "We accessed both deployments through OpenRouter, restricted each request to its declared provider, and disabled provider fallback.",
+    "provider_field": {
+      "only": "A single episode-specific provider slug",
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "deployments": [
+      {
+        "model": "google/gemma-4-26b-a4b-it",
+        "provider_slug": "primeintellect/bf16",
+        "episodes": 16,
+        "reported_provider": "PrimeIntellect"
+      },
+      {
+        "model": "google/gemma-4-31b-it",
+        "provider_slug": "coreweave/fp4",
+        "episodes": 16,
+        "reported_provider": "CoreWeave"
+      }
+    ],
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "actual_record_inspection": {
+      "scope": "Every request and response JSON directly inside the 32 final episode directories, including retained transport attempts there. Phase snapshots are not recounted; this is an audit of files, not a new call-count/cost study.",
+      "request_files": 771,
+      "response_files": 723,
+      "all_request_model_provider_pairs_match_episode_plan": true,
+      "all_request_fallback_flags_false": true,
+      "request_count_by_provider_slug": {
+        "coreweave/fp4": 368,
+        "primeintellect/bf16": 403
+      },
+      "reported_response_provider_counts": {
+        "CoreWeave": 368,
+        "PrimeIntellect": 355
+      },
+      "issues": [],
+      "receipt_path": "results/paper_review/patch_revision_20261031/route_request_receipts.json",
+      "receipt_sha256": "5834026a751d770115f48313744c5def579ab3e87a4d22732674c8e5195c0423"
+    },
+    "source_anchors": [
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_resource_baselines.py",
+        "line_start": 12,
+        "line_end": 15,
+        "sha256": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+        "role": "Main campaign imports the shared request client and run_episode implementation."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_resource_baselines.py",
+        "line_start": 46,
+        "line_end": 51,
+        "sha256": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+        "role": "Each episode stores the intended model/provider pair."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_resource_baselines.py",
+        "line_start": 78,
+        "line_end": 82,
+        "sha256": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+        "role": "The episode row is passed directly to run_episode."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_reader_repairs.py",
+        "line_start": 24,
+        "line_end": 35,
+        "sha256": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+        "role": "Actual main payload builder pins provider.only and sets allow_fallbacks=False; finalization removes tools without changing routing."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_reader_repairs.py",
+        "line_start": 94,
+        "line_end": 100,
+        "sha256": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+        "role": "Exploration uses row model/provider in make_payload."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/run_reader_repairs.py",
+        "line_start": 125,
+        "line_end": 127,
+        "sha256": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+        "role": "Reserved final stage uses the same row model/provider."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/agent_runner_v2.py",
+        "line_start": 60,
+        "line_end": 75,
+        "sha256": "66b33044a4ef72bcf9243a94134ea53a3e839b225eb28fa9dddb419153b14491",
+        "role": "Client serializes and saves the same payload submitted to the OpenRouter chat completions endpoint."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/agent_runner_v2.py",
+        "line_start": 18,
+        "line_end": 21,
+        "sha256": "66b33044a4ef72bcf9243a94134ea53a3e839b225eb28fa9dddb419153b14491",
+        "role": "The A provider slug is primeintellect/bf16; MODEL is imported from model_pilot."
+      },
+      {
+        "path": "results/resource/20261030T212309/main_20261030T215327/frozen_runner/model_pilot.py",
+        "line_start": 21,
+        "line_end": 21,
+        "sha256": "42659d341cb6b49df2b03a898c678f195d492bc2c6a5e4dd7121d1f645c1f4df",
+        "role": "The imported A model identifier is google/gemma-4-26b-a4b-it."
+      }
+    ],
+    "limits": [
+      "Pinning provider routing does not attest a model checkpoint revision, immutable hosted weights, exact hardware or all runtime implementation details.",
+      "The provider/precision confounding remains; do not recast the two deployments as a causal model-size or precision comparison.",
+      "The older model_pilot.py also contains a price-sorted payload from a different development pilot. The main campaign imports only its MODEL and helper definitions through agent_runner_v2, and actually constructs requests using run_reader_repairs.make_payload. The 771 observed main request files resolve that potential ambiguity.",
+      "Logged responses name only PrimeIntellect and CoreWeave, consistent with the declared routes; no claim is made about unobservable provider-internal routing."
+    ]
+  },
+  "required_changes_to_reference": "Replace old [5] with the official competition citation, using the stated author attribution/title/homepage. Keep the existing bounded interface claim.",
+  "blocking_issues": [],
+  "files_modified": [
+    "results/paper_review/patch_revision_20261031/route_request_receipts.json",
+    "results/paper_review/patch_revision_20261031/reference_route_audit.json"
+  ]
+}
