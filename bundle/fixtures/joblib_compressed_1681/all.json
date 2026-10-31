@@ -1,0 +1,533 @@
+[
+  {
+    "id": "b093221441c2",
+    "group": "historical",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/b093221441c2.pickle",
+    "sha256": "4bca274582db83c5766e860871f66ea19f9f52da3e7bf55f45e608163a7894f8"
+  },
+  {
+    "id": "b093221441c2_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "b093221441c2_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407",
+    "group": "historical",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/27119ac02407.pickle",
+    "sha256": "42d1720422f43a44dc5626589940dbcde4b28ad641a7a0acf8c6c20ec6429f77"
+  },
+  {
+    "id": "27119ac02407_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "3c7b75cd0f13",
+    "group": "historical",
+    "input": {
+      "values": [
+        -777,
+        45,
+        999945,
+        -2009,
+        79,
+        44
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91217
+    },
+    "visible": false,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/3c7b75cd0f13.pickle",
+    "sha256": "196d07fca83581eac7a8b31d2be5fb2922b0bcec3bd1252eae3ffc9a338f7b9e"
+  },
+  {
+    "id": "3c7b75cd0f13_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -777,
+        45,
+        999945,
+        -2009,
+        79,
+        44
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91217
+    },
+    "visible": false
+  },
+  {
+    "id": "3c7b75cd0f13_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -777,
+        45,
+        999945,
+        -2009,
+        79,
+        44
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91217
+    },
+    "visible": false
+  },
+  {
+    "id": "3c4a3be58a0c",
+    "group": "historical",
+    "input": {
+      "values": [
+        -770,
+        56,
+        999914,
+        -1996,
+        78,
+        45
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91220
+    },
+    "visible": false,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/3c4a3be58a0c.pickle",
+    "sha256": "9763614efe7dfee678aa8d3eeff40223e89f4fd695b62ea4aca8c8600355534c"
+  },
+  {
+    "id": "3c4a3be58a0c_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -770,
+        56,
+        999914,
+        -1996,
+        78,
+        45
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91220
+    },
+    "visible": false
+  },
+  {
+    "id": "3c4a3be58a0c_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -770,
+        56,
+        999914,
+        -1996,
+        78,
+        45
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91220
+    },
+    "visible": false
+  },
+  {
+    "id": "e091672b242e",
+    "group": "historical",
+    "input": {
+      "values": [
+        -763,
+        67,
+        999883,
+        -1983,
+        77,
+        46
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91223
+    },
+    "visible": false,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/e091672b242e.pickle",
+    "sha256": "d918d2a312f7bccfc5822b7ca7b6c1cd7a63fa1b6094dc200cc50d68d97ef88d"
+  },
+  {
+    "id": "e091672b242e_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -763,
+        67,
+        999883,
+        -1983,
+        77,
+        46
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91223
+    },
+    "visible": false
+  },
+  {
+    "id": "e091672b242e_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -763,
+        67,
+        999883,
+        -1983,
+        77,
+        46
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91223
+    },
+    "visible": false
+  },
+  {
+    "id": "12888f31e68c",
+    "group": "historical",
+    "input": {
+      "values": [
+        -756,
+        78,
+        999852,
+        -1970,
+        76,
+        47
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91226
+    },
+    "visible": false,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/12888f31e68c.pickle",
+    "sha256": "994fb549c2676a41b37e2994aafe468bbdee7f64b690bf68e018dc83eb13c3f4"
+  },
+  {
+    "id": "12888f31e68c_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -756,
+        78,
+        999852,
+        -1970,
+        76,
+        47
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91226
+    },
+    "visible": false
+  },
+  {
+    "id": "12888f31e68c_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -756,
+        78,
+        999852,
+        -1970,
+        76,
+        47
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "bz2",
+        3
+      ],
+      "delta": 91226
+    },
+    "visible": false
+  },
+  {
+    "id": "88a546d80bb4",
+    "group": "historical",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/88a546d80bb4.pickle",
+    "sha256": "b4e6b8fefa94b96313c807d025bbd4cb884b8263209eefb6cb96f7d413ec1ec9"
+  },
+  {
+    "id": "88a546d80bb4_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  },
+  {
+    "id": "88a546d80bb4_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  }
+]

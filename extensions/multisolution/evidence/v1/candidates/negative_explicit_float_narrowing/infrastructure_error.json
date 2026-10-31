@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "ssh: connect to host <author-host-ip> port 22: Permission denied\n",
+  "traceback": "Traceback (most recent call last):\n  File \"<project>\\results\\multisolution\\20261030T222403\\run_experiment.py\", line 227, in evaluate\n    score = gateway.evaluate(\"all.json\", out / \"evaluation\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<project>\\scripts\\transfer_task_tools.py\", line 194, in evaluate\n    p=command(args);assert p.returncode==0,p.stderr\n                           ^^^^^^^^^^^^^^^\nAssertionError: ssh: connect to host <author-host-ip> port 22: Permission denied\n\n"
+}

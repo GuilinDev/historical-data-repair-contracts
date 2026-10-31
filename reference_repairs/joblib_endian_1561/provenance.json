@@ -1,0 +1,41 @@
+{
+  "task": "joblib_endian_1561",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "1.4.2",
+  "fixed": "1.5.0",
+  "source_urls": [
+    "https://github.com/joblib/joblib/pull/1561",
+    "https://numpy.org/doc/1.26/reference/generated/numpy.memmap.html"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_curation/primary/joblib_1561.patch",
+      "sha256": "5a861dab6da11c235e64e02aaf74eb98f254b96560985addee68ed5dec0d11a9"
+    },
+    {
+      "path": "results/ready_curation/primary/joblib_1561.json",
+      "sha256": "fa6d26b225ebe332531fc60a205671b79dcae1a6ae49d6fa9bfc168607ad9de3"
+    }
+  ],
+  "adaptation": [
+    "Minimal PR1561 read_mmap fix: return the actual mmap without byte-order conversion that silently detaches non-native arrays. Preserve base read_array native conversion and existing public API. Does not backport unrelated new 1.5 ensure_native_byte_order API or helpers."
+  ],
+  "whole_allowed_files_transplanted": [],
+  "allowed_paths": [
+    "joblib/numpy_pickle.py"
+  ],
+  "changed_paths": [
+    "joblib/numpy_pickle.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "joblib/numpy_pickle.py",
+      "base_sha256": "e7f2fb11b3e0f784f789238311d922909363ff3daabe96586867a2f4794c0565",
+      "candidate_sha256": "770ca225e46f14e80836ec29d5d756ecf962300c5f2fe7485e44264a9d1f617a",
+      "fixed_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477"
+    }
+  ],
+  "unchanged_base_files": 145,
+  "reference_patch_sha256": "50df7261ac202ec218c245f171dab8b2ad5ed796590a9e6f39420c1c9a886997"
+}

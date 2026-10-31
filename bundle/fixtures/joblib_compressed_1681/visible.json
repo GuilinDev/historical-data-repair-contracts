@@ -1,0 +1,227 @@
+[
+  {
+    "id": "b093221441c2",
+    "group": "historical",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/b093221441c2.pickle",
+    "sha256": "4bca274582db83c5766e860871f66ea19f9f52da3e7bf55f45e608163a7894f8"
+  },
+  {
+    "id": "b093221441c2_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "b093221441c2_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407",
+    "group": "historical",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/27119ac02407.pickle",
+    "sha256": "42d1720422f43a44dc5626589940dbcde4b28ad641a7a0acf8c6c20ec6429f77"
+  },
+  {
+    "id": "27119ac02407_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "88a546d80bb4",
+    "group": "historical",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "/fixtures/joblib_compressed_1681/artifacts/88a546d80bb4.pickle",
+    "sha256": "b4e6b8fefa94b96313c807d025bbd4cb884b8263209eefb6cb96f7d413ec1ec9"
+  },
+  {
+    "id": "88a546d80bb4_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  },
+  {
+    "id": "88a546d80bb4_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  }
+]

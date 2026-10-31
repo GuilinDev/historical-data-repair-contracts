@@ -1,0 +1,16 @@
+{
+  "limit": 30,
+  "order": "alternate float32/float64 starting float32; stop on first exact-byte pair with both pd/f",
+  "inputs": {
+    "column": "x",
+    "values": [
+      1.125,
+      -3.25
+    ],
+    "dtypes": [
+      "float32",
+      "float64"
+    ]
+  },
+  "scope": "Targeted existence proof of non-injective historical encoding; not prevalence, not a new task; no hand-edited bytes, dtype-map/cache mutation or package changes."
+}

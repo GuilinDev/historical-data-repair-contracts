@@ -1,0 +1,766 @@
+{
+  "records": [
+    {
+      "id": "b093221441c2",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryZlibFile' object has no attribute 'name'"
+    },
+    {
+      "id": "b093221441c2_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -791,
+            23,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -791,
+            91234,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088538
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -791,
+          91234,
+          1000007,
+          -2035,
+          81,
+          42
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088538
+      },
+      "status": "observed"
+    },
+    {
+      "id": "b093221441c2_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryZlibFile' object has no attribute 'name'"
+    },
+    {
+      "id": "27119ac02407",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryGzipFile' object has no attribute 'name'"
+    },
+    {
+      "id": "27119ac02407_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -784,
+              34,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -784,
+              91248,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088541
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -784,
+            91248,
+            999976
+          ],
+          [
+            -2022,
+            80,
+            43
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088541
+      },
+      "status": "observed"
+    },
+    {
+      "id": "27119ac02407_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryGzipFile' object has no attribute 'name'"
+    },
+    {
+      "id": "3c7b75cd0f13",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BZ2File' object has no attribute 'name'"
+    },
+    {
+      "id": "3c7b75cd0f13_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -777,
+            45,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -777,
+            91262,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088544
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -777,
+          91262,
+          999945,
+          -2009,
+          79,
+          44
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088544
+      },
+      "status": "observed"
+    },
+    {
+      "id": "3c7b75cd0f13_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BZ2File' object has no attribute 'name'"
+    },
+    {
+      "id": "3c4a3be58a0c",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryZlibFile' object has no attribute 'name'"
+    },
+    {
+      "id": "3c4a3be58a0c_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -770,
+              56,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -770,
+              91276,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088547
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -770,
+            91276,
+            999914
+          ],
+          [
+            -1996,
+            78,
+            45
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088547
+      },
+      "status": "observed"
+    },
+    {
+      "id": "3c4a3be58a0c_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryZlibFile' object has no attribute 'name'"
+    },
+    {
+      "id": "e091672b242e",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryGzipFile' object has no attribute 'name'"
+    },
+    {
+      "id": "e091672b242e_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -763,
+            67,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -763,
+            91290,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088550
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -763,
+          91290,
+          999883,
+          -1983,
+          77,
+          46
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088550
+      },
+      "status": "observed"
+    },
+    {
+      "id": "e091672b242e_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BinaryGzipFile' object has no attribute 'name'"
+    },
+    {
+      "id": "12888f31e68c",
+      "group": "historical",
+      "status": "program_error",
+      "error": "AttributeError: 'BZ2File' object has no attribute 'name'"
+    },
+    {
+      "id": "12888f31e68c_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -756,
+              78,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -756,
+              91304,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088553
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -756,
+            91304,
+            999852
+          ],
+          [
+            -1970,
+            76,
+            47
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088553
+      },
+      "status": "observed"
+    },
+    {
+      "id": "12888f31e68c_current_roundtrip",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "AttributeError: 'BZ2File' object has no attribute 'name'"
+    },
+    {
+      "id": "88a546d80bb4",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              131,
+              -43,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1312
+        },
+        "is_memmap": true,
+        "readonly": true,
+        "readonly_mutation_blocked": true,
+        "continued": {
+          "values": [
+            [
+              131,
+              7060,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 8415
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            131,
+            7060,
+            719
+          ],
+          [
+            21,
+            501,
+            -17
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 8415
+      },
+      "status": "observed"
+    },
+    {
+      "id": "88a546d80bb4_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              131,
+              -43,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1312
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              131,
+              7060,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 8415
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            131,
+            7060,
+            719
+          ],
+          [
+            21,
+            501,
+            -17
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 8415
+      },
+      "status": "observed"
+    },
+    {
+      "id": "88a546d80bb4_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              131,
+              -43,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1312
+        },
+        "is_memmap": true,
+        "readonly": true,
+        "readonly_mutation_blocked": true,
+        "continued": {
+          "values": [
+            [
+              131,
+              7060,
+              719
+            ],
+            [
+              21,
+              501,
+              -17
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 8415
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            131,
+            7060,
+            719
+          ],
+          [
+            21,
+            501,
+            -17
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 8415
+      },
+      "status": "observed"
+    }
+  ],
+  "python": "3.10.20 (main, Aug  5 2026, 01:18:03) [GCC 14.2.0]",
+  "status": "observed"
+}

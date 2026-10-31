@@ -1,0 +1,53 @@
+{
+  "removed": [
+    {
+      "duplicate_id": "3b15f79ca972",
+      "kept_id": "ab67abe0aa61"
+    },
+    {
+      "duplicate_id": "d7f1b9e524c9",
+      "kept_id": "9eae094dbc93"
+    },
+    {
+      "duplicate_id": "f0d25f2cf050",
+      "kept_id": "81ab9d8cf6de"
+    },
+    {
+      "duplicate_id": "4f907b84deb5",
+      "kept_id": "c232972ce5c2"
+    },
+    {
+      "duplicate_id": "4c5f1368ba1b",
+      "kept_id": "1d9f5cd92d04"
+    },
+    {
+      "duplicate_id": "25816e3cfbe7",
+      "kept_id": "8548035c28d1"
+    },
+    {
+      "duplicate_id": "a20f87513823",
+      "kept_id": "d127ddeb9520"
+    },
+    {
+      "duplicate_id": "1a1591858326",
+      "kept_id": "c35d0debdd2b"
+    },
+    {
+      "duplicate_id": "7101dce45153",
+      "kept_id": "e503358570bb"
+    },
+    {
+      "duplicate_id": "71a4af74db92",
+      "kept_id": "f9bdc84c7811"
+    },
+    {
+      "duplicate_id": "291d2ed28e79",
+      "kept_id": "3372db2948fa"
+    },
+    {
+      "duplicate_id": "7dc61775cbf8",
+      "kept_id": "a972e41cc4c3"
+    }
+  ],
+  "unit": "Duplicate bytes within producer and redundant fresh warm/cold conditions; original developer runs unchanged"
+}

@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+  "decision": "PASS_LOCAL_MANUSCRIPT_READY_PUBLIC_ACCESS_PENDING",
+  "date": "2026-10-31",
+  "reviewer": "independent scientific and award reviewer (/root/prize_panel)",
+  "readiness": {
+    "local_manuscript_ready": true,
+    "requires_new_experiments_for_this_revision": false,
+    "public_repository_access_verified_by_this_reviewer": false,
+    "publication_gate": "Root must complete and verify anonymous access to the authorized repository before treating the manuscript availability statements as fulfilled. This operational gate does not block the editorial/scientific review."
+  },
+  "reviewed_inputs": {
+    "authoring": {
+      "path": "paper/revision_content.json",
+      "sha256": "91c598480d882f4032d8e0bb033f562ef3a166fb281fa4a497678054e042484d"
+    },
+    "final_content": {
+      "path": "paper/final_content.json",
+      "sha256": "d32390a77e3cfd955d456452f9500ae880a05f5cfd6f0085801b9cfdac2ac2da"
+    },
+    "revision_script": {
+      "path": "scripts/revise_publication_content.py",
+      "sha256": "4966e39c0d2622da0450d46dcdd0e1c82a6a23dfc27dc5887881edc5e3bfa96a"
+    },
+    "pdf": {
+      "path": "output/pdf/historical-data-compatibility.pdf",
+      "sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+      "pages": 6,
+      "structured_words": 2671,
+      "pdf_extracted_whitespace_words": 2685
+    },
+    "images": [
+      {
+        "path": "tmp/publication_revision_20261031/page-1.png",
+        "sha256": "96f5a342188a83a203d932299446fd39a9559419a1e0466fa48234746afae5fa",
+        "visually_inspected": true
+      },
+      {
+        "path": "tmp/publication_revision_20261031/page-2.png",
+        "sha256": "8960c44fe03e1f7ad7fdfb8a00fd8aab047d144050661948999c3516fd9ca046",
+        "visually_inspected": true
+      },
+      {
+        "path": "tmp/publication_revision_20261031/page-3.png",
+        "sha256": "02fe093c468be402f858d97edef3699fd42190094cc3899f11ae4390b2023b4d",
+        "visually_inspected": true
+      },
+      {
+        "path": "tmp/publication_revision_20261031/page-4.png",
+        "sha256": "e69bad13b313a5d9faf230793395884a4dc0bda4596ceb4635111acc8ed3edbf",
+        "visually_inspected": true
+      },
+      {
+        "path": "tmp/publication_revision_20261031/page-5.png",
+        "sha256": "5bc437353b9cc360678aeecf244c6806c3cffbbcc4de61dc506214c2d30849f2",
+        "visually_inspected": true
+      },
+      {
+        "path": "tmp/publication_revision_20261031/page-6.png",
+        "sha256": "628e8e0c0de87ec3769d42e3793bb1fd46f723405caf2802df928bfbd4107ab9",
+        "visually_inspected": true
+      }
+    ],
+    "editorial_decision": "results/paper_review/claude_review_20261031/decision.json"
+  },
+  "scope": [
+    "Read the full current final_content, the authoring revision script and the recorded Claude-review adoption decisions.",
+    "Visually inspected every current rendered page, extracted the current PDF, checked links and confirmed the exact requested PDF identity.",
+    "Recomputed the new 5/16 overlap from episode-level trajectory records; verified all 259 bound source hashes and the original final main summary/results hashes.",
+    "Compared unchanged tables, figures, contract example, main cost and accepted episode IDs against the archived preceding revision.",
+    "Inspected the local release CLI parser, README.rst and license to verify the resource-card commands and qualified environment.",
+    "No new experiment, model/API request, GPU, SSH or candidate execution; no manuscript or release edits."
+  ],
+  "claude_adoption_review": [
+    {
+      "choice": "Keep resource and acceptance calibration as the main contribution",
+      "decision": "CORRECT",
+      "reason": "The data do not isolate the causal effect of editing tools. Only 5/16 unchanged-source attempts have exact-match errors, while one accepted attempt also has those errors. A tool-friction headline or claimed model improvement would exceed the evidence."
+    },
+    {
+      "choice": "Add standard Methods/Experiments navigation and a resource card",
+      "decision": "CORRECT",
+      "reason": "Readers can now find contents, scale, licenses, qualified runtime and distinct integrity versus semantic replay commands. The complete overview table remains useful alongside the per-attempt figure."
+    },
+    {
+      "choice": "Clarify same-document exclusion and witness fallback",
+      "decision": "CORRECT",
+      "reason": "Explicit tags in another document are not transferred to the witness. The revised text correctly explains that the one-column collision witness lacks disambiguating tags and retains the conservative float64 fallback."
+    },
+    {
+      "choice": "Use a bounded official editing-interface comparison",
+      "decision": "CORRECT_WITH_SOURCE_PROVENANCE_LIMIT",
+      "reason": "The statement is limited to an interface default and explicitly disclaims measuring official-harness failure rates. It motivates a future test rather than asserting a demonstrated improvement. Independent direct page extraction was unavailable; see citation check."
+    },
+    {
+      "choice": "Move Scientific Agent Skills to software acknowledgment",
+      "decision": "CORRECT",
+      "reason": "The acknowledgment records tooling contribution without suggesting that the skills paper supports the resource novelty. The new numbered reference supports an actual statement."
+    },
+    {
+      "choice": "Add three explicit conclusions",
+      "decision": "CORRECT",
+      "reason": "The first two state bounded contract-design lessons supported by the examples; the third reports the actual eight-task, 32-attempt, four-acceptance baseline. None asserts new upstream failure discovery or superiority over genuine upstream tests."
+    },
+    {
+      "choice": "Reject invented win probabilities and no-experiment causal reframing",
+      "decision": "CORRECT",
+      "reason": "No competing-paper distribution or controlled intervention supports probability estimates or attributing all unchanged patches to tools."
+    }
+  ],
+  "checks": {
+    "author": {
+      "passed": true,
+      "value": "Guilin Zhang",
+      "affiliation": "No affiliation is supplied or invented."
+    },
+    "page_layout": {
+      "passed": true,
+      "notes": [
+        "All six current pages are readable, numbered and free of clipping/overlap.",
+        "The grouped eight-lineage table and example remain together on page 2.",
+        "All 32 result cells and adjacent limitations remain visible on page 4.",
+        "Resource card, three conclusions and disclosure fit on page 5; references and software acknowledgment fit on page 6.",
+        "Gröninger retains the correct diacritic."
+      ]
+    },
+    "experimental_display_unchanged": {
+      "title": true,
+      "subtitle": true,
+      "tables": true,
+      "captions": true,
+      "table_group_rows": true,
+      "figures": true,
+      "contract_example": true,
+      "main_cost_usd": true,
+      "source_policy_accepted_episode_ids": true
+    },
+    "table_note_change": {
+      "passed": true,
+      "description": "The new note explains affected versus fixed reader and uses temporally stable pinned-upstream-commit wording; evaluated commit e7d95a6 and scores are not relabeled."
+    },
+    "new_exact_match_overlap": {
+      "passed": true,
+      "episodes": 32,
+      "unchanged": 16,
+      "exact_match_error_attempts": 11,
+      "unchanged_with_exact_match_error": 5,
+      "unchanged_with_exact_match_error_episode_ids": [
+        "6beed2ca1c08",
+        "22dfe50e4c2e",
+        "107a49685be5",
+        "321218a25c02",
+        "640d76a1a31b"
+      ],
+      "exact_match_error_calls": 78,
+      "accepted_with_exact_match_error": 1
+    },
+    "prior_numeric_claims": {
+      "passed": true,
+      "values": {
+        "lineages": 8,
+        "projects": 6,
+        "historical_files": 65,
+        "public_files": 17,
+        "withheld_files": 48,
+        "H": 131,
+        "F": 53,
+        "R": 68,
+        "observations": 252,
+        "controls_base": 99,
+        "controls_fixed": 252,
+        "controls_reference": 252,
+        "semantic_and_source_acceptances": 4,
+        "model_attempts": 32,
+        "main_cost_usd": 0.778481817,
+        "cold_control_observations": 756,
+        "main_replay_observations": 1008
+      },
+      "basis": "Tables and figures are unchanged from the prior audited draft; main evidence and all 259 trajectory source files are freshly verified unchanged."
+    },
+    "new_scientific_wording": {
+      "passed": true,
+      "notes": [
+        "Lineage and H/F/R continue to distinguish dependent observations from independent defects and input regimes from time stages.",
+        "Two valid policies are assessed on a fixed numeric corpus and source-reviewed within a declared native-pandas universe.",
+        "The artificial narrowing control is explicitly researcher-built; no natural model-failure rate is inferred.",
+        "The source-level empty-Interval failure and retained prior information loss remain disclosed.",
+        "Literal equality is distinguished from authentic upstream test suites; the negative upstream comparison remains intact.",
+        "The joblib example preserves the exact 23 + 91211 mutation and ordinary default loads in new interpreters.",
+        "Provider/precision confounding, unverified hosted revisions, task exposure, 8 service recoveries and scaffold limits remain adjacent to the relevant claims."
+      ]
+    },
+    "citation_numbering": {
+      "passed": true,
+      "first_occurrence_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "numbered_reference_count": 15,
+      "research_or_documentation_citations_supported_by_existing_verified_primary_metadata": true,
+      "software_acknowledgment_separate": true
+    },
+    "new_official_tools_reference": {
+      "claim": "edit_file defaults to allow_multiple=False",
+      "citation_number": 5,
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/overview/prizes",
+      "independent_url_open": "Resolved to the official Kaggle competition but returned no extractable lines.",
+      "independent_browser_attempt": "cua inventory returned no browsers; hidden iab creation returned Browser is not available: iab. No existing user browser state was changed.",
+      "primary_content_provenance": "Root reports a completed authenticated official-DOM read and records the exact signature in results/paper_review/claude_review_20261031/decision.json. This reviewer did not independently retrieve that DOM.",
+      "editorial_scope_judgment": "Acceptable bounded citation; no extrapolation to official-harness failure rates.",
+      "blocking": false
+    },
+    "resource_card": {
+      "passed": true,
+      "qualified_runtime": "Linux ARM64 with Docker",
+      "integrity_command": "python3 compat.py integrity",
+      "semantic_command": "python3 compat.py reproduce --task joblib_endian_1561 --controls base,fixed,reference",
+      "license": "Apache-2.0 original contributions; retained third-party licenses",
+      "parser_and_readme_inspected": true,
+      "commands_executed_in_this_review": false
+    },
+    "main_evidence_unchanged": {
+      "passed": true,
+      "summary_sha256": "25e7df4f3cc3e494650e750faa58b46eb17137f7caca334ad3d65fbd7523c556",
+      "results_sha256": "40856e0f67cd0cf0892fc1d298544c573f4c5489c06c9a3ab871b0df00b671e8",
+      "trajectory_source_hashes_checked": 259
+    },
+    "repository_link": {
+      "target": "https://github.com/GuilinDev/historical-data-repair-contracts",
+      "pdf_link_annotations_match_target": true,
+      "publication_authorized_by_owner": true,
+      "actual_anonymous_public_access": "PENDING_ROOT_VERIFICATION",
+      "claim_timing": "We release / Download and instructions statements are publication-ready wording; they must accompany an actually accessible release at final publication."
+    }
+  },
+  "blocking_issues": [],
+  "required_manuscript_changes": [],
+  "limitations": [
+    "The official tool signature is supported by the root reviewer primary DOM observation; this reviewer independently verified citation scope, not the inaccessible page body.",
+    "This is a zero-new-experiment editorial audit. It does not create additional model attempts or broaden runtime, dtype or defect-population coverage.",
+    "Public anonymous repository accessibility has not been attested here and remains a separate release gate."
+  ],
+  "award_assessment": {
+    "worth_submitting_as_resource": true,
+    "judgment": "The revisions materially improve accessibility and make the contribution easier to evaluate without overstating it. The manuscript is ready for the current resource submission once the promised public artifacts are actually accessible.",
+    "competitive_limits": "Eight curated known-defect lineages and a single ambiguity calibration remain modest in scope and novelty; the main value is a usable, reproducible acceptance resource. No numerical win probability or guaranteed award claim is justified."
+  },
+  "final_judgment": "PASS for this exact manuscript revision. No further textual correction or paid experiment is necessary to meet this round of manuscript READY. Public access verification remains an operational prerequisite to the actual public release/submission."
+}

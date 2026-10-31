@@ -1,0 +1,12 @@
+[
+  {
+    "path": "packaging/_structures.py",
+    "sha256": "eb48d16c5efca7ccf930a9cd77a700a6b80e69d0891d5d03966526441a8565cb",
+    "base_sha256": null
+  },
+  {
+    "path": "packaging/version.py",
+    "sha256": "635693b717b7b27db138c6b905d23ce7e01c1eec9b6da9ce56412fbd24510bc2",
+    "base_sha256": "e177d74d2921f748d05b270d269c094f8741b39f5149556f24f79bdf4b355675"
+  }
+]

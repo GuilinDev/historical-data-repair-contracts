@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793397765-XQ9cZfyNW9zxKlhGEmSz",
+  "object": "chat.completion",
+  "created": 1793397765,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-90be779c-d3c6-4cbb-ad27-c0857c9a0299",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"from ._structures import Infinity, InfinityType, NegativeInfinity, NegativeInfinityType\\n\\n\",\"old\":\"if sys.version_info >= (3, 13):  # pragma: no cover\\n\",\"path\":\"packaging/version.py\"},{\"new\":\"    def __getstate__(self) -> dict[str, Any]:\\n        return {\\n            \\\"_epoch\\\": self._epoch,\\n            \\\"_release\\\": self._release,\\n            \\\"_pre\\\": self._pre,\\n            \\\"_post\\\": self._post,\\n            \\\"_dev\\\": self._dev,\\n            \\\"_local\\\": self._local,\\n        }\\n\\n    def __setstate__(self, state: dict[str, Any]) -> None:\\n        # Handle 25.0/26.0 state where it might be a _Version NamedTuple\\n        if \\\"_version\\\" in state:\\n            v = state[\\\"_version\\\"]\\n            self._epoch = v.epoch\\n            self._release = v.release\\n            self._dev = v.dev\\n            self._pre = v.pre\\n            self._post = v.post\\n            self._local = v.local\\n        else:\\n            self._epoch = state.get(\\\"_epoch\\\", 0)\\n            self._release = state.get(\\\"_release\\\", (0,))\\n            self._pre = state.get(\\\"_pre\\\")\\n            self._post = state.get(\\\"_post\\\")\\n            self._dev = state.get(\\\"_dev\\\")\\n            self._local = state.get(\\\"_local\\\")\\n\\n        self._key_cache = None\\n        self._hash_cache = None\\n\\n    def __init__(self, version: str) -> None:\\n\",\"old\":\"    def __init__(self, version: str) -> None:\\n\",\"path\":\"packaging/version.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31936,
+    "completion_tokens": 416,
+    "total_tokens": 32352,
+    "cost": 0.00333504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 31488,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00333504,
+      "upstream_inference_prompt_cost": 0.0031936,
+      "upstream_inference_completions_cost": 0.00014144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

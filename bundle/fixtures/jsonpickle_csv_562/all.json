@@ -1,0 +1,413 @@
+[
+  {
+    "id": "e2914c218f46",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/e2914c218f46.json",
+    "sha256": "6048838eabb7bd3d7063a7c001e56a1cd7294e1be25b8dc487600617dac8d299"
+  },
+  {
+    "id": "50946b82bba2",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "ded19ee5e4fa",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "8f9dea76ea8e",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/8f9dea76ea8e.json",
+    "sha256": "b7245e186a56748d2113e768ffb7557b6d457937e038c2bce416049f1fba12fa"
+  },
+  {
+    "id": "1831c39d6ca7",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "4198e7620fe1",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "a6e7956d35f0",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "名字",
+        "label"
+      ],
+      "data": [
+        [
+          "甲",
+          "zero"
+        ],
+        [
+          "é",
+          "one"
+        ],
+        [
+          "ß",
+          "two"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/a6e7956d35f0.json",
+    "sha256": "8682df41d15d359ca2dd19ac3cb1d18ba27fb547cf78e61c8c0de2f89b82c511"
+  },
+  {
+    "id": "2876a7684134",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "名字",
+        "label"
+      ],
+      "data": [
+        [
+          "甲",
+          "zero"
+        ],
+        [
+          "é",
+          "one"
+        ],
+        [
+          "ß",
+          "two"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "3eacbaae3bf6",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "名字",
+        "label"
+      ],
+      "data": [
+        [
+          "甲",
+          "zero"
+        ],
+        [
+          "é",
+          "one"
+        ],
+        [
+          "ß",
+          "two"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "7fad75cc483e",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "text"
+      ],
+      "data": [
+        [
+          "001"
+        ],
+        [
+          "-2"
+        ],
+        [
+          "3.00"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/7fad75cc483e.json",
+    "sha256": "05f13481cf5c12694b87d57f1185aabb8e92f43f15741847bd9d34760c00f6b7"
+  },
+  {
+    "id": "f831ce58cb3e",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "text"
+      ],
+      "data": [
+        [
+          "001"
+        ],
+        [
+          "-2"
+        ],
+        [
+          "3.00"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "7a831f037ae5",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "text"
+      ],
+      "data": [
+        [
+          "001"
+        ],
+        [
+          "-2"
+        ],
+        [
+          "3.00"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "aeaec24990e2",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "left",
+        "right"
+      ],
+      "data": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "m",
+          "n"
+        ]
+      ],
+      "columns_name": "measurement",
+      "text_only": true
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/aeaec24990e2.json",
+    "sha256": "a6b2b20796a5e2fd59f52de80b44102f58437f25e1c6e59e737237eab789afd8"
+  },
+  {
+    "id": "b4a1340bcf99",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "left",
+        "right"
+      ],
+      "data": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "m",
+          "n"
+        ]
+      ],
+      "columns_name": "measurement",
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "cb4875a4e688",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "left",
+        "right"
+      ],
+      "data": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "m",
+          "n"
+        ]
+      ],
+      "columns_name": "measurement",
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "ee7d686bea23",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "single"
+      ],
+      "data": [
+        [
+          "item"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "/fixtures/jsonpickle_csv_562/artifacts/ee7d686bea23.json",
+    "sha256": "6cf6ad466645a6670cc50e8b9bce93708433952166040f94fb11ac19677989d7"
+  },
+  {
+    "id": "348b6ce42250",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "single"
+      ],
+      "data": [
+        [
+          "item"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  },
+  {
+    "id": "24868acec19b",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "single"
+      ],
+      "data": [
+        [
+          "item"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": false
+  }
+]

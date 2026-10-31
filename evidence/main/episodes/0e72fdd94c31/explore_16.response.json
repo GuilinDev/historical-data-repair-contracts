@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793399988-8QS137JD2LqeqpiNf6u6",
+  "object": "chat.completion",
+  "created": 1793399988,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_2234ae6d0c4e439da271ee386720eaf5",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # If the file is compressed, we cannot use mmap directly on the file.\\n        # We check if the file handle is a raw file.\\n        # In joblib, compressed files are wrapped.\\n        from .numpy_pickle_utils import _is_raw_file\\n        if not _is_raw_file(unpickler.file_handle):\\n            return self.read_array(unpickler)\\n\\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        return _ensure_native_byte_order(marray)\\n\",\"old\":\"        # If the file is compressed, we cannot use mmap directly on the file.\\n        # We check if the file handle is a raw file.\\n        # In joblib, compressed files are wrapped.\\n        from .numpy_pickle_utils import _is_raw_file\\n        if not _is_raw_file(unpickler.file_handle):\\n            # It's a compressed file or something else.\\n            # We must fall back to read_array.\\n            # But we are already inside read_mmap.\\n            # This is a bit awkward. Let's return a special value or raise an error\\n            # that read() can catch, or just change read().\\n            # Actually, let's just implement the fallback here.\\n            # But read_mmap is expected to return a memmap.\\n            # If we can't, we should probably just call read_array.\\n            # However, read_mmap is called by read().\\n            # Let's see if we can just call read_array(unpickler) and return its result.\\n            # But we need to be careful about the state of unpickler.file_handle.\\n            # read_array will consume the data.\\n            return self.read_array(unpickler)\\n\\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        return _ensure_native_byte_order(marray)\\n\",\"path\":\"joblib/numpy_pickle.py\"},{\"new\":\"        # When requested, only use memmap mode if allowed.\\n        if unpickler.mmap_mode is not None and self.allow_mmap:\\n            array = self.read_mmap(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\\n\",\"old\":\"        # When requested, only use memmap mode if allowed.\\n        if unpickler.mmap_mode is not None and self.allow_mmap:\\n            # If the file is compressed, we cannot use mmap.\\n            # We check if the file handle is a raw file.\\n            from .numpy_pickle_utils import _is_raw_file\\n            if _is_raw_file(unpickler.file_handle):\\n                array = self.read_mmap(unpickler)\\n            else:\\n                array = self.read_array(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\\n\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 28364,
+    "completion_tokens": 1228,
+    "total_tokens": 29592,
+    "cost": 0.000321688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 4,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000321688,
+      "upstream_inference_prompt_cost": 0.00028362,
+      "upstream_inference_completions_cost": 3.8068e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

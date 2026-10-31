@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793398079-XOhusGP9ajiydQ8GDWGL",
+  "object": "chat.completion",
+  "created": 1793398079,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-a029967a-e70a-4b7b-b7c2-97d84a061b9d",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # Detect byte order mismatch and swap as needed.\\n        # If the array is memmapped, we cannot use byteswap() because it returns\\n        # a copy. Instead, we must use the dtype's newbyteorder method to\\n        # create a view with the correct byte order.\\n        if (unpickler.mmap_mode is not None and self.allow_mmap and\\n                _is_numpy_array_byte_order_mismatch(marray)):\\n            # We must use a view with the native byte order.\\n            # Since it's a memmap, we can't byteswap the data in the file.\\n            # However, if the data was stored in big-endian and we are on little-endian,\\n            # the values will be wrong unless we byteswap.\\n            # But the requirement is that mutations must reach the working file.\\n            # If we use .view(marray.dtype.newbyteorder('=')), we are just changing\\n            # how we interpret the bytes. If we then write to it, we write in the\\n            # new byte order.\\n            # Wait, if the file is big-endian and we are on little-endian,\\n            # and we want to preserve the values, we MUST byteswap.\\n            # But byteswap() creates a copy.\\n            # If we want to keep it as a memmap and preserve values, we are stuck\\n            # unless the host is also big-endian.\\n            # BUT, the historical producer 1.2.0 did NOT call _ensure_native_byte_order\\n            # for memmaps (see read_mmap in 1.2.0 source: it just returned marray).\\n            # This means 1.2.0 memmaps were always interpreted with the dtype\\n            # stored in the pickle, regardless of host endianness.\\n            # If the dtype was '>i4', it was read as big-endian.\\n            # Current joblib 1.4.2 calls _ensure_native_byte_order(marray).\\n            # _ensure_native_byte_order calls byteswap().view(...) which creates a copy.\\n            # To avoid the copy and preserve the 1.2.0 behavior, we should just\\n            # return the marray as is if it's a memmap, or at least avoid byteswap.\\n            # But the requirement says \\\"Numeric values and shape must remain correct\\\".\\n            # If the host is little-endian and the array is big-endian,\\n            # returning marray (with dtype '>i4') will give correct values.\\n            # Calling _ensure_native_byte_order will byteswap it and change dtype to '<i4',\\n            # but it will create a copy, breaking the mmap requirement.\\n            # So for memmaps, we should NOT call _ensure_native_byte_order if we want to avoid copies.\\n            # Let's check if 1.2.0 just returned marray.\\n            # Yes: `return marray` in 1.2.0 `read_mmap`.\\n            return marray\\n        return _ensure_native_byte_order(marray)\",\"old\":\"        # Detect byte order mismatch and swap as needed.\\n        # If the array is memmapped, we cannot use byteswap() because it returns\\n        # a copy. Instead, we must use the dtype's newbyteorder method to\\n        # create a view with the correct byte order.\\n        if (unpickler.mmap_mode is not None and self.allow_mmap and\\n                _is_numpy_array_byte_order_mismatch(marray)):\\n            return marray.view(marray.dtype.newbyteorder('='))\\n        return _ensure_native_byte_order(marray)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 28517,
+    "completion_tokens": 873,
+    "total_tokens": 29390,
+    "cost": 0.00314852,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 26336,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00314852,
+      "upstream_inference_prompt_cost": 0.0028517,
+      "upstream_inference_completions_cost": 0.00029682
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

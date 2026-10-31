@@ -1,0 +1,503 @@
+{
+  "reviewed_utc": "2026-10-30T20:48:06Z",
+  "status": "COMPLETED_COMPARATOR_NO_ADDED_PATCH_DISCRIMINATION_OBSERVED",
+  "model_snapshots": 12,
+  "model_bug_lineages": 2,
+  "unique_source_snapshots_excluding_optional_tests": 9,
+  "upstream_accepted": 2,
+  "upstream_rejected": 10,
+  "upstream_indeterminate": 0,
+  "lifecycle_accepted": 2,
+  "upstream_pass_lifecycle_fail": [],
+  "lifecycle_pass_upstream_fail": [],
+  "control_readers": 4,
+  "original_suite_attempts": 32,
+  "original_suite_completed": 31,
+  "diagnostics": {
+    "episode": "92c469663330",
+    "original": "60+5s wrapper ended with Windows SSH exit 4294967295; full-grid suite incomplete, retained. Exact owned container verified and removed.",
+    "completed_failfast": "Same frozen inputs, --maxfail=1: test_parse fails TypeError: Version() takes no arguments. Separate original regression suite completed 0/11; main U-reject already decisive.",
+    "path": "executions/92c469663330/preservation_failfast_diagnostic/result.json"
+  },
+  "integrity": {
+    "all_1224_bundle_files_match_frozen_manifest": true,
+    "all_original_candidate_and_control_trees_match_copies": true
+  },
+  "interpretation": [
+    "Both genuine upstream comparator and lifecycle evaluator accept the same two attrs patches. No natural complete-patch U-pass/L-fail counterexample in the frozen12.",
+    "Packaging partial historical-load progress is already rejected by genuine upstream regressions; comparing only self-roundtrips would overstate added evaluation value.",
+    "This is a descriptive two-lineage development comparison, not prevalence, significance, universal redundancy, or rejection of every historical-artifact resource design.",
+    "51,500 parameterized Version preservation checks are test cases, not independent bugs or agent trials. Two attrs preservation skips are the upstream CPython/platform skips and identical across candidates.",
+    "Packaging main comparator uses actual25/26 frozen fixtures, comparisons, resave and preservation; future26.2 format and exact invalid-state/shim-repr details are excluded before execution as outside the original task.",
+    "Preservation failure is established by an actual diagnostic assertion failure, not inferred from timeout. No paid model or GPU calls were made."
+  ],
+  "rows": [
+    {
+      "id": "packaging_base",
+      "family": "packaging",
+      "kind": "control",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\packages\\packaging\\base",
+      "candidate_source_hash_excluding_optional_tests": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failure": 3
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "packaging_fixed",
+      "family": "packaging",
+      "kind": "control",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\packages\\packaging\\fixed",
+      "candidate_source_hash_excluding_optional_tests": "2f5238a2bc3602bfc9bd6e41053d3f897c727ca3e70799a48d1b3d49d555a0b7",
+      "upstream_pass": true,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 11
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "attrs_base",
+      "family": "attrs",
+      "kind": "control",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\packages\\attrs\\base",
+      "candidate_source_hash_excluding_optional_tests": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "attrs_fixed",
+      "family": "attrs",
+      "kind": "control",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\packages\\attrs\\fixed",
+      "candidate_source_hash_excluding_optional_tests": "15d5835d66c4eac81e25350893a3a1865658543852cca5b30f9f6590e08f18dd",
+      "upstream_pass": true,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "b3f4da6de04a",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\b3f4da6de04a\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "75fdaec7a11a",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\75fdaec7a11a\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "d9c839b13880ffe9a56289d77afbafc665156325be4c5fb431ddd23ca75c684f",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failure": 3
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "e07b35969dbb",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\e07b35969dbb\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "b2e337a1b216a11239c1360ee3d30186bff92ac2d6539129a33d2c782d603ac8",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "92c469663330",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\92c469663330\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "edb4fcfd0441f694f165d3913bb4a92ec00f2941c8edd15124dd010ea5e25e42",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 4294967295,
+          "counts": {},
+          "complete": false,
+          "loaded_target": null
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 11
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "f4239dfc3e4b",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\f4239dfc3e4b\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failure": 3
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "ebfcca2a207c",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\ebfcca2a207c\\candidate",
+      "lifecycle_pass": true,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "18ab18381b2c86386345dc0d4b99d12ca282f76266305af3925f270b0d12450e",
+      "upstream_pass": true,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "e41155f04ff0",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\e41155f04ff0\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failure": 3
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "7bdd221a847d",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\7bdd221a847d\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "240350b3ed55",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\240350b3ed55\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "07aeaf02992910185307433b2ea6cf13798d786002ad59989343f9af70f3a427",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 10,
+            "passed": 1
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "35bc3ab1ab2f",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\35bc3ab1ab2f\\candidate",
+      "lifecycle_pass": true,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "d9d0fb38ddf44ec33dd86c437e0204f1f1a5a7ca55ede73aabbbdb3a9cb8d4a3",
+      "upstream_pass": true,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "5c70fa8c6791",
+      "family": "packaging",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\5c70fa8c6791\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "f97a4ec9ebbc6fb0201291b69176ad499159a65fd0eabe9f300754e54a27946e",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 51500
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 11
+          },
+          "complete": true,
+          "loaded_target": "/candidate/packaging/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    },
+    {
+      "id": "2e2d79f515cd",
+      "family": "attrs",
+      "kind": "model_final_snapshot",
+      "origin": "<project>\\results\\reader_repairs\\20261030T185431\\pilot_20261030T191135\\2e2d79f515cd\\candidate",
+      "lifecycle_pass": false,
+      "protocol_complete": true,
+      "candidate_source_hash_excluding_optional_tests": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+      "upstream_pass": false,
+      "suites": {
+        "preservation": {
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "skipped": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        },
+        "regression": {
+          "exit_code": 1,
+          "counts": {
+            "failure": 2
+          },
+          "complete": true,
+          "loaded_target": "/candidate/attr/__init__.py"
+        }
+      },
+      "added_lifecycle_rejection": false
+    }
+  ]
+}

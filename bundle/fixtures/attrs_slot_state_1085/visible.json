@@ -1,0 +1,38 @@
+[
+  {
+    "id": "119dbe50fb44",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/119dbe50fb44.pickle",
+    "visible": true,
+    "sha256": "489bd5e9a99f64d656d69ed79f335bc8d3a1d3d58b1d567d5aa1d2fbd93ded47"
+  },
+  {
+    "id": "8fc411ebbc46",
+    "group": "fresh_api",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "d95a4a3e4b5c",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  }
+]

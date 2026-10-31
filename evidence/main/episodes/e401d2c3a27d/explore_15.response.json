@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793397870-ah3ZnSikGTXmLpfJuNci",
+  "object": "chat.completion",
+  "created": 1793397870,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_21661ad0edd1455ab2670db4f4e830ee",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def read_mmap(self, unpickler):\\n        \\\"\\\"\\\"Read an array using numpy memmap.\\\"\\\"\\\"\\n        current_pos = unpickler.file_handle.tell()\\n        offset = current_pos\\n        numpy_array_alignment_bytes = \\\\\\n            self.safe_get_numpy_array_alignment_bytes()\\n\\n        if numpy_array_alignment_bytes is not None:\\n            padding_byte = unpickler.file_handle.read(1)\\n            padding_length = int.from_bytes(padding_byte, byteorder='little')\\n            # + 1 is for the padding byte\\n            offset += padding_length + 1\\n\\n        if unpickler.mmap_mode == 'w+':\\n            unpickler.mmap_mode = 'r+'\\n\\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        return marray\\n\",\"old\":\"    def read_mmap(self, unpickler):\\n        \\\"\\\"\\\"Read an array using numpy memmap.\\\"\\\"\\\"\\n        current_pos = unpickler.file_handle.tell()\\n        offset = current_pos\\n        numpy_array_alignment_bytes = \\\\\\n            self.safe_get_numpy_array_alignment_bytes()\\n\\n        if numpy_array_alignment_bytes is not None:\\n            padding_byte = unpickler.file_handle.read(1)\\n            padding_length = int.from_bytes(padding_byte, byteorder='little')\\n            # + 1 is for the padding byte\\n            offset += padding_length + 1\\n\\n        if unpickler.mmap_mode == 'w+':\\n            unpickler.mmap_mode = 'r+'\\n\\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        if not _ensure_native_byte_order(marray):\\n            # If the array is not in native byte order, we cannot use mmap\\n            # for writing, because the byteswap would not be in-place on the file.\\n            # However, the requirement says: \\\"Numeric values and shape must remain correct,\\n            # and mutations followed by flush must reach the working file and be visible in a new process.\\\"\\n            # If we return a copy, mutations won't reach the file.\\n            # But if we return the mmap'd array (which is big-endian), \\n            # and the user modifies it, they are modifying the file.\\n            # The issue is that the current implementation returns _ensure_native_byte_order(marray),\\n            # which for a big-endian array on a little-endian machine, returns a COPY.\\n            # A copy is not a memmap.\\n            pass\\n\\n        return marray\\n\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23430,
+    "completion_tokens": 1151,
+    "total_tokens": 24581,
+    "cost": 0.00080643,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 4,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00080643,
+      "upstream_inference_prompt_cost": 0.00070284,
+      "upstream_inference_completions_cost": 0.00010359
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

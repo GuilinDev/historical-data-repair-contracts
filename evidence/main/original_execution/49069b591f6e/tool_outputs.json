@@ -1,0 +1,2254 @@
+[
+  {
+    "round": 0,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_0a04eb10e74e452b84f4c13dab4ca72d",
+      "function": {
+        "name": "list_sources",
+        "arguments": "{\"prefix\":\"packaging/\"}"
+      }
+    },
+    "result": {
+      "matching_files": 19,
+      "paths": [
+        "packaging/__init__.py",
+        "packaging/_elffile.py",
+        "packaging/_manylinux.py",
+        "packaging/_musllinux.py",
+        "packaging/_parser.py",
+        "packaging/_tokenizer.py",
+        "packaging/dependency_groups.py",
+        "packaging/direct_url.py",
+        "packaging/errors.py",
+        "packaging/licenses/__init__.py",
+        "packaging/licenses/_spdx.py",
+        "packaging/markers.py",
+        "packaging/metadata.py",
+        "packaging/pylock.py",
+        "packaging/requirements.py",
+        "packaging/specifiers.py",
+        "packaging/tags.py",
+        "packaging/utils.py",
+        "packaging/version.py"
+      ],
+      "truncated": false
+    },
+    "shown_result": {
+      "matching_files": 19,
+      "paths": [
+        "packaging/__init__.py",
+        "packaging/_elffile.py",
+        "packaging/_manylinux.py",
+        "packaging/_musllinux.py",
+        "packaging/_parser.py",
+        "packaging/_tokenizer.py",
+        "packaging/dependency_groups.py",
+        "packaging/direct_url.py",
+        "packaging/errors.py",
+        "packaging/licenses/__init__.py",
+        "packaging/licenses/_spdx.py",
+        "packaging/markers.py",
+        "packaging/metadata.py",
+        "packaging/pylock.py",
+        "packaging/requirements.py",
+        "packaging/specifiers.py",
+        "packaging/tags.py",
+        "packaging/utils.py",
+        "packaging/version.py"
+      ],
+      "truncated": false
+    },
+    "truncated": false,
+    "wall_seconds": 0.0029715000418946147
+  },
+  {
+    "round": 1,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_10c714df6231433bacb72e9e796b0212",
+      "function": {
+        "name": "historical_cases",
+        "arguments": "{}"
+      }
+    },
+    "result": [
+      {
+        "id": "ab67abe0aa61",
+        "group": "historical",
+        "producer": "25.0",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        },
+        "artifact": "/fixtures/packaging_version_1163/artifacts/ab67abe0aa61.pickle"
+      },
+      {
+        "id": "b7c0ed5006ea",
+        "group": "historical",
+        "producer": "26.0",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        },
+        "artifact": "/fixtures/packaging_version_1163/artifacts/b7c0ed5006ea.pickle"
+      },
+      {
+        "id": "d127ddeb9520",
+        "group": "fresh_api",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        }
+      },
+      {
+        "id": "c572e8fab82d",
+        "group": "current_roundtrip",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        }
+      }
+    ],
+    "shown_result": [
+      {
+        "id": "ab67abe0aa61",
+        "group": "historical",
+        "producer": "25.0",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        },
+        "artifact": "/fixtures/packaging_version_1163/artifacts/ab67abe0aa61.pickle"
+      },
+      {
+        "id": "b7c0ed5006ea",
+        "group": "historical",
+        "producer": "26.0",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        },
+        "artifact": "/fixtures/packaging_version_1163/artifacts/b7c0ed5006ea.pickle"
+      },
+      {
+        "id": "d127ddeb9520",
+        "group": "fresh_api",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        }
+      },
+      {
+        "id": "c572e8fab82d",
+        "group": "current_roundtrip",
+        "input": {
+          "kind": "Version",
+          "value": "1.0"
+        }
+      }
+    ],
+    "truncated": false,
+    "wall_seconds": 0.000269399955868721
+  },
+  {
+    "round": 2,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_a82b8ab8080145d68ec035e61d3d040c",
+      "function": {
+        "name": "historical_artifact",
+        "arguments": "{\"id\":\"ab67abe0aa61\"}"
+      }
+    },
+    "result": {
+      "id": "ab67abe0aa61",
+      "producer": "25.0",
+      "sha256": "d4c2f7538ddff4590ffe3c49b9ae9b248cba8e248d559609a586a439655c224c",
+      "opcodes": [
+        {
+          "offset": 0,
+          "opcode": "PROTO",
+          "argument": "4"
+        },
+        {
+          "offset": 2,
+          "opcode": "FRAME",
+          "argument": "178"
+        },
+        {
+          "offset": 11,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging.version'"
+        },
+        {
+          "offset": 30,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 31,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'Version'"
+        },
+        {
+          "offset": 40,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 41,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 42,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 43,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 44,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 45,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 46,
+          "opcode": "EMPTY_DICT",
+          "argument": "None"
+        },
+        {
+          "offset": 47,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 48,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 49,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_version'"
+        },
+        {
+          "offset": 59,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 60,
+          "opcode": "BINGET",
+          "argument": "0"
+        },
+        {
+          "offset": 62,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_Version'"
+        },
+        {
+          "offset": 72,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 73,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 74,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 75,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 76,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 78,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 80,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 82,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 83,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 84,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 85,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 86,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 87,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 88,
+          "opcode": "TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 89,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 90,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 91,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 92,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_key'"
+        },
+        {
+          "offset": 98,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 99,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 100,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 102,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 104,
+          "opcode": "TUPLE1",
+          "argument": "None"
+        },
+        {
+          "offset": 105,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 106,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging._structures'"
+        },
+        {
+          "offset": 129,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 130,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'InfinityType'"
+        },
+        {
+          "offset": 144,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 145,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 146,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 147,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 148,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 149,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 150,
+          "opcode": "BINGET",
+          "argument": "13"
+        },
+        {
+          "offset": 152,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'NegativeInfinityType'"
+        },
+        {
+          "offset": 174,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 175,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 176,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 177,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 178,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 179,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 180,
+          "opcode": "BINGET",
+          "argument": "16"
+        },
+        {
+          "offset": 182,
+          "opcode": "BINGET",
+          "argument": "19"
+        },
+        {
+          "offset": 184,
+          "opcode": "TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 185,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 186,
+          "opcode": "SETITEMS",
+          "argument": "None"
+        },
+        {
+          "offset": 187,
+          "opcode": "BUILD",
+          "argument": "None"
+        },
+        {
+          "offset": 188,
+          "opcode": "STOP",
+          "argument": "None"
+        }
+      ]
+    },
+    "shown_result": {
+      "id": "ab67abe0aa61",
+      "producer": "25.0",
+      "sha256": "d4c2f7538ddff4590ffe3c49b9ae9b248cba8e248d559609a586a439655c224c",
+      "opcodes": [
+        {
+          "offset": 0,
+          "opcode": "PROTO",
+          "argument": "4"
+        },
+        {
+          "offset": 2,
+          "opcode": "FRAME",
+          "argument": "178"
+        },
+        {
+          "offset": 11,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging.version'"
+        },
+        {
+          "offset": 30,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 31,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'Version'"
+        },
+        {
+          "offset": 40,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 41,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 42,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 43,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 44,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 45,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 46,
+          "opcode": "EMPTY_DICT",
+          "argument": "None"
+        },
+        {
+          "offset": 47,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 48,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 49,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_version'"
+        },
+        {
+          "offset": 59,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 60,
+          "opcode": "BINGET",
+          "argument": "0"
+        },
+        {
+          "offset": 62,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_Version'"
+        },
+        {
+          "offset": 72,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 73,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 74,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 75,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 76,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 78,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 80,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 82,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 83,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 84,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 85,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 86,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 87,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 88,
+          "opcode": "TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 89,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 90,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 91,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 92,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_key'"
+        },
+        {
+          "offset": 98,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 99,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 100,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 102,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 104,
+          "opcode": "TUPLE1",
+          "argument": "None"
+        },
+        {
+          "offset": 105,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 106,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging._structures'"
+        },
+        {
+          "offset": 129,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 130,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'InfinityType'"
+        },
+        {
+          "offset": 144,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 145,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 146,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 147,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 148,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 149,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 150,
+          "opcode": "BINGET",
+          "argument": "13"
+        },
+        {
+          "offset": 152,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'NegativeInfinityType'"
+        },
+        {
+          "offset": 174,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 175,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 176,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 177,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 178,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 179,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 180,
+          "opcode": "BINGET",
+          "argument": "16"
+        },
+        {
+          "offset": 182,
+          "opcode": "BINGET",
+          "argument": "19"
+        },
+        {
+          "offset": 184,
+          "opcode": "TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 185,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 186,
+          "opcode": "SETITEMS",
+          "argument": "None"
+        },
+        {
+          "offset": 187,
+          "opcode": "BUILD",
+          "argument": "None"
+        },
+        {
+          "offset": 188,
+          "opcode": "STOP",
+          "argument": "None"
+        }
+      ]
+    },
+    "truncated": false,
+    "wall_seconds": 0.00046609994024038315
+  },
+  {
+    "round": 3,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_615caf91ff59458f841d5ff381bb63bd",
+      "function": {
+        "name": "historical_artifact",
+        "arguments": "{\"id\":\"b7c0ed5006ea\"}"
+      }
+    },
+    "result": {
+      "id": "b7c0ed5006ea",
+      "producer": "26.0",
+      "sha256": "cc18e3ce21cec98667d1df572de295b92422e65f02c39da6a77f6d311889d45f",
+      "opcodes": [
+        {
+          "offset": 0,
+          "opcode": "PROTO",
+          "argument": "4"
+        },
+        {
+          "offset": 2,
+          "opcode": "FRAME",
+          "argument": "121"
+        },
+        {
+          "offset": 11,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging.version'"
+        },
+        {
+          "offset": 30,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 31,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'Version'"
+        },
+        {
+          "offset": 40,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 41,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 42,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 43,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 44,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 45,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 46,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 47,
+          "opcode": "EMPTY_DICT",
+          "argument": "None"
+        },
+        {
+          "offset": 48,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 49,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 50,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_dev'"
+        },
+        {
+          "offset": 56,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 57,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 58,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_epoch'"
+        },
+        {
+          "offset": 66,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 67,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 69,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_key_cache'"
+        },
+        {
+          "offset": 81,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 82,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 83,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_local'"
+        },
+        {
+          "offset": 91,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 92,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 93,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_post'"
+        },
+        {
+          "offset": 100,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 101,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 102,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_pre'"
+        },
+        {
+          "offset": 108,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 109,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 110,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_release'"
+        },
+        {
+          "offset": 120,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 121,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 123,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 125,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 126,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 127,
+          "opcode": "SETITEMS",
+          "argument": "None"
+        },
+        {
+          "offset": 128,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 129,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 130,
+          "opcode": "BUILD",
+          "argument": "None"
+        },
+        {
+          "offset": 131,
+          "opcode": "STOP",
+          "argument": "None"
+        }
+      ]
+    },
+    "shown_result": {
+      "id": "b7c0ed5006ea",
+      "producer": "26.0",
+      "sha256": "cc18e3ce21cec98667d1df572de295b92422e65f02c39da6a77f6d311889d45f",
+      "opcodes": [
+        {
+          "offset": 0,
+          "opcode": "PROTO",
+          "argument": "4"
+        },
+        {
+          "offset": 2,
+          "opcode": "FRAME",
+          "argument": "121"
+        },
+        {
+          "offset": 11,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'packaging.version'"
+        },
+        {
+          "offset": 30,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 31,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'Version'"
+        },
+        {
+          "offset": 40,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 41,
+          "opcode": "STACK_GLOBAL",
+          "argument": "None"
+        },
+        {
+          "offset": 42,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 43,
+          "opcode": "EMPTY_TUPLE",
+          "argument": "None"
+        },
+        {
+          "offset": 44,
+          "opcode": "NEWOBJ",
+          "argument": "None"
+        },
+        {
+          "offset": 45,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 46,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 47,
+          "opcode": "EMPTY_DICT",
+          "argument": "None"
+        },
+        {
+          "offset": 48,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 49,
+          "opcode": "MARK",
+          "argument": "None"
+        },
+        {
+          "offset": 50,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_dev'"
+        },
+        {
+          "offset": 56,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 57,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 58,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_epoch'"
+        },
+        {
+          "offset": 66,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 67,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 69,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_key_cache'"
+        },
+        {
+          "offset": 81,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 82,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 83,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_local'"
+        },
+        {
+          "offset": 91,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 92,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 93,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_post'"
+        },
+        {
+          "offset": 100,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 101,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 102,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_pre'"
+        },
+        {
+          "offset": 108,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 109,
+          "opcode": "NONE",
+          "argument": "None"
+        },
+        {
+          "offset": 110,
+          "opcode": "SHORT_BINUNICODE",
+          "argument": "'_release'"
+        },
+        {
+          "offset": 120,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 121,
+          "opcode": "BININT1",
+          "argument": "1"
+        },
+        {
+          "offset": 123,
+          "opcode": "BININT1",
+          "argument": "0"
+        },
+        {
+          "offset": 125,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 126,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 127,
+          "opcode": "SETITEMS",
+          "argument": "None"
+        },
+        {
+          "offset": 128,
+          "opcode": "TUPLE2",
+          "argument": "None"
+        },
+        {
+          "offset": 129,
+          "opcode": "MEMOIZE",
+          "argument": "None"
+        },
+        {
+          "offset": 130,
+          "opcode": "BUILD",
+          "argument": "None"
+        },
+        {
+          "offset": 131,
+          "opcode": "STOP",
+          "argument": "None"
+        }
+      ]
+    },
+    "truncated": false,
+    "wall_seconds": 0.0004352000541985035
+  },
+  {
+    "round": 4,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_01512b090cc1485c8e00d84ef27150b8",
+      "function": {
+        "name": "read_source",
+        "arguments": "{\"path\":\"packaging/version.py\"}"
+      }
+    },
+    "result": {
+      "path": "packaging/version.py",
+      "total_lines": 1154,
+      "lines": [
+        {
+          "line": 1,
+          "text": "# This file is dual licensed under the terms of the Apache License, Version"
+        },
+        {
+          "line": 2,
+          "text": "# 2.0, and the BSD License. See the LICENSE file in the root of this repository"
+        },
+        {
+          "line": 3,
+          "text": "# for complete details."
+        },
+        {
+          "line": 4,
+          "text": "\"\"\""
+        },
+        {
+          "line": 5,
+          "text": ".. testsetup::"
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "    from packaging.version import parse, normalize_pre, Version, _cmpkey"
+        },
+        {
+          "line": 8,
+          "text": "\"\"\""
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "from __future__ import annotations"
+        },
+        {
+          "line": 11,
+          "text": ""
+        },
+        {
+          "line": 12,
+          "text": "import re"
+        },
+        {
+          "line": 13,
+          "text": "import sys"
+        },
+        {
+          "line": 14,
+          "text": "import typing"
+        },
+        {
+          "line": 15,
+          "text": "from typing import ("
+        },
+        {
+          "line": 16,
+          "text": "    Any,"
+        },
+        {
+          "line": 17,
+          "text": "    Callable,"
+        },
+        {
+          "line": 18,
+          "text": "    Literal,"
+        },
+        {
+          "line": 19,
+          "text": "    NamedTuple,"
+        },
+        {
+          "line": 20,
+          "text": "    SupportsInt,"
+        },
+        {
+          "line": 21,
+          "text": "    Tuple,"
+        },
+        {
+          "line": 22,
+          "text": "    TypedDict,"
+        },
+        {
+          "line": 23,
+          "text": "    Union,"
+        },
+        {
+          "line": 24,
+          "text": ")"
+        },
+        {
+          "line": 25,
+          "text": ""
+        },
+        {
+          "line": 26,
+          "text": "if typing.TYPE_CHECKING:"
+        },
+        {
+          "line": 27,
+          "text": "    from typing_extensions import Self, Unpack"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "if sys.version_info >= (3, 13):  # pragma: no cover"
+        },
+        {
+          "line": 30,
+          "text": "    from warnings import deprecated as _deprecated"
+        },
+        {
+          "line": 31,
+          "text": "elif typing.TYPE_CHECKING:"
+        },
+        {
+          "line": 32,
+          "text": "    from typing_extensions import deprecated as _deprecated"
+        },
+        {
+          "line": 33,
+          "text": "else:  # pragma: no cover"
+        },
+        {
+          "line": 34,
+          "text": "    import functools"
+        },
+        {
+          "line": 35,
+          "text": "    import warnings"
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "    def _deprecated(message: str) -> object:"
+        },
+        {
+          "line": 38,
+          "text": "        def decorator(func: Callable[[...], object]) -> object:"
+        },
+        {
+          "line": 39,
+          "text": "            @functools.wraps(func)"
+        },
+        {
+          "line": 40,
+          "text": "            def wrapper(*args: object, **kwargs: object) -> object:"
+        },
+        {
+          "line": 41,
+          "text": "                warnings.warn("
+        },
+        {
+          "line": 42,
+          "text": "                    message,"
+        },
+        {
+          "line": 43,
+          "text": "                    category=DeprecationWarning,"
+        },
+        {
+          "line": 44,
+          "text": "                    stacklevel=2,"
+        },
+        {
+          "line": 45,
+          "text": "                )"
+        },
+        {
+          "line": 46,
+          "text": "                return func(*args, **kwargs)"
+        },
+        {
+          "line": 47,
+          "text": ""
+        },
+        {
+          "line": 48,
+          "text": "            return wrapper"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "        return decorator"
+        },
+        {
+          "line": 51,
+          "text": ""
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "_LETTER_NORMALIZATION = {"
+        },
+        {
+          "line": 54,
+          "text": "    \"alpha\": \"a\","
+        },
+        {
+          "line": 55,
+          "text": "    \"beta\": \"b\","
+        },
+        {
+          "line": 56,
+          "text": "    \"c\": \"rc\","
+        },
+        {
+          "line": 57,
+          "text": "    \"pre\": \"rc\","
+        },
+        {
+          "line": 58,
+          "text": "    \"preview\": \"rc\","
+        },
+        {
+          "line": 59,
+          "text": "    \"rev\": \"post\","
+        },
+        {
+          "line": 60,
+          "text": "    \"r\": \"post\","
+        },
+        {
+          "line": 61,
+          "text": "}"
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "__all__ = [\"VERSION_PATTERN\", \"InvalidVersion\", \"Version\", \"normalize_pre\", \"parse\"]"
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": ""
+        },
+        {
+          "line": 66,
+          "text": "def __dir__() -> list[str]:"
+        },
+        {
+          "line": 67,
+          "text": "    return __all__"
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "LocalType = Tuple[Union[int, str], ...]"
+        },
+        {
+          "line": 71,
+          "text": ""
+        },
+        {
+          "line": 72,
+          "text": "CmpLocalType = Tuple[Tuple[int, str], ...]"
+        },
+        {
+          "line": 73,
+          "text": "CmpSuffix = Tuple[int, int, int, int, int, int]"
+        },
+        {
+          "line": 74,
+          "text": "CmpKey = Union["
+        },
+        {
+          "line": 75,
+          "text": "    Tuple[int, Tuple[int, ...], CmpSuffix],"
+        },
+        {
+          "line": 76,
+          "text": "    Tuple[int, Tuple[int, ...], CmpSuffix, CmpLocalType],"
+        },
+        {
+          "line": 77,
+          "text": "]"
+        },
+        {
+          "line": 78,
+          "text": "VersionComparisonMethod = Callable[[CmpKey, CmpKey], bool]"
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": ""
+        },
+        {
+          "line": 81,
+          "text": "class _VersionReplace(TypedDict, total=False):"
+        },
+        {
+          "line": 82,
+          "text": "    epoch: int | None"
+        },
+        {
+          "line": 83,
+          "text": "    release: tuple[int, ...] | None"
+        },
+        {
+          "line": 84,
+          "text": "    pre: tuple[str, int] | None"
+        },
+        {
+          "line": 85,
+          "text": "    post: int | None"
+        },
+        {
+          "line": 86,
+          "text": "    dev: int | None"
+        },
+        {
+          "line": 87,
+          "text": "    local: str | None"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": ""
+        },
+        {
+          "line": 90,
+          "text": "def normalize_pre(letter: str, /) -> str:"
+        },
+        {
+          "line": 91,
+          "text": "    \"\"\"Normalize the pre-release segment of a version string."
+        },
+        {
+          "line": 92,
+          "text": ""
+        },
+        {
+          "line": 93,
+          "text": "    Returns a lowercase version of the string if not a known pre-release"
+        },
+        {
+          "line": 94,
+          "text": "    identifier."
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "    >>> normalize_pre('alpha')"
+        },
+        {
+          "line": 97,
+          "text": "    'a'"
+        },
+        {
+          "line": 98,
+          "text": "    >>> normalize_pre('BETA')"
+        },
+        {
+          "line": 99,
+          "text": "    'b'"
+        },
+        {
+          "line": 100,
+          "text": "    >>> normalize_pre('rc')"
+        }
+      ]
+    },
+    "shown_result": {
+      "path": "packaging/version.py",
+      "total_lines": 1154,
+      "lines": [
+        {
+          "line": 1,
+          "text": "# This file is dual licensed under the terms of the Apache License, Version"
+        },
+        {
+          "line": 2,
+          "text": "# 2.0, and the BSD License. See the LICENSE file in the root of this repository"
+        },
+        {
+          "line": 3,
+          "text": "# for complete details."
+        },
+        {
+          "line": 4,
+          "text": "\"\"\""
+        },
+        {
+          "line": 5,
+          "text": ".. testsetup::"
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "    from packaging.version import parse, normalize_pre, Version, _cmpkey"
+        },
+        {
+          "line": 8,
+          "text": "\"\"\""
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "from __future__ import annotations"
+        },
+        {
+          "line": 11,
+          "text": ""
+        },
+        {
+          "line": 12,
+          "text": "import re"
+        },
+        {
+          "line": 13,
+          "text": "import sys"
+        },
+        {
+          "line": 14,
+          "text": "import typing"
+        },
+        {
+          "line": 15,
+          "text": "from typing import ("
+        },
+        {
+          "line": 16,
+          "text": "    Any,"
+        },
+        {
+          "line": 17,
+          "text": "    Callable,"
+        },
+        {
+          "line": 18,
+          "text": "    Literal,"
+        },
+        {
+          "line": 19,
+          "text": "    NamedTuple,"
+        },
+        {
+          "line": 20,
+          "text": "    SupportsInt,"
+        },
+        {
+          "line": 21,
+          "text": "    Tuple,"
+        },
+        {
+          "line": 22,
+          "text": "    TypedDict,"
+        },
+        {
+          "line": 23,
+          "text": "    Union,"
+        },
+        {
+          "line": 24,
+          "text": ")"
+        },
+        {
+          "line": 25,
+          "text": ""
+        },
+        {
+          "line": 26,
+          "text": "if typing.TYPE_CHECKING:"
+        },
+        {
+          "line": 27,
+          "text": "    from typing_extensions import Self, Unpack"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "if sys.version_info >= (3, 13):  # pragma: no cover"
+        },
+        {
+          "line": 30,
+          "text": "    from warnings import deprecated as _deprecated"
+        },
+        {
+          "line": 31,
+          "text": "elif typing.TYPE_CHECKING:"
+        },
+        {
+          "line": 32,
+          "text": "    from typing_extensions import deprecated as _deprecated"
+        },
+        {
+          "line": 33,
+          "text": "else:  # pragma: no cover"
+        },
+        {
+          "line": 34,
+          "text": "    import functools"
+        },
+        {
+          "line": 35,
+          "text": "    import warnings"
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "    def _deprecated(message: str) -> object:"
+        },
+        {
+          "line": 38,
+          "text": "        def decorator(func: Callable[[...], object]) -> object:"
+        },
+        {
+          "line": 39,
+          "text": "            @functools.wraps(func)"
+        },
+        {
+          "line": 40,
+          "text": "            def wrapper(*args: object, **kwargs: object) -> object:"
+        },
+        {
+          "line": 41,
+          "text": "                warnings.warn("
+        },
+        {
+          "line": 42,
+          "text": "                    message,"
+        },
+        {
+          "line": 43,
+          "text": "                    category=DeprecationWarning,"
+        },
+        {
+          "line": 44,
+          "text": "                    stacklevel=2,"
+        },
+        {
+          "line": 45,
+          "text": "                )"
+        },
+        {
+          "line": 46,
+          "text": "                return func(*args, **kwargs)"
+        },
+        {
+          "line": 47,
+          "text": ""
+        },
+        {
+          "line": 48,
+          "text": "            return wrapper"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "        return decorator"
+        },
+        {
+          "line": 51,
+          "text": ""
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "_LETTER_NORMALIZATION = {"
+        },
+        {
+          "line": 54,
+          "text": "    \"alpha\": \"a\","
+        },
+        {
+          "line": 55,
+          "text": "    \"beta\": \"b\","
+        },
+        {
+          "line": 56,
+          "text": "    \"c\": \"rc\","
+        },
+        {
+          "line": 57,
+          "text": "    \"pre\": \"rc\","
+        },
+        {
+          "line": 58,
+          "text": "    \"preview\": \"rc\","
+        },
+        {
+          "line": 59,
+          "text": "    \"rev\": \"post\","
+        },
+        {
+          "line": 60,
+          "text": "    \"r\": \"post\","
+        },
+        {
+          "line": 61,
+          "text": "}"
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "__all__ = [\"VERSION_PATTERN\", \"InvalidVersion\", \"Version\", \"normalize_pre\", \"parse\"]"
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": ""
+        },
+        {
+          "line": 66,
+          "text": "def __dir__() -> list[str]:"
+        },
+        {
+          "line": 67,
+          "text": "    return __all__"
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "LocalType = Tuple[Union[int, str], ...]"
+        },
+        {
+          "line": 71,
+          "text": ""
+        },
+        {
+          "line": 72,
+          "text": "CmpLocalType = Tuple[Tuple[int, str], ...]"
+        },
+        {
+          "line": 73,
+          "text": "CmpSuffix = Tuple[int, int, int, int, int, int]"
+        },
+        {
+          "line": 74,
+          "text": "CmpKey = Union["
+        },
+        {
+          "line": 75,
+          "text": "    Tuple[int, Tuple[int, ...], CmpSuffix],"
+        },
+        {
+          "line": 76,
+          "text": "    Tuple[int, Tuple[int, ...], CmpSuffix, CmpLocalType],"
+        },
+        {
+          "line": 77,
+          "text": "]"
+        },
+        {
+          "line": 78,
+          "text": "VersionComparisonMethod = Callable[[CmpKey, CmpKey], bool]"
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": ""
+        },
+        {
+          "line": 81,
+          "text": "class _VersionReplace(TypedDict, total=False):"
+        },
+        {
+          "line": 82,
+          "text": "    epoch: int | None"
+        },
+        {
+          "line": 83,
+          "text": "    release: tuple[int, ...] | None"
+        },
+        {
+          "line": 84,
+          "text": "    pre: tuple[str, int] | None"
+        },
+        {
+          "line": 85,
+          "text": "    post: int | None"
+        },
+        {
+          "line": 86,
+          "text": "    dev: int | None"
+        },
+        {
+          "line": 87,
+          "text": "    local: str | None"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": ""
+        },
+        {
+          "line": 90,
+          "text": "def normalize_pre(letter: str, /) -> str:"
+        },
+        {
+          "line": 91,
+          "text": "    \"\"\"Normalize the pre-release segment of a version string."
+        },
+        {
+          "line": 92,
+          "text": ""
+        },
+        {
+          "line": 93,
+          "text": "    Returns a lowercase version of the string if not a known pre-release"
+        },
+        {
+          "line": 94,
+          "text": "    identifier."
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "    >>> normalize_pre('alpha')"
+        },
+        {
+          "line": 97,
+          "text": "    'a'"
+        },
+        {
+          "line": 98,
+          "text": "    >>> normalize_pre('BETA')"
+        },
+        {
+          "line": 99,
+          "text": "    'b'"
+        },
+        {
+          "line": 100,
+          "text": "    >>> normalize_pre('rc')"
+        }
+      ]
+    },
+    "truncated": false,
+    "wall_seconds": 0.016076000058092177
+  },
+  {
+    "round": 5,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_5f7c65abfc8b47fdaaa06004955321fe",
+      "function": {
+        "name": "run_checks",
+        "arguments": "{\"suite\":\"legacy\"}"
+      }
+    },
+    "result": {
+      "execution_status": "observed",
+      "passed": 2,
+      "n": 4,
+      "groups": {
+        "historical": {
+          "passed": 0,
+          "n": 2
+        },
+        "fresh_api": {
+          "passed": 1,
+          "n": 1
+        },
+        "current_roundtrip": {
+          "passed": 1,
+          "n": 1
+        }
+      },
+      "failures": [
+        {
+          "id": "ab67abe0aa61",
+          "group": "historical",
+          "initial_semantics_passed": false,
+          "restart_semantics_passed": false,
+          "passed": false,
+          "actual": {
+            "id": "ab67abe0aa61",
+            "group": "historical",
+            "status": "program_error",
+            "error": "ModuleNotFoundError: No module named 'packaging._structures'"
+          }
+        },
+        {
+          "id": "b7c0ed5006ea",
+          "group": "historical",
+          "initial_semantics_passed": false,
+          "restart_semantics_passed": false,
+          "passed": false,
+          "actual": {
+            "id": "b7c0ed5006ea",
+            "group": "historical",
+            "status": "program_error",
+            "error": "AttributeError: 'Version' object has no attribute '_hash_cache'"
+          }
+        }
+      ],
+      "submitted_tests": {
+        "present": false,
+        "executed": false
+      }
+    },
+    "shown_result": {
+      "execution_status": "observed",
+      "passed": 2,
+      "n": 4,
+      "groups": {
+        "historical": {
+          "passed": 0,
+          "n": 2
+        },
+        "fresh_api": {
+          "passed": 1,
+          "n": 1
+        },
+        "current_roundtrip": {
+          "passed": 1,
+          "n": 1
+        }
+      },
+      "failures": [
+        {
+          "id": "ab67abe0aa61",
+          "group": "historical",
+          "initial_semantics_passed": false,
+          "restart_semantics_passed": false,
+          "passed": false,
+          "actual": {
+            "id": "ab67abe0aa61",
+            "group": "historical",
+            "status": "program_error",
+            "error": "ModuleNotFoundError: No module named 'packaging._structures'"
+          }
+        },
+        {
+          "id": "b7c0ed5006ea",
+          "group": "historical",
+          "initial_semantics_passed": false,
+          "restart_semantics_passed": false,
+          "passed": false,
+          "actual": {
+            "id": "b7c0ed5006ea",
+            "group": "historical",
+            "status": "program_error",
+            "error": "AttributeError: 'Version' object has no attribute '_hash_cache'"
+          }
+        }
+      ],
+      "submitted_tests": {
+        "present": false,
+        "executed": false
+      }
+    },
+    "truncated": false,
+    "wall_seconds": 2.3259620999451727
+  }
+]

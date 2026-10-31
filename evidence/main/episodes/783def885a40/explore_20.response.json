@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793399459-8a33tUNW2tGB5h7tIfDf",
+  "object": "chat.completion",
+  "created": 1793399459,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-5b8cf7c4-c2b9-4bcb-bab5-aaf71d93f963",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # When requested, only use memmap mode if allowed.\\n        # If the file is compressed, mmap_mode is ignored and we read the array.\\n        if unpickler.mmap_mode is not None and self.allow_mmap:\\n            array = self.read_mmap(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\",\"old\":\"        # When requested, only use memmap mode if allowed.\\n        if unpickler.mmap_mode is not None and self.allow_mmap:\\n            array = self.read_mmap(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31720,
+    "completion_tokens": 194,
+    "total_tokens": 31914,
+    "cost": 0.00323796,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 29408,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00323796,
+      "upstream_inference_prompt_cost": 0.003172,
+      "upstream_inference_completions_cost": 6.596e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

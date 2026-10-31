@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "pages": 6,
+  "text_equal_per_page_raw": false,
+  "text_equal_after_bullet_encoding_normalization": true,
+  "normalization": "Three built-in Times bullets extracted as U+007F instead of U+2022; no other text differences.",
+  "embedded_pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+  "portable_pdf_sha256": "3dd55c2904f4e9bdce178fa80c48a04669116bbb119446447997fd04089ebcf2",
+  "author": "Guilin Zhang",
+  "affiliation_omitted": true,
+  "additional_api_calls": 0,
+  "budget_request_count": 1614
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "039706c668ef",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "stock",
+        "reserve"
+      ],
+      "data": [
+        [
+          713,
+          -11
+        ],
+        [
+          29,
+          501
+        ],
+        [
+          817,
+          43
+        ]
+      ],
+      "index": [
+        "n",
+        "s",
+        "w"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\pandas_pickle_56308\\artifacts\\039706c668ef.pickle"
+  }
+]

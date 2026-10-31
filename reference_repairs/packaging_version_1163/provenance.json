@@ -1,0 +1,51 @@
+{
+  "task": "packaging_version_1163",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "26.1",
+  "fixed": "26.2",
+  "source_urls": [
+    "https://github.com/pypa/packaging/pull/1163"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_review/upstream_comparator/primary/packaging_pr.patch",
+      "sha256": "bd30b885492d444721bb53b5d662836ce63aedcd51516fb5671e2947b4904d90"
+    },
+    {
+      "path": "results/ready_review/upstream_comparator/primary/packaging_pr.json",
+      "sha256": "e5d863010c5dec720e91122cd572d29b51670536f9cab40d2715b9be948085d3"
+    }
+  ],
+  "adaptation": [
+    "26.2 allowed-file transplantation: Version pickle state/cache fix and the compatibility globals. The complete version.py release diff contains only this fix and associated docs; all non-allowed base files stay byte-identical."
+  ],
+  "whole_allowed_files_transplanted": [
+    "packaging/version.py",
+    "packaging/_structures.py"
+  ],
+  "allowed_paths": [
+    "packaging/version.py",
+    "packaging/_structures.py"
+  ],
+  "changed_paths": [
+    "packaging/_structures.py",
+    "packaging/version.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "packaging/_structures.py",
+      "base_sha256": null,
+      "candidate_sha256": "eb48d16c5efca7ccf930a9cd77a700a6b80e69d0891d5d03966526441a8565cb",
+      "fixed_sha256": "eb48d16c5efca7ccf930a9cd77a700a6b80e69d0891d5d03966526441a8565cb"
+    },
+    {
+      "path": "packaging/version.py",
+      "base_sha256": "e177d74d2921f748d05b270d269c094f8741b39f5149556f24f79bdf4b355675",
+      "candidate_sha256": "635693b717b7b27db138c6b905d23ce7e01c1eec9b6da9ce56412fbd24510bc2",
+      "fixed_sha256": "635693b717b7b27db138c6b905d23ce7e01c1eec9b6da9ce56412fbd24510bc2"
+    }
+  ],
+  "unchanged_base_files": 28,
+  "reference_patch_sha256": "2b5b0268fc08e9e9af0c1fd7fc50624201cdb97c660830f37ab1fa739659e2f8"
+}

@@ -1,0 +1,4 @@
+/candidate/jsonpickle/ext/pandas.py:329: UserWarning: jsonpickle was unable to properly deserialize the column span into its inferred dtype. Please file a bugreport on the jsonpickle GitHub! 
+  warnings.warn(msg)
+/candidate/jsonpickle/ext/pandas.py:329: UserWarning: jsonpickle was unable to properly deserialize the column span into its inferred dtype. Please file a bugreport on the jsonpickle GitHub! 
+  warnings.warn(msg)

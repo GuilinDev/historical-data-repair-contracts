@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793397657-9d3LeWLLA5xBypddcY31",
+  "object": "chat.completion",
+  "created": 1793397657,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_6b9c97ea93eb45808032f50496911f50",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def restore_v3_3(self, data):\\n        csv, meta = self.pp.restore_pandas(data)\\n        params, timedeltas, parse_datetime_v2 = make_read_csv_params(meta, self.context)\\n        # None makes it compatible with objects serialized before\\n        # column_levels_names has been introduced.\\n        column_level_names = meta.get(\\\"column_level_names\\\", None)\\n\\n        # The index in meta is a json-encoded string of the index object\\n        index_raw = meta.get(\\\"index\\\")\\n        if isinstance(index_raw, str):\\n            index = self.context.restore(index_raw, reset=False)\\n        else:\\n            index = index_raw\\n\\n        df = (\\n            pd.read_csv(StringIO(csv), **params)\\n            if data[\\\"values\\\"].strip()\\n            else pd.DataFrame()\\n        )\\n        for col in timedeltas:\\n            df[col] = pd.to_timedelta(df[col])\\n        df = df.astype(parse_datetime_v2)\\n\\n        df.set_index(index, inplace=True)\\n        # restore the column level(s) name(s)\\n        if column_level_names:\\n            df.columns.names = column_level_names\\n        return df\\n\",\"old\":\"    def restore_v3_3(self, data):\\n        csv, meta = self.pp.restore_pandas(data)\\n        params, timedeltas, parse_datetime_v2 = make_read_csv_params(meta, self.context)\\n        # None makes it compatible with objects serialized before\\n        # column_levels_names has been introduced.\\n        column_level_names = meta.get(\\\"column_level_names\\\", None)\\n\\n        # The index in meta is a json-encoded string of the index object\\n        index_raw = meta.get(\\\"index\\\")\\n        if isinstance(index_raw, str):\\n            index = decode(index_raw, keys=True)\\n        else:\\n            index = index_raw\\n\\n        df = (\\n            pd.read_csv(StringIO(csv), **params)\\n            if data[\\\"values\\\"].strip()\\n            else pd.DataFrame()\\n        )\\n        for col in timedeltas:\\n            df[col] = pd.to_timedelta(df[col])\\n        df = df.astype(parse_datetime_v2)\\n\\n        df.set_index(index, inplace=True)\\n        # restore the column level(s) name(s)\\n        if column_level_names:\\n            df.columns.names = column_level_names\\n        return df\\n\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21313,
+    "completion_tokens": 643,
+    "total_tokens": 21956,
+    "cost": 0.000410655,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 19107,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000410655,
+      "upstream_inference_prompt_cost": 0.000352785,
+      "upstream_inference_completions_cost": 5.787e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

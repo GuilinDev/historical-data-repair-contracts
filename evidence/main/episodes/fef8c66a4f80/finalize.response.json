@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793399023-glEXfZh4fQdgEK6usejj",
+  "object": "chat.completion",
+  "created": 1793399023,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The investigation into the `AttributeError: 'SlottedRecord' object has no attribute 'count'` during the restoration of `SlottedRecord` instances saved by `attrs 21.4.0` revealed a regression in how slotted classes are unpickled.\n\nIn `attrs 21.4.0`, slotted classes were pickled as a tuple of their field values. The `__setstate__` method in the current version of `attr/_make.py` (specifically for the `Attribute` class, but the issue is more general to the `attr.s(slots=True)` generated classes) expects a state that can be zipped with `self.__slots__`. However, the generated classes for `attr.s(slots=True)` in the current version do not seem to implement a `__setstate__` that correctly handles the tuple-based state produced by the 21.4.0 version of the library.\n\nThe `historical` check failed because the unpickling process failed to populate the slots of the `SlottedRecord` instance, leading to the `AttributeError` when accessing the `count` attribute.\n\nI have analyzed the `__getstate__` and `__setstate__` implementations in `attr/_make.py`. The current implementation of `__setstate__` for `Attribute` and `Factory` classes is present, but the logic for the user-defined classes decorated with `@attr.s(slots=True)` is handled by the `_add_pickle` machinery (which I searched for but could not find a direct definition of in the provided source snippets, suggesting it might be dynamically injected or named differently in the current version).\n\nSince I cannot find the exact location where `__setstate__` is injected for `attr.s(slots=True)` classes in the provided `attr/_make.py` source, and the `_add_pickle` function was not found via search, I was unable to implement the fix.\n\n**Summary:**\n- **Changes:** None.\n- **Checks ran:** `legacy` suite (failed on `historical` group).\n- **Unresolved:** The restoration of slotted classes from `attrs 21.4.0` artifacts is broken. The fix requires updating the `__setstate__` logic for slotted classes to correctly handle the tuple state produced by the historical version.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17450,
+    "completion_tokens": 496,
+    "total_tokens": 17946,
+    "cost": 0.00191364,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00191364,
+      "upstream_inference_prompt_cost": 0.001745,
+      "upstream_inference_completions_cost": 0.00016864
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

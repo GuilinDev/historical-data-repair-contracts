@@ -1,0 +1,17 @@
+[
+  {
+    "new": "from ._structures import Infinity, InfinityType, NegativeInfinity, NegativeInfinityType\n\nif sys.version_info >= (3, 13):  # pragma: no cover\n",
+    "old": "if sys.version_info >= (3, 13):  # pragma: no cover\n",
+    "path": "packaging/version.py"
+  },
+  {
+    "new": "    def __getstate__(self) -> dict[str, Any]:\n        return {\n            \"_epoch\": self._epoch,\n            \"_release\": self._release,\n            \"_pre\": self._pre,\n            \"_post\": self._post,\n            \"_dev\": self._dev,\n            \"_local\": self._local,\n        }\n\n    def __setstate__(self, state: dict[str, Any]) -> None:\n        # Handle 25.0/26.0 state where it might be a _Version NamedTuple\n        if \"_version\" in state:\n            v = state[\"_version\"]\n            self._epoch = v.epoch\n            self._release = v.release\n            self._dev = v.dev\n            self._pre = v.pre\n            self._post = v.post\n            self._local = v.local\n        else:\n            self._epoch = state.get(\"_epoch\", 0)\n            self._release = state.get(\"_release\", (0,))\n            self._pre = state.get(\"_pre\")\n            self._post = state.get(\"_post\")\n            self._dev = state.get(\"_dev\")\n            self._local = state.get(\"_local\")\n\n        self._key_cache = None\n        self._hash_cache = None\n\n    def __init__(self, version: str) -> None:\n",
+    "old": "    def __init__(self, version: str) -> None:\n",
+    "path": "packaging/version.py"
+  },
+  {
+    "new": "# This file is dual licensed under the terms of the Apache License, Version\n# 2.0, and the BSD License. See the LICENSE file in the root of this repository\n# for complete details.\n\nimport typing\n\n@typing.final\nclass InfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return False\n\n    def __le__(self, other: object) -> bool:\n        return False\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return True\n\n    def __ge__(self, other: object) -> bool:\n        return True\n\n    def __neg__(self: object) -> \"NegativeInfinityType\":\n        return NegativeInfinity\n\nInfinity = InfinityType()\n\n@typing.final\nclass NegativeInfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"-Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return True\n\n    def __le__(self, other: object) -> bool:\n        return True\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return False\n\n    def __ge__(self, other: object) -> bool:\n        return False\n\n    def __neg__(self: object) -> InfinityType:\n        return Infinity\n\nNegativeInfinity = NegativeInfinityType()\n",
+    "old": "",
+    "path": "packaging/_structures.py"
+  }
+]

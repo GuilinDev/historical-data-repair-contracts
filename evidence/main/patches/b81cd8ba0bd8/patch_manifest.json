@@ -1,0 +1,14 @@
+{
+  "episode": "b81cd8ba0bd8",
+  "family": "pandas_pickle_56308",
+  "project": "pandas",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 1,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "changed_paths": [
+    "pandas/compat/pickle_compat.py"
+  ],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

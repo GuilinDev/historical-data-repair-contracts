@@ -1,0 +1,290 @@
+{
+  "status": "COMPLETE_PRIMARY_SOURCE_REFERENCE_AUDIT",
+  "reviewed_date": "2026-10-30",
+  "reviewer": "/root/prize_panel",
+  "scope": "Read-only scientific editorial reference review; no main manuscript/build/release edits, no model calls or experiments.",
+  "input_manuscript": "paper/final_content.json",
+  "existing_audit": "results/paper_review/sources/bibliography.json",
+  "decision": "Keep original eight, add six substantive sources for fourteen related-work/model/provenance references. A separately required software acknowledgement may be numbered [15], but is not evidence for research novelty.",
+  "recommended_references": [
+    {
+      "number": 9,
+      "key": "barr2015oracle",
+      "topic": "test oracle problem",
+      "title": "The Oracle Problem in Software Testing: A Survey",
+      "authors": [
+        "Earl T. Barr",
+        "Mark Harman",
+        "Phil McMinn",
+        "Muzammil Shahbaz",
+        "Shin Yoo"
+      ],
+      "year": 2015,
+      "venue": "IEEE Transactions on Software Engineering",
+      "volume": "41",
+      "issue": "5",
+      "pages": "507–525",
+      "doi": "10.1109/TSE.2014.2372785",
+      "url": "https://doi.org/10.1109/TSE.2014.2372785",
+      "primary_verification_urls": [
+        "https://discovery.ucl.ac.uk/id/eprint/1471263/",
+        "https://philmcminn.com/publications/barr2015.pdf"
+      ],
+      "verified_evidence": "Author-institution repository and author-hosted paper agree on title, five authors, final 2015 journal year, volume, issue, pages and DOI. The DOI's 2014 component records the online-publication history, not a reason to cite the final journal article as 2014.",
+      "suggested_sentence": "Deciding which observed behaviors should count as correct is the test-oracle problem [9].",
+      "insert_at": "Section 1, before introducing the historical-data acceptance contract; alternatively start Section 2.",
+      "supports": "Expected behavior is a separate specification problem; the survey discusses specifications, contracts, derived oracles and human guidance.",
+      "does_not_support": "Our particular admissibility policy is correct, complete or novel; a finite test suite proves a library repair correct.",
+      "compact_reference": "[9] E. T. Barr et al. (2015). The Oracle Problem in Software Testing: A Survey. IEEE TSE 41(5):507–525. doi:10.1109/TSE.2014.2372785."
+    },
+    {
+      "number": 10,
+      "key": "smith2015overfitting",
+      "topic": "automated program repair overfitting",
+      "title": "Is the Cure Worse Than the Disease? Overfitting in Automated Program Repair",
+      "authors": [
+        "Edward K. Smith",
+        "Earl T. Barr",
+        "Claire Le Goues",
+        "Yuriy Brun"
+      ],
+      "year": 2015,
+      "venue": "ESEC/FSE 2015",
+      "pages": "532–543",
+      "doi": "10.1145/2786805.2786825",
+      "url": "https://doi.org/10.1145/2786805.2786825",
+      "primary_verification_urls": [
+        "https://people.cs.umass.edu/~brun/pubs/pubs/Smith15fse.pdf",
+        "https://squareslab.github.io/materials/SmithOverfitting2015.pdf"
+      ],
+      "verified_evidence": "Author-hosted original paper lists all four authors, ESEC/FSE 2015 and the DOI on page 1. Its independent construction/evaluation test suites directly motivate separating patch construction from correctness evaluation.",
+      "suggested_sentence": "A patch can satisfy its construction tests while breaking behavior checked by independent tests, a known problem in automated repair [10].",
+      "insert_at": "Section 2 near SWE-bench/UTBoost, or Section 3 explaining public versus private observations.",
+      "supports": "Test-suite overfitting predates LLM repair; construction-test success is insufficient independent evidence.",
+      "does_not_support": "The 32 Gemma attempts exhibit measured overfitting; our controls eliminate overfitting; results on this small resource estimate the frequency in deployed systems.",
+      "compact_reference": "[10] E. K. Smith et al. (2015). Is the Cure Worse Than the Disease? Overfitting in Automated Program Repair. ESEC/FSE. doi:10.1145/2786805.2786825."
+    },
+    {
+      "number": 11,
+      "key": "mckeeman1998differential",
+      "topic": "differential testing and permissible disagreement",
+      "title": "Differential Testing for Software",
+      "authors": [
+        "William M. McKeeman"
+      ],
+      "year": 1998,
+      "venue": "Digital Technical Journal",
+      "volume": "10",
+      "issue": "1",
+      "pages": "100–107",
+      "doi": null,
+      "url": "https://www.cs.tufts.edu/comp/150FP/archive/bill-mckeeman/DifferentailTesting.pdf",
+      "primary_verification_urls": [
+        "https://www.cs.tufts.edu/comp/150FP/archive/bill-mckeeman/DifferentailTesting.pdf"
+      ],
+      "verified_evidence": "Original eight-page article carries journal/year/page metadata. Printed p.101, Differential Testing, explicitly explains that differing results may both be correct under the requirements. No DOI was established; do not invent one.",
+      "suggested_sentence": "Differential testing has long recognized that disagreeing outputs can both satisfy the requirements [11].",
+      "insert_at": "Section 4, immediately before literal-gold versus admissible-contract comparison; stronger placement than a generic related-work list.",
+      "supports": "The general principle behind permitting alternative outputs is established; a discrepancy needs a contract before being classified as a fault.",
+      "does_not_support": "The paper discovered that differential oracles can over-reject; McKeeman studied this jsonpickle defect; an actual competing benchmark would reject this repair.",
+      "compact_reference": "[11] W. M. McKeeman (1998). Differential Testing for Software. Digital Technical Journal 10(1):100–107."
+    },
+    {
+      "number": 12,
+      "key": "segura2016metamorphic",
+      "topic": "metamorphic and relational testing",
+      "title": "A Survey on Metamorphic Testing",
+      "authors": [
+        "Sergio Segura",
+        "Gordon Fraser",
+        "Ana B. Sánchez",
+        "Antonio Ruiz-Cortés"
+      ],
+      "year": 2016,
+      "venue": "IEEE Transactions on Software Engineering",
+      "volume": "42",
+      "issue": "9",
+      "pages": "805–824",
+      "doi": "10.1109/TSE.2016.2532875",
+      "url": "https://doi.org/10.1109/TSE.2016.2532875",
+      "primary_verification_urls": [
+        "https://www.isa.us.es/publications/type/article-journal/2016/survey-metamorphic-testing",
+        "https://eprints.whiterose.ac.uk/id/eprint/110335/",
+        "https://eprints.whiterose.ac.uk/110335/1/segura16-tse.pdf"
+      ],
+      "verified_evidence": "Authors' research-group publication record and institutional accepted manuscript agree on four authors, title, 2016, TSE 42(9), pages and DOI.",
+      "suggested_sentence": "Metamorphic testing checks relations between executions when individual expected outputs are difficult to specify [12].",
+      "insert_at": "Section 2, in the same short paragraph as differential testing; relate to explicit save/reload invariants only if that relation is stated.",
+      "supports": "Relations across transformed inputs/executions are established partial-oracle mechanisms.",
+      "does_not_support": "Every sequential lifecycle test is automatically metamorphic; the resource implements an automated metamorphic-relation generator; a successful relation proves total correctness.",
+      "compact_reference": "[12] S. Segura et al. (2016). A Survey on Metamorphic Testing. IEEE TSE 42(9):805–824. doi:10.1109/TSE.2016.2532875."
+    },
+    {
+      "number": 13,
+      "key": "yu2025utboost",
+      "topic": "real coding-agent repair evaluation",
+      "title": "UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench",
+      "authors": [
+        "Boxi Yu",
+        "Yuxuan Zhu",
+        "Pinjia He",
+        "Daniel Kang"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "pages": "3762–3774",
+      "doi": "10.18653/v1/2025.acl-long.189",
+      "url": "https://aclanthology.org/2025.acl-long.189/",
+      "primary_verification_urls": [
+        "https://aclanthology.org/2025.acl-long.189/",
+        "https://aclanthology.org/2025.acl-long.189.pdf",
+        "https://pinjiahe.github.io/research/utboost/"
+      ],
+      "verified_evidence": "ACL Anthology's official PDF and BibTeX verify title, authors, year, pages, venue and DOI. The introduction describes test augmentation and comparison of generated/reference patches; the reported work actually finds additional rejected agent patches.",
+      "suggested_sentence": "UTBoost augments SWE-bench tests and reevaluates agent patches previously marked as passing [13].",
+      "insert_at": "Section 2 alongside SWE-bench and SWE-Gate; a more direct evaluation precedent than generic pairwise program comparison alone.",
+      "supports": "Agent patch correctness and benchmark test adequacy are already active evaluation topics with concrete re-evaluation evidence.",
+      "does_not_support": "Our resource increases rejection beyond authentic upstream tests; UTBoost's reported rates transfer to these eight tasks; our literal-gold control is a rerun or refutation of UTBoost.",
+      "compact_reference": "[13] B. Yu et al. (2025). UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench. ACL, 3762–3774. doi:10.18653/v1/2025.acl-long.189."
+    },
+    {
+      "number": 14,
+      "key": "theelx2026pandasdtype",
+      "topic": "persistent/serialization compatibility: direct lineage provenance",
+      "title": "Fix bug with pandas dtypes decoding improperly",
+      "authors": [
+        "Theelx"
+      ],
+      "author_type": "verified GitHub handle, not an inferred personal identity",
+      "year": 2026,
+      "venue": "jsonpickle/jsonpickle, pull request #634",
+      "publication_type": "upstream source and repair record; not peer-reviewed research",
+      "doi": null,
+      "url": "https://github.com/jsonpickle/jsonpickle/pull/634",
+      "primary_verification_urls": [
+        "https://github.com/jsonpickle/jsonpickle/pull/634",
+        "https://api.github.com/repos/jsonpickle/jsonpickle/pulls/634"
+      ],
+      "created_at": "2026-09-23T16:42:34Z",
+      "merged_at": "2026-09-25T12:56:53Z",
+      "merge_commit_sha": "e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da",
+      "verified_evidence": "Official GitHub REST response directly verified author handle, title, dates, commit and body. The body identifies runtime type-order dependent tags and cross-process narrowing since v3.4.0. Public upstream samples do not measure our artifact population.",
+      "suggested_sentence": "The upstream jsonpickle repair already documents process-dependent dtype tags and unintended narrowing [14]; our collision control checks the resulting acceptance contract.",
+      "insert_at": "Section 4 first paragraph or collision paragraph, where the known upstream ambiguity is first attributed.",
+      "supports": "The central serialization defect and conservative numeric preservation motivation were known upstream before this study.",
+      "does_not_support": "Our 267-byte collision, document-exclusion alternative or measured corpus counts came from that PR; the PR is independent peer review or external adoption of this resource.",
+      "compact_reference": "[14] Theelx (2026). Fix bug with pandas dtypes decoding improperly. jsonpickle PR #634. https://github.com/jsonpickle/jsonpickle/pull/634."
+    }
+  ],
+  "compact_integration": {
+    "paragraph": "Determining acceptable behavior is the test-oracle problem [9]. Repair systems can satisfy construction tests while failing independent requirements [10]. Differential testing already recognizes permissible output disagreements [11], and metamorphic testing supplies relations between executions [12]. UTBoost strengthens agent evaluation by augmenting SWE-bench tests [13]. Here, a known serialization defect [14] motivates a narrower curation question: whether a historical-file contract accepts distinct permissible repairs while rejecting corruption.",
+    "use": "Replace repetitive defensive related-work prose rather than append a detached catalogue. Prefer placing [11] and [14] directly in Section 4, and [10]/[13] with agent evaluation. Do not add all six again to this paragraph if distributed citations already cover them.",
+    "body_word_budget": "Six compact references plus around 80 words of substantive positioning should replace existing prose; final total including references and captions must be measured by the root renderer."
+  },
+  "existing_reference_review": [
+    {
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "action": "retain",
+      "reason": "DUPTester, SWE-bench, SWE-Gate, GitChameleon, industrial OpenHands persistence CI and evaluated Gemma family each have a distinct relevant role."
+    },
+    {
+      "numbers": [
+        6,
+        7
+      ],
+      "action": "retain_but_compress",
+      "reason": "Mokav and ChangeGuard are indirect method precedents. One combined sentence is sufficient; neither is a historical-file repair benchmark, adoption proof, or evidence that this resource is more discriminating."
+    },
+    {
+      "number": 4,
+      "action": "narrow_scope",
+      "reason": "Version-conditioned API generation is relevant but differs from repairing immutable producer artifacts. Do not equate GitChameleon's tasks with persistence repair."
+    },
+    {
+      "number": 5,
+      "action": "identify_as_industrial_code",
+      "reason": "Its relevance is direct practical precedence, not peer review or uptake of our resource."
+    },
+    {
+      "number": 7,
+      "action": "check_literal_unicode_escape",
+      "reason": "The current inspected final_content.json again contained literal backslash-u00f6 inside the author name. Render the actual character in Gröninger or use unambiguous Groninger; ensure the build template does not regenerate the literal escape."
+    }
+  ],
+  "consulted_not_selected": [
+    {
+      "key": "yang2024sweagent",
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "authors": [
+        "John Yang",
+        "Carlos E. Jimenez",
+        "Alexander Wettig",
+        "Kilian Lieret",
+        "Shunyu Yao",
+        "Karthik Narasimhan",
+        "Ofir Press"
+      ],
+      "year": 2024,
+      "doi": "10.52202/079017-1601",
+      "url": "https://proceedings.nips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html",
+      "primary_verified": true,
+      "reason_not_selected": "Useful if adding a positive methodological claim about interface effects. Current manuscript merely limits interpretation of its own custom scaffold, so this is optional under the six-addition cap. Do not import its performance numbers."
+    },
+    {
+      "key": "ahmed2026overfitting",
+      "title": "Investigating Test Overfitting on SWE-bench",
+      "authors": [
+        "Toufique Ahmed",
+        "Jatin Ganhotra",
+        "Avraham Shinnar",
+        "Martin Hirzel"
+      ],
+      "year": 2026,
+      "url": "https://research.ibm.com/publications/investigating-test-overfitting-on-swe-bench",
+      "preprint_url": "https://arxiv.org/abs/2511.16858",
+      "primary_verified": "Original revised arXiv paper and IBM Research page verify authors, current title and FSE 2026 publication. Publisher DOI landing page was inaccessible, so no publisher-verified DOI is asserted in this auxiliary record.",
+      "reason_not_selected": "Highly relevant recent alternative to Smith, but redundant for this short paper with Smith and UTBoost retained. Use revised title and 2026 final year, not cached 2025 title 'Is the Cure Still Worse Than the Disease?'."
+    },
+    {
+      "key": "chen1998metamorphic",
+      "title": "Metamorphic Testing: A New Approach for Generating Next Test Cases",
+      "authors": [
+        "T. Y. Chen",
+        "S. C. Cheung",
+        "S. M. Yiu"
+      ],
+      "year": 1998,
+      "url": "https://www.cse.ust.hk/faculty/scc/publ/CS98-01-metamorphictesting.pdf",
+      "primary_verified": true,
+      "reason_not_selected": "Original technical report verified; Segura's survey is the requested compact overview. The 2020 arXiv upload is not the invention year."
+    },
+    {
+      "key": "oracle_serialization_versioning",
+      "title": "Java Object Serialization Specification: 5 - Versioning of Serializable Objects",
+      "corporate_author": "Oracle",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/serialization/version.html",
+      "primary_verified": true,
+      "reason_not_selected": "The normative specification directly establishes old/new class-stream compatibility, but Java-specific type evolution is less useful here than the exact upstream jsonpickle provenance plus existing DUPTester/OpenHands sources. No need to pad the bibliography with it."
+    }
+  ],
+  "scientific_cautions": [
+    "Do not claim that accepting nonidentical correct outputs, separating construction/evaluation tests, relational preservation, or real-release payload replay is a newly invented testing principle.",
+    "The multi-solution study is a resource-level calibration using author-constructed controls, not naturally occurring Gemma overfitting or an authentic upstream-test blind spot.",
+    "UTBoost's extra rejection evidence belongs to its own experiments. Our genuine upstream comparison remains zero additional rejections among two upstream-accepted attempts.",
+    "Do not rename every load/resave sequence 'metamorphic testing'; state the relation being checked, or cite metamorphic work only as background.",
+    "The direct PR citation is important attribution for the central known defect, despite not adding a peer-reviewed paper count.",
+    "Preserve the original eight as requested; no mandatory deletion is justified. Compress weaker method neighbours before sacrificing direct oracle/overfitting/provenance citations."
+  ],
+  "excluded_actions": [
+    "No frozen data/oracle/framework/candidate edits",
+    "No model or GPU calls",
+    "No manuscript, build or release edits"
+  ]
+}

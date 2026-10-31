@@ -1,0 +1,188 @@
+{
+  "status": "COMPLETE",
+  "decision": "PASS",
+  "reviewed_date": "2026-10-30",
+  "reviewer": "/root/prize_panel",
+  "scope": "Final citation alignment, reference-page glyph inspection, and read-only scientific prose review. No manuscript, release, model, or data edits.",
+  "input": {
+    "file": "paper/final_content.json",
+    "sha256": "af657ee3ecfa898466e15a173a72bc8ad116c97a27a5edbc82c73e41a9160d5f",
+    "reference_page_image": "tmp/pdfs/revision-6.png",
+    "declared_word_count": 2497,
+    "word_count_note": "Read the renderer's field; did not independently recalculate PDF words in this citation-focused audit."
+  },
+  "citation_checks": {
+    "number_of_references": 15,
+    "first_appearance_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "consecutive_order": true,
+    "old_to_new_map_bijective": true,
+    "uncited_references": [],
+    "missing_references": [],
+    "sentence_alignment_issues": [],
+    "source_basis": "Earlier primary-source audits in sources/bibliography.json and editorial_revision_reference_audit.json; new reference [15] independently checked against the original arXiv v2 record.",
+    "records": [
+      {
+        "number": 1,
+        "work": "Barr et al. (2015), test-oracle survey",
+        "location": "Section 1, paragraph 2",
+        "assessment": "Correct: supports determining acceptable behavior; not presented as proof that this particular contract is complete."
+      },
+      {
+        "number": 2,
+        "work": "Theelx (2026), jsonpickle PR #634",
+        "location": "Section 3, paragraph 1",
+        "assessment": "Correct direct upstream attribution of process-dependent dtype tags. PYTHONHASHSEED and the specific byte collision also rely on the authors' retained controls, not on the PR alone."
+      },
+      {
+        "number": 3,
+        "work": "McKeeman (1998), Differential Testing for Software",
+        "location": "Section 3, paragraph 2",
+        "assessment": "Correct: original text explicitly permits output differences that both satisfy requirements."
+      },
+      {
+        "number": 4,
+        "work": "Gemma Team (2026), Gemma 4 Technical Report",
+        "location": "Section 4, paragraph 1",
+        "assessment": "Correct model-family attribution; deployment routing and precision are separately identified as experimental settings."
+      },
+      {
+        "number": 5,
+        "work": "Zhang et al. (2021), DUPTester",
+        "location": "Section 5, paragraph 1",
+        "assessment": "Correct distributed-system upgrade precedent; no new upgrade-testing priority is claimed."
+      },
+      {
+        "number": 6,
+        "work": "OpenHands persistence CI PR #3298",
+        "location": "Section 5, paragraph 1",
+        "assessment": "Correct industrial precedent; not represented as peer review or adoption of this resource."
+      },
+      {
+        "number": 7,
+        "work": "Jimenez et al. (2024), SWE-bench",
+        "location": "Section 5, paragraph 1",
+        "assessment": "Correct general benchmark attribution. Historical ECSV example is supported by the previously inspected actual benchmark task, not inferred from the paper title alone."
+      },
+      {
+        "number": 8,
+        "work": "Misra et al. (2026), GitChameleon 2.0",
+        "location": "Section 5, paragraph 1",
+        "assessment": "Correctly scoped to version-conditioned API generation."
+      },
+      {
+        "number": 9,
+        "work": "Smith et al. (2015), repair overfitting",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Correct motivation for independent evaluation; no claim that these Gemma attempts measure natural overfitting."
+      },
+      {
+        "number": 10,
+        "work": "He et al. (2026), SWE-Gate",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Correct distinction between functional success and further constraints; preprint identified in bibliography."
+      },
+      {
+        "number": 11,
+        "work": "Yu et al. (2025), UTBoost",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Correct test-augmentation/evaluation precedent. The next paragraph explicitly preserves our zero-added-discrimination result."
+      },
+      {
+        "number": 12,
+        "work": "Etemadi et al. (2025), Mokav",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Accurate concise behavioral-comparison precedent, jointly cited with ChangeGuard."
+      },
+      {
+        "number": 13,
+        "work": "Gröninger et al. (2025), ChangeGuard",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Accurate concise pairwise behavioral-comparison precedent."
+      },
+      {
+        "number": 14,
+        "work": "Segura et al. (2016), metamorphic-testing survey",
+        "location": "Section 5, paragraph 2",
+        "assessment": "Accurate relation-between-executions background; no automated relation-generation claim."
+      },
+      {
+        "number": 15,
+        "work": "Kassis et al. (2026), Scientific Agent Skills",
+        "location": "Disclosure",
+        "assessment": "Correct title, five-author list, year and DOI verified at https://arxiv.org/abs/2609.00065 (v2). Used only to acknowledge procedural software assistance, not as evidence for research novelty."
+      }
+    ]
+  },
+  "visual_reference_page": {
+    "inspected": true,
+    "groninger_actual_unicode_character": true,
+    "groninger_literal_backslash_escape_absent": true,
+    "groninger_umlaut_visible_in_png": true,
+    "broken_or_missing_glyphs_seen": false,
+    "clipped_reference_text_seen": false,
+    "all_fifteen_entries_visible": true,
+    "layout_note": "Reference page is legible; author accents and hyperlinks display correctly."
+  },
+  "necessary_precision_edit": [
+    {
+      "id": "E_PROCESS_INDEX",
+      "severity": "minor scientific precision",
+      "location": "Section 3, paragraph 1",
+      "current_text": "This is a concrete non-injective encoding: E(x32) = E(x64), although dtype(x32) differs from dtype(x64).",
+      "issue": "The witnessed encodings occur in different producer processes with different runtime type allocations. Writing one unindexed deterministic E can be read as asserting a collision inside one fixed producer mapping, which the experiment did not establish.",
+      "suggested_replacement": "Across producer processes p and q, E_p(x32) = E_q(x64), although dtype(x32) differs from dtype(x64).",
+      "why_it_matters": "The shared-byte decoder impossibility remains valid. The edit simply exposes the runtime state already named in the experimental description instead of suppressing it in the formula.",
+      "requires_new_experiment": false,
+      "effect_on_results": "None",
+      "status": "RESOLVED_IN_REVISION_SOURCE"
+    }
+  ],
+  "prose_and_claims": {
+    "overall": "Substantially clearer and less formulaic than the previous draft: it opens with a concrete witness, explains repair mechanisms and supplies complete outcomes. No further global rewrite is necessary.",
+    "native_numeric_scope": "Explicitly limited in Section 3; plugin/extension universality is disclaimed without turning every paragraph into a warning.",
+    "constructed_controls": "Clearly separated from Gemma both in the body and Figure 2 caption.",
+    "upstream_comparator": "Zero extra discrimination is retained, with the correct denominator of two upstream accepts; literal-gold equality is not presented as the authentic upstream suite.",
+    "model_claims": "Four successes are bounded to the task contract, providers/precision are confounded, service recovery is disclosed, and scaffold problems are not given a causal model-inability interpretation.",
+    "reference_count": "Fourteen research/model/provenance references plus one software acknowledgement; no need to add citations merely for count.",
+    "remaining_style_notes": "No necessary wording changes beyond the indexed encoder notation. The final sentence is a scope statement rather than a novel-method or broad-generalization claim."
+  },
+  "limited_numeric_crosschecks": {
+    "table_h_f_r_sum": "131 + 53 + 68 = 252",
+    "table_acceptances": "A 1/16, B 3/16; total 4/32",
+    "public_and_withheld_files": "17 + 48 = 65",
+    "figure2": "84/84 versus 24/84 for document exclusion, 60 dependent differences; negative 0/84",
+    "pandas_trace_example": "Read retained observations for 93f5c9999ee4: historical failures include the BlockPlacement-versus-slice TypeError, with seven exact-text edit errors already recorded in diagnostics.",
+    "scope": "Not a substitute for the completed experiment audit or a full new visualization audit."
+  },
+  "files_modified": [
+    "results/paper_review/editorial_revision_citations_final.json"
+  ],
+  "fatal_issues": [],
+  "publication_readiness_note": "The sole required notation edit is verified in revision_content.json. No citation or prose issue from this review remains. Root regenerates the final manuscript/PDF; public release permission and author identity remain root/user decisions.",
+  "correction_verified": {
+    "verified": true,
+    "finding_id": "E_PROCESS_INDEX",
+    "source": "paper/revision_content.json",
+    "source_sha256": "520c5f269212c4b209e59e1331ba7bfb0d529b9d8afae151618c9591beef7325",
+    "exact_corrected_sentence": "For producer processes p and q, E_p(x32) = E_q(x64), although dtype(x32) differs from dtype(x64).",
+    "scope": "Verified revised source only; root rebuilds final_content.json and PDF. Reference numbers in revision source are mapped by the build.",
+    "new_experiment_required": false
+  },
+  "unresolved_required_edits": []
+}

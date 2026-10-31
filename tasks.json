@@ -1,0 +1,203 @@
+{
+  "packaging_version_1163": {
+    "project": "packaging",
+    "package": "packaging",
+    "lineage": "packaging_version_1163",
+    "stratum": "upgrade regression",
+    "base": "26.1",
+    "fixed": "26.2",
+    "producers": [
+      "25.0",
+      "26.0"
+    ],
+    "allowed": [
+      "packaging/version.py",
+      "packaging/_structures.py"
+    ],
+    "source_urls": [
+      "https://github.com/pypa/packaging/pull/1163"
+    ],
+    "request": "Repair packaging.version.Version26.1 to read real Version objects saved by25.0 and26.0. Retain values, comparisons, hash/dict/set behavior, current APIs and new-version roundtrips, including normal use then save and reload in a fresh process. Historical source is available. Do not retain stale process-local derived caches.",
+    "artifact_format": "pickle",
+    "scope_limitations": "Development agent task; current constructors and post-restart behavior scored separately",
+    "previously_model_exposed": true,
+    "cases": 36,
+    "public_cases": 4,
+    "unique_historical_bytes": 18
+  },
+  "attrs_slot_state_1085": {
+    "project": "attrs",
+    "package": "attr",
+    "lineage": "attrs_slot_state_1085",
+    "stratum": "upgrade regression",
+    "base": "22.2.0",
+    "fixed": "23.1.0",
+    "producers": [
+      "21.4.0"
+    ],
+    "allowed": [
+      "attr/_make.py"
+    ],
+    "source_urls": [
+      "https://github.com/python-attrs/attrs/pull/1085"
+    ],
+    "request": "Repair attrs22.2 generated restoration of real slotted/frozen/cache-hash class instances saved by21.4. Preserve field values/types, equality/hash collections, mutable/frozen behavior, current dictionary state and resave/reload in a fresh process. Application class definitions are supplied.",
+    "artifact_format": "pickle",
+    "scope_limitations": "Development agent task",
+    "previously_model_exposed": true,
+    "cases": 36,
+    "public_cases": 3,
+    "unique_historical_bytes": 9
+  },
+  "jsonpickle_csv_562": {
+    "project": "jsonpickle",
+    "package": "jsonpickle",
+    "lineage": "jsonpickle_legacy_csv_562",
+    "stratum": "upgrade regression",
+    "base": "4.1.0",
+    "fixed": "4.1.1",
+    "producers": [
+      "3.3.0"
+    ],
+    "allowed": [
+      "jsonpickle/ext/pandas.py"
+    ],
+    "source_urls": [
+      "https://github.com/jsonpickle/jsonpickle/pull/562"
+    ],
+    "request": "Repair jsonpickle4.1.0 pandas decoding of genuine3.3.0 CSV-in-JSON DataFrames. Preserve object/string columns including quotes/newlines and numeric-looking strings, indexes and column names, current encoding/decoding and continued DataFrame use with fresh-process resave/reload. This task is explicitly scoped to text/object-column frames; preserve other current APIs.",
+    "artifact_format": "json",
+    "scope_limitations": "Broader numeric/named-index qualification exposed other known bugs and is retained at results/json_compat/20261030T190804. Text scope isolates legacy-format detection. No model has seen the new task.",
+    "previously_model_exposed": true,
+    "cases": 18,
+    "public_cases": 6,
+    "unique_historical_bytes": 6
+  },
+  "sqlalchemy_mutable_8133": {
+    "project": "sqlalchemy",
+    "package": "sqlalchemy",
+    "lineage": "sqlalchemy_mutable_state_8133_followup",
+    "stratum": "upgrade regression",
+    "base": "1.4.38",
+    "fixed": "1.4.39",
+    "producers": [
+      "1.4.37"
+    ],
+    "allowed": [
+      "sqlalchemy/ext/mutable.py"
+    ],
+    "source_urls": [
+      "https://docs.sqlalchemy.org/en/20/changelog/changelog_14.html#change-1.4.39"
+    ],
+    "request": "Repair SQLAlchemy1.4.38 reading of real1.4.37 ORM objects. Preserve a SINGLE MutableDict property's values and new-format state, correct insertion/deletion dirty tracking and actual SQLite commits, then resave/reload and commit again in a fresh process. Application classes are supplied; implement the library's general state reader, without hardcoded application property names.",
+    "artifact_format": "pickle",
+    "scope_limitations": "Single mutable attribute avoids conflating the old multi-attribute dirty-tracking bug in issue8133 with the subsequent historical-format regression.",
+    "previously_model_exposed": true,
+    "cases": 18,
+    "public_cases": 6,
+    "unique_historical_bytes": 6
+  },
+  "joblib_endian_1561": {
+    "project": "joblib",
+    "package": "joblib",
+    "lineage": "joblib_bigendian_mmap_1561",
+    "stratum": "upgrade regression",
+    "base": "1.4.2",
+    "fixed": "1.5.0",
+    "producers": [
+      "1.2.0"
+    ],
+    "allowed": [
+      "joblib/numpy_pickle.py"
+    ],
+    "source_urls": [
+      "https://github.com/joblib/joblib/pull/1561",
+      "https://numpy.org/doc/1.26/reference/generated/numpy.memmap.html"
+    ],
+    "request": "Repair joblib1.4.2 loading authentic1.2.0 big-endian arrays with mmap_mode='r+'. Numeric values and shape must remain correct, and mutations followed by flush must reach the working file and be visible in a new process. Preserve ordinary load, current dumps and explicit resave/reload. The evaluator copies immutable historical data before any writable mmap operation; do not replace writable mmap with a detached copy.",
+    "artifact_format": "joblib",
+    "scope_limitations": null,
+    "previously_model_exposed": false,
+    "cases": 21,
+    "public_cases": 9,
+    "unique_historical_bytes": 7
+  },
+  "joblib_compressed_1681": {
+    "project": "joblib",
+    "package": "joblib",
+    "lineage": "joblib_compressed_reader_1681",
+    "stratum": "longstanding reader defect on historical artifacts",
+    "base": "1.4.2",
+    "fixed": "1.5.0",
+    "producers": [
+      "1.2.0"
+    ],
+    "allowed": [
+      "joblib/numpy_pickle.py",
+      "joblib/numpy_pickle_utils.py"
+    ],
+    "source_urls": [
+      "https://github.com/joblib/joblib/pull/1681",
+      "https://numpy.org/doc/1.26/reference/generated/numpy.memmap.html"
+    ],
+    "request": "Repair joblib1.4.2 reading genuine1.2.0 compressed zlib/gzip/bz2 arrays when mmap_mode='r' is requested. The documented compressed-file behavior ignores mmap and returns correct ordinary array values/shape. Preserve ordinary load and uncompressed mmap behavior; modification explicitly saved to another file must survive process restart. Compressed mmap does not promise in-place writes. This is a longstanding reader defect, not an asserted new format regression.",
+    "artifact_format": "joblib",
+    "scope_limitations": null,
+    "previously_model_exposed": false,
+    "cases": 21,
+    "public_cases": 9,
+    "unique_historical_bytes": 7
+  },
+  "jsonpickle_dtype_634": {
+    "project": "jsonpickle",
+    "package": "jsonpickle",
+    "lineage": "jsonpickle_numeric_codes_634",
+    "stratum": "cross-process code-assignment incompatibility",
+    "base": "4.1.1",
+    "fixed": "public commit e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da (not a released 5.0.0)",
+    "producers": [
+      "4.1.1"
+    ],
+    "allowed": [
+      "jsonpickle/tags_pd.py",
+      "jsonpickle/ext/pandas.py"
+    ],
+    "source_urls": [
+      "https://github.com/jsonpickle/jsonpickle/pull/634"
+    ],
+    "request": "Repair jsonpickle4.1.1 pandas numeric dtype codes so independent processes retain all numeric values, column/index information, arithmetic and modification/resave/reload. Numeric legacy tags without an explicit width suffix, including pd/i,pd/u,pd/f and pd/in, do not determine the original width: widening in those historical positions is permitted, but kind and exact values must survive. Explicit old numeric width codes and newly encoded objects must retain exact dtype widths. The legacy set is checked in12 fresh reader processes, since class-address iteration order is not controlled by PYTHONHASHSEED. Do not hardcode data, dtype-column names or fixtures. Public checks sample3 independent reader processes; final acceptance uses12.",
+    "artifact_format": "json",
+    "scope_limitations": null,
+    "previously_model_exposed": false,
+    "cases": 84,
+    "public_cases": 10,
+    "unique_historical_bytes": 6,
+    "legacy_ambiguity_rule": "Historical numeric tags without an explicit numeric width suffix permit value/kind-preserving widening; explicit numeric width tags and current new encoding retain exact widths."
+  },
+  "pandas_pickle_56308": {
+    "project": "pandas",
+    "package": "pandas",
+    "lineage": "pandas_block_placement_56308",
+    "stratum": "upgrade regression",
+    "base": "2.1.0",
+    "fixed": "2.1.4",
+    "producers": [
+      "1.3.5"
+    ],
+    "allowed": [
+      "pandas/compat/pickle_compat.py",
+      "pandas/core/internals/blocks.py"
+    ],
+    "source_urls": [
+      "https://github.com/pandas-dev/pandas/issues/55137",
+      "https://github.com/pandas-dev/pandas/pull/56308"
+    ],
+    "request": "Repair pandas2.1.0 read_pickle compatibility with genuine DataFrames saved by1.3.5. Preserve data values, column/index labels, dtypes, selection/aggregation and current construction/roundtrip behavior. A field modification saved using to_pickle must remain correct after a fresh process reload. Do not modify compiled libraries, dependencies or historical files.",
+    "artifact_format": "pickle",
+    "scope_limitations": null,
+    "previously_model_exposed": false,
+    "cases": 18,
+    "public_cases": 6,
+    "unique_historical_bytes": 6
+  }
+}

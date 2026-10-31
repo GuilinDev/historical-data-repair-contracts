@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793400040-ZZJMH5P0R9jXOLMOjQSs",
+  "object": "chat.completion",
+  "created": 1793400040,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I have repaired the `joblib` reader defect where requesting `mmap_mode` on compressed arrays caused a `ValueError` (due to attempting to `mmap` a compressed stream instead of the underlying file).\n\n### Changes Made:\n- **`joblib/numpy_pickle.py`**:\n    - Modified `NumpyArrayWrapper.read_mmap` to detect if the current file handle is a raw file using `_is_raw_file`. If the file handle is not a raw file (indicating it is a compressed stream or a buffer), it now falls back to `self.read_array(unpickler)` instead of attempting to call `make_memmap`.\n    - Modified `NumpyArrayWrapper.read` to ensure that the fallback logic is robust. Although the primary fix is in `read_mmap`, I ensured `read` correctly delegates to `read_mmap` when `allow_mmap` is true, and the new logic in `read_mmap` handles the compression case by returning the uncompressed array.\n\n### Checks Performed:\n- Ran the `legacy` test suite.\n- **Initial Result**: Failed with `ValueError: mmap length is greater than file size` for compressed historical artifacts.\n- **Final Result**: All 9 tests passed (3 historical, 3 fresh_api, 3 current_roundtrip), confirming that compressed arrays are now correctly loaded into memory when `mmap_mode` is requested, while uncompressed arrays still benefit from memory mapping.\n\n### Unresolved Work:\nNone. The implementation adheres to the documented behavior: compressed files ignore `mmap` and return correct ordinary array values, while uncompressed files preserve `mmap` functionality.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 35339,
+    "completion_tokens": 366,
+    "total_tokens": 35705,
+    "cost": 0.000364716,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 4,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000364716,
+      "upstream_inference_prompt_cost": 0.00035337,
+      "upstream_inference_completions_cost": 1.1346e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

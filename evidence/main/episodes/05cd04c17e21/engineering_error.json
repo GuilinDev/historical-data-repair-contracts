@@ -1,0 +1,17 @@
+{
+  "episode": "05cd04c17e21",
+  "family": "jsonpickle_dtype_634",
+  "project": "jsonpickle",
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "primeintellect/bf16",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "protocol_complete": false,
+  "all_checks_passed": false,
+  "execution_status": "infrastructure_error",
+  "error": "RuntimeError: API engineering failure HTTP 429; preserved locally",
+  "passed": null,
+  "n": null,
+  "groups": {}
+}

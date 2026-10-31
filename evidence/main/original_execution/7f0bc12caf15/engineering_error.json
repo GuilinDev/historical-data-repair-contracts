@@ -1,0 +1,17 @@
+{
+  "episode": "7f0bc12caf15",
+  "family": "pandas_pickle_56308",
+  "project": "pandas",
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "primeintellect/bf16",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "protocol_complete": false,
+  "all_checks_passed": false,
+  "execution_status": "infrastructure_error",
+  "error": "RuntimeError: API engineering failure HTTP 429; preserved locally",
+  "passed": null,
+  "n": null,
+  "groups": {}
+}

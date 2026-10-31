@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "schemas": 10,
+  "comparison": "Exact JSON equality to the frozen main schema; zero API calls"
+}

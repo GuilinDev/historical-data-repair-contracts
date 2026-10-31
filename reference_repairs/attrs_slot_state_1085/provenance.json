@@ -1,0 +1,40 @@
+{
+  "task": "attrs_slot_state_1085",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "22.2.0",
+  "fixed": "23.1.0",
+  "source_urls": [
+    "https://github.com/python-attrs/attrs/pull/1085"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_review/upstream_comparator/primary/attrs_pr.patch",
+      "sha256": "17d6bad1412a1434f4eaaa4b495e28025e3465c220791f0a1d74452e0a16be08"
+    },
+    {
+      "path": "results/ready_review/upstream_comparator/primary/attrs_pr.json",
+      "sha256": "8d412b071fbe93cafd2e6b0d4ab5a330dfe395087958effe4095c11c7d501eca"
+    }
+  ],
+  "adaptation": [
+    "Exact 23.1 slots_setstate function backported to 22.2. Supports historical tuple and current dictionary states, retaining hash-cache reset. No future _compat.get_generic_base import or other whole-file changes."
+  ],
+  "whole_allowed_files_transplanted": [],
+  "allowed_paths": [
+    "attr/_make.py"
+  ],
+  "changed_paths": [
+    "attr/_make.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "attr/_make.py",
+      "base_sha256": "31d607a165c9d969503593cc4d7e209013b4e9080fc9bdeac12592c5a27a4158",
+      "candidate_sha256": "26d5c0b839665612ba8debcfa4bfcce44b8e49461cf881807c51bfc67ccb5c08",
+      "fixed_sha256": "248c8a57e1d187721c1e2f84bce8f6770ead468a804e5c769011c5aebc59a64d"
+    }
+  ],
+  "unchanged_base_files": 38,
+  "reference_patch_sha256": "9e0de809bd534299f160850a869a76f5d9ccb1c2ad1487f59150601e6fe48890"
+}

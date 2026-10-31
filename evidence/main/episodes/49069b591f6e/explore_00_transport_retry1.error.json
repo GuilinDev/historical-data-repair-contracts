@@ -1,0 +1,4 @@
+{
+  "status": 429,
+  "body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"PrimeIntellect\",\"is_byok\":false,\"provider_error_code\":\"rate_limited\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":2,\"retry_after_seconds_raw\":2,\"headers\":{\"Retry-After\":\"2\"}}},\"user_id\":\"<api-account-id>\"}"
+}

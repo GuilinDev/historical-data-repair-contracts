@@ -1,0 +1,27 @@
+[
+  {
+    "id": "3bb8fc1e1e1f",
+    "group": "historical",
+    "input": {
+      "values": [
+        109,
+        -61,
+        503,
+        712,
+        31,
+        -13
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 4301,
+      "preservation_mode": "native_writable_mmap"
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\joblib_endian_1561\\artifacts\\3bb8fc1e1e1f.pickle"
+  }
+]

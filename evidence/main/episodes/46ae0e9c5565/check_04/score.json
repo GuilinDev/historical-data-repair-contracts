@@ -1,0 +1,463 @@
+{
+  "execution_status": "observed",
+  "passed": 0,
+  "n": 6,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 2
+    },
+    "fresh_api": {
+      "passed": 0,
+      "n": 2
+    },
+    "current_roundtrip": {
+      "passed": 0,
+      "n": 2
+    }
+  },
+  "records": [
+    {
+      "id": "e2914c218f46",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "e2914c218f46",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 213, in restore\n    type_codes = rle_decode(rle_types)\nNameError: name 'rle_types' is not defined\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "50946b82bba2",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "50946b82bba2",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 213, in restore\n    type_codes = rle_decode(rle_types)\nNameError: name 'rle_types' is not defined\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "ded19ee5e4fa",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "ded19ee5e4fa",
+        "group": "current_roundtrip",
+        "status": "program_error",
+        "error": "NameError: name 'rle_types' is not defined"
+      }
+    },
+    {
+      "id": "8f9dea76ea8e",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "8f9dea76ea8e",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 213, in restore\n    type_codes = rle_decode(rle_types)\nNameError: name 'rle_types' is not defined\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1831c39d6ca7",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "1831c39d6ca7",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 213, in restore\n    type_codes = rle_decode(rle_types)\nNameError: name 'rle_types' is not defined\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4198e7620fe1",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "4198e7620fe1",
+        "group": "current_roundtrip",
+        "status": "program_error",
+        "error": "NameError: name 'rle_types' is not defined"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

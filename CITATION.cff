@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using these repair contracts or experimental records."
+type: software
+title: "Historical-Data Repair Contracts for Gemma Agents"
+authors:
+  - family-names: Zhang
+    given-names: Guilin
+version: 0.1.0
+date-released: 2026-10-31
+url: "https://github.com/GuilinDev/historical-data-repair-contracts"
+repository-code: "https://github.com/GuilinDev/historical-data-repair-contracts"
+license: Apache-2.0

@@ -1,0 +1,1 @@
+{"py/object": "pandas.core.frame.DataFrame", "values": "{\"x\": [1.125, -3.25]}", "txt": true, "meta": {"dtypes_rle": [["pd/f", 1]], "index": "[0, 1]", "index_names": null, "columns": "[\"x\"]", "column_names": null, "is_multiindex": false, "is_multicolumns": false}}

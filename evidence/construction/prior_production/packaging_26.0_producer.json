@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b7c0ed5006ea",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\b7c0ed5006ea.pickle",
+    "visible": true
+  },
+  {
+    "id": "e3616699a173",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\e3616699a173.pickle",
+    "visible": false
+  },
+  {
+    "id": "00c0d5a16501",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\00c0d5a16501.pickle",
+    "visible": false
+  },
+  {
+    "id": "96bd32dd87c5",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\96bd32dd87c5.pickle",
+    "visible": false
+  },
+  {
+    "id": "a1bf3422b60a",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\a1bf3422b60a.pickle",
+    "visible": false
+  },
+  {
+    "id": "f6169908dd63",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\f6169908dd63.pickle",
+    "visible": false
+  },
+  {
+    "id": "2341b59753c8",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\2341b59753c8.pickle",
+    "visible": false
+  },
+  {
+    "id": "f542ed0c01b9",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\f542ed0c01b9.pickle",
+    "visible": false
+  },
+  {
+    "id": "7aa598784c8f",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\7aa598784c8f.pickle",
+    "visible": false
+  },
+  {
+    "id": "000b13502d31",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\000b13502d31.pickle",
+    "visible": false
+  },
+  {
+    "id": "e338f1cb3c5b",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\e338f1cb3c5b.pickle",
+    "visible": false
+  },
+  {
+    "id": "df77cf52e965",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\packaging\\artifacts\\df77cf52e965.pickle",
+    "visible": false
+  }
+]

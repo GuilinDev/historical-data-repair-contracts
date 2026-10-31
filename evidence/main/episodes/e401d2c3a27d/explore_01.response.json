@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793397815-kfztQN2I2XhHiMJJwHAd",
+  "object": "chat.completion",
+  "created": 1793397815,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_3a3d8dae070548058d41d6d68f6e6e73",
+            "function": {
+              "name": "read_source",
+              "arguments": "{\"path\":\"joblib/numpy_pickle.py\"}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2732,
+    "completion_tokens": 22,
+    "total_tokens": 2754,
+    "cost": 4.4325e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2641,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 4.4325e-05,
+      "upstream_inference_prompt_cost": 4.2345e-05,
+      "upstream_inference_completions_cost": 1.98e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

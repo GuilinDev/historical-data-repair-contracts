@@ -1,0 +1,12 @@
+{
+  "command": [
+    "docker",
+    "info",
+    "--format",
+    "{{.Architecture}}"
+  ],
+  "exit": 0,
+  "stdout": "aarch64\n",
+  "stderr": "",
+  "wall_seconds": 0.045383559074252844
+}

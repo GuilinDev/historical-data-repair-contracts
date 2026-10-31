@@ -1,0 +1,55 @@
+Free validation CLI (native Linux ARM64, Python 3.10+ host, local Docker)
+
+python3 compat.py integrity
+python3 compat.py list
+python3 compat.py bootstrap --pull
+python3 compat.py reproduce --controls base,fixed,reference
+python3 compat.py reproduce --task attrs_slot_state_1085 --controls reference
+python3 compat.py verify --task attrs_slot_state_1085 --candidate ./my-candidate
+python3 compat.py verify --task attrs_slot_state_1085 --candidate ./repair.patch
+python3 compat.py verify --task attrs_slot_state_1085 --candidate ./exact-edits.json
+
+The initial --pull fetches the pinned image digest. If that image is already
+available, omit --pull. Wheel installation itself and all evaluations have
+network disabled. No API or GPU is used. Every bootstrap creates fresh target
+directories and retains failed attempts; a successful installation is selected
+by .local/installation.json. Existing Python installations are never reused.
+The Docker image cache can be warm; installation receipts distinguish it from
+the fresh package targets.
+
+--candidate accepts a complete copy of bundle/packages/<task>/base, an ordinary
+unified diff, or JSON {"edits":[{"path":"...","old":"...","new":"..."}]}.
+Only paths in tasks.json plus tests/test_regression.py may differ from base.
+The verifier parses source syntax but never imports candidate code on the host.
+Directories, patches and references use the same whitelist check. Renames,
+binary patches, symlinks and patch-based source deletions are not supported.
+The fixed control is a complete upstream release for calibration; it is not
+represented as a candidate satisfying the edit whitelist. The reference control
+is the whitelisted repair already independently reviewed for solvability.
+
+verify exits 0 for all selected checks passing, 1 for semantic/execution failure,
+and 2 for invalid input or setup failure. reproduce expects base to expose at
+least one historical defect and fixed/reference to pass every observation.
+All observations, stderr, runtime receipts, whitelist decisions and scores are
+saved under results/ unless --output specifies a new directory.
+
+--scope public and --scope current expose only the public fixture mount.
+All-scope verification checks the full released data against existing host-side
+oracle files. Oracle files are never mounted in candidate containers or rewritten.
+This is an open release, not a secure hidden leaderboard: anyone can inspect the
+released oracle outside the tool boundary. General-repair source review remains
+necessary to reject hardcoded fixtures or fabricated observations.
+
+There are 8 defect lineages, 6 projects, 65 distinct historical files and 252
+observations per all-task control. Process repetitions are not independent bugs.
+All candidates execute with 1 CPU, 1GB memory, no network, no GPU, read-only
+mounts, dropped capabilities and a bounded 300-second evaluation timeout.
+Historical producer directories are explanatory source copies, not complete
+cross-platform producer environments. Their exact versions and distribution
+identities are recorded in provenance/; the immutable produced files are included.
+
+Data and source archive licenses are supplied in provenance/licenses. Large
+upstream verification archives are represented by official URLs and SHA256 in
+provenance; the exact thirteen runtime/test wheels are included in wheelhouse/.
+No original missing installation logs have been reconstructed. See the portable
+provenance inventories for generated-bytecode/installer exceptions.

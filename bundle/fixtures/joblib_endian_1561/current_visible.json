@@ -1,0 +1,134 @@
+[
+  {
+    "id": "6ab5bcd8a29e_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "6ab5bcd8a29e_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "55fe29031f23_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "55fe29031f23_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "3bb8fc1e1e1f_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        109,
+        -61,
+        503,
+        712,
+        31,
+        -13
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 4301,
+      "preservation_mode": "native_writable_mmap"
+    },
+    "visible": true
+  },
+  {
+    "id": "3bb8fc1e1e1f_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        109,
+        -61,
+        503,
+        712,
+        31,
+        -13
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 4301,
+      "preservation_mode": "native_writable_mmap"
+    },
+    "visible": true
+  }
+]

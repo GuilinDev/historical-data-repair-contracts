@@ -1,0 +1,1021 @@
+{
+  "dataset": "20261030T212309",
+  "status": "FROZEN_CONTROL_TABLE_ONLY_NO_MAIN_OUTCOMES",
+  "rows": [
+    {
+      "task": "packaging_version_1163",
+      "project": "packaging",
+      "stratum": "upgrade regression",
+      "producer_versions": "25.0; 26.0",
+      "affected_reader": "26.1",
+      "fixed_reader_or_commit": "26.2",
+      "upstream_url": "https://github.com/pypa/packaging/pull/1163",
+      "historical_unique_artifacts": 18,
+      "public_unique_artifacts": 2,
+      "unseen_unique_artifacts": 16,
+      "historical_observations": 18,
+      "fresh_api_preservation_observations": 6,
+      "current_roundtrip_preservation_observations": 12,
+      "all_observations": 36,
+      "base_passed": 12,
+      "fixed_passed": 36,
+      "allowed_edit_reference_passed": 36,
+      "previously_model_exposed_lineage": true,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "project": "attrs",
+      "stratum": "upgrade regression",
+      "producer_versions": "21.4.0",
+      "affected_reader": "22.2.0",
+      "fixed_reader_or_commit": "23.1.0",
+      "upstream_url": "https://github.com/python-attrs/attrs/pull/1085",
+      "historical_unique_artifacts": 9,
+      "public_unique_artifacts": 1,
+      "unseen_unique_artifacts": 8,
+      "historical_observations": 9,
+      "fresh_api_preservation_observations": 9,
+      "current_roundtrip_preservation_observations": 18,
+      "all_observations": 36,
+      "base_passed": 27,
+      "fixed_passed": 36,
+      "allowed_edit_reference_passed": 36,
+      "previously_model_exposed_lineage": true,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "project": "jsonpickle",
+      "stratum": "upgrade regression",
+      "producer_versions": "3.3.0",
+      "affected_reader": "4.1.0",
+      "fixed_reader_or_commit": "4.1.1",
+      "upstream_url": "https://github.com/jsonpickle/jsonpickle/pull/562",
+      "historical_unique_artifacts": 6,
+      "public_unique_artifacts": 2,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 6,
+      "fresh_api_preservation_observations": 6,
+      "current_roundtrip_preservation_observations": 6,
+      "all_observations": 18,
+      "base_passed": 12,
+      "fixed_passed": 18,
+      "allowed_edit_reference_passed": 18,
+      "previously_model_exposed_lineage": true,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "project": "sqlalchemy",
+      "stratum": "upgrade regression",
+      "producer_versions": "1.4.37",
+      "affected_reader": "1.4.38",
+      "fixed_reader_or_commit": "1.4.39",
+      "upstream_url": "https://docs.sqlalchemy.org/en/20/changelog/changelog_14.html#change-1.4.39",
+      "historical_unique_artifacts": 6,
+      "public_unique_artifacts": 2,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 6,
+      "fresh_api_preservation_observations": 6,
+      "current_roundtrip_preservation_observations": 6,
+      "all_observations": 18,
+      "base_passed": 12,
+      "fixed_passed": 18,
+      "allowed_edit_reference_passed": 18,
+      "previously_model_exposed_lineage": true,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "joblib_endian_1561",
+      "project": "joblib",
+      "stratum": "upgrade regression",
+      "producer_versions": "1.2.0",
+      "affected_reader": "1.4.2",
+      "fixed_reader_or_commit": "1.5.0",
+      "upstream_url": "https://github.com/joblib/joblib/pull/1561",
+      "historical_unique_artifacts": 7,
+      "public_unique_artifacts": 3,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 7,
+      "fresh_api_preservation_observations": 7,
+      "current_roundtrip_preservation_observations": 7,
+      "all_observations": 21,
+      "base_passed": 9,
+      "fixed_passed": 21,
+      "allowed_edit_reference_passed": 21,
+      "previously_model_exposed_lineage": false,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "project": "joblib",
+      "stratum": "longstanding reader defect on historical artifacts",
+      "producer_versions": "1.2.0",
+      "affected_reader": "1.4.2",
+      "fixed_reader_or_commit": "1.5.0",
+      "upstream_url": "https://github.com/joblib/joblib/pull/1681",
+      "historical_unique_artifacts": 7,
+      "public_unique_artifacts": 3,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 7,
+      "fresh_api_preservation_observations": 7,
+      "current_roundtrip_preservation_observations": 7,
+      "all_observations": 21,
+      "base_passed": 9,
+      "fixed_passed": 21,
+      "allowed_edit_reference_passed": 21,
+      "previously_model_exposed_lineage": false,
+      "nonpublic_rows_reusing_public_bytes": 0
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "project": "jsonpickle",
+      "stratum": "cross-process code-assignment incompatibility",
+      "producer_versions": "4.1.1",
+      "affected_reader": "4.1.1",
+      "fixed_reader_or_commit": "public commit e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da (not a released 5.0.0)",
+      "upstream_url": "https://github.com/jsonpickle/jsonpickle/pull/634",
+      "historical_unique_artifacts": 6,
+      "public_unique_artifacts": 2,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 72,
+      "fresh_api_preservation_observations": 6,
+      "current_roundtrip_preservation_observations": 6,
+      "all_observations": 84,
+      "base_passed": 1,
+      "fixed_passed": 84,
+      "allowed_edit_reference_passed": 84,
+      "previously_model_exposed_lineage": false,
+      "nonpublic_rows_reusing_public_bytes": 18
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "project": "pandas",
+      "stratum": "upgrade regression",
+      "producer_versions": "1.3.5",
+      "affected_reader": "2.1.0",
+      "fixed_reader_or_commit": "2.1.4",
+      "upstream_url": "https://github.com/pandas-dev/pandas/issues/55137",
+      "historical_unique_artifacts": 6,
+      "public_unique_artifacts": 2,
+      "unseen_unique_artifacts": 4,
+      "historical_observations": 6,
+      "fresh_api_preservation_observations": 6,
+      "current_roundtrip_preservation_observations": 6,
+      "all_observations": 18,
+      "base_passed": 12,
+      "fixed_passed": 18,
+      "allowed_edit_reference_passed": 18,
+      "previously_model_exposed_lineage": false,
+      "nonpublic_rows_reusing_public_bytes": 0
+    }
+  ],
+  "totals": {
+    "historical_unique_artifacts": 65,
+    "public_unique_artifacts": 17,
+    "unseen_unique_artifacts": 48,
+    "historical_observations": 131,
+    "fresh_api_preservation_observations": 53,
+    "current_roundtrip_preservation_observations": 68,
+    "all_observations": 252,
+    "base_passed": 94,
+    "fixed_passed": 252,
+    "allowed_edit_reference_passed": 252,
+    "nonpublic_rows_reusing_public_bytes": 18
+  },
+  "task_details": {
+    "packaging_version_1163": {
+      "scores": {
+        "base": {
+          "n": 36,
+          "passed": 12,
+          "groups": {
+            "historical": {
+              "n": 18,
+              "initial_passed": 0,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 4,
+              "both_passed": 4
+            },
+            "current_roundtrip": {
+              "n": 12,
+              "initial_passed": 12,
+              "restart_passed": 8,
+              "both_passed": 8
+            }
+          }
+        },
+        "fixed": {
+          "n": 36,
+          "passed": 36,
+          "groups": {
+            "historical": {
+              "n": 18,
+              "initial_passed": 18,
+              "restart_passed": 18,
+              "both_passed": 18
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 12,
+              "initial_passed": 12,
+              "restart_passed": 12,
+              "both_passed": 12
+            }
+          }
+        },
+        "reference": {
+          "n": 36,
+          "passed": 36,
+          "groups": {
+            "historical": {
+              "n": 18,
+              "initial_passed": 18,
+              "restart_passed": 18,
+              "both_passed": 18
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 12,
+              "initial_passed": 12,
+              "restart_passed": 12,
+              "both_passed": 12
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "cc18e3ce21cec98667d1df572de295b92422e65f02c39da6a77f6d311889d45f",
+        "d4c2f7538ddff4590ffe3c49b9ae9b248cba8e248d559609a586a439655c224c"
+      ],
+      "truly_unseen_historical_sha256": [
+        "1ada33ce79c50d26c4ccf0a817291fb7a612db8b2195f88d46d2554284ca6bce",
+        "231636335a35d3aa4999ffd7d18cc134ffb7aab79c3593a35a51bb6e3f39a8b3",
+        "3b69da60a1b0eff01ea19ffa7cef693cee5e010f9999b1a88f1569a74985519c",
+        "40137a15c5b61d469b523f531e7573b76720406c303c1a3c67354adf9388999f",
+        "492c5208d861fe8500f34317e090f0686f0a6114005493cfc1f2ada6b8927457",
+        "4e80827ea329e64ce7e4f9d9ebe73f195fc11e566fb51f868ed9968fc9816947",
+        "5af49ac8196604ad4900ccd2ae4ca8aa85cb37510695412f471af0e48d7ceece",
+        "66987b51b76d2a0594a0380faa92ffa2cf9bfffde35f262fe732066a9bf47c9b",
+        "705390b060e6c311f319ddd7c17889d65de92f986e893567343cf8ad58ac8132",
+        "7aa993344ec5884750f0cc05133cf99dbf2653c54dc85f1daea227d70125ed02",
+        "afd0cde6c0812829a399ad3bb0cb73c21d988dbcb526764a8857305dd9c0d237",
+        "b89d577ad22d896c15a3545a58bb050d01f5fb854b59870224c1ecc8b12217f6",
+        "c7f8847f87956910d56f3541baf67a900b61445361ae771eaacda262dc82790a",
+        "cd1d628c5dfb340048dc38414b00bd4985c3ce3a44d18499fd970d34bfe2953b",
+        "e104a71fac8ebfe821b4425cac0d2389c43449f0513e59038f42a74327d8ad08",
+        "e9c84c036892b09c71a4fb567f5a006e5d0dba5c590e09b4ba773a88aaadbe82"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "packaging/version.py",
+        "packaging/_structures.py"
+      ],
+      "request": "Repair packaging.version.Version26.1 to read real Version objects saved by25.0 and26.0. Retain values, comparisons, hash/dict/set behavior, current APIs and new-version roundtrips, including normal use then save and reload in a fresh process. Historical source is available. Do not retain stale process-local derived caches."
+    },
+    "attrs_slot_state_1085": {
+      "scores": {
+        "base": {
+          "n": 36,
+          "passed": 27,
+          "groups": {
+            "historical": {
+              "n": 9,
+              "initial_passed": 0,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 9,
+              "initial_passed": 9,
+              "restart_passed": 9,
+              "both_passed": 9
+            },
+            "current_roundtrip": {
+              "n": 18,
+              "initial_passed": 18,
+              "restart_passed": 18,
+              "both_passed": 18
+            }
+          }
+        },
+        "fixed": {
+          "n": 36,
+          "passed": 36,
+          "groups": {
+            "historical": {
+              "n": 9,
+              "initial_passed": 9,
+              "restart_passed": 9,
+              "both_passed": 9
+            },
+            "fresh_api": {
+              "n": 9,
+              "initial_passed": 9,
+              "restart_passed": 9,
+              "both_passed": 9
+            },
+            "current_roundtrip": {
+              "n": 18,
+              "initial_passed": 18,
+              "restart_passed": 18,
+              "both_passed": 18
+            }
+          }
+        },
+        "reference": {
+          "n": 36,
+          "passed": 36,
+          "groups": {
+            "historical": {
+              "n": 9,
+              "initial_passed": 9,
+              "restart_passed": 9,
+              "both_passed": 9
+            },
+            "fresh_api": {
+              "n": 9,
+              "initial_passed": 9,
+              "restart_passed": 9,
+              "both_passed": 9
+            },
+            "current_roundtrip": {
+              "n": 18,
+              "initial_passed": 18,
+              "restart_passed": 18,
+              "both_passed": 18
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "489bd5e9a99f64d656d69ed79f335bc8d3a1d3d58b1d567d5aa1d2fbd93ded47"
+      ],
+      "truly_unseen_historical_sha256": [
+        "5cd45bb9000edaed1facf7adc70e41e1ac2695173af4339bca361ab8e4ea1093",
+        "65d1a02374aea61550a7f99195cf5f110ad41324471fb0c743636f1bc1cbad7c",
+        "6c3357252c310ddea5e1203fc9f2ec4e95df6001af5ca1886e57dfcfb94be856",
+        "77522630038f44435bc49df93b0d07a87610c2446bbe240b448b123076c92adc",
+        "bd80cf429dac0af98f8de31a275dc17f13650083ac3dd8ad33655f30c36f4b04",
+        "ce5b242c311e920f748bb50ead7cc56af5620612615b46ace4cb039fede97efd",
+        "dfef2a6cad0d176afa955215b1bd3afd718d0e8b03ae01dcca54f3104a5af643",
+        "fdf71e1fb3dbdd6bff07059ab6d82b7f10b87c19c14598afdfaa560d98a702eb"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "attr/_make.py"
+      ],
+      "request": "Repair attrs22.2 generated restoration of real slotted/frozen/cache-hash class instances saved by21.4. Preserve field values/types, equality/hash collections, mutable/frozen behavior, current dictionary state and resave/reload in a fresh process. Application class definitions are supplied."
+    },
+    "jsonpickle_csv_562": {
+      "scores": {
+        "base": {
+          "n": 18,
+          "passed": 12,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 0,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "fixed": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "reference": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "6048838eabb7bd3d7063a7c001e56a1cd7294e1be25b8dc487600617dac8d299",
+        "b7245e186a56748d2113e768ffb7557b6d457937e038c2bce416049f1fba12fa"
+      ],
+      "truly_unseen_historical_sha256": [
+        "05f13481cf5c12694b87d57f1185aabb8e92f43f15741847bd9d34760c00f6b7",
+        "6cf6ad466645a6670cc50e8b9bce93708433952166040f94fb11ac19677989d7",
+        "8682df41d15d359ca2dd19ac3cb1d18ba27fb547cf78e61c8c0de2f89b82c511",
+        "a6b2b20796a5e2fd59f52de80b44102f58437f25e1c6e59e737237eab789afd8"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "request": "Repair jsonpickle4.1.0 pandas decoding of genuine3.3.0 CSV-in-JSON DataFrames. Preserve object/string columns including quotes/newlines and numeric-looking strings, indexes and column names, current encoding/decoding and continued DataFrame use with fresh-process resave/reload. This task is explicitly scoped to text/object-column frames; preserve other current APIs."
+    },
+    "sqlalchemy_mutable_8133": {
+      "scores": {
+        "base": {
+          "n": 18,
+          "passed": 12,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 0,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "fixed": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "reference": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "04eac9b2ecfe8a198cc7a9a111a1e433b2f6c9e612df79cb35b78debafb07ae6",
+        "78b18d1e1f9d750796bf60fd70cd0218f716e8ab43d2435cf3e6b3a3e6a88eb7"
+      ],
+      "truly_unseen_historical_sha256": [
+        "3113e008b777767128579763aaba7abbf2ae077ac3dc0e3229f19054785c118e",
+        "560b265bbd0281586aa8e1b9b81b0aa647be975b8e5e86fa23d4e8ef7d6b9d58",
+        "e6631329c50d19fff3d8fb623d64607426b6c634c1d5b3b3659077d2c293b1d4",
+        "ec63de0d33e5d2dbe7e05fab987338d9aca63cb0cb15e42d60906f7612bb940c"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "request": "Repair SQLAlchemy1.4.38 reading of real1.4.37 ORM objects. Preserve a SINGLE MutableDict property's values and new-format state, correct insertion/deletion dirty tracking and actual SQLite commits, then resave/reload and commit again in a fresh process. Application classes are supplied; implement the library's general state reader, without hardcoded application property names."
+    },
+    "joblib_endian_1561": {
+      "scores": {
+        "base": {
+          "n": 21,
+          "passed": 9,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 1,
+              "restart_passed": 7,
+              "both_passed": 1
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 1,
+              "restart_passed": 7,
+              "both_passed": 1
+            }
+          }
+        },
+        "fixed": {
+          "n": 21,
+          "passed": 21,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            }
+          }
+        },
+        "reference": {
+          "n": 21,
+          "passed": 21,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "33652d96f0d32701a2b6a779c242aae2cf2064c6d93c8025ece668f973966e2a",
+        "59e441fad82bc857ff4b48906df792b0d8337631b6791d49a28bc6d2bfc460a8",
+        "bcda62a30cdd6371903285f17ab01dc18d9f4d5ccef098818096cd00ad7389b2"
+      ],
+      "truly_unseen_historical_sha256": [
+        "4e7a3fd66591a24c63b6fc40a6b6ecc36eb91b7dd3db31e3d805dc114db41e96",
+        "58e361e25f20da99ed9a106d9b2606e6f8104614a606c25cf694186821da54bb",
+        "7a8a51b36ca00f994e29db6d58458367e166ea1921c3932373d840dc4fa9eb7b",
+        "fb1787d5699a56ee1dc3af0a4c18ff8fc743fd89735af7eb68565f9b215c6f1f"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "request": "Repair joblib1.4.2 loading authentic1.2.0 big-endian arrays with mmap_mode='r+'. Numeric values and shape must remain correct, and mutations followed by flush must reach the working file and be visible in a new process. Preserve ordinary load, current dumps and explicit resave/reload. The evaluator copies immutable historical data before any writable mmap operation; do not replace writable mmap with a detached copy."
+    },
+    "joblib_compressed_1681": {
+      "scores": {
+        "base": {
+          "n": 21,
+          "passed": 9,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 1,
+              "restart_passed": 1,
+              "both_passed": 1
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 1,
+              "restart_passed": 1,
+              "both_passed": 1
+            }
+          }
+        },
+        "fixed": {
+          "n": 21,
+          "passed": 21,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            }
+          }
+        },
+        "reference": {
+          "n": 21,
+          "passed": 21,
+          "groups": {
+            "historical": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "fresh_api": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            },
+            "current_roundtrip": {
+              "n": 7,
+              "initial_passed": 7,
+              "restart_passed": 7,
+              "both_passed": 7
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "42d1720422f43a44dc5626589940dbcde4b28ad641a7a0acf8c6c20ec6429f77",
+        "4bca274582db83c5766e860871f66ea19f9f52da3e7bf55f45e608163a7894f8",
+        "b4e6b8fefa94b96313c807d025bbd4cb884b8263209eefb6cb96f7d413ec1ec9"
+      ],
+      "truly_unseen_historical_sha256": [
+        "196d07fca83581eac7a8b31d2be5fb2922b0bcec3bd1252eae3ffc9a338f7b9e",
+        "9763614efe7dfee678aa8d3eeff40223e89f4fd695b62ea4aca8c8600355534c",
+        "994fb549c2676a41b37e2994aafe468bbdee7f64b690bf68e018dc83eb13c3f4",
+        "d918d2a312f7bccfc5822b7ca7b6c1cd7a63fa1b6094dc200cc50d68d97ef88d"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "joblib/numpy_pickle.py",
+        "joblib/numpy_pickle_utils.py"
+      ],
+      "request": "Repair joblib1.4.2 reading genuine1.2.0 compressed zlib/gzip/bz2 arrays when mmap_mode='r' is requested. The documented compressed-file behavior ignores mmap and returns correct ordinary array values/shape. Preserve ordinary load and uncompressed mmap behavior; modification explicitly saved to another file must survive process restart. Compressed mmap does not promise in-place writes. This is a longstanding reader defect, not an asserted new format regression."
+    },
+    "jsonpickle_dtype_634": {
+      "scores": {
+        "base": {
+          "n": 84,
+          "passed": 1,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "initial_passed": 11,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 1,
+              "both_passed": 1
+            }
+          }
+        },
+        "fixed": {
+          "n": 84,
+          "passed": 84,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "initial_passed": 72,
+              "restart_passed": 72,
+              "both_passed": 72
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "reference": {
+          "n": 84,
+          "passed": 84,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "initial_passed": 72,
+              "restart_passed": 72,
+              "both_passed": 72
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "197464822b71e5fcb7e42fa37d20f897f3fcbf0710528f1fbaae0d4ec418038e",
+        "3362c94956511ff782a51c5d4a6b8b3295e0d4714687a80a791d6a9e9367e35a"
+      ],
+      "truly_unseen_historical_sha256": [
+        "42b0d8c5aa5e29fd22a9435225b48a14cf8551cc2a65b4439e554e7d0e5e44ce",
+        "5c09886b5eb63c01a7c1d95a5e2bec5914e9b8ed0725207daebb74e190ed7416",
+        "6f38a0a0ac10f9970d0c12dcb4ff633684af0aa317ebc757a2357d8480f116bd",
+        "bf5a21b68e689b10d8022f9c388beece943c964d06b5f5883a0a12110193eb86"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [
+        "bd22465b6441_r03",
+        "bd22465b6441_r04",
+        "bd22465b6441_r05",
+        "bd22465b6441_r06",
+        "bd22465b6441_r07",
+        "bd22465b6441_r08",
+        "bd22465b6441_r09",
+        "bd22465b6441_r10",
+        "bd22465b6441_r11",
+        "f28de1e4a98b_r03",
+        "f28de1e4a98b_r04",
+        "f28de1e4a98b_r05",
+        "f28de1e4a98b_r06",
+        "f28de1e4a98b_r07",
+        "f28de1e4a98b_r08",
+        "f28de1e4a98b_r09",
+        "f28de1e4a98b_r10",
+        "f28de1e4a98b_r11"
+      ],
+      "allowed_paths": [
+        "jsonpickle/tags_pd.py",
+        "jsonpickle/ext/pandas.py"
+      ],
+      "request": "Repair jsonpickle4.1.1 pandas numeric dtype codes so independent processes retain all numeric values, column/index information, arithmetic and modification/resave/reload. Numeric legacy tags without an explicit width suffix, including pd/i,pd/u,pd/f and pd/in, do not determine the original width: widening in those historical positions is permitted, but kind and exact values must survive. Explicit old numeric width codes and newly encoded objects must retain exact dtype widths. The legacy set is checked in12 fresh reader processes, since class-address iteration order is not controlled by PYTHONHASHSEED. Do not hardcode data, dtype-column names or fixtures. Public checks sample3 independent reader processes; final acceptance uses12."
+    },
+    "pandas_pickle_56308": {
+      "scores": {
+        "base": {
+          "n": 18,
+          "passed": 12,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 0,
+              "restart_passed": 0,
+              "both_passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "fixed": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        },
+        "reference": {
+          "n": 18,
+          "passed": 18,
+          "groups": {
+            "historical": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "fresh_api": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "initial_passed": 6,
+              "restart_passed": 6,
+              "both_passed": 6
+            }
+          }
+        }
+      },
+      "public_historical_sha256": [
+        "3f538aa9879107982fe049708e8cae1aadae8e5e9e3e40fcec940ceed7a5c3cd",
+        "d9da18cb6f6cc7b1a1e918e891f8c39e3500ee67414ca6738e7d04fcb3520484"
+      ],
+      "truly_unseen_historical_sha256": [
+        "0a1c41dacaca83a579d777430f491da9b17b69893ee1b5eee28ef0921768dffd",
+        "1a4f986f12a0f406a7192b6351ce587cd51fde20fdbfbfb5c1f2675aadcf4da3",
+        "71e3e498bd93e56a36385fcd82a8b6e1406972be10372d3367f535a3f3f7a1ab",
+        "b15509827b77cafbdd938b2dc7c1b994be51ffab14123ac6e9ada9c6a2c2b2a0"
+      ],
+      "nonpublic_rows_reusing_public_bytes": [],
+      "allowed_paths": [
+        "pandas/compat/pickle_compat.py",
+        "pandas/core/internals/blocks.py"
+      ],
+      "request": "Repair pandas2.1.0 read_pickle compatibility with genuine DataFrames saved by1.3.5. Preserve data values, column/index labels, dtypes, selection/aggregation and current construction/roundtrip behavior. A field modification saved using to_pickle must remain correct after a fresh process reload. Do not modify compiled libraries, dependencies or historical files."
+    }
+  },
+  "definitions": {
+    "unit": "One row is one independently curated defect lineage; two projects contribute two lineages each.",
+    "unique_artifact": "Distinct SHA256 of genuine historical-release bytes; public/unseen split by byte identity, not row identifier.",
+    "historical_observations": "Historic bytes replayed under the current reader; dtype has6 files×12 process repetitions=72 observations.",
+    "fresh_api_preservation_observations": "Direct current-API construction and declared continued use/restart, without loading a historical object first.",
+    "current_roundtrip_preservation_observations": "Current-reader serialization/deserialization and declared continued use/restart.",
+    "scores": "Numerator counts observations whose initial AND restart stages both pass; denominator is all_observations. Not independent task successes or a probability estimate.",
+    "admissibility": "Scores independently recomputed from unchanged actual observations using the final pre-model ambiguity metadata and matched against the documented regrade. No new CPU execution.",
+    "base_variability": "The dtype baseline score is this saved control execution; independent reader-process variability means it is not an expected failure probability.",
+    "continuation": "Continued-use/mutation assertions are inside initial semantics; these groups are input regimes, not disjoint temporal stages.",
+    "public_replays": "18 nonpublic dtype rows re-read already-public bytes in additional processes; they do not create extra unseen artifacts."
+  },
+  "evidence_sha256": {
+    "results/resource/20261030T212309/preflight/packaging_version_1163/base/observations.json": "d3bfc72e6f08148d7fb2aa7a85c8c5c599c35e8b39f09dc7e2583a32e57fd202",
+    "results/resource/20261030T212309/preflight/packaging_version_1163/gold/observations.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "results/resource/20261030T212309/reference_repairs/tasks/packaging_version_1163/evaluation/observations.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "results/resource/20261030T212309/oracle/packaging_version_1163.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "results/resource/20261030T212309/bundle/fixtures/packaging_version_1163/all.json": "a29036d8936a13b9f8fc397225338d8dc75d3ea353dd0014fcb75d831b6e1474",
+    "results/resource/20261030T212309/bundle/fixtures/packaging_version_1163/visible.json": "ea118520ce95d866652ca46f49a4894c4077332963bba0934fcc2d354892b84c",
+    "results/resource/20261030T212309/preflight/attrs_slot_state_1085/base/observations.json": "84d56a9f133d1242c2b5d34634e00b48c40b9cc87130c95a0a5efba78b3456f9",
+    "results/resource/20261030T212309/preflight/attrs_slot_state_1085/gold/observations.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "results/resource/20261030T212309/reference_repairs/tasks/attrs_slot_state_1085/evaluation/observations.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "results/resource/20261030T212309/oracle/attrs_slot_state_1085.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "results/resource/20261030T212309/bundle/fixtures/attrs_slot_state_1085/all.json": "8bb581a413fc73079c84389ea5f80d1ed746941ec4a43a4b2554f6d84a2de49a",
+    "results/resource/20261030T212309/bundle/fixtures/attrs_slot_state_1085/visible.json": "e85f3536fc316b75b079167b1d473619010fc2a77cf8e3c85a8a8479d3b4f607",
+    "results/resource/20261030T212309/preflight/jsonpickle_csv_562/base/observations.json": "846c5a0ff3da29c8689f847268e5251dfe50bfac990addd9466a908615995ed8",
+    "results/resource/20261030T212309/preflight/jsonpickle_csv_562/gold/observations.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "results/resource/20261030T212309/reference_repairs/tasks/jsonpickle_csv_562/evaluation/observations.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "results/resource/20261030T212309/oracle/jsonpickle_csv_562.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "results/resource/20261030T212309/bundle/fixtures/jsonpickle_csv_562/all.json": "f49306d893a2d9a84a823ef9cc077757849092223a06483e8a497b1d4c27fc45",
+    "results/resource/20261030T212309/bundle/fixtures/jsonpickle_csv_562/visible.json": "22e9da799723c35e899423cbead931994c49d77ed140e3fcc35a9bd4e12559de",
+    "results/resource/20261030T212309/preflight/sqlalchemy_mutable_8133/base/observations.json": "bb74497452b3bcb97d93ed35628390d5e02534523f8429493409553dabea9b0a",
+    "results/resource/20261030T212309/preflight/sqlalchemy_mutable_8133/gold/observations.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df",
+    "results/resource/20261030T212309/reference_repairs/tasks/sqlalchemy_mutable_8133/evaluation/observations.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df",
+    "results/resource/20261030T212309/oracle/sqlalchemy_mutable_8133.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df",
+    "results/resource/20261030T212309/bundle/fixtures/sqlalchemy_mutable_8133/all.json": "87625c32980654551c6b55b25b8ae0144346d6ff671b3c095f6dc1134b6db191",
+    "results/resource/20261030T212309/bundle/fixtures/sqlalchemy_mutable_8133/visible.json": "72d12b1ba60051c249eb17abc1459d315c416ced68790ed10f0b5136ae295395",
+    "results/resource/20261030T212309/preflight/joblib_endian_1561/base/observations.json": "a88c1cac6dd15b9adfd16f3dbb825db87947ecb1eedcbb3ef00dfeff3394073c",
+    "results/resource/20261030T212309/preflight/joblib_endian_1561/gold/observations.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "results/resource/20261030T212309/reference_repairs/tasks/joblib_endian_1561/evaluation/observations.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "results/resource/20261030T212309/oracle/joblib_endian_1561.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "results/resource/20261030T212309/bundle/fixtures/joblib_endian_1561/all.json": "9cc36ce66430c94e1589e3d6f3c77ed621779847715e9416fae154e0d98dfec7",
+    "results/resource/20261030T212309/bundle/fixtures/joblib_endian_1561/visible.json": "7959bb0a2814b76b790c9ba0e317f758007a70a2f3f617652b421e4e30fd9469",
+    "results/resource/20261030T212309/preflight/joblib_compressed_1681/base/observations.json": "4ddcb8dc0d63da8ed0d1b6c6a0f377fa789a24cb175ff8a8d6fc34e350408c99",
+    "results/resource/20261030T212309/preflight/joblib_compressed_1681/gold/observations.json": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3",
+    "results/resource/20261030T212309/reference_repairs/tasks/joblib_compressed_1681/evaluation/observations.json": "6e0616bcd69f6fcc75ca6562b46d3821e9823c39ef6b7fae66208acde6547da2",
+    "results/resource/20261030T212309/oracle/joblib_compressed_1681.json": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3",
+    "results/resource/20261030T212309/bundle/fixtures/joblib_compressed_1681/all.json": "f33201ec84fafeaa4011751500057654955a2c58b82d1560efc6ec714936b9ba",
+    "results/resource/20261030T212309/bundle/fixtures/joblib_compressed_1681/visible.json": "7ed0071477a5cc1d16ea2b68c414de87cb410be3be264e87f886a73e16fe53aa",
+    "results/resource/20261030T212309/preflight/jsonpickle_dtype_634/base/observations.json": "435e08e5e1b13a51d17385c9d2545bdf5027b100f685b4d0c9156391dc166bb7",
+    "results/resource/20261030T212309/preflight/jsonpickle_dtype_634/gold/observations.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "results/resource/20261030T212309/reference_repairs/tasks/jsonpickle_dtype_634/evaluation/observations.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "results/resource/20261030T212309/oracle/jsonpickle_dtype_634.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "results/resource/20261030T212309/bundle/fixtures/jsonpickle_dtype_634/all.json": "55fd36fcaeb8a3b7dc0fd96723b21d89935669c96e12061a0eb1c50112786ec2",
+    "results/resource/20261030T212309/bundle/fixtures/jsonpickle_dtype_634/visible.json": "c71db24da43d8a61ae47cef96e108bb0f4c91e30976692f5df6c3daf001ddd54",
+    "results/resource/20261030T212309/preflight/pandas_pickle_56308/base/observations.json": "f0b4807cc16a378c8b1fde7401e7311f35bfcaf807f1ef8ad608dba909411284",
+    "results/resource/20261030T212309/preflight/pandas_pickle_56308/gold/observations.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "results/resource/20261030T212309/reference_repairs/tasks/pandas_pickle_56308/evaluation/observations.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "results/resource/20261030T212309/oracle/pandas_pickle_56308.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "results/resource/20261030T212309/bundle/fixtures/pandas_pickle_56308/all.json": "6701b02196f5aef95d5c60978cea0e198a42911b8642a243090e6fd9d1f49b1c",
+    "results/resource/20261030T212309/bundle/fixtures/pandas_pickle_56308/visible.json": "6eed0914d2282646115f3261b8e0fa066c6ec7568eaadb8a7dddf359a153f275"
+  },
+  "task_metadata_sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+  "raw_observations_modified": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793399263-ro2U38HGpxvxvpxs6x4C",
+  "object": "chat.completion",
+  "created": 1793399263,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-9e5a3f13-dc8e-4183-b494-6634594927bf",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def restore(self, obj):\\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n\\n        if \\\"dtypes_rle\\\" not in meta:\\n            # was encoded with pre-v3.4 scheme\\n            return self.restore_v3_3(obj)\\n\\n        data_columns = decode(data_encoded, keys=True)\\n\",\"old\":\"    def restore(self, obj):\\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n\\n        data_columns = decode(data_encoded, keys=True)\\n\\n        # get type codes, un-RLE-ed\\n        try:\\n            rle_types = meta[\\\"dtypes_rle\\\"]\\n        except KeyError:\\n            # was encoded with pre-v3.4 scheme\\n            return self.restore_v3_3(obj)\\n\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21152,
+    "completion_tokens": 226,
+    "total_tokens": 21378,
+    "cost": 0.00219204,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 18528,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00219204,
+      "upstream_inference_prompt_cost": 0.0021152,
+      "upstream_inference_completions_cost": 7.684e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

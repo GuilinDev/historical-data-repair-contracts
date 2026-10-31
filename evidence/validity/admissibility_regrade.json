@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "mode": "Regrade unchanged actual CPU observations under corrected pre-model admissibility metadata; no new CPU execution claimed",
+  "tasks": [
+    {
+      "task": "packaging_version_1163",
+      "gold": 36,
+      "reference": 36,
+      "n": 36,
+      "base": 12
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "gold": 36,
+      "reference": 36,
+      "n": 36,
+      "base": 27
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "gold": 18,
+      "reference": 18,
+      "n": 18,
+      "base": 12
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "gold": 18,
+      "reference": 18,
+      "n": 18,
+      "base": 12
+    },
+    {
+      "task": "joblib_endian_1561",
+      "gold": 21,
+      "reference": 21,
+      "n": 21,
+      "base": 9
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "gold": 21,
+      "reference": 21,
+      "n": 21,
+      "base": 9
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "gold": 84,
+      "reference": 84,
+      "n": 84,
+      "base": 1
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "gold": 18,
+      "reference": 18,
+      "n": 18,
+      "base": 12
+    }
+  ],
+  "reference_total": 252,
+  "oracle_hashes": {
+    "attrs_slot_state_1085.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "joblib_compressed_1681.json": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3",
+    "joblib_endian_1561.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "jsonpickle_csv_562.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "jsonpickle_dtype_634.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "packaging_version_1163.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "pandas_pickle_56308.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "sqlalchemy_mutable_8133.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df"
+  }
+}

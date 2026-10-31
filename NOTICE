@@ -1,0 +1,17 @@
+Historical Data Compatibility Repair Resource v0.1.0
+
+Original task definitions, evaluation adapters, resource documentation and
+manuscript are released by Guilin Zhang under Apache License 2.0; see LICENSE.
+
+Third-party packages and source retain their original copyright and license
+terms. This distribution contains historical/fixed source or compiled artifacts
+from packaging, attrs, jsonpickle, SQLAlchemy, joblib and pandas, plus exact
+runtime/test dependency wheels. Their source trees and provenance/licenses
+include the applicable notices. Reference repairs derive from upstream fixes
+and retain those projects' licenses. The top-level license does not relicense
+third-party code, data, notices or model terms.
+
+No model weights, account credentials or privately owned research/employer
+assets are distributed. Gemma candidates and model/API routing identities are
+identified in the accompanying experimental evidence. AI assistance and the
+limits of the experiments are disclosed in the manuscript.

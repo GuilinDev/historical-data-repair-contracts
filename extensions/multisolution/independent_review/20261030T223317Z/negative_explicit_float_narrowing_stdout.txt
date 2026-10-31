@@ -1,0 +1,23 @@
+{
+  "execution_status": "observed",
+  "passed": 0,
+  "n": 84,
+  "groups": {
+    "historical": {
+      "n": 72,
+      "passed": 0
+    },
+    "fresh_api": {
+      "n": 6,
+      "passed": 0
+    },
+    "current_roundtrip": {
+      "n": 6,
+      "passed": 0
+    }
+  },
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

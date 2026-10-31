@@ -1,0 +1,12 @@
+[
+  {
+    "new": "        # When requested, only use memmap mode if allowed.\n        # If the file is compressed, mmap_mode is ignored and we read the array normally.\n        if unpickler.mmap_mode is not None and self.allow_mmap and unpickler.compressor == 'not-compressed':\n            array = self.read_mmap(unpickler)\n        else:\n            array = self.read_array(unpickler)\n",
+    "old": "        # When requested, only use memmap mode if allowed.\n        if unpickler.mmap_mode is not None and self.allow_mmap:\n            array = self.read_mmap(unpickler)\n        else:\n            array = self.read_array(unpickler)\n",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        # When requested, only use memmap mode if allowed.\n        if unpickler.mmap_mode is not None and self.allow_mmap:\n            array = self.read_mmap(unpickler)\n        else:\n            array = self.read_array(unpickler)\n",
+    "old": "        # When requested, only use memmap mode if allowed.\n        # If the file is compressed, mmap_mode is ignored and we read the array normally.\n        if unpickler.mmap_mode is not None and self.allow_mmap and unpickler.compressor == 'not-compressed':\n            array = self.read_mmap(unpickler)\n        else:\n            array = self.read_array(unpickler)\n",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ab67abe0aa61",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/ab67abe0aa61.pickle",
+    "visible": true,
+    "sha256": "d4c2f7538ddff4590ffe3c49b9ae9b248cba8e248d559609a586a439655c224c"
+  },
+  {
+    "id": "b7c0ed5006ea",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/b7c0ed5006ea.pickle",
+    "visible": true,
+    "sha256": "cc18e3ce21cec98667d1df572de295b92422e65f02c39da6a77f6d311889d45f"
+  },
+  {
+    "id": "d127ddeb9520",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "c572e8fab82d",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "visible": true
+  }
+]

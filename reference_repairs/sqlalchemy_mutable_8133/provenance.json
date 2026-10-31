@@ -1,0 +1,33 @@
+{
+  "task": "sqlalchemy_mutable_8133",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "1.4.38",
+  "fixed": "1.4.39",
+  "source_urls": [
+    "https://docs.sqlalchemy.org/en/20/changelog/changelog_14.html#change-1.4.39"
+  ],
+  "upstream_primary_files": [],
+  "adaptation": [
+    "1.4.39 allowed-file transplantation. Historical flat-list unpickle state is restored with the existing generic closure key; current dictionary state remains supported. No application property names or fixture IDs added."
+  ],
+  "whole_allowed_files_transplanted": [
+    "sqlalchemy/ext/mutable.py"
+  ],
+  "allowed_paths": [
+    "sqlalchemy/ext/mutable.py"
+  ],
+  "changed_paths": [
+    "sqlalchemy/ext/mutable.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "sqlalchemy/ext/mutable.py",
+      "base_sha256": "b1421c9fd59154e063ac0d0a98dd2370cdb225043de93162d8691361fca728b2",
+      "candidate_sha256": "e79b34fd221f2120ad5f810c065050f57a7e099af91487bbb1be161814b1ed1d",
+      "fixed_sha256": "e79b34fd221f2120ad5f810c065050f57a7e099af91487bbb1be161814b1ed1d"
+    }
+  ],
+  "unchanged_base_files": 241,
+  "reference_patch_sha256": "5e32539a1e2ce12481f5ad201f2625b7eb9f20854afd20070c5dec0b6e9d1788"
+}

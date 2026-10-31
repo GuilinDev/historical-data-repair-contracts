@@ -1,0 +1,276 @@
+{
+  "n": 84,
+  "admissible_passed": 84,
+  "raw_exact_gold_passed": 24,
+  "execution_status": "observed",
+  "difference_rows": 60,
+  "all_differences_admissible_width_only": true,
+  "candidate_archive_matches": true,
+  "groups": {
+    "historical": {
+      "n": 72,
+      "passed": 72
+    },
+    "fresh_api": {
+      "n": 6,
+      "passed": 6
+    },
+    "current_roundtrip": {
+      "n": 6,
+      "passed": 6
+    }
+  },
+  "controls_pending": false,
+  "interval_comparisons": {
+    "old_base": [
+      {
+        "case": "empty_interval_alone",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "empty_interval_and_explicit_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": false,
+        "matches_original_input": false
+      },
+      {
+        "case": "nonempty_interval_and_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": false,
+        "matches_original_input": true
+      }
+    ],
+    "official_widest": [
+      {
+        "case": "empty_interval_alone",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "empty_interval_and_explicit_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "nonempty_interval_and_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": true
+      }
+    ],
+    "whole_fixed": [
+      {
+        "case": "empty_interval_alone",
+        "initial_matches_official": false,
+        "restart_matches_official": false,
+        "matches_original_input": false
+      },
+      {
+        "case": "empty_interval_and_explicit_integers",
+        "initial_matches_official": false,
+        "restart_matches_official": false,
+        "matches_original_input": false
+      },
+      {
+        "case": "nonempty_interval_and_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": true
+      }
+    ],
+    "document_exclusion_v1": [
+      {
+        "case": "empty_interval_alone",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "empty_interval_and_explicit_integers",
+        "initial_matches_official": false,
+        "restart_matches_official": false,
+        "matches_original_input": false
+      },
+      {
+        "case": "nonempty_interval_and_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": true
+      }
+    ],
+    "document_exclusion_v2": [
+      {
+        "case": "empty_interval_alone",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "empty_interval_and_explicit_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": false
+      },
+      {
+        "case": "nonempty_interval_and_integers",
+        "initial_matches_official": true,
+        "restart_matches_official": true,
+        "matches_original_input": true
+      }
+    ]
+  },
+  "numeric_fallback": {
+    "status": "observed",
+    "records": [
+      {
+        "case": "historical_lone_collision",
+        "initial": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float64",
+              "kind": "f",
+              "itemsize": 8,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "restart": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float64",
+              "kind": "f",
+              "itemsize": 8,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "initial_passed": true,
+        "restart_passed": true,
+        "passed": true
+      },
+      {
+        "case": "new_float32",
+        "initial": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float32",
+              "kind": "f",
+              "itemsize": 4,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "restart": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float32",
+              "kind": "f",
+              "itemsize": 4,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "initial_passed": true,
+        "restart_passed": true,
+        "passed": true
+      },
+      {
+        "case": "new_float64",
+        "initial": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float64",
+              "kind": "f",
+              "itemsize": 8,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "restart": {
+          "columns": [
+            "x"
+          ],
+          "index": [
+            0,
+            1
+          ],
+          "columns_data": [
+            {
+              "dtype": "float64",
+              "kind": "f",
+              "itemsize": 8,
+              "values": [
+                1.125,
+                -3.25
+              ]
+            }
+          ]
+        },
+        "initial_passed": true,
+        "restart_passed": true,
+        "passed": true
+      }
+    ],
+    "passed": 3,
+    "n": 3
+  },
+  "main_experiment_unchanged": true,
+  "candidate_whitelist_passed": true,
+  "plan_sha256": "8317d5ce2930e9b05f8eebc53e68ce78652bbf5eef9d181c6a3056e262e72f38",
+  "source_policy_review": "PENDING_EXTERNAL_REVIEW",
+  "interpretation": "Second version after independent source-review correction; old empty Interval dtype loss persists and is not claimed repaired. Main84 numerical contract is unchanged."
+}

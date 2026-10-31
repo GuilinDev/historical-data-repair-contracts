@@ -1,0 +1,49 @@
+{
+  "task": "joblib_compressed_1681",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "1.4.2",
+  "fixed": "1.5.0",
+  "source_urls": [
+    "https://github.com/joblib/joblib/pull/1681",
+    "https://numpy.org/doc/1.26/reference/generated/numpy.memmap.html"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_curation/primary/joblib_1681.patch",
+      "sha256": "a8f376ef9f43745b0e5f807c6209d3bf7b5b974282fcb42ee849ef85c4b64776"
+    },
+    {
+      "path": "results/ready_curation/primary/joblib_1681.json",
+      "sha256": "657d9e792c571a8089077e9efd4cfe7def60cb1c96d6f59f4464f141a9e8606f"
+    }
+  ],
+  "adaptation": [
+    "PR1681 first commit 3c9e60a19172783310691debe3df5eee16409f7f backported to 1.4.2 formatting. Validated mmap mode reaches unpickler; compatible raw files retain mmap. Keep original private helper name instead of later cosmetic rename. No unrelated endian fix added."
+  ],
+  "whole_allowed_files_transplanted": [],
+  "allowed_paths": [
+    "joblib/numpy_pickle.py",
+    "joblib/numpy_pickle_utils.py"
+  ],
+  "changed_paths": [
+    "joblib/numpy_pickle.py",
+    "joblib/numpy_pickle_utils.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "joblib/numpy_pickle.py",
+      "base_sha256": "e7f2fb11b3e0f784f789238311d922909363ff3daabe96586867a2f4794c0565",
+      "candidate_sha256": "e50cb5026c645aad6a9310562f643999c7d2d6c7cc39d19ae960a686fd4794fd",
+      "fixed_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477"
+    },
+    {
+      "path": "joblib/numpy_pickle_utils.py",
+      "base_sha256": "29c712a7f321305b15e35330f694a28dc86d18e0b29a90da1d61f4569214792b",
+      "candidate_sha256": "f690974ee352dc5a4935bc014278b22bbecf3465f6a825c137084955ffbdfbd7",
+      "fixed_sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032"
+    }
+  ],
+  "unchanged_base_files": 144,
+  "reference_patch_sha256": "43f24148f100af68323d17729a2304f800eef82d56de718501caa0f0f3dba14e"
+}

@@ -1,0 +1,369 @@
+{
+  "created_utc": "2026-10-30T21:53:30.256668+00:00",
+  "planned_attempts": 32,
+  "episodes": [
+    {
+      "episode": "93f5c9999ee4",
+      "family": "pandas_pickle_56308",
+      "project": "pandas",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "183bc51919d5",
+      "family": "joblib_compressed_1681",
+      "project": "joblib",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "f50ac29629d1",
+      "family": "attrs_slot_state_1085",
+      "project": "attrs",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "6160443aebd8",
+      "family": "jsonpickle_dtype_634",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "820d349186f5",
+      "family": "pandas_pickle_56308",
+      "project": "pandas",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "6beed2ca1c08",
+      "family": "sqlalchemy_mutable_8133",
+      "project": "sqlalchemy",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "c62f9c414dc5",
+      "family": "jsonpickle_csv_562",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "239561ed0d37",
+      "family": "packaging_version_1163",
+      "project": "packaging",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "e401d2c3a27d",
+      "family": "joblib_endian_1561",
+      "project": "joblib",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "53394461271a",
+      "family": "joblib_endian_1561",
+      "project": "joblib",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "074ae1f3678a",
+      "family": "joblib_endian_1561",
+      "project": "joblib",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "0e72fdd94c31",
+      "family": "joblib_compressed_1681",
+      "project": "joblib",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "b81cd8ba0bd8",
+      "family": "pandas_pickle_56308",
+      "project": "pandas",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "bfe5bd58e4c2",
+      "family": "packaging_version_1163",
+      "project": "packaging",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "bd7140c1d378",
+      "family": "jsonpickle_csv_562",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "22dfe50e4c2e",
+      "family": "sqlalchemy_mutable_8133",
+      "project": "sqlalchemy",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "2210b787c234",
+      "family": "joblib_compressed_1681",
+      "project": "joblib",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "0a3c0db3ab2e",
+      "family": "jsonpickle_csv_562",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "107a49685be5",
+      "family": "packaging_version_1163",
+      "project": "packaging",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "321218a25c02",
+      "family": "sqlalchemy_mutable_8133",
+      "project": "sqlalchemy",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "7879243259c9",
+      "family": "joblib_endian_1561",
+      "project": "joblib",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "fef8c66a4f80",
+      "family": "attrs_slot_state_1085",
+      "project": "attrs",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "be55c0a529b4",
+      "family": "attrs_slot_state_1085",
+      "project": "attrs",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "8923ab804d14",
+      "family": "jsonpickle_dtype_634",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "46ae0e9c5565",
+      "family": "jsonpickle_csv_562",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "15b1e2a9032d",
+      "family": "attrs_slot_state_1085",
+      "project": "attrs",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "3d3f067e10a7",
+      "family": "jsonpickle_dtype_634",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "783def885a40",
+      "family": "joblib_compressed_1681",
+      "project": "joblib",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "05cd04c17e21",
+      "family": "jsonpickle_dtype_634",
+      "project": "jsonpickle",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    },
+    {
+      "episode": "49069b591f6e",
+      "family": "packaging_version_1163",
+      "project": "packaging",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "640d76a1a31b",
+      "family": "sqlalchemy_mutable_8133",
+      "project": "sqlalchemy",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": true
+    },
+    {
+      "episode": "7f0bc12caf15",
+      "family": "pandas_pickle_56308",
+      "project": "pandas",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "condition": "ordinary",
+      "previously_model_exposed_lineage": false
+    }
+  ],
+  "independent_lineages": 8,
+  "projects": 6,
+  "models": "Two actual Gemma4 deployments; precision/provider confounds preclude a model-size causal claim",
+  "replicates": "Two independently initialized conversations per task/deployment; not independent bug lineages or a significance test",
+  "data_split": "Four scoping-exposed lineages; four prospectively frozen new lineages, including two entirely new projects. Public historical issues may be in pretraining.",
+  "primary_acceptance": "All declared historical/current/continuation/restart checks pass; source-policy review separately required. Optional tests, report correctness, protocol completion and runtime outcomes reported separately.",
+  "exploration_rounds": 24,
+  "exploration_output_limit": 4096,
+  "final_output_limit": 2048,
+  "temperature": 0.2,
+  "final_protocol": "Nonempty natural report, finish_reason=stop, no tools/schema; remaining inability is a valid completed report",
+  "retry": "At most3 identical requests for429/5xx/transport/no-choice failures; each retained and conservatively charged. No automatic routing fallback. Other infrastructure errors retained, never reclassified as semantic failure.",
+  "context": "135KB documented compression bound; all calls/raw results and actual request contexts saved",
+  "cpu": "1core,1GB,noGPU,no-network,read-only code/data plus temporary workcopy for mmap writes",
+  "json_dtype_repetitions": "12 independent reader processes each read all6 legacy files; public checks use3 processes on2 public files. Those repeated bytes are not new hidden artifacts.",
+  "legacy_admissibility": "Numerical legacy tags lacking explicit width permit value/kind-preserving widening; explicit old widths and new encoding exact. Raw official oracles remain unchanged.",
+  "comparative_claim": "Resource-only contribution. Existing12-patch upstream comparison had zero additional rejects; no stronger-evaluator or intervention-benefit headline.",
+  "source_hashes": {
+    "agent_runner_v2.py": "66b33044a4ef72bcf9243a94134ea53a3e839b225eb28fa9dddb419153b14491",
+    "freeze_and_build.py": "74e24fa36a24f510b12a404dbc924a4ba46208e7ac35b9a459d9e77c1a89f05f",
+    "model_pilot.py": "42659d341cb6b49df2b03a898c678f195d492bc2c6a5e4dd7121d1f645c1f4df",
+    "reader_repair_tools.py": "566b46da925aa4ce61518787678837953667ea72d0d07f09b73a0eee3ee60475",
+    "resource_eval_worker.py": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+    "resource_pytest_runner.py": "1e2d482ff0d0d3a33429e34f10f0f6959fd3a0125ed96763fce10ab2c3932d2d",
+    "resource_task_tools.py": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+    "run_reader_repairs.py": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+    "run_resource_baselines.py": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+    "transfer_task_tools.py": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d"
+  },
+  "bundle_manifest_sha256": "15aa47d5963289fd1cf6180bac4f52aaef706a01a7810e378a2b12e4fec04af3",
+  "oracle_hashes": {
+    "attrs_slot_state_1085.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "joblib_compressed_1681.json": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3",
+    "joblib_endian_1561.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "jsonpickle_csv_562.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "jsonpickle_dtype_634.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "packaging_version_1163.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "pandas_pickle_56308.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "sqlalchemy_mutable_8133.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df"
+  },
+  "task_metadata_sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+  "project_api_cap_usd": 2,
+  "budget_basis": "Prior complete probes ~$0.02-0.03/attempt; existing project reported~$0.60. Requests retain a hard cumulativeUSD2 cap and reserve finalization; new money requires user authorization."
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "new": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            if isinstance(self, type):\n                return {name: getattr(self, name) for name in state_attr_names}\n            try:\n                return {name: getattr(self, name) for name in state_attr_names}\n            except AttributeError:\n                return tuple(getattr(self, name) for name in state_attr_names)",
+    "old": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            return {name: getattr(self, name) for name in state_attr_names}",
+    "path": "attr/_make.py"
+  }
+]

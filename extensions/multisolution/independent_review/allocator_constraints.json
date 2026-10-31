@@ -1,0 +1,2105 @@
+{
+  "scope": "Finite model of the genuine 4.1.1 allocator over standard declared pandas numeric families, plus the native interval competitor for signed integers. All allocator orders and all nonempty subsets of dtype names are examined. Repeated columns add no tag-set evidence; disjoint initial-letter families are independent in this model. This is source-level reasoning, not empirical prevalence, a proof for arbitrary third-party dtypes, or candidate execution.",
+  "official_allocator_sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+  "fixture_bytes_or_column_names_used": false,
+  "candidate_code_executed_on_host": false,
+  "records": [
+    {
+      "family": "float",
+      "numeric_universe_bits": [
+        32,
+        64
+      ],
+      "competing_standard_dtype_names": [],
+      "allocator_orders": 2,
+      "document_subsets_examined": 6,
+      "nonempty_numeric_unique_deductions": 2,
+      "wrong_numeric_deductions": [],
+      "mapping_collisions_in_this_declared_family": [],
+      "v1_empty_interval_guard_counterexamples": []
+    },
+    {
+      "family": "int",
+      "numeric_universe_bits": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "competing_standard_dtype_names": [
+        "interval"
+      ],
+      "allocator_orders": 120,
+      "document_subsets_examined": 3720,
+      "nonempty_numeric_unique_deductions": 120,
+      "wrong_numeric_deductions": [],
+      "mapping_collisions_in_this_declared_family": [],
+      "v1_empty_interval_guard_counterexamples": [
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "int32",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "int64",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "int64",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "interval",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int16",
+            "interval",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "int16",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "int64",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "int64",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "interval",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int32",
+            "interval",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "int16",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "int32",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "int32",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "interval",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "int64",
+            "interval",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int16",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int16",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int32",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int32",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int64",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int8",
+            "interval",
+            "int64",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "int32",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "int64",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "int64",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "interval",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int8",
+            "interval",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "int8",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "int8",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "int64",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "interval",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int32",
+            "interval",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "int8",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "int8",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "int32",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "int32",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "interval",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "int64",
+            "interval",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int8",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int8",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int32",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int32",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int64",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int16",
+            "interval",
+            "int64",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "int16",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "int64",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "int64",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "interval",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int8",
+            "interval",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "int8",
+            "int64",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "int8",
+            "interval",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "int64",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "int64",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "interval",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int16",
+            "interval",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "int8",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "int8",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "int16",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "int16",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "interval",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "int64",
+            "interval",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int8",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int8",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int16",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int16",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int64",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int32",
+            "interval",
+            "int64",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "int16",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "int32",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "int32",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "interval",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int8",
+            "interval",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "int8",
+            "int32",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "int8",
+            "interval",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "int32",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "int32",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "interval",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int16",
+            "interval",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "int8",
+            "int16",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "int8",
+            "interval",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "int16",
+            "int8",
+            "interval"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "int16",
+            "interval",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "interval",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "int32",
+            "interval",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int8",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int8",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int16",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int16",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int32",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "int64",
+            "interval",
+            "int32",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/in",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int16",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int16",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int32",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int32",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int64",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int8",
+            "int64",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int16",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int8"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int8",
+            "int32",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int8",
+            "int64",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int32",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int32",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int64",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int16",
+            "int64",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int32",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int16"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int8",
+            "int16",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int8",
+            "int64",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int16",
+            "int8",
+            "int64"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int16",
+            "int64",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int64",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int32",
+            "int64",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int64",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int32"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int8",
+            "int16",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int8",
+            "int32",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int16",
+            "int8",
+            "int32"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int16",
+            "int32",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int32",
+            "int8",
+            "int16"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        },
+        {
+          "producer_order": [
+            "interval",
+            "int64",
+            "int32",
+            "int16",
+            "int8"
+          ],
+          "document_dtypes": [
+            "int8",
+            "int16",
+            "int32",
+            "interval"
+          ],
+          "tag": "pd/i",
+          "wrong_inferred_dtype_if_empty_payload": "int64"
+        }
+      ]
+    },
+    {
+      "family": "uint",
+      "numeric_universe_bits": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "competing_standard_dtype_names": [],
+      "allocator_orders": 24,
+      "document_subsets_examined": 360,
+      "nonempty_numeric_unique_deductions": 24,
+      "wrong_numeric_deductions": [],
+      "mapping_collisions_in_this_declared_family": [],
+      "v1_empty_interval_guard_counterexamples": []
+    }
+  ],
+  "numeric_exclusion_sound_in_declared_model": true,
+  "v1_unqualified_interval_claim_rejected": true,
+  "important_limitations": [
+    "The reader numeric universe must equal the historical producer universe; the runtime probe must check this independently.",
+    "Actual empty interval serialization must be calibrated against base/official/fixed before alleging a new regression; the released base already has limitations.",
+    "The valid scope of this alternate policy is the declared native numeric task domain. No inference about unseen dtype plugins follows.",
+    "The one-dtype-one-tag function property is sufficient for exclusion; no universal injectivity theorem is asserted."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "decision": "PASS_DECLARED_FREEZE_WITH_DOCUMENTED_BOUNDARIES",
+  "PASS_OR_ISSUES": "PASS",
+  "planned": 32,
+  "main_outcomes_read": false,
+  "bundle_files": 7785,
+  "oracle_files": 8,
+  "declared_runner_files": 10,
+  "runner_checks": [
+    {
+      "file": "agent_runner_v2.py",
+      "expected": "66b33044a4ef72bcf9243a94134ea53a3e839b225eb28fa9dddb419153b14491",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "freeze_and_build.py",
+      "expected": "74e24fa36a24f510b12a404dbc924a4ba46208e7ac35b9a459d9e77c1a89f05f",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "model_pilot.py",
+      "expected": "42659d341cb6b49df2b03a898c678f195d492bc2c6a5e4dd7121d1f645c1f4df",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "reader_repair_tools.py",
+      "expected": "566b46da925aa4ce61518787678837953667ea72d0d07f09b73a0eee3ee60475",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "resource_eval_worker.py",
+      "expected": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "resource_pytest_runner.py",
+      "expected": "1e2d482ff0d0d3a33429e34f10f0f6959fd3a0125ed96763fce10ab2c3932d2d",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "resource_task_tools.py",
+      "expected": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "run_reader_repairs.py",
+      "expected": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "run_resource_baselines.py",
+      "expected": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "file": "transfer_task_tools.py",
+      "expected": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d",
+      "snapshot_match": true,
+      "current_match": true
+    }
+  ],
+  "transitive_local_sources_outside_main_snapshot": [
+    {
+      "file": "historical_artifacts.py",
+      "current_sha256": "bb76f762ed71b6cc2e6da2f025ca539ec996da6f59d61e992c816dfe5ff9fdc3",
+      "earlier_G2_hash_if_recorded": null,
+      "matches_earlier_G2": null,
+      "note": "Not included in main plan core source_hashes; current attestation is not retroactive pre-freeze capture."
+    },
+    {
+      "file": "prepare_reader_repairs.py",
+      "current_sha256": "1c042bd1328ea8bcd8f4f5e80688cab341300fc064d2ad2ab951b24dd14b4820",
+      "earlier_G2_hash_if_recorded": "1c042bd1328ea8bcd8f4f5e80688cab341300fc064d2ad2ab951b24dd14b4820",
+      "matches_earlier_G2": true,
+      "note": "Not included in main plan core source_hashes; current attestation is not retroactive pre-freeze capture."
+    }
+  ],
+  "supplemental_current_identities": {
+    "dataset_plan": "62c6b8d665733eca1b8d6ce5eb05fdb7132ae91114f5fb90ca150671531b682c",
+    "independent_runtime_identity.json": "d97af7a77a0a1c199a3181f984892fefa9acdcb2fd08f4b772fd623204f84788",
+    "independent_runtime_cache_review.json": "ed60d941a0ad88ddaee074b18f67d141d5e164a768ed0642992adfa20f2c3532",
+    "legacy_import_time_plan.json": "002ef3c473bd2ca6dc54875b1c659327bf9fc35f8a6bc04038ac105ee26bab13",
+    "legacy_import_time_tasks.json": "0f50cf2ff030d9b607942bf3d9daac50dd933a63baddf1ad4a2b001e1312b5c5"
+  },
+  "plan_sha256": "b9a9fa4d291e2cfd3e4f44882725aea7dc69afad6bad61ea80314f725d1da016",
+  "task_metadata_sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+  "limitations": [
+    "Eight curated lineages in six projects;65 unique historical files and252 observations are dependent coverage, not independent defects.",
+    "Two pinned deployments differ in provider, precision and model. Two conversations per task/deployment are descriptive repeats, not a size-causal or significance study.",
+    "Four lineages were used during development; four are newly introduced here, spanning only two entirely new projects. Public historical fixes can occur in pretraining.",
+    "Custom localized scaffold supplies affected files and historical producer source; no arbitrary shell, dependency installation, web lookup or unrestricted coding-agent environment is supplied.",
+    "Up to24 exploration rounds; at most6 executed actions per response; reads160lines and literal search16matches. Each exploration output is capped at4096 tokens; final report2048 tokens.",
+    "Shown tool output truncates above24000 UTF8 bytes. Exploration stops above120000 request bytes; deterministic marked compaction targets135000 bytes; wire request ceiling160000. Archived raw output is not necessarily present verbatim in model context.",
+    "Finalization is separately reserved and uses temperature0, no tools/schema; exploration temperature0.2. Honest inability can satisfy the report protocol without semantic repair success.",
+    "Transient identical requests have up to3 attempts and no provider-routing fallback. All returned costs must be summed, including successful transport retries; missing cost cannot be treated as free.",
+    "Checks run in one-CPU1GB no-network LinuxARM64 containers with readonly code/fixtures and temporary working files.90s normally,240s for dtype checks. Infrastructure errors are not semantic failures.",
+    "12 dtype reader processes reuse6 historical artifacts;18 nonpublic observation rows revisit public bytes. Hidden row identifiers do not guarantee unseen artifact bytes.",
+    "Fixed-reader observations and input-derived invariants are finite contracts, not general proofs. Test-passing patches require independent source review for fixture-specific logic and harness manipulation.",
+    "Optional generated tests are separate: submission, collection, body execution and passing are distinct. Their absence/failure is not a post-hoc primary semantic failure.",
+    "The prior two-lineage12-attempt genuine upstream comparison found0 additional rejections among2 upstream-accepted patches; no stronger-evaluator claim follows.",
+    "The10-file main runner snapshot is the declared core snapshot, not a closed capture of every transitive local import, old import-time configuration or shared remote runtime. Supplemental identities must be labeled by when observed."
+  ],
+  "failures": [],
+  "audit_script_sha256": "6e0eb2b807dc268e8a19987486f279d7c8b6a7ed5a888fb9f98ae919bd85a91b"
+}

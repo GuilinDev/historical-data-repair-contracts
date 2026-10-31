@@ -1,0 +1,20 @@
+[
+  {
+    "name": "official_widest",
+    "patch_sha256": "388a9083ffb3e10d6772cee7cbbdce97fc84972e45df00e8f84e96f12af2b7f8",
+    "cli_exit": 0,
+    "wall_seconds": 67.46220179996453
+  },
+  {
+    "name": "document_exclusion",
+    "patch_sha256": "dec42dfe855a3f8dfd12f5aee89abafb7c56f2874c449e92284a57deefbe2c16",
+    "cli_exit": 0,
+    "wall_seconds": 66.88126140006352
+  },
+  {
+    "name": "negative_explicit_float_narrowing",
+    "patch_sha256": "5ead7e667875768315b705e3f54915b84c91f64bc456b955f7a7511d4b4a0b69",
+    "cli_exit": 1,
+    "wall_seconds": 67.81317919993307
+  }
+]

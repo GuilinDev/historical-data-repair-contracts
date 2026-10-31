@@ -1,0 +1,7 @@
+{
+  "stage": "Public diagnostic verifier first local invocation",
+  "passed": false,
+  "error": "AssertionError: restore_v3_3 in error for current_roundtrip",
+  "cause": "Verifier overrequired a full traceback for initial current-format errors. The original observer retains type/message only for these errors; child-process restart errors have tracebacks.",
+  "resolution": "Require the actual Length mismatch message for all18 cases; require legacy-reader traceback only where the original archive records one. Candidate source dispatch is separately inspected. No original evidence changed."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "8fc411ebbc46",
+    "group": "fresh_api",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "d95a4a3e4b5c",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  }
+]

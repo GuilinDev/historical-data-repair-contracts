@@ -1,0 +1,83 @@
+[
+  {
+    "id": "417593ac3e9c",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -114,
+            90
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -28984,
+            27992
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999714,
+            1700000106
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842310,
+            1125899906843094
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            214,
+            236
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55040,
+            60938
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483794,
+            4294967240
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775960,
+            9223372036854775948
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.5,
+            -4.0
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.875,
+            -2199023255551.375
+          ]
+        }
+      }
+    },
+    "visible": false,
+    "producer": "4.1.1",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\jsonpickle_dtype_634\\artifacts\\417593ac3e9c.json"
+  }
+]

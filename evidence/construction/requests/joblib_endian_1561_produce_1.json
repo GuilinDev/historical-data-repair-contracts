@@ -1,0 +1,26 @@
+[
+  {
+    "id": "55fe29031f23",
+    "group": "historical",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91214
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\joblib_endian_1561\\artifacts\\55fe29031f23.pickle"
+  }
+]

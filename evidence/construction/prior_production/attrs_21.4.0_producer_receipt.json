@@ -1,0 +1,18 @@
+{
+  "command": [
+    "<project>\\.venv\\Scripts\\python.exe",
+    "-I",
+    "<project>\\scripts\\repair_eval_worker.py",
+    "--candidate",
+    "<project>\\.cache\\compat_packages\\attrs_21.4.0",
+    "--support",
+    "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\harness\\support",
+    "--family",
+    "attrs",
+    "--produce",
+    "<project>\\results\\reader_repairs\\20261030T185431\\attrs_21.4.0_producer.json"
+  ],
+  "exit": 0,
+  "stdout": "{\"produced\": 18}\n",
+  "stderr": ""
+}

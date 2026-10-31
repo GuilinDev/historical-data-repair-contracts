@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "pdf_sha256": "e9ed3d8d32d8d79aa7c00ca3dcf9c615001fad3428e49ad3e39fa7de17e3db7d",
+  "decision": "PASS",
+  "reviewed_date": "2026-10-31",
+  "reviewer": "independent scientific and award reviewer (/root/prize_panel)",
+  "scope": {
+    "current_pdf": "output/pdf/historical-data-compatibility.pdf",
+    "source": "paper/final_content.json",
+    "source_sha256": "aeb17c2c2daa5a36f37eb86b59f166771a8c4b029c95db17faf6a14e3445a383",
+    "pages": 6,
+    "source_word_count": 2665,
+    "extracted_pdf_whitespace_word_count": 2674,
+    "page_images": [
+      {
+        "path": "tmp/pdfs/clarity-1.png",
+        "sha256": "dcdee3416f2270ccdc3abb48aa5ed93eab20158ca3edd068465e15fa127ee798"
+      },
+      {
+        "path": "tmp/pdfs/clarity-2.png",
+        "sha256": "1e660b770f94d3c1019dd6344c025ce1223093e333a4b5805aa0efbf171764e2"
+      },
+      {
+        "path": "tmp/pdfs/clarity-3.png",
+        "sha256": "e5929fdbc1053533adc1c1251ddb865594f1f7702efcd68362677efa780da61a"
+      },
+      {
+        "path": "tmp/pdfs/clarity-4.png",
+        "sha256": "42c1f4a251219da0aa8949cb958b887cec5fa3aa0e0100a3779f2f6b46ddbb9d"
+      },
+      {
+        "path": "tmp/pdfs/clarity-5.png",
+        "sha256": "92fc057832659b4bc145e9cb390f55bb4158cf8bc076e8e3e2a8648e8ff993a3"
+      },
+      {
+        "path": "tmp/pdfs/clarity-6.png",
+        "sha256": "dcf7f97fc5e30410078f6c773aab1f315c3565948db37b4d1d3b73ebfcdf82a3"
+      }
+    ],
+    "actions": [
+      "Read the complete current source JSON and extracted PDF text.",
+      "Visually inspected all six current page PNGs.",
+      "Rechecked the joblib example against the saved source-level contract audit.",
+      "Verified immutable dataset, oracle, runner, main results and new trajectory evidence hashes; see the companion data-check report."
+    ],
+    "excluded": [
+      "No new model calls, experiments, GPU, SSH or candidate execution.",
+      "This review does not represent a new independent rerun of all model candidates. Previously audited result files were freshly verified unchanged.",
+      "No manuscript, dataset, oracle, framework or prior result edits."
+    ]
+  },
+  "page_reviews": [
+    {
+      "page": 1,
+      "finding": "Title and subtitle describe a calibrated compatibility/persistence resource. Abstract separates researcher controls from Gemma outcomes. Lineage definition correctly treats files and repetitions as dependent observations. Figure 1 is legible and consistent with the workflow."
+    },
+    {
+      "page": 2,
+      "finding": "Grouped eight-lineage table is legible. The 17/65 files, H/F/R 131/53/68 and 99/252 fresh-installation base score agree with the saved controls; fixed and allowed-file reference repairs each pass 252/252. Caption discloses process-dependent dtype partial counts. Pseudocode is explicitly a simplification, and its mutation and fresh-process reload claims are accurate."
+    },
+    {
+      "page": 3,
+      "finding": "Collision formula uses separate process encoders E_p and E_q. The 267-byte equality is a targeted witness, not an estimated frequency. Alternative repair scope is bounded to the stated native-pandas numeric universe. Empty Interval and vacuous inference explanation correctly retains pre-existing information loss. Figure 2 distinguishes admissible and literal-reference judgments."
+    },
+    {
+      "page": 4,
+      "finding": "All 32 attempt cells and four accepted outcomes remain visible. Completion is separated from semantic acceptance, overlapping context-limit flags are explained, and deployment confounds and additional service recovery are disclosed. Tool-budget limitations are expressed as request bytes rather than nominal model context capacity. New tool-friction and lifecycle examples match frozen trajectories and avoid interpreting these failures as general model inability."
+    },
+    {
+      "page": 5,
+      "finding": "Upstream comparator reports zero added discrimination. Release verification is scoped to the same ARM host. Resource limitations remain explicit."
+    },
+    {
+      "page": 6,
+      "finding": "All 15 references are legible with consistent citation numbering; Gröninger is correctly rendered. Scientific Agent Skills remains a software acknowledgment rather than substantive related work."
+    }
+  ],
+  "contract_example": {
+    "task": "joblib_endian_1561",
+    "allowed_source_path": "joblib/numpy_pickle.py",
+    "optional_test_path": "tests/test_regression.py",
+    "producer": "1.2.0",
+    "affected_reader": "1.4.2",
+    "initial_second_element": 23,
+    "mutation_delta": 91211,
+    "expected_second_element": 91234,
+    "initial_load_mode": "r+",
+    "restart_load_mode": "default joblib.load(path), no mmap argument",
+    "restart_paths": [
+      "working copy after flush",
+      "explicitly resaved file"
+    ],
+    "base_failure": "In-memory mutation and separately resaved reload succeed, but the original working-file reload retains 23.",
+    "pseudocode_judgment": "Faithful simplified control flow; fresh_process is explicitly a new interpreter. Omissions such as del a, serialization options, subprocess setup and full snapshot fields do not make this illustrative code a complete executable verifier."
+  },
+  "scientific_checks": {
+    "lineage_definition": "PASS: one upstream defect/fix history with producer and reader versions; no inflation of independent bugs.",
+    "HFR_definition": "PASS: distinct input regimes, each with declared continuation checks; not three successive lifecycle stages.",
+    "semantic_contract": "PASS: values, numeric kind and admissible non-narrowing widths are distinguished from exact fixed-reader outputs.",
+    "multisolution_scope": "PASS: native numeric universe is explicit; researcher-built negative control is not reported as a natural model result.",
+    "empty_interval": "PASS: all(empty) is vacuously true; v2 avoids its extra numeric misclassification without claiming restoration of existing Interval information loss.",
+    "stronger_evaluator_claim": "ABSENT: matched upstream comparison transparently finds no additional rejection.",
+    "model_claims": "PASS: no causal model-size, intervention-benefit, broad held-out generalization or scaffold-independent capability claim.",
+    "new_trajectory_diagnostics": "PASS: 16 unchanged + 12 edited incomplete + 4 accepted = 32; context guard 15 = 10 unchanged + 4 incomplete + 1 accepted; 78 edit-match errors in 11 attempts and UTF-8 errors in 3 remain framework-specific.",
+    "data_unchanged": "PASS: fresh companion integrity audit verifies 7,785 bundle files, 8 oracle files, 10 runner files, prior main summary/results and 259 trajectory evidence files."
+  },
+  "data_checks": {
+    "path": "results/paper_review/clarity_revision_20261031/final_clarity_data_checks.json",
+    "sha256": "b5dd8e34c41e307c00d97a7e60c9f055780c132e5e0702bb5bc646231f53bd3e",
+    "all_checks_passed": true
+  },
+  "blocking_issues": [],
+  "required_changes": [],
+  "limitations": [
+    "Eight curated public defect lineages across six projects are a small, targeted resource, not a representative bug population.",
+    "Four accepted model patches provide bounded baseline evidence; they do not establish superiority of a model, prompting technique or evaluator.",
+    "Known serialization ambiguity and upstream fixes are precedents; novelty is the packaged contracts, reproducibility and multi-solution calibration.",
+    "The general alternative-repair claim is limited to the stated native-pandas numeric universe; arbitrary extension dtypes are not established.",
+    "Anonymous attribution, owner identity, release URL and authorization to publish remain owner-side publication matters, not local manuscript blockers."
+  ],
+  "award_assessment": {
+    "worth_submitting_as_resource": true,
+    "basis": "The present manuscript now makes the resource usable and assessable: authentic historical artifacts, bounded editable repairs, complete lifecycle contracts, frozen reproducible controls, a calibrated multi-solution example and transparent negative comparisons. The concrete joblib example and trajectory analysis make the contribution clearer than engineering verification alone.",
+    "remaining_competitive_risk": "Novelty remains modest and curation is small. This is a defensible resource submission, not evidence of a new general testing method or a prediction of an award.",
+    "automatic_award_greenlight_from_engineering_PASS": false
+  },
+  "overall": "Current six-page manuscript is scientifically bounded, materially clearer and internally consistent. No required correction was identified in this review."
+}

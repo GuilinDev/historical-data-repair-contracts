@@ -1,0 +1,217 @@
+{
+  "status": "observed",
+  "records": [
+    {
+      "case": "empty_interval_alone",
+      "original_input": {
+        "columns": [
+          "span"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "interval[int64, right]"
+        },
+        "values_repr": {
+          "span": []
+        }
+      },
+      "initial": {
+        "columns": [
+          "span"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "float64"
+        },
+        "values_repr": {
+          "span": []
+        }
+      },
+      "restart": {
+        "columns": [
+          "span"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "float64"
+        },
+        "values_repr": {
+          "span": []
+        }
+      }
+    },
+    {
+      "case": "empty_interval_and_explicit_integers",
+      "original_input": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "interval[int64, right]",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [],
+          "signed16": [],
+          "signed32": [],
+          "signed64": []
+        }
+      },
+      "initial": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "float64",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [],
+          "signed16": [],
+          "signed32": [],
+          "signed64": []
+        }
+      },
+      "restart": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 0,
+        "dtypes": {
+          "span": "float64",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [],
+          "signed16": [],
+          "signed32": [],
+          "signed64": []
+        }
+      }
+    },
+    {
+      "case": "nonempty_interval_and_integers",
+      "original_input": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 2,
+        "dtypes": {
+          "span": "interval[int64, right]",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [
+            "Interval(1, 3, closed='right')",
+            "Interval(5, 8, closed='right')"
+          ],
+          "signed16": [
+            "1",
+            "2"
+          ],
+          "signed32": [
+            "3",
+            "4"
+          ],
+          "signed64": [
+            "5",
+            "6"
+          ]
+        }
+      },
+      "initial": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 2,
+        "dtypes": {
+          "span": "interval[int64, right]",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [
+            "Interval(1, 3, closed='right')",
+            "Interval(5, 8, closed='right')"
+          ],
+          "signed16": [
+            "1",
+            "2"
+          ],
+          "signed32": [
+            "3",
+            "4"
+          ],
+          "signed64": [
+            "5",
+            "6"
+          ]
+        }
+      },
+      "restart": {
+        "columns": [
+          "span",
+          "signed16",
+          "signed32",
+          "signed64"
+        ],
+        "length": 2,
+        "dtypes": {
+          "span": "interval[int64, right]",
+          "signed16": "int16",
+          "signed32": "int32",
+          "signed64": "int64"
+        },
+        "values_repr": {
+          "span": [
+            "Interval(1, 3, closed='right')",
+            "Interval(5, 8, closed='right')"
+          ],
+          "signed16": [
+            "1",
+            "2"
+          ],
+          "signed32": [
+            "3",
+            "4"
+          ],
+          "signed64": [
+            "5",
+            "6"
+          ]
+        }
+      }
+    }
+  ],
+  "loaded_source_hashes": {
+    "jsonpickle/__init__.py": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3",
+    "jsonpickle/tags_pd.py": "6b6a297928633a73c73ab1a7cb71d8ec65d7914e1d00cec92ce83c264bf9fcea",
+    "jsonpickle/ext/pandas.py": "b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb"
+  }
+}

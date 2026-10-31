@@ -1,0 +1,487 @@
+{
+  "id": "attrs_23.1.0_universal",
+  "project": "attrs",
+  "version": "23.1.0",
+  "variant": "universal",
+  "source_url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl",
+  "archive_file": "provenance/release_archives/attrs-23.1.0-py3-none-any.whl",
+  "archive_sha256": "1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04",
+  "archive_bytes": 61160,
+  "release_identity": {
+    "metadata_url": "https://pypi.org/pypi/attrs/23.1.0/json",
+    "metadata_file": "provenance/release_metadata/attrs_23.1.0.json",
+    "metadata_sha256": "9c936ef026c448d1ce66dd638a5026145f9e8f18c3f83b6157e9ca2034a534ae",
+    "filename": "attrs-23.1.0-py3-none-any.whl",
+    "pypi_sha256": "1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04",
+    "upload_time": "2023-04-16T10:48:16.358050Z",
+    "license_metadata": "",
+    "license_expression": null,
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ],
+    "archive_sha256_verified": true
+  },
+  "licenses": [
+    {
+      "file": "provenance/licenses/attrs_23.1.0_universal/attrs-23.1.0.dist-info/licenses/LICENSE",
+      "archive_member": "attrs-23.1.0.dist-info/licenses/LICENSE",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "bytes": 1109,
+      "source_url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl"
+    }
+  ],
+  "copies": [
+    {
+      "role": "attrs_slot_state_1085/fixed",
+      "copy_location": "bundle/packages/attrs_slot_state_1085/fixed",
+      "checked_archive_member_count": 34,
+      "matches": [
+        {
+          "path": "attr/__init__.py",
+          "sha256": "7524540714554e1f9d5ccacc47fa10dd9212bb64127e1499962934dcc8dbbb7d",
+          "archive_sha256": "7524540714554e1f9d5ccacc47fa10dd9212bb64127e1499962934dcc8dbbb7d"
+        },
+        {
+          "path": "attr/__init__.pyi",
+          "sha256": "ac82bed886a42287a156da972b9979aecf7f7c93426e762d2934b770e015243f",
+          "archive_sha256": "ac82bed886a42287a156da972b9979aecf7f7c93426e762d2934b770e015243f"
+        },
+        {
+          "path": "attr/_cmp.py",
+          "sha256": "762314415f81220ec88c86fafa8d61b30b678eb478a9d014cffb44f20c52f7ac",
+          "archive_sha256": "762314415f81220ec88c86fafa8d61b30b678eb478a9d014cffb44f20c52f7ac"
+        },
+        {
+          "path": "attr/_cmp.pyi",
+          "sha256": "b0642638cd30dff2b8f97f1c4d747b8341eaaf6f7413c3d339b03d250c5642a7",
+          "archive_sha256": "b0642638cd30dff2b8f97f1c4d747b8341eaaf6f7413c3d339b03d250c5642a7"
+        },
+        {
+          "path": "attr/_compat.py",
+          "sha256": "77772922eeb421b2ab2f2c0f9e2d7b45411063b32f92aa8a89fcb32791f7cd15",
+          "archive_sha256": "77772922eeb421b2ab2f2c0f9e2d7b45411063b32f92aa8a89fcb32791f7cd15"
+        },
+        {
+          "path": "attr/_config.py",
+          "sha256": "e56f2581178fb88396bb566ea85d7cf7d7b60a65c673de7e8a9c13a45d5c114e",
+          "archive_sha256": "e56f2581178fb88396bb566ea85d7cf7d7b60a65c673de7e8a9c13a45d5c114e"
+        },
+        {
+          "path": "attr/_funcs.py",
+          "sha256": "60cb731d148e9c5bce549edab771342bde40da55b6e870e36f2f7a4cc4c36dcd",
+          "archive_sha256": "60cb731d148e9c5bce549edab771342bde40da55b6e870e36f2f7a4cc4c36dcd"
+        },
+        {
+          "path": "attr/_make.py",
+          "sha256": "248c8a57e1d187721c1e2f84bce8f6770ead468a804e5c769011c5aebc59a64d",
+          "archive_sha256": "248c8a57e1d187721c1e2f84bce8f6770ead468a804e5c769011c5aebc59a64d"
+        },
+        {
+          "path": "attr/_next_gen.py",
+          "sha256": "f2507f4b9485817d8ab1f964b0af19ca093a5c35d3a1062d2259a0777ec8f5a6",
+          "archive_sha256": "f2507f4b9485817d8ab1f964b0af19ca093a5c35d3a1062d2259a0777ec8f5a6"
+        },
+        {
+          "path": "attr/_typing_compat.pyi",
+          "sha256": "5c33f9e13527f992a10fad9339079b9b3af0172a268540a8191a5c95be9a9510",
+          "archive_sha256": "5c33f9e13527f992a10fad9339079b9b3af0172a268540a8191a5c95be9a9510"
+        },
+        {
+          "path": "attr/_version_info.py",
+          "sha256": "7b14aa6f76f913e7cc4ac819025130f5770ba448286cf391099a5c68482500ce",
+          "archive_sha256": "7b14aa6f76f913e7cc4ac819025130f5770ba448286cf391099a5c68482500ce"
+        },
+        {
+          "path": "attr/_version_info.pyi",
+          "sha256": "c7f3372f75ae07baff50b5c05a3c7de7db9d290e072c1f25fa1b1cd450c636f9",
+          "archive_sha256": "c7f3372f75ae07baff50b5c05a3c7de7db9d290e072c1f25fa1b1cd450c636f9"
+        },
+        {
+          "path": "attr/converters.py",
+          "sha256": "c5f19548f4605867329ba37915933d7f27ef09078fa85c80a56782e415cabe83",
+          "archive_sha256": "c5f19548f4605867329ba37915933d7f27ef09078fa85c80a56782e415cabe83"
+        },
+        {
+          "path": "attr/converters.pyi",
+          "sha256": "8ca9691c112de8754a26f82b305251ac7abca7ad465e0e3e35de516562895fb3",
+          "archive_sha256": "8ca9691c112de8754a26f82b305251ac7abca7ad465e0e3e35de516562895fb3"
+        },
+        {
+          "path": "attr/exceptions.py",
+          "sha256": "d194f21ff987988f6eb704d36c15ab752fdc9398e9b3d47633f7d824f5f11ff5",
+          "archive_sha256": "d194f21ff987988f6eb704d36c15ab752fdc9398e9b3d47633f7d824f5f11ff5"
+        },
+        {
+          "path": "attr/exceptions.pyi",
+          "sha256": "cd9abc6c2527280cbd983b41130e366613e1014207a1329e7434089c90fcf373",
+          "archive_sha256": "cd9abc6c2527280cbd983b41130e366613e1014207a1329e7434089c90fcf373"
+        },
+        {
+          "path": "attr/filters.py",
+          "sha256": "f6962f5ea760ea6b4bbca2086f9ea800b44ca0716741370608ee045d3735ab23",
+          "archive_sha256": "f6962f5ea760ea6b4bbca2086f9ea800b44ca0716741370608ee045d3735ab23"
+        },
+        {
+          "path": "attr/filters.pyi",
+          "sha256": "d264428cb2b175cbc0a34bc3f82afcd477d15d70a9f63fdc0178cea001ed3c63",
+          "archive_sha256": "d264428cb2b175cbc0a34bc3f82afcd477d15d70a9f63fdc0178cea001ed3c63"
+        },
+        {
+          "path": "attr/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "attr/setters.py",
+          "sha256": "a5b09943ea44e99c630ea65f59652150579f5eda5e908538a92fd80cc2cf439d",
+          "archive_sha256": "a5b09943ea44e99c630ea65f59652150579f5eda5e908538a92fd80cc2cf439d"
+        },
+        {
+          "path": "attr/setters.pyi",
+          "sha256": "a7263c4d5341bbc4d684e95dbff4711f3986bdd805407f7cd5d6fbd2bd1f9f92",
+          "archive_sha256": "a7263c4d5341bbc4d684e95dbff4711f3986bdd805407f7cd5d6fbd2bd1f9f92"
+        },
+        {
+          "path": "attr/validators.py",
+          "sha256": "0b6310817eee6cbfdcb3963389b59af26d18c5d32ae7fdc2877755233b0b3be6",
+          "archive_sha256": "0b6310817eee6cbfdcb3963389b59af26d18c5d32ae7fdc2877755233b0b3be6"
+        },
+        {
+          "path": "attr/validators.pyi",
+          "sha256": "d7aec397d9edecd52113dc21b7523e6eea34dfdab2513d671144ff9ca8d25abe",
+          "archive_sha256": "d7aec397d9edecd52113dc21b7523e6eea34dfdab2513d671144ff9ca8d25abe"
+        },
+        {
+          "path": "attrs/__init__.py",
+          "sha256": "f7fe706956c5b3bacbaad5d9ef7b4d0ebc617b3c99f1565e5f805bbd0dc4789c",
+          "archive_sha256": "f7fe706956c5b3bacbaad5d9ef7b4d0ebc617b3c99f1565e5f805bbd0dc4789c"
+        },
+        {
+          "path": "attrs/__init__.pyi",
+          "sha256": "b3f6a343f535e033ac3b3d096e600a0ce8b8e81defd8f71d3b4500575318e849",
+          "archive_sha256": "b3f6a343f535e033ac3b3d096e600a0ce8b8e81defd8f71d3b4500575318e849"
+        },
+        {
+          "path": "attrs/converters.py",
+          "sha256": "7c2044765616726237b029e9524da9cf6d8662d5f3a93929e8d78ea5d23ae0f6",
+          "archive_sha256": "7c2044765616726237b029e9524da9cf6d8662d5f3a93929e8d78ea5d23ae0f6"
+        },
+        {
+          "path": "attrs/exceptions.py",
+          "sha256": "4a50e58ba018efb7fa9f2f87ee8cbdf0e9108ecaf0f83fecba912e12b2156241",
+          "archive_sha256": "4a50e58ba018efb7fa9f2f87ee8cbdf0e9108ecaf0f83fecba912e12b2156241"
+        },
+        {
+          "path": "attrs/filters.py",
+          "sha256": "75cfdd35ecb6f641fa28b535993d836a4abbb59de405fcc41b0cce983cf0d45f",
+          "archive_sha256": "75cfdd35ecb6f641fa28b535993d836a4abbb59de405fcc41b0cce983cf0d45f"
+        },
+        {
+          "path": "attrs/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "attrs/setters.py",
+          "sha256": "a0ac39d42ef61e1e39c13c18bc31c93fd91b89cc62321311e18e46bdda4a7474",
+          "archive_sha256": "a0ac39d42ef61e1e39c13c18bc31c93fd91b89cc62321311e18e46bdda4a7474"
+        },
+        {
+          "path": "attrs/validators.py",
+          "sha256": "e1a8354b2543d879b73d82a2346fcd3ad47f7bb7fcd47afa1a2365e18bd7a384",
+          "archive_sha256": "e1a8354b2543d879b73d82a2346fcd3ad47f7bb7fcd47afa1a2365e18bd7a384"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "archive_sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/METADATA",
+          "sha256": "ca0970517928ef943e209e8b98f550e18f7d2894b708f2b4356f28bd7158b038",
+          "archive_sha256": "ca0970517928ef943e209e8b98f550e18f7d2894b708f2b4356f28bd7158b038"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/WHEEL",
+          "sha256": "108d89b06c9dc142f918ff6dea4cd9bfb1b71c33e2ec5b990c37fd227e9a9913",
+          "archive_sha256": "108d89b06c9dc142f918ff6dea4cd9bfb1b71c33e2ec5b990c37fd227e9a9913"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    },
+    {
+      "role": "original cached published package; 3.4.x jsonpickle is qualification-only",
+      "copy_location": "private working-cache path omitted",
+      "checked_archive_member_count": 34,
+      "matches": [
+        {
+          "path": "attr/__init__.py",
+          "sha256": "7524540714554e1f9d5ccacc47fa10dd9212bb64127e1499962934dcc8dbbb7d",
+          "archive_sha256": "7524540714554e1f9d5ccacc47fa10dd9212bb64127e1499962934dcc8dbbb7d"
+        },
+        {
+          "path": "attr/__init__.pyi",
+          "sha256": "ac82bed886a42287a156da972b9979aecf7f7c93426e762d2934b770e015243f",
+          "archive_sha256": "ac82bed886a42287a156da972b9979aecf7f7c93426e762d2934b770e015243f"
+        },
+        {
+          "path": "attr/_cmp.py",
+          "sha256": "762314415f81220ec88c86fafa8d61b30b678eb478a9d014cffb44f20c52f7ac",
+          "archive_sha256": "762314415f81220ec88c86fafa8d61b30b678eb478a9d014cffb44f20c52f7ac"
+        },
+        {
+          "path": "attr/_cmp.pyi",
+          "sha256": "b0642638cd30dff2b8f97f1c4d747b8341eaaf6f7413c3d339b03d250c5642a7",
+          "archive_sha256": "b0642638cd30dff2b8f97f1c4d747b8341eaaf6f7413c3d339b03d250c5642a7"
+        },
+        {
+          "path": "attr/_compat.py",
+          "sha256": "77772922eeb421b2ab2f2c0f9e2d7b45411063b32f92aa8a89fcb32791f7cd15",
+          "archive_sha256": "77772922eeb421b2ab2f2c0f9e2d7b45411063b32f92aa8a89fcb32791f7cd15"
+        },
+        {
+          "path": "attr/_config.py",
+          "sha256": "e56f2581178fb88396bb566ea85d7cf7d7b60a65c673de7e8a9c13a45d5c114e",
+          "archive_sha256": "e56f2581178fb88396bb566ea85d7cf7d7b60a65c673de7e8a9c13a45d5c114e"
+        },
+        {
+          "path": "attr/_funcs.py",
+          "sha256": "60cb731d148e9c5bce549edab771342bde40da55b6e870e36f2f7a4cc4c36dcd",
+          "archive_sha256": "60cb731d148e9c5bce549edab771342bde40da55b6e870e36f2f7a4cc4c36dcd"
+        },
+        {
+          "path": "attr/_make.py",
+          "sha256": "248c8a57e1d187721c1e2f84bce8f6770ead468a804e5c769011c5aebc59a64d",
+          "archive_sha256": "248c8a57e1d187721c1e2f84bce8f6770ead468a804e5c769011c5aebc59a64d"
+        },
+        {
+          "path": "attr/_next_gen.py",
+          "sha256": "f2507f4b9485817d8ab1f964b0af19ca093a5c35d3a1062d2259a0777ec8f5a6",
+          "archive_sha256": "f2507f4b9485817d8ab1f964b0af19ca093a5c35d3a1062d2259a0777ec8f5a6"
+        },
+        {
+          "path": "attr/_typing_compat.pyi",
+          "sha256": "5c33f9e13527f992a10fad9339079b9b3af0172a268540a8191a5c95be9a9510",
+          "archive_sha256": "5c33f9e13527f992a10fad9339079b9b3af0172a268540a8191a5c95be9a9510"
+        },
+        {
+          "path": "attr/_version_info.py",
+          "sha256": "7b14aa6f76f913e7cc4ac819025130f5770ba448286cf391099a5c68482500ce",
+          "archive_sha256": "7b14aa6f76f913e7cc4ac819025130f5770ba448286cf391099a5c68482500ce"
+        },
+        {
+          "path": "attr/_version_info.pyi",
+          "sha256": "c7f3372f75ae07baff50b5c05a3c7de7db9d290e072c1f25fa1b1cd450c636f9",
+          "archive_sha256": "c7f3372f75ae07baff50b5c05a3c7de7db9d290e072c1f25fa1b1cd450c636f9"
+        },
+        {
+          "path": "attr/converters.py",
+          "sha256": "c5f19548f4605867329ba37915933d7f27ef09078fa85c80a56782e415cabe83",
+          "archive_sha256": "c5f19548f4605867329ba37915933d7f27ef09078fa85c80a56782e415cabe83"
+        },
+        {
+          "path": "attr/converters.pyi",
+          "sha256": "8ca9691c112de8754a26f82b305251ac7abca7ad465e0e3e35de516562895fb3",
+          "archive_sha256": "8ca9691c112de8754a26f82b305251ac7abca7ad465e0e3e35de516562895fb3"
+        },
+        {
+          "path": "attr/exceptions.py",
+          "sha256": "d194f21ff987988f6eb704d36c15ab752fdc9398e9b3d47633f7d824f5f11ff5",
+          "archive_sha256": "d194f21ff987988f6eb704d36c15ab752fdc9398e9b3d47633f7d824f5f11ff5"
+        },
+        {
+          "path": "attr/exceptions.pyi",
+          "sha256": "cd9abc6c2527280cbd983b41130e366613e1014207a1329e7434089c90fcf373",
+          "archive_sha256": "cd9abc6c2527280cbd983b41130e366613e1014207a1329e7434089c90fcf373"
+        },
+        {
+          "path": "attr/filters.py",
+          "sha256": "f6962f5ea760ea6b4bbca2086f9ea800b44ca0716741370608ee045d3735ab23",
+          "archive_sha256": "f6962f5ea760ea6b4bbca2086f9ea800b44ca0716741370608ee045d3735ab23"
+        },
+        {
+          "path": "attr/filters.pyi",
+          "sha256": "d264428cb2b175cbc0a34bc3f82afcd477d15d70a9f63fdc0178cea001ed3c63",
+          "archive_sha256": "d264428cb2b175cbc0a34bc3f82afcd477d15d70a9f63fdc0178cea001ed3c63"
+        },
+        {
+          "path": "attr/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "attr/setters.py",
+          "sha256": "a5b09943ea44e99c630ea65f59652150579f5eda5e908538a92fd80cc2cf439d",
+          "archive_sha256": "a5b09943ea44e99c630ea65f59652150579f5eda5e908538a92fd80cc2cf439d"
+        },
+        {
+          "path": "attr/setters.pyi",
+          "sha256": "a7263c4d5341bbc4d684e95dbff4711f3986bdd805407f7cd5d6fbd2bd1f9f92",
+          "archive_sha256": "a7263c4d5341bbc4d684e95dbff4711f3986bdd805407f7cd5d6fbd2bd1f9f92"
+        },
+        {
+          "path": "attr/validators.py",
+          "sha256": "0b6310817eee6cbfdcb3963389b59af26d18c5d32ae7fdc2877755233b0b3be6",
+          "archive_sha256": "0b6310817eee6cbfdcb3963389b59af26d18c5d32ae7fdc2877755233b0b3be6"
+        },
+        {
+          "path": "attr/validators.pyi",
+          "sha256": "d7aec397d9edecd52113dc21b7523e6eea34dfdab2513d671144ff9ca8d25abe",
+          "archive_sha256": "d7aec397d9edecd52113dc21b7523e6eea34dfdab2513d671144ff9ca8d25abe"
+        },
+        {
+          "path": "attrs/__init__.py",
+          "sha256": "f7fe706956c5b3bacbaad5d9ef7b4d0ebc617b3c99f1565e5f805bbd0dc4789c",
+          "archive_sha256": "f7fe706956c5b3bacbaad5d9ef7b4d0ebc617b3c99f1565e5f805bbd0dc4789c"
+        },
+        {
+          "path": "attrs/__init__.pyi",
+          "sha256": "b3f6a343f535e033ac3b3d096e600a0ce8b8e81defd8f71d3b4500575318e849",
+          "archive_sha256": "b3f6a343f535e033ac3b3d096e600a0ce8b8e81defd8f71d3b4500575318e849"
+        },
+        {
+          "path": "attrs/converters.py",
+          "sha256": "7c2044765616726237b029e9524da9cf6d8662d5f3a93929e8d78ea5d23ae0f6",
+          "archive_sha256": "7c2044765616726237b029e9524da9cf6d8662d5f3a93929e8d78ea5d23ae0f6"
+        },
+        {
+          "path": "attrs/exceptions.py",
+          "sha256": "4a50e58ba018efb7fa9f2f87ee8cbdf0e9108ecaf0f83fecba912e12b2156241",
+          "archive_sha256": "4a50e58ba018efb7fa9f2f87ee8cbdf0e9108ecaf0f83fecba912e12b2156241"
+        },
+        {
+          "path": "attrs/filters.py",
+          "sha256": "75cfdd35ecb6f641fa28b535993d836a4abbb59de405fcc41b0cce983cf0d45f",
+          "archive_sha256": "75cfdd35ecb6f641fa28b535993d836a4abbb59de405fcc41b0cce983cf0d45f"
+        },
+        {
+          "path": "attrs/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "attrs/setters.py",
+          "sha256": "a0ac39d42ef61e1e39c13c18bc31c93fd91b89cc62321311e18e46bdda4a7474",
+          "archive_sha256": "a0ac39d42ef61e1e39c13c18bc31c93fd91b89cc62321311e18e46bdda4a7474"
+        },
+        {
+          "path": "attrs/validators.py",
+          "sha256": "e1a8354b2543d879b73d82a2346fcd3ad47f7bb7fcd47afa1a2365e18bd7a384",
+          "archive_sha256": "e1a8354b2543d879b73d82a2346fcd3ad47f7bb7fcd47afa1a2365e18bd7a384"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "archive_sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/METADATA",
+          "sha256": "ca0970517928ef943e209e8b98f550e18f7d2894b708f2b4356f28bd7158b038",
+          "archive_sha256": "ca0970517928ef943e209e8b98f550e18f7d2894b708f2b4356f28bd7158b038"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/WHEEL",
+          "sha256": "108d89b06c9dc142f918ff6dea4cd9bfb1b71c33e2ec5b990c37fd227e9a9913",
+          "archive_sha256": "108d89b06c9dc142f918ff6dea4cd9bfb1b71c33e2ec5b990c37fd227e9a9913"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attr/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_cmp.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_compat.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_config.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_funcs.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_make.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_next_gen.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/_version_info.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/converters.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/exceptions.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/filters.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/setters.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attr/__pycache__/validators.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "attrs-23.1.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    }
+  ]
+}

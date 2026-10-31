@@ -1,0 +1,83 @@
+[
+  {
+    "name": "official_widest",
+    "status": "observed",
+    "n": 84,
+    "admissible_passed": 84,
+    "raw_exact_gold_passed": 84,
+    "initial_observations": 84,
+    "restarted_observations": 84,
+    "differences_rows": 0,
+    "groups": {
+      "historical": {
+        "n": 72,
+        "passed": 72
+      },
+      "fresh_api": {
+        "n": 6,
+        "passed": 6
+      },
+      "current_roundtrip": {
+        "n": 6,
+        "passed": 6
+      }
+    },
+    "candidate_archive_matches": true,
+    "score_sha256": "b2cdd6559458e7ce11397a1fde0fc76ac916799aebc4c3ae37edf3844c7baada",
+    "observations_sha256": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961"
+  },
+  {
+    "name": "document_exclusion",
+    "status": "observed",
+    "n": 84,
+    "admissible_passed": 84,
+    "raw_exact_gold_passed": 24,
+    "initial_observations": 84,
+    "restarted_observations": 84,
+    "differences_rows": 60,
+    "groups": {
+      "historical": {
+        "n": 72,
+        "passed": 72
+      },
+      "fresh_api": {
+        "n": 6,
+        "passed": 6
+      },
+      "current_roundtrip": {
+        "n": 6,
+        "passed": 6
+      }
+    },
+    "candidate_archive_matches": true,
+    "score_sha256": "381816718b1188c44c7d4e71b69316d879542fdb311f4957d5aeaf849cfe37aa",
+    "observations_sha256": "9a881b020fedd6192089c3c9671f40c3c37107c8a1b8611f9f15587f17c0f1fb"
+  },
+  {
+    "name": "negative_explicit_float_narrowing",
+    "status": "observed",
+    "n": 84,
+    "admissible_passed": 0,
+    "raw_exact_gold_passed": 0,
+    "initial_observations": 84,
+    "restarted_observations": 84,
+    "differences_rows": 84,
+    "groups": {
+      "historical": {
+        "n": 72,
+        "passed": 0
+      },
+      "fresh_api": {
+        "n": 6,
+        "passed": 0
+      },
+      "current_roundtrip": {
+        "n": 6,
+        "passed": 0
+      }
+    },
+    "candidate_archive_matches": true,
+    "score_sha256": "619e95194c20c9a35e3e95990134ad27f5e1a26d8913f02d10b75be3fbfe219d",
+    "observations_sha256": "414b12acec786d4d5e1f28657a1f99402d9e8884f763894d1ea49eee12fed5e4"
+  }
+]

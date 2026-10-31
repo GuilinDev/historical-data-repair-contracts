@@ -1,0 +1,158 @@
+--- a/jsonpickle/ext/pandas.py
++++ b/jsonpickle/ext/pandas.py
+@@ -1,3 +1,4 @@
++import re
+ import warnings
+ import zlib
+ from io import StringIO
+@@ -7,7 +8,7 @@
+ 
+ from .. import decode, encode
+ from ..handlers import BaseHandler, register, unregister
+-from ..tags_pd import REVERSE_TYPE_MAP, TYPE_MAP
++from ..tags_pd import REVERSE_TYPE_MAP, TYPE_MAP, pd_dtypes
+ from ..util import b64decode, b64encode
+ from .numpy import register_handlers as register_numpy_handlers
+ from .numpy import unregister_handlers as unregister_numpy_handlers
+@@ -131,6 +132,39 @@
+     )
+ 
+ 
++def _legacy_document_dtype_overrides(type_codes):
++    """Use complete document evidence; incomplete legacy evidence stays wide.
++
++    A genuine producer uses one TYPE_MAP entry per dtype for the entire
++    document. Therefore an explicit-width tag rules that dtype out as the
++    meaning of another bare tag. Infer only a unique remaining dtype among
++    the pandas numeric dtypes of the declared compatible runtime. This does
++    not infer dtype from numeric magnitude or application column names.
++    """
++    present = set(type_codes)
++    result = {}
++    families = (("float", "f", ("pd/f",)),
++                ("int", "i", ("pd/i", "pd/in")),
++                ("uint", "u", ("pd/u",)))
++    for stem, short, bare_tags in families:
++        universe = {
++            int(name[len(stem):]) for name in pd_dtypes
++            if isinstance(name, str) and re.fullmatch(stem + r"\d+", name)
++        }
++        bare = present.intersection(bare_tags)
++        if len(bare) != 1 or not universe:
++            continue
++        explicit = set()
++        for tag in present:
++            match = re.fullmatch(r"pd/(?:" + short + "|" + stem + r")(\d+)", tag)
++            if match:
++                explicit.add(int(match.group(1)))
++        remaining = universe - explicit
++        if len(remaining) == 1:
++            result[next(iter(bare))] = stem + str(next(iter(remaining)))
++    return result
++
++
+ class PandasDfHandler(BaseHandler):
+     pp = PandasProcessor()
+ 
+@@ -232,6 +266,7 @@
+             )
+             return self.restore_v3_3(obj)
+         type_codes = rle_decode(rle_types)
++        legacy_overrides = _legacy_document_dtype_overrides(type_codes)
+ 
+         # handle multicolumns
+         columns_decoded = decode(meta["columns"], keys=True)
+@@ -255,6 +290,24 @@
+                 df_data[col] = col_data
+                 # used later to get correct dtypes
+                 dtype_str = REVERSE_TYPE_MAP.get(type_code, "object")
++                # Bare prefixes may also name non-numeric dtypes. Empty
++                # payloads provide no kind evidence: retain the conservative
++                # reader behavior. This guard never selects a width by value
++                # magnitude; only document tags can establish a unique width.
++                integer_payload = bool(col_data) and all(
++                    isinstance(value, (int, np.integer))
++                    and not isinstance(value, (bool, np.bool_))
++                    for value in col_data
++                )
++                floating_payload = bool(col_data) and all(
++                    isinstance(value, (int, float, np.integer, np.floating))
++                    and not isinstance(value, (bool, np.bool_))
++                    for value in col_data
++                )
++                can_infer = (type_code in ("pd/i", "pd/in", "pd/u") and integer_payload
++                             or type_code == "pd/f" and floating_payload)
++                if can_infer:
++                    dtype_str = legacy_overrides.get(type_code, dtype_str)
+                 dtypes[col] = dtype_str
+ 
+         # turn dict into df
+--- a/jsonpickle/tags_pd.py
++++ b/jsonpickle/tags_pd.py
+@@ -121,7 +121,21 @@
+     for subclass in cls.__subclasses__():
+         subclasses.add(subclass)
+         subclasses.update(all_subclasses(subclass))
+-    return list(subclasses)
++    # get_smallest_unique_substrings hands the shortest code to whichever dtype
++    # it sees first, so this order decides the codes. Classes hash by address, so
++    # iterating the set directly gave a different order and different codes in
++    # different processes. so, we have to sort it instead! the dtypes in pandas
++    # go first, so that importing a library that defines its own extension dtype
++    # can't take a prefix a pandas dtype's code depends on
++    return sorted(
++        subclasses,
++        # False sorts before True here
++        key=lambda cls: (
++            cls.__module__.partition(".")[0] != "pandas",
++            cls.__module__,
++            cls.__qualname__,
++        ),
++    )
+ 
+ 
+ def get_all_numpy_dtype_strings():
+@@ -232,4 +246,43 @@
+ TYPE_MAP = get_smallest_unique_substrings(np_dtypes, prefix="np")
+ TYPE_MAP.update(get_smallest_unique_substrings(pd_dtypes, prefix="pd"))
+ 
++# jsonpickle <= 5.0.0rc2 generated the below codes in an order that varied from
++# process to process, so a code like "pd/f" meant float64 in some processes
++# and float32 in others, and a frame could be restored with a narrower dtype
++# than it was saved with. since every code suffixed with a width only had a single
++# meaning, we pin those codes so that the bare coees aren't written anymore
++_PINNED_CODES: dict[str, str] = {
++    "float32": "pd/f32",
++    "float64": "pd/f64",
++    "int8": "pd/i8",
++    "int16": "pd/i16",
++    "int32": "pd/i32",
++    "int64": "pd/i64",
++    "uint8": "pd/u8",
++    "uint16": "pd/u16",
++    "uint32": "pd/u32",
++    "uint64": "pd/u64",
++    "interval": "pd/in",
++}
++TYPE_MAP.update(
++    (dtype, code) for dtype, code in _PINNED_CODES.items() if dtype in TYPE_MAP
++)
++
++# documents from jsonpickle <=5.0.0rc2 can still contain the bare codes, and there is
++# no way to know which width a given one meant, so each is read as the widest
++# dtype it was ever used for. that can widen a column, but afaik it should never lose
++# or wrap anything
++_LEGACY_AMBIGUOUS_CODES: dict[str, str] = {
++    "pd/f": "float64",
++    "pd/i": "int64",
++    "pd/u": "uint64",
++}
++
+ REVERSE_TYPE_MAP = {v: k for k, v in TYPE_MAP.items()}
++for _code, _dtype in _LEGACY_AMBIGUOUS_CODES.items():
++    if _code in REVERSE_TYPE_MAP:
++        raise RuntimeError(
++            f"{_code!r} is reserved for legacy documents but was assigned to "
++            f"{REVERSE_TYPE_MAP[_code]!r}"
++        )
++    REVERSE_TYPE_MAP[_code] = _dtype

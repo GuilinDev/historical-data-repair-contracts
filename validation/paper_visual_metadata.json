@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "figure1_collision",
+      "png": {
+        "width": 4140,
+        "height": 1170,
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "vector_pdf": true,
+      "alt_available": true
+    },
+    {
+      "figure": "figure2_calibration",
+      "png": {
+        "width": 4140,
+        "height": 1410,
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "vector_pdf": true,
+      "alt_available": true
+    },
+    {
+      "figure": "figure3_attempts",
+      "png": {
+        "width": 4140,
+        "height": 1770,
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "mode": "RGBA"
+      },
+      "vector_pdf": true,
+      "alt_available": true
+    }
+  ],
+  "contrast_against_white": {
+    "teal": 6.492997632562983,
+    "blue": 7.48206483143683,
+    "gray": 5.741836481454148
+  },
+  "pages": 6,
+  "pdf_extracted_whitespace_words": 2685,
+  "all_figures_vector": true,
+  "manual_inspection": "All six final pages viewed at rendered size; no clipping, overlap, missing glyphs, or split main table.",
+  "not_claimed": "Automatic accessibility or scientific validity certification",
+  "pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+  "api_calls": 0
+}

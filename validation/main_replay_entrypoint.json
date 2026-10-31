@@ -1,0 +1,609 @@
+{
+  "passed": true,
+  "episodes": 32,
+  "observations": 1008,
+  "full_semantic_acceptances": 4,
+  "rows": [
+    {
+      "episode": "93f5c9999ee4",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "9e0dea0f25d4755a3cb0eb6736d1e9c4d508ecee491383ce9ac921077b4dbda5"
+    },
+    {
+      "episode": "183bc51919d5",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 9,
+      "n": 21,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "c9e56f50c827510dbec353b583cd225052587b512f916b6b9ed288571e36d714"
+    },
+    {
+      "episode": "f50ac29629d1",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 27,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "4fc106f7731b98979a826e429499fb0487de72372744e4dd2136349863375dcf"
+    },
+    {
+      "episode": "6160443aebd8",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 0,
+      "n": 84,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "ebea081f3de901a7ad2644ff568216d72b12fa3574f67e6ca31aa13dbe3653ad"
+    },
+    {
+      "episode": "820d349186f5",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "95f3f660e4e4e9c8f13013c59cb7472b9b26109edd7a439f016cc7e8bdab25f2"
+    },
+    {
+      "episode": "6beed2ca1c08",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "053f1ce74556e28d0205a03977dc6e9facc150d7fd79a337bc9a81704a74af22"
+    },
+    {
+      "episode": "c62f9c414dc5",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "d50b6a57c3ddb1264dadd016a35c2d67926e3546e866e8c97fcbd5b0ef0ca112"
+    },
+    {
+      "episode": "239561ed0d37",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 24,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "e4a73bc7400a07fe08764e07844c6efe4e246d7587647bf5c50e186072737538"
+    },
+    {
+      "episode": "e401d2c3a27d",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 7,
+      "n": 21,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "b5e9a06b096778aee31ebeb91b65a5a3d45574286051a906fe566030ffe70688"
+    },
+    {
+      "episode": "53394461271a",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 21,
+      "n": 21,
+      "full_semantic_accept": true,
+      "recorded_full_semantic_accept": true,
+      "decision_matches": true,
+      "observations_sha256": "09e9049d8a189cb7ff77f41167858fe3256aef64d15e22fe46c2b038653675ce"
+    },
+    {
+      "episode": "074ae1f3678a",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 21,
+      "n": 21,
+      "full_semantic_accept": true,
+      "recorded_full_semantic_accept": true,
+      "decision_matches": true,
+      "observations_sha256": "09e9049d8a189cb7ff77f41167858fe3256aef64d15e22fe46c2b038653675ce"
+    },
+    {
+      "episode": "0e72fdd94c31",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 21,
+      "n": 21,
+      "full_semantic_accept": true,
+      "recorded_full_semantic_accept": true,
+      "decision_matches": true,
+      "observations_sha256": "efa8363e4a0893d64807f7471c5640a182499b897229f0b3ed7cc1d6adedebfe"
+    },
+    {
+      "episode": "b81cd8ba0bd8",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "cef1594eaded9129cda0bc8af09eacde1b10181e86b09f9d7f1362b3eff72d2f"
+    },
+    {
+      "episode": "bfe5bd58e4c2",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "6a744a3d0838793c03c69a31cb1a1eb4668c3ef06bed200560b23bc30d694639"
+    },
+    {
+      "episode": "bd7140c1d378",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "d50b6a57c3ddb1264dadd016a35c2d67926e3546e866e8c97fcbd5b0ef0ca112"
+    },
+    {
+      "episode": "22dfe50e4c2e",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "053f1ce74556e28d0205a03977dc6e9facc150d7fd79a337bc9a81704a74af22"
+    },
+    {
+      "episode": "2210b787c234",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 9,
+      "n": 21,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "9b448c3798b6a1e430bf934a1b317058801578cf0db3152fb317263425ed54fa"
+    },
+    {
+      "episode": "0a3c0db3ab2e",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 0,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "71b574981dd5e5cc65c521f55459cc62be88fd0c1587eb592beaf44a90a8a01e"
+    },
+    {
+      "episode": "107a49685be5",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 12,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "6a744a3d0838793c03c69a31cb1a1eb4668c3ef06bed200560b23bc30d694639"
+    },
+    {
+      "episode": "321218a25c02",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "053f1ce74556e28d0205a03977dc6e9facc150d7fd79a337bc9a81704a74af22"
+    },
+    {
+      "episode": "7879243259c9",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 9,
+      "n": 21,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "e83246a79fb49618ca10a66aeebfcafc24cab15bbf5deaeed0810fe69dcf5509"
+    },
+    {
+      "episode": "fef8c66a4f80",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 27,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "4fc106f7731b98979a826e429499fb0487de72372744e4dd2136349863375dcf"
+    },
+    {
+      "episode": "be55c0a529b4",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 27,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "4fc106f7731b98979a826e429499fb0487de72372744e4dd2136349863375dcf"
+    },
+    {
+      "episode": "8923ab804d14",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 9,
+      "n": 84,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "a03cf74afe4f1acbee277d31a6ec3d6024a22700553ccd111356fd883e0615cb"
+    },
+    {
+      "episode": "46ae0e9c5565",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 18,
+      "n": 18,
+      "full_semantic_accept": true,
+      "recorded_full_semantic_accept": true,
+      "decision_matches": true,
+      "observations_sha256": "2598d1265ff26e5e9a45e9b58812047c9cc0ad4b09a34b37986478409bdc155d"
+    },
+    {
+      "episode": "15b1e2a9032d",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 27,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "4fc106f7731b98979a826e429499fb0487de72372744e4dd2136349863375dcf"
+    },
+    {
+      "episode": "3d3f067e10a7",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 1,
+      "n": 84,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "cdeb0e2a1d8463f9b82d133b3713c97b825a991e586cce3b37893141f0aa1096"
+    },
+    {
+      "episode": "783def885a40",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "complete": true,
+      "passed": 9,
+      "n": 21,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "c9e56f50c827510dbec353b583cd225052587b512f916b6b9ed288571e36d714"
+    },
+    {
+      "episode": "05cd04c17e21",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 0,
+      "n": 84,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "da9d8024938890d3f7c660f012710784dd747483e9b68abd857ff517a805ad14"
+    },
+    {
+      "episode": "49069b591f6e",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 36,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "6a744a3d0838793c03c69a31cb1a1eb4668c3ef06bed200560b23bc30d694639"
+    },
+    {
+      "episode": "640d76a1a31b",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "053f1ce74556e28d0205a03977dc6e9facc150d7fd79a337bc9a81704a74af22"
+    },
+    {
+      "episode": "7f0bc12caf15",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "complete": true,
+      "passed": 12,
+      "n": 18,
+      "full_semantic_accept": false,
+      "recorded_full_semantic_accept": false,
+      "decision_matches": true,
+      "observations_sha256": "95f3f660e4e4e9c8f13013c59cb7472b9b26109edd7a439f016cc7e8bdab25f2"
+    }
+  ],
+  "api_calls": 0,
+  "gpu": false,
+  "interpretation": "Fresh execution of published patch bytes. Compare complete-patch decisions. Broken numeric-code readers have process-dependent partial-case counts. This replay does not generate new model responses or replace independent source-policy review.",
+  "completed_observations": 1008,
+  "accepted_episode_ids": [
+    "074ae1f3678a",
+    "0e72fdd94c31",
+    "46ae0e9c5565",
+    "53394461271a"
+  ],
+  "original_accepted_episode_ids": [
+    "074ae1f3678a",
+    "0e72fdd94c31",
+    "46ae0e9c5565",
+    "53394461271a"
+  ],
+  "partial_case_differences": [
+    {
+      "episode": "6160443aebd8",
+      "task": "jsonpickle_dtype_634",
+      "recorded": 3,
+      "replayed": 0,
+      "n": 84
+    },
+    {
+      "episode": "8923ab804d14",
+      "task": "jsonpickle_dtype_634",
+      "recorded": 0,
+      "replayed": 9,
+      "n": 84
+    }
+  ],
+  "per_record_status_counts": {
+    "93f5c9999ee4": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "183bc51919d5": {
+      "program_error": 12,
+      "observed": 9
+    },
+    "f50ac29629d1": {
+      "program_error": 9,
+      "observed": 27
+    },
+    "6160443aebd8": {
+      "observed": 84
+    },
+    "820d349186f5": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "6beed2ca1c08": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "c62f9c414dc5": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "239561ed0d37": {
+      "observed": 24,
+      "program_error": 12
+    },
+    "e401d2c3a27d": {
+      "program_error": 14,
+      "observed": 7
+    },
+    "53394461271a": {
+      "observed": 21
+    },
+    "074ae1f3678a": {
+      "observed": 21
+    },
+    "0e72fdd94c31": {
+      "observed": 21
+    },
+    "b81cd8ba0bd8": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "bfe5bd58e4c2": {
+      "program_error": 18,
+      "observed": 18
+    },
+    "bd7140c1d378": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "22dfe50e4c2e": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "2210b787c234": {
+      "program_error": 12,
+      "observed": 9
+    },
+    "0a3c0db3ab2e": {
+      "observed": 12,
+      "program_error": 6
+    },
+    "107a49685be5": {
+      "program_error": 18,
+      "observed": 18
+    },
+    "321218a25c02": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "7879243259c9": {
+      "observed": 21
+    },
+    "fef8c66a4f80": {
+      "program_error": 9,
+      "observed": 27
+    },
+    "be55c0a529b4": {
+      "program_error": 9,
+      "observed": 27
+    },
+    "8923ab804d14": {
+      "observed": 84
+    },
+    "46ae0e9c5565": {
+      "observed": 18
+    },
+    "15b1e2a9032d": {
+      "program_error": 9,
+      "observed": 27
+    },
+    "3d3f067e10a7": {
+      "observed": 84
+    },
+    "783def885a40": {
+      "program_error": 12,
+      "observed": 9
+    },
+    "05cd04c17e21": {
+      "observed": 84
+    },
+    "49069b591f6e": {
+      "program_error": 18,
+      "observed": 18
+    },
+    "640d76a1a31b": {
+      "program_error": 6,
+      "observed": 12
+    },
+    "7f0bc12caf15": {
+      "program_error": 6,
+      "observed": 12
+    }
+  },
+  "wall_seconds": 449.5058217000915,
+  "exit_code": 0,
+  "entrypoint_sha256": "c2b19353a8ff2c65f18059c9e198b4fcc66d93639f48883964f267fdecda5831",
+  "synchronized_file_count": 3331,
+  "synchronized_archive_bytes": 9312341,
+  "synchronized_archive_sha256": "8907265fef7f3cdbd3eaf107589716fb784384a7996bc44074d3bd58725a5ba9",
+  "installed_file_hashes_match": true,
+  "private_identity_scan_passed": true,
+  "original_engine_data_locks_changed": false,
+  "core_file_hashes_match_cold_run": {
+    "compat.py": true,
+    "engine/common.py": true,
+    "engine/dataset.py": true,
+    "engine/frozen_tools.py": true,
+    "engine/frozen_judge.py": true,
+    "plan.json": true,
+    "tasks.json": true,
+    "dependencies.json": true,
+    "runtime-requirements.lock": true,
+    "test-requirements.lock": true,
+    "data_integrity.json": true
+  },
+  "existing_cold_runtime_reused": true,
+  "command": [
+    "python3",
+    "reproduce_main.py",
+    "--output",
+    "<fresh-directory>"
+  ],
+  "receipts_directory": "Private audit archive; per-episode counts and observation hashes retained here.",
+  "scope": "Independent CPU execution of published source overlays using the existing cold-installed runtime. Failed semantic loads are task outcomes, not missing evaluations; process-dependent partial dtype counts are retained. No API/GPU or new model responses.",
+  "validation_utc": "20261030T230235Z"
+}

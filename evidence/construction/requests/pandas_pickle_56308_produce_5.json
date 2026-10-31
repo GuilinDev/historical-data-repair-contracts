@@ -1,0 +1,34 @@
+[
+  {
+    "id": "e01827266489",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          924,
+          "red"
+        ],
+        [
+          -52,
+          "green"
+        ],
+        [
+          486,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\pandas_pickle_56308\\artifacts\\e01827266489.pickle"
+  }
+]

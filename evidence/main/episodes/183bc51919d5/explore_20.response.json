@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793397354-WqVU0Cl8Az6mGZYRseYZ",
+  "object": "chat.completion",
+  "created": 1793397354,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_e69c64950b90433e9c10b32a8b58c387",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # When requested, only use memmap mode if allowed.\\n        if unpickler.mmap_mode is not None and self.allow_mmap:\\n            array = self.read_mmap(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\\n\",\"old\":\"        # When requested, only use memmap mode if allowed.\\n        # If the file is compressed, mmap_mode is ignored and we read the array normally.\\n        if unpickler.mmap_mode is not None and self.allow_mmap and unpickler.compressor == 'not-compressed':\\n            array = self.read_mmap(unpickler)\\n        else:\\n            array = self.read_array(unpickler)\\n\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27406,
+    "completion_tokens": 209,
+    "total_tokens": 27615,
+    "cost": 0.000438645,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 26823,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000438645,
+      "upstream_inference_prompt_cost": 0.000419835,
+      "upstream_inference_completions_cost": 1.881e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

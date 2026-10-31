@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+  "decision": "GO scientific/editorial evidence for this current manuscript; public availability must be verified after authorized publication.",
+  "scope": "Current root paper/final_content.json and paper/verify_numbers.py, not the previous release manuscript. Read-only; no new model, candidate, GPU, Docker, or SSH execution.",
+  "checks": [
+    {
+      "check": "CurrentPDF",
+      "passed": true
+    },
+    {
+      "check": "Six pages",
+      "passed": true
+    },
+    {
+      "check": "Author confirmed",
+      "passed": true
+    },
+    {
+      "check": "Unchanged16",
+      "passed": true
+    },
+    {
+      "check": "Exacterror11",
+      "passed": true
+    },
+    {
+      "check": "Unchanged with exacterror5",
+      "passed": true
+    },
+    {
+      "check": "Five of sixteen explicitly stated",
+      "passed": true
+    },
+    {
+      "check": "Not official failure rate",
+      "passed": true
+    },
+    {
+      "check": "Same document explicit",
+      "passed": true
+    },
+    {
+      "check": "Collision fallback retained",
+      "passed": true
+    },
+    {
+      "check": "Inference receives thisframe RLE",
+      "passed": true
+    },
+    {
+      "check": "Guards exclude empty/wrongkind",
+      "passed": true
+    },
+    {
+      "check": "Producer dtype-to-tag dict",
+      "passed": true
+    },
+    {
+      "check": "Fixed identity pinned not relabeled",
+      "passed": true
+    },
+    {
+      "check": "Resource cardinalities unchanged",
+      "passed": true
+    },
+    {
+      "check": "Figure data unchanged versus previous review",
+      "passed": true
+    },
+    {
+      "check": "4.1.2:jsonpickle/tags_pd.py",
+      "passed": true
+    },
+    {
+      "check": "4.1.2:jsonpickle/ext/pandas.py",
+      "passed": true
+    },
+    {
+      "check": "4.1.3:jsonpickle/tags_pd.py",
+      "passed": true
+    },
+    {
+      "check": "4.1.3:jsonpickle/ext/pandas.py",
+      "passed": true
+    },
+    {
+      "check": "4.1.4:jsonpickle/tags_pd.py",
+      "passed": true
+    },
+    {
+      "check": "4.1.4:jsonpickle/ext/pandas.py",
+      "passed": true
+    },
+    {
+      "check": "5.0.0rc2:jsonpickle/tags_pd.py",
+      "passed": true
+    },
+    {
+      "check": "5.0.0rc2:jsonpickle/ext/pandas.py",
+      "passed": true
+    }
+  ],
+  "checks_passed": 24,
+  "word_count_structured_including_references_tables_figures_captions": 2671,
+  "current_verify_numbers": {
+    "command": "python -B paper/verify_numbers.py",
+    "exit_code": 0,
+    "passed": true,
+    "source_files_hash_checked": 15,
+    "figure_count": 3,
+    "table_lineages": 8,
+    "episodes_verified": 32,
+    "accepted": 4,
+    "trajectory_public_inputs_verified": 178,
+    "contract_source_anchors_verified": 15,
+    "api_calls": 0,
+    "docker_calls": 0
+  },
+  "unchanged_exact_error_intersection": {
+    "unchanged_denominator": 16,
+    "with_recorded_exact_error": 5,
+    "episode_ids": [
+      "107a49685be5",
+      "22dfe50e4c2e",
+      "321218a25c02",
+      "640d76a1a31b",
+      "6beed2ca1c08"
+    ],
+    "interpretation": "Observed error incidence; not a causal failure decomposition. Eleven attempts had such errors in total, including one fully accepted attempt."
+  },
+  "same_document_inference": {
+    "passed": true,
+    "source": "results/multisolution/20261030T223234_v2/repair.patch",
+    "reason": "The helper receives type_codes decoded from this DataFrame metadata and excludes explicitly represented widths in that same set. It does not use other fixture documents. Unique-width inference retains nonempty/kind guards and conservative fallback."
+  },
+  "retained_source_release_audit": {
+    "source": "results/paper_review/claude_review_20261031/jsonpickle_release_source_audit.json",
+    "files_hash_verified": 8,
+    "scope": "Static source identity. No new runtime claim and no relabeling of the tested e7d95a6 commit as a formal release."
+  },
+  "issues": [],
+  "remaining_publication_gate": "Both GitHub URLs in the paper name the authorized destination. Do not represent them as externally verified until the publication and anonymous fetch succeed.",
+  "limits": [
+    "The resource/calibration remains the contribution; no causal editing-tool benefit is established.",
+    "Official edit_file interface attribution is supported by the retained official-browser review; this audit does not claim a new official-harness run.",
+    "This is an evidence review; current PDF layout is handled by the separate final visual review.",
+    "No calibrated winning probability or external adoption is asserted."
+  ],
+  "source_sha256": {
+    "paper/final_content.json": "d32390a77e3cfd955d456452f9500ae880a05f5cfd6f0085801b9cfdac2ac2da",
+    "paper/verify_numbers.py": "dc932267ac9e0438096289b02e4ac374adf6faa7ab854f892cb28cb358a27b1d",
+    "paper/figure_data.json": "ff0a15c81b6e7446f09d2951246b8b00c3651a4745ea93307653ae18bed401bc",
+    "paper/figure_manifest.json": "5fe3959f6d751775107bbcda7fbb88b18ed2a76138ea159fe8eeb3c6eca5b676",
+    "results/paper_review/claude_review_20261031/decision.json": "b2b45ada7a149c11b29a06c75721df170bbb6154450ccb3f39664e0a6a748e41",
+    "results/paper_review/claude_review_20261031/jsonpickle_release_source_audit.json": "91b7a8a82c9a414d8bbcbebead6d22a4ce205f5227ad8ae6b17108454100d0bd",
+    "results/paper_review/clarity_revision_20261031/trajectory_audit.json": "7b8caaf842ef06f789a6b9699097c27e041e3bb29f2a88e2b1ee655cb4e82f56",
+    "output/pdf/historical-data-compatibility.pdf": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92"
+  }
+}

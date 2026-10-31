@@ -1,0 +1,1 @@
+{"py/object": "pandas.core.frame.DataFrame", "values": "{\"span\": []}", "txt": true, "meta": {"dtypes_rle": [["pd/in", 1]], "index": "[]", "index_names": null, "columns": "[\"span\"]", "column_names": null, "is_multiindex": false, "is_multicolumns": false}}

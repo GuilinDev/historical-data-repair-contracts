@@ -1,0 +1,12 @@
+{
+  "episode": "8923ab804d14",
+  "family": "jsonpickle_dtype_634",
+  "project": "jsonpickle",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "changed_paths": [],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

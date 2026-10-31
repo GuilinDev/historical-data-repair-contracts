@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "control": "positive",
+      "cli_exit": 0,
+      "semantic_checks_passed": true,
+      "test_report": {
+        "collected": 1,
+        "test_bodies_run": 1,
+        "body_passed": 1,
+        "body_failed": 0,
+        "skipped_calls": 0,
+        "setup_errors": 0,
+        "collection_errors": 0,
+        "exit_code": 0,
+        "reports": [
+          {
+            "nodeid": "test_regression.py::test_public_boundary",
+            "outcome": "passed"
+          }
+        ]
+      },
+      "expected_test_behavior": true,
+      "passed": true
+    },
+    {
+      "control": "negative",
+      "cli_exit": 0,
+      "semantic_checks_passed": true,
+      "test_report": {
+        "collected": 1,
+        "test_bodies_run": 1,
+        "body_passed": 0,
+        "body_failed": 1,
+        "skipped_calls": 0,
+        "setup_errors": 0,
+        "collection_errors": 0,
+        "exit_code": 1,
+        "reports": [
+          {
+            "nodeid": "test_regression.py::test_fails",
+            "outcome": "failed"
+          }
+        ]
+      },
+      "expected_test_behavior": true,
+      "passed": true
+    },
+    {
+      "control": "collection_error",
+      "cli_exit": 0,
+      "semantic_checks_passed": true,
+      "test_report": {
+        "collected": 0,
+        "test_bodies_run": 0,
+        "body_passed": 0,
+        "body_failed": 0,
+        "skipped_calls": 0,
+        "setup_errors": 0,
+        "collection_errors": 1,
+        "exit_code": 2,
+        "reports": []
+      },
+      "expected_test_behavior": true,
+      "passed": true
+    },
+    {
+      "control": "no_tests",
+      "cli_exit": 0,
+      "semantic_checks_passed": true,
+      "test_report": {
+        "collected": 0,
+        "test_bodies_run": 0,
+        "body_passed": 0,
+        "body_failed": 0,
+        "skipped_calls": 0,
+        "setup_errors": 0,
+        "collection_errors": 0,
+        "exit_code": 5,
+        "reports": []
+      },
+      "expected_test_behavior": true,
+      "passed": true
+    },
+    {
+      "control": "unified_patch_cli",
+      "cli_exit": 0,
+      "passed": true
+    }
+  ],
+  "dataset_control_denominator_separate": true,
+  "api_calls": 0,
+  "gpu": false,
+  "receipts_directory": "results/interface_20261030T222201Z_1aaefa"
+}

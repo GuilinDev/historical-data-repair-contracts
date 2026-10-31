@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793397363-MLiE1lXNXNaEzYh51tO9",
+  "object": "chat.completion",
+  "created": 1793397363,
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "PrimeIntellect",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I have attempted to repair the defect where `mmap_mode` was incorrectly applied to compressed files, leading to `ValueError: mmap length is greater than file size`.\n\n### Changes Made\nI modified `joblib/numpy_pickle.py` in the `NumpyArrayWrapper.read` method. The logic was updated to ensure that `read_mmap` is only called if the file is not compressed (i.e., `unpickler.compressor == 'not-compressed'`). If the file is compressed, the reader now correctly falls back to `read_array`, which performs a standard in-memory read, as documented.\n\n### Checks Performed\n- **Legacy Suite**: I ran the `legacy` test suite. \n    - Initial run (pre-patch): 4 failures due to `ValueError: mmap length is greater than file size` on compressed historical artifacts.\n    - Post-patch run: The failures persisted with the same error message.\n\n### Unresolved Work\nThe patch did not resolve the reported issue in the `legacy` suite. Upon inspection, the `unpickler.compressor` attribute might not be available or correctly populated in the `NumpyUnpickler` instance used during the `legacy` test execution, or the `compressor` detection logic in `_read_fileobject` (which returns `'not-compressed'`) is not being reflected in the `unpickler` object passed to `NumpyArrayWrapper.read`. \n\nSpecifically, `unpickler.compressor` is not explicitly defined in the `Unpickler` class in the provided source snippets, and its availability depends on how `NumpyUnpickler` (a subclass of `pickle._Unpickler`) is implemented in `joblib/numpy_pickle_utils.py`. Since I cannot see the full implementation of `NumpyUnpickler`, I cannot guarantee that `unpickler.compressor` is the correct way to check the compression state.\n\nThe error `ValueError: mmap length is greater than file size` indicates that `read_mmap` is still being called on compressed files, which attempt to memory-map the compressed stream as if it were raw data.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29614,
+    "completion_tokens": 466,
+    "total_tokens": 30080,
+    "cost": 0.0009303,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 4,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009303,
+      "upstream_inference_prompt_cost": 0.00088836,
+      "upstream_inference_completions_cost": 4.194e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

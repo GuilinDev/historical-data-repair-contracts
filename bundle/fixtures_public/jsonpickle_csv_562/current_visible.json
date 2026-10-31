@@ -1,0 +1,90 @@
+[
+  {
+    "id": "50946b82bba2",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "ded19ee5e4fa",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "1831c39d6ca7",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  },
+  {
+    "id": "4198e7620fe1",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ],
+      "text_only": true
+    },
+    "visible": true
+  }
+]

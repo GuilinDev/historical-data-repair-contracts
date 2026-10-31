@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-30T22:35:08.102206+00:00",
+  "status": "FROZEN_BEFORE_V2_EXECUTION",
+  "parent_plan_sha256": "2ee529cfb4bcb33d71c2d7a48133eea8f8e989b4ff835030049ccf38efcd1a1f",
+  "parent_summary_sha256": "23fa7fd6f16a9719c61f9035cfa401a652432b9cfdcdc800bbd5328be362dc04",
+  "revision_reason": "Independent source review identified vacuous all(empty) and non-numeric bare-tag ambiguity. v1 remains intact; new candidate requires nonempty kind-compatible payload before any metadata-only width deduction.",
+  "candidate": "document_exclusion_v2",
+  "changed_paths": [
+    "jsonpickle/ext/pandas.py",
+    "jsonpickle/tags_pd.py"
+  ],
+  "manifest_sha256": "776aafcef12ceb101f300e3abfe02a2304c85fd994f7b517e98597ba5ef767f6",
+  "repair_patch_sha256": "7c02d2479db9d87f2fc6814d3768faafe7b399fe8acaad535a524989a2d63d3c",
+  "main_checks": 84,
+  "main_judge": "Unchanged ResourceDataset.judge on the same immutable main84 inputs; raw exact-gold comparison separately.",
+  "controls": "Genuine old4.1.1 empty and nonempty Interval documents, with same-process producer receipt; compare old/base, official reference, whole fixed, frozenv1 and v2 through fresh-process restart. Also repeat lone-collision fallback and currentfloat32/64 exact-width controls on v2.",
+  "control_interpretation": "Old producer already loses empty Interval dtype to float64. Check for a new regression relative to conservative reference; do not call that pre-existing limitation repaired or claim every Interval API is correct.",
+  "success_gate": "v2 passes84/84, has admissible genuine width differences from exact gold, preserves official reference behavior on the empty/non-numeric controls, and passes3 numeric fallback/new-width checks. Source reasoning must survive independent review.",
+  "no_retcon": "This is a second author-constructed resource validation after a disclosed source-review defect, not a changed main model protocol, new model success or unmodified-v1 success.",
+  "api_calls": 0,
+  "gpu_calls": 0,
+  "source_hashes": {
+    "run_v2.py": "2be7c8ab0fee55e38ea148bfac5b9f35ee31efa07fa10bcc70d8e12c92571506",
+    "interval_worker.py": "fc7b03343366f160ebacc96c360a5f8aff0e1cd211d1346c4f90de6e1570d7cf",
+    "numeric_worker.py": "088fceb13c3e9a4e2353714d7f2ac58f55461c0d333ab6be745ec5744fc47d16"
+  },
+  "trusted_v1_audit_sha256": "718190a77b615fc38c0b96d043d7839f189050480a3f0f595f56a0e8bae039f9",
+  "supplemental_manifest": {
+    "collision.json": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+    "empty_interval_alone.json": "8ba134a5f2dea5a960056946f6c2dbd214b261a521944dbcc3035fdc3de3ca0b",
+    "empty_interval_and_explicit_integers.json": "649946f4e8545b3d7be6cd94fd27c6ff72d624f6d1c84013ffc2114204080be5",
+    "nonempty_interval_and_integers.json": "01feae4e6bcc43978799ea0622a55be8f64f97ef1b550d5eb08f39d01e1333fa",
+    "producer_receipt.json": "b5b038bac6a57c12ceccd079a650d8cafe22f4868b2ac139a3d0b593db136ba2"
+  }
+}

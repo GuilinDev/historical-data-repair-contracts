@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793398204-LovqoGB4rlfOnxt55kAX",
+  "object": "chat.completion",
+  "created": 1793398204,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-9208ca03-bc82-40c2-840d-73a273cf9c82",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        if unpickler.mmap_mode == 'w+':\\n            unpickler.mmap_mode = 'r+'\\n\\n        # To support big-endian arrays with mmap_mode='r+', we must ensure that\\n        # the dtype passed to make_memmap is the native byte order.\\n        # If we use the non-native dtype, numpy.memmap will create a view that\\n        # is not writable if we then try to byteswap it.\\n        # By using the native byte order dtype, we can read and write the\\n        # data in the native format, and numpy will handle the byte swapping\\n        # if the data on disk is in a different order.\\n        # Wait, that's not how memmap works. memmap reads the bytes as they are.\\n        # If the data on disk is big-endian and we are on a little-endian machine,\\n        # we must use a big-endian dtype to read it correctly.\\n        # But if we want to mutate it and have those mutations reach the file,\\n        # we must keep the big-endian dtype.\\n        # The problem is that _ensure_native_byte_order calls byteswap().view(),\\n        # which creates a copy.\\n        # To fix this, we should avoid calling _ensure_native_byte_order if we\\n        # are in mmap mode and the dtype is not native.\\n        # However, the requirement is that the numeric values must remain correct.\\n        # If we return the marray with a big-endian dtype on a little-endian machine,\\n        # numpy will handle the byte swapping on access, and the values will be correct.\\n        # And mutations will be written back in big-endian order.\\n        \\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        # For memmap, we must NOT call _ensure_native_byte_order because it\\n        # would create a copy if there is a byte order mismatch.\\n        # Instead, we return the marray as is. Numpy will handle the byte order\\n        # based on the dtype.\\n        return marray\",\"old\":\"        if unpickler.mmap_mode == 'w+':\\n            unpickler.mmap_mode = 'r+'\\n\\n        marray = make_memmap(unpickler.filename,\\n                             dtype=self.dtype,\\n                             shape=self.shape,\\n                             order=self.order,\\n                             mode=unpickler.mmap_mode,\\n                             offset=offset)\\n        # update the offset so that it corresponds to the end of the read array\\n        unpickler.file_handle.seek(offset + marray.nbytes)\\n\\n        if (numpy_array_alignment_bytes is None and\\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\\n            message = (\\n                f'The memmapped array {marray} loaded from the file '\\n                f'{unpickler.file_handle.name} is not byte aligned. '\\n                'This may cause segmentation faults if this memmapped array '\\n                'is used in some libraries like BLAS or PyTorch. '\\n                'To get rid of this warning, regenerate your pickle file '\\n                'with joblib >= 1.2.0. '\\n                'See https://github.com/joblib/joblib/issues/563 '\\n                'for more details'\\n            )\\n            warnings.warn(message)\\n\\n        return _ensure_native_byte_order(marray)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29174,
+    "completion_tokens": 1071,
+    "total_tokens": 30245,
+    "cost": 0.00328154,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 26912,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00328154,
+      "upstream_inference_prompt_cost": 0.0029174,
+      "upstream_inference_completions_cost": 0.00036414
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "implementation": "Unchanged already-cold-validated public compat.py verify with whitelisted unified patch parser and local Docker; no original experiment runner imported.",
+  "rows": [
+    {
+      "name": "official_widest",
+      "patch_sha256": "388a9083ffb3e10d6772cee7cbbdce97fc84972e45df00e8f84e96f12af2b7f8",
+      "cli_exit": 0,
+      "wall_seconds": 67.46220179996453,
+      "execution_status": "observed",
+      "observed_records": 84,
+      "n": 84,
+      "admissible_passed": 84,
+      "raw_exact_gold_passed": 84,
+      "groups": {
+        "historical": {
+          "n": 72,
+          "passed": 72
+        },
+        "fresh_api": {
+          "n": 6,
+          "passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "passed": 6
+        }
+      },
+      "score_sha256": "bed125bdfc2fbf26a41d1bc88902a86e8c6b5f9710eaee87d7456e44466a9dcd",
+      "observations_sha256": "49fb933f9eae0776038d8d7b3278e8aef0f377aa2246ee2a6c5629bdd2a458b9"
+    },
+    {
+      "name": "document_exclusion",
+      "patch_sha256": "dec42dfe855a3f8dfd12f5aee89abafb7c56f2874c449e92284a57deefbe2c16",
+      "cli_exit": 0,
+      "wall_seconds": 66.88126140006352,
+      "execution_status": "observed",
+      "observed_records": 84,
+      "n": 84,
+      "admissible_passed": 84,
+      "raw_exact_gold_passed": 24,
+      "groups": {
+        "historical": {
+          "n": 72,
+          "passed": 72
+        },
+        "fresh_api": {
+          "n": 6,
+          "passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "passed": 6
+        }
+      },
+      "score_sha256": "cb7bda01ebb8ad30bc6a7a8ab669643e5bfc60c3aaae8b204834127b024401dd",
+      "observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f"
+    },
+    {
+      "name": "negative_explicit_float_narrowing",
+      "patch_sha256": "5ead7e667875768315b705e3f54915b84c91f64bc456b955f7a7511d4b4a0b69",
+      "cli_exit": 1,
+      "wall_seconds": 67.81317919993307,
+      "execution_status": "observed",
+      "observed_records": 84,
+      "n": 84,
+      "admissible_passed": 0,
+      "raw_exact_gold_passed": 0,
+      "groups": {
+        "historical": {
+          "n": 72,
+          "passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "passed": 0
+        }
+      },
+      "score_sha256": "8395284af208c56378fa57a5959220104216156ceba671bc1139d0eacbbe2a1c",
+      "observations_sha256": "762fd6731385407f29f8f6456bea7370ce197e38d292950f47908053df52de7e"
+    }
+  ],
+  "main_data_and_oracle_changed": false,
+  "api_calls": 0,
+  "gpu": false,
+  "scope": "Independent repeat on the same physical Spark using its newly installed portable runtime; not independent hardware, new lineages, natural frequency, or spontaneous agent output.",
+  "source_plan_sha256": "2ee529cfb4bcb33d71c2d7a48133eea8f8e989b4ff835030049ccf38efcd1a1f",
+  "expected_gate_met": true
+}

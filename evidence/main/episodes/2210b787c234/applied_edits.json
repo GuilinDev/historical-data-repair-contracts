@@ -1,0 +1,12 @@
+[
+  {
+    "new": "        # When requested, only use memmap mode if allowed and not compressed.",
+    "old": "        # When requested, only use memmap mode if allowed.",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        if unpickler.mmap_mode is not None and self.allow_mmap and unpickler.file_handle.name == unpickler.filename:",
+    "old": "        if unpickler.mmap_mode is not None and self.allow_mmap:",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

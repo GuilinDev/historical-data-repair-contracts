@@ -1,0 +1,1 @@
+{"py/object": "pandas.core.frame.DataFrame", "values": "text\r\n001\r\n-2\r\n3.00\r\n", "txt": true, "meta": {"dtypes": {"text": "object"}, "index": "{\"py/object\": \"pandas.core.indexes.range.RangeIndex\", \"values\": \"[0, 1, 2]\", \"txt\": true, \"meta\": {\"dtype\": \"int64\", \"name\": null}}", "column_level_names": [null], "header": [0]}}

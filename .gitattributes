@@ -1,0 +1,2 @@
+# Preserve the exact benchmark, log, source and manifest bytes across platforms.
+* -text

@@ -1,0 +1,1135 @@
+{
+  "created_utc": "2026-10-31T03:34:28Z",
+  "decision": "GO",
+  "scientific_content": "PASS_SCOPED_RESOURCE_CLAIMS",
+  "numbers_and_units": "PASS",
+  "visual_review": "PASS",
+  "blocking_corrections": [],
+  "corrections_verified": [
+    "Producer-specific encoders E_p and E_q now explicitly distinguish the two genuine runtime mappings.",
+    "Nine distinct candidate snapshots replaces nine distinct patches; unchanged source submissions remain possible."
+  ],
+  "input_sha256": {
+    "paper/final_content.json": "395d74b907647fb4b7eb2b04c001a9889ea2dff32eaa86f4a83a40a9d9d61efe",
+    "paper/figure_data.json": "ff0a15c81b6e7446f09d2951246b8b00c3651a4745ea93307653ae18bed401bc",
+    "paper/figure_manifest.json": "ca12a439251111444a38c5c6aefe91e4694ce6204839603eee0c1929bb2ce472",
+    "paper/render_receipt.json": "eca511eeb6568aac2c8071cc95b107432110eb7ee69979a0b1586750c2bacac7",
+    "output/pdf/historical-data-compatibility.pdf": "a48deb084b68c0159c34daa71616711a32c785e5435a0b05f5cceeda101b4094"
+  },
+  "conservative_word_count": 2498,
+  "pages": 6,
+  "machine_checks": [
+    {
+      "check": "main complete, finalized and observed32",
+      "passed": true
+    },
+    {
+      "check": "source-policy audit complete",
+      "passed": true
+    },
+    {
+      "check": "figure data identity",
+      "passed": true
+    },
+    {
+      "check": "figure input hash tasks.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash evidence/main/summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash evidence/independent_review/main_audit.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash evidence/independent_review/main_diagnostics.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash validation/cold_reproduction_summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash validation/multisolution_entrypoint.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash evidence/collision/summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/packaging_version_1163/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/attrs_slot_state_1085/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/jsonpickle_csv_562/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/sqlalchemy_mutable_8133/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/joblib_endian_1561/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/joblib_compressed_1681/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/jsonpickle_dtype_634/visible.json",
+      "passed": true
+    },
+    {
+      "check": "figure input hash bundle/fixtures/pandas_pickle_56308/visible.json",
+      "passed": true
+    },
+    {
+      "check": "all eight task IDs once",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 check counts",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 total",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 version chain",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 cold base",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 cold reference",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 A accepted",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 B accepted",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 check counts",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 total",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 version chain",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 cold base",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 cold reference",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 A accepted",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 B accepted",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 check counts",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 total",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 version chain",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 cold base",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 cold reference",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 A accepted",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 B accepted",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 check counts",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 total",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 version chain",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 cold base",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 cold reference",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 A accepted",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 B accepted",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 check counts",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 total",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 version chain",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 cold base",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 cold reference",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 A accepted",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 B accepted",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 check counts",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 total",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 version chain",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 cold base",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 cold reference",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 A accepted",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 B accepted",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 check counts",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 total",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 version chain",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 cold base",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 cold reference",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 A accepted",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 B accepted",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 unique file counts",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 check counts",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 total",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 version chain",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 cold base",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 cold fixed",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 cold reference",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 A accepted",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 B accepted",
+      "passed": true
+    },
+    {
+      "check": "65 distinct historical hashes,17 public",
+      "passed": true
+    },
+    {
+      "check": "four development/four introduced",
+      "passed": true
+    },
+    {
+      "check": "cold base99 and dtype6",
+      "passed": true
+    },
+    {
+      "check": "252 observations and complete fixes",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308 manuscript table cells",
+      "passed": true
+    },
+    {
+      "check": "table total labels",
+      "passed": true
+    },
+    {
+      "check": "all32 matrix identities",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2 matrix values",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2 acceptance",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2 U marker",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2 C marker",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e matrix values",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e acceptance",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e U marker",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e C marker",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5 matrix values",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5 acceptance",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5 U marker",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5 C marker",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37 matrix values",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37 acceptance",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37 U marker",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37 C marker",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1 matrix values",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1 acceptance",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1 U marker",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1 C marker",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4 matrix values",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4 acceptance",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4 U marker",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4 C marker",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80 matrix values",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80 acceptance",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80 U marker",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80 C marker",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d matrix values",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d acceptance",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d U marker",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d C marker",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378 matrix values",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378 acceptance",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378 U marker",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378 C marker",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5 matrix values",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5 acceptance",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5 U marker",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5 C marker",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565 matrix values",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565 acceptance",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565 U marker",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565 C marker",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e matrix values",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e acceptance",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e U marker",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e C marker",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b matrix values",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b acceptance",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b U marker",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b C marker",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08 matrix values",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08 acceptance",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08 U marker",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08 C marker",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02 matrix values",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02 acceptance",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02 U marker",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02 C marker",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e matrix values",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e acceptance",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e U marker",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e C marker",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9 matrix values",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9 acceptance",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9 U marker",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9 C marker",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d matrix values",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d acceptance",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d U marker",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d C marker",
+      "passed": true
+    },
+    {
+      "check": "53394461271a matrix values",
+      "passed": true
+    },
+    {
+      "check": "53394461271a acceptance",
+      "passed": true
+    },
+    {
+      "check": "53394461271a U marker",
+      "passed": true
+    },
+    {
+      "check": "53394461271a C marker",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a matrix values",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a acceptance",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a U marker",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a C marker",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31 matrix values",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31 acceptance",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31 U marker",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31 C marker",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5 matrix values",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5 acceptance",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5 U marker",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5 C marker",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234 matrix values",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234 acceptance",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234 U marker",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234 C marker",
+      "passed": true
+    },
+    {
+      "check": "783def885a40 matrix values",
+      "passed": true
+    },
+    {
+      "check": "783def885a40 acceptance",
+      "passed": true
+    },
+    {
+      "check": "783def885a40 U marker",
+      "passed": true
+    },
+    {
+      "check": "783def885a40 C marker",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21 matrix values",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21 acceptance",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21 U marker",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21 C marker",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7 matrix values",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7 acceptance",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7 U marker",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7 C marker",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14 matrix values",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14 acceptance",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14 U marker",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14 C marker",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8 matrix values",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8 acceptance",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8 U marker",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8 C marker",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15 matrix values",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15 acceptance",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15 U marker",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15 C marker",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5 matrix values",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5 acceptance",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5 U marker",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5 C marker",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4 matrix values",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4 acceptance",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4 U marker",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4 C marker",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8 matrix values",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8 acceptance",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8 U marker",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8 C marker",
+      "passed": true
+    },
+    {
+      "check": "marker totals",
+      "passed": true
+    },
+    {
+      "check": "no replay substitution",
+      "passed": true
+    },
+    {
+      "check": "three policy complete execution",
+      "passed": true
+    },
+    {
+      "check": "Conservative backport calibration",
+      "passed": true
+    },
+    {
+      "check": "Document exclusion v2 calibration",
+      "passed": true
+    },
+    {
+      "check": "Explicit-width narrowing calibration",
+      "passed": true
+    },
+    {
+      "check": "collision actual full bytes",
+      "passed": true
+    },
+    {
+      "check": "collision SHA identity",
+      "passed": true
+    },
+    {
+      "check": "collision producer controls",
+      "passed": true
+    },
+    {
+      "check": "figure1_collision vector artifact",
+      "passed": true
+    },
+    {
+      "check": "figure2_calibration vector artifact",
+      "passed": true
+    },
+    {
+      "check": "figure3_attempts vector artifact",
+      "passed": true
+    },
+    {
+      "check": "figure manifest in manuscript",
+      "passed": true
+    },
+    {
+      "check": "historical initial count5",
+      "passed": true
+    },
+    {
+      "check": "diagnostic scope",
+      "passed": true
+    },
+    {
+      "check": "no submitted optional tests",
+      "passed": true
+    },
+    {
+      "check": "main cost original retained responses",
+      "passed": true
+    },
+    {
+      "check": "authentic upstream negative comparison",
+      "passed": true
+    },
+    {
+      "check": "independent replay",
+      "passed": true
+    },
+    {
+      "check": "fresh install control count",
+      "passed": true
+    },
+    {
+      "check": "independent conservative word count",
+      "passed": true
+    },
+    {
+      "check": "six PDF pages",
+      "passed": true
+    },
+    {
+      "check": "PDF renderer identity",
+      "passed": true
+    },
+    {
+      "check": "clarified producer-indexed equation",
+      "passed": true
+    },
+    {
+      "check": "candidate snapshots wording",
+      "passed": true
+    },
+    {
+      "check": "all section and figure headings extracted",
+      "passed": true
+    },
+    {
+      "check": "no broken replacement glyph",
+      "passed": true
+    },
+    {
+      "check": "review inputs unchanged while checking",
+      "passed": true
+    }
+  ],
+  "machine_check_count": 261,
+  "figures": {
+    "figure1": "Verified genuine267-byte complete-byte collision, both self-roundtrips, six targeted executions, declared same file-only input. No implication that this lone file permits original-width inference.",
+    "figure2": "Verified three researcher-built repair policies: admissible84/84/0 and literal equality84/24/0; all252 executions complete. Axis starts at zero; labels and hatching distinguish the two criteria. Repeated files/processes and non-upstream comparator disclosed.",
+    "figure3": "Verified all32 original main episodes, exact passed/n, source-policy PASS identities,16 U and15 C markers. Dtype values remain original3 and0 rather than independent replay0 and9. Partial coverage is not presented as accepted repair or independent task samples."
+  },
+  "large_table": "All8 version chains, unique files, H/F/R counts, exposure split, base/fixed/backport controls and deployment acceptances verified. Base99/252 and dtype6/84 are consistently from the fresh-installation control receipt; no mixing with old94/252 calibration.",
+  "visual_pages": [
+    {
+      "page": 1,
+      "result": "PASS",
+      "notes": "Clear title/abstract/first evidence diagram. Both source states and complete-byte identity legible; no clipping."
+    },
+    {
+      "page": 2,
+      "result": "PASS",
+      "notes": "Full-width grouped table readable at final page size. Numeric denominators and note distinguish files, observations and accepted attempts. No row truncation or overlap."
+    },
+    {
+      "page": 3,
+      "result": "PASS",
+      "notes": "Paired horizontal bars retain zero and explicit0 labels; adequate legend/hatching. Revised encoder equation remains legible."
+    },
+    {
+      "page": 4,
+      "result": "PASS",
+      "notes": "All32 cells legible; PASS text makes color redundant. U/C legend present. Concrete success and unsuccessful pandas examples keep scope balanced."
+    },
+    {
+      "page": 5,
+      "result": "PASS",
+      "notes": "Prior-art boundary and negative upstream result remain visible. No inference from unfinished runs. Limitations and disclosure readable."
+    },
+    {
+      "page": 6,
+      "result": "PASS",
+      "notes": "All15 references and URLs legible with consistent numbering; no broken glyph or clipped link."
+    }
+  ],
+  "narrative_claim_checks": [
+    "New resource and calibrated acceptance are distinguished from a novel general testing method.",
+    "Provider/precision confounding, unaudited hosted weight revision, purposive selection and development exposure remain explicit.",
+    "All32 final attempts and decisive evaluations are complete; eight interrupted attempts are disclosed as recovered saved-context requests. No unfinished run is counted as a semantic error.",
+    "The development upstream comparison retains the zero-added-rejection result and handles the timed-out preservation suite separately from completed regression rejection.",
+    "Actual published endian and CSV source diffs support the concrete repair descriptions. The pandas final observations retain unresolved BlockPlacement errors; tool editing problems are not asserted to be isolated causes.",
+    "Same-host fresh installation and independent patch replay support the tested release target; no second-machine or cross-architecture replication claim is made."
+  ],
+  "new_reference_checks": [
+    {
+      "source": "https://www.cs.tufts.edu/comp/150FP/archive/bill-mckeeman/DifferentailTesting.pdf",
+      "support": "Primary1998 paper explicitly discusses correct differing results under permitted requirements (printed p101); supports section3 attribution."
+    },
+    {
+      "source": "https://aclanthology.org/2025.acl-long.189/",
+      "support": "OfficialACL record confirms UTBoost augments tests and identifies falsely accepted SWE-bench patches; no UTBoost performance number is transferred to this resource."
+    }
+  ],
+  "residual_scientific_limits": [
+    "Eight lineages and six projects remain small and selected.",
+    "Only one lineage demonstrates ambiguity-aware alternative acceptance.",
+    "Four accepted repairs and the bounded scaffold do not establish broad Gemma capability or a causal model-size ranking.",
+    "No demonstrated advantage over genuine upstream tests or external adoption evidence."
+  ],
+  "award_assessment": "The revised paper now makes the existing resource contribution inspectable and is suitable to finalize under the narrow Best New Resource framing. GO is a readiness judgment, not a predicted award outcome.",
+  "no_new_experiments": true,
+  "api_calls": 0,
+  "gpu_calls": 0,
+  "main_manuscript_or_release_modified_by_reviewer": false
+}

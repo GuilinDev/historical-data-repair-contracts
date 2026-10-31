@@ -1,0 +1,560 @@
+[
+  {
+    "id": "17728a40150a",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          919,
+          "red"
+        ],
+        [
+          -37,
+          "green"
+        ],
+        [
+          431,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": true,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/17728a40150a.pickle",
+    "sha256": "3f538aa9879107982fe049708e8cae1aadae8e5e9e3e40fcec940ceed7a5c3cd"
+  },
+  {
+    "id": "17728a40150a_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          919,
+          "red"
+        ],
+        [
+          -37,
+          "green"
+        ],
+        [
+          431,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "17728a40150a_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          919,
+          "red"
+        ],
+        [
+          -37,
+          "green"
+        ],
+        [
+          431,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "57ece4ad1d82",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "alpha",
+        "beta"
+      ],
+      "data": [
+        [
+          1.125,
+          -3.75
+        ],
+        [
+          201.5,
+          0.625
+        ],
+        [
+          -71.25,
+          15.5
+        ]
+      ],
+      "index": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "visible": true,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/57ece4ad1d82.pickle",
+    "sha256": "d9da18cb6f6cc7b1a1e918e891f8c39e3500ee67414ca6738e7d04fcb3520484"
+  },
+  {
+    "id": "57ece4ad1d82_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "alpha",
+        "beta"
+      ],
+      "data": [
+        [
+          1.125,
+          -3.75
+        ],
+        [
+          201.5,
+          0.625
+        ],
+        [
+          -71.25,
+          15.5
+        ]
+      ],
+      "index": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "57ece4ad1d82_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "alpha",
+        "beta"
+      ],
+      "data": [
+        [
+          1.125,
+          -3.75
+        ],
+        [
+          201.5,
+          0.625
+        ],
+        [
+          -71.25,
+          15.5
+        ]
+      ],
+      "index": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "7a50dc9e15b4",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          921,
+          "red"
+        ],
+        [
+          -43,
+          "green"
+        ],
+        [
+          453,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/7a50dc9e15b4.pickle",
+    "sha256": "b15509827b77cafbdd938b2dc7c1b994be51ffab14123ac6e9ada9c6a2c2b2a0"
+  },
+  {
+    "id": "7a50dc9e15b4_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          921,
+          "red"
+        ],
+        [
+          -43,
+          "green"
+        ],
+        [
+          453,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "7a50dc9e15b4_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          921,
+          "red"
+        ],
+        [
+          -43,
+          "green"
+        ],
+        [
+          453,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "039706c668ef",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "stock",
+        "reserve"
+      ],
+      "data": [
+        [
+          713,
+          -11
+        ],
+        [
+          29,
+          501
+        ],
+        [
+          817,
+          43
+        ]
+      ],
+      "index": [
+        "n",
+        "s",
+        "w"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/039706c668ef.pickle",
+    "sha256": "0a1c41dacaca83a579d777430f491da9b17b69893ee1b5eee28ef0921768dffd"
+  },
+  {
+    "id": "039706c668ef_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "stock",
+        "reserve"
+      ],
+      "data": [
+        [
+          713,
+          -11
+        ],
+        [
+          29,
+          501
+        ],
+        [
+          817,
+          43
+        ]
+      ],
+      "index": [
+        "n",
+        "s",
+        "w"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "039706c668ef_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "stock",
+        "reserve"
+      ],
+      "data": [
+        [
+          713,
+          -11
+        ],
+        [
+          29,
+          501
+        ],
+        [
+          817,
+          43
+        ]
+      ],
+      "index": [
+        "n",
+        "s",
+        "w"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "1012b5a81d23",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          923,
+          "red"
+        ],
+        [
+          -49,
+          "green"
+        ],
+        [
+          475,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/1012b5a81d23.pickle",
+    "sha256": "71e3e498bd93e56a36385fcd82a8b6e1406972be10372d3367f535a3f3f7a1ab"
+  },
+  {
+    "id": "1012b5a81d23_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          923,
+          "red"
+        ],
+        [
+          -49,
+          "green"
+        ],
+        [
+          475,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "1012b5a81d23_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          923,
+          "red"
+        ],
+        [
+          -49,
+          "green"
+        ],
+        [
+          475,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "e01827266489",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          924,
+          "red"
+        ],
+        [
+          -52,
+          "green"
+        ],
+        [
+          486,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false,
+    "producer": "1.3.5",
+    "artifact": "/fixtures/pandas_pickle_56308/artifacts/e01827266489.pickle",
+    "sha256": "1a4f986f12a0f406a7192b6351ce587cd51fde20fdbfbfb5c1f2675aadcf4da3"
+  },
+  {
+    "id": "e01827266489_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          924,
+          "red"
+        ],
+        [
+          -52,
+          "green"
+        ],
+        [
+          486,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  },
+  {
+    "id": "e01827266489_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          924,
+          "red"
+        ],
+        [
+          -52,
+          "green"
+        ],
+        [
+          486,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": false
+  }
+]

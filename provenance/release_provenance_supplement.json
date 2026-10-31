@@ -1,0 +1,720 @@
+{
+  "created_utc": "2026-10-30T21:59:59Z",
+  "reviewer": "award_reviewer independent release-provenance supplement",
+  "scope": "Eight frozen task package lineages and exact historical/base/fixed package identities, plus retained qualification-only jsonpickle releases. Shared dependency/runtime audit is linked separately. No framework, dataset, artifact, oracle, source package or model files changed.",
+  "method": "Official PyPI release metadata and archive SHA256 verification; direct archive member comparison to installed/frozen source and native files; original SQLAlchemy sdist receipts matched; commit archive checked against the previous public fetch digest. Licenses copied byte-for-byte into this supplement.",
+  "packages": [
+    {
+      "id": "attrs_21.4.0_universal",
+      "project": "attrs",
+      "version": "21.4.0",
+      "variant": "universal",
+      "roles": [
+        "attrs_slot_state_1085/producer-source/21.4.0",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/attrs_21.4.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl",
+      "archive_sha256": "2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4",
+      "licenses": [
+        {
+          "file": "provenance/licenses/attrs_21.4.0_universal/attrs-21.4.0.dist-info/LICENSE",
+          "archive_member": "attrs-21.4.0.dist-info/LICENSE",
+          "sha256": "bf659a28b49240602f56bbdf490cbe2ec509b15b98f99d7b19a52c740e327863",
+          "bytes": 1082,
+          "source_url": "https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl"
+        }
+      ],
+      "checked_files": 68,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "attrs_22.2.0_universal",
+      "project": "attrs",
+      "version": "22.2.0",
+      "variant": "universal",
+      "roles": [
+        "attrs_slot_state_1085/base",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/attrs_22.2.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/fb/6e/6f83bf616d2becdf333a1640f1d463fef3150e2e926b7010cb0f81c95e88/attrs-22.2.0-py3-none-any.whl",
+      "archive_sha256": "29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836",
+      "licenses": [
+        {
+          "file": "provenance/licenses/attrs_22.2.0_universal/attrs-22.2.0.dist-info/LICENSE",
+          "archive_member": "attrs-22.2.0.dist-info/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "bytes": 1109,
+          "source_url": "https://files.pythonhosted.org/packages/fb/6e/6f83bf616d2becdf333a1640f1d463fef3150e2e926b7010cb0f81c95e88/attrs-22.2.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 70,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "attrs_23.1.0_universal",
+      "project": "attrs",
+      "version": "23.1.0",
+      "variant": "universal",
+      "roles": [
+        "attrs_slot_state_1085/fixed",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/attrs_23.1.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl",
+      "archive_sha256": "1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04",
+      "licenses": [
+        {
+          "file": "provenance/licenses/attrs_23.1.0_universal/attrs-23.1.0.dist-info/licenses/LICENSE",
+          "archive_member": "attrs-23.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "bytes": 1109,
+          "source_url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 68,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "joblib_1.2.0_universal",
+      "project": "joblib",
+      "version": "1.2.0",
+      "variant": "universal",
+      "roles": [
+        "joblib_endian_1561/producer-source/1.2.0",
+        "joblib_compressed_1681/producer-source/1.2.0",
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/joblib_1.2.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/91/d4/3b4c8e5a30604df4c7518c562d4bf0502f2fa29221459226e140cf846512/joblib-1.2.0-py3-none-any.whl",
+      "archive_sha256": "091138ed78f800342968c523bdde947e7a305b8594b910a0fea2ab83c3c6d385",
+      "licenses": [
+        {
+          "file": "provenance/licenses/joblib_1.2.0_universal/joblib-1.2.0.dist-info/LICENSE.txt",
+          "archive_member": "joblib-1.2.0.dist-info/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "bytes": 1527,
+          "source_url": "https://files.pythonhosted.org/packages/91/d4/3b4c8e5a30604df4c7518c562d4bf0502f2fa29221459226e140cf846512/joblib-1.2.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 314,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "joblib_1.4.2_universal",
+      "project": "joblib",
+      "version": "1.4.2",
+      "variant": "universal",
+      "roles": [
+        "joblib_endian_1561/base",
+        "joblib_compressed_1681/base",
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/joblib_1.4.2_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl",
+      "archive_sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6",
+      "licenses": [
+        {
+          "file": "provenance/licenses/joblib_1.4.2_universal/joblib-1.4.2.dist-info/LICENSE.txt",
+          "archive_member": "joblib-1.4.2.dist-info/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "bytes": 1527,
+          "source_url": "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 426,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "joblib_1.5.0_universal",
+      "project": "joblib",
+      "version": "1.5.0",
+      "variant": "universal",
+      "roles": [
+        "joblib_endian_1561/fixed",
+        "joblib_compressed_1681/fixed",
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/joblib_1.5.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/da/d3/13ee227a148af1c693654932b8b0b02ed64af5e1f7406d56b088b57574cd/joblib-1.5.0-py3-none-any.whl",
+      "archive_sha256": "206144b320246485b712fc8cc51f017de58225fa8b414a1fe1764a7231aca491",
+      "licenses": [
+        {
+          "file": "provenance/licenses/joblib_1.5.0_universal/joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+          "archive_member": "joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "bytes": 1527,
+          "source_url": "https://files.pythonhosted.org/packages/da/d3/13ee227a148af1c693654932b8b0b02ed64af5e1f7406d56b088b57574cd/joblib-1.5.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 426,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_3.3.0_universal",
+      "project": "jsonpickle",
+      "version": "3.3.0",
+      "variant": "universal",
+      "roles": [
+        "jsonpickle_csv_562/producer-source/3.3.0",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_3.3.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/71/1f/224e27180204282c1ea378b86944585616c1978544b9f5277cf907fdb26c/jsonpickle-3.3.0-py3-none-any.whl",
+      "archive_sha256": "287c12143f35571ab00e224fa323aa4b090d5a7f086f5f494d7ee9c7eb1a380a",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_3.3.0_universal/jsonpickle-3.3.0.dist-info/LICENSE",
+          "archive_member": "jsonpickle-3.3.0.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://files.pythonhosted.org/packages/71/1f/224e27180204282c1ea378b86944585616c1978544b9f5277cf907fdb26c/jsonpickle-3.3.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 36,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_3.4.0_universal",
+      "project": "jsonpickle",
+      "version": "3.4.0",
+      "variant": "universal",
+      "roles": [
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_3.4.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/64/14/a7b15d8d4faa8e95d7ce100c2870f6110aad12c6767eef1b50a5ab79c18e/jsonpickle-3.4.0-py3-none-any.whl",
+      "archive_sha256": "40cb2b5d154eefa831c7e3ee10cca6709d86284c9815950973d895179409b849",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_3.4.0_universal/jsonpickle-3.4.0.dist-info/LICENSE",
+          "archive_member": "jsonpickle-3.4.0.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://files.pythonhosted.org/packages/64/14/a7b15d8d4faa8e95d7ce100c2870f6110aad12c6767eef1b50a5ab79c18e/jsonpickle-3.4.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 19,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_3.4.2_universal",
+      "project": "jsonpickle",
+      "version": "3.4.2",
+      "variant": "universal",
+      "roles": [
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_3.4.2_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/c0/a3/e610ae0feba3e7374da08ab6cc9bb76c8bfa84b4e502aa357bda0ef6dcae/jsonpickle-3.4.2-py3-none-any.whl",
+      "archive_sha256": "fd6c273278a02b3b66e3405db3dd2f4dbc8f4a4a3123bfcab3045177c6feb9c3",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_3.4.2_universal/jsonpickle-3.4.2.dist-info/LICENSE",
+          "archive_member": "jsonpickle-3.4.2.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://files.pythonhosted.org/packages/c0/a3/e610ae0feba3e7374da08ab6cc9bb76c8bfa84b4e502aa357bda0ef6dcae/jsonpickle-3.4.2-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 19,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_4.1.0_universal",
+      "project": "jsonpickle",
+      "version": "4.1.0",
+      "variant": "universal",
+      "roles": [
+        "jsonpickle_csv_562/base",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_4.1.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/0e/b5/8d90bb4951a1e821d0b4e559edb3c70918b8954b566c7eb9211846a48c47/jsonpickle-4.1.0-py3-none-any.whl",
+      "archive_sha256": "763f837a0b2586b45424d9a07108a798d9feac52f3a152606336f7f9e1a22ffa",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_4.1.0_universal/jsonpickle-4.1.0.dist-info/LICENSE",
+          "archive_member": "jsonpickle-4.1.0.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://files.pythonhosted.org/packages/0e/b5/8d90bb4951a1e821d0b4e559edb3c70918b8954b566c7eb9211846a48c47/jsonpickle-4.1.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 40,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_4.1.1_universal",
+      "project": "jsonpickle",
+      "version": "4.1.1",
+      "variant": "universal",
+      "roles": [
+        "jsonpickle_csv_562/fixed",
+        "jsonpickle_dtype_634/base",
+        "jsonpickle_dtype_634/producer-source/4.1.1",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_4.1.1_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/c1/73/04df8a6fa66d43a9fd45c30f283cc4afff17da671886e451d52af60bdc7e/jsonpickle-4.1.1-py3-none-any.whl",
+      "archive_sha256": "bb141da6057898aa2438ff268362b126826c812a1721e31cf08a6e142910dc91",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_4.1.1_universal/jsonpickle-4.1.1.dist-info/licenses/LICENSE",
+          "archive_member": "jsonpickle-4.1.1.dist-info/licenses/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://files.pythonhosted.org/packages/c1/73/04df8a6fa66d43a9fd45c30f283cc4afff17da671886e451d52af60bdc7e/jsonpickle-4.1.1-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 80,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "jsonpickle_e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da_github_commit",
+      "project": "jsonpickle",
+      "version": "e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da",
+      "variant": "github_commit",
+      "roles": [
+        "jsonpickle_dtype_634/fixed",
+        "original fixed public commit"
+      ],
+      "manifest": "provenance/release_manifests/jsonpickle_e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da_github_commit.json",
+      "source_url": "https://codeload.github.com/jsonpickle/jsonpickle/zip/e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da",
+      "archive_sha256": "c403dce3f2304c0873bece72f4dd6146a76780030f3399cbdad673a3dbd58059",
+      "licenses": [
+        {
+          "file": "provenance/licenses/jsonpickle_e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da_github_commit/LICENSE",
+          "archive_member": "jsonpickle-e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "bytes": 1547,
+          "source_url": "https://codeload.github.com/jsonpickle/jsonpickle/zip/e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da"
+        }
+      ],
+      "checked_files": 196,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "packaging_25.0_universal",
+      "project": "packaging",
+      "version": "25.0",
+      "variant": "universal",
+      "roles": [
+        "packaging_version_1163/producer-source/25.0",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/packaging_25.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl",
+      "archive_sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "licenses": [
+        {
+          "file": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE",
+          "archive_member": "packaging-25.0.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197,
+          "source_url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE.APACHE",
+          "archive_member": "packaging-25.0.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174,
+          "source_url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE.BSD",
+          "archive_member": "packaging-25.0.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344,
+          "source_url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 41,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "packaging_26.0_universal",
+      "project": "packaging",
+      "version": "26.0",
+      "variant": "universal",
+      "roles": [
+        "packaging_version_1163/producer-source/26.0",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/packaging_26.0_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/b7/b9/c538f279a4e237a006a2c98387d081e9eb060d203d8ed34467cc0f0b9b53/packaging-26.0-py3-none-any.whl",
+      "archive_sha256": "b36f1fef9334a5588b4166f8bcd26a14e521f2b55e6b9de3aaa80d3ff7a37529",
+      "licenses": [
+        {
+          "file": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE",
+          "archive_member": "packaging-26.0.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197,
+          "source_url": "https://files.pythonhosted.org/packages/b7/b9/c538f279a4e237a006a2c98387d081e9eb060d203d8ed34467cc0f0b9b53/packaging-26.0-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+          "archive_member": "packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174,
+          "source_url": "https://files.pythonhosted.org/packages/b7/b9/c538f279a4e237a006a2c98387d081e9eb060d203d8ed34467cc0f0b9b53/packaging-26.0-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+          "archive_member": "packaging-26.0.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344,
+          "source_url": "https://files.pythonhosted.org/packages/b7/b9/c538f279a4e237a006a2c98387d081e9eb060d203d8ed34467cc0f0b9b53/packaging-26.0-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 43,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "packaging_26.1_universal",
+      "project": "packaging",
+      "version": "26.1",
+      "variant": "universal",
+      "roles": [
+        "packaging_version_1163/base",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/packaging_26.1_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/7a/c2/920ef838e2f0028c8262f16101ec09ebd5969864e5a64c4c05fad0617c56/packaging-26.1-py3-none-any.whl",
+      "archive_sha256": "5d9c0669c6285e491e0ced2eee587eaf67b670d94a19e94e3984a481aba6802f",
+      "licenses": [
+        {
+          "file": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE",
+          "archive_member": "packaging-26.1.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197,
+          "source_url": "https://files.pythonhosted.org/packages/7a/c2/920ef838e2f0028c8262f16101ec09ebd5969864e5a64c4c05fad0617c56/packaging-26.1-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE.APACHE",
+          "archive_member": "packaging-26.1.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174,
+          "source_url": "https://files.pythonhosted.org/packages/7a/c2/920ef838e2f0028c8262f16101ec09ebd5969864e5a64c4c05fad0617c56/packaging-26.1-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE.BSD",
+          "archive_member": "packaging-26.1.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344,
+          "source_url": "https://files.pythonhosted.org/packages/7a/c2/920ef838e2f0028c8262f16101ec09ebd5969864e5a64c4c05fad0617c56/packaging-26.1-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 50,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "packaging_26.2_universal",
+      "project": "packaging",
+      "version": "26.2",
+      "variant": "universal",
+      "roles": [
+        "packaging_version_1163/fixed",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/packaging_26.2_universal.json",
+      "source_url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+      "archive_sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+      "licenses": [
+        {
+          "file": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE",
+          "archive_member": "packaging-26.2.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197,
+          "source_url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE.APACHE",
+          "archive_member": "packaging-26.2.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174,
+          "source_url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl"
+        },
+        {
+          "file": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE.BSD",
+          "archive_member": "packaging-26.2.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344,
+          "source_url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl"
+        }
+      ],
+      "checked_files": 52,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "pandas_1.3.5_windows_x86_64",
+      "project": "pandas",
+      "version": "1.3.5",
+      "variant": "windows_x86_64",
+      "roles": [
+        "pandas_pickle_56308/producer-source/1.3.5",
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/pandas_1.3.5_windows_x86_64.json",
+      "source_url": "https://files.pythonhosted.org/packages/68/a7/96cde70dd2723a9cb79978a390cb3de448a72baafc949ef1fce1e804dbd0/pandas-1.3.5-cp310-cp310-win_amd64.whl",
+      "archive_sha256": "aaf183a615ad790801fa3cf2fa450e5b6d23a54684fe386f7e3208f8b9bfbef6",
+      "licenses": [
+        {
+          "file": "provenance/licenses/pandas_1.3.5_windows_x86_64/pandas-1.3.5.dist-info/LICENSE",
+          "archive_member": "pandas-1.3.5.dist-info/LICENSE",
+          "sha256": "97d812f1fda16e9a65fb6baa29390707c94df08d9816a282ad2c03c48c180390",
+          "bytes": 1665,
+          "source_url": "https://files.pythonhosted.org/packages/68/a7/96cde70dd2723a9cb79978a390cb3de448a72baafc949ef1fce1e804dbd0/pandas-1.3.5-cp310-cp310-win_amd64.whl"
+        }
+      ],
+      "checked_files": 2850,
+      "compiled_files": 44,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "pandas_2.1.0_linux_aarch64",
+      "project": "pandas",
+      "version": "2.1.0",
+      "variant": "linux_aarch64",
+      "roles": [
+        "pandas_pickle_56308/base"
+      ],
+      "manifest": "provenance/release_manifests/pandas_2.1.0_linux_aarch64.json",
+      "source_url": "https://files.pythonhosted.org/packages/f3/21/8ea83d6990457c5253d9e6c40a3d2c8a3d383dfabb937b0a36a71ae43bde/pandas-2.1.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "archive_sha256": "6e6a0fe052cf27ceb29be9429428b4918f3740e37ff185658f40d8702f0b3e09",
+      "licenses": [
+        {
+          "file": "provenance/licenses/pandas_2.1.0_linux_aarch64/pandas-2.1.0.dist-info/LICENSE",
+          "archive_member": "pandas-2.1.0.dist-info/LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26",
+          "bytes": 1634,
+          "source_url": "https://files.pythonhosted.org/packages/f3/21/8ea83d6990457c5253d9e6c40a3d2c8a3d383dfabb937b0a36a71ae43bde/pandas-2.1.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+        }
+      ],
+      "checked_files": 1996,
+      "compiled_files": 44,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "pandas_2.1.0_windows_x86_64",
+      "project": "pandas",
+      "version": "2.1.0",
+      "variant": "windows_x86_64",
+      "roles": [
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/pandas_2.1.0_windows_x86_64.json",
+      "source_url": "https://files.pythonhosted.org/packages/c5/89/ce1c7dc497f9a20644f6a7d2dd5bce6378a48321955178197fa3b55d6fe3/pandas-2.1.0-cp310-cp310-win_amd64.whl",
+      "archive_sha256": "38f74ef7ebc0ffb43b3d633e23d74882bce7e27bfa09607f3c5d3e03ffd9a4a5",
+      "licenses": [
+        {
+          "file": "provenance/licenses/pandas_2.1.0_windows_x86_64/pandas-2.1.0.dist-info/LICENSE",
+          "archive_member": "pandas-2.1.0.dist-info/LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26",
+          "bytes": 1634,
+          "source_url": "https://files.pythonhosted.org/packages/c5/89/ce1c7dc497f9a20644f6a7d2dd5bce6378a48321955178197fa3b55d6fe3/pandas-2.1.0-cp310-cp310-win_amd64.whl"
+        }
+      ],
+      "checked_files": 1616,
+      "compiled_files": 45,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "pandas_2.1.4_linux_aarch64",
+      "project": "pandas",
+      "version": "2.1.4",
+      "variant": "linux_aarch64",
+      "roles": [
+        "pandas_pickle_56308/fixed"
+      ],
+      "manifest": "provenance/release_manifests/pandas_2.1.4_linux_aarch64.json",
+      "source_url": "https://files.pythonhosted.org/packages/15/83/4a164e69d08c271be303acb471a38172ae55d77db58d29f99cf186b80434/pandas-2.1.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "archive_sha256": "6b728fb8deba8905b319f96447a27033969f3ea1fea09d07d296c9030ab2ed1d",
+      "licenses": [
+        {
+          "file": "provenance/licenses/pandas_2.1.4_linux_aarch64/pandas-2.1.4.dist-info/LICENSE",
+          "archive_member": "pandas-2.1.4.dist-info/LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26",
+          "bytes": 1634,
+          "source_url": "https://files.pythonhosted.org/packages/15/83/4a164e69d08c271be303acb471a38172ae55d77db58d29f99cf186b80434/pandas-2.1.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+        }
+      ],
+      "checked_files": 1896,
+      "compiled_files": 44,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "pandas_2.1.4_windows_x86_64",
+      "project": "pandas",
+      "version": "2.1.4",
+      "variant": "windows_x86_64",
+      "roles": [
+        "original qualification/producer environment"
+      ],
+      "manifest": "provenance/release_manifests/pandas_2.1.4_windows_x86_64.json",
+      "source_url": "https://files.pythonhosted.org/packages/b3/70/56da2b82f848baf34bfd8c35e606ce45049b371ffaaaa7f0427093d29950/pandas-2.1.4-cp310-cp310-win_amd64.whl",
+      "archive_sha256": "f237e6ca6421265643608813ce9793610ad09b40154a3344a088159590469e46",
+      "licenses": [
+        {
+          "file": "provenance/licenses/pandas_2.1.4_windows_x86_64/pandas-2.1.4.dist-info/LICENSE",
+          "archive_member": "pandas-2.1.4.dist-info/LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26",
+          "bytes": 1634,
+          "source_url": "https://files.pythonhosted.org/packages/b3/70/56da2b82f848baf34bfd8c35e606ce45049b371ffaaaa7f0427093d29950/pandas-2.1.4-cp310-cp310-win_amd64.whl"
+        }
+      ],
+      "checked_files": 1515,
+      "compiled_files": 45,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "sqlalchemy_1.4.37_sdist",
+      "project": "sqlalchemy",
+      "version": "1.4.37",
+      "variant": "sdist",
+      "roles": [
+        "sqlalchemy_mutable_8133/producer-source/1.4.37",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/sqlalchemy_1.4.37_sdist.json",
+      "source_url": "https://files.pythonhosted.org/packages/8c/6b/dd25a730940556f4a0130968f29040e4aa6478285a33ac041d1b0817d398/SQLAlchemy-1.4.37.tar.gz",
+      "archive_sha256": "3688f92c62db6c5df268e2264891078f17ecb91e3141b400f2e28d0f75796dea",
+      "licenses": [
+        {
+          "file": "provenance/licenses/sqlalchemy_1.4.37_sdist/LICENSE",
+          "archive_member": "SQLAlchemy-1.4.37/LICENSE",
+          "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20",
+          "bytes": 1100,
+          "source_url": "https://files.pythonhosted.org/packages/8c/6b/dd25a730940556f4a0130968f29040e4aa6478285a33ac041d1b0817d398/SQLAlchemy-1.4.37.tar.gz"
+        }
+      ],
+      "checked_files": 484,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "sqlalchemy_1.4.38_sdist",
+      "project": "sqlalchemy",
+      "version": "1.4.38",
+      "variant": "sdist",
+      "roles": [
+        "sqlalchemy_mutable_8133/base",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/sqlalchemy_1.4.38_sdist.json",
+      "source_url": "https://files.pythonhosted.org/packages/be/06/8c75ad5b5d2f0935304dbdbd0cdf54761f73f6bc4d18cd092b49ed7520d5/SQLAlchemy-1.4.38.tar.gz",
+      "archive_sha256": "93ae1d2ef42fbf0f0b3d44b35225bda123310df4b33c9bf662e7b50a68c48a98",
+      "licenses": [
+        {
+          "file": "provenance/licenses/sqlalchemy_1.4.38_sdist/LICENSE",
+          "archive_member": "SQLAlchemy-1.4.38/LICENSE",
+          "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20",
+          "bytes": 1100,
+          "source_url": "https://files.pythonhosted.org/packages/be/06/8c75ad5b5d2f0935304dbdbd0cdf54761f73f6bc4d18cd092b49ed7520d5/SQLAlchemy-1.4.38.tar.gz"
+        }
+      ],
+      "checked_files": 484,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    },
+    {
+      "id": "sqlalchemy_1.4.39_sdist",
+      "project": "sqlalchemy",
+      "version": "1.4.39",
+      "variant": "sdist",
+      "roles": [
+        "sqlalchemy_mutable_8133/fixed",
+        "original cached published package; 3.4.x jsonpickle is qualification-only"
+      ],
+      "manifest": "provenance/release_manifests/sqlalchemy_1.4.39_sdist.json",
+      "source_url": "https://files.pythonhosted.org/packages/1f/93/e5211e989324793487efb45405343d81b554886e278234066e20f77d434d/SQLAlchemy-1.4.39.tar.gz",
+      "archive_sha256": "8194896038753b46b08a0b0ae89a5d80c897fb601dd51e243ed5720f1f155d27",
+      "licenses": [
+        {
+          "file": "provenance/licenses/sqlalchemy_1.4.39_sdist/LICENSE",
+          "archive_member": "SQLAlchemy-1.4.39/LICENSE",
+          "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20",
+          "bytes": 1100,
+          "source_url": "https://files.pythonhosted.org/packages/1f/93/e5211e989324793487efb45405343d81b554886e278234066e20f77d434d/SQLAlchemy-1.4.39.tar.gz"
+        }
+      ],
+      "checked_files": 484,
+      "compiled_files": 0,
+      "mismatches": 0,
+      "missing_copies": 0,
+      "unmapped_files": 0
+    }
+  ],
+  "all_archive_source_comparisons_match": true,
+  "notes": [
+    "Installed RECORD/INSTALLER/REQUESTED/direct_url.json and bytecode files are listed as explicit installer/generated exceptions, not silently matched against source archives.",
+    "Missing native files in source-only producer copies are recorded; those copies explain historical source and are not a replacement for their original binary producer environments.",
+    "This inventory reports upstream license texts and distribution metadata; it is not a blanket legal guarantee or a complete operating-system/container SBOM.",
+    "Missing original runtime installation logs remain missing. Runtime image digest, actual imports, native ELF/RECORD and the explained bytecode exception are independently recorded elsewhere."
+  ],
+  "frozen_tasks_sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+  "script_sha256": "bbb6ef81a1dcf3eacf92d4f3d2de921b248e7c08d4621c41d783d17007173e98"
+}

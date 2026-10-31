@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-30T22:27:02.853426+00:00",
+  "status": "FROZEN_BEFORE_CANDIDATE_EXECUTION",
+  "task": "jsonpickle_dtype_634",
+  "dataset": "results\\resource\\20261030T212309",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "name": "official_widest",
+      "policy": "Authentic upstream-derived conservative repair: legacy ambiguous numeric tags use widest historical numeric widths; explicit/current tags are pinned.",
+      "changed_paths": [
+        "jsonpickle/tags_pd.py"
+      ],
+      "manifest_sha256": "3e5367995c7e06d00f37dff09337a4439f1d4204a8ab78133fc8125c4c09c60c",
+      "patch_sha256": "388a9083ffb3e10d6772cee7cbbdce97fc84972e45df00e8f84e96f12af2b7f8"
+    },
+    {
+      "name": "document_exclusion",
+      "policy": "Same stable writer and conservative fallback, plus document-global injective-tag exclusion. Only infer an old dtype when all other supported historical widths are explicitly present under other tags; never infer from values or column names.",
+      "changed_paths": [
+        "jsonpickle/ext/pandas.py",
+        "jsonpickle/tags_pd.py"
+      ],
+      "manifest_sha256": "18809ef7b603fac88ae5936a887fa3d834c9a2455e034e4b2be471b10cd89f78",
+      "patch_sha256": "dec42dfe855a3f8dfd12f5aee89abafb7c56f2874c449e92284a57deefbe2c16"
+    },
+    {
+      "name": "negative_explicit_float_narrowing",
+      "policy": "Deliberate near-neighbor control: stable repair except explicit pd/f64 is read as float32. Loading/resaving may finish while values or explicit width are wrong. This is not a claimed valid repair.",
+      "changed_paths": [
+        "jsonpickle/tags_pd.py"
+      ],
+      "manifest_sha256": "5e7207fc6ecd4f4c79f976d805063fb2b0dda92f6da0049951e8d56977d1660f",
+      "patch_sha256": "5ead7e667875768315b705e3f54915b84c91f64bc456b955f7a7511d4b4a0b69"
+    }
+  ],
+  "main_observations_per_candidate": 84,
+  "historical_process_trials": 12,
+  "primary_contrast": "On each same complete candidate observation record, compare unmodified ResourceDataset.judge against exact raw frozen-gold semantics and restart_semantics equality. No source-text comparison is an outcome.",
+  "success_gate": "Both claimed-positive full patches pass84/84 and independent generic-source review; document_exclusion differs from official in at least one admissibly preserved width; at least one positive is rejected by exact gold. Negative loads/resaves real cases yet is rejected for actual values/kind/explicit-width contract violations. Lone collision must retain conservative fallback.",
+  "failure_gate": "Record any failed positive, absent semantic distinction, engineering incompatibility, or invalid deduction as failure/limitation; do not tune candidates or change main judge, oracle, inputs or model denominator.",
+  "supplemental": "Existing genuine267B single-column collision input, frozen here, plus fresh construction/encode/decode width controls. Separate from main84/252. No new model calls.",
+  "cpu": "One CPU,1GB,network none,readonly candidate/fixtures/runtime in existing qualified ARM image; no candidate execution on host.",
+  "candidate_bytes_frozen": true,
+  "api_calls": 0,
+  "gpu_calls": 0,
+  "supplemental_sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+  "immutable_manifest_sha256": "8ae1e0e152f388ba4b2f76a8ce76dffcd2c9979ba5b7a99b18de3f6913f80ca2",
+  "experiment_script_sha256": "718190a77b615fc38c0b96d043d7839f189050480a3f0f595f56a0e8bae039f9",
+  "supplemental_worker_sha256": "088fceb13c3e9a4e2353714d7f2ac58f55461c0d333ab6be745ec5744fc47d16"
+}

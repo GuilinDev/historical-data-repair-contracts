@@ -1,0 +1,3110 @@
+{
+  "decision": "PASS",
+  "PASS_OR_ISSUES": "PASS",
+  "planned": 32,
+  "recorded": 32,
+  "protocol_complete": 32,
+  "observed": 32,
+  "semantic_pass_episode_ids": [
+    "53394461271a",
+    "074ae1f3678a",
+    "0e72fdd94c31",
+    "46ae0e9c5565"
+  ],
+  "source_policy_accepted_episode_ids": [
+    "53394461271a",
+    "074ae1f3678a",
+    "0e72fdd94c31",
+    "46ae0e9c5565"
+  ],
+  "source_policy_rejections": [],
+  "source_policy_pending_episode_ids": [],
+  "per_deployment": {
+    "google/gemma-4-31b-it|coreweave/fp4": {
+      "planned": 16,
+      "protocol_complete": 16,
+      "observed": 16,
+      "semantic_full_pass": 3,
+      "source_policy_accepted": 3,
+      "complete_accepted_delivery": 3,
+      "stages": {
+        "historical": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 262,
+          "dependent_observations_initial_passed": 45,
+          "dependent_observations_restart_passed": 31,
+          "dependent_observations_both_passed": 31,
+          "initial_all_cases_passed_attempts": 4,
+          "restart_all_cases_passed_attempts": 3,
+          "both_all_cases_passed_attempts": 3
+        },
+        "fresh_api": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 106,
+          "dependent_observations_initial_passed": 106,
+          "dependent_observations_restart_passed": 86,
+          "dependent_observations_both_passed": 86,
+          "initial_all_cases_passed_attempts": 16,
+          "restart_all_cases_passed_attempts": 12,
+          "both_all_cases_passed_attempts": 12
+        },
+        "current_roundtrip": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 136,
+          "dependent_observations_initial_passed": 118,
+          "dependent_observations_restart_passed": 102,
+          "dependent_observations_both_passed": 102,
+          "initial_all_cases_passed_attempts": 13,
+          "restart_all_cases_passed_attempts": 10,
+          "both_all_cases_passed_attempts": 10
+        }
+      }
+    },
+    "google/gemma-4-26b-a4b-it|primeintellect/bf16": {
+      "planned": 16,
+      "protocol_complete": 16,
+      "observed": 16,
+      "semantic_full_pass": 1,
+      "source_policy_accepted": 1,
+      "complete_accepted_delivery": 1,
+      "stages": {
+        "historical": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 262,
+          "dependent_observations_initial_passed": 10,
+          "dependent_observations_restart_passed": 9,
+          "dependent_observations_both_passed": 9,
+          "initial_all_cases_passed_attempts": 1,
+          "restart_all_cases_passed_attempts": 1,
+          "both_all_cases_passed_attempts": 1
+        },
+        "fresh_api": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 106,
+          "dependent_observations_initial_passed": 106,
+          "dependent_observations_restart_passed": 90,
+          "dependent_observations_both_passed": 90,
+          "initial_all_cases_passed_attempts": 16,
+          "restart_all_cases_passed_attempts": 12,
+          "both_all_cases_passed_attempts": 12
+        },
+        "current_roundtrip": {
+          "planned_attempts": 16,
+          "scored_attempts": 16,
+          "dependent_observations_n": 136,
+          "dependent_observations_initial_passed": 117,
+          "dependent_observations_restart_passed": 98,
+          "dependent_observations_both_passed": 98,
+          "initial_all_cases_passed_attempts": 13,
+          "restart_all_cases_passed_attempts": 9,
+          "both_all_cases_passed_attempts": 9
+        }
+      }
+    }
+  },
+  "tests": {
+    "submitted": 0,
+    "invoked": 0,
+    "with_collected_cases": 0,
+    "with_test_bodies_executed": 0,
+    "passed": 0
+  },
+  "observed_harness_friction": {
+    "scope": "All audited episodes with reconstructed history, including incomplete service-blocked conversations.",
+    "search_utf8_error_calls": 3,
+    "search_utf8_affected_episode_ids": [
+      "074ae1f3678a",
+      "783def885a40",
+      "7879243259c9"
+    ],
+    "exact_match_edit_errors": 78,
+    "tool_error_calls_total": 85,
+    "max_recorded_wire_bytes": 127231,
+    "raw_returns_truncated": 0,
+    "context_compactions": 0,
+    "interpretation": "Whole-tree search assumes UTF8 and can fail on another declared source encoding. This is actual scaffold friction, not a model semantic failure or an oracle error. Exact replacement matching also constrains editing."
+  },
+  "api": {
+    "response_files": 723,
+    "reported_usd_exact_decimal": "0.778481817",
+    "responses_missing_cost": 0,
+    "actual_response_providers": {
+      "CoreWeave": 368,
+      "PrimeIntellect": 355
+    },
+    "actual_response_models": {
+      "google/gemma-4-31b-it": 368,
+      "google/gemma-4-26b-a4b-it": 355
+    },
+    "scope": "This run's response-file costs only; not the cumulative project ledger."
+  },
+  "static_integrity": {
+    "decision": "PASS_DECLARED_FREEZE_WITH_DOCUMENTED_BOUNDARIES",
+    "PASS_OR_ISSUES": "PASS",
+    "planned": 32,
+    "main_outcomes_read": false,
+    "bundle_files": 7785,
+    "oracle_files": 8,
+    "declared_runner_files": 10,
+    "runner_checks": [
+      {
+        "file": "agent_runner_v2.py",
+        "expected": "66b33044a4ef72bcf9243a94134ea53a3e839b225eb28fa9dddb419153b14491",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "freeze_and_build.py",
+        "expected": "74e24fa36a24f510b12a404dbc924a4ba46208e7ac35b9a459d9e77c1a89f05f",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "model_pilot.py",
+        "expected": "42659d341cb6b49df2b03a898c678f195d492bc2c6a5e4dd7121d1f645c1f4df",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "reader_repair_tools.py",
+        "expected": "566b46da925aa4ce61518787678837953667ea72d0d07f09b73a0eee3ee60475",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "resource_eval_worker.py",
+        "expected": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "resource_pytest_runner.py",
+        "expected": "1e2d482ff0d0d3a33429e34f10f0f6959fd3a0125ed96763fce10ab2c3932d2d",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "resource_task_tools.py",
+        "expected": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "run_reader_repairs.py",
+        "expected": "167847303b5e220a9f62f6efad70e938b1f9b430d7f3ca3ced1dac059badad2e",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "run_resource_baselines.py",
+        "expected": "bc15fcea1e5383cb3d5c4d7d0f02ce251afc5d1e345d5aa1b504e06bdf14154c",
+        "snapshot_match": true,
+        "current_match": true
+      },
+      {
+        "file": "transfer_task_tools.py",
+        "expected": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d",
+        "snapshot_match": true,
+        "current_match": true
+      }
+    ],
+    "transitive_local_sources_outside_main_snapshot": [
+      {
+        "file": "historical_artifacts.py",
+        "current_sha256": "bb76f762ed71b6cc2e6da2f025ca539ec996da6f59d61e992c816dfe5ff9fdc3",
+        "earlier_G2_hash_if_recorded": null,
+        "matches_earlier_G2": null,
+        "note": "Not included in main plan core source_hashes; current attestation is not retroactive pre-freeze capture."
+      },
+      {
+        "file": "prepare_reader_repairs.py",
+        "current_sha256": "1c042bd1328ea8bcd8f4f5e80688cab341300fc064d2ad2ab951b24dd14b4820",
+        "earlier_G2_hash_if_recorded": "1c042bd1328ea8bcd8f4f5e80688cab341300fc064d2ad2ab951b24dd14b4820",
+        "matches_earlier_G2": true,
+        "note": "Not included in main plan core source_hashes; current attestation is not retroactive pre-freeze capture."
+      }
+    ],
+    "supplemental_current_identities": {
+      "dataset_plan": "62c6b8d665733eca1b8d6ce5eb05fdb7132ae91114f5fb90ca150671531b682c",
+      "independent_runtime_identity.json": "d97af7a77a0a1c199a3181f984892fefa9acdcb2fd08f4b772fd623204f84788",
+      "independent_runtime_cache_review.json": "ed60d941a0ad88ddaee074b18f67d141d5e164a768ed0642992adfa20f2c3532",
+      "legacy_import_time_plan.json": "002ef3c473bd2ca6dc54875b1c659327bf9fc35f8a6bc04038ac105ee26bab13",
+      "legacy_import_time_tasks.json": "0f50cf2ff030d9b607942bf3d9daac50dd933a63baddf1ad4a2b001e1312b5c5"
+    },
+    "plan_sha256": "b9a9fa4d291e2cfd3e4f44882725aea7dc69afad6bad61ea80314f725d1da016",
+    "task_metadata_sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+    "limitations": [
+      "Eight curated lineages in six projects;65 unique historical files and252 observations are dependent coverage, not independent defects.",
+      "Two pinned deployments differ in provider, precision and model. Two conversations per task/deployment are descriptive repeats, not a size-causal or significance study.",
+      "Four lineages were used during development; four are newly introduced here, spanning only two entirely new projects. Public historical fixes can occur in pretraining.",
+      "Custom localized scaffold supplies affected files and historical producer source; no arbitrary shell, dependency installation, web lookup or unrestricted coding-agent environment is supplied.",
+      "Up to24 exploration rounds; at most6 executed actions per response; reads160lines and literal search16matches. Each exploration output is capped at4096 tokens; final report2048 tokens.",
+      "Shown tool output truncates above24000 UTF8 bytes. Exploration stops above120000 request bytes; deterministic marked compaction targets135000 bytes; wire request ceiling160000. Archived raw output is not necessarily present verbatim in model context.",
+      "Finalization is separately reserved and uses temperature0, no tools/schema; exploration temperature0.2. Honest inability can satisfy the report protocol without semantic repair success.",
+      "Transient identical requests have up to3 attempts and no provider-routing fallback. All returned costs must be summed, including successful transport retries; missing cost cannot be treated as free.",
+      "Checks run in one-CPU1GB no-network LinuxARM64 containers with readonly code/fixtures and temporary working files.90s normally,240s for dtype checks. Infrastructure errors are not semantic failures.",
+      "12 dtype reader processes reuse6 historical artifacts;18 nonpublic observation rows revisit public bytes. Hidden row identifiers do not guarantee unseen artifact bytes.",
+      "Fixed-reader observations and input-derived invariants are finite contracts, not general proofs. Test-passing patches require independent source review for fixture-specific logic and harness manipulation.",
+      "Optional generated tests are separate: submission, collection, body execution and passing are distinct. Their absence/failure is not a post-hoc primary semantic failure.",
+      "The prior two-lineage12-attempt genuine upstream comparison found0 additional rejections among2 upstream-accepted patches; no stronger-evaluator claim follows.",
+      "The10-file main runner snapshot is the declared core snapshot, not a closed capture of every transitive local import, old import-time configuration or shared remote runtime. Supplemental identities must be labeled by when observed."
+    ],
+    "failures": []
+  },
+  "episodes": [
+    {
+      "episode": "93f5c9999ee4",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/93f5c9999ee4",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 100077,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397301-YUtp4kgDPbpbNhkJlNTJ",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 20,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 7.933016400085762,
+      "score_sha256": "73030eb2d11677bb3127ee074c176126b7bbb8616cd3891ec0da3978d9e46845",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "pandas/compat/pickle_compat.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "5e35d739878a8275ffa6a94af9a32e2e980876907829ce55ea56bb20d335a957",
+        "core_source_manifest_sha256": "5e35d739878a8275ffa6a94af9a32e2e980876907829ce55ea56bb20d335a957",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "3644ceb95fb1bd283e1e3d975970408832d770ef2c04364d8e2ca5614f8e7dd5"
+    },
+    {
+      "episode": "183bc51919d5",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/183bc51919d5",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 102086,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397363-MLiE1lXNXNaEzYh51tO9",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        }
+      },
+      "evaluation_wall_seconds": 3.2463945999043062,
+      "score_sha256": "fbf42bb4f2c0abf362ee6a302a8ecbfa2ff8804116ecde9fb758588f710552ef",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "d7d8c683a5c4f4bd3cd9522d503d51f693462788d7523b3fbe6b609f31b6b58b",
+        "core_source_manifest_sha256": "d7d8c683a5c4f4bd3cd9522d503d51f693462788d7523b3fbe6b609f31b6b58b",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "c9f957a16f51add836c988b7210c2d4473951d773b5171ae378190ba3bca2d55"
+    },
+    {
+      "episode": "f50ac29629d1",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/f50ac29629d1",
+      "context": {
+        "recorded_requests": 23,
+        "max_wire_bytes": 118162,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397403-aQdMoQYMI8OPTUM377h4",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 22,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 22,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 9,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 9,
+          "initial_passed": 9,
+          "restart_passed": 9,
+          "both_passed": 9
+        },
+        "current_roundtrip": {
+          "n": 18,
+          "initial_passed": 18,
+          "restart_passed": 18,
+          "both_passed": 18
+        }
+      },
+      "evaluation_wall_seconds": 4.439018600038253,
+      "score_sha256": "e5726562721dbfc9f3a00c2869a0bdcd31d2ebc67d7bd1ed4d1e7467a08aa78a",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "core_source_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "7d4d3746de07f533a4936874d4fb76b65d7db413093edf4dad2020758702e156"
+    },
+    {
+      "episode": "6160443aebd8",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/6160443aebd8",
+      "context": {
+        "recorded_requests": 19,
+        "max_wire_bytes": 127231,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397466-MAFkojubS2o6uYWj4yag",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 18,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 18,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 72,
+          "initial_passed": 11,
+          "restart_passed": 3,
+          "both_passed": 3
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        }
+      },
+      "evaluation_wall_seconds": 31.147099600057118,
+      "score_sha256": "6a69a977b65e2b226cddf4976f3432688d3beffcedb814aeaffaa963f1650efe",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "jsonpickle/ext/pandas.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "539e73b2291f8fde198b5155546baf8321b7247cb49ea33e80f9befeaa781f54",
+        "core_source_manifest_sha256": "539e73b2291f8fde198b5155546baf8321b7247cb49ea33e80f9befeaa781f54",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "1a27520cbd8ad9381e4ddd8dd647ef59572ebaabb8355edab40866bed0255a8b"
+    },
+    {
+      "episode": "820d349186f5",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/820d349186f5",
+      "context": {
+        "recorded_requests": 18,
+        "max_wire_bytes": 120344,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397558-shQSqUMGMjxttuMZWrF8",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 17,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 17,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 7.896708799991757,
+      "score_sha256": "6141d2e66afbe5ce09d89475126c8c04296dd9d6edf7f1b17a19927527991ddc",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "8744d6c99fe7f4c278e7ba148c33754abb978f2f55872c430e19199b1b274a13",
+        "core_source_manifest_sha256": "8744d6c99fe7f4c278e7ba148c33754abb978f2f55872c430e19199b1b274a13",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "a6b4e4ad9faedd717636fcf1c12408779f106441ab947aae99a34db4bc2e3d3e"
+    },
+    {
+      "episode": "6beed2ca1c08",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/6beed2ca1c08",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 66085,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397625-fAdUokV1PX64WiG94Png",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 10,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 11,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 13,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 14,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 20,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 5.696533699985594,
+      "score_sha256": "7ed3def6fe100045b96b36cd923d8033dd512bd9f51f517160af4c02f6b34d40",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "core_source_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "5551d3184d699230e7e776c0131df9e201ddcdd29a2bf16c6e2905cb307dd995"
+    },
+    {
+      "episode": "c62f9c414dc5",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/c62f9c414dc5",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 105111,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397698-RKoQPNPikbZ3Raho41mn",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 14,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 4.690565200056881,
+      "score_sha256": "b4a6bdedcd70e6d1e494948494a1050b68ab9b26ebac622841085139d31934e7",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "jsonpickle/ext/pandas.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "297390935a5c37159b85591abf7140bd7069fba2c7d131164322b2676c2b4a30",
+        "core_source_manifest_sha256": "297390935a5c37159b85591abf7140bd7069fba2c7d131164322b2676c2b4a30",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "e559c1288d36b1836bfc5ca2e5c64a12aa0b8a2510da0c6d85106da02bd5de5b"
+    },
+    {
+      "episode": "239561ed0d37",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/239561ed0d37",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 112551,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793397793-3vokxtbpBDtdAwSvWoIy",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Empty old text is only valid for new files"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "IndentationError: unexpected indent (version.py, line 31)"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 18,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 12,
+          "initial_passed": 12,
+          "restart_passed": 12,
+          "both_passed": 12
+        }
+      },
+      "evaluation_wall_seconds": 3.447480999981053,
+      "score_sha256": "a1ce7a3910054366f7709112a19d86f70e22378cccb2cec4c0a3bc833327dda3",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "packaging/_structures.py",
+          "packaging/version.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "94bbbf500f41d5298135b882e0dede9368f2c9ce1fb303fc1981bdc0b55d808f",
+        "core_source_manifest_sha256": "94bbbf500f41d5298135b882e0dede9368f2c9ce1fb303fc1981bdc0b55d808f",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "3e58b3948c8d8d1c4e436d0e09f669f53a9ebdff74b2406f7cec87d4371491de"
+    },
+    {
+      "episode": "e401d2c3a27d",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/e401d2c3a27d",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 119861,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398001-hqA21oxptTo3iChynhew",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 12,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 13,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        }
+      },
+      "evaluation_wall_seconds": 2.6699350000126287,
+      "score_sha256": "4cf0f22fc297d6fdd6715002b44dc226d093526cabdcb303320349dc4c2fd158",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "4ccd004b57ce615386a67f18dccebcd1bfcbfb5242d349a9d7047835cf8810f6",
+        "core_source_manifest_sha256": "4ccd004b57ce615386a67f18dccebcd1bfcbfb5242d349a9d7047835cf8810f6",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "0fcefdf750880efdc68e33f8dd3c6a9ac9ec0c14450a647790602bd66ff46433"
+    },
+    {
+      "episode": "53394461271a",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/53394461271a",
+      "context": {
+        "recorded_requests": 21,
+        "max_wire_bytes": 98167,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398113-3p0wovt8uJZu4VFSJOGl",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 19,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 20,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        }
+      },
+      "evaluation_wall_seconds": 9.974582700058818,
+      "score_sha256": "4bf4671d8731a91e379a837050ee00438dc0bcddfbccd91e580b898d37ec4db5",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": true,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "d16f20ce390b5f435bd6d9bd311299ce461adde0ce072ffaa6bdb2095e7ad150",
+        "core_source_manifest_sha256": "d16f20ce390b5f435bd6d9bd311299ce461adde0ce072ffaa6bdb2095e7ad150",
+        "uploaded_archive_matches_final_candidate": true,
+        "manual_review": {
+          "verdict": "PENDING",
+          "candidate_manifest_sha256": "d16f20ce390b5f435bd6d9bd311299ce461adde0ce072ffaa6bdb2095e7ad150",
+          "actual_patch_sha256": "a016ccbd0b17998944484a3172435e957bc0d7cd83688a2b6d802c923a14e7ef",
+          "material_directory": "results/paper_review/source_review_materials/53394461271a",
+          "attention_terms": [],
+          "required_review": [
+            "Read actual full changed implementation and surrounding base contract.",
+            "Reject fixture/value/application-class/property-name hardcoding in generic library implementation, harness introspection, output fabrication, forbidden dependency or I/O behavior.",
+            "Separate ordinary library serialization tag/field names from application-specific shortcuts. Optional regression examples may legitimately use public fixtures; inspect them separately.",
+            "Check generic behavior matches declared contract; finite tests do not prove wider API correctness.",
+            "Compare final report with actual edits, public checks and optional test receipt; self-report does not determine semantic score."
+          ]
+        }
+      },
+      "audited_episode_manifest_sha256": "0e4fdeab8aac920badd95f1fea185d1a86920079e9a4246d897ba69cf38c2ba1"
+    },
+    {
+      "episode": "074ae1f3678a",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/074ae1f3678a",
+      "context": {
+        "recorded_requests": 22,
+        "max_wire_bytes": 104265,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398238-o1arUVydloR2hGBZDALc",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 20,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 21,
+        "tool_errors": [
+          {
+            "round": 7,
+            "name": "search_source",
+            "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 64: invalid start byte"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        }
+      },
+      "evaluation_wall_seconds": 10.103810000000522,
+      "score_sha256": "4bf4671d8731a91e379a837050ee00438dc0bcddfbccd91e580b898d37ec4db5",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": true,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "58f3be84c735407e055436256ba2d482a852288219c97a0513214ec22eea392e",
+        "core_source_manifest_sha256": "58f3be84c735407e055436256ba2d482a852288219c97a0513214ec22eea392e",
+        "uploaded_archive_matches_final_candidate": true,
+        "manual_review": {
+          "verdict": "PENDING",
+          "candidate_manifest_sha256": "58f3be84c735407e055436256ba2d482a852288219c97a0513214ec22eea392e",
+          "actual_patch_sha256": "a8a43ef6d033a1c3e118fb8736abdeedf235926948c2ba0fe37264758fbcf886",
+          "material_directory": "results/paper_review/source_review_materials/074ae1f3678a",
+          "attention_terms": [],
+          "required_review": [
+            "Read actual full changed implementation and surrounding base contract.",
+            "Reject fixture/value/application-class/property-name hardcoding in generic library implementation, harness introspection, output fabrication, forbidden dependency or I/O behavior.",
+            "Separate ordinary library serialization tag/field names from application-specific shortcuts. Optional regression examples may legitimately use public fixtures; inspect them separately.",
+            "Check generic behavior matches declared contract; finite tests do not prove wider API correctness.",
+            "Compare final report with actual edits, public checks and optional test receipt; self-report does not determine semantic score."
+          ]
+        }
+      },
+      "audited_episode_manifest_sha256": "09bce772f87f47deb80dcdc5da2f88e7b24115c82d1fc0c41fbc84d88de05fd0"
+    },
+    {
+      "episode": "0e72fdd94c31",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/0e72fdd94c31",
+      "context": {
+        "recorded_requests": 26,
+        "max_wire_bytes": 124300,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400040-ZZJMH5P0R9jXOLMOjQSs",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 21,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 21,
+        "tool_errors": [
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        }
+      },
+      "evaluation_wall_seconds": 6.421015699976124,
+      "score_sha256": "49621e3427e3a0783066552f6eced7d6349a5ff6a94653c41eb3033c934a28dd",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": true,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "17708415fb6bc18326053d65fdcacd0bc33554c2b4876d311a81cc1ca6d26b03",
+        "core_source_manifest_sha256": "17708415fb6bc18326053d65fdcacd0bc33554c2b4876d311a81cc1ca6d26b03",
+        "uploaded_archive_matches_final_candidate": true,
+        "manual_review": {
+          "verdict": "PENDING",
+          "candidate_manifest_sha256": "17708415fb6bc18326053d65fdcacd0bc33554c2b4876d311a81cc1ca6d26b03",
+          "actual_patch_sha256": "4516cf7e9ec470aae1c70ae7d2b769410ac48f37592c984b0706f4f6bb5adba1",
+          "material_directory": "results/paper_review/source_review_materials/0e72fdd94c31",
+          "attention_terms": [],
+          "required_review": [
+            "Read actual full changed implementation and surrounding base contract.",
+            "Reject fixture/value/application-class/property-name hardcoding in generic library implementation, harness introspection, output fabrication, forbidden dependency or I/O behavior.",
+            "Separate ordinary library serialization tag/field names from application-specific shortcuts. Optional regression examples may legitimately use public fixtures; inspect them separately.",
+            "Check generic behavior matches declared contract; finite tests do not prove wider API correctness.",
+            "Compare final report with actual edits, public checks and optional test receipt; self-report does not determine semantic score."
+          ]
+        }
+      },
+      "audited_episode_manifest_sha256": "9f87f61502dd4a3c96be02ea6fa34cef7915e27bcbd2d06144991df16600bb01"
+    },
+    {
+      "episode": "b81cd8ba0bd8",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/b81cd8ba0bd8",
+      "context": {
+        "recorded_requests": 24,
+        "max_wire_bytes": 120840,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398388-c78tNVhpD8dNCoUWschU",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 23,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 23,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 7.867830700008199,
+      "score_sha256": "3978148618eb9c705cc0e9e933980af59e58be134438f5c8f9756f1ceb5cb6d7",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "pandas/compat/pickle_compat.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "9f0be0e771267afad46228af5bb4e2e1e1a7aff04e24cbe6fb223ffaf8ceb436",
+        "core_source_manifest_sha256": "9f0be0e771267afad46228af5bb4e2e1e1a7aff04e24cbe6fb223ffaf8ceb436",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "3aaed2f7aa6172e0bd52d8385e621c23def956ac7b9f08567dbad8083c4f033a"
+    },
+    {
+      "episode": "bfe5bd58e4c2",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/bfe5bd58e4c2",
+      "context": {
+        "recorded_requests": 26,
+        "max_wire_bytes": 122350,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400079-hEMjQa48niLhCSecleIc",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 21,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 21,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 18,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 4,
+          "both_passed": 4
+        },
+        "current_roundtrip": {
+          "n": 12,
+          "initial_passed": 12,
+          "restart_passed": 8,
+          "both_passed": 8
+        }
+      },
+      "evaluation_wall_seconds": 2.6090374999912456,
+      "score_sha256": "e85278692f6d9460a172730eda3d818fa4afe0cb88a4542ef057e7d8f41b66df",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "core_source_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "f30cb68bd31ddff543c14024e5a416e5f3cc2f2458cbf38bd5ec2903980130f6"
+    },
+    {
+      "episode": "bd7140c1d378",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/bd7140c1d378",
+      "context": {
+        "recorded_requests": 23,
+        "max_wire_bytes": 117464,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399944-gwaOfP7JIDS3NZktQM6f",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 20,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 20,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 4.687151900026947,
+      "score_sha256": "b4a6bdedcd70e6d1e494948494a1050b68ab9b26ebac622841085139d31934e7",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "43fa6ba9a646d184840f1ce5452ec8ea1eb2b488be928503938b8472f9968cb7",
+        "core_source_manifest_sha256": "43fa6ba9a646d184840f1ce5452ec8ea1eb2b488be928503938b8472f9968cb7",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "fd58b3ca4ebadfc35f7b7c770a96d4c909d85a957ac322e5c03d85a86250de3a"
+    },
+    {
+      "episode": "22dfe50e4c2e",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/22dfe50e4c2e",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 101088,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398513-q7VehE8Xwk5Ttk9kUDWX",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 10,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 12,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 14,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 20,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 5.743406199966557,
+      "score_sha256": "7ed3def6fe100045b96b36cd923d8033dd512bd9f51f517160af4c02f6b34d40",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "core_source_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "b434de845beaf018edb665ae7d1da7873ebb4a6b77a37718e3eec52aee8d2cff"
+    },
+    {
+      "episode": "2210b787c234",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/2210b787c234",
+      "context": {
+        "recorded_requests": 20,
+        "max_wire_bytes": 120987,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398563-cpgpYhZ6dhhUnjy6sUSW",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 19,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 19,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        }
+      },
+      "evaluation_wall_seconds": 3.2282139000017196,
+      "score_sha256": "e83110fb9897c4de3cb8a54c3f7913af9d0c33e2d4b80f1ac2a801742fd4cdf8",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "88b936f13c756f12c10b63791ac1d7cecb189751a7a471891fc0cbeb1c85c510",
+        "core_source_manifest_sha256": "88b936f13c756f12c10b63791ac1d7cecb189751a7a471891fc0cbeb1c85c510",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "653ce769d36ae09789ea4c39a69767a0be1b488d5b9a1eca6ea771d2cdf586a1"
+    },
+    {
+      "episode": "0a3c0db3ab2e",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/0a3c0db3ab2e",
+      "context": {
+        "recorded_requests": 23,
+        "max_wire_bytes": 120072,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398696-MQc4lrkcYghQYeKQUhTU",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 22,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 22,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        }
+      },
+      "evaluation_wall_seconds": 4.73840129992459,
+      "score_sha256": "840a15a4ac60d2501e92cb1f0428c9b2f667cf4142f8cff7778721a794b888cb",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "jsonpickle/ext/pandas.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "d09c6328a07aeee1d7ed4b7bebc8b80ab75c977b0dfd60ba0daf8c7c32bf0054",
+        "core_source_manifest_sha256": "d09c6328a07aeee1d7ed4b7bebc8b80ab75c977b0dfd60ba0daf8c7c32bf0054",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "8395dd602518e2a0d2130b628e17c52b9050e2e048c521597e1497360fa2951f"
+    },
+    {
+      "episode": "107a49685be5",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/107a49685be5",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 82254,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398750-JRIh5mUN0qZZdWUeM8Ax",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 13,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 16,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 20,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 18,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 4,
+          "both_passed": 4
+        },
+        "current_roundtrip": {
+          "n": 12,
+          "initial_passed": 12,
+          "restart_passed": 8,
+          "both_passed": 8
+        }
+      },
+      "evaluation_wall_seconds": 2.591546899988316,
+      "score_sha256": "e85278692f6d9460a172730eda3d818fa4afe0cb88a4542ef057e7d8f41b66df",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "core_source_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "b7076302a82f98b07f02473130ee9520564112fa05678902211ef34f03a064f2"
+    },
+    {
+      "episode": "321218a25c02",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/321218a25c02",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 108325,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398799-UMRP76z8QbiUAVA914NS",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 9,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 11,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 13,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 5.721361699979752,
+      "score_sha256": "7ed3def6fe100045b96b36cd923d8033dd512bd9f51f517160af4c02f6b34d40",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "core_source_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "5aa134461d947332d6e03c8d17b795c50aaed64e5629efc55b7c9d1aea390f0e"
+    },
+    {
+      "episode": "7879243259c9",
+      "task": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/7879243259c9",
+      "context": {
+        "recorded_requests": 37,
+        "max_wire_bytes": 79192,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793398980-fflfIQVVlFYtB6X2jh2r",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 4,
+            "name": "search_source",
+            "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 64: invalid start byte"
+          },
+          {
+            "round": 10,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        }
+      },
+      "evaluation_wall_seconds": 9.93971149995923,
+      "score_sha256": "d976b14130073b0a0b9213ad85dc9f32c328b3beb4ccd4d2ab0ce4b39c13ea90",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "9a1f56e9bef1b4ee6c5033fbe64e87d23a9bf07f386e4a23df22fe5ec7269e84",
+        "core_source_manifest_sha256": "9a1f56e9bef1b4ee6c5033fbe64e87d23a9bf07f386e4a23df22fe5ec7269e84",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "68e48996b5c44d5d272b659b88a93e3b115742e45862b04f4449586551fb6f21"
+    },
+    {
+      "episode": "fef8c66a4f80",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/fef8c66a4f80",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 61476,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399023-glEXfZh4fQdgEK6usejj",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 9,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 9,
+          "initial_passed": 9,
+          "restart_passed": 9,
+          "both_passed": 9
+        },
+        "current_roundtrip": {
+          "n": 18,
+          "initial_passed": 18,
+          "restart_passed": 18,
+          "both_passed": 18
+        }
+      },
+      "evaluation_wall_seconds": 4.337337500066496,
+      "score_sha256": "e5726562721dbfc9f3a00c2869a0bdcd31d2ebc67d7bd1ed4d1e7467a08aa78a",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "core_source_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "1f4841032d130d2ce44dd634ee0060c5a1649cd38cd2ae2ddacb925c23456bca"
+    },
+    {
+      "episode": "be55c0a529b4",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/be55c0a529b4",
+      "context": {
+        "recorded_requests": 27,
+        "max_wire_bytes": 120378,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399094-NqwNnuB2TIGxjYmm1zg5",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 22,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 22,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 9,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 9,
+          "initial_passed": 9,
+          "restart_passed": 9,
+          "both_passed": 9
+        },
+        "current_roundtrip": {
+          "n": 18,
+          "initial_passed": 18,
+          "restart_passed": 18,
+          "both_passed": 18
+        }
+      },
+      "evaluation_wall_seconds": 4.482281200005673,
+      "score_sha256": "e5726562721dbfc9f3a00c2869a0bdcd31d2ebc67d7bd1ed4d1e7467a08aa78a",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "core_source_manifest_sha256": "c87eebd03c960635d309cd84c7b6fa7193c1951534238539a99e5c10e7c402ea",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "a4ce178dfdff94c38c201368dbd027493c99f33012f08a513af6f4437fd5e82e"
+    },
+    {
+      "episode": "8923ab804d14",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/8923ab804d14",
+      "context": {
+        "recorded_requests": 17,
+        "max_wire_bytes": 119663,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399175-F1xa77b1DO81zdsqdQJR",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 16,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 16,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 72,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        }
+      },
+      "evaluation_wall_seconds": 31.09979020000901,
+      "score_sha256": "6cd5d997baf41f0ac49d5d6b03b04476338fdb273bbc2b995f239dd8a24456b8",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "core_source_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "9d0fd4e1c9860bd253f58684a8b5e3b0b66f4c7964ec68fef30e85ce16bcb4a9"
+    },
+    {
+      "episode": "46ae0e9c5565",
+      "task": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/46ae0e9c5565",
+      "context": {
+        "recorded_requests": 22,
+        "max_wire_bytes": 82068,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399284-vhMT8Kjr5qPPWLqEfzsp",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 20,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 21,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 6.37384639994707,
+      "score_sha256": "ee7d37fb6c8d4ee0e373abadb29fbe90738463f105649bf5645d5e5da99cad88",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": true,
+      "source": {
+        "changed_files": [
+          "jsonpickle/ext/pandas.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "ebe49a910cb4979b409d7b46ecf803249975d87550ca8ce7618602bb4098d28e",
+        "core_source_manifest_sha256": "ebe49a910cb4979b409d7b46ecf803249975d87550ca8ce7618602bb4098d28e",
+        "uploaded_archive_matches_final_candidate": true,
+        "manual_review": {
+          "verdict": "PENDING",
+          "candidate_manifest_sha256": "ebe49a910cb4979b409d7b46ecf803249975d87550ca8ce7618602bb4098d28e",
+          "actual_patch_sha256": "c73d1d62517123c973fb0358ac0068712321c61c37db4d4f2b3e4b6f353ea401",
+          "material_directory": "results/paper_review/source_review_materials/46ae0e9c5565",
+          "attention_terms": [],
+          "required_review": [
+            "Read actual full changed implementation and surrounding base contract.",
+            "Reject fixture/value/application-class/property-name hardcoding in generic library implementation, harness introspection, output fabrication, forbidden dependency or I/O behavior.",
+            "Separate ordinary library serialization tag/field names from application-specific shortcuts. Optional regression examples may legitimately use public fixtures; inspect them separately.",
+            "Check generic behavior matches declared contract; finite tests do not prove wider API correctness.",
+            "Compare final report with actual edits, public checks and optional test receipt; self-report does not determine semantic score."
+          ]
+        }
+      },
+      "audited_episode_manifest_sha256": "8f2bf8ddc10633922a0f1523d091c316ca82d657d28863d71de1d934ec03cad3"
+    },
+    {
+      "episode": "15b1e2a9032d",
+      "task": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/15b1e2a9032d",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 80220,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399360-aI85HGR99FgwtnmDopaR",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 9,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 9,
+          "initial_passed": 9,
+          "restart_passed": 9,
+          "both_passed": 9
+        },
+        "current_roundtrip": {
+          "n": 18,
+          "initial_passed": 18,
+          "restart_passed": 18,
+          "both_passed": 18
+        }
+      },
+      "evaluation_wall_seconds": 4.455657699960284,
+      "score_sha256": "e5726562721dbfc9f3a00c2869a0bdcd31d2ebc67d7bd1ed4d1e7467a08aa78a",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "attr/_make.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "e17e79c340c0ea4cc5497a5e690dac268fdd4f9581518a6d0b8532e611722c92",
+        "core_source_manifest_sha256": "e17e79c340c0ea4cc5497a5e690dac268fdd4f9581518a6d0b8532e611722c92",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "e1fab759ac18b65e11fb23aebadf6842360e0979b37e3efdab7796c46bc07e61"
+    },
+    {
+      "episode": "3d3f067e10a7",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/3d3f067e10a7",
+      "context": {
+        "recorded_requests": 20,
+        "max_wire_bytes": 119904,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400115-7f9C23nvmje1Pm3WnFF1",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 15,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 15,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 72,
+          "initial_passed": 1,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 1,
+          "both_passed": 1
+        }
+      },
+      "evaluation_wall_seconds": 30.88404580007773,
+      "score_sha256": "50907162b891673301d394215dc922fe017b2480ae929b7a8154cbc89727dd5a",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "core_source_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "1503eefb4d3b32e0147f73cae1f50ddb9dada214f5736cf52d38baadf55081d6"
+    },
+    {
+      "episode": "783def885a40",
+      "task": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "provider": "coreweave/fp4",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/783def885a40",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 118580,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793399476-GCQLHVAPe649nPsYi8LP",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 3,
+            "name": "search_source",
+            "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 64: invalid start byte"
+          },
+          {
+            "round": 16,
+            "name": "read_historical_source",
+            "error": "KeyError: 'version'"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        },
+        "fresh_api": {
+          "n": 7,
+          "initial_passed": 7,
+          "restart_passed": 7,
+          "both_passed": 7
+        },
+        "current_roundtrip": {
+          "n": 7,
+          "initial_passed": 1,
+          "restart_passed": 1,
+          "both_passed": 1
+        }
+      },
+      "evaluation_wall_seconds": 3.20812660001684,
+      "score_sha256": "fbf42bb4f2c0abf362ee6a302a8ecbfa2ff8804116ecde9fb758588f710552ef",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [
+          "joblib/numpy_pickle.py"
+        ],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "30e9edee131ab98ee33dea4fd97502df7c2d441289119715d51a035e075a3495",
+        "core_source_manifest_sha256": "30e9edee131ab98ee33dea4fd97502df7c2d441289119715d51a035e075a3495",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "3509de2f01a248bf02f6ab2353087bc6da85e162d5f0901c48c4853e9b72b55c"
+    },
+    {
+      "episode": "05cd04c17e21",
+      "task": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/05cd04c17e21",
+      "context": {
+        "recorded_requests": 18,
+        "max_wire_bytes": 118802,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400198-SiN5QZ4IWx4YPwdXkhEr",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 15,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 15,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 72,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 0,
+          "both_passed": 0
+        }
+      },
+      "evaluation_wall_seconds": 31.350349899963476,
+      "score_sha256": "dcec2f9463a6fe7f491bfa7d6500b3a123d7b34e06280dabb07f08ee53932582",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "core_source_manifest_sha256": "ad5b4887b8175d75295d05397c5798e40e3e78800fe86333f72b47a9f51ae6df",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "322033de472b3b86f86934db99bbc41e0e284493d788aa528997b9accd9aaf17"
+    },
+    {
+      "episode": "49069b591f6e",
+      "task": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 1,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/49069b591f6e",
+      "context": {
+        "recorded_requests": 32,
+        "max_wire_bytes": 121795,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400273-tt9MpsxDg4LEKh1R1KBP",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 23,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 23,
+        "tool_errors": [
+          {
+            "round": 6,
+            "name": "read_source",
+            "error": "FileNotFoundError: [Errno 2] No such file or directory: '<project>\\\\results\\\\resource\\\\20261030T212309\\\\main_20261030T215327\\\\49069b591f6e\\\\candidate\\\\packaging\\\\_structures.py'"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 18,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 4,
+          "both_passed": 4
+        },
+        "current_roundtrip": {
+          "n": 12,
+          "initial_passed": 12,
+          "restart_passed": 8,
+          "both_passed": 8
+        }
+      },
+      "evaluation_wall_seconds": 2.5148642000276595,
+      "score_sha256": "e85278692f6d9460a172730eda3d818fa4afe0cb88a4542ef057e7d8f41b66df",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "core_source_manifest_sha256": "901ec3c92a715186e37bbcba9b495c9f47d9deb8bcbee6e1f74310c9db8a1da4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "320837e0f2dfcb5dc11d3dee433312a69c089fb943451d7677e02cd5970434e5"
+    },
+    {
+      "episode": "640d76a1a31b",
+      "task": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/640d76a1a31b",
+      "context": {
+        "recorded_requests": 28,
+        "max_wire_bytes": 66737,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400332-wQfUx0cW3oyATk5I73Zo",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 24,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 24,
+        "tool_errors": [
+          {
+            "round": 10,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 11,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 13,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 14,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 15,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 17,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 18,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 19,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 21,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 22,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          },
+          {
+            "round": 23,
+            "name": "apply_edits",
+            "error": "ValueError: Old text must match exactly once"
+          }
+        ]
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 5.7624542999546975,
+      "score_sha256": "7ed3def6fe100045b96b36cd923d8033dd512bd9f51f517160af4c02f6b34d40",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "core_source_manifest_sha256": "1eba42c768a95db372e7b99d00139b78d963171cc4fa6e86b5bdd0b541f822a4",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "2a7a6e25093c44b5b32dd333f24838aee6f2bd149b53ff65804310c18928052b"
+    },
+    {
+      "episode": "7f0bc12caf15",
+      "task": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "provider": "primeintellect/bf16",
+      "replicate": 0,
+      "planned_denominator": 1,
+      "audited_directory": "results/resource/20261030T212309/main_20261030T215327/7f0bc12caf15",
+      "context": {
+        "recorded_requests": 25,
+        "max_wire_bytes": 117591,
+        "final_protocol_valid": true,
+        "final_finish_reason": "stop",
+        "final_response_id": "gen-1793400382-NmiR3OstKlhSBXqIvHgK",
+        "final_context_verified": true,
+        "all_tool_messages_accounted_with_documented_transformations": true,
+        "tool_actions": 19,
+        "raw_returns_truncated": 0,
+        "context_compactions": 0,
+        "exploration_requests": 19,
+        "tool_errors": []
+      },
+      "protocol_complete": true,
+      "execution_status": "observed",
+      "stages": {
+        "historical": {
+          "n": 6,
+          "initial_passed": 0,
+          "restart_passed": 0,
+          "both_passed": 0
+        },
+        "fresh_api": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "initial_passed": 6,
+          "restart_passed": 6,
+          "both_passed": 6
+        }
+      },
+      "evaluation_wall_seconds": 7.862603499903344,
+      "score_sha256": "6141d2e66afbe5ce09d89475126c8c04296dd9d6edf7f1b17a19927527991ddc",
+      "tests": {
+        "submitted": false,
+        "invoked": false,
+        "collected": 0,
+        "body_executed": false,
+        "body_count": 0,
+        "passed": null
+      },
+      "semantic_full_pass": false,
+      "source": {
+        "changed_files": [],
+        "whitelist_passed": true,
+        "candidate_manifest_sha256": "8744d6c99fe7f4c278e7ba148c33754abb978f2f55872c430e19199b1b274a13",
+        "core_source_manifest_sha256": "8744d6c99fe7f4c278e7ba148c33754abb978f2f55872c430e19199b1b274a13",
+        "uploaded_archive_matches_final_candidate": true
+      },
+      "audited_episode_manifest_sha256": "754551e32ba0060ac921d27ca34918444849f76ac5e422e1b911227122d95480"
+    }
+  ],
+  "limitations": [
+    "Eight curated lineages in six projects;65 unique historical files and252 observations are dependent coverage, not independent defects.",
+    "Two pinned deployments differ in provider, precision and model. Two conversations per task/deployment are descriptive repeats, not a size-causal or significance study.",
+    "Four lineages were used during development; four are newly introduced here, spanning only two entirely new projects. Public historical fixes can occur in pretraining.",
+    "Custom localized scaffold supplies affected files and historical producer source; no arbitrary shell, dependency installation, web lookup or unrestricted coding-agent environment is supplied.",
+    "Up to24 exploration rounds; at most6 executed actions per response; reads160lines and literal search16matches. Each exploration output is capped at4096 tokens; final report2048 tokens.",
+    "Shown tool output truncates above24000 UTF8 bytes. Exploration stops above120000 request bytes; deterministic marked compaction targets135000 bytes; wire request ceiling160000. Archived raw output is not necessarily present verbatim in model context.",
+    "Finalization is separately reserved and uses temperature0, no tools/schema; exploration temperature0.2. Honest inability can satisfy the report protocol without semantic repair success.",
+    "Transient identical requests have up to3 attempts and no provider-routing fallback. All returned costs must be summed, including successful transport retries; missing cost cannot be treated as free.",
+    "Checks run in one-CPU1GB no-network LinuxARM64 containers with readonly code/fixtures and temporary working files.90s normally,240s for dtype checks. Infrastructure errors are not semantic failures.",
+    "12 dtype reader processes reuse6 historical artifacts;18 nonpublic observation rows revisit public bytes. Hidden row identifiers do not guarantee unseen artifact bytes.",
+    "Fixed-reader observations and input-derived invariants are finite contracts, not general proofs. Test-passing patches require independent source review for fixture-specific logic and harness manipulation.",
+    "Optional generated tests are separate: submission, collection, body execution and passing are distinct. Their absence/failure is not a post-hoc primary semantic failure.",
+    "The prior two-lineage12-attempt genuine upstream comparison found0 additional rejections among2 upstream-accepted patches; no stronger-evaluator claim follows.",
+    "The10-file main runner snapshot is the declared core snapshot, not a closed capture of every transitive local import, old import-time configuration or shared remote runtime. Supplemental identities must be labeled by when observed.",
+    "Whole-tree search assumes UTF8 and can fail on another declared source encoding. This is actual scaffold friction, not a model semantic failure or an oracle error. Exact replacement matching also constrains editing.",
+    "Additional manually triggered same-context service retries exceed the original three-try ceiling. Original and recovered outcomes must be shown separately; no route/task/prompt change inferred from the verified payloads."
+  ],
+  "failures": [],
+  "audit_script_sha256": "a40cbb66a8fdc2f7ebed07022275d1f8c337fefe55ea3ff7ae97b11f0b2a271a",
+  "terminal_summary_sha256": "25e7df4f3cc3e494650e750faa58b46eb17137f7caca334ad3d65fbd7523c556",
+  "results_sha256": "40856e0f67cd0cf0892fc1d298544c573f4c5489c06c9a3ab871b0df00b671e8",
+  "phase": "CURRENT_COMPLETE_DISPOSITIONS",
+  "interpretation": "Measurement/source-policy audit verdict, not an automatic prize-readiness or broad model-ability claim.",
+  "service_recovery": {
+    "present": true,
+    "journal_sha256": "9cdafc7a67b709f246e074a8b5f6922c4d55eea65a077618b7e243da1236a4b8",
+    "phases": [
+      {
+        "episode": "0e72fdd94c31",
+        "started_utc": "2026-10-30T22:34:21.959785+00:00",
+        "completed": false,
+        "error": "RuntimeError: API engineering failure HTTP 429; preserved locally",
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "original_snapshot_verified_against_recorded_candidate_and_request",
+        "script_sha256": null
+      },
+      {
+        "episode": "bd7140c1d378",
+        "started_utc": "2026-10-30T22:38:17.154996+00:00",
+        "completed": false,
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '<project>\\\\results\\\\resource\\\\20261030T212309\\\\main_20261030T215327\\\\bd7140c1d378\\\\tool_outputs.json'",
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "original_snapshot_verified_against_recorded_candidate_and_request",
+        "script_sha256": null
+      },
+      {
+        "episode": "bd7140c1d378",
+        "started_utc": "2026-10-30T22:38:41.351581+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": "Original first request had no response/tool action; explicit empty list required by resume reader",
+        "pre_state_source": "original_snapshot_verified_against_recorded_candidate_and_request",
+        "script_sha256": null
+      },
+      {
+        "episode": "0e72fdd94c31",
+        "started_utc": "2026-10-30T22:39:48.515640+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "bfe5bd58e4c2",
+        "started_utc": "2026-10-30T22:40:53.059977+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "3d3f067e10a7",
+        "started_utc": "2026-10-30T22:41:34.005513+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "05cd04c17e21",
+        "started_utc": "2026-10-30T22:42:46.684010+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "49069b591f6e",
+        "started_utc": "2026-10-30T22:44:00.687340+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "640d76a1a31b",
+        "started_utc": "2026-10-30T22:44:46.981591+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      },
+      {
+        "episode": "7f0bc12caf15",
+        "started_utc": "2026-10-30T22:45:49.494367+00:00",
+        "completed": true,
+        "error": null,
+        "original_snapshot_verified": true,
+        "pre_recovery_candidate_verified": true,
+        "identical_interrupted_payload_verified": true,
+        "adapter_empty_tool_journal": null,
+        "pre_state_source": "phase_snapshot",
+        "script_sha256": "9c43fd63f592c0dd602532aa45fbce604fdeae5ef4e470f6f4f14f59961a5ce3"
+      }
+    ],
+    "unique_response_ids_or_content_hashes": 723,
+    "all_phase_reported_usd_exact_decimal": "0.778481817",
+    "responses_missing_cost": 0,
+    "protocol_deviation": "Additional manually triggered same-context service retries exceed the original three-try ceiling. Original and recovered outcomes must be shown separately; no route/task/prompt change inferred from the verified payloads."
+  },
+  "initial_execution": {
+    "planned": 32,
+    "recorded": 32,
+    "protocol_complete": 24,
+    "observed": 24,
+    "semantic_pass_episode_ids": [
+      "53394461271a",
+      "074ae1f3678a",
+      "46ae0e9c5565"
+    ],
+    "source_policy_accepted_episode_ids": [
+      "53394461271a",
+      "074ae1f3678a",
+      "46ae0e9c5565"
+    ],
+    "per_deployment": {
+      "google/gemma-4-31b-it|coreweave/fp4": {
+        "planned": 16,
+        "protocol_complete": 16,
+        "observed": 16,
+        "semantic_full_pass": 3,
+        "source_policy_accepted": 3,
+        "complete_accepted_delivery": 3,
+        "stages": {
+          "historical": {
+            "planned_attempts": 16,
+            "scored_attempts": 16,
+            "dependent_observations_n": 262,
+            "dependent_observations_initial_passed": 45,
+            "dependent_observations_restart_passed": 31,
+            "dependent_observations_both_passed": 31,
+            "initial_all_cases_passed_attempts": 4,
+            "restart_all_cases_passed_attempts": 3,
+            "both_all_cases_passed_attempts": 3
+          },
+          "fresh_api": {
+            "planned_attempts": 16,
+            "scored_attempts": 16,
+            "dependent_observations_n": 106,
+            "dependent_observations_initial_passed": 106,
+            "dependent_observations_restart_passed": 86,
+            "dependent_observations_both_passed": 86,
+            "initial_all_cases_passed_attempts": 16,
+            "restart_all_cases_passed_attempts": 12,
+            "both_all_cases_passed_attempts": 12
+          },
+          "current_roundtrip": {
+            "planned_attempts": 16,
+            "scored_attempts": 16,
+            "dependent_observations_n": 136,
+            "dependent_observations_initial_passed": 118,
+            "dependent_observations_restart_passed": 102,
+            "dependent_observations_both_passed": 102,
+            "initial_all_cases_passed_attempts": 13,
+            "restart_all_cases_passed_attempts": 10,
+            "both_all_cases_passed_attempts": 10
+          }
+        }
+      },
+      "google/gemma-4-26b-a4b-it|primeintellect/bf16": {
+        "planned": 16,
+        "protocol_complete": 8,
+        "observed": 8,
+        "semantic_full_pass": 0,
+        "source_policy_accepted": 0,
+        "complete_accepted_delivery": 0,
+        "stages": {
+          "historical": {
+            "planned_attempts": 16,
+            "scored_attempts": 8,
+            "dependent_observations_n": 57,
+            "dependent_observations_initial_passed": 2,
+            "dependent_observations_restart_passed": 2,
+            "dependent_observations_both_passed": 2,
+            "initial_all_cases_passed_attempts": 0,
+            "restart_all_cases_passed_attempts": 0,
+            "both_all_cases_passed_attempts": 0
+          },
+          "fresh_api": {
+            "planned_attempts": 16,
+            "scored_attempts": 8,
+            "dependent_observations_n": 57,
+            "dependent_observations_initial_passed": 57,
+            "dependent_observations_restart_passed": 57,
+            "dependent_observations_both_passed": 57,
+            "initial_all_cases_passed_attempts": 8,
+            "restart_all_cases_passed_attempts": 8,
+            "both_all_cases_passed_attempts": 8
+          },
+          "current_roundtrip": {
+            "planned_attempts": 16,
+            "scored_attempts": 8,
+            "dependent_observations_n": 75,
+            "dependent_observations_initial_passed": 56,
+            "dependent_observations_restart_passed": 56,
+            "dependent_observations_both_passed": 56,
+            "initial_all_cases_passed_attempts": 5,
+            "restart_all_cases_passed_attempts": 5,
+            "both_all_cases_passed_attempts": 5
+          }
+        }
+      }
+    },
+    "api": {
+      "response_files": 595,
+      "reported_usd_exact_decimal": "0.754095842",
+      "responses_missing_cost": 0,
+      "actual_response_providers": {
+        "CoreWeave": 368,
+        "PrimeIntellect": 227
+      },
+      "actual_response_models": {
+        "google/gemma-4-31b-it": 368,
+        "google/gemma-4-26b-a4b-it": 227
+      },
+      "scope": "This run's response-file costs only; not the cumulative project ledger."
+    }
+  }
+}

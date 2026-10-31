@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "frozen_source_changes": [],
+  "private_identity_or_absolute_path_findings": [],
+  "files_scanned": 8101,
+  "bytes_scanned": 224124341,
+  "generated_cache_policy": "No __pycache__/.pyc/.pyo/.lock exported; private original dataset evidence retained.",
+  "cold_reproduction": "validation/cold_reproduction_summary.json",
+  "cold_interface_controls": "validation/cold_interface_summary.json",
+  "implementation_binding": "validation/verified_implementation.json",
+  "api_calls": 0,
+  "gpu": false
+}

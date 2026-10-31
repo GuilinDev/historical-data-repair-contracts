@@ -1,0 +1,4334 @@
+[
+  {
+    "id": "bd22465b6441_r00",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r00",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r00",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r00",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r00",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r01",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r01",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r01",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r01",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r01",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r02",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r02",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r02",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r02",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r02",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r03",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r03",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r03",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r03",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r03",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r04",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r04",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r04",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r04",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r04",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r05",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r05",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r05",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r05",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r05",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r06",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r06",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r06",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r06",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r06",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r07",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r07",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r07",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r07",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r07",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r08",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r08",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r08",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r08",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r08",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r09",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r09",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r09",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r09",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r09",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r10",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r10",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r10",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r10",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r10",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r11",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r11",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r11",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r11",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u16/itemsize",
+        "exact_gold": 8,
+        "actual": 2,
+        "minimum_original_bytes": 2,
+        "admissible_width_only": true
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r11",
+    "differences": [
+      {
+        "path": "/semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/i8/itemsize",
+        "exact_gold": 8,
+        "actual": 1,
+        "minimum_original_bytes": 1,
+        "admissible_width_only": true
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/u32/itemsize",
+        "exact_gold": 8,
+        "actual": 4,
+        "minimum_original_bytes": 4,
+        "admissible_width_only": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "bundle_manifest_unchanged": true,
+    "task_metadata_unchanged": true,
+    "bundle_names_match": true,
+    "bundle_contents_match": true,
+    "oracle_files_match": true,
+    "frozen_runner_match": true,
+    "main_summary_match_previous_audit": true,
+    "main_results_match_previous_audit": true,
+    "trajectory_source_hashes_match": true,
+    "packaging_next_request_bytes_125578": true,
+    "cold_base_total_99": true,
+    "cold_fixed_reference_252_each": true
+  },
+  "bundle_files": 7785,
+  "trajectory_files": 259,
+  "packaging_next_request_bytes": 125578
+}

@@ -1,0 +1,1023 @@
+{
+  "reviewed_utc": "2026-10-31T19:40:48.698979+00:00",
+  "completed_utc": "2026-10-31T19:41:19.637752+00:00",
+  "passed": true,
+  "decision": "PASS audited prior release payload; FINAL_PUBLICATION_SNAPSHOT_PENDING",
+  "destination": "https://github.com/GuilinDev/historical-data-repair-contracts",
+  "scope": "Read-only local public-distribution audit. No publication, model API, GPU, SSH, Docker, candidate execution, original archive rewriting, or .env read.",
+  "release": "release/historical-data-compatibility-v0.1.0",
+  "selected_file_count": 11642,
+  "selected_uncompressed_bytes": 335293311,
+  "snapshot_sha256": "18d8d20e1dedf8b064c1522685487d30f895b66d2f4183dce49c2b735fa85505",
+  "blockers": [],
+  "privacy_findings": [],
+  "other_project_name_findings": [],
+  "privacy_method": {
+    "policy": "Same author-path/host families and archive exclusion as finalize_release, plus GitHub/AWS/Anthropic/OpenAI/private-key token shapes; wheels inspected after decompression.",
+    "secret_values_emitted": false,
+    "env_or_key_file_read": false,
+    "limits": "Pattern scan is not proof of absence of every possible secret. Exact comparison to configured live API key remains the separate finalize_release in-memory check; it was not invoked here."
+  },
+  "wheel_member_scan": {
+    "members": 4573,
+    "uncompressed_bytes": 115983874
+  },
+  "excluded_directory_files": [
+    "__pycache__/reproduce_multisolution.cpython-312.pyc",
+    "engine/__pycache__/__init__.cpython-312.pyc",
+    "engine/__pycache__/common.cpython-312.pyc",
+    "engine/__pycache__/dataset.cpython-312.pyc",
+    "engine/__pycache__/frozen_judge.cpython-312.pyc",
+    "engine/__pycache__/frozen_tools.cpython-312.pyc",
+    "release_manifest.json",
+    "SHA256SUMS"
+  ],
+  "github_staging_requirement": "Stage only final manifest-selected files plus release_manifest.json and SHA256SUMS into a clean repository; do not recursively git add this working tree because generated caches are present.",
+  "frozen_integrity": {
+    "expected_files": 7821,
+    "mismatches": []
+  },
+  "release_manifest_check": {
+    "recorded_file_count": 11642,
+    "mismatches": [],
+    "unlisted": [],
+    "missing": [],
+    "sha256": "1bf3b021b4ff77d21e32ab418e953d58f2a74f9d12935696a209858669527590"
+  },
+  "export_identity_checks": [
+    {
+      "manifest": "evidence/export_manifest.json",
+      "checked": 3304,
+      "mismatches": [],
+      "redacted_files": 266
+    },
+    {
+      "manifest": "extensions/multisolution/export_manifest.json",
+      "checked": 159,
+      "mismatches": [],
+      "redacted_files": 23
+    }
+  ],
+  "license_inventory": {
+    "top_level_license": "Apache-2.0 for original contributions; third-party terms retained by NOTICE",
+    "checks": [
+      {
+        "project": "attrs",
+        "version": "21.4.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/attrs_21.4.0_universal/attrs-21.4.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "bf659a28b49240602f56bbdf490cbe2ec509b15b98f99d7b19a52c740e327863"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "attrs",
+        "version": "22.2.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/attrs_22.2.0_universal/attrs-22.2.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "attrs",
+        "version": "23.1.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/attrs_23.1.0_universal/attrs-23.1.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "joblib",
+        "version": "1.2.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/joblib_1.2.0_universal/joblib-1.2.0.dist-info/LICENSE.txt",
+            "passed": true,
+            "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "joblib",
+        "version": "1.4.2",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/joblib_1.4.2_universal/joblib-1.4.2.dist-info/LICENSE.txt",
+            "passed": true,
+            "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "joblib",
+        "version": "1.5.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/joblib_1.5.0_universal/joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+            "passed": true,
+            "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "3.3.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_3.3.0_universal/jsonpickle-3.3.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "3.4.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_3.4.0_universal/jsonpickle-3.4.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "3.4.2",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_3.4.2_universal/jsonpickle-3.4.2.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "4.1.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_4.1.0_universal/jsonpickle-4.1.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "4.1.1",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_4.1.1_universal/jsonpickle-4.1.1.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "jsonpickle",
+        "version": "e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da",
+        "scope": "github_commit",
+        "licenses": [
+          {
+            "path": "provenance/licenses/jsonpickle_e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da_github_commit/LICENSE",
+            "passed": true,
+            "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "packaging",
+        "version": "25.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+          },
+          {
+            "path": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE.APACHE",
+            "passed": true,
+            "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+          },
+          {
+            "path": "provenance/licenses/packaging_25.0_universal/packaging-25.0.dist-info/licenses/LICENSE.BSD",
+            "passed": true,
+            "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "packaging",
+        "version": "26.0",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+            "passed": true,
+            "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.0_universal/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+            "passed": true,
+            "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "packaging",
+        "version": "26.1",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE.APACHE",
+            "passed": true,
+            "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.1_universal/packaging-26.1.dist-info/licenses/LICENSE.BSD",
+            "passed": true,
+            "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "packaging",
+        "version": "26.2",
+        "scope": "universal",
+        "licenses": [
+          {
+            "path": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE.APACHE",
+            "passed": true,
+            "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+          },
+          {
+            "path": "provenance/licenses/packaging_26.2_universal/packaging-26.2.dist-info/licenses/LICENSE.BSD",
+            "passed": true,
+            "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "1.3.5",
+        "scope": "windows_x86_64",
+        "licenses": [
+          {
+            "path": "provenance/licenses/pandas_1.3.5_windows_x86_64/pandas-1.3.5.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "97d812f1fda16e9a65fb6baa29390707c94df08d9816a282ad2c03c48c180390"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "2.1.0",
+        "scope": "linux_aarch64",
+        "licenses": [
+          {
+            "path": "provenance/licenses/pandas_2.1.0_linux_aarch64/pandas-2.1.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "2.1.0",
+        "scope": "windows_x86_64",
+        "licenses": [
+          {
+            "path": "provenance/licenses/pandas_2.1.0_windows_x86_64/pandas-2.1.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "2.1.4",
+        "scope": "linux_aarch64",
+        "licenses": [
+          {
+            "path": "provenance/licenses/pandas_2.1.4_linux_aarch64/pandas-2.1.4.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "2.1.4",
+        "scope": "windows_x86_64",
+        "licenses": [
+          {
+            "path": "provenance/licenses/pandas_2.1.4_windows_x86_64/pandas-2.1.4.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "sqlalchemy",
+        "version": "1.4.37",
+        "scope": "sdist",
+        "licenses": [
+          {
+            "path": "provenance/licenses/sqlalchemy_1.4.37_sdist/LICENSE",
+            "passed": true,
+            "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "sqlalchemy",
+        "version": "1.4.38",
+        "scope": "sdist",
+        "licenses": [
+          {
+            "path": "provenance/licenses/sqlalchemy_1.4.38_sdist/LICENSE",
+            "passed": true,
+            "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "sqlalchemy",
+        "version": "1.4.39",
+        "scope": "sdist",
+        "licenses": [
+          {
+            "path": "provenance/licenses/sqlalchemy_1.4.39_sdist/LICENSE",
+            "passed": true,
+            "sha256": "859ded25da34c1eb73e6e736df4c5f8ce3ed2ed5290663176f06e7720d9c9a20"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pandas",
+        "version": "2.1.4",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_pandas_2.1.4/pandas-2.1.4.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "tzdata",
+        "version": "2024.2",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_tzdata_2024.2/tzdata-2024.2.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "33e8e5002d3512d3fcc2282b995e6bad9d334781b9c5ac31843f404900e1f3b4"
+          },
+          {
+            "path": "provenance/licenses/shared-runtime_tzdata_2024.2/tzdata-2024.2.dist-info/LICENSE_APACHE",
+            "passed": true,
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "typing_extensions",
+        "version": "4.15.0",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_typing_extensions_4.15.0/typing_extensions-4.15.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "tomli",
+        "version": "2.2.1",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_tomli_2.2.1/tomli-2.2.1.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "python-dateutil",
+        "version": "2.9.0.post0",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_python-dateutil_2.9.0.post0/python_dateutil-2.9.0.post0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "exceptiongroup",
+        "version": "1.3.0",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_exceptiongroup_1.3.0/exceptiongroup-1.3.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "6e5070d765031e0ad403a1cbf90ae6d19a0228f802e320b7acff460aa72ed47c"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "numpy",
+        "version": "1.26.4",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_numpy_1.26.4/numpy/ma/LICENSE",
+            "passed": true,
+            "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+          },
+          {
+            "path": "provenance/licenses/shared-runtime_numpy_1.26.4/numpy/core/include/numpy/random/LICENSE.txt",
+            "passed": true,
+            "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+          },
+          {
+            "path": "provenance/licenses/shared-runtime_numpy_1.26.4/numpy/random/LICENSE.md",
+            "passed": true,
+            "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+          },
+          {
+            "path": "provenance/licenses/shared-runtime_numpy_1.26.4/numpy-1.26.4.dist-info/LICENSE.txt",
+            "passed": true,
+            "sha256": "b01a781fe2f8b83292cf6ebca087576437fbe514218a0062f841e458bdafe4ba"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "six",
+        "version": "1.17.0",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_six_1.17.0/six-1.17.0.dist-info/LICENSE",
+            "passed": true,
+            "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pytz",
+        "version": "2024.2",
+        "scope": "shared-runtime",
+        "licenses": [
+          {
+            "path": "provenance/licenses/shared-runtime_pytz_2024.2/pytz-2024.2.dist-info/LICENSE.txt",
+            "passed": true,
+            "sha256": "be8b1a37ebe26c592a90f6c0eb33103a7f383ce2f4d7498c0af9a526990a07b8"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "iniconfig",
+        "version": "2.3.1",
+        "scope": "public-test-dependency",
+        "licenses": [
+          {
+            "path": "provenance/licenses/public-test-dependency_iniconfig_2.3.1/iniconfig-2.3.1.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pluggy",
+        "version": "1.7.0",
+        "scope": "public-test-dependency",
+        "licenses": [
+          {
+            "path": "provenance/licenses/public-test-dependency_pluggy_1.7.0/pluggy-1.7.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "Pygments",
+        "version": "2.21.0",
+        "scope": "public-test-dependency",
+        "licenses": [
+          {
+            "path": "provenance/licenses/public-test-dependency_Pygments_2.21.0/pygments-2.21.0.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "pytest",
+        "version": "8.4.2",
+        "scope": "public-test-dependency",
+        "licenses": [
+          {
+            "path": "provenance/licenses/public-test-dependency_pytest_8.4.2/pytest-8.4.2.dist-info/licenses/LICENSE",
+            "passed": true,
+            "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "copies_checked": 49,
+    "task_coverage": [
+      {
+        "task": "packaging_version_1163",
+        "required_versions": [
+          "25.0",
+          "26.0",
+          "26.1",
+          "26.2"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "25.0",
+          "26.0",
+          "26.1",
+          "26.2"
+        ]
+      },
+      {
+        "task": "attrs_slot_state_1085",
+        "required_versions": [
+          "21.4.0",
+          "22.2.0",
+          "23.1.0"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "21.4.0",
+          "22.2.0",
+          "23.1.0"
+        ]
+      },
+      {
+        "task": "jsonpickle_csv_562",
+        "required_versions": [
+          "3.3.0",
+          "4.1.0",
+          "4.1.1"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "3.3.0",
+          "4.1.0",
+          "4.1.1"
+        ]
+      },
+      {
+        "task": "sqlalchemy_mutable_8133",
+        "required_versions": [
+          "1.4.37",
+          "1.4.38",
+          "1.4.39"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "1.4.37",
+          "1.4.38",
+          "1.4.39"
+        ]
+      },
+      {
+        "task": "joblib_endian_1561",
+        "required_versions": [
+          "1.2.0",
+          "1.4.2",
+          "1.5.0"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "1.2.0",
+          "1.4.2",
+          "1.5.0"
+        ]
+      },
+      {
+        "task": "joblib_compressed_1681",
+        "required_versions": [
+          "1.2.0",
+          "1.4.2",
+          "1.5.0"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "1.2.0",
+          "1.4.2",
+          "1.5.0"
+        ]
+      },
+      {
+        "task": "jsonpickle_dtype_634",
+        "required_versions": [
+          "4.1.1",
+          "4.1.1",
+          "public commit e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da (not a released 5.0.0)"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "4.1.1",
+          "4.1.1",
+          "e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da"
+        ]
+      },
+      {
+        "task": "pandas_pickle_56308",
+        "required_versions": [
+          "1.3.5",
+          "2.1.0",
+          "2.1.4"
+        ],
+        "missing": [],
+        "normalized_versions_or_commit_sha": [
+          "1.3.5",
+          "2.1.0",
+          "2.1.4"
+        ]
+      }
+    ],
+    "limits": "Package/license inventory and byte-identity verification, not a blanket legal guarantee or a base-image operating-system SBOM."
+  },
+  "dependency_wheels": {
+    "checks": [
+      {
+        "project": "pandas",
+        "version": "2.1.4",
+        "file": "wheelhouse/pandas-2.1.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "passed": true
+      },
+      {
+        "project": "tzdata",
+        "version": "2024.2",
+        "file": "wheelhouse/tzdata-2024.2-py2.py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "typing_extensions",
+        "version": "4.15.0",
+        "file": "wheelhouse/typing_extensions-4.15.0-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "tomli",
+        "version": "2.2.1",
+        "file": "wheelhouse/tomli-2.2.1-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "python-dateutil",
+        "version": "2.9.0.post0",
+        "file": "wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "exceptiongroup",
+        "version": "1.3.0",
+        "file": "wheelhouse/exceptiongroup-1.3.0-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "numpy",
+        "version": "1.26.4",
+        "file": "wheelhouse/numpy-1.26.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "passed": true
+      },
+      {
+        "project": "six",
+        "version": "1.17.0",
+        "file": "wheelhouse/six-1.17.0-py2.py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "pytz",
+        "version": "2024.2",
+        "file": "wheelhouse/pytz-2024.2-py2.py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "iniconfig",
+        "version": "2.3.1",
+        "file": "wheelhouse/iniconfig-2.3.1-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "pluggy",
+        "version": "1.7.0",
+        "file": "wheelhouse/pluggy-1.7.0-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "Pygments",
+        "version": "2.21.0",
+        "file": "wheelhouse/pygments-2.21.0-py3-none-any.whl",
+        "passed": true
+      },
+      {
+        "project": "pytest",
+        "version": "8.4.2",
+        "file": "wheelhouse/pytest-8.4.2-py3-none-any.whl",
+        "passed": true
+      }
+    ],
+    "undeclared_files": []
+  },
+  "github_sizes": {
+    "official_source": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+    "ordinary_git_block_above_mib": 100,
+    "git_warning_above_mib": 50,
+    "browser_upload_limit_mib": 25,
+    "files_above_thresholds_mib": {
+      "25": [],
+      "50": [],
+      "100": []
+    },
+    "largest_files": [
+      {
+        "path": "wheelhouse/pandas-2.1.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "bytes": 14812171
+      },
+      {
+        "path": "wheelhouse/numpy-1.26.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "bytes": 14219016
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/base/pandas/tests/io/sas/data/DEMO_G.xpt",
+        "bytes": 3753760
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/fixed/pandas/tests/io/sas/data/DEMO_G.xpt",
+        "bytes": 3753760
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/base/pandas/tests/io/sas/data/DRXFCD_G.xpt",
+        "bytes": 2195200
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/fixed/pandas/tests/io/sas/data/DRXFCD_G.xpt",
+        "bytes": 2195200
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/base/pandas/_libs/join.cpython-310-aarch64-linux-gnu.so",
+        "bytes": 2128600
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/fixed/pandas/_libs/join.cpython-310-aarch64-linux-gnu.so",
+        "bytes": 2128600
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/base/pandas/_libs/algos.cpython-310-aarch64-linux-gnu.so",
+        "bytes": 1752752
+      },
+      {
+        "path": "bundle/packages/pandas_pickle_56308/fixed/pandas/_libs/algos.cpython-310-aarch64-linux-gnu.so",
+        "bytes": 1752752
+      }
+    ]
+  },
+  "read_only_entrypoints": [
+    {
+      "command": "python -B compat.py integrity",
+      "exit_code": 0,
+      "wall_seconds": 1.938,
+      "stdout_sha256": "075ea89b686389fee1dfca70e4b16969d2a16865b3b210fe0cbbc9965cb179c4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "files": 7821,
+        "passed": true
+      }
+    },
+    {
+      "command": "python -B compat.py list",
+      "exit_code": 0,
+      "wall_seconds": 0.109,
+      "stdout_sha256": "702170176c347ef32d619791d6b402ba7350c07672db60dfb51496080e69c0d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "packaging_version_1163": {
+          "project": "packaging",
+          "base": "26.1",
+          "cases": 36
+        },
+        "attrs_slot_state_1085": {
+          "project": "attrs",
+          "base": "22.2.0",
+          "cases": 36
+        },
+        "jsonpickle_csv_562": {
+          "project": "jsonpickle",
+          "base": "4.1.0",
+          "cases": 18
+        },
+        "sqlalchemy_mutable_8133": {
+          "project": "sqlalchemy",
+          "base": "1.4.38",
+          "cases": 18
+        },
+        "joblib_endian_1561": {
+          "project": "joblib",
+          "base": "1.4.2",
+          "cases": 21
+        },
+        "joblib_compressed_1681": {
+          "project": "joblib",
+          "base": "1.4.2",
+          "cases": 21
+        },
+        "jsonpickle_dtype_634": {
+          "project": "jsonpickle",
+          "base": "4.1.1",
+          "cases": 84
+        },
+        "pandas_pickle_56308": {
+          "project": "pandas",
+          "base": "2.1.0",
+          "cases": 18
+        }
+      }
+    },
+    {
+      "command": "python -B reproduce_main.py --records-only",
+      "exit_code": 0,
+      "wall_seconds": 0.125,
+      "stdout_sha256": "3706110f07140cfa4da2a352298b6581af21d9336a2a384697f59341bd5aff22",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "planned": 32,
+        "finalized": 32,
+        "observed": 32,
+        "semantic_and_source_accepted": 4,
+        "api_calls": 0,
+        "docker_calls": 0,
+        "initial_dispositions": "24 completed,8 rate-limited; same-context recoveries retained"
+      }
+    },
+    {
+      "command": "python -B paper/verify_numbers.py",
+      "exit_code": 0,
+      "wall_seconds": 0.422,
+      "stdout_sha256": "27660c465dffb5d3476c5464096a4f18fd6323b775737a6b6fd9b82c420304b8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "source_files_hash_checked": 15,
+        "figure_count": 3,
+        "table_lineages": 8,
+        "episodes_verified": 32,
+        "accepted": 4,
+        "references": 15,
+        "word_count_including_references_tables_figure_labels_captions": 2665,
+        "trajectory_public_inputs_verified": 178,
+        "contract_source_anchors_verified": 15,
+        "main_api_reported_usd": 0.778481817,
+        "api_calls": 0,
+        "docker_calls": 0
+      }
+    },
+    {
+      "command": "python -B reproduce_multisolution.py --help",
+      "exit_code": 0,
+      "wall_seconds": 0.109,
+      "stdout_sha256": "8d138e1aa9f18dbf4a9120806d662cda96614340eb0731e9551cf32f04a656f3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "help_output": true
+    },
+    {
+      "command": "python -B model_runner.py --help",
+      "exit_code": 0,
+      "wall_seconds": 0.172,
+      "stdout_sha256": "324d9abcc6591bcef5e9edf8fcbd9c744fe62562479a7d71f987e6ff9b624a7e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "help_output": true
+    }
+  ],
+  "prior_executed_runtime_validation": {
+    "source": "validation/cold_reproduction_summary.json",
+    "no_new_runtime_claim": true,
+    "note": "The prior Linux ARM64 fresh package installation and756 control observations remain existing evidence; not rerun for publication."
+  },
+  "concurrent_snapshot_check": {
+    "changed_existing_files": [],
+    "new_files": []
+  },
+  "interpretation": "Eight lineages,32 completed model attempts,four source-and-semantic acceptances. Release readiness is not evidence of likely award success or external adoption.",
+  "publication_ready": false,
+  "snapshot_scope": {
+    "audited_release_pdf_sha256": "e9ed3d8d32d8d79aa7c00ca3dcf9c615001fad3428e49ad3e39fa7de17e3db7d",
+    "current_manuscript_pdf_sha256": "4d3b95a96c648cdc161ae2aa45c5128bbaae96c0d78e717f82cb1e2fbebb3a92",
+    "release_pdf_now_sha256": "e9ed3d8d32d8d79aa7c00ca3dcf9c615001fad3428e49ad3e39fa7de17e3db7d",
+    "release_content_words_now": 2665,
+    "current_manuscript_words": 2671,
+    "files_changed_since_original_audited_manifest": [
+      "NOTICE"
+    ],
+    "meaning": "The first scan validated a prior release snapshot. Publication revision changes are in progress. This report does not attest the future final publication snapshot."
+  },
+  "git_staging": {
+    "observed_core_autocrlf": "true",
+    "command": "git config --get core.autocrlf",
+    "required_actions": [
+      "Use a clean publication tree populated only by final manifest entries, plus the manifest and sums; exclude working-tree caches.",
+      "Disable newline conversion for all frozen and exported bytes in the publication tree.",
+      "Verify staged Git object bytes against final manifest SHA256 before push; a correct working tree alone is insufficient.",
+      "After synchronization/finalization, write the final package audit outside the package to avoid a self-referential manifest."
+    ]
+  },
+  "pending_publication_actions": [
+    "Synchronize the reviewed2671-word current manuscript and owner-authorized README/NOTICE.",
+    "Regenerate final release manifest/archive with the existing in-memory exact-key check; do not rewrite frozen study data.",
+    "Verify the final clean publication tree and staged Git objects, then obtain the separate final snapshot audit.",
+    "After publishing, verify anonymous repository and asset access."
+  ],
+  "public_url_observation": {
+    "url": "https://github.com/GuilinDev/historical-data-repair-contracts",
+    "result": "Web fetch returned cache miss. This is not evidence of404 or anonymous accessibility. Access remains unverified until publication."
+  },
+  "audit_parser_correction": {
+    "retained_initial_report": "results/paper_review/publication_revision_20261031/prepublication_audit_initial_inventory_parser.json",
+    "correction": "Normalize the deliberately annotated public-commit identity to its exact40-digit SHA for license coverage. The matching license was already present; no package or inventory was repaired."
+  }
+}

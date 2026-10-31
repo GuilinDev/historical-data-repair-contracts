@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "release": "historical-data-compatibility-v0.1.0",
+  "image": "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+  "expected_image_id": "sha256:e63b9d3e6b56af5282d2c5adc84d8fe0f63e3efc24fc4f73a00b004ddee3697d",
+  "platform": "linux/arm64",
+  "python": "3.10.20",
+  "state_directory": ".local",
+  "runtime_directory": ".local/runtime",
+  "test_dependency_directory": ".local/test_deps",
+  "evaluation_network": "none",
+  "cpu_limit": 1,
+  "memory": "1g",
+  "pids_limit": 128,
+  "task_timeout_seconds": 300,
+  "gpu": false,
+  "oracle_policy": "Read existing frozen oracle; never regenerate it during bootstrap/verify/reproduce."
+}

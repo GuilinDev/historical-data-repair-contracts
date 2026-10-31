@@ -1,0 +1,846 @@
+[
+  {
+    "id": "bd22465b6441_r00",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -117,
+            93
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29017,
+            28013
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1900000017,
+            1700000013
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842613,
+            1125899906842641
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            211,
+            239
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55001,
+            61007
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483665,
+            4294967273
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775837,
+            9223372036854775909
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.125,
+            -2199023255551.75
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/bd22465b6441.json",
+    "sha256": "197464822b71e5fcb7e42fa37d20f897f3fcbf0710528f1fbaae0d4ec418038e",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "trial": 0
+  },
+  {
+    "id": "bd22465b6441_r01",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -117,
+            93
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29017,
+            28013
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1900000017,
+            1700000013
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842613,
+            1125899906842641
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            211,
+            239
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55001,
+            61007
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483665,
+            4294967273
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775837,
+            9223372036854775909
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.125,
+            -2199023255551.75
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/bd22465b6441.json",
+    "sha256": "197464822b71e5fcb7e42fa37d20f897f3fcbf0710528f1fbaae0d4ec418038e",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "bd22465b6441_r02",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -117,
+            93
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29017,
+            28013
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1900000017,
+            1700000013
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842613,
+            1125899906842641
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            211,
+            239
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55001,
+            61007
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483665,
+            4294967273
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775837,
+            9223372036854775909
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.125,
+            -2199023255551.75
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/bd22465b6441.json",
+    "sha256": "197464822b71e5fcb7e42fa37d20f897f3fcbf0710528f1fbaae0d4ec418038e",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "trial": 2
+  },
+  {
+    "id": "bd22465b6441_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -117,
+            93
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29017,
+            28013
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1900000017,
+            1700000013
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842613,
+            1125899906842641
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            211,
+            239
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55001,
+            61007
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483665,
+            4294967273
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775837,
+            9223372036854775909
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.125,
+            -2199023255551.75
+          ]
+        }
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "bd22465b6441_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -117,
+            93
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29017,
+            28013
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1900000017,
+            1700000013
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842613,
+            1125899906842641
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            211,
+            239
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55001,
+            61007
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483665,
+            4294967273
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775837,
+            9223372036854775909
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.125,
+            -2199023255551.75
+          ]
+        }
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "f28de1e4a98b_r00",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -116,
+            92
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29006,
+            28006
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999916,
+            1700000044
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842512,
+            1125899906842792
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            212,
+            238
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55014,
+            60984
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483708,
+            4294967262
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775878,
+            9223372036854775922
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.25,
+            -3.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.375,
+            -2199023255551.625
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/f28de1e4a98b.json",
+    "sha256": "3362c94956511ff782a51c5d4a6b8b3295e0d4714687a80a791d6a9e9367e35a",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "trial": 0
+  },
+  {
+    "id": "f28de1e4a98b_r01",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -116,
+            92
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29006,
+            28006
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999916,
+            1700000044
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842512,
+            1125899906842792
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            212,
+            238
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55014,
+            60984
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483708,
+            4294967262
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775878,
+            9223372036854775922
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.25,
+            -3.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.375,
+            -2199023255551.625
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/f28de1e4a98b.json",
+    "sha256": "3362c94956511ff782a51c5d4a6b8b3295e0d4714687a80a791d6a9e9367e35a",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "trial": 1
+  },
+  {
+    "id": "f28de1e4a98b_r02",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -116,
+            92
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29006,
+            28006
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999916,
+            1700000044
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842512,
+            1125899906842792
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            212,
+            238
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55014,
+            60984
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483708,
+            4294967262
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775878,
+            9223372036854775922
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.25,
+            -3.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.375,
+            -2199023255551.625
+          ]
+        }
+      }
+    },
+    "visible": true,
+    "producer": "4.1.1",
+    "artifact": "/fixtures/jsonpickle_dtype_634/artifacts/f28de1e4a98b.json",
+    "sha256": "3362c94956511ff782a51c5d4a6b8b3295e0d4714687a80a791d6a9e9367e35a",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "trial": 2
+  },
+  {
+    "id": "f28de1e4a98b_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -116,
+            92
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29006,
+            28006
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999916,
+            1700000044
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842512,
+            1125899906842792
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            212,
+            238
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55014,
+            60984
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483708,
+            4294967262
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775878,
+            9223372036854775922
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.25,
+            -3.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.375,
+            -2199023255551.625
+          ]
+        }
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "f28de1e4a98b_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -116,
+            92
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -29006,
+            28006
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999916,
+            1700000044
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842512,
+            1125899906842792
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            212,
+            238
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55014,
+            60984
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483708,
+            4294967262
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854775878,
+            9223372036854775922
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.25,
+            -3.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627776.375,
+            -2199023255551.625
+          ]
+        }
+      }
+    },
+    "visible": true
+  }
+]

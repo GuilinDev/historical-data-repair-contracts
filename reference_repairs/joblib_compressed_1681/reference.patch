@@ -1,0 +1,68 @@
+--- a/joblib/numpy_pickle.py
++++ b/joblib/numpy_pickle.py
+@@ -644,16 +644,16 @@
+     if hasattr(filename, "read"):
+         fobj = filename
+         filename = getattr(fobj, 'name', '')
+-        with _read_fileobject(fobj, filename, mmap_mode) as fobj:
++        with _read_fileobject(fobj, filename, mmap_mode) as (fobj, _):
+             obj = _unpickle(fobj)
+     else:
+         with open(filename, 'rb') as f:
+-            with _read_fileobject(f, filename, mmap_mode) as fobj:
++            with _read_fileobject(f, filename, mmap_mode) as (fobj, validated_mmap_mode):
+                 if isinstance(fobj, str):
+                     # if the returned file object is a string, this means we
+                     # try to load a pickle file generated with an version of
+                     # Joblib so we load it with joblib compatibility function.
+                     return load_compatibility(fobj)
+ 
+-                obj = _unpickle(fobj, filename, mmap_mode)
++                obj = _unpickle(fobj, filename, validated_mmap_mode)
+     return obj
+--- a/joblib/numpy_pickle_utils.py
++++ b/joblib/numpy_pickle_utils.py
+@@ -142,11 +142,12 @@
+ 
+     Returns
+     -------
+-        a file like object
++        a tuple with a file like object, and the validated mmap_mode.
+ 
+     """
+     # Detect if the fileobj contains compressed data.
+     compressor = _detect_compressor(fileobj)
++    validated_mmap_mode = mmap_mode
+ 
+     if compressor == 'compat':
+         # Compatibility with old pickle mode: simply return the input
+@@ -156,7 +157,7 @@
+                       "version less than 0.10. "
+                       "Please regenerate this pickle file." % filename,
+                       DeprecationWarning, stacklevel=2)
+-        yield filename
++        yield filename, validated_mmap_mode
+     else:
+         if compressor in _COMPRESSORS:
+             # based on the compressor detected in the file, we open the
+@@ -169,6 +170,7 @@
+         # mmap_mode cannot be used with compressed file or in memory buffers
+         # such as io.BytesIO.
+         if mmap_mode is not None:
++            validated_mmap_mode = None
+             if isinstance(fileobj, io.BytesIO):
+                 warnings.warn('In memory persistence is not compatible with '
+                               'mmap_mode "%(mmap_mode)s" flag passed. '
+@@ -183,8 +185,10 @@
+                 warnings.warn('"%(fileobj)r" is not a raw file, mmap_mode '
+                               '"%(mmap_mode)s" flag will be ignored.'
+                               % locals(), stacklevel=2)
+-
+-        yield fileobj
++            else:
++                validated_mmap_mode = mmap_mode
++
++        yield fileobj, validated_mmap_mode
+ 
+ 
+ def _write_fileobject(filename, compress=("zlib", 3)):

@@ -1,0 +1,860 @@
+{
+  "reviewer": "/root/award_reviewer; independent of resource builder and allowed-patch reviewer",
+  "review_script_sha256": "3adc95288f513690d9654f175d222a30ff2aafe82e8083678353d6752c8c6095",
+  "host_judge_source_sha256": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+  "reviewed_utc": "2026-10-30T21:51:00Z",
+  "decision": "PASS contract/oracle/public-boundary audit; provenance cache qualification and reporting notes below",
+  "scope": "Read-only source and receipts plus independent input-literal recomputation; no candidate patches/model/API/GPU jobs. Allowed-edit reference patch audit is owned by the separate prize panel.",
+  "independent_assertions": 12967,
+  "failures": [],
+  "task_count": 8,
+  "observations": 252,
+  "historical_files": 65,
+  "global_unique_artifact_sha256": 65,
+  "task_partitions": [
+    {
+      "task": "packaging_version_1163",
+      "observations": 36,
+      "historical_rows": 18,
+      "historical_files": 18,
+      "unique_historical_sha256": 18,
+      "public_unique_sha256": 2,
+      "truly_unseen_unique_sha256": 16,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "observations": 36,
+      "historical_rows": 9,
+      "historical_files": 9,
+      "unique_historical_sha256": 9,
+      "public_unique_sha256": 1,
+      "truly_unseen_unique_sha256": 8,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "observations": 18,
+      "historical_rows": 6,
+      "historical_files": 6,
+      "unique_historical_sha256": 6,
+      "public_unique_sha256": 2,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "observations": 18,
+      "historical_rows": 6,
+      "historical_files": 6,
+      "unique_historical_sha256": 6,
+      "public_unique_sha256": 2,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "joblib_endian_1561",
+      "observations": 21,
+      "historical_rows": 7,
+      "historical_files": 7,
+      "unique_historical_sha256": 7,
+      "public_unique_sha256": 3,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "observations": 21,
+      "historical_rows": 7,
+      "historical_files": 7,
+      "unique_historical_sha256": 7,
+      "public_unique_sha256": 3,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "observations": 84,
+      "historical_rows": 72,
+      "historical_files": 6,
+      "unique_historical_sha256": 6,
+      "public_unique_sha256": 2,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [
+        "bd22465b6441_r03",
+        "bd22465b6441_r04",
+        "bd22465b6441_r05",
+        "bd22465b6441_r06",
+        "bd22465b6441_r07",
+        "bd22465b6441_r08",
+        "bd22465b6441_r09",
+        "bd22465b6441_r10",
+        "bd22465b6441_r11",
+        "f28de1e4a98b_r03",
+        "f28de1e4a98b_r04",
+        "f28de1e4a98b_r05",
+        "f28de1e4a98b_r06",
+        "f28de1e4a98b_r07",
+        "f28de1e4a98b_r08",
+        "f28de1e4a98b_r09",
+        "f28de1e4a98b_r10",
+        "f28de1e4a98b_r11"
+      ],
+      "public_hidden_byte_intersection": [
+        "197464822b71e5fcb7e42fa37d20f897f3fcbf0710528f1fbaae0d4ec418038e",
+        "3362c94956511ff782a51c5d4a6b8b3295e0d4714687a80a791d6a9e9367e35a"
+      ]
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "observations": 18,
+      "historical_rows": 6,
+      "historical_files": 6,
+      "unique_historical_sha256": 6,
+      "public_unique_sha256": 2,
+      "truly_unseen_unique_sha256": 4,
+      "public_bytes_repeated_in_nonpublic_rows": [],
+      "public_hidden_byte_intersection": []
+    }
+  ],
+  "oracle_assessment": {
+    "candidate_independent": true,
+    "reason": "Official fixed readers generated host-side frozen records before model calls. Candidates produce observations only; host compares them against the unchanged files. This reviewer independently recomputed raw fields, all dataframe mutation/restart values, array shapes/sums/in-place updates, SQL first/second commits, attrs mutability/hash contracts, and packaging scalar fields/representative orderings using literals and stdlib, without importing candidate or gold libraries.",
+    "scope_limit": "The frozen oracle still records behavior of a trusted official fixed implementation; this is differential reference testing, not proof over all inputs. Fully arbitrary malicious patches could try to inspect harness/manifest state during hidden execution; admissibility requires independent source review as declared."
+  },
+  "admissibility_assessment": {
+    "allowed_edits": "Exact allowlist enforced in TransferGateway.apply_edits; optional tests/test_regression.py only; source paths resolved within candidate; producers restricted to declared releases; fixed source is not exposed by model tools. Python source can be read without executing it on host.",
+    "hidden_checks": "Expected answers stay on host. Model-visible checks and generated tests mount fixtures_public; all.json and genuinely unseen artifacts are absent. Hidden grading executes candidate code with all fixtures but no oracle.",
+    "post_model_required": "Review actual changed source for fixture/value/application-name hardcoding, harness introspection, output fabrication, forbidden I/O or dependency changes before accepting a repair; this general-repair rule is not automatically proved by the path allowlist."
+  },
+  "native_pandas_audit": [
+    {
+      "root": "<project>\\results\\resource\\20261030T212309\\bundle\\packages\\pandas_pickle_56308\\base",
+      "wheel": "Wheel-Version: 1.0\nGenerator: meson\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_17_aarch64\nTag: cp310-cp310-manylinux2014_aarch64\n\n",
+      "record_sha256": "033bc19cfaec7689777b30d6b071eea0cd4b017471b83059982341cfa696c8c2",
+      "checked_files": 1998,
+      "missing": [],
+      "mismatch": [],
+      "ignored_generated_or_outside": [],
+      "compiled_libraries": [
+        {
+          "path": "pandas\\_libs\\algos.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "31b81fcf3a76f7c8053a7391504bc9e6eb32fe25067ece6b40838d5efbee97fb",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\arrays.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "15026f934fbaf41cfea0d3ee992ed1f2acc4d36359ecafe1f5f5c4329996f93e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\byteswap.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7f05dc70a80a2ae586e0a4fc78e6f8f2cfab44bad3a45ad608e26508fd4119ba",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\groupby.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "2a1f8d00e956efbd35413374bd51d31c36d6c6ec1e5bcf5a42e36000b409fbd5",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\hashing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "f9dfcb0d9662e089995d2f7073709cc08c7004bbf88487dfc4bb0e9db67c05f9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\hashtable.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "6f941f00f00f0b9a526edc91fe67606c843370289ab1859798bb81abca58d50f",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\index.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "86cd6df841fe0a68f78db0d34c1c4c78c09825b6d08715720d8011fe4aedc779",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\indexing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "2a6b994fcd91da7d61a358776cfc4aa5a79f9c0fa88078e3925d8350892b9261",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\internals.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "352cd3535bb02818c961a1ada4bb70769ce6bf8dcd988be4c0ae15112f9b3518",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\interval.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7a1b0cf7f4941fbd3d75147a3eb05e1c9770c9ec108056680113ebf3b4e1e0fb",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\join.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "fcc735b61072f38ee43df81f05333f9eb3c69e6aee53e900b7de0efade0b3f3c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\json.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "a5c57283329c3173d7a1c9483dec2c98d54c7a6cc26622149e29a33fd3e23576",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\lib.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "b12d1d75298aa07c6da07fa46f44cc434cc2195ca9fdc36561fd54ac033e1438",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\missing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "5580c9ac50acfc4fac468d06446dc4f9a2fc2fe27d81bfba2f9e1d9180b25935",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\ops.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "e4a315e091875d3af130af18709c9edc76cffe89212f4a04440159931348e10d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\ops_dispatch.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "46d7920d09b85ecf5fbcb9dfa7a4a2523cb43134f820d93a6417a304f16658cf",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\pandas_datetime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "485f9b5976d0c663cb1680757cd84b3960adfea20359bde0d7c87e5315edeb3d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\pandas_parser.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "5b4860cb963cfcf2d44ef10df4bcc35ae7508139026b9b73771011c794eaa4cc",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\parsers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "ad6b6747fcb7a66e51ab8b0a507d72c1438afdfbe755315022391229743148a5",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\properties.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "290d166cf13979f39cdadb8c2c2111c408f70b236c1897d4325d23ce3e585166",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\reshape.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "58873660c5f6d0f8f4ad9d641c711bfa199c99faf6da64f2b97940e78f36031a",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\sas.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "15134a5abddd9b3ec2c95b1861518a28dcc8d76b5aff396e1eb9c79cb7b05869",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\sparse.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "8d70e00c41e7580b9ca2adaeeee75bb93eabdaf1ff8f5b3723116761fcfeaea9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\testing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "764d2bd74a483c0190a040e8442a69af11365364d7701864fef94ba82ccb9bea",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslib.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "bf381796bb507e0e021479b28eb1a06bb76b87f2cc1dc30c49175f67a797779f",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\writers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7ed40fafe7e483e0ce4c218b1efa459d8da2d1a0a4b10cb1b89adc2e33dc0335",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\base.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "11c8c098fb14d6c408b2d32ef6847233d0a0fb60358d55486dcd84d91808f0a7",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\ccalendar.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "c514876825e485877d4d91ec7e2c06bf735738f58d8af0b5788f4589155ec28c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\conversion.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "181fb14839151781586151050a7cd32cb69e282caee8f57ccc6d054319aafb64",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\dtypes.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "953249ecdd966193d40157f0b40685a5d6a555b9f7d37ad29dba14911758e069",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\fields.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1eee217fdd59eba1f3c3a537d511aa1ac8ba8a541d7739e64429d9314a686fa7",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\nattype.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1a5930f8540e2af216f4281a33aa7ab3d1e48dfb239d41e8dcf501815c53fe0e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\np_datetime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "6cc3612d06390a011d4a7142b6a117675a2804e6c8df037999db3b3df753cdbe",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\offsets.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "06c224bf28b1b2eef6e00cc7c46faa5ce1c740a29fb6a22bf32dcbf5ed393995",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\parsing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "2e0c561dd47d49bafee51899d97f4140e56bc67bb8bb3e65df825f38f359f9c1",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\period.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "42c59a98346fd38444b598c509d3d024f34ec2df3503e2008a026be62aae5cff",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\strptime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "068f52aa35d79db959afe6dc166ec5f6f96743b61bbd68b14fa3ba96596213d9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timedeltas.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "75acc1cdf625516eea8118d48a12a3e5426c3613ca44ec4a444e4d04600b563e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timestamps.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "691c3be9082d68a83984fea0704a11ec8b90b779d6e23c64b7519a3535412ce5",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timezones.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "3111b54c866efa809ca5f1e12f7f88e3cf6363d85a7fa4eb3b6411c7bc71ac5c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\tzconversion.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "8cfb6ab46d26f48417701bcd19aaa2fbbaa8aba3587b74c5d2779156aa1f3d52",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\vectorized.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "bf44ca6edd3446af31b85872da4c3a07c58fd8d046d36e1e16204d9e50985502",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\window\\aggregations.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "ace2f877ad9d6d71bf1005d28f04bbed407b0a3509fc63cd93dcc29590517c20",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\window\\indexers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1e9740bc1d7307746442f3ed72e1d4f125858385185b36de21f9968240b7d6ab",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        }
+      ],
+      "licenses": [
+        {
+          "path": "<project>\\results\\resource\\20261030T212309\\bundle\\packages\\pandas_pickle_56308\\base\\pandas-2.1.0.dist-info\\LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+        }
+      ]
+    },
+    {
+      "root": "<project>\\results\\resource\\20261030T212309\\bundle\\packages\\pandas_pickle_56308\\fixed",
+      "wheel": "Wheel-Version: 1.0\nGenerator: meson\nRoot-Is-Purelib: false\nTag: cp310-cp310-manylinux_2_17_aarch64\nTag: cp310-cp310-manylinux2014_aarch64\n\n",
+      "record_sha256": "19c4584ea0db1c1f6df232029640bb69c95caff775361908616869628d394fa8",
+      "checked_files": 1898,
+      "missing": [],
+      "mismatch": [],
+      "ignored_generated_or_outside": [],
+      "compiled_libraries": [
+        {
+          "path": "pandas\\_libs\\algos.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "31b81fcf3a76f7c8053a7391504bc9e6eb32fe25067ece6b40838d5efbee97fb",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\arrays.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "15026f934fbaf41cfea0d3ee992ed1f2acc4d36359ecafe1f5f5c4329996f93e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\byteswap.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7f05dc70a80a2ae586e0a4fc78e6f8f2cfab44bad3a45ad608e26508fd4119ba",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\groupby.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "2a1f8d00e956efbd35413374bd51d31c36d6c6ec1e5bcf5a42e36000b409fbd5",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\hashing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "f9dfcb0d9662e089995d2f7073709cc08c7004bbf88487dfc4bb0e9db67c05f9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\hashtable.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "6f941f00f00f0b9a526edc91fe67606c843370289ab1859798bb81abca58d50f",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\index.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "86cd6df841fe0a68f78db0d34c1c4c78c09825b6d08715720d8011fe4aedc779",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\indexing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "2a6b994fcd91da7d61a358776cfc4aa5a79f9c0fa88078e3925d8350892b9261",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\internals.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "6cfc163404f3a356662a3c4752a86bf6aedf46717641a84c8c024b8e7ce75a7c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\interval.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7a1b0cf7f4941fbd3d75147a3eb05e1c9770c9ec108056680113ebf3b4e1e0fb",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\join.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "fcc735b61072f38ee43df81f05333f9eb3c69e6aee53e900b7de0efade0b3f3c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\json.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "91cf35cb21e7850f4ec67ec723c37d2972d8bc2c0dd6eeb3c123a7e097e9a04a",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\lib.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "5812eb9b99b857911f5eac9094b63f572b03069f06c3b3505b2fd83d0be6a4c6",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\missing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "5580c9ac50acfc4fac468d06446dc4f9a2fc2fe27d81bfba2f9e1d9180b25935",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\ops.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "e4a315e091875d3af130af18709c9edc76cffe89212f4a04440159931348e10d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\ops_dispatch.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "46d7920d09b85ecf5fbcb9dfa7a4a2523cb43134f820d93a6417a304f16658cf",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\pandas_datetime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "485f9b5976d0c663cb1680757cd84b3960adfea20359bde0d7c87e5315edeb3d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\pandas_parser.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "d1c8e300021e599e76145b55e7b613236ada397a9bbd7b299c97192d40fba31d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\parsers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "23b0656d2548c5b83daf6fb88dc1c97e5e8959f23aebb3b69d81eb206aa3fe55",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\properties.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "290d166cf13979f39cdadb8c2c2111c408f70b236c1897d4325d23ce3e585166",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\reshape.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "58873660c5f6d0f8f4ad9d641c711bfa199c99faf6da64f2b97940e78f36031a",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\sas.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "15134a5abddd9b3ec2c95b1861518a28dcc8d76b5aff396e1eb9c79cb7b05869",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\sparse.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "8d70e00c41e7580b9ca2adaeeee75bb93eabdaf1ff8f5b3723116761fcfeaea9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\testing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "764d2bd74a483c0190a040e8442a69af11365364d7701864fef94ba82ccb9bea",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslib.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "fd6b646237d33b2e223e6a450a73d4ab24663af57d23a43823d8846bab504c6d",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\writers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "7ed40fafe7e483e0ce4c218b1efa459d8da2d1a0a4b10cb1b89adc2e33dc0335",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\base.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "11c8c098fb14d6c408b2d32ef6847233d0a0fb60358d55486dcd84d91808f0a7",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\ccalendar.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "c514876825e485877d4d91ec7e2c06bf735738f58d8af0b5788f4589155ec28c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\conversion.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "181fb14839151781586151050a7cd32cb69e282caee8f57ccc6d054319aafb64",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\dtypes.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "953249ecdd966193d40157f0b40685a5d6a555b9f7d37ad29dba14911758e069",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\fields.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1eee217fdd59eba1f3c3a537d511aa1ac8ba8a541d7739e64429d9314a686fa7",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\nattype.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1a5930f8540e2af216f4281a33aa7ab3d1e48dfb239d41e8dcf501815c53fe0e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\np_datetime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "6cc3612d06390a011d4a7142b6a117675a2804e6c8df037999db3b3df753cdbe",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\offsets.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "06c224bf28b1b2eef6e00cc7c46faa5ce1c740a29fb6a22bf32dcbf5ed393995",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\parsing.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "85b80fa1c84858ba87a3936e1678c54cf31b9e6622b8fbb9f939407b3514e4b3",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\period.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "42c59a98346fd38444b598c509d3d024f34ec2df3503e2008a026be62aae5cff",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\strptime.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "068f52aa35d79db959afe6dc166ec5f6f96743b61bbd68b14fa3ba96596213d9",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timedeltas.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "75acc1cdf625516eea8118d48a12a3e5426c3613ca44ec4a444e4d04600b563e",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timestamps.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "691c3be9082d68a83984fea0704a11ec8b90b779d6e23c64b7519a3535412ce5",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\timezones.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "3111b54c866efa809ca5f1e12f7f88e3cf6363d85a7fa4eb3b6411c7bc71ac5c",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\tzconversion.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "dc8bf950223cb65c683ebfb4847f2e1fab4dd8f537e977d084c40904d74137fd",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\tslibs\\vectorized.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "bf44ca6edd3446af31b85872da4c3a07c58fd8d046d36e1e16204d9e50985502",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\window\\aggregations.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "ace2f877ad9d6d71bf1005d28f04bbed407b0a3509fc63cd93dcc29590517c20",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        },
+        {
+          "path": "pandas\\_libs\\window\\indexers.cpython-310-aarch64-linux-gnu.so",
+          "sha256": "1e9740bc1d7307746442f3ed72e1d4f125858385185b36de21f9968240b7d6ab",
+          "elf": true,
+          "machine": 183,
+          "class": 2
+        }
+      ],
+      "licenses": [
+        {
+          "path": "<project>\\results\\resource\\20261030T212309\\bundle\\packages\\pandas_pickle_56308\\fixed\\pandas-2.1.4.dist-info\\LICENSE",
+          "sha256": "533eb6d0b98e5be3ddd12dce97be35dd11282f5c47cdf8d08c81756fd5d70a26"
+        }
+      ]
+    }
+  ],
+  "runtime_receipt": "independent_runtime_identity.json",
+  "runtime_cache_receipt": "independent_runtime_cache_review.json",
+  "pytest_controls": "controls_20261030T212943/summary.json",
+  "audited_sha256": {
+    "tasks.json": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+    "plan.json": "62c6b8d665733eca1b8d6ce5eb05fdb7132ae91114f5fb90ca150671531b682c",
+    "bundle\\harness\\observe.py": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+    "bundle\\harness\\core_observe.py": "a1af0bc9b4dc7e665ca00a68ee6a93419af5c50e63917af1540011969c7660cc",
+    "bundle\\harness\\transfer_observe.py": "16fe9ef98c406ddbe5572431ca420dfa046c3b74ccddc6c18d9b9a6032735fc3",
+    "bundle\\harness\\run_generated_tests.py": "1e2d482ff0d0d3a33429e34f10f0f6959fd3a0125ed96763fce10ab2c3932d2d",
+    "oracle\\attrs_slot_state_1085.json": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295",
+    "oracle\\joblib_compressed_1681.json": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3",
+    "oracle\\joblib_endian_1561.json": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf",
+    "oracle\\jsonpickle_csv_562.json": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826",
+    "oracle\\jsonpickle_dtype_634.json": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+    "oracle\\packaging_version_1163.json": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70",
+    "oracle\\pandas_pickle_56308.json": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856",
+    "oracle\\sqlalchemy_mutable_8133.json": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df",
+    "bundle\\fixtures\\attrs_slot_state_1085\\all.json": "8bb581a413fc73079c84389ea5f80d1ed746941ec4a43a4b2554f6d84a2de49a",
+    "bundle\\fixtures\\attrs_slot_state_1085\\current_visible.json": "23c7eda1c9855673507f0de32b41111ad7dd133ef9589e25ce1f1f73bff74c01",
+    "bundle\\fixtures\\attrs_slot_state_1085\\visible.json": "e85f3536fc316b75b079167b1d473619010fc2a77cf8e3c85a8a8479d3b4f607",
+    "bundle\\fixtures\\joblib_compressed_1681\\all.json": "f33201ec84fafeaa4011751500057654955a2c58b82d1560efc6ec714936b9ba",
+    "bundle\\fixtures\\joblib_compressed_1681\\current_visible.json": "aafea75293dad0932c93ee904993ca9b2dd0977ff48ae63722d7b3c0cdd4277f",
+    "bundle\\fixtures\\joblib_compressed_1681\\visible.json": "7ed0071477a5cc1d16ea2b68c414de87cb410be3be264e87f886a73e16fe53aa",
+    "bundle\\fixtures\\joblib_endian_1561\\all.json": "9cc36ce66430c94e1589e3d6f3c77ed621779847715e9416fae154e0d98dfec7",
+    "bundle\\fixtures\\joblib_endian_1561\\current_visible.json": "f9460ee33e19452ccf016990cad64af742377eb06ff6a44b1e0300a84dab0a67",
+    "bundle\\fixtures\\joblib_endian_1561\\visible.json": "7959bb0a2814b76b790c9ba0e317f758007a70a2f3f617652b421e4e30fd9469",
+    "bundle\\fixtures\\jsonpickle_csv_562\\all.json": "f49306d893a2d9a84a823ef9cc077757849092223a06483e8a497b1d4c27fc45",
+    "bundle\\fixtures\\jsonpickle_csv_562\\current_visible.json": "a1fa31c854c015c62a1502434ea8a904061c30abf457eefa05a5a6af3cec4136",
+    "bundle\\fixtures\\jsonpickle_csv_562\\visible.json": "22e9da799723c35e899423cbead931994c49d77ed140e3fcc35a9bd4e12559de",
+    "bundle\\fixtures\\jsonpickle_dtype_634\\all.json": "55fd36fcaeb8a3b7dc0fd96723b21d89935669c96e12061a0eb1c50112786ec2",
+    "bundle\\fixtures\\jsonpickle_dtype_634\\current_visible.json": "9bcaabd6d02bac1a71ac22da4466c69b033095e2744fa846280324831ae0d86d",
+    "bundle\\fixtures\\jsonpickle_dtype_634\\visible.json": "c71db24da43d8a61ae47cef96e108bb0f4c91e30976692f5df6c3daf001ddd54",
+    "bundle\\fixtures\\packaging_version_1163\\all.json": "a29036d8936a13b9f8fc397225338d8dc75d3ea353dd0014fcb75d831b6e1474",
+    "bundle\\fixtures\\packaging_version_1163\\current_visible.json": "2509e71dff57171c94e6ed3c93847167ac467276db17651e74302836aea32333",
+    "bundle\\fixtures\\packaging_version_1163\\visible.json": "ea118520ce95d866652ca46f49a4894c4077332963bba0934fcc2d354892b84c",
+    "bundle\\fixtures\\pandas_pickle_56308\\all.json": "6701b02196f5aef95d5c60978cea0e198a42911b8642a243090e6fd9d1f49b1c",
+    "bundle\\fixtures\\pandas_pickle_56308\\current_visible.json": "1b59ac32d99ae4c5f22c0740dfbfcffecb346049d14fd82c333b8732b612d372",
+    "bundle\\fixtures\\pandas_pickle_56308\\visible.json": "6eed0914d2282646115f3261b8e0fa066c6ec7568eaadb8a7dddf359a153f275",
+    "bundle\\fixtures\\sqlalchemy_mutable_8133\\all.json": "87625c32980654551c6b55b25b8ae0144346d6ff671b3c095f6dc1134b6db191",
+    "bundle\\fixtures\\sqlalchemy_mutable_8133\\current_visible.json": "5cae7c0b81582312497c7c49d97c6d37d7ba583f78dc541883b67e8fe5968d91",
+    "bundle\\fixtures\\sqlalchemy_mutable_8133\\visible.json": "72d12b1ba60051c249eb17abc1459d315c416ced68790ed10f0b5136ae295395",
+    "bundle\\fixtures_public\\attrs_slot_state_1085\\current_visible.json": "23c7eda1c9855673507f0de32b41111ad7dd133ef9589e25ce1f1f73bff74c01",
+    "bundle\\fixtures_public\\attrs_slot_state_1085\\visible.json": "e85f3536fc316b75b079167b1d473619010fc2a77cf8e3c85a8a8479d3b4f607",
+    "bundle\\fixtures_public\\joblib_compressed_1681\\current_visible.json": "aafea75293dad0932c93ee904993ca9b2dd0977ff48ae63722d7b3c0cdd4277f",
+    "bundle\\fixtures_public\\joblib_compressed_1681\\visible.json": "7ed0071477a5cc1d16ea2b68c414de87cb410be3be264e87f886a73e16fe53aa",
+    "bundle\\fixtures_public\\joblib_endian_1561\\current_visible.json": "f9460ee33e19452ccf016990cad64af742377eb06ff6a44b1e0300a84dab0a67",
+    "bundle\\fixtures_public\\joblib_endian_1561\\visible.json": "7959bb0a2814b76b790c9ba0e317f758007a70a2f3f617652b421e4e30fd9469",
+    "bundle\\fixtures_public\\jsonpickle_csv_562\\current_visible.json": "a1fa31c854c015c62a1502434ea8a904061c30abf457eefa05a5a6af3cec4136",
+    "bundle\\fixtures_public\\jsonpickle_csv_562\\visible.json": "22e9da799723c35e899423cbead931994c49d77ed140e3fcc35a9bd4e12559de",
+    "bundle\\fixtures_public\\jsonpickle_dtype_634\\current_visible.json": "9bcaabd6d02bac1a71ac22da4466c69b033095e2744fa846280324831ae0d86d",
+    "bundle\\fixtures_public\\jsonpickle_dtype_634\\visible.json": "c71db24da43d8a61ae47cef96e108bb0f4c91e30976692f5df6c3daf001ddd54",
+    "bundle\\fixtures_public\\packaging_version_1163\\current_visible.json": "2509e71dff57171c94e6ed3c93847167ac467276db17651e74302836aea32333",
+    "bundle\\fixtures_public\\packaging_version_1163\\visible.json": "ea118520ce95d866652ca46f49a4894c4077332963bba0934fcc2d354892b84c",
+    "bundle\\fixtures_public\\pandas_pickle_56308\\current_visible.json": "1b59ac32d99ae4c5f22c0740dfbfcffecb346049d14fd82c333b8732b612d372",
+    "bundle\\fixtures_public\\pandas_pickle_56308\\visible.json": "6eed0914d2282646115f3261b8e0fa066c6ec7568eaadb8a7dddf359a153f275",
+    "bundle\\fixtures_public\\sqlalchemy_mutable_8133\\current_visible.json": "5cae7c0b81582312497c7c49d97c6d37d7ba583f78dc541883b67e8fe5968d91",
+    "bundle\\fixtures_public\\sqlalchemy_mutable_8133\\visible.json": "72d12b1ba60051c249eb17abc1459d315c416ced68790ed10f0b5136ae295395"
+  },
+  "prior_hold_receipt": "independent_contract_review_before_ambiguity_amendment.json",
+  "amendment": "admissibility_amendment.json",
+  "judge_acceptance_set_receipt": "independent_judge_admissibility.json",
+  "noninjectivity_witness": "../../ready_curation/jsonpickle634_noninjectivity/20261030T214814Z/summary.json",
+  "blocking_findings": [],
+  "reporting_notes": [
+    "jsonpickle_dtype_634 intentionally repeats its two public artifacts in later nonpublic process trials. These are repeat reliability checks, not new hidden files. Report truly unseen byte counts separately.",
+    "fresh_api labels include continued use and a save/restart check; failures in this group do not alone prove that the current constructor failed.",
+    "jsonpickle_csv_562 scope_limitations still says no model has seen the task, but previously_model_exposed=true. The historical sentence must be corrected in release documentation; it does not alter frozen grading.",
+    "Runtime setup lost earlier install logs and retained only the final scp receipt. Actual import identities, image RepoDigest, licenses, source/ELF RECORDs and cache exception are now independently observed; do not invent the missing original installation logs.",
+    "The only shared-runtime RECORD mismatch observed is a NumPy distutils .pyc cache, not source or ELF. Independent CPython 3.10 compilation confirmed identical recursive code fields except filename and identical normalized marshaled code for optimize=0/1; the recorded cache filename is the pip staging path. Original byte hash mismatch remains disclosed.",
+    "Historical producer source copies intentionally omit platform-specific binaries; they are read-only explanatory source, not independently runnable producer installations. Exact generator requests/receipts and original versioned package environments supply producer provenance."
+  ]
+}

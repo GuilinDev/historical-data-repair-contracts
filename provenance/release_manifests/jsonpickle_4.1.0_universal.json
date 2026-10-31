@@ -1,0 +1,397 @@
+{
+  "id": "jsonpickle_4.1.0_universal",
+  "project": "jsonpickle",
+  "version": "4.1.0",
+  "variant": "universal",
+  "source_url": "https://files.pythonhosted.org/packages/0e/b5/8d90bb4951a1e821d0b4e559edb3c70918b8954b566c7eb9211846a48c47/jsonpickle-4.1.0-py3-none-any.whl",
+  "archive_file": "provenance/release_archives/jsonpickle-4.1.0-py3-none-any.whl",
+  "archive_sha256": "763f837a0b2586b45424d9a07108a798d9feac52f3a152606336f7f9e1a22ffa",
+  "archive_bytes": 46615,
+  "release_identity": {
+    "metadata_url": "https://pypi.org/pypi/jsonpickle/4.1.0/json",
+    "metadata_file": "provenance/release_metadata/jsonpickle_4.1.0.json",
+    "metadata_sha256": "c84fd5cb72e6029341a1ada0eff361f14db696eb2bdf4062710f9b10658a4d88",
+    "filename": "jsonpickle-4.1.0-py3-none-any.whl",
+    "pypi_sha256": "763f837a0b2586b45424d9a07108a798d9feac52f3a152606336f7f9e1a22ffa",
+    "upload_time": "2025-05-21T19:40:13.344054Z",
+    "license_metadata": "BSD-3-Clause",
+    "license_expression": null,
+    "license_classifiers": [],
+    "archive_sha256_verified": true
+  },
+  "licenses": [
+    {
+      "file": "provenance/licenses/jsonpickle_4.1.0_universal/jsonpickle-4.1.0.dist-info/LICENSE",
+      "archive_member": "jsonpickle-4.1.0.dist-info/LICENSE",
+      "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+      "bytes": 1547,
+      "source_url": "https://files.pythonhosted.org/packages/0e/b5/8d90bb4951a1e821d0b4e559edb3c70918b8954b566c7eb9211846a48c47/jsonpickle-4.1.0-py3-none-any.whl"
+    }
+  ],
+  "copies": [
+    {
+      "role": "jsonpickle_csv_562/base",
+      "copy_location": "bundle/packages/jsonpickle_csv_562/base",
+      "checked_archive_member_count": 20,
+      "matches": [
+        {
+          "path": "jsonpickle/__init__.py",
+          "sha256": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3",
+          "archive_sha256": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3"
+        },
+        {
+          "path": "jsonpickle/backend.py",
+          "sha256": "017bf5ee586aabfe4b1281fe7edf6b565c6f1b3a8c4a4d7fe2cfc4416851b766",
+          "archive_sha256": "017bf5ee586aabfe4b1281fe7edf6b565c6f1b3a8c4a4d7fe2cfc4416851b766"
+        },
+        {
+          "path": "jsonpickle/compat.py",
+          "sha256": "8c22216cb69def032cb717843b290f87e951bccddf224c084e61e2d116e2e4f3",
+          "archive_sha256": "8c22216cb69def032cb717843b290f87e951bccddf224c084e61e2d116e2e4f3"
+        },
+        {
+          "path": "jsonpickle/errors.py",
+          "sha256": "97369d1852ed12b4cf1f40b3030c52da06ddeb596aa0e244e1fdbf4d20dadd65",
+          "archive_sha256": "97369d1852ed12b4cf1f40b3030c52da06ddeb596aa0e244e1fdbf4d20dadd65"
+        },
+        {
+          "path": "jsonpickle/ext/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "jsonpickle/ext/gmpy.py",
+          "sha256": "052a583726b061578674d42830d41c4baec7f94871a125403985e4c0f1f66057",
+          "archive_sha256": "052a583726b061578674d42830d41c4baec7f94871a125403985e4c0f1f66057"
+        },
+        {
+          "path": "jsonpickle/ext/numpy.py",
+          "sha256": "41317d5e1b6e1335c91d582cc230394f28065f7e3e8738f559e643ad0b53c5d7",
+          "archive_sha256": "41317d5e1b6e1335c91d582cc230394f28065f7e3e8738f559e643ad0b53c5d7"
+        },
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "sha256": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1",
+          "archive_sha256": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1"
+        },
+        {
+          "path": "jsonpickle/ext/yaml.py",
+          "sha256": "8cce453c679f43d51f2c170461b9bbd9e714811964a69e9ae46b902d15108e4b",
+          "archive_sha256": "8cce453c679f43d51f2c170461b9bbd9e714811964a69e9ae46b902d15108e4b"
+        },
+        {
+          "path": "jsonpickle/handlers.py",
+          "sha256": "cdb5a09825e73bd33b154633ea1ce3aa2bdc8f45f189b127cb32bdea2daedb5f",
+          "archive_sha256": "cdb5a09825e73bd33b154633ea1ce3aa2bdc8f45f189b127cb32bdea2daedb5f"
+        },
+        {
+          "path": "jsonpickle/pickler.py",
+          "sha256": "269a75cbdb2e3bbaa6d47751912713c067474ed03f0cb911b577ff21df2f9e46",
+          "archive_sha256": "269a75cbdb2e3bbaa6d47751912713c067474ed03f0cb911b577ff21df2f9e46"
+        },
+        {
+          "path": "jsonpickle/tags.py",
+          "sha256": "f9ce374bb18eb0f546e80051fef8ad5858c01075420fd83ea0d172d3dd059516",
+          "archive_sha256": "f9ce374bb18eb0f546e80051fef8ad5858c01075420fd83ea0d172d3dd059516"
+        },
+        {
+          "path": "jsonpickle/tags_pd.py",
+          "sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+          "archive_sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212"
+        },
+        {
+          "path": "jsonpickle/unpickler.py",
+          "sha256": "8ca07ac61966e1d2ccba3d2acf2640ffd8065d174a3e6cf10d371a103e8b639a",
+          "archive_sha256": "8ca07ac61966e1d2ccba3d2acf2640ffd8065d174a3e6cf10d371a103e8b639a"
+        },
+        {
+          "path": "jsonpickle/util.py",
+          "sha256": "dce153ad8453100ab15d58ebda8d7976d73d85c8279d9acc42d057bd9845afb0",
+          "archive_sha256": "dce153ad8453100ab15d58ebda8d7976d73d85c8279d9acc42d057bd9845afb0"
+        },
+        {
+          "path": "jsonpickle/version.py",
+          "sha256": "84fc0988523473fcdecb5f552a7e75de9f6027ae6ce6631d622d69d04a30ac53",
+          "archive_sha256": "84fc0988523473fcdecb5f552a7e75de9f6027ae6ce6631d622d69d04a30ac53"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "archive_sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/METADATA",
+          "sha256": "d96afad29640ddfb7f7fc85af6df01ab987f191fca68327bd472b110ba8ee62e",
+          "archive_sha256": "d96afad29640ddfb7f7fc85af6df01ab987f191fca68327bd472b110ba8ee62e"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/top_level.txt",
+          "sha256": "71d4436252dce17393d8acf33eeae278c9fe5d6ff7631173a29c1d783a8f155b",
+          "archive_sha256": "71d4436252dce17393d8acf33eeae278c9fe5d6ff7631173a29c1d783a8f155b"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/WHEEL",
+          "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+          "archive_sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    },
+    {
+      "role": "original cached published package; 3.4.x jsonpickle is qualification-only",
+      "copy_location": "private working-cache path omitted",
+      "checked_archive_member_count": 20,
+      "matches": [
+        {
+          "path": "jsonpickle/__init__.py",
+          "sha256": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3",
+          "archive_sha256": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3"
+        },
+        {
+          "path": "jsonpickle/backend.py",
+          "sha256": "017bf5ee586aabfe4b1281fe7edf6b565c6f1b3a8c4a4d7fe2cfc4416851b766",
+          "archive_sha256": "017bf5ee586aabfe4b1281fe7edf6b565c6f1b3a8c4a4d7fe2cfc4416851b766"
+        },
+        {
+          "path": "jsonpickle/compat.py",
+          "sha256": "8c22216cb69def032cb717843b290f87e951bccddf224c084e61e2d116e2e4f3",
+          "archive_sha256": "8c22216cb69def032cb717843b290f87e951bccddf224c084e61e2d116e2e4f3"
+        },
+        {
+          "path": "jsonpickle/errors.py",
+          "sha256": "97369d1852ed12b4cf1f40b3030c52da06ddeb596aa0e244e1fdbf4d20dadd65",
+          "archive_sha256": "97369d1852ed12b4cf1f40b3030c52da06ddeb596aa0e244e1fdbf4d20dadd65"
+        },
+        {
+          "path": "jsonpickle/ext/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "jsonpickle/ext/gmpy.py",
+          "sha256": "052a583726b061578674d42830d41c4baec7f94871a125403985e4c0f1f66057",
+          "archive_sha256": "052a583726b061578674d42830d41c4baec7f94871a125403985e4c0f1f66057"
+        },
+        {
+          "path": "jsonpickle/ext/numpy.py",
+          "sha256": "41317d5e1b6e1335c91d582cc230394f28065f7e3e8738f559e643ad0b53c5d7",
+          "archive_sha256": "41317d5e1b6e1335c91d582cc230394f28065f7e3e8738f559e643ad0b53c5d7"
+        },
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "sha256": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1",
+          "archive_sha256": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1"
+        },
+        {
+          "path": "jsonpickle/ext/yaml.py",
+          "sha256": "8cce453c679f43d51f2c170461b9bbd9e714811964a69e9ae46b902d15108e4b",
+          "archive_sha256": "8cce453c679f43d51f2c170461b9bbd9e714811964a69e9ae46b902d15108e4b"
+        },
+        {
+          "path": "jsonpickle/handlers.py",
+          "sha256": "cdb5a09825e73bd33b154633ea1ce3aa2bdc8f45f189b127cb32bdea2daedb5f",
+          "archive_sha256": "cdb5a09825e73bd33b154633ea1ce3aa2bdc8f45f189b127cb32bdea2daedb5f"
+        },
+        {
+          "path": "jsonpickle/pickler.py",
+          "sha256": "269a75cbdb2e3bbaa6d47751912713c067474ed03f0cb911b577ff21df2f9e46",
+          "archive_sha256": "269a75cbdb2e3bbaa6d47751912713c067474ed03f0cb911b577ff21df2f9e46"
+        },
+        {
+          "path": "jsonpickle/tags.py",
+          "sha256": "f9ce374bb18eb0f546e80051fef8ad5858c01075420fd83ea0d172d3dd059516",
+          "archive_sha256": "f9ce374bb18eb0f546e80051fef8ad5858c01075420fd83ea0d172d3dd059516"
+        },
+        {
+          "path": "jsonpickle/tags_pd.py",
+          "sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+          "archive_sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212"
+        },
+        {
+          "path": "jsonpickle/unpickler.py",
+          "sha256": "8ca07ac61966e1d2ccba3d2acf2640ffd8065d174a3e6cf10d371a103e8b639a",
+          "archive_sha256": "8ca07ac61966e1d2ccba3d2acf2640ffd8065d174a3e6cf10d371a103e8b639a"
+        },
+        {
+          "path": "jsonpickle/util.py",
+          "sha256": "dce153ad8453100ab15d58ebda8d7976d73d85c8279d9acc42d057bd9845afb0",
+          "archive_sha256": "dce153ad8453100ab15d58ebda8d7976d73d85c8279d9acc42d057bd9845afb0"
+        },
+        {
+          "path": "jsonpickle/version.py",
+          "sha256": "84fc0988523473fcdecb5f552a7e75de9f6027ae6ce6631d622d69d04a30ac53",
+          "archive_sha256": "84fc0988523473fcdecb5f552a7e75de9f6027ae6ce6631d622d69d04a30ac53"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/LICENSE",
+          "sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+          "archive_sha256": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/METADATA",
+          "sha256": "d96afad29640ddfb7f7fc85af6df01ab987f191fca68327bd472b110ba8ee62e",
+          "archive_sha256": "d96afad29640ddfb7f7fc85af6df01ab987f191fca68327bd472b110ba8ee62e"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/top_level.txt",
+          "sha256": "71d4436252dce17393d8acf33eeae278c9fe5d6ff7631173a29c1d783a8f155b",
+          "archive_sha256": "71d4436252dce17393d8acf33eeae278c9fe5d6ff7631173a29c1d783a8f155b"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/WHEEL",
+          "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+          "archive_sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle/__pycache__/__init__.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/backend.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/backend.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/errors.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/errors.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/handlers.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/handlers.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/pickler.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/pickler.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/tags.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/tags.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/tags_pd.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/tags_pd.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/unpickler.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/unpickler.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/util.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/util.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/version.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/__pycache__/version.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/__init__.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/numpy.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/numpy.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/pandas.cpython-310.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle/ext/__pycache__/pandas.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "jsonpickle-4.1.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+--- a/joblib/numpy_pickle.py
++++ b/joblib/numpy_pickle.py
+@@ -229,7 +229,7 @@
+             )
+             warnings.warn(message)
+ 
+-        return _ensure_native_byte_order(marray)
++        return marray
+ 
+     def read(self, unpickler):
+         """Read the array corresponding to this wrapper.

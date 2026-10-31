@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "policy": "official_widest",
+      "execution_status": "observed",
+      "observed_records": 84,
+      "admissible_passed": 84,
+      "raw_exact_gold_passed": 84,
+      "n": 84,
+      "expectations_met": true,
+      "observations_sha256": "49fb933f9eae0776038d8d7b3278e8aef0f377aa2246ee2a6c5629bdd2a458b9"
+    },
+    {
+      "policy": "document_exclusion_v2",
+      "execution_status": "observed",
+      "observed_records": 84,
+      "admissible_passed": 84,
+      "raw_exact_gold_passed": 24,
+      "n": 84,
+      "expectations_met": true,
+      "observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f"
+    },
+    {
+      "policy": "negative_explicit_float_narrowing",
+      "execution_status": "observed",
+      "observed_records": 84,
+      "admissible_passed": 0,
+      "raw_exact_gold_passed": 0,
+      "n": 84,
+      "expectations_met": true,
+      "observations_sha256": "762fd6731385407f29f8f6456bea7370ce197e38d292950f47908053df52de7e"
+    }
+  ],
+  "api_calls": 0,
+  "gpu": false,
+  "interpretation": "Constructed repair-policy calibration on one lineage. Exact-gold is a naive observation-equality comparator, not authentic upstream tests.60 differing rows reuse5 historical files in12 processes.",
+  "completed_observations": 252,
+  "wall_seconds": 199.79318000003695,
+  "exit_code": 0,
+  "entrypoint_sha256": "676f5c49d46b8ec58dc678c9e53ab79380abc5e8106b6760fe55d837954ad090",
+  "synchronized_file_count": 161,
+  "synchronized_archive_bytes": 1088759,
+  "synchronized_archive_sha256": "1c9eb35741f1108c9201d2bb09e2c4c2063f12b710f51fc849bd761693135dec",
+  "installed_file_hashes_match": true,
+  "private_identity_scan_passed": true,
+  "original_engine_data_locks_changed": false,
+  "existing_cold_runtime_reused": true,
+  "command": [
+    "python3",
+    "reproduce_multisolution.py",
+    "--output",
+    "<fresh-directory>"
+  ],
+  "receipts_directory": "Private audit archive; per-policy counts and observation hashes retained here.",
+  "scope": "Integration validation of the new free wrapper using the already cold-installed portable release. No new model run, API call or GPU; not a repeat of all eight base/fixed/reference controls.",
+  "validation_utc": "20261030T224845Z"
+}

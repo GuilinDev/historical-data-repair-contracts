@@ -1,0 +1,12 @@
+{
+  "episode": "be55c0a529b4",
+  "family": "attrs_slot_state_1085",
+  "project": "attrs",
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "primeintellect/bf16",
+  "replicate": 1,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": true,
+  "changed_paths": [],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

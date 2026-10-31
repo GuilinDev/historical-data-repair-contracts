@@ -1,0 +1,336 @@
+{
+  "status": "PASS_READ_ONLY_CONTRACT_AUDIT",
+  "reviewed_date": "2026-10-31",
+  "task": {
+    "id": "joblib_endian_1561",
+    "producer": "1.2.0",
+    "affected_reader": "1.4.2",
+    "fixed_reader": "1.5.0",
+    "allowed_source_paths": [
+      "joblib/numpy_pickle.py"
+    ],
+    "optional_test_path": "tests/test_regression.py",
+    "historical_file_count": 7,
+    "public_historical_file_count": 3,
+    "input_regimes": {
+      "historical": 7,
+      "fresh_api": 7,
+      "current_roundtrip": 7
+    }
+  },
+  "agent_observability": {
+    "initial": "Natural-language repair request, exact allowed source path, historical producer version, source entrypoint/listing and all nine visible records (three public input specifications in three regimes).",
+    "public_example_fields": [
+      "id",
+      "group",
+      "producer when historical",
+      "input values/shape/dtype/compress/delta",
+      "artifact path when historical"
+    ],
+    "tools": "Candidate-source reads/searches, read-only joblib1.2.0 producer-source reads/searches, public loader checks, and historical_artifact identity/length/prefix_hex. Joblib artifact inspection does not provide full raw bytes or full pickle disassembly to the model.",
+    "not_available": "Fixed reader source, withheld fixtures, frozen oracle answers, and evaluator code are outside the repair surface.",
+    "no_hardcoding": "Providing public example values permits diagnosis, not fixture-specific source branches; general source-policy review remains separate."
+  },
+  "actual_flow": [
+    "Verify the immutable historical artifact SHA256 and copy it to a temporary working.pkl.",
+    "Load the working copy with candidate joblib and mmap_mode=r+ for historical and current-roundtrip endian rows.",
+    "Record initial values, shape, numeric kind, itemsize, Python sum and is_memmap.",
+    "Add the case-specific delta to obj.flat[1], then record the same snapshot fields.",
+    "Call obj.flush(), dump the mutated object to resaved.pkl with compress=0/protocol4, and delete the parent object.",
+    "Start a fresh interpreter using the candidate reader; default joblib.load(working.pkl) records in-place persistence.",
+    "Start another fresh interpreter; default joblib.load(resaved.pkl) records explicit-resave persistence.",
+    "Compare all semantic snapshots and the is_memmap flag with frozen, input-validated observations."
+  ],
+  "critical_exactness": {
+    "mutation_index": "Second element in flat order: obj.flat[1].",
+    "mutation_delta": "Case-specific input delta, NOT +7. First public case uses91211; six big-endian cases use91211+3*i; native-order preservation case uses4301.",
+    "restart_mode": "Neither restart load specifies mmap_mode; both use default ordinary joblib.load.",
+    "byteorder": "Byte order is recorded only as a diagnostic. Acceptance compares numeric kind/itemsize but does not require identical byte-order notation after ordinary reload.",
+    "working_file_vs_resaved": "The work-file restart must show the in-place flush; passing only the separately dumped resaved file is insufficient.",
+    "test_mode": "A separate fresh_api joblib row constructs and dumps a current object, then loads with mmap_mode=None. It does not test writable mmap or in-place restart."
+  },
+  "public_case": {
+    "metadata": {
+      "id": "6ab5bcd8a29e",
+      "group": "historical",
+      "input": {
+        "values": [
+          -791,
+          23,
+          1000007,
+          -2035,
+          81,
+          42
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": ">i4",
+        "compress": 0,
+        "delta": 91211
+      },
+      "visible": true,
+      "producer": "1.2.0",
+      "artifact": "bundle/fixtures/joblib_endian_1561/artifacts/6ab5bcd8a29e.pickle",
+      "sha256": "33652d96f0d32701a2b6a779c242aae2cf2064c6d93c8025ece668f973966e2a"
+    },
+    "artifact_sha256_verified": true,
+    "initial": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": {
+        "kind": "i",
+        "itemsize": 4
+      },
+      "python_sum": 997327
+    },
+    "after_mutation": {
+      "values": [
+        -791,
+        91234,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": {
+        "kind": "i",
+        "itemsize": 4
+      },
+      "python_sum": 1088538
+    },
+    "inplace_restart": {
+      "values": [
+        -791,
+        91234,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": {
+        "kind": "i",
+        "itemsize": 4
+      },
+      "python_sum": 1088538
+    },
+    "explicit_resave_restart": {
+      "values": [
+        -791,
+        91234,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": {
+        "kind": "i",
+        "itemsize": 4
+      },
+      "python_sum": 1088538
+    }
+  },
+  "saved_base_failure": {
+    "is_memmap": true,
+    "initial_values_correct": true,
+    "memory_mutation_correct": true,
+    "explicit_resave_restart_correct": true,
+    "inplace_restart_values": [
+      -791,
+      23,
+      1000007,
+      -2035,
+      81,
+      42
+    ],
+    "expected_second_element": 91234,
+    "actual_workfile_second_element": 23,
+    "interpretation": "Base loads correctly, mutates correctly in memory and resaves correctly, yet flush does not persist the mutation in the original working file. Thus a detached byte-order-converted memmap can pass type/load checks and still violate the contract."
+  },
+  "paper_pseudocode": {
+    "caption": "Simplified historical-case verifier, not runnable code. S records values, shape, numeric kind, width and sum; fresh_process_load uses default joblib.load in a new process.",
+    "code": "work = copy(immutable_file)                  # old joblib 1.2.0 bytes\na = candidate.load(work, mmap_mode=\"r+\")\nassert is_memmap(a) and S(a) == input_snapshot\na.flat[1] += delta                          # public case: 23 + 91211\na.flush()\ncandidate.dump(a, resaved, compress=0, protocol=4)\ndel a\nexpected = snapshot_after_declared_mutation\nassert fresh_process_load(work) == expected\nassert fresh_process_load(resaved) == expected",
+    "lines": 10,
+    "whitespace_word_count_with_caption": 68,
+    "helper_meanings": {
+      "S": "The array_snapshot fields, not raw bytes or byte order.",
+      "input_snapshot": "Frozen snapshot independently validated against input values/shape/type.",
+      "snapshot_after_declared_mutation": "Expected snapshot derived from the declared input delta, not from trusting the candidate observed mutation.",
+      "fresh_process_load": "One new interpreter calls candidate joblib.load(path) with no mmap_mode and returns S(result)."
+    },
+    "simplifications": [
+      "Temporary-directory creation and artifact SHA check are omitted from code but required by real evaluator.",
+      "The pseudocode merges separate observation collection and frozen-reference judging into asserts.",
+      "Subprocess construction, JSON transport, timeouts and error recording are omitted.",
+      "Only the historical public case is illustrated; fresh_api/current_roundtrip and other fixtures remain required."
+    ]
+  },
+  "definitions": {
+    "defect_lineage": "One upstream bug/fix history bound to an affected reader and its producer versions; files and repeated processes provide observations within that lineage.",
+    "H": "Historical: read immutable bytes generated by a genuine older producer release.",
+    "F": "Fresh construction: start from current input data rather than old bytes; for joblib this also includes ordinary current dump/load with mmap_mode=None.",
+    "R": "Current roundtrip: construct, serialize and read using the candidate current implementation before exercising the continuation checks.",
+    "regime_caution": "H/F/R identify the initial input path, not independent defects or three isolated phases. Each observation includes its declared continuation and fresh-process persistence checks.",
+    "empty_Interval": "A zero-row pandas column whose declared dtype represents intervals; it still has a dtype even though it contains no values.",
+    "vacuous_inference": "all(predicate(v) for v in []) is true without checking any value. In v1, that empty-set result wrongly authorized integer-kind inference for an empty Interval column.",
+    "v2_scope": "The nonempty/kind guard prevents this inference and preserves the conservative backport behavior; it does not restore the already-lost empty Interval dtype."
+  },
+  "compact_paper_definitions": {
+    "lineage": "A lineage groups one upstream defect and fix with its affected reader and historical producers; payloads are observations within it.",
+    "regimes": "H reads historical bytes; F starts from freshly constructed data; R first serializes and reads current data. Each then exercises declared use and persistence.",
+    "interval": "An empty Interval column retains interval dtype but has no values. A universal value predicate passes vacuously on emptiness; v2 requires nonempty evidence before inferring numeric kind."
+  },
+  "interval_saved_control": {
+    "case": "empty_interval_and_explicit_integers",
+    "original": "Empty interval[int64,right] plus empty int16/int32/int64 columns",
+    "v1_interval_column": "int8",
+    "v2_and_conservative_backport_interval_column": "float64",
+    "meaning": "v2 removes its extra integer misclassification while retaining pre-existing interval information loss. No claim to fully repair Interval support.",
+    "receipt": {
+      "path": "extensions/multisolution/evidence/v2/supplemental/empty_interval_and_explicit_integers.json",
+      "sha256": "649946f4e8545b3d7be6cd94fd27c6ff72d624f6d1c84013ffc2114204080be5"
+    }
+  },
+  "worker_script_matches_frozen_and_actual_harness": true,
+  "judgment": "Suitable for the paper after keeping helper/default-load and case-specific-delta distinctions explicit.",
+  "reviewer": "independent contract reviewer",
+  "scope": "Read-only audit of existing task metadata, source and saved observations; this exported copy maps every source anchor to a verified file within this release. No new model or experiment was run.",
+  "path_base": "Release root; every source_anchors path is package-relative.",
+  "source_anchors": [
+    {
+      "path": "tasks.json",
+      "line_start": 100,
+      "line_end": 123,
+      "sha256": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+      "role": "Version, request, allowed source file and case counts"
+    },
+    {
+      "path": "evidence/main/frozen_runner/resource_task_tools.py",
+      "line_start": 145,
+      "line_end": 154,
+      "sha256": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+      "role": "Initial agent task and public examples"
+    },
+    {
+      "path": "evidence/main/frozen_runner/resource_task_tools.py",
+      "line_start": 167,
+      "line_end": 180,
+      "sha256": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+      "role": "Public joblib artifact inspection: identity, length and first192bytes as hex"
+    },
+    {
+      "path": "evidence/main/frozen_runner/transfer_task_tools.py",
+      "line_start": 134,
+      "line_end": 153,
+      "sha256": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d",
+      "role": "Read-only producer source and visible example metadata"
+    },
+    {
+      "path": "evidence/main/frozen_runner/transfer_task_tools.py",
+      "line_start": 162,
+      "line_end": 177,
+      "sha256": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d",
+      "role": "Source allowlist enforcement plus optional tests/test_regression.py"
+    },
+    {
+      "path": "bundle/harness/observe.py",
+      "line_start": 97,
+      "line_end": 99,
+      "sha256": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+      "role": "Semantic array snapshot fields"
+    },
+    {
+      "path": "bundle/harness/observe.py",
+      "line_start": 107,
+      "line_end": 145,
+      "sha256": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+      "role": "Copy, mode, mutation, flush, resave and two fresh processes"
+    },
+    {
+      "path": "bundle/harness/observe.py",
+      "line_start": 176,
+      "line_end": 180,
+      "sha256": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+      "role": "Fresh replay calls joblib.load without mmap_mode"
+    },
+    {
+      "path": "evidence/main/frozen_runner/transfer_task_tools.py",
+      "line_start": 61,
+      "line_end": 73,
+      "sha256": "16f85e66d5e6926258a14a2baedf2fedcdc32aceca72cf574e9cf2efe26a743d",
+      "role": "Exact semantic and restart comparisons with frozen reference"
+    },
+    {
+      "path": "evidence/main/frozen_runner/resource_task_tools.py",
+      "line_start": 105,
+      "line_end": 114,
+      "sha256": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+      "role": "Independent input-derived validation"
+    },
+    {
+      "path": "bundle/fixtures/joblib_endian_1561/visible.json",
+      "line_start": 2,
+      "line_end": 24,
+      "sha256": "7959bb0a2814b76b790c9ba0e317f758007a70a2f3f617652b421e4e30fd9469",
+      "role": "First public case and artifact hash"
+    },
+    {
+      "path": "bundle/packages/joblib_endian_1561/base/joblib/numpy_pickle.py",
+      "line_start": 193,
+      "line_end": 252,
+      "sha256": "e7f2fb11b3e0f784f789238311d922909363ff3daabe96586867a2f4794c0565",
+      "role": "Affected mmap reader; line232 native-byte-order conversion"
+    },
+    {
+      "path": "extensions/multisolution/patches/document_exclusion_v2.patch",
+      "line_start": 69,
+      "line_end": 86,
+      "sha256": "7c02d2479db9d87f2fc6814d3768faafe7b399fe8acaad535a524989a2d63d3c",
+      "role": "v2 nonempty and kind-compatible guard, in the packaged patch; this anchor replaces the local full-candidate source anchor."
+    },
+    {
+      "path": "extensions/multisolution/patches/document_exclusion.patch",
+      "line_start": 69,
+      "line_end": 83,
+      "sha256": "dec42dfe855a3f8dfd12f5aee89abafb7c56f2874c449e92284a57deefbe2c16",
+      "role": "v1 all predicate without nonempty guard"
+    },
+    {
+      "path": "bundle/packages/joblib_endian_1561/base/joblib/numpy_pickle_utils.py",
+      "line_start": 66,
+      "line_end": 73,
+      "sha256": "29c712a7f321305b15e35330f694a28dc86d18e0b29a90da1d61f4569214792b",
+      "role": "Native-byte-order conversion creates byteswapped view; invoked from affected read_mmap line232, though this helper is outside the editable allowlist."
+    }
+  ],
+  "main_worker_hashes": {
+    "evidence/main/frozen_runner/resource_eval_worker.py": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+    "bundle/harness/observe.py": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0"
+  },
+  "export_validation": {
+    "all_15_source_anchor_paths_resolve": true,
+    "all_source_anchor_hashes_match": true,
+    "worker_hashes_match": true,
+    "public_artifact_hash_matches": true,
+    "v1_v2_patch_bytes_equal_original_frozen_patches": true,
+    "private_absolute_paths_removed": true
+  }
+}

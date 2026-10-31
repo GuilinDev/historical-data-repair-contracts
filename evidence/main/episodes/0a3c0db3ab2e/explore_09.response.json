@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793398600-pOs1KOsKA7d5r1josTS5",
+  "object": "chat.completion",
+  "created": 1793398600,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-091a1f62-923a-4b6f-a3dd-2001d819236b",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # use PandasProcessor to flatten\\n        data = pp.flatten_pandas(data_encoded, data, meta)\\n        # If it's a DataFrame, we might want to store it as CSV for compatibility with older versions\\n        # but the current implementation uses a different scheme (RLE types).\\n        # The task is to repair decoding of genuine 3.3.0 CSV-in-JSON DataFrames.\\n        return data\",\"old\":\"        # use PandasProcessor to flatten\\n        data = pp.flatten_pandas(data_encoded, data, meta)\\n        return data\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13097,
+    "completion_tokens": 159,
+    "total_tokens": 13256,
+    "cost": 0.00136376,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10720,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00136376,
+      "upstream_inference_prompt_cost": 0.0013097,
+      "upstream_inference_completions_cost": 5.406e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

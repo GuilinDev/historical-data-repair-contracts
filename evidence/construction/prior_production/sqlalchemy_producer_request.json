@@ -1,0 +1,82 @@
+[
+  {
+    "id": "5b91226cc2ad",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\5b91226cc2ad.pickle"
+  },
+  {
+    "id": "a523f49721e3",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\a523f49721e3.pickle"
+  },
+  {
+    "id": "14d8c5e27b5b",
+    "group": "historical",
+    "input": {
+      "payload": {}
+    },
+    "visible": false,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\14d8c5e27b5b.pickle"
+  },
+  {
+    "id": "fe77a71e8686",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "count": -41,
+        "text": "甲"
+      }
+    },
+    "visible": false,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\fe77a71e8686.pickle"
+  },
+  {
+    "id": "ac024138a01d",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "nested": [
+          7,
+          12
+        ],
+        "active": true
+      }
+    },
+    "visible": false,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\ac024138a01d.pickle"
+  },
+  {
+    "id": "8e08417529a3",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "empty": "",
+        "list": [
+          "m",
+          "n"
+        ]
+      }
+    },
+    "visible": false,
+    "producer": "1.4.37",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\sqlalchemy\\artifacts\\8e08417529a3.pickle"
+  }
+]

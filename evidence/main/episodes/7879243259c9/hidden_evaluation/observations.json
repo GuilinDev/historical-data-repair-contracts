@@ -1,0 +1,1864 @@
+{
+  "records": [
+    {
+      "id": "6ab5bcd8a29e",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -369295361,
+            385875968,
+            1195511552,
+            234422271,
+            1358954496,
+            704643072
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            -369295361,
+            385967179,
+            1195511552,
+            234422271,
+            1358954496,
+            704643072
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203209
+        },
+        "inplace_restart": {
+          "values": [
+            -791,
+            1264845079,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1265842383
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -369295361,
+          385967179,
+          1195511552,
+          234422271,
+          1358954496,
+          704643072
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203209
+      },
+      "status": "observed"
+    },
+    {
+      "id": "6ab5bcd8a29e_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -791,
+            23,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -791,
+            91234,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088538
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -791,
+          91234,
+          1000007,
+          -2035,
+          81,
+          42
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088538
+      },
+      "status": "observed"
+    },
+    {
+      "id": "6ab5bcd8a29e_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -369295361,
+            385875968,
+            1195511552,
+            234422271,
+            1358954496,
+            704643072
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            -369295361,
+            385967179,
+            1195511552,
+            234422271,
+            1358954496,
+            704643072
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203209
+        },
+        "inplace_restart": {
+          "values": [
+            -791,
+            1264845079,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1265842383
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -369295361,
+          385967179,
+          1195511552,
+          234422271,
+          1358954496,
+          704643072
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203209
+      },
+      "status": "observed"
+    },
+    {
+      "id": "55fe29031f23",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -251854849,
+              570425344,
+              675417856
+            ],
+            [
+              452526079,
+              1342177280,
+              721420288
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              -251854849,
+              570516558,
+              675417856
+            ],
+            [
+              452526079,
+              1342177280,
+              721420288
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203212
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -784,
+              1315176738,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1316174031
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -251854849,
+            570516558,
+            675417856
+          ],
+          [
+            452526079,
+            1342177280,
+            721420288
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203212
+      },
+      "status": "observed"
+    },
+    {
+      "id": "55fe29031f23_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -784,
+              34,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -784,
+              91248,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088541
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -784,
+            91248,
+            999976
+          ],
+          [
+            -2022,
+            80,
+            43
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088541
+      },
+      "status": "observed"
+    },
+    {
+      "id": "55fe29031f23_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -251854849,
+              570425344,
+              675417856
+            ],
+            [
+              452526079,
+              1342177280,
+              721420288
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              -251854849,
+              570516558,
+              675417856
+            ],
+            [
+              452526079,
+              1342177280,
+              721420288
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203212
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -784,
+              1315176738,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1316174031
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -251854849,
+            570516558,
+            675417856
+          ],
+          [
+            452526079,
+            1342177280,
+            721420288
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203212
+      },
+      "status": "observed"
+    },
+    {
+      "id": "4f3092919cbf",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -134414337,
+            754974720,
+            155324160,
+            670629887,
+            1325400064,
+            738197504
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            -134414337,
+            755065937,
+            155324160,
+            670629887,
+            1325400064,
+            738197504
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203215
+        },
+        "inplace_restart": {
+          "values": [
+            -777,
+            1365508397,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1366505679
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -134414337,
+          755065937,
+          155324160,
+          670629887,
+          1325400064,
+          738197504
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203215
+      },
+      "status": "observed"
+    },
+    {
+      "id": "4f3092919cbf_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -777,
+            45,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -777,
+            91262,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088544
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -777,
+          91262,
+          999945,
+          -2009,
+          79,
+          44
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088544
+      },
+      "status": "observed"
+    },
+    {
+      "id": "4f3092919cbf_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -134414337,
+            754974720,
+            155324160,
+            670629887,
+            1325400064,
+            738197504
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            -134414337,
+            755065937,
+            155324160,
+            670629887,
+            1325400064,
+            738197504
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203215
+        },
+        "inplace_restart": {
+          "values": [
+            -777,
+            1365508397,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1366505679
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -134414337,
+          755065937,
+          155324160,
+          670629887,
+          1325400064,
+          738197504
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203215
+      },
+      "status": "observed"
+    },
+    {
+      "id": "78a1c70ab180",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -16973825,
+              939524096,
+              -364835072
+            ],
+            [
+              888733695,
+              1308622848,
+              754974720
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510046462
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              -16973825,
+              939615316,
+              -364835072
+            ],
+            [
+              888733695,
+              1308622848,
+              754974720
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510137682
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -770,
+              1415840056,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1416837327
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -16973825,
+            939615316,
+            -364835072
+          ],
+          [
+            888733695,
+            1308622848,
+            754974720
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510137682
+      },
+      "status": "observed"
+    },
+    {
+      "id": "78a1c70ab180_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -770,
+              56,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -770,
+              91276,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088547
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -770,
+            91276,
+            999914
+          ],
+          [
+            -1996,
+            78,
+            45
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088547
+      },
+      "status": "observed"
+    },
+    {
+      "id": "78a1c70ab180_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -16973825,
+              939524096,
+              -364835072
+            ],
+            [
+              888733695,
+              1308622848,
+              754974720
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510046462
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              -16973825,
+              939615316,
+              -364835072
+            ],
+            [
+              888733695,
+              1308622848,
+              754974720
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510137682
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -770,
+              1415840056,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1416837327
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -16973825,
+            939615316,
+            -364835072
+          ],
+          [
+            888733695,
+            1308622848,
+            754974720
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510137682
+      },
+      "status": "observed"
+    },
+    {
+      "id": "f180d87509a3",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            100532223,
+            1124073472,
+            -884928768,
+            1106837503,
+            1291845632,
+            771751936
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            100532223,
+            1124164695,
+            -884928768,
+            1106837503,
+            1291845632,
+            771751936
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203221
+        },
+        "inplace_restart": {
+          "values": [
+            -763,
+            1466171715,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1467168975
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          100532223,
+          1124164695,
+          -884928768,
+          1106837503,
+          1291845632,
+          771751936
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203221
+      },
+      "status": "observed"
+    },
+    {
+      "id": "f180d87509a3_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            -763,
+            67,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            -763,
+            91290,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088550
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          -763,
+          91290,
+          999883,
+          -1983,
+          77,
+          46
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088550
+      },
+      "status": "observed"
+    },
+    {
+      "id": "f180d87509a3_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            100532223,
+            1124073472,
+            -884928768,
+            1106837503,
+            1291845632,
+            771751936
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            100532223,
+            1124164695,
+            -884928768,
+            1106837503,
+            1291845632,
+            771751936
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203221
+        },
+        "inplace_restart": {
+          "values": [
+            -763,
+            1466171715,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1467168975
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          100532223,
+          1124164695,
+          -884928768,
+          1106837503,
+          1291845632,
+          771751936
+        ],
+        "shape": [
+          6
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203221
+      },
+      "status": "observed"
+    },
+    {
+      "id": "39d9330e4ec3",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              217972735,
+              1308622848,
+              -1405022464
+            ],
+            [
+              1324941311,
+              1275068416,
+              788529152
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              217972735,
+              1308714074,
+              -1405022464
+            ],
+            [
+              1324941311,
+              1275068416,
+              788529152
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203224
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -756,
+              1516503374,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1517500623
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            217972735,
+            1308714074,
+            -1405022464
+          ],
+          [
+            1324941311,
+            1275068416,
+            788529152
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203224
+      },
+      "status": "observed"
+    },
+    {
+      "id": "39d9330e4ec3_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              -756,
+              78,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 997327
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              -756,
+              91304,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088553
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            -756,
+            91304,
+            999852
+          ],
+          [
+            -1970,
+            76,
+            47
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 1088553
+      },
+      "status": "observed"
+    },
+    {
+      "id": "39d9330e4ec3_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "<"
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              217972735,
+              1308622848,
+              -1405022464
+            ],
+            [
+              1324941311,
+              1275068416,
+              788529152
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510111998
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              217972735,
+              1308714074,
+              -1405022464
+            ],
+            [
+              1324941311,
+              1275068416,
+              788529152
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 3510203224
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              -756,
+              1516503374,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1517500623
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            217972735,
+            1308714074,
+            -1405022464
+          ],
+          [
+            1324941311,
+            1275068416,
+            788529152
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 3510203224
+      },
+      "status": "observed"
+    },
+    {
+      "id": "3bb8fc1e1e1f",
+      "group": "historical",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              109,
+              -61,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1281
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            109,
+            4240,
+            503
+          ],
+          [
+            712,
+            31,
+            -13
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 5582
+      },
+      "status": "observed"
+    },
+    {
+      "id": "3bb8fc1e1e1f_fresh_api",
+      "group": "fresh_api",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              109,
+              -61,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1281
+        },
+        "is_memmap": false,
+        "continued": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            109,
+            4240,
+            503
+          ],
+          [
+            712,
+            31,
+            -13
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 5582
+      },
+      "status": "observed"
+    },
+    {
+      "id": "3bb8fc1e1e1f_current_roundtrip",
+      "group": "current_roundtrip",
+      "diagnostics": {
+        "warnings": [],
+        "observed_byteorder": "="
+      },
+      "semantics": {
+        "initial": {
+          "values": [
+            [
+              109,
+              -61,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1281
+        },
+        "is_memmap": true,
+        "continued": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        },
+        "inplace_restart": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        }
+      },
+      "restart_semantics": {
+        "values": [
+          [
+            109,
+            4240,
+            503
+          ],
+          [
+            712,
+            31,
+            -13
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ],
+        "dtype": {
+          "kind": "i",
+          "itemsize": 4
+        },
+        "python_sum": 5582
+      },
+      "status": "observed"
+    }
+  ],
+  "python": "3.10.20 (main, Aug  5 2026, 01:18:03) [GCC 14.2.0]",
+  "status": "observed"
+}

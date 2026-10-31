@@ -1,0 +1,83 @@
+[
+  {
+    "id": "4780826eda6a",
+    "group": "historical",
+    "input": {
+      "numeric": {
+        "i8": {
+          "dtype": "int8",
+          "values": [
+            -112,
+            88
+          ]
+        },
+        "i16": {
+          "dtype": "int16",
+          "values": [
+            -28962,
+            27978
+          ]
+        },
+        "i32": {
+          "dtype": "int32",
+          "values": [
+            -1899999512,
+            1700000168
+          ]
+        },
+        "i64": {
+          "dtype": "int64",
+          "values": [
+            -1125899906842108,
+            1125899906843396
+          ]
+        },
+        "u8": {
+          "dtype": "uint8",
+          "values": [
+            216,
+            234
+          ]
+        },
+        "u16": {
+          "dtype": "uint16",
+          "values": [
+            55066,
+            60892
+          ]
+        },
+        "u32": {
+          "dtype": "uint32",
+          "values": [
+            2147483880,
+            4294967218
+          ]
+        },
+        "u64": {
+          "dtype": "uint64",
+          "values": [
+            9223372036854776042,
+            9223372036854775974
+          ]
+        },
+        "f32": {
+          "dtype": "float32",
+          "values": [
+            1.75,
+            -4.5
+          ]
+        },
+        "f64": {
+          "dtype": "float64",
+          "values": [
+            1099511627777.375,
+            -2199023255551.125
+          ]
+        }
+      }
+    },
+    "visible": false,
+    "producer": "4.1.1",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\jsonpickle_dtype_634\\artifacts\\4780826eda6a.json"
+  }
+]

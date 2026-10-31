@@ -1,0 +1,71 @@
+[
+  {
+    "id": "5b91226cc2ad",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true,
+    "producer": "1.4.37",
+    "artifact": "/fixtures/sqlalchemy_mutable_8133/artifacts/5b91226cc2ad.pickle",
+    "sha256": "78b18d1e1f9d750796bf60fd70cd0218f716e8ab43d2435cf3e6b3a3e6a88eb7"
+  },
+  {
+    "id": "ef5a4f0b4e5e",
+    "group": "fresh_api",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "02bddc217e51",
+    "group": "current_roundtrip",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "a523f49721e3",
+    "group": "historical",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true,
+    "producer": "1.4.37",
+    "artifact": "/fixtures/sqlalchemy_mutable_8133/artifacts/a523f49721e3.pickle",
+    "sha256": "04eac9b2ecfe8a198cc7a9a111a1e433b2f6c9e612df79cb35b78debafb07ae6"
+  },
+  {
+    "id": "a5090cddbbd3",
+    "group": "fresh_api",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "e589bedacfe2",
+    "group": "current_roundtrip",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true
+  }
+]

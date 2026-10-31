@@ -1,0 +1,14 @@
+{
+  "episode": "0e72fdd94c31",
+  "family": "joblib_compressed_1681",
+  "project": "joblib",
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "primeintellect/bf16",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "changed_paths": [
+    "joblib/numpy_pickle.py"
+  ],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

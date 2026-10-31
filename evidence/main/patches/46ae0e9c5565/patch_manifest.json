@@ -1,0 +1,14 @@
+{
+  "episode": "46ae0e9c5565",
+  "family": "jsonpickle_csv_562",
+  "project": "jsonpickle",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": true,
+  "changed_paths": [
+    "jsonpickle/ext/pandas.py"
+  ],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

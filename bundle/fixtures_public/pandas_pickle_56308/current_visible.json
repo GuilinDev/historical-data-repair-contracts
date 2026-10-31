@@ -1,0 +1,122 @@
+[
+  {
+    "id": "17728a40150a_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          919,
+          "red"
+        ],
+        [
+          -37,
+          "green"
+        ],
+        [
+          431,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "17728a40150a_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "amount",
+        "batch"
+      ],
+      "data": [
+        [
+          919,
+          "red"
+        ],
+        [
+          -37,
+          "green"
+        ],
+        [
+          431,
+          "blue"
+        ]
+      ],
+      "index": [
+        "north",
+        "south",
+        "west"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "57ece4ad1d82_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "columns": [
+        "alpha",
+        "beta"
+      ],
+      "data": [
+        [
+          1.125,
+          -3.75
+        ],
+        [
+          201.5,
+          0.625
+        ],
+        [
+          -71.25,
+          15.5
+        ]
+      ],
+      "index": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "visible": true
+  },
+  {
+    "id": "57ece4ad1d82_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "columns": [
+        "alpha",
+        "beta"
+      ],
+      "data": [
+        [
+          1.125,
+          -3.75
+        ],
+        [
+          201.5,
+          0.625
+        ],
+        [
+          -71.25,
+          15.5
+        ]
+      ],
+      "index": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "visible": true
+  }
+]

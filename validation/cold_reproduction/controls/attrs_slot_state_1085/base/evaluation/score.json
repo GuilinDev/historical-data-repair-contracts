@@ -1,0 +1,1313 @@
+{
+  "execution_status": "observed",
+  "passed": 27,
+  "n": 36,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 9
+    },
+    "fresh_api": {
+      "passed": 9,
+      "n": 9
+    },
+    "current_roundtrip": {
+      "passed": 18,
+      "n": 18
+    }
+  },
+  "records": [
+    {
+      "id": "119dbe50fb44",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "119dbe50fb44",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "8fc411ebbc46",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8fc411ebbc46",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "d95a4a3e4b5c",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "d95a4a3e4b5c",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "a28ec88ba6b0",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "a28ec88ba6b0",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "18f81a65efe7",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "18f81a65efe7",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "9e4b9cff6901",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "9e4b9cff6901",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'FrozenRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "f3beb26b65f0",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "f3beb26b65f0",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'FrozenRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "811b21ac8ecf",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "811b21ac8ecf",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'FrozenRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "84ce7bf95ba0",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "84ce7bf95ba0",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'CachedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "42076541001c",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "42076541001c",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'CachedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "ebb386e6b020",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "ebb386e6b020",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'CachedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "d79cc2cbcc5a",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "d79cc2cbcc5a",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "6cc74c4a1853",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "6cc74c4a1853",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "be0abb271fc4",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "be0abb271fc4",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3c79d6d255ff",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3c79d6d255ff",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 1,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "0c92316fd3af",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "0c92316fd3af",
+        "group": "fresh_api",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1c7bdd6084ab",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1c7bdd6084ab",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f925461a24b6",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "f925461a24b6",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": -18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8bcfb43e3615",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8bcfb43e3615",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "e583c0c0fcd9",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "e583c0c0fcd9",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3796729e5886",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3796729e5886",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "cf36bc39c8d9",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "cf36bc39c8d9",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "be8be05c26a3",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "be8be05c26a3",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8aa469123b3e",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8aa469123b3e",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8ec68dc8dcc6",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8ec68dc8dcc6",
+        "group": "fresh_api",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "cd9d9c93394b",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "cd9d9c93394b",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "21d3f65bf5e1",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "21d3f65bf5e1",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.FrozenRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "6b39e37afd3b",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "6b39e37afd3b",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "0728b5db7407",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "0728b5db7407",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8d16130046f4",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8d16130046f4",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1d35a70d97a9",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1d35a70d97a9",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f0cc4e0ff4b1",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "f0cc4e0ff4b1",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "40a2049c6d55",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "40a2049c6d55",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": 0,
+          "name": "",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f6b04541391e",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "f6b04541391e",
+        "group": "fresh_api",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "9b0445a9dcf2",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "9b0445a9dcf2",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "9d11d134b6e5",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "9d11d134b6e5",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "restart_semantics": {
+          "count": -19,
+          "name": "δοκιμή-中文",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": false,
+            "exception": "FrozenInstanceError"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.CachedRecord",
+          "hash_consistent": true,
+          "dict_lookup": true,
+          "set_lookup": true
+        },
+        "status": "observed"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  },
+  "oracle_sha256": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295"
+}

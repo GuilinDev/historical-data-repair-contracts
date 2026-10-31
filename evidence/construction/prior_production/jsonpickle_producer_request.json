@@ -1,0 +1,139 @@
+[
+  {
+    "id": "e2914c218f46",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "label",
+        "text"
+      ],
+      "data": [
+        [
+          "alpha",
+          "first"
+        ],
+        [
+          "beta",
+          "second"
+        ]
+      ]
+    },
+    "visible": true,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\e2914c218f46.json"
+  },
+  {
+    "id": "8f9dea76ea8e",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "title"
+      ],
+      "data": [
+        [
+          "a,b"
+        ],
+        [
+          "line\nbreak"
+        ],
+        [
+          "a\"quote"
+        ]
+      ]
+    },
+    "visible": true,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\8f9dea76ea8e.json"
+  },
+  {
+    "id": "a6e7956d35f0",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "名字",
+        "label"
+      ],
+      "data": [
+        [
+          "甲",
+          "zero"
+        ],
+        [
+          "é",
+          "one"
+        ],
+        [
+          "ß",
+          "two"
+        ]
+      ]
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\a6e7956d35f0.json"
+  },
+  {
+    "id": "7fad75cc483e",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "text"
+      ],
+      "data": [
+        [
+          "001"
+        ],
+        [
+          "-2"
+        ],
+        [
+          "3.00"
+        ]
+      ]
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\7fad75cc483e.json"
+  },
+  {
+    "id": "aeaec24990e2",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "left",
+        "right"
+      ],
+      "data": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "m",
+          "n"
+        ]
+      ],
+      "columns_name": "measurement"
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\aeaec24990e2.json"
+  },
+  {
+    "id": "ee7d686bea23",
+    "group": "historical",
+    "input": {
+      "columns": [
+        "single"
+      ],
+      "data": [
+        [
+          "item"
+        ]
+      ]
+    },
+    "visible": false,
+    "producer": "3.3.0",
+    "artifact": "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\fixtures\\jsonpickle\\artifacts\\ee7d686bea23.json"
+  }
+]

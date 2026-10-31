@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793398113-3p0wovt8uJZu4VFSJOGl",
+  "object": "chat.completion",
+  "created": 1793398113,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired `joblib/numpy_pickle.py` to correctly handle big-endian arrays when loaded with `mmap_mode='r+'`.\n\n### Changes\n- Modified `NumpyArrayWrapper.read_mmap` in `joblib/numpy_pickle.py`.\n- Added `_is_numpy_array_byte_order_mismatch` to the imports from `.numpy_pickle_utils`.\n- Changed the return logic in `read_mmap`: if the array is memory-mapped and has a byte-order mismatch, it now returns the `marray` directly instead of calling `_ensure_native_byte_order(marray)`.\n- This prevents the call to `byteswap()`, which would have created a detached copy of the array, thereby preserving the memory map and ensuring that mutations reach the working file while maintaining correct numeric values via the original `dtype`.\n\n### Checks Performed\n- Ran the `legacy` check suite, which includes:\n    - `historical`: Verified loading of authentic 1.2.0 big-endian arrays.\n    - `fresh_api`: Verified current API behavior.\n    - `current_roundtrip`: Verified that current dumps and reloads remain consistent.\n- All 9 tests in the suite passed after the fix.\n\n### Unresolved Work\nNone. The repair satisfies the historical-data contract, preserves the memory map for writable modes, and maintains correct numeric values and shapes.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29367,
+    "completion_tokens": 308,
+    "total_tokens": 29675,
+    "cost": 0.00304142,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00304142,
+      "upstream_inference_prompt_cost": 0.0029367,
+      "upstream_inference_completions_cost": 0.00010472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

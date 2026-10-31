@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793398679-HVsJuOmqrI0ZE7ZJqWEp",
+  "object": "chat.completion",
+  "created": 1793398679,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-a32ef577-7654-4d5f-bcb9-74326c550617",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def restore_v3_3(self, data):\\n        csv, meta = self.pp.restore_pandas(data)\\n        params, timedeltas, parse_datetime_v2 = make_read_csv_params(meta, self.context)\\n        # None makes it compatible with objects serialized before\\n        # column_levels_names has been introduced.\\n        column_level_names = meta.get(\\\"column_level_names\\\", None)\\n        \\n        # Use a more robust check for empty data. \\n        # In 3.3.0, 'values' was the CSV string.\\n        # We should check if the CSV content is actually present.\\n        has_values = False\\n        if data.get(\\\"txt\\\", True):\\n            has_values = bool(data.get(\\\"values\\\", \\\"\\\").strip())\\n        else:\\n            # If it was compressed/b64, we already have the decoded 'csv' from restore_pandas\\n            has_values = bool(csv.strip())\\n\\n        df = (\\n            pd.read_csv(StringIO(csv), **params)\\n            if has_values\\n            else pd.DataFrame()\\n        )\\n        for col in timedeltas:\\n            df[col] = pd.to_timedelta(df[col])\\n        df = df.astype(parse_datetime_v2)\\n\\n        # In 3.3.0, the index was stored separately. \\n        # If the DataFrame is empty but the index is not, we need to handle it.\\n        # However, if read_csv worked, the index should match.\\n        # If read_csv returned an empty DF but we have an index, we might need to re-index.\\n        idx = decode(meta[\\\"index\\\"])\\n        if len(df) != len(idx):\\n            # This happens if the CSV was empty but the index was not, \\n            # or if read_csv didn't pick up the rows correctly.\\n            # For 3.3.0, we should ensure the index is set correctly.\\n            df.index = pd.Index(idx) if not isinstance(idx, pd.Index) else idx\\n        else:\\n            df.index = idx\\n\\n        # restore the column level(s) name(s)\\n        if column_level_names:\\n            df.columns.names = column_level_names\\n        return df\",\"old\":\"    def restore_v3_3(self, data):\\n        csv, meta = self.pp.restore_pandas(data)\\n        params, timedeltas, parse_datetime_v2 = make_read_csv_params(meta, self.context)\\n        # None makes it compatible with objects serialized before\\n        # column_levels_names has been introduced.\\n        column_level_names = meta.get(\\\"column_level_names\\\", None)\\n        \\n        # Use a more robust check for empty data. \\n        # In 3.3.0, 'values' was the CSV string.\\n        # We should check if the CSV content is actually present.\\n        has_values = False\\n        if data.get(\\\"txt\\\", True):\\n            has_values = bool(data.get(\\\"values\\\", \\\"\\\").strip())\\n        else:\\n            # If it was compressed/b64, we already have the decoded 'csv' from restore_pandas\\n            has_values = bool(csv.strip())\\n\\n        df = (\\n            pd.read_csv(StringIO(csv), **params)\\n            if has_values\\n            else pd.DataFrame()\\n        )\\n        for col in timedeltas:\\n            df[col] = pd.to_timedelta(df[col])\\n        df = df.astype(parse_datetime_v2)\\n\\n        df.index = decode(meta[\\\"index\\\"])\\n        # restore the column level(s) name(s)\\n        if column_level_names:\\n            df.columns.names = column_level_names\\n        return df\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31569,
+    "completion_tokens": 921,
+    "total_tokens": 32490,
+    "cost": 0.00347004,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 28544,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00347004,
+      "upstream_inference_prompt_cost": 0.0031569,
+      "upstream_inference_completions_cost": 0.00031314
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

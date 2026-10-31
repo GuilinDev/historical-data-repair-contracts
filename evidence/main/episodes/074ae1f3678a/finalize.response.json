@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793398238-o1arUVydloR2hGBZDALc",
+  "object": "chat.completion",
+  "created": 1793398238,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired `joblib/numpy_pickle.py` to correctly handle big-endian arrays when loaded with `mmap_mode='r+'`.\n\n### Changes\nIn `NumpyArrayWrapper.read_mmap`, I removed the call to `_ensure_native_byte_order(marray)` and instead returned `marray` directly. \n\nThe original implementation called `_ensure_native_byte_order`, which performed a `byteswap().view(...)` when a byte-order mismatch was detected. This operation creates a detached copy of the array, breaking the memory-map connection to the disk. By returning the `memmap` object with its original non-native `dtype`, NumPy continues to handle byte-swapping transparently during access, ensuring that numeric values remain correct and that mutations are written back to the underlying file.\n\n### Validation\nI ran the `legacy` and `current` check suites.\n- **Historical Data**: Verified that big-endian arrays produced by joblib 1.2.0 are loaded with correct values and shapes.\n- **Mmap Mutations**: Confirmed that mutations to these arrays in `r+` mode are persisted to the file and visible in new processes.\n- **Regressions**: Verified that ordinary loads, current dumps, and round-trips remain unaffected.\n\n### Unresolved Work\nNone. All specified requirements for the historical-data contract were met.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30081,
+    "completion_tokens": 297,
+    "total_tokens": 30378,
+    "cost": 0.00310908,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00310908,
+      "upstream_inference_prompt_cost": 0.0030081,
+      "upstream_inference_completions_cost": 0.00010098
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

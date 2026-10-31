@@ -1,0 +1,7 @@
+[
+  {
+    "attempt": 0,
+    "error": "RuntimeError: API engineering failure HTTP 429; preserved locally",
+    "transient": true
+  }
+]

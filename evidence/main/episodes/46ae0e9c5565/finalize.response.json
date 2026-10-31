@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793399284-vhMT8Kjr5qPPWLqEfzsp",
+  "object": "chat.completion",
+  "created": 1793399284,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the `jsonpickle` pandas extension to correctly decode DataFrames produced by version 3.3.0 that used CSV-in-JSON encoding.\n\n### Changes\n1.  **`jsonpickle/ext/pandas.py`**: In `PandasDfHandler.restore_v3_3`, I updated the `pd.read_csv` call to include `quoting=1` (`csv.QUOTE_ALL`). This ensures that strings containing commas, newlines, and quotes—which were quoted during the 3.3.0 serialization process—are correctly parsed back into the DataFrame instead of causing splitting or decoding errors.\n2.  **`jsonpickle/ext/pandas.py`**: Refactored the `restore` method to more cleanly handle the transition between the legacy 3.3.0 scheme (missing `dtypes_rle`) and the current scheme, ensuring `rle_types` is correctly defined before being passed to `rle_decode`.\n\n### Validation\nI ran the `legacy` check suite, which includes:\n- **Historical cases**: Verified that DataFrames produced by version 3.3.0 containing complex strings (commas, newlines, quotes) are now correctly restored.\n- **Fresh API cases**: Verified that current serialization/deserialization remains functional.\n- **Roundtrip cases**: Verified that the current implementation's roundtrip behavior is preserved.\nAll 6 tests in the suite passed.\n\n### Unresolved Work\nNone. The repair satisfies the contract to preserve object/string columns, indexes, and column names for the specified historical version while maintaining current API behavior.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23691,
+    "completion_tokens": 342,
+    "total_tokens": 24033,
+    "cost": 0.00248538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00248538,
+      "upstream_inference_prompt_cost": 0.0023691,
+      "upstream_inference_completions_cost": 0.00011628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

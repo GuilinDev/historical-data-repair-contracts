@@ -1,0 +1,53 @@
+{
+  "attempt": 5,
+  "dtype": "float64",
+  "command": [
+    "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+    "-I",
+    "-B",
+    "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+    "worker",
+    "float64",
+    "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\05_float64.json"
+  ],
+  "exit_code": 0,
+  "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "pandas": "2.1.4",
+  "jsonpickle": "4.1.1",
+  "module_paths": {
+    "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+    "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+    "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+  },
+  "input": {
+    "dtype": "float64",
+    "itemsize": 8,
+    "values": [
+      1.125,
+      -3.25
+    ]
+  },
+  "decoded": {
+    "dtype": "float64",
+    "itemsize": 8,
+    "values": [
+      1.125,
+      -3.25
+    ]
+  },
+  "self_roundtrip_passed": true,
+  "mapping": {
+    "float32": "pd/f32",
+    "float64": "pd/f"
+  },
+  "raw_dtypes_rle": [
+    [
+      "pd/f",
+      1
+    ]
+  ],
+  "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\05_float64.json",
+  "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+  "bytes": 267
+}

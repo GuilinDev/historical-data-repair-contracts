@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e091672b242e",
+    "group": "historical",
+    "input": {
+      "values": [
+        -763,
+        67,
+        999883,
+        -1983,
+        77,
+        46
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91223
+    },
+    "visible": false,
+    "producer": "1.2.0",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\joblib_compressed_1681\\artifacts\\e091672b242e.pickle"
+  }
+]

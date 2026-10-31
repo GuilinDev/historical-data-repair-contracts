@@ -1,0 +1,12 @@
+{
+  "episode": "22dfe50e4c2e",
+  "family": "sqlalchemy_mutable_8133",
+  "project": "sqlalchemy",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 1,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": true,
+  "changed_paths": [],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

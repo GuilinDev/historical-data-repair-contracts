@@ -1,0 +1,17 @@
+{
+  "failures_preserved": [
+    {
+      "run": "local_20261030T221137Z",
+      "kind": "validation helper encoding error",
+      "resolution": "Explicit UTF-8 reads."
+    },
+    {
+      "run": "local_20261030T221157Z",
+      "kind": "Windows default CRLF output differed bytewise from reference LF",
+      "resolution": "Portable source-edit adapter now writes explicit LF; whitelist and replacement semantics unchanged; all 8 reference patch hashes match after correction."
+    }
+  ],
+  "final_local_controls": "validation/local_controls.json",
+  "cold_install_failures": "None observed in first complete bootstrap; subsequent evaluation status is reported separately.",
+  "note": "These are implementation controls, not model failures or benchmark outcomes."
+}

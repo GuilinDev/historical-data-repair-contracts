@@ -1,0 +1,402 @@
+{
+  "records": [
+    {
+      "id": "e2914c218f46",
+      "group": "historical",
+      "semantics": {
+        "initial": {
+          "columns": [
+            "label",
+            "text"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1
+          ],
+          "index_name": null,
+          "values": {
+            "label": [
+              "alpha",
+              "beta"
+            ],
+            "text": [
+              "first",
+              "second"
+            ]
+          },
+          "types": {
+            "label": [
+              "str",
+              "str"
+            ],
+            "text": [
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "label": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "text": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        },
+        "continued": {
+          "columns": [
+            "label",
+            "text",
+            "continued_column"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1
+          ],
+          "index_name": null,
+          "values": {
+            "label": [
+              "alpha",
+              "beta"
+            ],
+            "text": [
+              "first",
+              "second"
+            ],
+            "continued_column": [
+              "row0",
+              "row1"
+            ]
+          },
+          "types": {
+            "label": [
+              "str",
+              "str"
+            ],
+            "text": [
+              "str",
+              "str"
+            ],
+            "continued_column": [
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "label": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "text": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "continued_column": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        }
+      },
+      "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 212, in restore\n    return self.restore_v3_3(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 313, in restore_v3_3\n    df.index = decode(meta[\"index\"])\n  File \"/runtime/pandas/core/generic.py\", line 6218, in __setattr__\n    return object.__setattr__(self, name, value)\n  File \"properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"/runtime/pandas/core/generic.py\", line 767, in _set_axis\n    self._mgr.set_axis(axis, labels)\n  File \"/runtime/pandas/core/internals/managers.py\", line 227, in set_axis\n    self._validate_set_axis(axis, new_labels)\n  File \"/runtime/pandas/core/internals/base.py\", line 85, in _validate_set_axis\n    raise ValueError(\nValueError: Length mismatch: Expected axis has 0 elements, new values have 2 elements\n",
+      "status": "observed"
+    },
+    {
+      "id": "50946b82bba2",
+      "group": "fresh_api",
+      "semantics": {
+        "initial": {
+          "columns": [
+            "label",
+            "text"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1
+          ],
+          "index_name": null,
+          "values": {
+            "label": [
+              "alpha",
+              "beta"
+            ],
+            "text": [
+              "first",
+              "second"
+            ]
+          },
+          "types": {
+            "label": [
+              "str",
+              "str"
+            ],
+            "text": [
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "label": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "text": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        },
+        "continued": {
+          "columns": [
+            "label",
+            "text",
+            "continued_column"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1
+          ],
+          "index_name": null,
+          "values": {
+            "label": [
+              "alpha",
+              "beta"
+            ],
+            "text": [
+              "first",
+              "second"
+            ],
+            "continued_column": [
+              "row0",
+              "row1"
+            ]
+          },
+          "types": {
+            "label": [
+              "str",
+              "str"
+            ],
+            "text": [
+              "str",
+              "str"
+            ],
+            "continued_column": [
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "label": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "text": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "continued_column": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        }
+      },
+      "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 212, in restore\n    return self.restore_v3_3(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 313, in restore_v3_3\n    df.index = decode(meta[\"index\"])\n  File \"/runtime/pandas/core/generic.py\", line 6218, in __setattr__\n    return object.__setattr__(self, name, value)\n  File \"properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"/runtime/pandas/core/generic.py\", line 767, in _set_axis\n    self._mgr.set_axis(axis, labels)\n  File \"/runtime/pandas/core/internals/managers.py\", line 227, in set_axis\n    self._validate_set_axis(axis, new_labels)\n  File \"/runtime/pandas/core/internals/base.py\", line 85, in _validate_set_axis\n    raise ValueError(\nValueError: Length mismatch: Expected axis has 0 elements, new values have 2 elements\n",
+      "status": "observed"
+    },
+    {
+      "id": "ded19ee5e4fa",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "ValueError: Length mismatch: Expected axis has 0 elements, new values have 2 elements"
+    },
+    {
+      "id": "8f9dea76ea8e",
+      "group": "historical",
+      "semantics": {
+        "initial": {
+          "columns": [
+            "title"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1,
+            2
+          ],
+          "index_name": null,
+          "values": {
+            "title": [
+              "a,b",
+              "line\nbreak",
+              "a\"quote"
+            ]
+          },
+          "types": {
+            "title": [
+              "str",
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "title": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        },
+        "continued": {
+          "columns": [
+            "title",
+            "continued_column"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1,
+            2
+          ],
+          "index_name": null,
+          "values": {
+            "title": [
+              "a,b",
+              "line\nbreak",
+              "a\"quote"
+            ],
+            "continued_column": [
+              "row0",
+              "row1",
+              "row2"
+            ]
+          },
+          "types": {
+            "title": [
+              "str",
+              "str",
+              "str"
+            ],
+            "continued_column": [
+              "str",
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "title": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "continued_column": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        }
+      },
+      "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 212, in restore\n    return self.restore_v3_3(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 313, in restore_v3_3\n    df.index = decode(meta[\"index\"])\n  File \"/runtime/pandas/core/generic.py\", line 6218, in __setattr__\n    return object.__setattr__(self, name, value)\n  File \"properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"/runtime/pandas/core/generic.py\", line 767, in _set_axis\n    self._mgr.set_axis(axis, labels)\n  File \"/runtime/pandas/core/internals/managers.py\", line 227, in set_axis\n    self._validate_set_axis(axis, new_labels)\n  File \"/runtime/pandas/core/internals/base.py\", line 85, in _validate_set_axis\n    raise ValueError(\nValueError: Length mismatch: Expected axis has 0 elements, new values have 3 elements\n",
+      "status": "observed"
+    },
+    {
+      "id": "1831c39d6ca7",
+      "group": "fresh_api",
+      "semantics": {
+        "initial": {
+          "columns": [
+            "title"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1,
+            2
+          ],
+          "index_name": null,
+          "values": {
+            "title": [
+              "a,b",
+              "line\nbreak",
+              "a\"quote"
+            ]
+          },
+          "types": {
+            "title": [
+              "str",
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "title": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        },
+        "continued": {
+          "columns": [
+            "title",
+            "continued_column"
+          ],
+          "columns_name": null,
+          "index": [
+            0,
+            1,
+            2
+          ],
+          "index_name": null,
+          "values": {
+            "title": [
+              "a,b",
+              "line\nbreak",
+              "a\"quote"
+            ],
+            "continued_column": [
+              "row0",
+              "row1",
+              "row2"
+            ]
+          },
+          "types": {
+            "title": [
+              "str",
+              "str",
+              "str"
+            ],
+            "continued_column": [
+              "str",
+              "str",
+              "str"
+            ]
+          },
+          "dtypes": {
+            "title": {
+              "kind": "O",
+              "itemsize": 8
+            },
+            "continued_column": {
+              "kind": "O",
+              "itemsize": 8
+            }
+          }
+        }
+      },
+      "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 182, in main\n    obj=decode(args.task,Path(args.replay).read_bytes())\n  File \"/harness/observe.py\", line 68, in decode\n    return jsonpickle.decode(data.decode(\"utf-8\"))\n  File \"/candidate/jsonpickle/unpickler.py\", line 103, in decode\n    return context.restore(data, reset=reset, classes=classes)\n  File \"/candidate/jsonpickle/unpickler.py\", line 420, in restore\n    value = self._restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 402, in _restore\n    return restore(obj)\n  File \"/candidate/jsonpickle/unpickler.py\", line 867, in _restore_object\n    instance = handler(self).restore(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 212, in restore\n    return self.restore_v3_3(obj)\n  File \"/candidate/jsonpickle/ext/pandas.py\", line 313, in restore_v3_3\n    df.index = decode(meta[\"index\"])\n  File \"/runtime/pandas/core/generic.py\", line 6218, in __setattr__\n    return object.__setattr__(self, name, value)\n  File \"properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"/runtime/pandas/core/generic.py\", line 767, in _set_axis\n    self._mgr.set_axis(axis, labels)\n  File \"/runtime/pandas/core/internals/managers.py\", line 227, in set_axis\n    self._validate_set_axis(axis, new_labels)\n  File \"/runtime/pandas/core/internals/base.py\", line 85, in _validate_set_axis\n    raise ValueError(\nValueError: Length mismatch: Expected axis has 0 elements, new values have 3 elements\n",
+      "status": "observed"
+    },
+    {
+      "id": "4198e7620fe1",
+      "group": "current_roundtrip",
+      "status": "program_error",
+      "error": "ValueError: Length mismatch: Expected axis has 0 elements, new values have 3 elements"
+    }
+  ],
+  "python": "3.10.20 (main, Aug  5 2026, 01:18:03) [GCC 14.2.0]",
+  "status": "observed"
+}

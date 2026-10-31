@@ -1,0 +1,2407 @@
+{
+  "id": "joblib_1.5.0_universal",
+  "project": "joblib",
+  "version": "1.5.0",
+  "variant": "universal",
+  "source_url": "https://files.pythonhosted.org/packages/da/d3/13ee227a148af1c693654932b8b0b02ed64af5e1f7406d56b088b57574cd/joblib-1.5.0-py3-none-any.whl",
+  "archive_file": "provenance/release_archives/joblib-1.5.0-py3-none-any.whl",
+  "archive_sha256": "206144b320246485b712fc8cc51f017de58225fa8b414a1fe1764a7231aca491",
+  "archive_bytes": 307682,
+  "release_identity": {
+    "metadata_url": "https://pypi.org/pypi/joblib/1.5.0/json",
+    "metadata_file": "provenance/release_metadata/joblib_1.5.0.json",
+    "metadata_sha256": "0dfbd5661ce59f20ffe7382ee8f9fb8cda2de34d2fb20642b8126f0c093ed351",
+    "filename": "joblib-1.5.0-py3-none-any.whl",
+    "pypi_sha256": "206144b320246485b712fc8cc51f017de58225fa8b414a1fe1764a7231aca491",
+    "upload_time": "2025-05-03T21:09:37.892103Z",
+    "license_metadata": "BSD 3-Clause",
+    "license_expression": null,
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ],
+    "archive_sha256_verified": true
+  },
+  "licenses": [
+    {
+      "file": "provenance/licenses/joblib_1.5.0_universal/joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+      "archive_member": "joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+      "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+      "bytes": 1527,
+      "source_url": "https://files.pythonhosted.org/packages/da/d3/13ee227a148af1c693654932b8b0b02ed64af5e1f7406d56b088b57574cd/joblib-1.5.0-py3-none-any.whl"
+    }
+  ],
+  "copies": [
+    {
+      "role": "joblib_endian_1561/fixed",
+      "copy_location": "bundle/packages/joblib_endian_1561/fixed",
+      "checked_archive_member_count": 142,
+      "matches": [
+        {
+          "path": "joblib/__init__.py",
+          "sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd",
+          "archive_sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd"
+        },
+        {
+          "path": "joblib/_cloudpickle_wrapper.py",
+          "sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7",
+          "archive_sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7"
+        },
+        {
+          "path": "joblib/_dask.py",
+          "sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975",
+          "archive_sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975"
+        },
+        {
+          "path": "joblib/_memmapping_reducer.py",
+          "sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7",
+          "archive_sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7"
+        },
+        {
+          "path": "joblib/_multiprocessing_helpers.py",
+          "sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715",
+          "archive_sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715"
+        },
+        {
+          "path": "joblib/_parallel_backends.py",
+          "sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be",
+          "archive_sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be"
+        },
+        {
+          "path": "joblib/_store_backends.py",
+          "sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d",
+          "archive_sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d"
+        },
+        {
+          "path": "joblib/_utils.py",
+          "sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08",
+          "archive_sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08"
+        },
+        {
+          "path": "joblib/backports.py",
+          "sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca",
+          "archive_sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca"
+        },
+        {
+          "path": "joblib/compressor.py",
+          "sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4",
+          "archive_sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4"
+        },
+        {
+          "path": "joblib/disk.py",
+          "sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b",
+          "archive_sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b"
+        },
+        {
+          "path": "joblib/executor.py",
+          "sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15",
+          "archive_sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15"
+        },
+        {
+          "path": "joblib/externals/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/__init__.py",
+          "sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74",
+          "archive_sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle.py",
+          "sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a",
+          "archive_sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle_fast.py",
+          "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+          "archive_sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357"
+        },
+        {
+          "path": "joblib/externals/loky/__init__.py",
+          "sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb",
+          "archive_sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb"
+        },
+        {
+          "path": "joblib/externals/loky/_base.py",
+          "sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a",
+          "archive_sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__init__.py",
+          "sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f",
+          "archive_sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_posix_reduction.py",
+          "sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be",
+          "archive_sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_win_reduction.py",
+          "sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b",
+          "archive_sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b"
+        },
+        {
+          "path": "joblib/externals/loky/backend/context.py",
+          "sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1",
+          "archive_sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1"
+        },
+        {
+          "path": "joblib/externals/loky/backend/fork_exec.py",
+          "sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19",
+          "archive_sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_posix.py",
+          "sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85",
+          "archive_sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_win32.py",
+          "sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a",
+          "archive_sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/process.py",
+          "sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d",
+          "archive_sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d"
+        },
+        {
+          "path": "joblib/externals/loky/backend/queues.py",
+          "sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85",
+          "archive_sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/reduction.py",
+          "sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd",
+          "archive_sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd"
+        },
+        {
+          "path": "joblib/externals/loky/backend/resource_tracker.py",
+          "sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de",
+          "archive_sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de"
+        },
+        {
+          "path": "joblib/externals/loky/backend/spawn.py",
+          "sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e",
+          "archive_sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e"
+        },
+        {
+          "path": "joblib/externals/loky/backend/synchronize.py",
+          "sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439",
+          "archive_sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439"
+        },
+        {
+          "path": "joblib/externals/loky/backend/utils.py",
+          "sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b",
+          "archive_sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b"
+        },
+        {
+          "path": "joblib/externals/loky/cloudpickle_wrapper.py",
+          "sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05",
+          "archive_sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05"
+        },
+        {
+          "path": "joblib/externals/loky/initializers.py",
+          "sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7",
+          "archive_sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7"
+        },
+        {
+          "path": "joblib/externals/loky/process_executor.py",
+          "sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511",
+          "archive_sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511"
+        },
+        {
+          "path": "joblib/externals/loky/reusable_executor.py",
+          "sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4",
+          "archive_sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4"
+        },
+        {
+          "path": "joblib/func_inspect.py",
+          "sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9",
+          "archive_sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9"
+        },
+        {
+          "path": "joblib/hashing.py",
+          "sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7",
+          "archive_sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7"
+        },
+        {
+          "path": "joblib/logger.py",
+          "sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074",
+          "archive_sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074"
+        },
+        {
+          "path": "joblib/memory.py",
+          "sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf",
+          "archive_sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf"
+        },
+        {
+          "path": "joblib/numpy_pickle.py",
+          "sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477",
+          "archive_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477"
+        },
+        {
+          "path": "joblib/numpy_pickle_compat.py",
+          "sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4",
+          "archive_sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4"
+        },
+        {
+          "path": "joblib/numpy_pickle_utils.py",
+          "sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032",
+          "archive_sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032"
+        },
+        {
+          "path": "joblib/parallel.py",
+          "sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163",
+          "archive_sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163"
+        },
+        {
+          "path": "joblib/pool.py",
+          "sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b",
+          "archive_sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b"
+        },
+        {
+          "path": "joblib/test/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/common.py",
+          "sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0",
+          "archive_sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0"
+        },
+        {
+          "path": "joblib/test/data/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/data/create_numpy_pickle.py",
+          "sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef",
+          "archive_sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np16.gz",
+          "sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f",
+          "archive_sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np17.gz",
+          "sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b",
+          "archive_sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py33_np18.gz",
+          "sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788",
+          "archive_sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py34_np19.gz",
+          "sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023",
+          "archive_sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py35_np19.gz",
+          "sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e",
+          "archive_sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl",
+          "sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5",
+          "archive_sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.bz2",
+          "sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e",
+          "archive_sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.gzip",
+          "sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034",
+          "archive_sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.lzma",
+          "sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f",
+          "archive_sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.xz",
+          "sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707",
+          "archive_sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl",
+          "sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735",
+          "archive_sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.bz2",
+          "sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a",
+          "archive_sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.gzip",
+          "sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66",
+          "archive_sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.lzma",
+          "sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290",
+          "archive_sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.xz",
+          "sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81",
+          "archive_sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl",
+          "sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b",
+          "archive_sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.bz2",
+          "sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b",
+          "archive_sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.gzip",
+          "sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1",
+          "archive_sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.lzma",
+          "sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f",
+          "archive_sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.xz",
+          "sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3",
+          "archive_sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl",
+          "sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96",
+          "archive_sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.bz2",
+          "sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606",
+          "archive_sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.gzip",
+          "sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9",
+          "archive_sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.lzma",
+          "sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5",
+          "archive_sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.xz",
+          "sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0",
+          "archive_sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_compressed_pickle_py36_np111.gz",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl",
+          "sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc",
+          "archive_sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.bz2",
+          "sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804",
+          "archive_sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.gzip",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.lzma",
+          "sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d",
+          "archive_sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.xz",
+          "sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6",
+          "archive_sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.8.4_compressed_pickle_py27_np17.gz",
+          "sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8",
+          "archive_sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np16.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np17.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py34_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py35_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl",
+          "sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73",
+          "archive_sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl",
+          "sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c",
+          "archive_sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl",
+          "sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25",
+          "archive_sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl",
+          "sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2",
+          "archive_sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl",
+          "sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea",
+          "archive_sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz",
+          "sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b",
+          "archive_sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_01.npy.z",
+          "sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1",
+          "archive_sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_02.npy.z",
+          "sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b",
+          "archive_sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_03.npy.z",
+          "sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa",
+          "archive_sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa"
+        },
+        {
+          "path": "joblib/test/test_backports.py",
+          "sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608",
+          "archive_sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608"
+        },
+        {
+          "path": "joblib/test/test_cloudpickle_wrapper.py",
+          "sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e",
+          "archive_sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e"
+        },
+        {
+          "path": "joblib/test/test_config.py",
+          "sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe",
+          "archive_sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe"
+        },
+        {
+          "path": "joblib/test/test_dask.py",
+          "sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6",
+          "archive_sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6"
+        },
+        {
+          "path": "joblib/test/test_disk.py",
+          "sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3",
+          "archive_sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3"
+        },
+        {
+          "path": "joblib/test/test_func_inspect.py",
+          "sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc",
+          "archive_sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc"
+        },
+        {
+          "path": "joblib/test/test_func_inspect_special_encoding.py",
+          "sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf",
+          "archive_sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf"
+        },
+        {
+          "path": "joblib/test/test_hashing.py",
+          "sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac",
+          "archive_sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac"
+        },
+        {
+          "path": "joblib/test/test_init.py",
+          "sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc",
+          "archive_sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc"
+        },
+        {
+          "path": "joblib/test/test_logger.py",
+          "sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732",
+          "archive_sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732"
+        },
+        {
+          "path": "joblib/test/test_memmapping.py",
+          "sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39",
+          "archive_sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39"
+        },
+        {
+          "path": "joblib/test/test_memory.py",
+          "sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c",
+          "archive_sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c"
+        },
+        {
+          "path": "joblib/test/test_memory_async.py",
+          "sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3",
+          "archive_sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3"
+        },
+        {
+          "path": "joblib/test/test_missing_multiprocessing.py",
+          "sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326",
+          "archive_sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326"
+        },
+        {
+          "path": "joblib/test/test_module.py",
+          "sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2",
+          "archive_sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle.py",
+          "sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca",
+          "archive_sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_compat.py",
+          "sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d",
+          "archive_sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_utils.py",
+          "sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936",
+          "archive_sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936"
+        },
+        {
+          "path": "joblib/test/test_parallel.py",
+          "sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f",
+          "archive_sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f"
+        },
+        {
+          "path": "joblib/test/test_store_backends.py",
+          "sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd",
+          "archive_sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd"
+        },
+        {
+          "path": "joblib/test/test_testing.py",
+          "sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf",
+          "archive_sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf"
+        },
+        {
+          "path": "joblib/test/test_utils.py",
+          "sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d",
+          "archive_sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d"
+        },
+        {
+          "path": "joblib/test/testutils.py",
+          "sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38",
+          "archive_sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38"
+        },
+        {
+          "path": "joblib/testing.py",
+          "sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7",
+          "archive_sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "archive_sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/METADATA",
+          "sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573",
+          "archive_sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/top_level.txt",
+          "sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5",
+          "archive_sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/WHEEL",
+          "sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0",
+          "archive_sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    },
+    {
+      "role": "joblib_compressed_1681/fixed",
+      "copy_location": "bundle/packages/joblib_compressed_1681/fixed",
+      "checked_archive_member_count": 142,
+      "matches": [
+        {
+          "path": "joblib/__init__.py",
+          "sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd",
+          "archive_sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd"
+        },
+        {
+          "path": "joblib/_cloudpickle_wrapper.py",
+          "sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7",
+          "archive_sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7"
+        },
+        {
+          "path": "joblib/_dask.py",
+          "sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975",
+          "archive_sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975"
+        },
+        {
+          "path": "joblib/_memmapping_reducer.py",
+          "sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7",
+          "archive_sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7"
+        },
+        {
+          "path": "joblib/_multiprocessing_helpers.py",
+          "sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715",
+          "archive_sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715"
+        },
+        {
+          "path": "joblib/_parallel_backends.py",
+          "sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be",
+          "archive_sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be"
+        },
+        {
+          "path": "joblib/_store_backends.py",
+          "sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d",
+          "archive_sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d"
+        },
+        {
+          "path": "joblib/_utils.py",
+          "sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08",
+          "archive_sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08"
+        },
+        {
+          "path": "joblib/backports.py",
+          "sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca",
+          "archive_sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca"
+        },
+        {
+          "path": "joblib/compressor.py",
+          "sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4",
+          "archive_sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4"
+        },
+        {
+          "path": "joblib/disk.py",
+          "sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b",
+          "archive_sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b"
+        },
+        {
+          "path": "joblib/executor.py",
+          "sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15",
+          "archive_sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15"
+        },
+        {
+          "path": "joblib/externals/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/__init__.py",
+          "sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74",
+          "archive_sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle.py",
+          "sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a",
+          "archive_sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle_fast.py",
+          "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+          "archive_sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357"
+        },
+        {
+          "path": "joblib/externals/loky/__init__.py",
+          "sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb",
+          "archive_sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb"
+        },
+        {
+          "path": "joblib/externals/loky/_base.py",
+          "sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a",
+          "archive_sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__init__.py",
+          "sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f",
+          "archive_sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_posix_reduction.py",
+          "sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be",
+          "archive_sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_win_reduction.py",
+          "sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b",
+          "archive_sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b"
+        },
+        {
+          "path": "joblib/externals/loky/backend/context.py",
+          "sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1",
+          "archive_sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1"
+        },
+        {
+          "path": "joblib/externals/loky/backend/fork_exec.py",
+          "sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19",
+          "archive_sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_posix.py",
+          "sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85",
+          "archive_sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_win32.py",
+          "sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a",
+          "archive_sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/process.py",
+          "sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d",
+          "archive_sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d"
+        },
+        {
+          "path": "joblib/externals/loky/backend/queues.py",
+          "sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85",
+          "archive_sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/reduction.py",
+          "sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd",
+          "archive_sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd"
+        },
+        {
+          "path": "joblib/externals/loky/backend/resource_tracker.py",
+          "sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de",
+          "archive_sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de"
+        },
+        {
+          "path": "joblib/externals/loky/backend/spawn.py",
+          "sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e",
+          "archive_sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e"
+        },
+        {
+          "path": "joblib/externals/loky/backend/synchronize.py",
+          "sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439",
+          "archive_sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439"
+        },
+        {
+          "path": "joblib/externals/loky/backend/utils.py",
+          "sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b",
+          "archive_sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b"
+        },
+        {
+          "path": "joblib/externals/loky/cloudpickle_wrapper.py",
+          "sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05",
+          "archive_sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05"
+        },
+        {
+          "path": "joblib/externals/loky/initializers.py",
+          "sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7",
+          "archive_sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7"
+        },
+        {
+          "path": "joblib/externals/loky/process_executor.py",
+          "sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511",
+          "archive_sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511"
+        },
+        {
+          "path": "joblib/externals/loky/reusable_executor.py",
+          "sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4",
+          "archive_sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4"
+        },
+        {
+          "path": "joblib/func_inspect.py",
+          "sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9",
+          "archive_sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9"
+        },
+        {
+          "path": "joblib/hashing.py",
+          "sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7",
+          "archive_sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7"
+        },
+        {
+          "path": "joblib/logger.py",
+          "sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074",
+          "archive_sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074"
+        },
+        {
+          "path": "joblib/memory.py",
+          "sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf",
+          "archive_sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf"
+        },
+        {
+          "path": "joblib/numpy_pickle.py",
+          "sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477",
+          "archive_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477"
+        },
+        {
+          "path": "joblib/numpy_pickle_compat.py",
+          "sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4",
+          "archive_sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4"
+        },
+        {
+          "path": "joblib/numpy_pickle_utils.py",
+          "sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032",
+          "archive_sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032"
+        },
+        {
+          "path": "joblib/parallel.py",
+          "sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163",
+          "archive_sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163"
+        },
+        {
+          "path": "joblib/pool.py",
+          "sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b",
+          "archive_sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b"
+        },
+        {
+          "path": "joblib/test/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/common.py",
+          "sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0",
+          "archive_sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0"
+        },
+        {
+          "path": "joblib/test/data/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/data/create_numpy_pickle.py",
+          "sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef",
+          "archive_sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np16.gz",
+          "sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f",
+          "archive_sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np17.gz",
+          "sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b",
+          "archive_sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py33_np18.gz",
+          "sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788",
+          "archive_sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py34_np19.gz",
+          "sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023",
+          "archive_sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py35_np19.gz",
+          "sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e",
+          "archive_sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl",
+          "sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5",
+          "archive_sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.bz2",
+          "sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e",
+          "archive_sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.gzip",
+          "sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034",
+          "archive_sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.lzma",
+          "sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f",
+          "archive_sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.xz",
+          "sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707",
+          "archive_sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl",
+          "sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735",
+          "archive_sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.bz2",
+          "sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a",
+          "archive_sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.gzip",
+          "sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66",
+          "archive_sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.lzma",
+          "sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290",
+          "archive_sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.xz",
+          "sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81",
+          "archive_sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl",
+          "sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b",
+          "archive_sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.bz2",
+          "sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b",
+          "archive_sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.gzip",
+          "sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1",
+          "archive_sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.lzma",
+          "sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f",
+          "archive_sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.xz",
+          "sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3",
+          "archive_sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl",
+          "sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96",
+          "archive_sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.bz2",
+          "sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606",
+          "archive_sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.gzip",
+          "sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9",
+          "archive_sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.lzma",
+          "sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5",
+          "archive_sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.xz",
+          "sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0",
+          "archive_sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_compressed_pickle_py36_np111.gz",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl",
+          "sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc",
+          "archive_sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.bz2",
+          "sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804",
+          "archive_sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.gzip",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.lzma",
+          "sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d",
+          "archive_sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.xz",
+          "sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6",
+          "archive_sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.8.4_compressed_pickle_py27_np17.gz",
+          "sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8",
+          "archive_sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np16.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np17.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py34_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py35_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl",
+          "sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73",
+          "archive_sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl",
+          "sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c",
+          "archive_sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl",
+          "sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25",
+          "archive_sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl",
+          "sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2",
+          "archive_sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl",
+          "sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea",
+          "archive_sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz",
+          "sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b",
+          "archive_sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_01.npy.z",
+          "sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1",
+          "archive_sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_02.npy.z",
+          "sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b",
+          "archive_sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_03.npy.z",
+          "sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa",
+          "archive_sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa"
+        },
+        {
+          "path": "joblib/test/test_backports.py",
+          "sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608",
+          "archive_sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608"
+        },
+        {
+          "path": "joblib/test/test_cloudpickle_wrapper.py",
+          "sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e",
+          "archive_sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e"
+        },
+        {
+          "path": "joblib/test/test_config.py",
+          "sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe",
+          "archive_sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe"
+        },
+        {
+          "path": "joblib/test/test_dask.py",
+          "sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6",
+          "archive_sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6"
+        },
+        {
+          "path": "joblib/test/test_disk.py",
+          "sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3",
+          "archive_sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3"
+        },
+        {
+          "path": "joblib/test/test_func_inspect.py",
+          "sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc",
+          "archive_sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc"
+        },
+        {
+          "path": "joblib/test/test_func_inspect_special_encoding.py",
+          "sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf",
+          "archive_sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf"
+        },
+        {
+          "path": "joblib/test/test_hashing.py",
+          "sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac",
+          "archive_sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac"
+        },
+        {
+          "path": "joblib/test/test_init.py",
+          "sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc",
+          "archive_sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc"
+        },
+        {
+          "path": "joblib/test/test_logger.py",
+          "sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732",
+          "archive_sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732"
+        },
+        {
+          "path": "joblib/test/test_memmapping.py",
+          "sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39",
+          "archive_sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39"
+        },
+        {
+          "path": "joblib/test/test_memory.py",
+          "sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c",
+          "archive_sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c"
+        },
+        {
+          "path": "joblib/test/test_memory_async.py",
+          "sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3",
+          "archive_sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3"
+        },
+        {
+          "path": "joblib/test/test_missing_multiprocessing.py",
+          "sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326",
+          "archive_sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326"
+        },
+        {
+          "path": "joblib/test/test_module.py",
+          "sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2",
+          "archive_sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle.py",
+          "sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca",
+          "archive_sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_compat.py",
+          "sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d",
+          "archive_sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_utils.py",
+          "sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936",
+          "archive_sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936"
+        },
+        {
+          "path": "joblib/test/test_parallel.py",
+          "sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f",
+          "archive_sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f"
+        },
+        {
+          "path": "joblib/test/test_store_backends.py",
+          "sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd",
+          "archive_sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd"
+        },
+        {
+          "path": "joblib/test/test_testing.py",
+          "sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf",
+          "archive_sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf"
+        },
+        {
+          "path": "joblib/test/test_utils.py",
+          "sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d",
+          "archive_sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d"
+        },
+        {
+          "path": "joblib/test/testutils.py",
+          "sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38",
+          "archive_sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38"
+        },
+        {
+          "path": "joblib/testing.py",
+          "sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7",
+          "archive_sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "archive_sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/METADATA",
+          "sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573",
+          "archive_sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/top_level.txt",
+          "sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5",
+          "archive_sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/WHEEL",
+          "sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0",
+          "archive_sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    },
+    {
+      "role": "original qualification/producer environment",
+      "copy_location": "private working-cache path omitted",
+      "checked_archive_member_count": 142,
+      "matches": [
+        {
+          "path": "joblib/__init__.py",
+          "sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd",
+          "archive_sha256": "9a8d462a214498c26a9224d9b79a5de5a53179ead8da83a7149cbd23e968dccd"
+        },
+        {
+          "path": "joblib/_cloudpickle_wrapper.py",
+          "sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7",
+          "archive_sha256": "1d2171222a378e21a7c150acb406baa1b6f1b38fb96910083030d4000f9c0cf7"
+        },
+        {
+          "path": "joblib/_dask.py",
+          "sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975",
+          "archive_sha256": "c54600ff65557342ef3dabd2885cbc33b4d973a285d2523171086783990f6975"
+        },
+        {
+          "path": "joblib/_memmapping_reducer.py",
+          "sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7",
+          "archive_sha256": "019e9da80e9f5e59b8f9e84109ff66d67ab8de350f2a66a7e3fdb086b381bad7"
+        },
+        {
+          "path": "joblib/_multiprocessing_helpers.py",
+          "sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715",
+          "archive_sha256": "7fcf957fff2295d99d83df7578bcfcc64e032491534bf6dcae18fa0a04389715"
+        },
+        {
+          "path": "joblib/_parallel_backends.py",
+          "sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be",
+          "archive_sha256": "7e0cbf16066229e36f4d6af8c0a6d25f8914371d980fa9bba793b527deb185be"
+        },
+        {
+          "path": "joblib/_store_backends.py",
+          "sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d",
+          "archive_sha256": "52b8aeca5b6ca5a324910e86a35c3cf1792ea5f1d543780f08944170a4bc9f2d"
+        },
+        {
+          "path": "joblib/_utils.py",
+          "sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08",
+          "archive_sha256": "27d91e6ad6f0317309d68662561105bb45202ff593be8562e086deae4d207c08"
+        },
+        {
+          "path": "joblib/backports.py",
+          "sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca",
+          "archive_sha256": "9884e91becae1000e29a0f3dfcb09d518f501fd6b9c501ec44d26777b06600ca"
+        },
+        {
+          "path": "joblib/compressor.py",
+          "sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4",
+          "archive_sha256": "1830d526678e06a7ed73ab4c903ba9af2a231e193f8c857c5ab3683224f14dd4"
+        },
+        {
+          "path": "joblib/disk.py",
+          "sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b",
+          "archive_sha256": "d49e6184cb023f92c35bae65b93b40ad4c6c300251acf07ac314967fa19e067b"
+        },
+        {
+          "path": "joblib/executor.py",
+          "sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15",
+          "archive_sha256": "7db56613f28acb08c97082a61cef64f0cdd591a32a65710fe185c1473fe9eb15"
+        },
+        {
+          "path": "joblib/externals/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/__init__.py",
+          "sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74",
+          "archive_sha256": "2332a6f4cce58df847f9098dfe8fb33f9422993c1bb6025e4636bc9eb1856a74"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle.py",
+          "sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a",
+          "archive_sha256": "70d10129d8c10e5cc571efedbd92fcf3dbafef50275d3cf55c1ce48ca012493a"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/cloudpickle_fast.py",
+          "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+          "archive_sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357"
+        },
+        {
+          "path": "joblib/externals/loky/__init__.py",
+          "sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb",
+          "archive_sha256": "68b84c71a073026dec99ebb0424c19a7a7acba92df81748ad5f0822177a2f8eb"
+        },
+        {
+          "path": "joblib/externals/loky/_base.py",
+          "sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a",
+          "archive_sha256": "2ec42712829628685d7aa1a131cebc02ac33e0cad39c4b36d0a0186c58941f3a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__init__.py",
+          "sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f",
+          "archive_sha256": "231f4a4e157509893bf8ce4e42727f03f26baeb589f89a306be1cc31e19ba75f"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_posix_reduction.py",
+          "sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be",
+          "archive_sha256": "c60092ac868b23493f308d1734e052a797b5a31d5637d89d82b59b916a4c52be"
+        },
+        {
+          "path": "joblib/externals/loky/backend/_win_reduction.py",
+          "sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b",
+          "archive_sha256": "5a6341d0d5edc89fe8fd6cdf3d410687974f85721e23a16412714d5d4c4edb0b"
+        },
+        {
+          "path": "joblib/externals/loky/backend/context.py",
+          "sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1",
+          "archive_sha256": "44f759bf390493b880d2bb5d0082d21cdce5eb0b07a66e970fa20bdf4a3000f1"
+        },
+        {
+          "path": "joblib/externals/loky/backend/fork_exec.py",
+          "sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19",
+          "archive_sha256": "e0367588b041fb6d6b960dd9e0a87d0d35598f7e493da585139af35996920f19"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_posix.py",
+          "sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85",
+          "archive_sha256": "41710e26a4da48e0a832a79293757b20885d3561771dd329a3f9250fb6ac0c85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/popen_loky_win32.py",
+          "sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a",
+          "archive_sha256": "6d8921440d30f2a51c605c287b3786c1c9e50a87047617965dce9267efeb571a"
+        },
+        {
+          "path": "joblib/externals/loky/backend/process.py",
+          "sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d",
+          "archive_sha256": "e3e63de04a08ae0e1bb6c8d33715011c01e147de8daee827ffbfcf18be9a539d"
+        },
+        {
+          "path": "joblib/externals/loky/backend/queues.py",
+          "sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85",
+          "archive_sha256": "7844c5bdb3c7c0a7dda18c8e80d402c8aabf6659be9731f77f0c2950887eff85"
+        },
+        {
+          "path": "joblib/externals/loky/backend/reduction.py",
+          "sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd",
+          "archive_sha256": "f3ad5dad001e7d74c98df1560045a66004b7d7977c940caa5b1d11832c45c3fd"
+        },
+        {
+          "path": "joblib/externals/loky/backend/resource_tracker.py",
+          "sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de",
+          "archive_sha256": "651334d937f49024a098075eb7e101153994fac5febf6f8139b8f17596ae61de"
+        },
+        {
+          "path": "joblib/externals/loky/backend/spawn.py",
+          "sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e",
+          "archive_sha256": "8bef426d5d0ee8de81567bd1622467c50e79c1aded981a5851110d2edeca626e"
+        },
+        {
+          "path": "joblib/externals/loky/backend/synchronize.py",
+          "sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439",
+          "archive_sha256": "9e50f00682d907dde6fe5e79a9f64cfd097ee0bf383d26229a842ab794f3a439"
+        },
+        {
+          "path": "joblib/externals/loky/backend/utils.py",
+          "sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b",
+          "archive_sha256": "455b31ab2113e1325d6e373db941c999f865436bf852af9f893ff96f9adf0b4b"
+        },
+        {
+          "path": "joblib/externals/loky/cloudpickle_wrapper.py",
+          "sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05",
+          "archive_sha256": "8d49df857237a8c5d3942793533a4005096fd1538b3092f557b7e9465ab62e05"
+        },
+        {
+          "path": "joblib/externals/loky/initializers.py",
+          "sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7",
+          "archive_sha256": "76d2ad46c254995c2226ed3267e221d26f0fbd6fccc66a2e1bb99284472c4ad7"
+        },
+        {
+          "path": "joblib/externals/loky/process_executor.py",
+          "sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511",
+          "archive_sha256": "40f48a7add0e0805abea0ff67c7c0fb78ca341a009b237de25814f88a852f511"
+        },
+        {
+          "path": "joblib/externals/loky/reusable_executor.py",
+          "sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4",
+          "archive_sha256": "77d92cad39c94bce78f4eab9d221b4f2ee69121b8c6e1437a126144aad2dc0d4"
+        },
+        {
+          "path": "joblib/func_inspect.py",
+          "sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9",
+          "archive_sha256": "6e19bf1a905edc7fc39b0e6b8a9ccfe416a503ac1babb645237484b8041b7de9"
+        },
+        {
+          "path": "joblib/hashing.py",
+          "sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7",
+          "archive_sha256": "dfc30cd33465d046e4efc223e9c31dad0f226d864fd29089c6edcbe18af0d6c7"
+        },
+        {
+          "path": "joblib/logger.py",
+          "sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074",
+          "archive_sha256": "1cad3aab035625822760821715820d00a0b18d8c62d21a17e3972434a9288074"
+        },
+        {
+          "path": "joblib/memory.py",
+          "sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf",
+          "archive_sha256": "1ddda05def94a9e6aaf0d6633bbcf0efef3415eb74c581177bc6d5efa8e0bdcf"
+        },
+        {
+          "path": "joblib/numpy_pickle.py",
+          "sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477",
+          "archive_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477"
+        },
+        {
+          "path": "joblib/numpy_pickle_compat.py",
+          "sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4",
+          "archive_sha256": "24e9527cc4f5b83233b4ec90dddcd8829e5f1959f33d55810aa5e374866c8cb4"
+        },
+        {
+          "path": "joblib/numpy_pickle_utils.py",
+          "sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032",
+          "archive_sha256": "8f71a5236e5016fa3e0d33e7eee469b6ef8db56d7aced1ccd03ba09724321032"
+        },
+        {
+          "path": "joblib/parallel.py",
+          "sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163",
+          "archive_sha256": "c99965aaa2c8f3de373ce2adf909a3339b30399340d396da9f6de4142c5f9163"
+        },
+        {
+          "path": "joblib/pool.py",
+          "sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b",
+          "archive_sha256": "253734d0f100c8f6b2a3c987764b666eeae9e4e06c9cdc70490238cf3bed298b"
+        },
+        {
+          "path": "joblib/test/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/common.py",
+          "sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0",
+          "archive_sha256": "be98e970980c6e6afc1f7b24737aacaff282faef999e1545464daf031989aaf0"
+        },
+        {
+          "path": "joblib/test/data/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "joblib/test/data/create_numpy_pickle.py",
+          "sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef",
+          "archive_sha256": "bd913b24dc9ef68d2061ac6b9f5e79e5abfa22079ed0a79769c01628d461b2ef"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np16.gz",
+          "sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f",
+          "archive_sha256": "418447e90d83486568ae3092a960b18d358230e24ac9ec38365daa99f415bd0f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py27_np17.gz",
+          "sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b",
+          "archive_sha256": "a1f4e8cccfca94f25ae744d1f050b0734f663263ba38ed0642181404b348b17b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py33_np18.gz",
+          "sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788",
+          "archive_sha256": "d9e215780f978ce693e48110ead23652e1c6de1c2189172232690198f7088788"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py34_np19.gz",
+          "sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023",
+          "archive_sha256": "1abdb3ff5b555831f51f7ff00951e66a49277fc2aa787293f18cf8775be65023"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_compressed_pickle_py35_np19.gz",
+          "sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e",
+          "archive_sha256": "a56c3fc6e0db3a4102aaed4a19fd4e154eecd956f30b6bf9179897844ed3c01e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl",
+          "sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5",
+          "archive_sha256": "89c4508e3dfbe01f801e4e739f1aded13f685941e89281c8050f0ca8aa3c97e5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.bz2",
+          "sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e",
+          "archive_sha256": "a18415232322531c918164ae04148ebc258acd3a00fa4529728416755e14a15e"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.gzip",
+          "sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034",
+          "archive_sha256": "269bf788670380a4eff8ee2766c52b7886d42bbaa7b7672e819f9532035e1034"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.lzma",
+          "sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f",
+          "archive_sha256": "734c2ed31f293efe01712b63ee913ad6b6697faf052c6fe9373419e1ef36cc7f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl.xz",
+          "sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707",
+          "archive_sha256": "efb146d450c6d061d06affb56f17384e7f64cbab9b516fcc6c4d3f8869b3e707"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl",
+          "sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735",
+          "archive_sha256": "e064c2eecfdc58d552844467da7bd56eca596098322bfd266a7e1312abdd5735"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.bz2",
+          "sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a",
+          "archive_sha256": "e86d6f6ecfe2626cf691827ac38a81d64ec3ebb527c5432eb344b8496781b45a"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.gzip",
+          "sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66",
+          "archive_sha256": "b6545459e252d415e6730b4b35234af4bd210c77a4165d3b0aa5b14d28629e66"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.lzma",
+          "sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290",
+          "archive_sha256": "0a8acfc277efdeb47986336d248d35fac10130e9e44b13654556964ecccca290"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl.xz",
+          "sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81",
+          "archive_sha256": "0e9a63dcc7df38ab0a1137a9b44b436b13cebfa300eb19dba4ae4bce50d0fa81"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl",
+          "sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b",
+          "archive_sha256": "1cbe456f5b91f5a3cb8e386838f276c30335432a351426686187761d5c34168b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.bz2",
+          "sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b",
+          "archive_sha256": "3f2af67ea667c1f5315ddcab06bfa447005863c1c0fd88bb7e04a0b8acb9a54b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.gzip",
+          "sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1",
+          "archive_sha256": "a2cf0d263408f4586795933e032f5d5ff528df98199e824281048856f7013df1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.lzma",
+          "sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f",
+          "archive_sha256": "43fd32e37a94eff1aa01a6c9f32dcf59584e8acbab9c202adc6cee0aed38579f"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl.xz",
+          "sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3",
+          "archive_sha256": "04d7e68907e978b56975f9309492b8849e42a60974beb795c9e93273977f3cd3"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl",
+          "sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96",
+          "archive_sha256": "97b9ef2e896104321d3c5ce73b3de504788c38f04f08c8b56d7a29d6d1520a96"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.bz2",
+          "sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606",
+          "archive_sha256": "a6a1a9b884be654e2e3fc9a48251ecf0c6920e255c3f2ee5dd71d8252a694606"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.gzip",
+          "sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9",
+          "archive_sha256": "61115713a2c46faa8aef6c8faa75dda90558f13b3cc4a512f4f5902a12f15af9"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.lzma",
+          "sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5",
+          "archive_sha256": "05fee0094793b938c291b708772658cfaf62adb957e12015404cf10a731084d5"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl.xz",
+          "sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0",
+          "archive_sha256": "02cf30d8b196c303662b2dd035d2a58caeb762ae3a82345ffd1274961e7f5aa0"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_compressed_pickle_py36_np111.gz",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl",
+          "sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc",
+          "archive_sha256": "5e6b0e171782d5fd5a61d1844dc946eb27c5f6b2e8075d436b23808433142ebc"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.bz2",
+          "sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804",
+          "archive_sha256": "bc8db259be742ca2ff36067277f5e4a03e6d78883ddee238da65a7c7d79ef804"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.gzip",
+          "sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de",
+          "archive_sha256": "d56ae75c3a83a0d10f60e657d50e56af6e3addbf2f555e9fc385a6e52e1b32de"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.lzma",
+          "sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d",
+          "archive_sha256": "216034265646daeaf9dc78135039759bbabbf5d715aba6f454eab7de02a8254d"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl.xz",
+          "sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6",
+          "archive_sha256": "dd787f35b3197418d8c7bca77c9dc5ca47b6f22cd24524b3ccd074cf90f893d6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.8.4_compressed_pickle_py27_np17.gz",
+          "sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8",
+          "archive_sha256": "4a9f994fb8baa63e689f681ba6db33bbb45aaf32693a61c9ebb50a3a608f40c8"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np16.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py27_np17.gz",
+          "sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c",
+          "archive_sha256": "34bb43aefa365c81f42af51402f84ea8c7a85c48c65b422e4e4fe8b2ee57883c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py34_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_compressed_pickle_py35_np19.gz",
+          "sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6",
+          "archive_sha256": "9f33bd8a21a41b729b05dac5deeb0e868f218a092b0e3fe5988094cf167217f6"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl",
+          "sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73",
+          "archive_sha256": "9da8a3764db121e29d21ade67c9c3426598e76d88deae44cd7238983af8cef73"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl",
+          "sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c",
+          "archive_sha256": "2f29d7f1d2ceca07f10df172c0e826ef08163a14b12c6ef3fa80ec53a5fcdc3c"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_03.npy",
+          "sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405",
+          "archive_sha256": "a0c45ae2a289841cbeba2443b7ebaa3b31c0a9e9dcc73294aca5729da0092405"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl",
+          "sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25",
+          "archive_sha256": "c3d4cbc690d3ce9e5323a714ea546f32c01ab1710285c420184f6cdf4b26fc25"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl",
+          "sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2",
+          "archive_sha256": "8a538100e6ae94b16f2ab0f7d92d4d7e7a622be2dfcc0f6b0b73b623bc513ae2"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl",
+          "sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea",
+          "archive_sha256": "59f0d522a29c333ce1d60480b2121fcc1a08a5d2dd650b86efdc987f991fa4ea"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_01.npy",
+          "sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809",
+          "archive_sha256": "0efbd7d9ce7eec3a6e0a0db41e795e0396cca3d6b037dad6c61b464843d28809"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_02.npy",
+          "sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1",
+          "archive_sha256": "1c1cf36cb781fbcc21b953bb0a0b45df092da0eae0e765882e5963ccd70105b1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_03.npy",
+          "sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7",
+          "archive_sha256": "8ede9a64a52b25d7db30950956c978ec0b3932b7d14acd5abc63216e64babde7"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_04.npy",
+          "sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05",
+          "archive_sha256": "3ecbe244294ba93e08479b16c1b9a9411e3569ff660ed0459dca1d241381df05"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz",
+          "sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b",
+          "archive_sha256": "f2361f589b31d2863627edcb96612280ae5c0a59c9496d89dab7de493670f93b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_01.npy.z",
+          "sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1",
+          "archive_sha256": "613f55bd3dec125dae5a53b2bc7d8293213d4a8938a1df4ede45ad81eb9452a1"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_02.npy.z",
+          "sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b",
+          "archive_sha256": "b710394432343d1ba253f50d298f291a9fb3420410f6f695bcc8bad2138f695b"
+        },
+        {
+          "path": "joblib/test/data/joblib_0.9.4.dev0_compressed_cache_size_pickle_py35_np19.gz_03.npy.z",
+          "sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa",
+          "archive_sha256": "777030202bd4d8ca5236387668f22c74978664b9438c03401754a86bab8cd0fa"
+        },
+        {
+          "path": "joblib/test/test_backports.py",
+          "sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608",
+          "archive_sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608"
+        },
+        {
+          "path": "joblib/test/test_cloudpickle_wrapper.py",
+          "sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e",
+          "archive_sha256": "f63c7786a3553bd1977551c2c6bf6637e1a22d1d172be3b977a60f69a1bc635e"
+        },
+        {
+          "path": "joblib/test/test_config.py",
+          "sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe",
+          "archive_sha256": "d59d74d803bb19bf19f261d86a19d9cb67f1040fbdfef63466d5b234d93571fe"
+        },
+        {
+          "path": "joblib/test/test_dask.py",
+          "sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6",
+          "archive_sha256": "5f6301118bf3e56430cc6651374e0936093fef98881c5f7ac80d45d6dd6c2bf6"
+        },
+        {
+          "path": "joblib/test/test_disk.py",
+          "sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3",
+          "archive_sha256": "d04696184365a2caeac2b499beab8f430de386a6b2d4a0f5351950e982c738e3"
+        },
+        {
+          "path": "joblib/test/test_func_inspect.py",
+          "sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc",
+          "archive_sha256": "46c39147e8f8f127d7acd0506dbe62f927667d4ef393632bd082af72ef26d6dc"
+        },
+        {
+          "path": "joblib/test/test_func_inspect_special_encoding.py",
+          "sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf",
+          "archive_sha256": "e7120b0e348efb1b6340030bbcc7950fe2fb206e195116f682f0624a168313bf"
+        },
+        {
+          "path": "joblib/test/test_hashing.py",
+          "sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac",
+          "archive_sha256": "c1979324c5fc0bcb9addf26c28023b30ab697ab51f65fd5f2edd1968e8ef48ac"
+        },
+        {
+          "path": "joblib/test/test_init.py",
+          "sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc",
+          "archive_sha256": "63acba1dca9afdcab043c4bca33510d7cd32fd17e445a8df67f7c3a7651781bc"
+        },
+        {
+          "path": "joblib/test/test_logger.py",
+          "sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732",
+          "archive_sha256": "140f6885335ca881558902bad3faf06793c418bdb3a18379a813ab0f016a5732"
+        },
+        {
+          "path": "joblib/test/test_memmapping.py",
+          "sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39",
+          "archive_sha256": "cf469a9db12cdf20832928725b721894b913011c1dbea5536f86de4cf4459a39"
+        },
+        {
+          "path": "joblib/test/test_memory.py",
+          "sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c",
+          "archive_sha256": "bd394d001910cf31ed454fdc5c6afd78e12fac7030ec410199e80c6d7fa0a99c"
+        },
+        {
+          "path": "joblib/test/test_memory_async.py",
+          "sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3",
+          "archive_sha256": "b54a0223d767811d80b898c000a5c4949222cf6426e002467572a7f5cf2559a3"
+        },
+        {
+          "path": "joblib/test/test_missing_multiprocessing.py",
+          "sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326",
+          "archive_sha256": "155a12f7592b159a202280c549cc99b893e969e8aae8ef9a2c0c6e834a824326"
+        },
+        {
+          "path": "joblib/test/test_module.py",
+          "sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2",
+          "archive_sha256": "200073cf926675e63f01d93fbd9d3befa24df7845aeed5b10c0ec33c335d24a2"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle.py",
+          "sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca",
+          "archive_sha256": "404c429c1486f845dd54a9e80e426334593a91b5f4143786791e74c2d2c78aca"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_compat.py",
+          "sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d",
+          "archive_sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d"
+        },
+        {
+          "path": "joblib/test/test_numpy_pickle_utils.py",
+          "sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936",
+          "archive_sha256": "881d957b54d861410ddc3422341e6a53193f4317885e5ec9a60bf84f09055936"
+        },
+        {
+          "path": "joblib/test/test_parallel.py",
+          "sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f",
+          "archive_sha256": "4f0bde1674511d238e3be29635c15cbb437946bca76096290634a81bd090cf5f"
+        },
+        {
+          "path": "joblib/test/test_store_backends.py",
+          "sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd",
+          "archive_sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd"
+        },
+        {
+          "path": "joblib/test/test_testing.py",
+          "sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf",
+          "archive_sha256": "8cbf8f879a735094973a0636aea6e3311a76cb78b70825a6122f8b6f0e16cebf"
+        },
+        {
+          "path": "joblib/test/test_utils.py",
+          "sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d",
+          "archive_sha256": "bab5eec90e34395e6c2cca0dc77d00ce1de11abfb226a88cb47449c016fc9b0d"
+        },
+        {
+          "path": "joblib/test/testutils.py",
+          "sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38",
+          "archive_sha256": "0356e6f80e58762b36899255236fabdda14a52e7d6478d8d67c62db6ba7c9b38"
+        },
+        {
+          "path": "joblib/testing.py",
+          "sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7",
+          "archive_sha256": "94af07381beba57713614092be913e33679d7bf753549cdc9b2c3ef41ac1b0e7"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+          "archive_sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/METADATA",
+          "sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573",
+          "archive_sha256": "13b85fdbc9bdc6bb5a4036049ac5f33f3d38f6135236a3acb7f7ea21ade84573"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/top_level.txt",
+          "sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5",
+          "archive_sha256": "3f42eca19e398012fb7242f896a42deed75bac70f8c6555885f7e684779e4ff5"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/WHEEL",
+          "sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0",
+          "archive_sha256": "18707a949c768ee6dad700e05c3365313c8cd777248c130a7fe3a7c2028e0ad0"
+        }
+      ],
+      "mismatches": [],
+      "compiled_checks": [],
+      "generated_or_installer_metadata_exceptions": [
+        {
+          "path": ".lock",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_cloudpickle_wrapper.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_memmapping_reducer.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_multiprocessing_helpers.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_parallel_backends.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_store_backends.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/_utils.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/backports.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/compressor.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/disk.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/executor.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/func_inspect.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/hashing.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/logger.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/memory.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/numpy_pickle.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/numpy_pickle_compat.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/numpy_pickle_utils.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/parallel.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/__pycache__/pool.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/cloudpickle/__pycache__/cloudpickle.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/_base.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/cloudpickle_wrapper.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/initializers.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/process_executor.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/__pycache__/reusable_executor.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/__init__.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/_win_reduction.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/context.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/process.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/queues.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/reduction.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/resource_tracker.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/spawn.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib/externals/loky/backend/__pycache__/utils.cpython-312.pyc",
+          "reason": "bytecode is generated by the local interpreter; not distributed archive source"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/INSTALLER",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/RECORD",
+          "reason": "installer record/provenance metadata may differ from archive"
+        },
+        {
+          "path": "joblib-1.5.0.dist-info/REQUESTED",
+          "reason": "installer record/provenance metadata may differ from archive"
+        }
+      ],
+      "unmapped_present_files": [],
+      "archive_members_absent_from_copy": [],
+      "absent_scope": "Producer bundle copies intentionally omit native binaries and caches; source-only copies are not self-contained historical installations. Original package environments are audited separately."
+    }
+  ]
+}

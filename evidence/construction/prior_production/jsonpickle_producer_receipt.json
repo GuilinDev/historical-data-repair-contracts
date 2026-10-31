@@ -1,0 +1,20 @@
+{
+  "command": [
+    "<project>\\.venv\\Scripts\\python.exe",
+    "-I",
+    "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\harness\\observe.py",
+    "--candidate",
+    "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\producers\\jsonpickle\\3.3.0",
+    "--support",
+    "<project>\\results\\transfer_tasks\\20261030T203748\\bundle\\harness\\support",
+    "--runtime",
+    "<project>\\.cache\\compat_packages\\json_shared",
+    "--family",
+    "jsonpickle",
+    "--produce",
+    "<project>\\results\\transfer_tasks\\20261030T203748\\jsonpickle_producer_request.json"
+  ],
+  "exit": 0,
+  "stdout": "{\"produced\": 6, \"python\": \"3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]\"}\n",
+  "stderr": ""
+}

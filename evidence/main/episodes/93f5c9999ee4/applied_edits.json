@@ -1,0 +1,12 @@
+[
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):",
+    "old": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):",
+    "path": "pandas/compat/pickle_compat.py"
+  },
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+    "old": "        elif args and issubclass(args[0], PeriodArray):",
+    "path": "pandas/compat/pickle_compat.py"
+  }
+]

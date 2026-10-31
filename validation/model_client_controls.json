@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "actual_network_requests": 0,
+  "checks": [
+    "budget_rejects_before_network",
+    "reported_cost_replaces_reservation",
+    "credentials_absent_from_logs",
+    "existing_ledger_not_reset",
+    "failed_call_reservation_retained"
+  ]
+}

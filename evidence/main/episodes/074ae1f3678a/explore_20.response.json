@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793398230-YafJnLDqrit7tgqapo9X",
+  "object": "chat.completion",
+  "created": 1793398230,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `read_mmap` in `joblib/numpy_pickle.py` called `_ensure_native_byte_order` on the resulting memory-mapped array. When a byte-order mismatch occurred (e.g., loading a big-endian array on a little-endian system), `_ensure_native_byte_order` would call `byteswap().view(...)`, which creates a copy of the array. This copy broke the memory-mapping contract: mutations to the array were no longer written back to the underlying file, and the array was no longer a true `memmap` object.\n\nBy removing the call to `_ensure_native_byte_order` in `read_mmap`, the array is returned with its original `dtype` (including the byte-order information). NumPy's `memmap` and `ndarray` handle non-native byte orders transparently, ensuring that numeric values are correct and that mutations are written back to the file in the correct byte order.\n\n```python\n# In joblib/numpy_pickle.py, within read_mmap:\n# Changed:\n# return _ensure_native_byte_order(marray)\n# To:\n# return marray\n```\n\nThis fix preserves the correct values and shapes, ensures that mutations in `mmap_mode='r+'` reach the file, and maintains compatibility with ordinary loads and round-trips.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30398,
+    "completion_tokens": 302,
+    "total_tokens": 30700,
+    "cost": 0.00314248,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 19072,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00314248,
+      "upstream_inference_prompt_cost": 0.0030398,
+      "upstream_inference_completions_cost": 0.00010268
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

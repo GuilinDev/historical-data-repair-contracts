@@ -1,0 +1,54 @@
+[
+  {
+    "round": 0,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_0f0ca27b685f4524af3f7c3322bd4fe9",
+      "function": {
+        "name": "list_sources",
+        "arguments": "{\"query\":\"packaging/version.py\"}"
+      }
+    },
+    "result": {
+      "matching_files": 1,
+      "paths": [
+        "packaging/version.py"
+      ],
+      "truncated": false
+    },
+    "shown_result": {
+      "matching_files": 1,
+      "paths": [
+        "packaging/version.py"
+      ],
+      "truncated": false
+    },
+    "truncated": false,
+    "wall_seconds": 0.002494600019417703
+  },
+  {
+    "round": 1,
+    "call": {
+      "type": "function",
+      "index": 0,
+      "id": "call_fca7aad4f97a447993e1ecd4f4872d9c",
+      "function": {
+        "name": "list_sources",
+        "arguments": "{\"query\":\"packaging/_structures.py\"}"
+      }
+    },
+    "result": {
+      "matching_files": 0,
+      "paths": [],
+      "truncated": false
+    },
+    "shown_result": {
+      "matching_files": 0,
+      "paths": [],
+      "truncated": false
+    },
+    "truncated": false,
+    "wall_seconds": 0.0025403000181540847
+  }
+]

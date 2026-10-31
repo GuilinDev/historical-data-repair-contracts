@@ -1,0 +1,90 @@
+{
+  "checked_utc": "2026-10-30T21:50:31Z",
+  "scope": "Actual pure normalize_numeric/judge functions AST-extracted without importing the model runner; synthetic observation-only perturbations; immutable artifacts and raw oracle untouched. This is judge validation, not a candidate repair result.",
+  "judge_source_sha256": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+  "checks": [
+    {
+      "name": "Unmodified fixed observations",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": true,
+      "actual_passed": true,
+      "all_records_passed": 84,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Legacy pd/in exact int8 restoration accepted",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": true,
+      "actual_passed": true,
+      "all_records_passed": 84,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Legacy pd/in narrower-than-gold int16 widening accepted",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": true,
+      "actual_passed": true,
+      "all_records_passed": 84,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Legacy below-original width rejected",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": false,
+      "actual_passed": false,
+      "all_records_passed": 83,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Legacy kind change rejected",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": false,
+      "actual_passed": false,
+      "all_records_passed": 83,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Legacy numeric corruption rejected",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": false,
+      "actual_passed": false,
+      "all_records_passed": 83,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Explicit old pd/i16 widened incorrectly rejected",
+      "record_id": "417593ac3e9c_r00",
+      "expected_passed": false,
+      "actual_passed": false,
+      "all_records_passed": 83,
+      "n": 84,
+      "check_passed": true
+    },
+    {
+      "name": "Current new-writer int8 widening rejected",
+      "record_id": "bd22465b6441_current_roundtrip",
+      "expected_passed": false,
+      "actual_passed": false,
+      "all_records_passed": 83,
+      "n": 84,
+      "check_passed": true
+    }
+  ],
+  "raw_oracle_sha256_unchanged_vs_prior_hold": {
+    "oracle\\attrs_slot_state_1085.json": true,
+    "oracle\\joblib_compressed_1681.json": true,
+    "oracle\\joblib_endian_1561.json": true,
+    "oracle\\jsonpickle_csv_562.json": true,
+    "oracle\\jsonpickle_dtype_634.json": true,
+    "oracle\\packaging_version_1163.json": true,
+    "oracle\\pandas_pickle_56308.json": true,
+    "oracle\\sqlalchemy_mutable_8133.json": true
+  },
+  "passed": true
+}

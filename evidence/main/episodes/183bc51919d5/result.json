@@ -1,0 +1,38 @@
+{
+  "episode": "183bc51919d5",
+  "family": "joblib_compressed_1681",
+  "project": "joblib",
+  "model": "google/gemma-4-26b-a4b-it",
+  "provider": "primeintellect/bf16",
+  "replicate": 1,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": false,
+  "protocol_complete": true,
+  "answer": {
+    "report": "I have attempted to repair the defect where `mmap_mode` was incorrectly applied to compressed files, leading to `ValueError: mmap length is greater than file size`.\n\n### Changes Made\nI modified `joblib/numpy_pickle.py` in the `NumpyArrayWrapper.read` method. The logic was updated to ensure that `read_mmap` is only called if the file is not compressed (i.e., `unpickler.compressor == 'not-compressed'`). If the file is compressed, the reader now correctly falls back to `read_array`, which performs a standard in-memory read, as documented.\n\n### Checks Performed\n- **Legacy Suite**: I ran the `legacy` test suite. \n    - Initial run (pre-patch): 4 failures due to `ValueError: mmap length is greater than file size` on compressed historical artifacts.\n    - Post-patch run: The failures persisted with the same error message.\n\n### Unresolved Work\nThe patch did not resolve the reported issue in the `legacy` suite. Upon inspection, the `unpickler.compressor` attribute might not be available or correctly populated in the `NumpyUnpickler` instance used during the `legacy` test execution, or the `compressor` detection logic in `_read_fileobject` (which returns `'not-compressed'`) is not being reflected in the `unpickler` object passed to `NumpyArrayWrapper.read`. \n\nSpecifically, `unpickler.compressor` is not explicitly defined in the `Unpickler` class in the provided source snippets, and its availability depends on how `NumpyUnpickler` (a subclass of `pickle._Unpickler`) is implemented in `joblib/numpy_pickle_utils.py`. Since I cannot see the full implementation of `NumpyUnpickler`, I cannot guarantee that `unpickler.compressor` is the correct way to check the compression state.\n\nThe error `ValueError: mmap length is greater than file size` indicates that `read_mmap` is still being called on compressed files, which attempt to memory-map the compressed stream as if it were raw data."
+  },
+  "tool_actions": 24,
+  "applied_edit_count": 2,
+  "all_checks_passed": false,
+  "groups": {
+    "historical": {
+      "passed": 1,
+      "n": 7
+    },
+    "fresh_api": {
+      "passed": 7,
+      "n": 7
+    },
+    "current_roundtrip": {
+      "passed": 1,
+      "n": 7
+    }
+  },
+  "passed": 9,
+  "n": 21,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

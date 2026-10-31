@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793398563-cpgpYhZ6dhhUnjy6sUSW",
+  "object": "chat.completion",
+  "created": 1793398563,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the defect where `joblib.load` with `mmap_mode='r'` would attempt to memory-map arrays from compressed files, leading to a `ValueError: mmap length is greater than file size` (since the requested mmap size is the uncompressed size, but the file on disk is compressed).\n\n### Changes\nIn `joblib/numpy_pickle.py`, I modified the `NumpyArrayWrapper.read` method to ensure that `read_mmap` is only called if the file is not compressed. I implemented this by checking if the `unpickler.file_handle` is the same object as the raw file (or has the same name), as compressed files are wrapped in decompressor objects (like `BinaryZlibFile`) which do not support memory mapping.\n\nSpecifically, I changed:\n```python\nif unpickler.mmap_mode is not None and self.allow_mmap:\n```\nto:\n```python\nif unpickler.mmap_mode is not None and self.allow_mmap and getattr(unpickler.file_handle, 'name', None) == unpickler.filename:\n```\n*(Note: In the final applied edit, I used a check that avoids `AttributeError` on the file handle while ensuring that we only mmap when the file handle is the actual file on disk, not a decompressor wrapper).*\n\n### Validation\nI ran the `legacy` check suite, which includes:\n- **Historical artifacts (1.2.0):** Verified that compressed arrays (zlib, gzip) are now correctly loaded as ordinary arrays when `mmap_mode='r'` is requested, instead of crashing.\n- **Fresh API / Roundtrip:** Verified that current saving and loading behavior remains preserved.\n- **Uncompressed mmap:** Verified that memory mapping still works for uncompressed files.\n\n### Unresolved Work\nNo further issues were identified within the scope of this specific reader defect. The behavior now aligns with the documentation: `mmap_mode` is ignored for compressed files, and the arrays are loaded into memory.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 35616,
+    "completion_tokens": 450,
+    "total_tokens": 36066,
+    "cost": 0.0037146,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0037146,
+      "upstream_inference_prompt_cost": 0.0035616,
+      "upstream_inference_completions_cost": 0.000153
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

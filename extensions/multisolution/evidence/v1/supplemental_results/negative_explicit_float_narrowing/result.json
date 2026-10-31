@@ -1,0 +1,145 @@
+{
+  "status": "observed",
+  "records": [
+    {
+      "case": "historical_lone_collision",
+      "initial": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float64",
+            "kind": "f",
+            "itemsize": 8,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "restart": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float32",
+            "kind": "f",
+            "itemsize": 4,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "initial_passed": true,
+      "restart_passed": false,
+      "passed": false
+    },
+    {
+      "case": "new_float32",
+      "initial": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float32",
+            "kind": "f",
+            "itemsize": 4,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "restart": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float32",
+            "kind": "f",
+            "itemsize": 4,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "initial_passed": true,
+      "restart_passed": true,
+      "passed": true
+    },
+    {
+      "case": "new_float64",
+      "initial": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float32",
+            "kind": "f",
+            "itemsize": 4,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "restart": {
+        "columns": [
+          "x"
+        ],
+        "index": [
+          0,
+          1
+        ],
+        "columns_data": [
+          {
+            "dtype": "float32",
+            "kind": "f",
+            "itemsize": 4,
+            "values": [
+              1.125,
+              -3.25
+            ]
+          }
+        ]
+      },
+      "initial_passed": false,
+      "restart_passed": false,
+      "passed": false
+    }
+  ],
+  "passed": 1,
+  "n": 3
+}

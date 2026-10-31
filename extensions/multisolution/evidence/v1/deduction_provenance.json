@@ -1,0 +1,17 @@
+{
+  "source_hashes": {
+    "results/resource/20261030T212309/bundle/packages/jsonpickle_dtype_634/base/jsonpickle/tags_pd.py": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+    "results/resource/20261030T212309/bundle/packages/jsonpickle_dtype_634/base/jsonpickle/ext/pandas.py": "b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb",
+    "results/resource/20261030T212309/bundle/packages/pandas_pickle_56308/fixed/pandas/core/arrays/floating.py": "69f48895a586748622617a4873c975144d5ccf5bd0818346ffef1af6e61d829a",
+    "results/resource/20261030T212309/bundle/packages/pandas_pickle_56308/fixed/pandas/core/arrays/integer.py": "4c30ffe8ccdaadd195995bff97b545a8718d1be1fe3c8a01e9d30a0a3d8e1951"
+  },
+  "premises": [
+    "jsonpickle4.1.1 TYPE_MAP is a dictionary indexed by dtype name. Each dtype_name queried by PandasDfHandler.flatten has one tag for that producer process; all columns use that same TYPE_MAP.",
+    "get_smallest_unique_substrings keeps used_substrings, so distinct numeric dtype names receive distinct tags. Explicit numeric suffixes identify their widths; the first width receives a bare prefix.",
+    "The declared pandas2.1.4 ExtensionDtype numeric classes define signed8/16/32/64, unsigned8/16/32/64 and floating32/64. Candidate derives these from pd_dtypes, not fixture columns or values.",
+    "If a genuine document shows tags for every width except one, a distinct bare numeric tag cannot refer to any already-tagged dtype; the remaining dtype is forced. With incomplete evidence, retain the upstream widest-type fallback.",
+    "A lone pd/f collision document has insufficient global evidence. Both positive policies must read it as float64, retaining values; current new writes retain explicit original widths."
+  ],
+  "scope": "Documents from the task's genuine4.1.1 producer with its declared compatible pandas runtime. Does not assert validity for hand-edited mixed-producer tag dictionaries or arbitrary future dtype plugins.",
+  "not_a_new_discovery_claim": "Document-level constraints validate an alternate repair policy and set-valued acceptance; they do not establish prevalence or a novel upgrade-testing method."
+}

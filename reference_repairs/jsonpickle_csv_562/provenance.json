@@ -1,0 +1,33 @@
+{
+  "task": "jsonpickle_csv_562",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "4.1.0",
+  "fixed": "4.1.1",
+  "source_urls": [
+    "https://github.com/jsonpickle/jsonpickle/pull/562"
+  ],
+  "upstream_primary_files": [],
+  "adaptation": [
+    "4.1.1 pandas extension allowed-file transplantation. The release delta is the legacy CSV restore fallback/warning; unchanged base helpers and imports remain in use."
+  ],
+  "whole_allowed_files_transplanted": [
+    "jsonpickle/ext/pandas.py"
+  ],
+  "allowed_paths": [
+    "jsonpickle/ext/pandas.py"
+  ],
+  "changed_paths": [
+    "jsonpickle/ext/pandas.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "jsonpickle/ext/pandas.py",
+      "base_sha256": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1",
+      "candidate_sha256": "b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb",
+      "fixed_sha256": "b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb"
+    }
+  ],
+  "unchanged_base_files": 23,
+  "reference_patch_sha256": "54e3b099d81757daa20236c5c75365f6097fac4d00b8ec63f221ee08f5cb60d2"
+}

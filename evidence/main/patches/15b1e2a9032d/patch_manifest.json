@@ -1,0 +1,14 @@
+{
+  "episode": "15b1e2a9032d",
+  "family": "attrs_slot_state_1085",
+  "project": "attrs",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 1,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": true,
+  "changed_paths": [
+    "attr/_make.py"
+  ],
+  "construction": "Overlay these exact bytes onto the declared affected base"
+}

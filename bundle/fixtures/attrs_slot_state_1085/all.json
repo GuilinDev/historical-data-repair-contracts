@@ -1,0 +1,425 @@
+[
+  {
+    "id": "119dbe50fb44",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/119dbe50fb44.pickle",
+    "visible": true,
+    "sha256": "489bd5e9a99f64d656d69ed79f335bc8d3a1d3d58b1d567d5aa1d2fbd93ded47"
+  },
+  {
+    "id": "8fc411ebbc46",
+    "group": "fresh_api",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "d95a4a3e4b5c",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "a28ec88ba6b0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/a28ec88ba6b0.pickle",
+    "visible": false,
+    "sha256": "ce5b242c311e920f748bb50ead7cc56af5620612615b46ace4cb039fede97efd"
+  },
+  {
+    "id": "18f81a65efe7",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/18f81a65efe7.pickle",
+    "visible": false,
+    "sha256": "dfef2a6cad0d176afa955215b1bd3afd718d0e8b03ae01dcca54f3104a5af643"
+  },
+  {
+    "id": "9e4b9cff6901",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/9e4b9cff6901.pickle",
+    "visible": false,
+    "sha256": "fdf71e1fb3dbdd6bff07059ab6d82b7f10b87c19c14598afdfaa560d98a702eb"
+  },
+  {
+    "id": "f3beb26b65f0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/f3beb26b65f0.pickle",
+    "visible": false,
+    "sha256": "6c3357252c310ddea5e1203fc9f2ec4e95df6001af5ca1886e57dfcfb94be856"
+  },
+  {
+    "id": "811b21ac8ecf",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/811b21ac8ecf.pickle",
+    "visible": false,
+    "sha256": "bd80cf429dac0af98f8de31a275dc17f13650083ac3dd8ad33655f30c36f4b04"
+  },
+  {
+    "id": "84ce7bf95ba0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/84ce7bf95ba0.pickle",
+    "visible": false,
+    "sha256": "65d1a02374aea61550a7f99195cf5f110ad41324471fb0c743636f1bc1cbad7c"
+  },
+  {
+    "id": "42076541001c",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/42076541001c.pickle",
+    "visible": false,
+    "sha256": "5cd45bb9000edaed1facf7adc70e41e1ac2695173af4339bca361ab8e4ea1093"
+  },
+  {
+    "id": "ebb386e6b020",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "/fixtures/attrs_slot_state_1085/artifacts/ebb386e6b020.pickle",
+    "visible": false,
+    "sha256": "77522630038f44435bc49df93b0d07a87610c2446bbe240b448b123076c92adc"
+  },
+  {
+    "id": "d79cc2cbcc5a",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "6cc74c4a1853",
+    "group": "fresh_api",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "be0abb271fc4",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "3c79d6d255ff",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "0c92316fd3af",
+    "group": "fresh_api",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "1c7bdd6084ab",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "f925461a24b6",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "8bcfb43e3615",
+    "group": "fresh_api",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "e583c0c0fcd9",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "3796729e5886",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "cf36bc39c8d9",
+    "group": "fresh_api",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "be8be05c26a3",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "8aa469123b3e",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "8ec68dc8dcc6",
+    "group": "fresh_api",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "cd9d9c93394b",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "21d3f65bf5e1",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "6b39e37afd3b",
+    "group": "fresh_api",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "0728b5db7407",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "8d16130046f4",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "1d35a70d97a9",
+    "group": "fresh_api",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "f0cc4e0ff4b1",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "40a2049c6d55",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "f6b04541391e",
+    "group": "fresh_api",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "9b0445a9dcf2",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "9d11d134b6e5",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "visible": false
+  }
+]

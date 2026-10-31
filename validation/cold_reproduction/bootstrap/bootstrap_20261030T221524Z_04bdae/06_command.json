@@ -1,0 +1,32 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--cpus",
+    "1",
+    "--memory",
+    "512m",
+    "--read-only",
+    "--user",
+    "65534:65534",
+    "-e",
+    "OPENBLAS_NUM_THREADS=1",
+    "-v",
+    "<release>/.local/bootstrap_20261030T221524Z_04bdae/runtime:/runtime:ro",
+    "-v",
+    "<release>/.local/bootstrap_20261030T221524Z_04bdae/test_deps:/tests:ro",
+    "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+    "python",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,json,platform;sys.path[:0]=['/runtime','/tests'];import numpy,pandas,pytest;print(json.dumps({'python':platform.python_version(),'architecture':platform.machine(),'numpy':numpy.__version__,'pandas':pandas.__version__,'pytest':pytest.__version__}))"
+  ],
+  "exit": 0,
+  "stdout": "{\"python\": \"3.10.20\", \"architecture\": \"aarch64\", \"numpy\": \"1.26.4\", \"pandas\": \"2.1.4\", \"pytest\": \"8.4.2\"}\n",
+  "stderr": "",
+  "wall_seconds": 1.0692868498153985
+}

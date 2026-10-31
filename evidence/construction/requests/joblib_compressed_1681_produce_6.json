@@ -1,0 +1,27 @@
+[
+  {
+    "id": "88a546d80bb4",
+    "group": "historical",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\joblib_compressed_1681\\artifacts\\88a546d80bb4.pickle"
+  }
+]

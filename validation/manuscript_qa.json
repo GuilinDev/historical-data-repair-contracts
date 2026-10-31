@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "pages": 6,
+  "structured_words_including_references_tables": 2739,
+  "pdf_extracted_whitespace_words": 2748,
+  "visual_inspection": "All six latest rendered pages inspected; no clipping, overlap, missing glyphs or split tables; references kept together.",
+  "pdf_sha256": "2ee0e018186c082e6f5366355472769b5e3eabb3eb13b549bf555a6cdf3f5dad",
+  "anonymous_review_copy": true,
+  "real_author_metadata_pending": true
+}

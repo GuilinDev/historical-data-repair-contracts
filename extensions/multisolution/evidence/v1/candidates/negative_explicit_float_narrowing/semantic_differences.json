@@ -1,0 +1,4196 @@
+[
+  {
+    "id": "bd22465b6441_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r00",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r01",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r02",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r03",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r04",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r05",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r06",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r07",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r08",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r09",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r10",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i16",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i32",
+      "u8",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u16",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i64",
+      "u64",
+      "f64"
+    ],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_r11",
+    "group": "historical",
+    "ambiguous_columns": [
+      "i8",
+      "u32",
+      "f32"
+    ],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f32/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd22465b6441_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f28de1e4a98b_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecf9469146ac_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255550.5
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.625,
+          -2199023255551.0
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "417593ac3e9c_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255551.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.375
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627776.875,
+          -2199023255550.875
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2241b70be5be_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255551.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.25
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.125,
+          -2199023255550.75
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_fresh_api",
+    "group": "fresh_api",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4780826eda6a_current_roundtrip",
+    "group": "current_roundtrip",
+    "ambiguous_columns": [],
+    "differences": [
+      {
+        "path": "/semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255551.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      },
+      {
+        "path": "/restart_semantics/continued/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.125
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255551.5
+        ]
+      },
+      {
+        "path": "/restart_semantics/initial/dtypes/f64/itemsize",
+        "exact_gold": 8,
+        "actual": 4
+      },
+      {
+        "path": "/restart_semantics/initial/values/f64",
+        "exact_gold": [
+          1099511627777.375,
+          -2199023255550.625
+        ],
+        "actual": [
+          1099511627776.0,
+          -2199023255552.0
+        ]
+      }
+    ]
+  }
+]

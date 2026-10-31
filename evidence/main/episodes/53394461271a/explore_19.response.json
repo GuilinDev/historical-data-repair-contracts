@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793398103-U2up37tAHO4W7Qaaeuq0",
+  "object": "chat.completion",
+  "created": 1793398103,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `joblib` version 1.4.2 introduced a call to `_ensure_native_byte_order()` when loading memory-mapped arrays. For arrays with a non-native byte order (e.g., big-endian arrays on a little-endian system), `_ensure_native_byte_order()` calls `byteswap()`, which creates a copy of the array. This violates the requirement for `mmap_mode='r+'` where mutations must reach the underlying file, as the copy is detached from the memory map.\n\nIn `joblib` 1.2.0, `read_mmap` simply returned the memory-mapped array without attempting to ensure native byte order. This preserved the memory map and correctly interpreted the values using the stored `dtype` (e.g., `>i4`).\n\nThe fix restores this behavior for memory-mapped arrays by bypassing `_ensure_native_byte_order()` when `mmap_mode` is active and the array is allowed to be memory-mapped. This ensures that the array remains a `memmap` object, preserving the link to the file and maintaining correct numeric values via the original `dtype`.\n\n```python\n# joblib/numpy_pickle.py\n\n# ... (imports)\nfrom .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch\n\n# ... (inside NumpyArrayWrapper.read_mmap)\n        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped, we cannot use byteswap() because it returns\n        # a copy. Instead, we return the array as is, which preserves the \n        # memory map and uses the stored dtype for correct value interpretation.\n        if (unpickler.mmap_mode is not None and self.allow_mmap and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            return marray\n        return _ensure_native_byte_order(marray)\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29542,
+    "completion_tokens": 444,
+    "total_tokens": 29986,
+    "cost": 0.00310516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 24032,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00310516,
+      "upstream_inference_prompt_cost": 0.0029542,
+      "upstream_inference_completions_cost": 0.00015096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

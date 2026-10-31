@@ -1,0 +1,30 @@
+{
+  "cold_export_archive_sha256": "c8256e5dac704f753e0491afbab250ea0850acaceae6e94f8c79b012fd135d87",
+  "same_implementation_as_cold_run": {
+    "compat.py": true,
+    "engine/common.py": true,
+    "engine/dataset.py": true,
+    "engine/frozen_tools.py": true,
+    "engine/frozen_judge.py": true,
+    "plan.json": true,
+    "tasks.json": true,
+    "dependencies.json": true,
+    "runtime-requirements.lock": true,
+    "test-requirements.lock": true,
+    "data_integrity.json": true
+  },
+  "sha256": {
+    "compat.py": "3248fef78dfa1cf31b2a58daef7a34e66adcada9e0fc2bcce7086d863b058f85",
+    "engine/common.py": "9c65c00891f227cbadf284696bff4b5c8c36ff3cb7500f889d4d95122f1f7062",
+    "engine/dataset.py": "f92f332231065e5e14ce33ac31b7bcbde2a49ca4069a31f961c6476fd332c9e3",
+    "engine/frozen_tools.py": "0f6d7426012c02bc0f2395704b0a9bb9f2a364ee4e191afec8b2ee6cf01168ed",
+    "engine/frozen_judge.py": "258cd5b8a70e9aab6721d89def8fd68fcc754cf50eeb019fbb54fd9efa27399b",
+    "plan.json": "5632286de021480fd9d9b093013bf08a28ca184d51a81f047b17c78925b61b7d",
+    "tasks.json": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+    "dependencies.json": "9eafcb5af0e2cae55866494007deb8d78f2188a04cc356e9bd0898ffda31f4f6",
+    "runtime-requirements.lock": "8c1954aa1d408381d5912c4ca045bdbe3b3ee8bdcadf3c77e992ca7a95f6b41e",
+    "test-requirements.lock": "2a4614d1f58996131695f2b4389fca71d05787a550028e1edadcb7e55b0e98d1",
+    "data_integrity.json": "a526c5ea6327cad940e50dfed02038afd46b108f2886adfcda2c8975d8783b3e"
+  },
+  "scope": "Data integrity and free CPU CLI only; model_runner/model client were not called during cold reproduction."
+}

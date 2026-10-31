@@ -1,0 +1,13 @@
+{
+  "command": [
+    "docker",
+    "pull",
+    "--platform",
+    "linux/arm64",
+    "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39"
+  ],
+  "exit": 0,
+  "stdout": "docker.io/library/python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39: Pulling from library/python\nDigest: sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39\nStatus: Image is up to date for python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39\ndocker.io/library/python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39\n",
+  "stderr": "",
+  "wall_seconds": 0.1472908710129559
+}

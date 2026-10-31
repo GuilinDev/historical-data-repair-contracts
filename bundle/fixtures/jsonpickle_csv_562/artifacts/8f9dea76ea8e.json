@@ -1,0 +1,1 @@
+{"py/object": "pandas.core.frame.DataFrame", "values": "title\r\n\"a,b\"\r\n\"line\nbreak\"\r\n\"a\"\"quote\"\r\n", "txt": true, "meta": {"dtypes": {"title": "object"}, "index": "{\"py/object\": \"pandas.core.indexes.range.RangeIndex\", \"values\": \"[0, 1, 2]\", \"txt\": true, \"meta\": {\"dtype\": \"int64\", \"name\": null}}", "column_level_names": [null], "header": [0]}}

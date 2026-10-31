@@ -1,0 +1,2 @@
+/harness/observe.py:87: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value '-2199023255551.5' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+  obj.loc[0,"i64"]+=17;obj.loc[1,"f64"]+=0.5;continued=obj

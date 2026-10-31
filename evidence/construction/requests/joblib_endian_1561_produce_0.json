@@ -1,0 +1,25 @@
+[
+  {
+    "id": "6ab5bcd8a29e",
+    "group": "historical",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": ">i4",
+      "compress": 0,
+      "delta": 91211
+    },
+    "visible": true,
+    "producer": "1.2.0",
+    "artifact": "<project>\\results\\resource\\20261030T212309\\bundle\\fixtures\\joblib_endian_1561\\artifacts\\6ab5bcd8a29e.pickle"
+  }
+]

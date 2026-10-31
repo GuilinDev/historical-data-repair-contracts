@@ -1,0 +1,24 @@
+{
+  "planned_candidates": 3,
+  "recorded_candidates": 3,
+  "rows": [
+    {
+      "name": "official_widest",
+      "status": "infrastructure_error",
+      "error": "ssh: connect to host <author-host-ip> port 22: Permission denied\n"
+    },
+    {
+      "name": "document_exclusion",
+      "status": "infrastructure_error",
+      "error": "ssh: connect to host <author-host-ip> port 22: Permission denied\n"
+    },
+    {
+      "name": "negative_explicit_float_narrowing",
+      "status": "infrastructure_error",
+      "error": "ssh: connect to host <author-host-ip> port 22: Permission denied\n"
+    }
+  ],
+  "immutable_inputs_unchanged": true,
+  "supplemental_pending": true,
+  "interpretation": "An author-constructed resource validation, not spontaneous agent behavior, prevalence, or a main-model intervention. Full source/premise and supplemental fallback review still required."
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "scope": "Published static diagnostic evidence for the original32 finalized model attempts. No new model or semantic execution.",
+  "counts": {
+    "unchanged_source": 16,
+    "edited_incomplete": 12,
+    "accepted": 4,
+    "context_bound": 15,
+    "finalized_and_observed": 32,
+    "exact_match_error_episodes": 11,
+    "exact_match_error_calls": 78,
+    "utf8_search_error_episodes": 3,
+    "utf8_search_error_calls": 3
+  },
+  "context_partition": {
+    "unchanged_source": 10,
+    "edited_incomplete": 4,
+    "accepted": 1
+  },
+  "sqlalchemy_case": {
+    "episode": "6beed2ca1c08",
+    "rejected_edits": 12,
+    "distinct_targets": 1,
+    "target_lines": [
+      2
+    ],
+    "target_occurrences": [
+      2
+    ],
+    "noop_replacements": 1,
+    "rounds_zero_based": [
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23
+    ]
+  },
+  "packaging_case": {
+    "episode": "bfe5bd58e4c2",
+    "same_window_requests": 8,
+    "line_range_inclusive": [
+      320,
+      419
+    ],
+    "rounds_zero_based": [
+      7,
+      12,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20
+    ],
+    "stopped_before_round_zero_based": 21,
+    "round21_request_exists": false
+  },
+  "original_archive_request_measurement": {
+    "scope": "Original archived request messages before publication privacy rewriting. This is an archival measurement, not a claim that rewritten public requests have identical byte sizes.",
+    "serialization": "len(json.dumps(payload,ensure_ascii=False).encode(UTF-8)); default JSON separators; excludes a network transport envelope.",
+    "last_sent_round20_bytes": 118835,
+    "reconstructed_unsent_round21_bytes": 125578,
+    "exploration_guard_bytes": 120000,
+    "source_identities": [
+      {
+        "public_path": "evidence/main/episodes/bfe5bd58e4c2/explore_20.request.json",
+        "original_sha256": "e2c37606c4e64f49f3e15e2c32de87a0e6118cf1e0fd2fa2ad2109e9a72a4631",
+        "export_sha256": "e2c37606c4e64f49f3e15e2c32de87a0e6118cf1e0fd2fa2ad2109e9a72a4631",
+        "redacted": false
+      },
+      {
+        "public_path": "evidence/main/episodes/bfe5bd58e4c2/explore_20.response.json",
+        "original_sha256": "1dcf4878075259e0fab32f1740ba549b64b32487f097312475060809f62dbddb",
+        "export_sha256": "1dcf4878075259e0fab32f1740ba549b64b32487f097312475060809f62dbddb",
+        "redacted": false
+      },
+      {
+        "public_path": "evidence/main/episodes/bfe5bd58e4c2/tool_outputs.json",
+        "original_sha256": "be63a2729ecc349791ba47bf5297eb9e92798f4777a37854bb4a682e38dd585f",
+        "export_sha256": "be63a2729ecc349791ba47bf5297eb9e92798f4777a37854bb4a682e38dd585f",
+        "redacted": false
+      },
+      {
+        "public_path": "evidence/main/episodes/bfe5bd58e4c2/finalize.request.json",
+        "original_sha256": "c6522d64a40cd69bc19771b8acf73802094853d51bc04d4c17d1a4c0a7bff65b",
+        "export_sha256": "c6522d64a40cd69bc19771b8acf73802094853d51bc04d4c17d1a4c0a7bff65b",
+        "redacted": false
+      }
+    ]
+  },
+  "csv_case": {
+    "episode": "0a3c0db3ab2e",
+    "groups": {
+      "historical": {
+        "n": 6,
+        "initial_semantics_passed": 6,
+        "restart_semantics_passed": 0,
+        "full_passed": 0
+      },
+      "fresh_api": {
+        "n": 6,
+        "initial_semantics_passed": 6,
+        "restart_semantics_passed": 0,
+        "full_passed": 0
+      },
+      "current_roundtrip": {
+        "n": 6,
+        "initial_semantics_passed": 0,
+        "restart_semantics_passed": 0,
+        "full_passed": 0
+      }
+    },
+    "interpretation": "The generic DataFrame object tag dispatches both old and current formats into the legacy reader. Original observations record initial historical6/6 but restart0/6; fresh API initial6/6 but restart0/6; current-format0/6. Nonempty index assignment to an empty frame produces the error."
+  },
+  "limits": [
+    "All32 attempts finalized and have observed semantic evaluations; none is treated as unfinished.",
+    "Error and context-bound events overlap outcomes. One context-bound attempt, one exact-match-error attempt and one UTF8-search-error attempt are accepted.",
+    "No editing-interface or context-policy ablation was performed. Counts do not establish causal explanations of failures or generic model capacity.",
+    "Figure3 E means edited-incomplete. This report uses full event names and has no conflicting E abbreviation."
+  ],
+  "local_analysis_origin": {
+    "project_relative_path": "results/paper_review/clarity_revision_20261031/trajectory_audit.json",
+    "sha256": "7b8caaf842ef06f789a6b9699097c27e041e3bb29f2a88e2b1ee655cb4e82f56",
+    "script_project_relative_path": "results/paper_review/clarity_revision_20261031/trajectory_audit.py",
+    "script_sha256": "76da04a458c10928d6eb4726a85783847f99e9d8592b33b82c91620f0ca8269e",
+    "note": "The original analysis requires the original project archive and is retained locally. verify_trajectory.py is the separately implemented public-release verifier."
+  }
+}

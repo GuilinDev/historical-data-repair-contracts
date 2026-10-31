@@ -1,0 +1,38 @@
+{
+  "episode": "321218a25c02",
+  "family": "sqlalchemy_mutable_8133",
+  "project": "sqlalchemy",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 0,
+  "condition": "ordinary",
+  "previously_model_exposed_lineage": true,
+  "protocol_complete": true,
+  "answer": {
+    "report": "The investigation revealed that `MutableDict` in SQLAlchemy 1.4.38 fails to correctly deserialize certain ORM objects produced by version 1.4.37, resulting in a `TypeError: list indices must be integers or slices, not str`. This occurs during the `__setstate__` phase of unpickling, where the state provided to `MutableDict` is not a dictionary but likely a different structure (possibly a list or tuple) that the current implementation attempts to pass to `self.update()`.\n\nI attempted to implement a guard in `MutableDict.__setstate__` to check if the `state` is a dictionary before calling `update()`, and to fall back to `super().__setstate__(state)` otherwise. However, due to repeated `ValueError: Old text must match exactly once` errors during the `apply_edits` phase, I was unable to successfully apply the patch to the source code.\n\n**Summary:**\n- **Changes:** None successfully applied.\n- **Checks ran:** `run_checks` (legacy suite), which confirmed the failures for historical artifacts `5b91226cc2ad` and `a523f49721e3`.\n- **Unresolved:** The `TypeError` during unpickling of historical `MutableDict` objects remains unresolved as the patch could not be applied."
+  },
+  "tool_actions": 24,
+  "applied_edit_count": 0,
+  "all_checks_passed": false,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 6
+    },
+    "fresh_api": {
+      "passed": 6,
+      "n": 6
+    },
+    "current_roundtrip": {
+      "passed": 6,
+      "n": 6
+    }
+  },
+  "passed": 12,
+  "n": 18,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

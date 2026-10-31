@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "immutable content/wheels",
+      "passed": true
+    },
+    {
+      "name": "packaging_version_1163: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "packaging_version_1163: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "packaging_version_1163: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "attrs_slot_state_1085: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "attrs_slot_state_1085: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "attrs_slot_state_1085: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_csv_562: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_csv_562: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_csv_562: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "sqlalchemy_mutable_8133: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "sqlalchemy_mutable_8133: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "sqlalchemy_mutable_8133: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "joblib_endian_1561: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "joblib_endian_1561: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "joblib_endian_1561: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "joblib_compressed_1681: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "joblib_compressed_1681: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "joblib_compressed_1681: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_dtype_634: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_dtype_634: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "jsonpickle_dtype_634: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "pandas_pickle_56308: unified diff reconstructs exact reference",
+      "passed": true
+    },
+    {
+      "name": "pandas_pickle_56308: patch whitelist",
+      "passed": true
+    },
+    {
+      "name": "pandas_pickle_56308: frozen official fixed observations pass",
+      "passed": true
+    },
+    {
+      "name": "tool schemas and initial/source access",
+      "passed": true
+    },
+    {
+      "name": "out-of-whitelist edit rejected before write",
+      "passed": true
+    },
+    {
+      "name": "unexpected candidate source rejected",
+      "passed": true
+    },
+    {
+      "name": "oracle remains identical to source dataset",
+      "passed": true
+    }
+  ],
+  "api_calls": 0,
+  "gpu": false,
+  "candidate_code_executed_on_host": false,
+  "tool_count": 10
+}

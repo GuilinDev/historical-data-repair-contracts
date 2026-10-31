@@ -1,0 +1,3989 @@
+{
+  "created_utc": "2026-10-30T22:45:41Z",
+  "reviewer": "Independent award reviewer; did not implement either repair policy",
+  "verdict": "PASS_SCOPED_MULTISOLUTION_VALIDATION",
+  "scientific_decision": {
+    "resource_and_acceptance_validity_mainline": "GO",
+    "novel_upgrade_testing_method_or_universal_dtype_algorithm_mainline": "NO-GO",
+    "award_interpretation": "Proceed to a narrowly framed Best New Resource submission. This is a defensible completed resource contribution, not evidence of likely victory; eight lineages alone and engineering reproducibility do not establish high novelty.",
+    "reason": "The independently executable resource now demonstrates a substantive evaluation choice: exact reference semantics reject a general policy that satisfies the predeclared historical-data retention contract, while an incorrect explicit-width narrowing policy is rejected. This makes the resource useful for evaluating repair correctness beyond one reference implementation. The claim remains an existence/calibration result on one ambiguous lineage, combined with a small cross-project corpus.",
+    "narrow_publishable_claim": "A reproducible resource of eight real historical-data reader-repair lineages across six Python projects, with genuine historical artifacts, lifecycle/restart checks and calibrated acceptance contracts. On one lossy legacy format, two source-general repair policies both meet the frozen retention contract, although raw reference equality accepts only 24/84 observations for the context-sensitive policy. A nearby incorrect policy is rejected on all 84 completed observations.",
+    "not_claimed": [
+      "First cross-version persistence testing",
+      "New general repair algorithm",
+      "New discovery of legacy dtype information loss",
+      "Upstream widest policy is incorrect",
+      "Natural failure prevalence",
+      "60 independent bugs",
+      "Spontaneous Gemma repair superiority",
+      "Measured model ranking effect from the constructed policies",
+      "A guarantee of prize competitiveness"
+    ]
+  },
+  "independently_executed_release_controls": {
+    "prior_run": {
+      "complete": true,
+      "implementation": "Unchanged already-cold-validated public compat.py verify with whitelisted unified patch parser and local Docker; no original experiment runner imported.",
+      "rows": [
+        {
+          "name": "official_widest",
+          "patch_sha256": "388a9083ffb3e10d6772cee7cbbdce97fc84972e45df00e8f84e96f12af2b7f8",
+          "cli_exit": 0,
+          "wall_seconds": 67.46220179996453,
+          "execution_status": "observed",
+          "observed_records": 84,
+          "n": 84,
+          "admissible_passed": 84,
+          "raw_exact_gold_passed": 84,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "passed": 72
+            },
+            "fresh_api": {
+              "n": 6,
+              "passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "passed": 6
+            }
+          },
+          "score_sha256": "bed125bdfc2fbf26a41d1bc88902a86e8c6b5f9710eaee87d7456e44466a9dcd",
+          "observations_sha256": "49fb933f9eae0776038d8d7b3278e8aef0f377aa2246ee2a6c5629bdd2a458b9"
+        },
+        {
+          "name": "document_exclusion",
+          "patch_sha256": "dec42dfe855a3f8dfd12f5aee89abafb7c56f2874c449e92284a57deefbe2c16",
+          "cli_exit": 0,
+          "wall_seconds": 66.88126140006352,
+          "execution_status": "observed",
+          "observed_records": 84,
+          "n": 84,
+          "admissible_passed": 84,
+          "raw_exact_gold_passed": 24,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "passed": 72
+            },
+            "fresh_api": {
+              "n": 6,
+              "passed": 6
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "passed": 6
+            }
+          },
+          "score_sha256": "cb7bda01ebb8ad30bc6a7a8ab669643e5bfc60c3aaae8b204834127b024401dd",
+          "observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f"
+        },
+        {
+          "name": "negative_explicit_float_narrowing",
+          "patch_sha256": "5ead7e667875768315b705e3f54915b84c91f64bc456b955f7a7511d4b4a0b69",
+          "cli_exit": 1,
+          "wall_seconds": 67.81317919993307,
+          "execution_status": "observed",
+          "observed_records": 84,
+          "n": 84,
+          "admissible_passed": 0,
+          "raw_exact_gold_passed": 0,
+          "groups": {
+            "historical": {
+              "n": 72,
+              "passed": 0
+            },
+            "fresh_api": {
+              "n": 6,
+              "passed": 0
+            },
+            "current_roundtrip": {
+              "n": 6,
+              "passed": 0
+            }
+          },
+          "score_sha256": "8395284af208c56378fa57a5959220104216156ceba671bc1139d0eacbbe2a1c",
+          "observations_sha256": "762fd6731385407f29f8f6456bea7370ce197e38d292950f47908053df52de7e"
+        }
+      ],
+      "main_data_and_oracle_changed": false,
+      "api_calls": 0,
+      "gpu": false,
+      "scope": "Independent repeat on the same physical Spark using its newly installed portable runtime; not independent hardware, new lineages, natural frequency, or spontaneous agent output.",
+      "source_plan_sha256": "2ee529cfb4bcb33d71c2d7a48133eea8f8e989b4ff835030049ccf38efcd1a1f",
+      "expected_gate_met": true
+    },
+    "v2_run": {
+      "cli_exit": 0,
+      "wall_seconds": 68.02367250004318,
+      "complete": true,
+      "candidate": "document_exclusion_v2",
+      "patch_sha256": "7c02d2479db9d87f2fc6814d3768faafe7b399fe8acaad535a524989a2d63d3c",
+      "plan_sha256": "8317d5ce2930e9b05f8eebc53e68ce78652bbf5eef9d181c6a3056e262e72f38",
+      "execution_status": "observed",
+      "observed_records": 84,
+      "n": 84,
+      "admissible_passed": 84,
+      "raw_exact_gold_passed": 24,
+      "groups": {
+        "historical": {
+          "n": 72,
+          "passed": 72
+        },
+        "fresh_api": {
+          "n": 6,
+          "passed": 6
+        },
+        "current_roundtrip": {
+          "n": 6,
+          "passed": 6
+        }
+      },
+      "observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f",
+      "score_sha256": "cb7bda01ebb8ad30bc6a7a8ab669643e5bfc60c3aaae8b204834127b024401dd",
+      "api_calls": 0,
+      "gpu": false,
+      "implementation": "Unchanged already-cold-validated public compat.py verify; independent unified patch application, Docker execution, frozen admissibility judge, and raw equality comparison.",
+      "scope": "Independent execution on the same physical Spark; no claim of independent hardware, natural frequency, or spontaneous model-generated repair.",
+      "gate_met": true
+    },
+    "total_completed_observations": 336,
+    "interpretation": "v1 remains disclosed despite main84 success; official/v2/negative form the final three-policy comparison. v1 is not a fourth independent repair lineage.",
+    "cold_release": "The already cold-installed local-Docker release CLI was invoked independently; no main experimental runner was imported. Same physical Spark, zero API/GPU."
+  },
+  "independent_literal_comparison": {
+    "observed_n": 84,
+    "differing_rows": 60,
+    "difference_leaves": 576,
+    "all_differences": "Only ambiguous legacy numeric itemsize; both actual/reference at least original input width. All kinds, values, operations and restart semantics otherwise equal.",
+    "observations_parsed_json_exactly_equal_to_prize_panel": true,
+    "independent_observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f",
+    "prize_panel_observations_sha256": "9a881b020fedd6192089c3c9671f40c3c37107c8a1b8611f9f15587f17c0f1fb",
+    "serialization_note": "The initial byte-SHA identity assertion failed because JSON serialization differs; complete parsed JSON equality is independently checked. Neither original file was rewritten.",
+    "detailed_changes": [
+      {
+        "id": "bd22465b6441_r00",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r00",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r00",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r00",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r00",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r01",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r01",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r01",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r01",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r01",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r02",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r02",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r02",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r02",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r02",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r03",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r03",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r03",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r03",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r03",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r04",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r04",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r04",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r04",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r04",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r05",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r05",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r05",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r05",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r05",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r06",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r06",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r06",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r06",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r06",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r07",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r07",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r07",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r07",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r07",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r08",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r08",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r08",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r08",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r08",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r09",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r09",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r09",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r09",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r09",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r10",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r10",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r10",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r10",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r10",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "bd22465b6441_r11",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      },
+      {
+        "id": "f28de1e4a98b_r11",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "ecf9469146ac_r11",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          }
+        ]
+      },
+      {
+        "id": "417593ac3e9c_r11",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u16/itemsize",
+            "raw_reference": 8,
+            "actual": 2,
+            "minimum_input_bytes": 2
+          }
+        ]
+      },
+      {
+        "id": "4780826eda6a_r11",
+        "changes": [
+          {
+            "path": "semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/continued/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/f32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/i8/itemsize",
+            "raw_reference": 8,
+            "actual": 1,
+            "minimum_input_bytes": 1
+          },
+          {
+            "path": "restart_semantics/initial/dtypes/u32/itemsize",
+            "raw_reference": 8,
+            "actual": 4,
+            "minimum_input_bytes": 4
+          }
+        ]
+      }
+    ]
+  },
+  "source_policy_review": {
+    "status": "PASS_WITH_DECLARED_RUNTIME_SCOPE",
+    "functional_mapping": "The producer uses TYPE_MAP[dtype_name] for every column of one document. One dtype_name has one tag in that producer process, so a different explicit-width tag excludes that dtype as the meaning of a bare tag. Universal injectivity is unnecessary.",
+    "candidate_universe": {
+      "float": [
+        32,
+        64
+      ],
+      "int": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "uint": [
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "scope": "Genuine single-producer jsonpickle4.1.1 documents with the declared pandas2.1.4 native numeric dtype universe. Not hand-edited mixed-producer documents, arbitrary third-party dtype plugins, or future universes.",
+    "source_enumeration": {
+      "document_subsets": 4086,
+      "unique_numeric_deductions": 146,
+      "wrong_deductions": 0,
+      "uses_fixture_columns_values": false
+    },
+    "v2_guard": "Nonempty payload plus integer/float kind compatibility before applying a unique document-tag deduction; neither value magnitude nor fixture identifiers select a width.",
+    "fallback": "Incomplete evidence retains the conservative official reader. Genuine single-column full-byte non-injectivity witness supports the information limit.",
+    "v1_counterexample": "Vacuous all(empty) could turn a genuine empty Interval into int8 when other explicit integer tags exclude all other widths. v1 records are retained, v2 guards empty/non-numeric payloads.",
+    "interval_scope": "Three authentic historical Interval controls match conservative reference initially and after restart in reviewed v2 records. Old producer already loses empty Interval dtype; whole-fixed source differs as recorded. No claim of repairing general Interval behavior."
+  },
+  "controls_reviewed_but_not_independently_reexecuted_here": {
+    "interval": {
+      "n": 3,
+      "initial_and_restart_match_official": true
+    },
+    "numeric_collision_and_current_widths": {
+      "n": 3,
+      "passed": 3
+    },
+    "producer_universe_probe": true
+  },
+  "prior_art_boundary": {
+    "upstream_primary": "https://github.com/jsonpickle/jsonpickle/pull/634",
+    "upstream_already_contains": [
+      "Widest-type interpretation of ambiguous legacy numeric tags",
+      "Stable explicit width codes",
+      "Value/integer-kind preservation for pd/in historical integer alias"
+    ],
+    "source_test_file": "results/ready_curation/packages/jsonpickle-e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da/tests/pandas_type_codes_test.py",
+    "novel_resource_value_only": "Cross-project curation, portable real historical artifacts, auditable lifecycle contracts, completed agent evaluation, and a concrete multi-repair acceptance calibration. Set-valued correctness and historical upgrade testing are established ideas."
+  },
+  "remaining_limits": [
+    "The ambiguous-lineage calibration is an existence result; no prevalence or cross-project generalization estimate follows.",
+    "The negative policy tests explicit float64 narrowing, not every admissibility boundary or malicious candidate behavior.",
+    "The main84 set did not catch the disclosed v1 empty-Interval regression. Supplemental source-driven controls are necessary and the corpus is not exhaustive.",
+    "Main model results and policy adjudication must come from the frozen completed agent run, not these author-constructed controls.",
+    "Repeated process trials and shared public artifact bytes must be reported separately from unique artifacts and repair lineages."
+  ],
+  "frozen_v2_plan_sha256": "8317d5ce2930e9b05f8eebc53e68ce78652bbf5eef9d181c6a3056e262e72f38",
+  "v2_patch_sha256": "7c02d2479db9d87f2fc6814d3768faafe7b399fe8acaad535a524989a2d63d3c",
+  "main_data_oracle_framework_modified": false,
+  "api_calls": 0,
+  "gpu_calls": 0
+}

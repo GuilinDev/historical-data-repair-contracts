@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b093221441c2_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "b093221441c2_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -791,
+        23,
+        1000007,
+        -2035,
+        81,
+        42
+      ],
+      "shape": [
+        6
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "zlib",
+        3
+      ],
+      "delta": 91211
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "27119ac02407_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        -784,
+        34,
+        999976,
+        -2022,
+        80,
+        43
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": [
+        "gzip",
+        3
+      ],
+      "delta": 91214
+    },
+    "visible": true
+  },
+  {
+    "id": "88a546d80bb4_fresh_api",
+    "group": "fresh_api",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  },
+  {
+    "id": "88a546d80bb4_current_roundtrip",
+    "group": "current_roundtrip",
+    "input": {
+      "values": [
+        131,
+        -43,
+        719,
+        21,
+        501,
+        -17
+      ],
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "<i4",
+      "compress": 0,
+      "delta": 7103,
+      "preservation_mode": "uncompressed_readonly_mmap"
+    },
+    "visible": true
+  }
+]

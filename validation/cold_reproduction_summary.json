@@ -1,0 +1,691 @@
+{
+  "transport": {
+    "archive_sha256": "c8256e5dac704f753e0491afbab250ea0850acaceae6e94f8c79b012fd135d87",
+    "archive_bytes": 77744720,
+    "exported_files": 7958,
+    "private_identity_scan_passed": true
+  },
+  "bootstrap_exit": 0,
+  "reproduce_exit": 0,
+  "package_installation_cold": true,
+  "docker_image_cache_may_be_warm": true,
+  "receipts_directory": "validation/cold_reproduction",
+  "all_failed_attempts_preserved": true,
+  "api_calls": 0,
+  "gpu": false,
+  "controls": {
+    "controls": [
+      "base",
+      "fixed",
+      "reference"
+    ],
+    "tasks": [
+      "packaging_version_1163",
+      "attrs_slot_state_1085",
+      "jsonpickle_csv_562",
+      "sqlalchemy_mutable_8133",
+      "joblib_endian_1561",
+      "joblib_compressed_1681",
+      "jsonpickle_dtype_634",
+      "pandas_pickle_56308"
+    ],
+    "evaluations": 24,
+    "observations": 756,
+    "expected_observations": 756,
+    "all_completed": true,
+    "all_control_expectations_met": true,
+    "rows": [
+      {
+        "task": "packaging_version_1163",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 12,
+        "groups": {
+          "historical": {
+            "passed": 0,
+            "n": 18
+          },
+          "fresh_api": {
+            "passed": 4,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 8,
+            "n": 12
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70"
+      },
+      {
+        "task": "packaging_version_1163",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 36,
+        "groups": {
+          "historical": {
+            "passed": 18,
+            "n": 18
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 12,
+            "n": 12
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70"
+      },
+      {
+        "task": "packaging_version_1163",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 36,
+        "groups": {
+          "historical": {
+            "passed": 18,
+            "n": 18
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 12,
+            "n": 12
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "b189c0344d1211b2ff662fcde89117865e27eac9778312fc4808e798cabfad70"
+      },
+      {
+        "task": "attrs_slot_state_1085",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 27,
+        "groups": {
+          "historical": {
+            "passed": 0,
+            "n": 9
+          },
+          "fresh_api": {
+            "passed": 9,
+            "n": 9
+          },
+          "current_roundtrip": {
+            "passed": 18,
+            "n": 18
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295"
+      },
+      {
+        "task": "attrs_slot_state_1085",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 36,
+        "groups": {
+          "historical": {
+            "passed": 9,
+            "n": 9
+          },
+          "fresh_api": {
+            "passed": 9,
+            "n": 9
+          },
+          "current_roundtrip": {
+            "passed": 18,
+            "n": 18
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295"
+      },
+      {
+        "task": "attrs_slot_state_1085",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 36,
+        "observed_records": 36,
+        "passed": 36,
+        "groups": {
+          "historical": {
+            "passed": 9,
+            "n": 9
+          },
+          "fresh_api": {
+            "passed": 9,
+            "n": 9
+          },
+          "current_roundtrip": {
+            "passed": 18,
+            "n": 18
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "53fd15932f2728b4ad092a6835e49ff502a722992e4d60e146c85281fd7d7295"
+      },
+      {
+        "task": "jsonpickle_csv_562",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 12,
+        "groups": {
+          "historical": {
+            "passed": 0,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826"
+      },
+      {
+        "task": "jsonpickle_csv_562",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826"
+      },
+      {
+        "task": "jsonpickle_csv_562",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "f69827e4b0a01ef233ff78d714c77bf64fd67d3fcf8a07bee73ed6f061dac826"
+      },
+      {
+        "task": "sqlalchemy_mutable_8133",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 12,
+        "groups": {
+          "historical": {
+            "passed": 0,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df"
+      },
+      {
+        "task": "sqlalchemy_mutable_8133",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df"
+      },
+      {
+        "task": "sqlalchemy_mutable_8133",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "0f38e32677a84f66d4bba3d3526b2663e23ba8842a0aa6108734519e9b1c79df"
+      },
+      {
+        "task": "joblib_endian_1561",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 9,
+        "groups": {
+          "historical": {
+            "passed": 1,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 1,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf"
+      },
+      {
+        "task": "joblib_endian_1561",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 21,
+        "groups": {
+          "historical": {
+            "passed": 7,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 7,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf"
+      },
+      {
+        "task": "joblib_endian_1561",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 21,
+        "groups": {
+          "historical": {
+            "passed": 7,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 7,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7f99c1658516f6c2a36551a1296d4ad4393a3f15758c6aa8c5bc106d303b4fcf"
+      },
+      {
+        "task": "joblib_compressed_1681",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 9,
+        "groups": {
+          "historical": {
+            "passed": 1,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 1,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3"
+      },
+      {
+        "task": "joblib_compressed_1681",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 21,
+        "groups": {
+          "historical": {
+            "passed": 7,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 7,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3"
+      },
+      {
+        "task": "joblib_compressed_1681",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 21,
+        "observed_records": 21,
+        "passed": 21,
+        "groups": {
+          "historical": {
+            "passed": 7,
+            "n": 7
+          },
+          "fresh_api": {
+            "passed": 7,
+            "n": 7
+          },
+          "current_roundtrip": {
+            "passed": 7,
+            "n": 7
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "5e16ae0b8f4c87a3b8180f6e8591fa509368559bdb2262c0bd21d19baf16efe3"
+      },
+      {
+        "task": "jsonpickle_dtype_634",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 84,
+        "observed_records": 84,
+        "passed": 6,
+        "groups": {
+          "historical": {
+            "n": 72,
+            "passed": 1
+          },
+          "fresh_api": {
+            "n": 6,
+            "passed": 1
+          },
+          "current_roundtrip": {
+            "n": 6,
+            "passed": 4
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961"
+      },
+      {
+        "task": "jsonpickle_dtype_634",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 84,
+        "observed_records": 84,
+        "passed": 84,
+        "groups": {
+          "historical": {
+            "n": 72,
+            "passed": 72
+          },
+          "fresh_api": {
+            "n": 6,
+            "passed": 6
+          },
+          "current_roundtrip": {
+            "n": 6,
+            "passed": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961"
+      },
+      {
+        "task": "jsonpickle_dtype_634",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 84,
+        "observed_records": 84,
+        "passed": 84,
+        "groups": {
+          "historical": {
+            "n": 72,
+            "passed": 72
+          },
+          "fresh_api": {
+            "n": 6,
+            "passed": 6
+          },
+          "current_roundtrip": {
+            "n": 6,
+            "passed": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961"
+      },
+      {
+        "task": "pandas_pickle_56308",
+        "control": "base",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 12,
+        "groups": {
+          "historical": {
+            "passed": 0,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856"
+      },
+      {
+        "task": "pandas_pickle_56308",
+        "control": "fixed",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856"
+      },
+      {
+        "task": "pandas_pickle_56308",
+        "control": "reference",
+        "execution_status": "observed",
+        "n": 18,
+        "observed_records": 18,
+        "passed": 18,
+        "groups": {
+          "historical": {
+            "passed": 6,
+            "n": 6
+          },
+          "fresh_api": {
+            "passed": 6,
+            "n": 6
+          },
+          "current_roundtrip": {
+            "passed": 6,
+            "n": 6
+          }
+        },
+        "completed": true,
+        "control_expectation_met": true,
+        "oracle_sha256": "7d26a419bd6892ca7d7cb81faa049c90f24a43ca5127080995eb7b725c5c1856"
+      }
+    ],
+    "oracle_regenerated": false,
+    "network": "none",
+    "api_calls": 0,
+    "gpu": false,
+    "runtime_installation": {
+      "passed": true,
+      "image": "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+      "image_id": "sha256:e63b9d3e6b56af5282d2c5adc84d8fe0f63e3efc24fc4f73a00b004ddee3697d",
+      "platform": "linux/arm64",
+      "identity": {
+        "python": "3.10.20",
+        "architecture": "aarch64",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "pytest": "8.4.2"
+      },
+      "runtime_directory": ".local/bootstrap_20261030T221524Z_04bdae/runtime",
+      "test_dependency_directory": ".local/bootstrap_20261030T221524Z_04bdae/test_deps",
+      "receipt_directory": ".local/bootstrap_20261030T221524Z_04bdae",
+      "fresh_target_directories": true,
+      "install_network": "none",
+      "pip_cache": false,
+      "image_pull_requested": true,
+      "prior_installs_reused": false
+    }
+  },
+  "installation": {
+    "passed": true,
+    "image": "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+    "image_id": "sha256:e63b9d3e6b56af5282d2c5adc84d8fe0f63e3efc24fc4f73a00b004ddee3697d",
+    "platform": "linux/arm64",
+    "identity": {
+      "python": "3.10.20",
+      "architecture": "aarch64",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "pytest": "8.4.2"
+    },
+    "runtime_directory": ".local/bootstrap_20261030T221524Z_04bdae/runtime",
+    "test_dependency_directory": ".local/bootstrap_20261030T221524Z_04bdae/test_deps",
+    "receipt_directory": ".local/bootstrap_20261030T221524Z_04bdae",
+    "fresh_target_directories": true,
+    "install_network": "none",
+    "pip_cache": false,
+    "image_pull_requested": true,
+    "prior_installs_reused": false
+  },
+  "passed": true,
+  "receipt_path_mapping": {
+    ".local/": "validation/cold_reproduction/bootstrap/",
+    "results/cold_controls/": "validation/cold_reproduction/controls/"
+  }
+}

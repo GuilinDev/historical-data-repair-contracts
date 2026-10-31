@@ -1,0 +1,236 @@
+[
+  {
+    "id": "119dbe50fb44",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\119dbe50fb44.pickle",
+    "visible": true
+  },
+  {
+    "id": "25c112e47ae5",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\25c112e47ae5.pickle",
+    "visible": false
+  },
+  {
+    "id": "a28ec88ba6b0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\a28ec88ba6b0.pickle",
+    "visible": false
+  },
+  {
+    "id": "cb7af60b28b0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\cb7af60b28b0.pickle",
+    "visible": false
+  },
+  {
+    "id": "18f81a65efe7",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\18f81a65efe7.pickle",
+    "visible": false
+  },
+  {
+    "id": "efc4c90910d3",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "SlottedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\efc4c90910d3.pickle",
+    "visible": false
+  },
+  {
+    "id": "9e4b9cff6901",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\9e4b9cff6901.pickle",
+    "visible": false
+  },
+  {
+    "id": "207e88c70898",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\207e88c70898.pickle",
+    "visible": false
+  },
+  {
+    "id": "f3beb26b65f0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\f3beb26b65f0.pickle",
+    "visible": false
+  },
+  {
+    "id": "3d6a9f2f3a6b",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\3d6a9f2f3a6b.pickle",
+    "visible": false
+  },
+  {
+    "id": "811b21ac8ecf",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\811b21ac8ecf.pickle",
+    "visible": false
+  },
+  {
+    "id": "b16eebfb65d7",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "FrozenRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\b16eebfb65d7.pickle",
+    "visible": false
+  },
+  {
+    "id": "84ce7bf95ba0",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\84ce7bf95ba0.pickle",
+    "visible": false
+  },
+  {
+    "id": "3af9233f98ab",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 17,
+      "name": "historical-样例"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\3af9233f98ab.pickle",
+    "visible": false
+  },
+  {
+    "id": "42076541001c",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\42076541001c.pickle",
+    "visible": false
+  },
+  {
+    "id": "756f0d64c2b6",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": 0,
+      "name": ""
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\756f0d64c2b6.pickle",
+    "visible": false
+  },
+  {
+    "id": "ebb386e6b020",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": false,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\ebb386e6b020.pickle",
+    "visible": false
+  },
+  {
+    "id": "d97914705270",
+    "group": "historical",
+    "producer": "21.4.0",
+    "input": {
+      "kind": "CachedRecord",
+      "count": -19,
+      "name": "δοκιμή-中文"
+    },
+    "warm": true,
+    "artifact": "<project>\\results\\reader_repairs\\20261030T185431\\bundle\\fixtures\\attrs\\artifacts\\d97914705270.pickle",
+    "visible": false
+  }
+]

@@ -1,0 +1,1499 @@
+{
+  "passed": true,
+  "pdf_sha256": "e9ed3d8d32d8d79aa7c00ca3dcf9c615001fad3428e49ad3e39fa7de17e3db7d",
+  "decision": "GO for the present manuscript scientific evidence and Figure3; no mandatory text correction found. This is not a forecast of winning.",
+  "scope": "Independent read-only verification of revised quantities, original main32 trajectory diagnosis, Figure3, and the new writable-mmap contract example. No API/GPU/SSH or experiment rerun.",
+  "pages": 6,
+  "declared_conservative_word_count": 2665,
+  "checks_passed": 362,
+  "checks": [
+    {
+      "check": "Expected current PDF identity",
+      "passed": true
+    },
+    {
+      "check": "Six PDF pages",
+      "passed": true
+    },
+    {
+      "check": "Figure data identity",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: family",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: model",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: replicate",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: passed",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: n",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: accepted",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: unchanged",
+      "passed": true
+    },
+    {
+      "check": "bfe5bd58e4c2: context stop",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: family",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: model",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: replicate",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: passed",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: n",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: accepted",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: unchanged",
+      "passed": true
+    },
+    {
+      "check": "49069b591f6e: context stop",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: family",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: model",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: replicate",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: passed",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: n",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: accepted",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: unchanged",
+      "passed": true
+    },
+    {
+      "check": "107a49685be5: context stop",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: family",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: model",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: replicate",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: passed",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: n",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: accepted",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: unchanged",
+      "passed": true
+    },
+    {
+      "check": "239561ed0d37: context stop",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: family",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: model",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: replicate",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: passed",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: n",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: accepted",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: unchanged",
+      "passed": true
+    },
+    {
+      "check": "f50ac29629d1: context stop",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: family",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: model",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: replicate",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: passed",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: n",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: accepted",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: unchanged",
+      "passed": true
+    },
+    {
+      "check": "be55c0a529b4: context stop",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: family",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: model",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: replicate",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: passed",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: n",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: accepted",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: unchanged",
+      "passed": true
+    },
+    {
+      "check": "fef8c66a4f80: context stop",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: family",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: model",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: replicate",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: passed",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: n",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: accepted",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: unchanged",
+      "passed": true
+    },
+    {
+      "check": "15b1e2a9032d: context stop",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: family",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: model",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: replicate",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: passed",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: n",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: accepted",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: unchanged",
+      "passed": true
+    },
+    {
+      "check": "bd7140c1d378: context stop",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: family",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: model",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: replicate",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: passed",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: n",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: accepted",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: unchanged",
+      "passed": true
+    },
+    {
+      "check": "c62f9c414dc5: context stop",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: family",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: model",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: replicate",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: passed",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: n",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: accepted",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: unchanged",
+      "passed": true
+    },
+    {
+      "check": "46ae0e9c5565: context stop",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: family",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: model",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: replicate",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: passed",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: n",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: accepted",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: unchanged",
+      "passed": true
+    },
+    {
+      "check": "0a3c0db3ab2e: context stop",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: family",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: model",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: replicate",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: passed",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: n",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: accepted",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: unchanged",
+      "passed": true
+    },
+    {
+      "check": "640d76a1a31b: context stop",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: family",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: model",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: replicate",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: passed",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: n",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: accepted",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: unchanged",
+      "passed": true
+    },
+    {
+      "check": "6beed2ca1c08: context stop",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: family",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: model",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: replicate",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: passed",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: n",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: accepted",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: unchanged",
+      "passed": true
+    },
+    {
+      "check": "321218a25c02: context stop",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: family",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: model",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: replicate",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: passed",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: n",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: accepted",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: unchanged",
+      "passed": true
+    },
+    {
+      "check": "22dfe50e4c2e: context stop",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: family",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: model",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: replicate",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: passed",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: n",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: accepted",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: unchanged",
+      "passed": true
+    },
+    {
+      "check": "7879243259c9: context stop",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: family",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: model",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: replicate",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: passed",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: n",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: accepted",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: unchanged",
+      "passed": true
+    },
+    {
+      "check": "e401d2c3a27d: context stop",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: family",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: model",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: replicate",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: passed",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: n",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: accepted",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: unchanged",
+      "passed": true
+    },
+    {
+      "check": "53394461271a: context stop",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: family",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: model",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: replicate",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: passed",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: n",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: accepted",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: unchanged",
+      "passed": true
+    },
+    {
+      "check": "074ae1f3678a: context stop",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: family",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: model",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: replicate",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: passed",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: n",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: accepted",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: unchanged",
+      "passed": true
+    },
+    {
+      "check": "0e72fdd94c31: context stop",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: family",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: model",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: replicate",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: passed",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: n",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: accepted",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: unchanged",
+      "passed": true
+    },
+    {
+      "check": "183bc51919d5: context stop",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: family",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: model",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: replicate",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: passed",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: n",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: accepted",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: unchanged",
+      "passed": true
+    },
+    {
+      "check": "2210b787c234: context stop",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: family",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: model",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: replicate",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: passed",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: n",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: accepted",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: unchanged",
+      "passed": true
+    },
+    {
+      "check": "783def885a40: context stop",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: family",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: model",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: replicate",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: passed",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: n",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: accepted",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: unchanged",
+      "passed": true
+    },
+    {
+      "check": "05cd04c17e21: context stop",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: family",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: model",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: replicate",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: passed",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: n",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: accepted",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: unchanged",
+      "passed": true
+    },
+    {
+      "check": "3d3f067e10a7: context stop",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: family",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: model",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: replicate",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: passed",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: n",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: accepted",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: unchanged",
+      "passed": true
+    },
+    {
+      "check": "8923ab804d14: context stop",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: family",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: model",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: replicate",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: passed",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: n",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: accepted",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: unchanged",
+      "passed": true
+    },
+    {
+      "check": "6160443aebd8: context stop",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: family",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: model",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: replicate",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: passed",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: n",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: accepted",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: unchanged",
+      "passed": true
+    },
+    {
+      "check": "7f0bc12caf15: context stop",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: family",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: model",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: replicate",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: passed",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: n",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: accepted",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: unchanged",
+      "passed": true
+    },
+    {
+      "check": "820d349186f5: context stop",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: family",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: model",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: replicate",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: passed",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: n",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: accepted",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: unchanged",
+      "passed": true
+    },
+    {
+      "check": "93f5c9999ee4: context stop",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: family",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: model",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: replicate",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: passed",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: n",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: accepted",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: unchanged",
+      "passed": true
+    },
+    {
+      "check": "b81cd8ba0bd8: context stop",
+      "passed": true
+    },
+    {
+      "check": "32 unique complete plotted attempts",
+      "passed": true
+    },
+    {
+      "check": "Accepted context-stop correctly retained",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: declared cases",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: historical",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: fresh",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: current",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: accepted A",
+      "passed": true
+    },
+    {
+      "check": "packaging_version_1163: accepted B",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: declared cases",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: historical",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: fresh",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: current",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: accepted A",
+      "passed": true
+    },
+    {
+      "check": "attrs_slot_state_1085: accepted B",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: declared cases",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: historical",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: fresh",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: current",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: accepted A",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_csv_562: accepted B",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: declared cases",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: historical",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: fresh",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: current",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: accepted A",
+      "passed": true
+    },
+    {
+      "check": "sqlalchemy_mutable_8133: accepted B",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: declared cases",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: historical",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: fresh",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: current",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: accepted A",
+      "passed": true
+    },
+    {
+      "check": "joblib_endian_1561: accepted B",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: declared cases",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: historical",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: fresh",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: current",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: accepted A",
+      "passed": true
+    },
+    {
+      "check": "joblib_compressed_1681: accepted B",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: declared cases",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: historical",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: fresh",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: current",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: accepted A",
+      "passed": true
+    },
+    {
+      "check": "jsonpickle_dtype_634: accepted B",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: declared cases",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: unique historical files",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: historical",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: fresh",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: current",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: public unique historical bytes",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: fresh installation base",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: fresh installation fixed",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: fresh installation reference",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: accepted A",
+      "passed": true
+    },
+    {
+      "check": "pandas_pickle_56308: accepted B",
+      "passed": true
+    },
+    {
+      "check": "H/F/R 131/53/68",
+      "passed": true
+    },
+    {
+      "check": "File total65/public17",
+      "passed": true
+    },
+    {
+      "check": "Cold base99/fixed252/reference252",
+      "passed": true
+    },
+    {
+      "check": "Figure E is defined as edited incomplete",
+      "passed": true
+    },
+    {
+      "check": "Accepted C visible in figure labels",
+      "passed": true
+    },
+    {
+      "check": "SQL example exactly two-line target",
+      "passed": true
+    },
+    {
+      "check": "Packaging reconstructed request125578",
+      "passed": true
+    },
+    {
+      "check": "Packaging repeated100line request8",
+      "passed": true
+    },
+    {
+      "check": "CSV H6initial/0restart, current0",
+      "passed": true
+    },
+    {
+      "check": "Joblib public contract case6ab5bcd8a29e",
+      "passed": true
+    },
+    {
+      "check": "Joblib originalvalue23; continued+resave91234; originalwork23",
+      "passed": true
+    },
+    {
+      "check": "Actual PDF contains updated quantitative diagnosis",
+      "passed": true
+    },
+    {
+      "check": "Manuscript explicitly denies causal/model-capacity inference",
+      "passed": true
+    }
+  ],
+  "visual_review": {
+    "images": [
+      "tmp/pdfs/clarity-2.png",
+      "tmp/pdfs/clarity-4.png"
+    ],
+    "result": "Main table, contract box, all32 figure cells, PASS C flag, legend and diagnostic paragraphs are readable, aligned and unclipped."
+  },
+  "scientific_findings": [
+    "Sixteen unchanged, twelve edited-incomplete and four accepted form the main outcome partition. Context stops split10/4/1 across these outcomes.",
+    "Exact-match errors and UTF8 search errors overlap other outcomes and include successful attempts; the paper does not attribute failure causally to either.",
+    "SQL12 rejected edits share one two-line target present twice, not one common replacement.",
+    "CSV initially correct historical/continued-use semantics do not survive resave/restart; the explanation is supported by the actual candidate dispatch and error traces.",
+    "Joblib23-to91234 write-through example matches executed observations, not invented pseudodata.",
+    "Figure3 uses original model-evaluation counts, including dtype3 and0; fresh-install table uses dtypebase6. These sources remain distinct."
+  ],
+  "issues": [],
+  "limits": [
+    "Static diagnosis is observational; editing-interface and context-policy interventions were not tested.",
+    "The 125578-byte measurement is of original archived messages before publication privacy rewriting. It is not a promise that arbitrary rewritten public request bytes have identical size.",
+    "Finite selected contracts, dependent repeats and confounded deployments do not support prevalence or model-size causal claims."
+  ],
+  "public_export_recommendation": {
+    "status": "Approved to prepare in a separate release diagnostic directory; do not change frozen experiments.",
+    "required": [
+      "Recompute outcome/error/repeated-read/CSV counts statically from exported logs and source overlays.",
+      "Record each used public file digest and its export_manifest original/export pair where available.",
+      "Map unchanged candidate source to bundle/base and changed bytes to published patch files; original candidate directories are not prerequisites.",
+      "Keep original byte measurements as labeled archival claims with original input digests; separately measure any public rewritten payload without asserting equality.",
+      "Retain local original analysis script as archive-dependent; ship a distinct public-only verifier."
+    ]
+  },
+  "evidence_sha256": {
+    "paper/final_content.json": "aeb17c2c2daa5a36f37eb86b59f166771a8c4b029c95db17faf6a14e3445a383",
+    "paper/figure_data.json": "ff0a15c81b6e7446f09d2951246b8b00c3651a4745ea93307653ae18bed401bc",
+    "paper/figure_manifest.json": "5fe3959f6d751775107bbcda7fbb88b18ed2a76138ea159fe8eeb3c6eca5b676",
+    "results/paper_review/clarity_revision_20261031/trajectory_audit.json": "7b8caaf842ef06f789a6b9699097c27e041e3bb29f2a88e2b1ee655cb4e82f56",
+    "scripts/resource_eval_worker.py": "d7839c534ae8612bf7a7153409da5fa013ee48aca0c978bcb20435b67dca99c0",
+    "scripts/resource_task_tools.py": "834df14ebbcaf756513fae6af4aeafcc9fb06bc35baf417e023e58d658939d3e",
+    "output/pdf/historical-data-compatibility.pdf": "e9ed3d8d32d8d79aa7c00ca3dcf9c615001fad3428e49ad3e39fa7de17e3db7d"
+  }
+}

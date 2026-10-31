@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793398469-GjYfPLQe5sKCbc76Y2Bh",
+  "object": "chat.completion",
+  "created": 1793398469,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-0798df81-8322-4352-b97c-818250cd8508",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def __setstate__(self, state):\\n        if isinstance(state, dict):\\n            self.update(state)\\n        elif isinstance(state, list):\\n            self.update(state)\\n        else:\\n            dict.__setstate__(self, state)\\n\",\"old\":\"    def __setstate__(self, state):\\n        self.update(state)\\n\",\"path\":\"sqlalchemy/ext/mutable.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20381,
+    "completion_tokens": 115,
+    "total_tokens": 20496,
+    "cost": 0.0020772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 20064,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020772,
+      "upstream_inference_prompt_cost": 0.0020381,
+      "upstream_inference_completions_cost": 3.91e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "positions_checked": 864,
+  "width_counts": {
+    "8": 864
+  },
+  "too_narrow": [],
+  "oracle_sha256": "c50fe390f708112072aa6f461b1a040ff64bebc835f0b9f42548d9c7dd1ff961",
+  "metadata_sha256": "55fd36fcaeb8a3b7dc0fd96723b21d89935669c96e12061a0eb1c50112786ec2"
+}

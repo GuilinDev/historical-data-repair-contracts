@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "image": "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+  "image_id": "sha256:e63b9d3e6b56af5282d2c5adc84d8fe0f63e3efc24fc4f73a00b004ddee3697d",
+  "platform": "linux/arm64",
+  "identity": {
+    "python": "3.10.20",
+    "architecture": "aarch64",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "pytest": "8.4.2"
+  },
+  "runtime_directory": ".local/bootstrap_20261030T221524Z_04bdae/runtime",
+  "test_dependency_directory": ".local/bootstrap_20261030T221524Z_04bdae/test_deps",
+  "receipt_directory": ".local/bootstrap_20261030T221524Z_04bdae",
+  "fresh_target_directories": true,
+  "install_network": "none",
+  "pip_cache": false,
+  "image_pull_requested": true,
+  "prior_installs_reused": false
+}

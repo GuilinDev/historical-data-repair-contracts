@@ -1,0 +1,34 @@
+{
+  "cli_exit": 0,
+  "wall_seconds": 68.02367250004318,
+  "complete": true,
+  "candidate": "document_exclusion_v2",
+  "patch_sha256": "7c02d2479db9d87f2fc6814d3768faafe7b399fe8acaad535a524989a2d63d3c",
+  "plan_sha256": "8317d5ce2930e9b05f8eebc53e68ce78652bbf5eef9d181c6a3056e262e72f38",
+  "execution_status": "observed",
+  "observed_records": 84,
+  "n": 84,
+  "admissible_passed": 84,
+  "raw_exact_gold_passed": 24,
+  "groups": {
+    "historical": {
+      "n": 72,
+      "passed": 72
+    },
+    "fresh_api": {
+      "n": 6,
+      "passed": 6
+    },
+    "current_roundtrip": {
+      "n": 6,
+      "passed": 6
+    }
+  },
+  "observations_sha256": "98129961b428366060e48cd69134c35c5ffda9c9950769def64718f30032fd9f",
+  "score_sha256": "cb7bda01ebb8ad30bc6a7a8ab669643e5bfc60c3aaae8b204834127b024401dd",
+  "api_calls": 0,
+  "gpu": false,
+  "implementation": "Unchanged already-cold-validated public compat.py verify; independent unified patch application, Docker execution, frozen admissibility judge, and raw equality comparison.",
+  "scope": "Independent execution on the same physical Spark; no claim of independent hardware, natural frequency, or spontaneous model-generated repair.",
+  "gate_met": true
+}

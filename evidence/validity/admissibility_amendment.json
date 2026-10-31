@@ -1,0 +1,152 @@
+{
+  "before_main_model_calls": true,
+  "reason": "Independent literal audit found unsuffixed pd/in legacy numeric code; avoid requiring accidental fixed-reader width. Exact restoration and permitted widening both admissible.",
+  "changes": [
+    {
+      "id": "417593ac3e9c_r00",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r01",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r02",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r03",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r04",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r05",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r06",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r07",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r08",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r09",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r10",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    },
+    {
+      "id": "417593ac3e9c_r11",
+      "old": [
+        "u16",
+        "f64"
+      ],
+      "new": [
+        "i8",
+        "u16",
+        "f64"
+      ]
+    }
+  ],
+  "artifact_bytes_unchanged": true,
+  "raw_oracle_observations_unchanged": true
+}

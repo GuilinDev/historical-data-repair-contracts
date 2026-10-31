@@ -1,0 +1,416 @@
+[
+  {
+    "id": "ab67abe0aa61",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/ab67abe0aa61.pickle",
+    "visible": true,
+    "sha256": "d4c2f7538ddff4590ffe3c49b9ae9b248cba8e248d559609a586a439655c224c"
+  },
+  {
+    "id": "b7c0ed5006ea",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/b7c0ed5006ea.pickle",
+    "visible": true,
+    "sha256": "cc18e3ce21cec98667d1df572de295b92422e65f02c39da6a77f6d311889d45f"
+  },
+  {
+    "id": "d127ddeb9520",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "c572e8fab82d",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": false,
+    "visible": true
+  },
+  {
+    "id": "9eae094dbc93",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/9eae094dbc93.pickle",
+    "visible": false,
+    "sha256": "5af49ac8196604ad4900ccd2ae4ca8aa85cb37510695412f471af0e48d7ceece"
+  },
+  {
+    "id": "81ab9d8cf6de",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/81ab9d8cf6de.pickle",
+    "visible": false,
+    "sha256": "705390b060e6c311f319ddd7c17889d65de92f986e893567343cf8ad58ac8132"
+  },
+  {
+    "id": "c232972ce5c2",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/c232972ce5c2.pickle",
+    "visible": false,
+    "sha256": "afd0cde6c0812829a399ad3bb0cb73c21d988dbcb526764a8857305dd9c0d237"
+  },
+  {
+    "id": "1d9f5cd92d04",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/1d9f5cd92d04.pickle",
+    "visible": false,
+    "sha256": "231636335a35d3aa4999ffd7d18cc134ffb7aab79c3593a35a51bb6e3f39a8b3"
+  },
+  {
+    "id": "8548035c28d1",
+    "group": "historical",
+    "producer": "25.0",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/8548035c28d1.pickle",
+    "visible": false,
+    "sha256": "e104a71fac8ebfe821b4425cac0d2389c43449f0513e59038f42a74327d8ad08"
+  },
+  {
+    "id": "e3616699a173",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/e3616699a173.pickle",
+    "visible": false,
+    "sha256": "cd1d628c5dfb340048dc38414b00bd4985c3ce3a44d18499fd970d34bfe2953b"
+  },
+  {
+    "id": "00c0d5a16501",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/00c0d5a16501.pickle",
+    "visible": false,
+    "sha256": "492c5208d861fe8500f34317e090f0686f0a6114005493cfc1f2ada6b8927457"
+  },
+  {
+    "id": "96bd32dd87c5",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/96bd32dd87c5.pickle",
+    "visible": false,
+    "sha256": "66987b51b76d2a0594a0380faa92ffa2cf9bfffde35f262fe732066a9bf47c9b"
+  },
+  {
+    "id": "a1bf3422b60a",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/a1bf3422b60a.pickle",
+    "visible": false,
+    "sha256": "40137a15c5b61d469b523f531e7573b76720406c303c1a3c67354adf9388999f"
+  },
+  {
+    "id": "f6169908dd63",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/f6169908dd63.pickle",
+    "visible": false,
+    "sha256": "e9c84c036892b09c71a4fb567f5a006e5d0dba5c590e09b4ba773a88aaadbe82"
+  },
+  {
+    "id": "2341b59753c8",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/2341b59753c8.pickle",
+    "visible": false,
+    "sha256": "7aa993344ec5884750f0cc05133cf99dbf2653c54dc85f1daea227d70125ed02"
+  },
+  {
+    "id": "f542ed0c01b9",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/f542ed0c01b9.pickle",
+    "visible": false,
+    "sha256": "c7f8847f87956910d56f3541baf67a900b61445361ae771eaacda262dc82790a"
+  },
+  {
+    "id": "7aa598784c8f",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/7aa598784c8f.pickle",
+    "visible": false,
+    "sha256": "b89d577ad22d896c15a3545a58bb050d01f5fb854b59870224c1ecc8b12217f6"
+  },
+  {
+    "id": "000b13502d31",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/000b13502d31.pickle",
+    "visible": false,
+    "sha256": "1ada33ce79c50d26c4ccf0a817291fb7a612db8b2195f88d46d2554284ca6bce"
+  },
+  {
+    "id": "e338f1cb3c5b",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": false,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/e338f1cb3c5b.pickle",
+    "visible": false,
+    "sha256": "3b69da60a1b0eff01ea19ffa7cef693cee5e010f9999b1a88f1569a74985519c"
+  },
+  {
+    "id": "df77cf52e965",
+    "group": "historical",
+    "producer": "26.0",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": true,
+    "artifact": "/fixtures/packaging_version_1163/artifacts/df77cf52e965.pickle",
+    "visible": false,
+    "sha256": "4e80827ea329e64ce7e4f9d9ebe73f195fc11e566fb51f868ed9968fc9816947"
+  },
+  {
+    "id": "b2b934e786f9",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1.0"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "c35d0debdd2b",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "59cd19cbb366",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "8c62d71930e6",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1!1.2rc1.post2.dev3+local.4"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "e503358570bb",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "cb3791e8b76c",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "cd97e6cf9a35",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "0.9.dev1"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "f9bdc84c7811",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "780cd1d3bd67",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "158c4299f33d",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "2!3.4.post2"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "3372db2948fa",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "e7c289a61814",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "89db1725d15b",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "1.0+linux.x86"
+    },
+    "warm": true,
+    "visible": false
+  },
+  {
+    "id": "a972e41cc4c3",
+    "group": "fresh_api",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "d83dcb84d06c",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": false,
+    "visible": false
+  },
+  {
+    "id": "fffcce9e6f29",
+    "group": "current_roundtrip",
+    "input": {
+      "kind": "Version",
+      "value": "2024.1rc2"
+    },
+    "warm": true,
+    "visible": false
+  }
+]

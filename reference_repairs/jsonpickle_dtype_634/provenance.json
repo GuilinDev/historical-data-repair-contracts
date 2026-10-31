@@ -1,0 +1,41 @@
+{
+  "task": "jsonpickle_dtype_634",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "4.1.1",
+  "fixed": "public commit e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da (not a released 5.0.0)",
+  "source_urls": [
+    "https://github.com/jsonpickle/jsonpickle/pull/634"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_curation/primary/jsonpickle_634.patch",
+      "sha256": "0994a9289f53a70330b6280560b15ca62529e3bd1e182e75033762ad9af57071"
+    },
+    {
+      "path": "results/ready_curation/primary/jsonpickle_634.json",
+      "sha256": "acf489f6ad584001a2b3f0bcecba7b155d4793e0a421e619fea8ea252de2da5c"
+    }
+  ],
+  "adaptation": [
+    "PR634/public commit e7d95a6cbce65db3cea9eb1f3281a57b7ecf59da deterministic subclass ordering, pinned numeric codes and legacy widest-type aliases only. Strip two type annotations to match base imports; no new future handlers.RestoreType dependency or pandas3 unrelated features. ext/pandas.py remains byte-identical to base4.1.1."
+  ],
+  "whole_allowed_files_transplanted": [],
+  "allowed_paths": [
+    "jsonpickle/tags_pd.py",
+    "jsonpickle/ext/pandas.py"
+  ],
+  "changed_paths": [
+    "jsonpickle/tags_pd.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "jsonpickle/tags_pd.py",
+      "base_sha256": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+      "candidate_sha256": "6b6a297928633a73c73ab1a7cb71d8ec65d7914e1d00cec92ce83c264bf9fcea",
+      "fixed_sha256": "c46ef55b6accb1299bf441c58961dd6e5c6107df36be06f22f15018e7493c5ec"
+    }
+  ],
+  "unchanged_base_files": 23,
+  "reference_patch_sha256": "388a9083ffb3e10d6772cee7cbbdce97fc84972e45df00e8f84e96f12af2b7f8"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ef5a4f0b4e5e",
+    "group": "fresh_api",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "02bddc217e51",
+    "group": "current_roundtrip",
+    "input": {
+      "payload": {
+        "name": "alpha"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "a5090cddbbd3",
+    "group": "fresh_api",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true
+  },
+  {
+    "id": "e589bedacfe2",
+    "group": "current_roundtrip",
+    "input": {
+      "payload": {
+        "x": 17,
+        "label": "visible"
+      }
+    },
+    "visible": true
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "task": "pandas_pickle_56308",
+  "purpose": "G2 allowed-edit solvability, not novel repair method or agent result",
+  "base": "2.1.0",
+  "fixed": "2.1.4",
+  "source_urls": [
+    "https://github.com/pandas-dev/pandas/issues/55137",
+    "https://github.com/pandas-dev/pandas/pull/56308"
+  ],
+  "upstream_primary_files": [
+    {
+      "path": "results/ready_curation/primary/pandas_56308.patch",
+      "sha256": "63f81dac8328f0e96f60ae0b9fd40e7431af4882f1ee7ee1b2e2d4eaa9221a80"
+    },
+    {
+      "path": "results/ready_curation/primary/pandas_56308.json",
+      "sha256": "e4a4f14af8fb4ac4d5379a005fe80ebf597fbc1aa24d62cb0c881d994f136e0e"
+    }
+  ],
+  "adaptation": [
+    "2.1.4 compatibility-map fix only: historical blocks.new_block globals resolve to existing pandas._libs.internals._unpickle_block. Base compiled extensions and blocks.py untouched."
+  ],
+  "whole_allowed_files_transplanted": [
+    "pandas/compat/pickle_compat.py"
+  ],
+  "allowed_paths": [
+    "pandas/compat/pickle_compat.py",
+    "pandas/core/internals/blocks.py"
+  ],
+  "changed_paths": [
+    "pandas/compat/pickle_compat.py"
+  ],
+  "whitelist_passed": true,
+  "changed_files": [
+    {
+      "path": "pandas/compat/pickle_compat.py",
+      "base_sha256": "ee6dd44f2dfa5955d49a2b20599edbb3de9ff394c710e76f208752e36d1e7f98",
+      "candidate_sha256": "87e3db48c652ea6720906e7dd85fbca774ac84ba62f112ee890905e2a79c26fc",
+      "fixed_sha256": "87e3db48c652ea6720906e7dd85fbca774ac84ba62f112ee890905e2a79c26fc"
+    }
+  ],
+  "unchanged_base_files": 1998,
+  "reference_patch_sha256": "cb6862cd7c52cc2ee8d51c83726c7edc4b2eca0a63aa535b5e4e5720dd6132e2"
+}

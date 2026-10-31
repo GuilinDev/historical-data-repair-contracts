@@ -1,0 +1,14 @@
+{
+  "command": [
+    "docker",
+    "image",
+    "inspect",
+    "python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39",
+    "--format",
+    "{{json .}}"
+  ],
+  "exit": 0,
+  "stdout": "{\"Id\":\"sha256:e63b9d3e6b56af5282d2c5adc84d8fe0f63e3efc24fc4f73a00b004ddee3697d\",\"RepoTags\":[\"python:3.10.20-slim\"],\"RepoDigests\":[\"python@sha256:63669fd2563fa90b0442fa7b568e66e3667755636cda086d7bcaaa895f66fe39\"],\"Parent\":\"\",\"Comment\":\"buildkit.dockerfile.v0\",\"Created\":\"2026-08-05T01:19:47.687420727Z\",\"DockerVersion\":\"\",\"Author\":\"\",\"Config\":{\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D\",\"PYTHON_VERSION=3.10.20\",\"PYTHON_SHA256=de6517421601e39a9a3bc3e1bc4c7b2f239297423ee05e282598c83ec0647505\"],\"Cmd\":[\"python3\"]},\"Architecture\":\"arm64\",\"Variant\":\"v8\",\"Os\":\"linux\",\"Size\":147433682,\"GraphDriver\":{\"Data\":{\"LowerDir\":\"/var/lib/docker/overlay2/42f283ce294e011045f13a275308a88334f7e6d752e48df8051594124c45675d/diff:/var/lib/docker/overlay2/30919baa55b63de6ef068e140bf9552635e30d4383d751d06422638ef4a405e6/diff:/var/lib/docker/overlay2/c91af56d70112a443f674eec6bc4849a563c4a466add6ca4c5cebdff788e4994/diff\",\"MergedDir\":\"/var/lib/docker/overlay2/0ba2d53f626fd116bcd3792df5c8e1a73a51b27c30d9a8ee5ecc6b01a50d9fed/merged\",\"UpperDir\":\"/var/lib/docker/overlay2/0ba2d53f626fd116bcd3792df5c8e1a73a51b27c30d9a8ee5ecc6b01a50d9fed/diff\",\"WorkDir\":\"/var/lib/docker/overlay2/0ba2d53f626fd116bcd3792df5c8e1a73a51b27c30d9a8ee5ecc6b01a50d9fed/work\"},\"Name\":\"overlay2\"},\"RootFS\":{\"Type\":\"layers\",\"Layers\":[\"sha256:c01c35a040a25a51cd473910e3212a46d85fb700a6467c687f231d7edd47cbc1\",\"sha256:f1750f5c91d9316bd382983a00519571a1b43ba0d5e71acdd72221c8e50d5a67\",\"sha256:15b4538116abaf98bb7058c617bbbf13431564e38623f450d1d1b80a2c17b899\",\"sha256:c0ac0d0d5cac65b797f93dabfe08b0c747bb80dfa9bf5a95ba3729616f7e44e8\"]},\"Metadata\":{\"LastTagTime\":\"0001-01-01T00:00:00Z\"}}\n",
+  "stderr": "",
+  "wall_seconds": 0.012395231984555721
+}

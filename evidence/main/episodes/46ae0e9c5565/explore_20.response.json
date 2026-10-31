@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793399281-c2f7erCYGoqeqvxRfaOo",
+  "object": "chat.completion",
+  "created": 1793399281,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `jsonpickle`'s `PandasDfHandler.restore_v3_3` method used `pd.read_csv` without specifying the `quoting` parameter, which caused incorrect decoding of CSV-encoded DataFrames from version 3.3.0 when they contained quoted strings (e.g., strings with commas, newlines, or quotes). By setting `quoting=1` (which corresponds to `csv.QUOTE_ALL`), the reader correctly handles these characters, preserving the original content of object/string columns. Additionally, the `restore` method was slightly modified to ensure correct handling of the `dtypes_rle` key for backward compatibility.\n\n```python\n# jsonpickle/ext/pandas.py\n\n# In PandasDfHandler.restore_v3_3:\n# Changed:\n# df = (\n#     pd.read_csv(StringIO(csv), **params)\n#     if data[\"values\"].strip()\n#     else pd.DataFrame()\n# )\n# To:\n# df = (\n#     pd.read_csv(StringIO(csv), **params, quoting=1)\n#     if data[\"values\"].strip()\n#     else pd.DataFrame()\n# )\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24044,
+    "completion_tokens": 266,
+    "total_tokens": 24310,
+    "cost": 0.00249484,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 23872,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00249484,
+      "upstream_inference_prompt_cost": 0.0024044,
+      "upstream_inference_completions_cost": 9.044e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

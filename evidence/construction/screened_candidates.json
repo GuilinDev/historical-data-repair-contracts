@@ -1,0 +1,84 @@
+{
+  "screened_utc": "2026-10-30T21:01:09Z",
+  "not_counted": [
+    {
+      "project": "ASDF",
+      "change": "PR2068 / issue2063",
+      "producer": null,
+      "base": "5.3.1",
+      "fix": "5.4.0",
+      "source": "https://github.com/asdf-format/asdf/pull/2068",
+      "status": "Needs genuine release-producer proof",
+      "reason": "Official example is hand-written valid untagged-history YAML. The software.version4.1.0 string is not producer provenance. No artifact bytes may be manually edited."
+    },
+    {
+      "project": "ASDF",
+      "change": "PR566 / issue552",
+      "producer": "Potential2.1.0 (not executed)",
+      "base": "Potential2.1.1/2.2.1",
+      "fix": "2.3.0",
+      "source": "https://github.com/asdf-format/asdf/pull/566",
+      "status": "Needs genuine release-producer proof and old-self control",
+      "reason": "Backward reading of previously allowed oversized integer literals is real, but upstream test writes YAML manually. Genuine old NumPy-integer writer behavior and dependencies not yet CPU-qualified."
+    },
+    {
+      "project": "BTrees",
+      "change": "issue19 /4.3.0",
+      "source": "https://github.com/zopefoundation/BTrees/issues/19",
+      "status": "Not qualified",
+      "reason": "Real user histories cross C/Python implementations; old C artifact producer and target Python reader needed. Pure-Python-to-pure-Python shortcut would miss the documented defect."
+    },
+    {
+      "project": "BTrees",
+      "change": "PR53 / issue51 /4.3.2",
+      "source": "https://github.com/zopefoundation/BTrees/issues/51",
+      "status": "Not qualified",
+      "reason": "C reader restrictions on None/unorderable keys. Python implementation already permits loading; cannot use it to claim the C defect is reproduced."
+    },
+    {
+      "project": "persistent",
+      "change": "PR5 /4.0.7",
+      "source": "https://github.com/zopefoundation/persistent/pull/5",
+      "status": "Not qualified",
+      "reason": "__setstate__ two-key failure; authentic old state and supported-runtime execution not established, no claim of version-specific regression."
+    },
+    {
+      "project": "DateTime",
+      "change": "issue58 /5.4",
+      "source": "https://github.com/zopefoundation/DateTime/issues/58",
+      "status": "Excluded from current old-reader repair set",
+      "reason": "Writer reducer changes can make new datetime pickles work but do not establish rescue of old payloads pointing to pytz unknown names."
+    },
+    {
+      "project": "DateTime",
+      "change": "issue56 /PR62 /5.5",
+      "source": "https://github.com/zopefoundation/DateTime/issues/56",
+      "status": "Excluded from exact historical-value repair",
+      "reason": "Old float serialization may already lose microseconds; cannot demand reconstruction of erased precision."
+    },
+    {
+      "project": "Astropy",
+      "change": "PR19313 /8.0.0",
+      "source": "https://github.com/astropy/astropy/pull/19313",
+      "status": "Not counted",
+      "reason": "Upstream explicitly concerns ECSV not written by Astropy; no genuine historical library-producer lineage established."
+    },
+    {
+      "project": "OpenHands/software-agent-sdk",
+      "change": "PR4320",
+      "fix_commit": "7a1b87f3d7e9081d61ca1f19f667782407cf57f8",
+      "source": "https://github.com/OpenHands/software-agent-sdk/pull/4320",
+      "status": "Merged concrete repair lead, not CPU-qualified",
+      "reason": "Persisted v1 profile skills field breaks strictv2 editor loading; exact released producer still unidentified. Retired-field removal is an intended migration, so all-field-equality oracle would be wrong."
+    },
+    {
+      "project": "OpenHands/software-agent-sdk",
+      "change": "PR5259 /issue5252, stacked on5258",
+      "producer": "1.49.1",
+      "base": "1.49.4",
+      "source": "https://github.com/OpenHands/software-agent-sdk/pull/5259",
+      "status": "Open PR and prior art, not a merged candidate task",
+      "reason": "Actual historical-release conversation fixtures and release-date dependency replay already implemented publicly, with real resume/event coverage. API snapshot merged=false; merge_commit_sha is not evidence of merger."
+    }
+  ]
+}
