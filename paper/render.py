@@ -33,8 +33,8 @@ def render(source, output, embedded_fonts=False):
     figure_positions=[];table_positions=[]
     def p(text,style=body):
         marked=html.escape(str(text)).replace('\n','<br/>')
-        if marked.startswith('Upstream-test comparison.'):
-            marked='<font name="'+bold+'">Upstream-test comparison.</font>'+marked[len('Upstream-test comparison.'):]
+        for lead in ['Upstream-test comparison.','Numeric ambiguity.','Authorization ambiguity.','Original baseline.','Controlled interface comparison.','Resource card.','Limits.']:
+            if marked.startswith(lead):marked='<font name="'+bold+'">'+lead+'</font>'+marked[len(lead):]
         marked=re.sub(r'\bE_([pq])\b',r'E<sub>\1</sub>',marked)
         marked=re.sub(r'\bx_(32|64)\b',r'x<sub>\1</sub>',marked)
         marked=re.sub(r'https://[^\s<>]+',lambda m:'<link href="'+m.group()+'" color="#1E4557">'+m.group()+'</link>',marked)
@@ -83,6 +83,14 @@ def render(source, output, embedded_fonts=False):
                                   ('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#F4F4F4'))]))
         label=ParagraphStyle('ExampleHead',parent=body,fontName=bold,fontSize=10.1,leading=12,spaceAfter=3)
         return KeepTogether([p(item['title'],label),panel,Spacer(1,4),p(item['caption'],small)])
+    def calibration_table():
+        item=content['calibration_table']
+        rows=[[p(x,cellhead) for x in item['headers']]]+[[p(x,cell if i==0 else cellcenter) for i,x in enumerate(row)] for row in item['rows']]
+        tab=AuditTable(rows,colWidths=[208.8,96,96,96],hAlign='LEFT')
+        tab.setStyle(TableStyle([('LINEABOVE',(0,0),(-1,0),.8,colors.black),('LINEBELOW',(0,0),(-1,0),.5,colors.black),
+            ('LINEBELOW',(0,-1),(-1,-1),.8,colors.black),('BACKGROUND',(0,2),(-1,2),colors.HexColor('#EDF4F1')),
+            ('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3),('VALIGN',(0,0),(-1,-1),'MIDDLE')]))
+        return KeepTogether([Spacer(1,3),p(item['caption'],small),tab,Spacer(1,5)])
     story=[p(content['title'],title),p(content['subtitle'],subtitle),p(content['author'],author),p('Abstract',head),p(content['abstract'])]
     for idx,section in enumerate(content['sections']):
         if idx in [1,2,3,4]:story.append(PageBreak())
@@ -93,6 +101,7 @@ def render(source, output, embedded_fonts=False):
             if idx==1 and j==0:story.extend([table(),contract()])
             if idx==2 and j==2:story.append(fig(1))
             if idx==3 and j==2:story.append(fig(2))
+            if idx==2 and j==len(section['paragraphs'])-1:story.append(calibration_table())
     story.append(p(content['conclusion']['title'],head))
     for point in content['conclusion']['points']:
         story.append(p('• '+point))

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498562-iEbISrzy6zAby6A73XiU",
+  "object": "chat.completion",
+  "created": 1793498562,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I attempted to repair the issue where `joblib` fails to correctly load big-endian arrays when using `mmap_mode='r+'`. \n\nThe problem is that `_ensure_native_byte_order` uses `byteswap()`, which creates a copy of the array, breaking the memory-mapping requirement for in-place mutations. I modified `read_mmap` in `joblib/numpy_pickle.py` to use `.view(marray.dtype.newbyteorder('='))` instead of `_ensure_native_byte_order` when a byte-order mismatch is detected. This allows the array to be interpreted with the correct byte order while remaining a memmap.\n\n**Changes:**\n1.  Imported `_is_numpy_array_byte_order_mismatch` from `.numpy_pickle_utils` into `joblib/numpy_pickle.py`.\n2.  Replaced the call to `_ensure_native_byte_order(marray)` in `read_mmap` with a check using `_is_numpy_array_byte_order_mismatch` and a subsequent `.view()` call to change the dtype's byte order without copying the data.\n\n**Checks performed:**\n- Ran the `legacy` check suite.\n- Observed that while the `fresh_api` tests passed, the `historical` and `current_roundtrip` tests for big-endian arrays still failed. The values returned were incorrect, suggesting that simply changing the view of the dtype is not sufficient for big-endian data stored on disk when accessed via `np.memmap` on a little-endian system, or that the underlying data needs to be swapped in the file itself (which is prohibited by the \"do not replace writable mmap with a detached copy\" and \"mutations... must reach the working file\" constraints).\n\n**Unresolved:**\nThe patch did not fully resolve the issue for big-endian arrays in `mmap` mode. The `historical` tests still show incorrect numeric values. This indicates a deeper incompatibility between how big-endian arrays are persisted and how `numpy.memmap` handles non-native byte orders on the host CPU. I was unable to find a way to satisfy both the \"correct numeric values\" and \"writable mmap\" requirements for cross-endianity without violating the constraint against creating detached copies.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 38414,
+    "completion_tokens": 500,
+    "total_tokens": 38914,
+    "cost": 0.0040114,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0040114,
+      "upstream_inference_prompt_cost": 0.0038414,
+      "upstream_inference_completions_cost": 0.00017
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

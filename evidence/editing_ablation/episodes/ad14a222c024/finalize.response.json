@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793501086-eizWi20BmgL2hKQ2v2ja",
+  "object": "chat.completion",
+  "created": 1793501086,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the `PandasDfHandler.restore` method in `jsonpickle/ext/pandas.py` to correctly handle numeric dtype codes.\n\nThe issue was that `np.dtype(dtype_str)` was being called on tags like `pd/i8` or `pd/i`, which are not valid NumPy dtype strings. I modified the dtype application loop to:\n1. Detect tags starting with `pd/`.\n2. Map legacy generic tags without explicit widths (`pd/i`, `pd/u`, `pd/f`, `pd/in`) to their widest counterparts (`int64`, `uint64`, `float64`) to ensure value preservation while allowing widening.\n3. Use `REVERSE_TYPE_MAP` to resolve specific tags (e.g., `pd/i8` $\\rightarrow$ `int8`) to maintain exact dtype widths for both historical and new objects.\n4. Fall back to the original `dtype_str` for non-pandas tags.\n\nI ran the `legacy` check suite, which identified failures in historical artifacts where numeric values were being corrupted or dtypes were incorrectly inferred as `object` or wrong widths due to the `np.dtype` failure.\n\nNo unresolved work remains regarding the specified numeric dtype contract.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 40510,
+    "completion_tokens": 269,
+    "total_tokens": 40779,
+    "cost": 0.00414246,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00414246,
+      "upstream_inference_prompt_cost": 0.004051,
+      "upstream_inference_completions_cost": 9.146e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

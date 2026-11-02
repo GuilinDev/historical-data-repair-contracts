@@ -1,52 +1,69 @@
-# Historical-Data Repair Contracts for Gemma Agents
+Historical-Data Repair Contracts for Gemma Agents
 
-*A Calibrated Resource for Compatibility and Persistence Repair*
+A Calibrated Resource for Compatibility and Persistence Repair
 
 Guilin Zhang
 
-## Abstract
 
-We release eight executable historical-data repair contracts across six Python projects, covering 65 historical files and 252 dependent observations of reading, continued use and persistence. The resource calibrates acceptance when an old format has lost information. Two source repairs satisfy all 84 observations of a jsonpickle contract, yet literal equality with the reference rejects 60 observations for one valid repair. A corrupting control satisfies none despite completing every load and restart. All eight upstream-derived backports pass their contracts. Of 32 completed Gemma 4 repair attempts, four satisfy both semantic checks and source review. Released artifacts include historical bytes, patches, retained failures and an API-free verifier. The contribution is an executable resource of eight repair contracts and an acceptance calibration, grounded in a known upstream ambiguity. Code, data and paper: https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.1
+
+Abstract
+
+We release eight historical-data repair contracts across six Python projects, with 65 historical files and 252 dependent observations of reading, continued use and persistence. The resource makes acceptance explicit when old formats lose information. Two repairs satisfy an 84-observation numeric contract, although literal reference equality rejects 60 observations for one valid repair. A separate calibration of a known AI SDK defect tests the opposite boundary: rejecting ambiguous authorization while preserving safe legacy approvals. The original Gemma baseline accepts four of 32 repairs. A new, single-deployment comparison completes 64 attempts: exact-text editing accepts 10/32, versus 4/32 for a version-checked line-span interface. All complete-acceptance decisions survive API-free replay. Historical bytes, source patches, negative results and API-free verifiers are released. Code, data and paper: https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.2
+
+
 
 ## 1. Introduction
 
 Consider an old file containing a floating-point column. Two producer processes save the same values, one as float32 and the other as float64. Their complete files are identical (Figure 1). An evaluator that requires each original width asks the reader to distinguish inputs it cannot distinguish. Yet accepting any successful load is too weak: a reader can silently narrow a type or discard a later mutation.
 
-Historical-data repair therefore needs an explicit acceptance contract. The test-oracle problem [1] is concrete here: which information survives in the file, which behavior must remain usable, and which alternative outputs are legitimate? We package those decisions with executable tasks rather than leaving them implicit in a single reference output.
 
-![A float32 frame and float64 frame with column x and values 1.125 and -3.25 both produce the identical 267-byte old JSON document. A reader cannot uniquely infer the original width from that document. Values and numeric kind remain mandatory; ambiguous widths may widen.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.1/paper/figures/figure1_collision.png)
+
+Historical-data repair needs an explicit acceptance contract. The test-oracle problem [1] is concrete here: which information survives, which behavior must remain usable, and which alternative outputs are legitimate? Lost numeric width may permit widening; ambiguous authorization may require rejection. We package these decisions with executable checks.
+
+
+
+![A float32 frame and float64 frame with column x and values 1.125 and -3.25 both produce the identical 267-byte old JSON document. A reader cannot uniquely infer the original width from that document. Values and numeric kind remain mandatory; ambiguous widths may widen.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.2/paper/figures/figure1_collision.png)
 
 Figure 1. Two historical producer states yield the same complete document. Each state self-roundtrips with its original width, but the saved bytes cannot distinguish them. The pair was found in six targeted producer executions; this is an existence witness, not a collision-rate estimate.
 
-Each task supplies an affected reader, historical producer source, public examples and a limited source edit scope. A defect lineage groups one upstream defect and its fix with the relevant producer and reader versions. Different files and process repetitions within a lineage extend coverage; they are not independent bugs. We contribute eight such task bundles, an acceptance calibration and a completed Gemma baseline. Table 1 combines resource coverage, control outcomes and model results.
+
+
+Each repair task supplies an affected reader, producer source, public examples and a source edit scope. A defect lineage groups one upstream defect and its fix with the relevant versions. Files and process repetitions extend coverage; they are not independent bugs. The contribution is eight task bundles, calibrated acceptance boundaries and completed Gemma evaluations. Table 1 summarizes the resource and original baseline.
+
+
 
 ## 2. Methods: executable repair contracts
 
 The first four lineages in Table 1 were used during development; four were added prospectively, including two new projects. These tasks come from public projects and may overlap with pretraining data. Genuine releases generated 65 distinct files: 17 public to the agent and 48 withheld from it during repair. All 65 are now released. H/F/R denote input regimes: historical files (131 observations), fresh API construction (53), and current-format roundtrips (68). Each includes declared use and fresh-process reload; they are not successive time steps.
 
+
+
 Table 1. Resource, fresh-installation controls and all 32 completed attempts. Model cells count complete semantic and source-policy acceptances; control cells count observations.
 
-| Lineage | Producer;; base > fixed | Behavior exercised beyond loading | Files public / all | Checks H / F / R | Base | Fixed & backport | A | B |
+| Lineage | Producer; base > fixed | Behavior exercised beyond loading | Files public / all | Checks H / F / R | Base | Fixed & backport | A | B |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Development-exposed lineages (4) |  |  |  |  |  |  |  |  |
-| packaging | 25.0 / 26.0; 26.1 > 26.2 | Hash / comparison; collections | 2/18 | 18/6/12 | 12/36 | 36/36 each | 0/2 | 0/2 |
-| attrs | 21.4.0; 22.2.0 > 23.1.0 | Slot state; cached hash | 1/9 | 9/9/18 | 27/36 | 36/36 each | 0/2 | 0/2 |
-| jsonpickle CSV | 3.3.0; 4.1.0 > 4.1.1 | CSV text; mutated resave | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 1/2 |
-| SQLAlchemy | 1.4.37; 1.4.38 > 1.4.39 | MutableDict; two commits | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 0/2 |
+| packaging | 25.0 / 26.0 26.1 > 26.2 | Hash / comparison; collections | 2/18 | 18/6/12 | 12/36 | 36/36 each | 0/2 | 0/2 |
+| attrs | 21.4.0 22.2.0 > 23.1.0 | Slot state; cached hash | 1/9 | 9/9/18 | 27/36 | 36/36 each | 0/2 | 0/2 |
+| jsonpickle CSV | 3.3.0 4.1.0 > 4.1.1 | CSV text; mutated resave | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 1/2 |
+| SQLAlchemy | 1.4.37 1.4.38 > 1.4.39 | MutableDict; two commits | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 0/2 |
 | Newly added lineages (4) |  |  |  |  |  |  |  |  |
-| joblib endian | 1.2.0; 1.4.2 > 1.5.0 | Writable mmap; flush | 3/7 | 7/7/7 | 9/21 | 21/21 each | 0/2 | 2/2 |
-| joblib compressed | 1.2.0; 1.4.2 > 1.5.0 | Compressed load; raw mmap | 3/7 | 7/7/7 | 9/21 | 21/21 each | 1/2 | 0/2 |
-| jsonpickle dtype | 4.1.1; 4.1.1 > e7d95a6 | Numeric kind / width | 2/6 | 72/6/6 | 6/84 | 84/84 each | 0/2 | 0/2 |
-| pandas | 1.3.5; 2.1.0 > 2.1.4 | Frame operations; resave | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 0/2 |
+| joblib endian | 1.2.0 1.4.2 > 1.5.0 | Writable mmap; flush | 3/7 | 7/7/7 | 9/21 | 21/21 each | 0/2 | 2/2 |
+| joblib compressed | 1.2.0 1.4.2 > 1.5.0 | Compressed load; raw mmap | 3/7 | 7/7/7 | 9/21 | 21/21 each | 1/2 | 0/2 |
+| jsonpickle dtype | 4.1.1 4.1.1 > e7d95a6 | Numeric kind / width | 2/6 | 72/6/6 | 6/84 | 84/84 each | 0/2 | 0/2 |
+| pandas | 1.3.5 2.1.0 > 2.1.4 | Frame operations; resave | 2/6 | 6/6/6 | 12/18 | 18/18 each | 0/2 | 0/2 |
 | Total | 8 lineages; 6 projects |  | 17/65 | 131/53/68 | 99/252 | 252/252 each | 1/16 | 3/16 |
 
 Base > fixed denotes affected reader > repaired upstream reader. Dtype H = 6 files x 12 processes; its base score varies by process. e7d95a6 is a pinned upstream commit. A: 26B A4B / PrimeIntellect BF16; B: 31B / CoreWeave FP4.
 
-### Contract example: a writable joblib mapping
+
+
+Contract example: a writable joblib mapping
 
 The agent receives a joblib 1.2.0 file and may edit joblib/numpy_pickle.py (plus an optional test). In this public case, the affected reader changes 23 to 91234 in memory and in the explicit resave, but the work file still contains 23 after flush. Checking both files in new processes detects the lost write-through.
 
 ```python
+
 work = temporary_copy(historical_file)
 a = joblib.load(work, mmap_mode="r+")
 assert a.flat[1] == 23
@@ -56,73 +73,142 @@ joblib.dump(a, resaved_file)
 for path in (work, resaved_file):
     b = fresh_process(joblib.load, path)
     assert b.flat[1] == 91234
+
 ```
 
 Simplified from the executed verifier for one public case; fresh_process denotes a new interpreter. The full verifier also checks the remaining declared semantics.
 
-## 3. Experiments: acceptance calibration
 
-The jsonpickle defect was known upstream [2]: numeric tags can depend on runtime class-address order, which PYTHONHASHSEED does not fix. Our unmodified 4.1.1 producers generated the identical documents in Figure 1, while each self-roundtripped its original width. Let E_p be process p's encoder, and x_32 and x_64 be frames differing only in numeric width. Across processes p and q, E_p(x_32) = E_q(x_64). No file-only decoder can recover both original widths exactly.
 
-For legacy numeric positions without explicit width suffixes, our contract requires exact values and numeric kind and permits nonnarrowing widths. Explicit historical widths and all new encodings remain exact. Differential testing already recognizes that different outputs can both satisfy a requirement [3]; the contribution here is an executable calibration of this particular contract.
+## 3. Experiments: acceptance boundaries
 
-We implemented three complete source-repair controls (Figure 2). The official conservative backport uses wide numeric types. Document exclusion v2 instead uses a producer invariant: each dtype name maps to one tag within a document. An explicit tag therefore excludes its dtype from another bare tag. A unique remaining candidate is used only for a nonempty, kind-compatible payload within the declared native-pandas numeric universe; otherwise the repair keeps the conservative fallback. A third repair deliberately narrows explicit float64 values.
+Numeric ambiguity. In the known jsonpickle defect [2], numeric tags depend on runtime class-address order. Unmodified 4.1.1 producers yield identical files yet self-roundtrip their original widths (Figure 1). Let E_p encode in process p, and x_32 and x_64 differ only in numeric width. E_p(x_32) = E_q(x_64): a file-only reader cannot recover both widths exactly.
 
-![Paired horizontal bars start at zero. Conservative backport: 84 of 84 admissible and exact. Document exclusion v2: 84 of 84 admissible, 24 of 84 exact. Explicit-width narrowing: zero under both criteria. No uncertainty intervals because these are complete fixed-corpus counts, not independent samples.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.1/paper/figures/figure2_calibration.png)
+
+
+Bare legacy numeric tags preserve exact values and numeric kind, with nonnarrowing widths allowed. Explicit widths and new encodings remain exact: different outputs need not violate requirements [3].
+
+
+
+The conservative backport uses wide types. Document exclusion v2 uses explicit tags in the same document to exclude impossible widths, selecting a unique kind-compatible candidate only for nonempty native-pandas numeric payloads; otherwise it keeps the conservative fallback. A negative control narrows explicit float64 values.
+
+
+
+![Paired horizontal bars start at zero. Conservative backport: 84 of 84 admissible and exact. Document exclusion v2: 84 of 84 admissible, 24 of 84 exact. Explicit-width narrowing: zero under both criteria. No uncertainty intervals because these are complete fixed-corpus counts, not independent samples.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.2/paper/figures/figure2_calibration.png)
 
 Figure 2. Complete source-repair controls on the numeric-code lineage. All three load and restart 84/84 observations. The alternate valid repair differs from literal reference output on 60 observations (five old files, twelve processes). These are researcher-built controls; literal equality is not the upstream test suite.
 
-Both valid policies satisfy 84/84 observations. Literal equality with the official reader accepts only 24/84 for document exclusion. The remaining 60 are width-only differences on five files replayed in twelve processes; values, numeric kinds and subsequent operations agree with the contract. The narrowing control completes every load and restart but satisfies 0/84. Document exclusion uses explicit tags elsewhere in the same document. The witness in Figure 1 contains no such disambiguating tags, so this repair also falls back to float64.
 
-These controls were written by the researchers, separately from Gemma. Source review found that v1 treated an empty column as evidence: Python's all(empty) is true, so a check intended to establish numeric type could pass without a value. We retained v1, guarded v2 against this case, and reran all 84 checks plus empty/nonempty pandas Interval columns, whose cells represent intervals. V2 matches the conservative reference but inherits its empty-Interval information loss. Arbitrary extension dtypes remain outside the validated scope.
 
-**Upstream-test comparison.** A separate comparison with genuine upstream tests covers 12 completed development attempts from packaging and attrs (nine candidate snapshots). Both evaluators accept the same two and reject the same ten; no added rejection is observed among the two upstream accepts. A preservation-check grid timed out for one patch, but a separately completed regression test had already rejected it. The timeout itself is not counted as a semantic failure. These development attempts are separate from the main 32. Figure 2 compares literal outputs, not authentic upstream suites.
+Both researcher-written valid policies satisfy 84/84 observations (Figure 2). Literal equality rejects 60 width-only differences: five files, twelve processes. The corrupting control loads and restarts everything but satisfies 0/84. Figure 1 has no disambiguating tags, so both policies retain float64. Failed trial controls remain archived.
+
+
+
+Authorization ambiguity. Vercel AI SDK documented newline-joined approval fields yielding identical signed payloads for different tuples [4]. We pin the public v7 fix and its parent. Safe legacy approvals remain valid; legacy identifiers containing a line feed are rejected. New signatures use domain-prefixed JSON arrays. This is known serialization ambiguity, not a discovered HMAC collision.
+
+
+
+We froze 54 related scenarios (27 legacy, 27 new-format), including two collision pairs, before testing five implementations (Table 2). Each receives 54 initial and 54 fresh-process verifications, plus separate reissue/reload checks on 37 contract-eligible records, irrespective of each control's actual accepts. The fix passes all scenarios; rejecting all legacy records loses 17 valid cases, while unrestricted fallback accepts five invalid cases. These component probes are not an extra Gemma task or end-to-end authorization. Restart adds no scenario rejections.
+
+
+
+Table 2. Signature calibration: scenarios satisfying all declared checks, grouped by expected acceptance. All five implementations complete 54 related scenarios; the bottom three are researcher-written controls.
+
+| Implementation | Expected accept | Expected reject | All scenarios |
+| --- | --- | --- | --- |
+| Pre-fix upstream | 17/37 | 12/17 | 29/54 |
+| Upstream v7 fix | 37/37 | 17/17 | 54/54 |
+| Reject all legacy | 20/37 | 17/17 | 37/54 |
+| Unrestricted fallback | 37/37 | 12/17 | 49/54 |
+| Reject all control chars | 16/37 | 17/17 | 33/54 |
+
+
 
 ## 4. Experiments: Gemma repair attempts
 
-We ran Gemma 4 [4] on eight tasks with two fresh conversations per deployment, via OpenRouter: A, 26B A4B pinned to PrimeIntellect BF16; B, 31B pinned to CoreWeave FP4. Provider fallback was disabled. Provider and precision are confounded; hosted weight revisions are not attested, and public fixes may have appeared in pretraining.
+Original baseline. The original 32 Gemma 4 [5] attempts used two conversations per task and deployment: A, 26B A4B via PrimeIntellect BF16; B, 31B via CoreWeave FP4. All calls used OpenRouter, pinned providers and disabled fallback. Provider and precision are confounded, hosted weight revisions are unattested, and public fixes may overlap pretraining. Four repairs pass complete semantics and source review (Table 1); sixteen leave source unchanged. The release retains all traces, including eight same-context rate-limit recoveries and the original attempt matrix.
 
-Both deployments received identical contracts, tools and public checks: at most 24 exploration rounds, 4,096 output tokens per response, and temperature 0.2. Both reserved 2,048 tokens for a temperature-zero final report. Exploration stops at 120 KB of request context. Acceptance requires every frozen observation plus source review; the protocol records tool, transport and retry limits.
 
-All 32 conversations reached a valid final report and decisive evaluation (Figure 3). Eight PrimeIntellect rate-limit interruptions resumed from identical saved requests, contexts and candidates beyond the original three-retry ceiling; failures and the recovery journal remain available. Completed means the conversation produced a final report, not that the repair passed.
 
-![Eight rows and four attempt columns show all 32 completed model attempts. Only four cells pass the entire contract: both B joblib endian attempts, one A joblib compressed attempt, and one B jsonpickle CSV attempt. Sixteen leave source unchanged and fifteen hit the exploration context bound. Full data and episode identities accompany the figure.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.1/paper/figures/figure3_attempts.png)
+Controlled interface comparison. Exact-text edits failed 78 times in eleven baseline attempts, but only five of the sixteen unchanged attempts encountered such errors. The competition's edit_file similarly defaults to unique matching [6]; this motivates a test, not a claim about official-harness failure rates. We froze 64 new conversations: eight lineages, four replicates, two interfaces. Task/replicate blocks were randomized, with both arms run together on the same CoreWeave FP4 Gemma 4 31B endpoint.
 
-Figure 3. Every completed Gemma conversation, with passed/declared observations from the original final evaluation. The dashed line separates development-exposed lineages (above) from newly added lineages (below). Counts are dependent coverage, not partial task successes. Providers and precision differ between A and B.
 
-Four repairs were accepted: A solved compressed joblib loading once; B solved endian-map persistence twice and historical CSV dispatch once. The endian patches retain the file-backed array instead of returning a converted copy. The CSV patch dispatches the old CSV representation before JSON decoding. Residual redundant code and untested internal-call paths still limit production use. No attempt supplies an optional regression test. Main-run API cost is US$0.7785.
 
-Trajectory diagnosis. Sixteen attempts leave source unchanged; twelve edit it without satisfying the full contract. The fifteen context-bound stops comprise ten unchanged, four edited-incomplete and one accepted attempt. Exact-text edits fail 78 times across eleven attempts, including only five of the sixteen unchanged attempts; these errors cannot explain all unchanged outcomes. Three attempts encounter UTF-8 search errors. In one SQLAlchemy conversation, twelve edits target a two-line snippet occurring twice and are rejected by the unique-match guard. The competition's edit_file interface likewise defaults to allow_multiple=False [5]. This motivates testing location-aware editing; our traces do not measure official-harness failure rates. An unchanged packaging attempt reads the same 100-line window eight times. After logged round 20, its next request reaches 125,578 bytes, above the 120,000-byte guard; round 21 is not sent. These are request bytes, not tokens or measured model capacity.
+Both arms expose identical source lines, hashes, contracts and public checks. Exact editing requires one text match; span editing atomically replaces inclusive line ranges against a checked source version. Both validate syntax and allow 24 rounds (4,096 output tokens, temperature 0.2), a 120,000-request-byte guard and a reserved final report (2,048 tokens, temperature zero). Acceptance requires real source change, every frozen observation and source review.
 
-A CSV attempt passes 6/6 historical initial checks but fails 6/6 restarts and 6/6 current-format cases. Its broad legacy-reader dispatch causes an index-length mismatch after resaving: initial semantics alone do not establish persistence.
+
+
+![Eight paired rows show exact-text versus version-checked-span complete repairs out of four. packaging0/0, attrs2/0, CSV2/0, SQLAlchemy3/3, endian1/1, compressed0/0, dtype0/0, pandas2/0. Zero is shown explicitly; no missing attempts.](https://raw.githubusercontent.com/GuilinDev/historical-data-repair-contracts/v0.1.2/paper/figures/figure3_controlled.png)
+
+Figure 3. Complete repair acceptance in all 64 new attempts. Each point counts four conversations on one lineage with the same Gemma 4 31B deployment. Circles: exact text, 10/32 total; squares: version-checked spans, 4/32. Repetitions are nested in eight selected lineages; these are observed counts, not a general editor ranking.
+
+
+
+All 64 attempts finish and receive decisive evaluations (Figure 3). Exact editing accepts 10/32; the span package accepts 4/32. Unchanged source increases from 6 to 19. Span edits incur 49 syntax/indentation rejections across 15 attempts; independent reconstruction reproduces every rejection. This does not establish how much those errors caused the acceptance gap. The tested interface package did not improve full repairs; eight selected lineages do not establish a general editor ranking.
+
+
+
+Two reviewed pauses recover new-file metadata and a pre-network ledger-write failure, preserving all attempts and adding no model rounds. All patches are source-policy compliant. Replay preserves all 64 complete-acceptance decisions; four rejected dtype attempts change partial observations. Responses report US$2.5637; conservative accounting is US$2.5728.
+
+
+
+An original CSV attempt passes 6/6 historical initial checks but fails all restarts and current-format cases after resaving. In a separate 12-attempt development comparison, genuine packaging/attrs upstream tests and our evaluator agree: two accepts, ten rejects. A preservation grid times out for one patch already rejected by a completed regression test; timeout is not counted as semantic failure.
+
+
 
 ## 5. Related work
 
-Compatibility testing predates coding agents. DUPTester studies distributed-system upgrades [6]. OpenHands' persistence CI uses payloads from released PyPI versions, golden fixtures and release cutoffs [7]. SWE-bench [8] already includes historical ECSV compatibility, while GitChameleon studies version-conditioned API code generation [9]. Our scope is narrower: repairing a reader against immutable old artifacts and a declared persistence contract.
+Compatibility testing predates coding agents. DUPTester studies distributed-system upgrades [7]. OpenHands' persistence CI uses released-version payloads, golden fixtures and release cutoffs [8]. SWE-bench includes historical ECSV compatibility [9], while GitChameleon studies version-conditioned API generation [10]. Our scope is repairing readers against immutable artifacts and declared continued-use behavior.
 
-Repair overfitting [10] motivates evaluating beyond construction tests. SWE-Gate separates functional success from further constraints [11], and UTBoost strengthens SWE-bench evaluation through additional tests [12]. Mokav and ChangeGuard compare program behaviors [13,14]; metamorphic testing studies relations between executions [15]. Our save/reload checks and differential controls use established testing ideas.
+
+
+Repair overfitting [11] motivates evaluation beyond construction tests. SWE-Gate separates functional success from further constraints [12]; UTBoost strengthens SWE-bench tests [13]. Mokav and ChangeGuard compare program behaviors [14,15], and metamorphic testing studies execution relations [16]. Our save/reload and differential checks use established ideas.
+
+
+
+SWE-Edit studies editing interfaces and downstream repair outcomes [17]. We introduce no editing algorithm: the controlled comparison tests this resource's diagnostic use. Likewise, both motivating serialization defects and their upstream fixes predate our calibrations. The contribution is the executable acceptance boundary and retained evidence.
+
+
 
 ## 6. Availability and limits
 
-Resource card. Eight lineages, six projects, 65 files and 252 dependent observations. The release contains producer/reader source, reference and model patches, frozen expectations, licenses and retained failures. Original contributions use Apache-2.0; third-party licenses are retained. Static integrity, saved-record and numeric checks need Python 3.10+; they need neither Docker nor ARM64. Re-executing repairs is qualified on Linux ARM64 with Docker. Download and instructions: https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.1
+Resource card. Eight repair lineages, six Python projects, 65 files and 252 dependent observations. The original 32 attempts, new 64-attempt comparison and separate 54-scenario signature calibration retain their own denominators. Producer/reader source, patches, expectations, failures, reviews and licenses are included. Original contributions use Apache-2.0; third-party terms are retained. Frozen download: https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.2
 
-Start with python3 compat.py integrity. This checks file hashes, not repair semantics. After the documented environment bootstrap, run python3 compat.py reproduce --task joblib_endian_1561 --controls base,fixed,reference for a complete task. A fresh dependency installation on the same ARM64 host reproduced all 24 control evaluations (756 observations). Release-only replay of 32 patches completed 1,008 observations and preserved the four full acceptances. Two incorrect dtype readers changed partial counts across processes; replay adds no model attempts.
 
-Expected observations and admissibility were frozen before model calls; allowed-file upstream backports pass 252/252 checks. Historical bytes, producer source, expectations and verifier code remain immutable during repair. Agents edit designated Python files and may add a regression test. Execution uses network-disabled, read-only ARM64 containers with one CPU, 1 GB memory and temporary working copies. Source review excludes fixture hardcoding and verifier manipulation.
 
-Limits. Eight selected lineages do not estimate defect prevalence or general coding ability. Most are upgrade regressions; compressed joblib loading is a longstanding defect, and dtype tags vary across processes. Two joblib fixes share a project. Only one lineage calibrates ambiguous outputs; its six files repeated across processes are not new artifacts. The edit allowlist supplies localization and excludes dependency/native-code fixes. Finite checks cover only declared behavior; other architectures remain unqualified.
+Start with python3 compat.py integrity, then python3 reproduce_ablation.py --records-only. These Python 3.10+ checks need neither Docker nor ARM64; they verify identities and recorded decisions, not fresh repair behavior. Re-execution is qualified on Linux ARM64 with Docker; after bootstrap, python3 reproduce_ablation.py replays every new patch without an API. Separate Node 22+ and independent Python checks reproduce all 725 signature-calibration observations.
+
+
+
+Original controls reproduce 756 observations on a fresh installation; the original 32 patches replay 1,008 observations. The new campaign replays 2,016. Frozen expectations and source admissibility precede model calls. Agents see only public examples and designated source; evaluation uses network-disabled, read-only containers with one CPU and 1 GB memory. Public logs declare author-path redactions with original/exported hashes; source patches remain exact.
+
+
+
+Limits. Selected public lineages do not estimate defect prevalence or general coding ability. The source allowlist supplies localization and excludes dependency/native-code repairs. Two joblib tasks share a project. Only the numeric case demonstrates multiple valid repair policies; the signature case tests a different rejection boundary. The numeric calibration excludes arbitrary extension dtypes. Finite checks cover declared behavior, not all APIs or security properties. Other repair-execution architectures remain unqualified.
+
+
 
 ## 7. Conclusion
 
-- Repair contracts should test continued use and persistence, beyond successful loading.
-- Calibration admits a valid repair rejected by literal equality on 60/84 observations, while rejecting a corrupting repair on all 84.
-- Eight executable tasks and 32 completed Gemma attempts provide a reproducible baseline: four repairs satisfy the full contract and source review.
 
-## Disclosure
+
+- Continued use and persistence belong in historical-data acceptance contracts.
+
+- Calibration admits value-preserving alternatives and rejects unsafe ambiguity; neither literal equality nor unconditional compatibility is sufficient.
+
+- The new controlled Gemma comparison does not improve repairs with the tested span interface. Complete results, including failures, make that diagnosis reproducible.
+
+
+
+Disclosure
 
 Codex assisted with research, implementation, experiments, auditing and writing; Gemma generated the evaluated patches. The author is responsible for the claims and artifacts.
 
+
+
 ## References
+
+
 
 [1] Earl T. Barr et al. (2015). The Oracle Problem in Software Testing: A Survey. IEEE TSE 41(5):507-525. https://doi.org/10.1109/TSE.2014.2372785
 
@@ -130,30 +216,36 @@ Codex assisted with research, implementation, experiments, auditing and writing;
 
 [3] William M. McKeeman (1998). Differential Testing for Software. Digital Technical Journal 10(1):100-107. https://www.cs.tufts.edu/comp/150FP/archive/bill-mckeeman/DifferentailTesting.pdf
 
-[4] Gemma Team (2026). Gemma 4 Technical Report. arXiv:2607.02770. https://arxiv.org/abs/2607.02770
+[4] Vercel AI SDK contributors (2026). fix(ai): use injective serialization for tool approval HMAC payload. PR 17493. https://github.com/vercel/ai/pull/17493
 
-[5] Elan Markowitz et al. (2026). Google - The Gemma 4 Developer Agent Competition. Kaggle. https://www.kaggle.com/competitions/gemma-4-developer-agent
+[5] Gemma Team (2026). Gemma 4 Technical Report. arXiv:2607.02770. https://arxiv.org/abs/2607.02770
 
-[6] Yongle Zhang et al. (2021). Understanding and Detecting Software Upgrade Failures in Distributed Systems. SOSP 2021. https://doi.org/10.1145/3477132.3483577
+[6] Elan Markowitz et al. (2026). Google - The Gemma 4 Developer Agent Competition. Kaggle. https://www.kaggle.com/competitions/gemma-4-developer-agent
 
-[7] OpenHands software-agent-sdk contributors (2026). test(ci): detect persisted settings compatibility regressions. OpenHands PR3298. https://github.com/OpenHands/software-agent-sdk/pull/3298
+[7] Yongle Zhang et al. (2021). Understanding and Detecting Software Upgrade Failures in Distributed Systems. SOSP 2021. https://doi.org/10.1145/3477132.3483577
 
-[8] Carlos E. Jimenez et al. (2024). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? ICLR 2024. https://arxiv.org/abs/2310.06770
+[8] OpenHands software-agent-sdk contributors (2026). test(ci): detect persisted settings compatibility regressions. OpenHands PR3298. https://github.com/OpenHands/software-agent-sdk/pull/3298
 
-[9] Diganta Misra et al. (2026). GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities. ACL 2026. https://aclanthology.org/2026.acl-long.2170/
+[9] Carlos E. Jimenez et al. (2024). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? ICLR 2024. https://arxiv.org/abs/2310.06770
 
-[10] Edward K. Smith et al. (2015). Is the Cure Worse Than the Disease? Overfitting in Automated Program Repair. ESEC/FSE. https://doi.org/10.1145/2786805.2786825
+[10] Diganta Misra et al. (2026). GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities. ACL 2026. https://aclanthology.org/2026.acl-long.2170/
 
-[11] Xin He et al. (2026). SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents. arXiv:2609.04167. https://arxiv.org/abs/2609.04167
+[11] Edward K. Smith et al. (2015). Is the Cure Worse Than the Disease? Overfitting in Automated Program Repair. ESEC/FSE. https://doi.org/10.1145/2786805.2786825
 
-[12] Boxi Yu et al. (2025). UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench. ACL 2025. https://aclanthology.org/2025.acl-long.189/
+[12] Xin He et al. (2026). SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents. arXiv:2609.04167. https://arxiv.org/abs/2609.04167
 
-[13] Khashayar Etemadi et al. (2025). Mokav: Execution-driven differential testing with LLMs. JSS 230:112571. https://doi.org/10.1016/j.jss.2025.112571
+[13] Boxi Yu et al. (2025). UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench. ACL 2025. https://aclanthology.org/2025.acl-long.189/
 
-[14] Lars Gröninger et al. (2025). ChangeGuard: Validating Code Changes via Pairwise Learning-Guided Execution. PACMSE/FSE 2025. https://doi.org/10.1145/3715760
+[14] Khashayar Etemadi et al. (2025). Mokav: Execution-driven differential testing with LLMs. JSS 230:112571. https://doi.org/10.1016/j.jss.2025.112571
 
-[15] Sergio Segura et al. (2016). A Survey on Metamorphic Testing. IEEE TSE 42(9):805-824. https://doi.org/10.1109/TSE.2016.2532875
+[15] Lars Gröninger et al. (2025). ChangeGuard: Validating Code Changes via Pairwise Learning-Guided Execution. PACMSE/FSE 2025. https://doi.org/10.1145/3715760
 
-## Software acknowledgment
+[16] Sergio Segura et al. (2016). A Survey on Metamorphic Testing. IEEE TSE 42(9):805-824. https://doi.org/10.1109/TSE.2016.2532875
+
+[17] Yikai Zhang et al. (2026). SWE-Edit: Rethinking Code Editing for Efficient SWE-Agent. arXiv:2604.26102. https://arxiv.org/abs/2604.26102
+
+
+
+Software acknowledgment
 
 Figure preparation used Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents (Kassis et al., 2026). https://doi.org/10.48550/arXiv.2609.00065

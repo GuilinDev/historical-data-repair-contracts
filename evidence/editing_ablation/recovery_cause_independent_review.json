@@ -1,0 +1,35 @@
+{
+  "decision": "CAUSE_CONFIRMED_RECOVERY_IMPLEMENTATION_REVIEW_PENDING",
+  "reviewed_utc": "2026-11-01T02:37:41.584272+00:00",
+  "affected_episode": "8ed676066380",
+  "failure_location": "run_editing_ablation.source_difference normalized source comparison after run_episode returned normally",
+  "cause": "The declared-allowed packaging/_structures.py is newly created by the model, but metadata comparison unconditionally reads the absent base path.",
+  "evidence": {
+    "recorded_attempts": 40,
+    "recorded_schedule_is_exact_frozen_prefix": true,
+    "other_attempts_not_started": 24,
+    "original_protocol_complete": true,
+    "original_execution_status": "observed",
+    "final_protocol_error": null,
+    "last_tool_consumed": true,
+    "file_in_frozen_allowed_list_and_initial_prompt": true,
+    "base_file_absent": true,
+    "candidate_file_present": true,
+    "candidate_files_matching_original_evaluation_tar": 30,
+    "other_original_results_and_candidate_manifests_verified": 39,
+    "ledger_finalized_episodes": 40,
+    "accounted_usd": 1.630893199999999
+  },
+  "hashes": {
+    "plan": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+    "results_before_recovery": "0455c869b08f1fa4033c62e9b5f0331fb93db5c1916ff1772ba419e8355868ab",
+    "affected_original_result": "e1c39435fc2d984cdd24c5c24706ec43d7fb5ba701b78cb79bb82be949d19598",
+    "affected_wrapped_result": "5dc0a5bb6c0dc9b983773a1fbb5c61fdbc90bef192bc5fa382ae2a5fd2ed5196",
+    "affected_final": "861b99c67b018157b950fc337b27e45fac75f5b2a32e15cb6348fa8bb2773b5c",
+    "affected_hidden_evaluation_archive": "9a571184a2f7a13d813001166fe6b4fb024128bd2ee17cf6cd74ffb3f265e4d1",
+    "created_file": "d977d1329962e0070ce9387dffac2586cef71244b59bfc8ccdf395dfa3748b0a"
+  },
+  "permitted_recovery_principle": "Recompute metadata treating absent base text as None, retain all original evidence, prove other 39 derived records unchanged, then continue only the remaining frozen 24 attempts under the existing cap after wrapper review. Do not resend completed conversations or select by semantic results.",
+  "interim_effectiveness_conclusion": null,
+  "new_api_calls_by_reviewer": 0
+}

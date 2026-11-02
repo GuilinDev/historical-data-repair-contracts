@@ -1,0 +1,17 @@
+[
+  {
+    "new": "        df = (\n            pd.read_csv(StringIO(csv), **params)\n            if data.get(\"values\", \"\").strip()\n            else pd.DataFrame()\n        )",
+    "old": "        df = (\n            pd.read_csv(StringIO(csv), **params)\n            if data[\"values\"].strip()\n            else pd.DataFrame()\n        )",
+    "path": "jsonpickle/ext/pandas.py"
+  },
+  {
+    "new": "    def restore(self, obj):\n        data_encoded, meta = self.pp.restore_pandas(obj)\n\n        # If this is a v3.3 DataFrame, it's stored as a CSV string in 'values'\n        # and doesn't have 'dtypes_rle' in meta.\n        if \"dtypes_rle\" not in meta:\n            return self.restore_v3_3(obj)\n\n        data_columns = decode(data_encoded, keys=True)",
+    "old": "    def restore(self, obj):\n        data_encoded, meta = self.pp.restore_pandas(obj)\n\n        data_columns = decode(data_encoded, keys=True)\n\n        # get type codes, un-RLE-ed\n        try:\n            rle_types = meta[\"dtypes_rle\"]\n        except KeyError:\n            # was encoded with pre-v3.4 scheme\n            return self.restore_v3_3(obj)\n        type_codes = rle_decode(rle_types)",
+    "path": "jsonpickle/ext/pandas.py"
+  },
+  {
+    "new": "        # progressively reconstruct dataframe as a dict\n        df_data = {}\n        dtypes = {}\n        type_codes = rle_decode(meta[\"dtypes_rle\"])\n        for col, type_code in zip(columns, type_codes):",
+    "old": "        # progressively reconstruct dataframe as a dict\n        df_data = {}\n        dtypes = {}\n        for col, type_code in zip(columns, type_codes):",
+    "path": "jsonpickle/ext/pandas.py"
+  }
+]

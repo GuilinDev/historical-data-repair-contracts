@@ -15,3 +15,11 @@ No model weights, account credentials or privately owned research/employer
 assets are distributed. Gemma candidates and model/API routing identities are
 identified in the accompanying experimental evidence. AI assistance and the
 limits of the experiments are disclosed in the manuscript.
+
+
+v0.1.2 additional source attribution
+----------------------------------
+Vercel AI SDK: Copyright (c) Vercel, Inc.; Apache License 2.0.
+Pinned merge 7fa85b2ca52da19b56b0809614cc8485edb42a0d and parent 34c53c0ff19b1567e79d45130f85c612006eacf6.
+Source and license copies are retained in extensions/approval_signature/merged_upstream/.
+Three verifier mutations and the finite calibration are research controls; no new vulnerability discovery is claimed.

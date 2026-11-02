@@ -1,0 +1,463 @@
+{
+  "execution_status": "observed",
+  "passed": 0,
+  "n": 6,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 2
+    },
+    "fresh_api": {
+      "passed": 0,
+      "n": 2
+    },
+    "current_roundtrip": {
+      "passed": 0,
+      "n": 2
+    }
+  },
+  "records": [
+    {
+      "id": "e2914c218f46",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "e2914c218f46",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 183, in main\n    print(json.dumps(observe(args.task,obj,json.loads(args.spec),replay=True),ensure_ascii=False));return\n  File \"/harness/observe.py\", line 83, in observe\n    result={\"initial\":frame_snapshot(obj)}\n  File \"/harness/observe.py\", line 33, in frame_snapshot\n    return {\"columns\":obj.columns.tolist(),\"columns_name\":obj.columns.name,\"index\":obj.index.tolist(),\"index_name\":obj.index.name,\nAttributeError: 'NoneType' object has no attribute 'columns'\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "50946b82bba2",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "50946b82bba2",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 183, in main\n    print(json.dumps(observe(args.task,obj,json.loads(args.spec),replay=True),ensure_ascii=False));return\n  File \"/harness/observe.py\", line 83, in observe\n    result={\"initial\":frame_snapshot(obj)}\n  File \"/harness/observe.py\", line 33, in frame_snapshot\n    return {\"columns\":obj.columns.tolist(),\"columns_name\":obj.columns.name,\"index\":obj.index.tolist(),\"index_name\":obj.index.name,\nAttributeError: 'NoneType' object has no attribute 'columns'\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "ded19ee5e4fa",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "ded19ee5e4fa",
+        "group": "current_roundtrip",
+        "status": "program_error",
+        "error": "AttributeError: 'NoneType' object has no attribute 'columns'"
+      }
+    },
+    {
+      "id": "8f9dea76ea8e",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "8f9dea76ea8e",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 183, in main\n    print(json.dumps(observe(args.task,obj,json.loads(args.spec),replay=True),ensure_ascii=False));return\n  File \"/harness/observe.py\", line 83, in observe\n    result={\"initial\":frame_snapshot(obj)}\n  File \"/harness/observe.py\", line 33, in frame_snapshot\n    return {\"columns\":obj.columns.tolist(),\"columns_name\":obj.columns.name,\"index\":obj.index.tolist(),\"index_name\":obj.index.name,\nAttributeError: 'NoneType' object has no attribute 'columns'\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1831c39d6ca7",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "1831c39d6ca7",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_error": "Traceback (most recent call last):\n  File \"/harness/observe.py\", line 223, in <module>\n    main(parser.parse_args())\n  File \"/harness/observe.py\", line 183, in main\n    print(json.dumps(observe(args.task,obj,json.loads(args.spec),replay=True),ensure_ascii=False));return\n  File \"/harness/observe.py\", line 83, in observe\n    result={\"initial\":frame_snapshot(obj)}\n  File \"/harness/observe.py\", line 33, in frame_snapshot\n    return {\"columns\":obj.columns.tolist(),\"columns_name\":obj.columns.name,\"index\":obj.index.tolist(),\"index_name\":obj.index.name,\nAttributeError: 'NoneType' object has no attribute 'columns'\n",
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4198e7620fe1",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "4198e7620fe1",
+        "group": "current_roundtrip",
+        "status": "program_error",
+        "error": "AttributeError: 'NoneType' object has no attribute 'columns'"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

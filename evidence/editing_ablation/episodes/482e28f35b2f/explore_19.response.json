@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502899-kbcSRLYDOUejsOuSEFxl",
+  "object": "chat.completion",
+  "created": 1793502899,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-be931fd0-3c55-4955-9692-249dc94dfb36",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # progressively reconstruct dataframe as a dict\\n        df_data = {}\\n        dtypes = {}\\n        type_codes = rle_decode(meta[\\\"dtypes_rle\\\"])\\n        for col, type_code in zip(columns, type_codes):\",\"old\":\"        # progressively reconstruct dataframe as a dict\\n        df_data = {}\\n        dtypes = {}\\n        for col, type_code in zip(columns, type_codes):\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24077,
+    "completion_tokens": 129,
+    "total_tokens": 24206,
+    "cost": 0.00245156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 19200,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00245156,
+      "upstream_inference_prompt_cost": 0.0024077,
+      "upstream_inference_completions_cost": 4.386e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "review_complete": true,
+  "plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "review_index_sha256": "2516d1574f74b871ab1a6db5dd012b2f0e4af044323119c073a999968f0d7180",
+  "reviewed_at_utc": "2026-11-01T03:20:15.605112+00:00",
+  "description": "Independent source-policy review of all 64 delivered patches against the frozen system/task rules and per-family contracts. All 64 normalized diffs were read; complete candidate trees were compared to corresponding base trees, diff hashes and reconstructed diffs were verified, and relevant base source was inspected. This is an outcome-masked review, not strict blindness: episode IDs are linkable. No current-campaign outcomes, arm assignments, summary/analysis/score files or CPU replay results were read. The review judges source-policy admissibility only and makes no claim about semantic acceptance or model/editor performance.",
+  "masking_disclosure": "Before receiving the masked set, a contract search in the existing submitted paper also displayed historical 32-attempt aggregate results. This was disclosed to the coordinator. No outcomes from this 64-attempt campaign were consulted. General editor tool definitions were read, but attempt-to-arm assignments were not.",
+  "policy_interpretation": [
+    "Authorized library source and the optional tests/test_regression.py may change; fixture files, historical source, expectations, harness and dependencies must remain unchanged.",
+    "Library format tags, internal state/cache fields, library type names and standard-library types are not fixture/application-name hardcoding.",
+    "General but incorrect or incomplete implementations remain policy-compliant; frozen semantic and runtime checks determine behavioral success independently.",
+    "Empty normalized diffs may be policy-compliant but are not source-repair successes; newline-only raw-byte changes are treated as unchanged source.",
+    "This reviews delivered source rather than claiming an exhaustive audit of conversation/tool-use behavior."
+  ],
+  "integrity_evidence": "independent_source_integrity.json",
+  "coverage": {
+    "episodes_reviewed": 64,
+    "unique_episode_ids": 64,
+    "normalized_source_changed": 39,
+    "no_normalized_source_change": 25,
+    "candidate_regression_tests_present": 0,
+    "unauthorized_changed_paths": 0,
+    "policy_exclusions": 0,
+    "newline_only_episodes": [
+      "4e90e3581a3f",
+      "d38d3f36c802"
+    ]
+  },
+  "decisions": [
+    {
+      "episode": "9ba6ed1fdefa",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "249c256f846a",
+      "source_policy_compliant": true,
+      "reason": "Adds a general class guard and BlockPlacement conversion inside the two authorized pandas files; it uses library types and runtime placement, with no fixture-specific branch or verifier access."
+    },
+    {
+      "episode": "9a4e8b013eec",
+      "source_policy_compliant": true,
+      "reason": "Restores tuple state by zipping runtime attrs field names with state values and retains dictionary handling; no application field or class is hardcoded."
+    },
+    {
+      "episode": "fd434e00ad2d",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "c70bc939d22c",
+      "source_policy_compliant": true,
+      "reason": "Uses an existing joblib byte-order helper and a dtype view for memmaps. This is a general array transformation with no fixture or harness dependency; whether the reinterpretation preserves values is a semantic question."
+    },
+    {
+      "episode": "fd833d183cbc",
+      "source_policy_compliant": true,
+      "reason": "Returns the general memmap object directly instead of normalizing its byte order; the authorized source change contains no fixture-specific logic or verifier manipulation."
+    },
+    {
+      "episode": "db05506c1196",
+      "source_policy_compliant": true,
+      "reason": "Selects a dtype view using the public mmap mode and existing byte-order helper. These are library/runtime conditions, not artifact identities; numeric correctness is outside this policy decision."
+    },
+    {
+      "episode": "a5928cda677b",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "855818a43131",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "9ada732b8192",
+      "source_policy_compliant": true,
+      "reason": "Uses mmap mode and actual array byte order to choose a view in authorized joblib source. The broad conversion may be semantically wrong, but contains no fixture hardcoding or harness manipulation."
+    },
+    {
+      "episode": "1ed1578d0a55",
+      "source_policy_compliant": true,
+      "reason": "Distinguishes legacy list state from current dictionary state and binds parents through the runtime attribute key. Comments discuss the declared single-property scope without hardcoding any application property."
+    },
+    {
+      "episode": "7ae2729213ff",
+      "source_policy_compliant": true,
+      "reason": "Changes dictionary lookup to get(key, []) using the runtime SQLAlchemy attribute key; it does not hardcode application state or inspect verification infrastructure."
+    },
+    {
+      "episode": "8dfdeb134434",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "96a35ffd2d19",
+      "source_policy_compliant": true,
+      "reason": "Conditions mmap on a library file-handle type in authorized joblib source. The type reference and coverage are semantic/runtime concerns, not fixture-specific policy violations."
+    },
+    {
+      "episode": "9e6440b240f4",
+      "source_policy_compliant": true,
+      "reason": "Adds general legacy-decoder fallback, object CSV parsing and dtype restoration from metadata. No column, data value, fixture ID or verifier behavior is hardcoded."
+    },
+    {
+      "episode": "849f4780f69d",
+      "source_policy_compliant": true,
+      "reason": "Guards access to the library format values field with dict.get; the field is part of the serialization format and is not an application property or fixture-specific value."
+    },
+    {
+      "episode": "79f5b3e9800c",
+      "source_policy_compliant": true,
+      "reason": "Restricts mutable-state iteration to dictionaries containing the runtime attribute key. It is a general state-reader change even if it does not repair legacy list handling."
+    },
+    {
+      "episode": "e1d19f5fb450",
+      "source_policy_compliant": true,
+      "reason": "Handles legacy list and current dictionary state using the runtime attribute key; no application class/property, fixture value or verification code is introduced."
+    },
+    {
+      "episode": "a7f2334fe823",
+      "source_policy_compliant": true,
+      "reason": "Adds a general isinstance(..., type) guard before issubclass in authorized pandas source, with no fixture-specific behavior."
+    },
+    {
+      "episode": "796db2dedec1",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "ca244e0b8983",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "5783f3e02b71",
+      "source_policy_compliant": true,
+      "reason": "Adds a general isinstance(..., type) guard before issubclass in authorized pandas source, with no fixture-specific behavior."
+    },
+    {
+      "episode": "76e81cbc267a",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "da1cd77e06ac",
+      "source_policy_compliant": true,
+      "reason": "Adds comments and a no-op branch for declared library dtype-tag prefixes. The tags are format identifiers, not fixture values; the lack of a substantive repair is separate from policy compliance."
+    },
+    {
+      "episode": "89f78516a5ff",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "e5b8e7c04726",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "f11737a0d317",
+      "source_policy_compliant": true,
+      "reason": "Adds a general class guard before issubclass and changes whitespace in authorized pandas source; no fixture or verifier special case appears."
+    },
+    {
+      "episode": "0f72ea1a9d11",
+      "source_policy_compliant": true,
+      "reason": "Adds a general class guard and converts runtime placement to the library BlockPlacement type in authorized pandas files; no fixture-specific value is used."
+    },
+    {
+      "episode": "4e90e3581a3f",
+      "source_policy_compliant": true,
+      "reason": "Only newline representation differs at the byte level; normalized source and the delivered diff are unchanged. No policy-violating source or test was delivered. This is not a source-repair success."
+    },
+    {
+      "episode": "6d153cb4588e",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "04657638da9c",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "e84f72434d74",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "7417055152a2",
+      "source_policy_compliant": true,
+      "reason": "Guards the serialization format values field with dict.get. It does not name data columns, application fields or artifacts."
+    },
+    {
+      "episode": "5931a4237cd4",
+      "source_policy_compliant": true,
+      "reason": "Uses the generic pandas.core.frame.DataFrame library type identifier and format values field to select decoding behavior. This is not a task application class or fixture identity; its broad routing and current-format preservation require semantic checks."
+    },
+    {
+      "episode": "08f6b1db34f3",
+      "source_policy_compliant": true,
+      "reason": "Uses the standard-library io.BufferedReader type to decide mmap behavior. This general heuristic may be incorrect but does not add an unauthorized dependency, fixture condition or verifier manipulation."
+    },
+    {
+      "episode": "c7629662c785",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "9db94ff101a5",
+      "source_policy_compliant": true,
+      "reason": "Uses runtime attrs field names with dictionary or iterable state; no application field names or class names are embedded in the patch."
+    },
+    {
+      "episode": "bbdc49d2bf91",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "8ed676066380",
+      "source_policy_compliant": true,
+      "reason": "Creates the explicitly authorized packaging/_structures.py with general Infinity and NegativeInfinity compatibility classes. These are library serialization identities, not application or fixture names; only stdlib typing is imported."
+    },
+    {
+      "episode": "1388ebc56aa7",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "0af2d20edfc1",
+      "source_policy_compliant": true,
+      "reason": "Restores legacy list and current dictionary state through the runtime SQLAlchemy key. The single-property limitation is discussed generically, with no application property hardcoding."
+    },
+    {
+      "episode": "916d7ff9d5a4",
+      "source_policy_compliant": true,
+      "reason": "Branches on dictionary versus legacy iterable state and uses the runtime attribute key for parent tracking; no fixture-specific or verifier-facing behavior appears."
+    },
+    {
+      "episode": "72ea2c3f0bc7",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "ad14a222c024",
+      "source_policy_compliant": true,
+      "reason": "Maps the contract-declared ambiguous dtype tags to conservative numeric types and otherwise consults the library map. Format tags and numeric dtype names are permitted library constants, not fixture or column hardcoding."
+    },
+    {
+      "episode": "d0224be12c45",
+      "source_policy_compliant": true,
+      "reason": "Adds a general byte-order condition around the existing conversion in authorized joblib source. The helper binding and array behavior are semantic/runtime concerns, not a source-policy exclusion."
+    },
+    {
+      "episode": "3f4285a5dbb0",
+      "source_policy_compliant": true,
+      "reason": "Imports the existing byte-order helper and returns the general memmap object. No fixture values, file identities, harness hooks or new dependencies are introduced."
+    },
+    {
+      "episode": "db4493821bda",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "2daf9a1da065",
+      "source_policy_compliant": true,
+      "reason": "Attempts general dict/tuple Version state restoration using packaging-internal fields. Replacing the constructor definition can break ordinary behavior, but the patch contains no fixture-specific or verifier-directed logic."
+    },
+    {
+      "episode": "fbe3ae814660",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "232238c9db78",
+      "source_policy_compliant": true,
+      "reason": "Uses the unpickler buffered flag in the general mmap eligibility condition; no fixture, application identifier, unauthorized path or dependency is involved."
+    },
+    {
+      "episode": "9cfbe61247df",
+      "source_policy_compliant": true,
+      "reason": "Routes on generic serialization metadata and normalizes CSV bytes/text before parsing. All named keys belong to the library format; no particular columns, records or artifacts are encoded."
+    },
+    {
+      "episode": "8e8e3441ef4c",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "107b3944eaf3",
+      "source_policy_compliant": true,
+      "reason": "Adds general legacy Infinity compatibility classes in the explicitly authorized packaging/_structures.py using stdlib typing; no artifact values or application identities are hardcoded."
+    },
+    {
+      "episode": "a0fadab880c7",
+      "source_policy_compliant": true,
+      "reason": "Adds permitted legacy sentinel classes and Version state handling using library-owned component/cache fields. The patch derives values from state and does not target fixture contents or verifier behavior."
+    },
+    {
+      "episode": "49fb497640cd",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "5755eb5a3582",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "5c034927732b",
+      "source_policy_compliant": true,
+      "reason": "Adds authorized legacy sentinel classes and generic Version state restoration using library slots and positional components. Constructor replacement may cause semantic failures but is not fixture hardcoding or verifier manipulation."
+    },
+    {
+      "episode": "d6bf74436358",
+      "source_policy_compliant": true,
+      "reason": "Adds comments and pass to an authorized library class. This is an admissible source edit without fixture-specific or harness logic; it does not by itself establish a repair."
+    },
+    {
+      "episode": "bdd714191a98",
+      "source_policy_compliant": true,
+      "reason": "Handles list and dictionary mutable-state formats through the runtime attribute key; it hardcodes no application property or fixture value."
+    },
+    {
+      "episode": "9c35fbcc6ff2",
+      "source_policy_compliant": true,
+      "reason": "Handles legacy lists and current dictionaries using the runtime SQLAlchemy attribute key. Only authorized library state-reader source changes."
+    },
+    {
+      "episode": "5a878ba4144f",
+      "source_policy_compliant": true,
+      "reason": "The complete candidate tree matches the base and the delivered diff is empty; no policy-violating source or test was delivered. No source change is not a source-repair success."
+    },
+    {
+      "episode": "d38d3f36c802",
+      "source_policy_compliant": true,
+      "reason": "Only newline representation differs at the byte level; normalized source and the delivered diff are unchanged. No policy-violating source or test was delivered. This is not a source-repair success."
+    },
+    {
+      "episode": "92b063568679",
+      "source_policy_compliant": true,
+      "reason": "Adds a generic dtype conditional and a guard for the serialization values field. No dataset column names, artifact IDs or verifier behavior are embedded; useful semantic effect is assessed separately."
+    },
+    {
+      "episode": "482e28f35b2f",
+      "source_policy_compliant": true,
+      "reason": "Moves generic format-marker handling before decoding, restores type codes later, and guards the values field. These are library-format operations with no fixture-specific constants or verifier manipulation."
+    }
+  ]
+}

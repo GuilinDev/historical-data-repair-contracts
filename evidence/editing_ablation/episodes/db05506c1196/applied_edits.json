@@ -1,0 +1,27 @@
+[
+  {
+    "new": "        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\n        # byteswap() because it creates a copy. Instead, we must use a view\n        # with the correct byte order.\n        if (unpickler.mmap_mode == 'r+' and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            return marray.view(marray.dtype.newbyteorder('='))\n        return _ensure_native_byte_order(marray)",
+    "old": "        return _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE",
+    "old": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch",
+    "old": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\n        # byteswap() because it creates a copy. Instead, we must use a view\n        # with the correct byte order.\n        if (unpickler.mmap_mode == 'r+' and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            return marray.view(marray.dtype.newbyteorder('='))\n        return _ensure_native_byte_order(marray)",
+    "old": "        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\n        # byteswap() because it creates a copy. Instead, we must use a view\n        # with the correct byte order.\n        if (unpickler.mmap_mode == 'r+' and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            return marray.view(marray.dtype.newbyteorder('='))\n        return _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\n        # byteswap() because it creates a copy. Instead, we must use a view\n        # with the correct byte order.\n        if (unpickler.mmap_mode == 'r+' and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            # Use a view with the native byte order to avoid copying.\n            # This allows mutations to be written back to the file.\n            return marray.view(marray.dtype.newbyteorder('='))\n        return _ensure_native_byte_order(marray)",
+    "old": "        # Detect byte order mismatch and swap as needed.\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\n        # byteswap() because it creates a copy. Instead, we must use a view\n        # with the correct byte order.\n        if (unpickler.mmap_mode == 'r+' and\n                _is_numpy_array_byte_order_mismatch(marray)):\n            return marray.view(marray.dtype.newbyteorder('='))\n        return _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

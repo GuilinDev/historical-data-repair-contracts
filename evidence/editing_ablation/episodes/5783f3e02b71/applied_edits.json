@@ -1,0 +1,7 @@
+[
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "old": "        elif args and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "path": "pandas/compat/pickle_compat.py"
+  }
+]

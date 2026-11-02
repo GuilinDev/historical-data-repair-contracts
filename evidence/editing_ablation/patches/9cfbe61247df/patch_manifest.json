@@ -1,0 +1,44 @@
+{
+  "episode": "9cfbe61247df",
+  "family": "jsonpickle_csv_562",
+  "project": "jsonpickle",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 1,
+  "block": 25,
+  "arm": "exact",
+  "condition": "ordinary",
+  "changed_paths": [
+    "jsonpickle/ext/pandas.py"
+  ],
+  "full_candidate_manifest": {
+    ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "jsonpickle/backend.py": "017bf5ee586aabfe4b1281fe7edf6b565c6f1b3a8c4a4d7fe2cfc4416851b766",
+    "jsonpickle/compat.py": "8c22216cb69def032cb717843b290f87e951bccddf224c084e61e2d116e2e4f3",
+    "jsonpickle/errors.py": "97369d1852ed12b4cf1f40b3030c52da06ddeb596aa0e244e1fdbf4d20dadd65",
+    "jsonpickle/handlers.py": "cdb5a09825e73bd33b154633ea1ce3aa2bdc8f45f189b127cb32bdea2daedb5f",
+    "jsonpickle/pickler.py": "269a75cbdb2e3bbaa6d47751912713c067474ed03f0cb911b577ff21df2f9e46",
+    "jsonpickle/tags.py": "f9ce374bb18eb0f546e80051fef8ad5858c01075420fd83ea0d172d3dd059516",
+    "jsonpickle/tags_pd.py": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+    "jsonpickle/unpickler.py": "8ca07ac61966e1d2ccba3d2acf2640ffd8065d174a3e6cf10d371a103e8b639a",
+    "jsonpickle/util.py": "dce153ad8453100ab15d58ebda8d7976d73d85c8279d9acc42d057bd9845afb0",
+    "jsonpickle/version.py": "84fc0988523473fcdecb5f552a7e75de9f6027ae6ce6631d622d69d04a30ac53",
+    "jsonpickle/__init__.py": "2df9fb71e35e002bef911412e3c17fef8d3f8395f2eda4df7ee0ef3b227bcfe3",
+    "jsonpickle-4.1.0.dist-info/INSTALLER": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+    "jsonpickle-4.1.0.dist-info/LICENSE": "da4d740e7bfe1e9777baeda3cf6534f568ecb2abb27b80e7e2c2f9f2864d839d",
+    "jsonpickle-4.1.0.dist-info/METADATA": "d96afad29640ddfb7f7fc85af6df01ab987f191fca68327bd472b110ba8ee62e",
+    "jsonpickle-4.1.0.dist-info/RECORD": "c529a36cdd12915600acdaab7e7b38790582d7409797d8c947b361ad0c3f2dc2",
+    "jsonpickle-4.1.0.dist-info/REQUESTED": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "jsonpickle-4.1.0.dist-info/top_level.txt": "71d4436252dce17393d8acf33eeae278c9fe5d6ff7631173a29c1d783a8f155b",
+    "jsonpickle-4.1.0.dist-info/WHEEL": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+    "jsonpickle/ext/gmpy.py": "052a583726b061578674d42830d41c4baec7f94871a125403985e4c0f1f66057",
+    "jsonpickle/ext/numpy.py": "41317d5e1b6e1335c91d582cc230394f28065f7e3e8738f559e643ad0b53c5d7",
+    "jsonpickle/ext/pandas.py": "ad827f2b4e323b4e2bac230bead1ef4406f5e2289c8b06401d9e0b39d25e86df",
+    "jsonpickle/ext/yaml.py": "8cce453c679f43d51f2c170461b9bbd9e714811964a69e9ae46b902d15108e4b",
+    "jsonpickle/ext/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_files_sha256": {
+    "jsonpickle/ext/pandas.py": "ad827f2b4e323b4e2bac230bead1ef4406f5e2289c8b06401d9e0b39d25e86df"
+  },
+  "construction": "Overlay these exact bytes onto bundle/packages/<family>/base; missing base files may be created."
+}

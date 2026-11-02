@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502345-ZkhQlBsGlj4T5k1DPLYw",
+  "object": "chat.completion",
+  "created": 1793502345,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-8ca8bbfa-d42f-4765-bac2-2dcb5a4d7c10",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def __setstate__(self, state):\\n        if isinstance(state, dict):\\n            # Handle 26.0+ state\\n            for key, value in state.items():\\n                setattr(self, key, value)\\n        else:\\n            # Handle 25.0 state: it was a tuple (via _Version NamedTuple)\\n            # state is (_Version(epoch, release, dev, pre, post, local), {'_key': ...})\\n            # Wait, looking at the artifact ab67abe0aa61:\\n            # it's a Version object, then a dict with '_version' and '_key'.\\n            # The '_version' is a _Version NamedTuple.\\n            \\n            # Actually, the artifact shows:\\n            # NEWOBJ (Version)\\n            # EMPTY_DICT\\n            # SETITEMS:\\n            #   '_version': _Version(0, (1, 0), None, None, None, None)\\n            #   '_key': (0, (1, 0), Infinity, Infinity, Infinity, NegativeInfinity)\\n            \\n            # Let's check if state is a dict first.\\n            pass\\n\\n    def __getstate__(self):\\n        return {\\n            \\\"_epoch\\\": self._epoch,\\n            \\\"_release\\\": self._release,\\n            \\\"_pre\\\": self._pre,\\n            \\\"_post\\\": self._post,\\n            \\\"_dev\\\": self._dev,\\n            \\\"_local\\\": self._local,\\n        }\\n\",\"old\":\"\",\"path\":\"packaging/version.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23692,
+    "completion_tokens": 363,
+    "total_tokens": 24055,
+    "cost": 0.00249262,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 21312,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00249262,
+      "upstream_inference_prompt_cost": 0.0023692,
+      "upstream_inference_completions_cost": 0.00012342
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

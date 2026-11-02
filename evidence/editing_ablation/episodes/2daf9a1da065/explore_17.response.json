@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793501342-wlZtZG9Bu8eV4LadCC2G",
+  "object": "chat.completion",
+  "created": 1793501342,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-c488d452-a701-45ab-a694-aa100fb40741",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"from . import _structures\\n\",\"old\":\"# This file is dual licensed under the terms of the Apache License, Version\\n# 2.0, and the BSD License. See the LICENSE file in the root of this repository\\n# for complete details.\\n\\\"\\\"\\\"\\n\",\"path\":\"packaging/version.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23431,
+    "completion_tokens": 86,
+    "total_tokens": 23517,
+    "cost": 0.00237234,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 23264,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00237234,
+      "upstream_inference_prompt_cost": 0.0023431,
+      "upstream_inference_completions_cost": 2.924e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

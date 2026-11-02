@@ -1,0 +1,2551 @@
+{
+  "execution_status": "observed",
+  "passed": 12,
+  "n": 18,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 6
+    },
+    "fresh_api": {
+      "passed": 6,
+      "n": 6
+    },
+    "current_roundtrip": {
+      "passed": 6,
+      "n": 6
+    }
+  },
+  "records": [
+    {
+      "id": "e2914c218f46",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "e2914c218f46",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "50946b82bba2",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "50946b82bba2",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "ded19ee5e4fa",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "ded19ee5e4fa",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "label",
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "label": [
+                "alpha",
+                "beta"
+              ],
+              "text": [
+                "first",
+                "second"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "label": [
+                "str",
+                "str"
+              ],
+              "text": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8f9dea76ea8e",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "8f9dea76ea8e",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "1831c39d6ca7",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1831c39d6ca7",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4198e7620fe1",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "4198e7620fe1",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "title"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "title",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "title": [
+                "a,b",
+                "line\nbreak",
+                "a\"quote"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "title": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "title": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "a6e7956d35f0",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "a6e7956d35f0",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "2876a7684134",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "2876a7684134",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "名字",
+              "label"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3eacbaae3bf6",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3eacbaae3bf6",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "名字",
+              "label"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "名字",
+              "label",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "名字": [
+                "甲",
+                "é",
+                "ß"
+              ],
+              "label": [
+                "zero",
+                "one",
+                "two"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "名字": [
+                "str",
+                "str",
+                "str"
+              ],
+              "label": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "名字": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "label": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "7fad75cc483e",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "7fad75cc483e",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "f831ce58cb3e",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "f831ce58cb3e",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "7a831f037ae5",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "7a831f037ae5",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "text"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "text",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "index_name": null,
+            "values": {
+              "text": [
+                "001",
+                "-2",
+                "3.00"
+              ],
+              "continued_column": [
+                "row0",
+                "row1",
+                "row2"
+              ]
+            },
+            "types": {
+              "text": [
+                "str",
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "text": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "aeaec24990e2",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "aeaec24990e2",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "b4a1340bcf99",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "b4a1340bcf99",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "left",
+              "right"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "cb4875a4e688",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "cb4875a4e688",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "left",
+              "right"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "left",
+              "right",
+              "continued_column"
+            ],
+            "columns_name": "measurement",
+            "index": [
+              0,
+              1
+            ],
+            "index_name": null,
+            "values": {
+              "left": [
+                "p",
+                "m"
+              ],
+              "right": [
+                "q",
+                "n"
+              ],
+              "continued_column": [
+                "row0",
+                "row1"
+              ]
+            },
+            "types": {
+              "left": [
+                "str",
+                "str"
+              ],
+              "right": [
+                "str",
+                "str"
+              ],
+              "continued_column": [
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "left": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "right": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "ee7d686bea23",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "ee7d686bea23",
+        "group": "historical",
+        "status": "program_error",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    {
+      "id": "348b6ce42250",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "348b6ce42250",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "single"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "24868acec19b",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "24868acec19b",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "single"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "continued": {
+            "columns": [
+              "single",
+              "continued_column"
+            ],
+            "columns_name": null,
+            "index": [
+              0
+            ],
+            "index_name": null,
+            "values": {
+              "single": [
+                "item"
+              ],
+              "continued_column": [
+                "row0"
+              ]
+            },
+            "types": {
+              "single": [
+                "str"
+              ],
+              "continued_column": [
+                "str"
+              ]
+            },
+            "dtypes": {
+              "single": {
+                "kind": "O",
+                "itemsize": 8
+              },
+              "continued_column": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    }
+  ]
+}

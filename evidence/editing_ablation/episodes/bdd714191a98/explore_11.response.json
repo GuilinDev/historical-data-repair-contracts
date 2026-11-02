@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502677-a7soWdSTLwj6S0b1Ir47",
+  "object": "chat.completion",
+  "created": 1793502677,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-0215e920-1e96-4f97-ba3d-cd4431281cf3",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":505,\"new\":\"        def unpickle(state, state_dict):\\n            if \\\"ext.mutable.values\\\" in state_dict:\\n                values = state_dict[\\\"ext.mutable.values\\\"]\\n                if isinstance(values, list):\\n                    # Legacy format: list of values. \\n                    # This is problematic because we don't know which key each value belongs to.\\n                    # However, if there's only one mutable attribute, we might be able to guess.\\n                    # But the contract says we must support the historical data.\\n                    # In 1.4.37, it was a list. In 1.4.38, it's a dict of lists.\\n                    # If it's a list, we can't easily know which key it belongs to unless we \\n                    # assume it's the only one or we have some other way.\\n                    # Wait, the historical producer (1.4.37) used a list.\\n                    # The current reader (1.4.38) expects a dict.\\n                    # If we encounter a list, we should probably treat it as the values for all \\n                    # mutable attributes that are being unpickled? No, that's not right.\\n                    # Let's look at the 1.4.37 pickle function:\\n                    # state_dict[\\\"ext.mutable.values\\\"].append(val)\\n                    # It just appended every mutable value to a single list.\\n                    # Then unpickle:\\n                    # for val in state_dict[\\\"ext.mutable.values\\\"]:\\n                    #     val._parents[state] = key\\n                    # This means EVERY value in that list was associated with the CURRENT key.\\n                    # This is a bug in 1.4.37 if there were multiple mutable attributes!\\n                    # But we must preserve the behavior.\\n                    for val in values:\\n                        val._parents[state] = key\\n                else:\\n                    for val in values.get(key, []):\\n                        val._parents[state] = key\",\"path\":\"sqlalchemy/ext/mutable.py\",\"source_version\":\"b1421c9fd59154e063ac0d0a98dd2370cdb225043de93162d8691361fca728b2\",\"start_line\":503}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 22808,
+    "completion_tokens": 557,
+    "total_tokens": 23365,
+    "cost": 0.00247018,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 18304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00247018,
+      "upstream_inference_prompt_cost": 0.0022808,
+      "upstream_inference_completions_cost": 0.00018938
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+--- base/joblib/numpy_pickle.py
++++ candidate/joblib/numpy_pickle.py
+@@ -245,8 +245,8 @@
+         array: numpy.ndarray
+ 
+         """
+-        # When requested, only use memmap mode if allowed.
+-        if unpickler.mmap_mode is not None and self.allow_mmap:
++        # When requested, only use memmap mode if allowed and not compressed.
++        if unpickler.mmap_mode is not None and self.allow_mmap and not isinstance(unpickler.file_handle, io.BufferedReader):
+             array = self.read_mmap(unpickler)
+         else:
+             array = self.read_array(unpickler)

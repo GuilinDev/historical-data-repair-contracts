@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499007-2l8WpYbDa1QLQ1DY73CA",
+  "object": "chat.completion",
+  "created": 1793499007,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired a defect in `joblib/numpy_pickle.py` where requesting `mmap_mode='r'` on a compressed file (zlib, gzip, bz2) would incorrectly attempt to memory-map the compressed data, leading to a `ValueError: mmap length is greater than file size`.\n\nThe fix ensures that memory-mapping is bypassed and the standard `read_array` method is used when the file handle is an instance of `BinaryZlibFile` (which handles the supported compression formats), regardless of whether `mmap_mode` was requested. This aligns the implementation with the documented behavior that memory-mapping is not supported for compressed files.\n\n**Changes:**\n- Modified `NumpyArrayWrapper.read` in `joblib/numpy_pickle.py` to check if `unpickler.file_handle` is an instance of `BinaryZlibFile` before attempting `read_mmap`.\n\n**Checks performed:**\n- Ran the `legacy` check suite, which includes historical artifacts from joblib 1.2.0.\n- Verified that compressed arrays now load correctly (via `read_array`) even when `mmap_mode` is specified, resolving the `ValueError`.\n- Verified that uncompressed arrays still support memory-mapping.\n\n**Unresolved work:**\n- None. The repair addresses the specific reader defect described in the request.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 35724,
+    "completion_tokens": 292,
+    "total_tokens": 36016,
+    "cost": 0.00367168,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00367168,
+      "upstream_inference_prompt_cost": 0.0035724,
+      "upstream_inference_completions_cost": 9.928e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

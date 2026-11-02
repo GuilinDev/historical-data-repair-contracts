@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793500312-lRF6RXmNR2lmQ0a281xu",
+  "object": "chat.completion",
+  "created": 1793500312,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that when `mmap_mode='r'` (or any non-None value) was requested during `joblib.load`, the library would attempt to use `read_mmap` even for compressed files if the `NumpyArrayWrapper` had `allow_mmap=True`. However, `read_mmap` uses `make_memmap` on the original filename with an offset derived from the current position of the decompressed file handle. This is incorrect for compressed files because the offset in the decompressed stream does not correspond to a byte offset in the compressed file on disk, leading to `ValueError: mmap length is greater than file size`.\n\nThe documented behavior is that `mmap_mode` should be ignored for compressed files, and the arrays should be loaded normally (via `read_array`).\n\nI have repaired this by modifying `NumpyArrayWrapper.read` in `joblib/numpy_pickle.py`. I added a check to ensure that `read_mmap` is only called if the `unpickler.file_handle` is a raw file (not a compressed stream). This is achieved by checking if the `unpickler.file_handle` is an instance of `io.BufferedReader` and its underlying raw stream is a `io.FileIO`, or more simply, by verifying that the file handle is not a compressed wrapper.\n\nWait, I didn't actually apply the patch in the tool calls because I was in exploration mode. I should have used `apply_edits`. Since I cannot use tools now, I will describe the intended fix.\n\n**Proposed Fix:**\nIn `joblib/numpy_pickle.py`, modify `NumpyArrayWrapper.read`:\n```python\n    def read(self, unpickler):\n        # ...\n        # When requested, only use memmap mode if allowed.\n        # ADDED CHECK: Ensure we are not reading from a compressed stream\n        is_compressed = not isinstance(unpickler.file_handle, (io.BufferedReader, io.FileIO)) or \\\n                        hasattr(unpickler.file_handle, '_compressor') # Simplified check\n        \n        if unpickler.mmap_mode is not None and self.allow_mmap and not is_compressed:\n            array = self.read_mmap(unpickler)\n        else:\n            array = self.read_array(unpickler)\n```\nActually, the most robust way is to check if the `unpickler.file_handle` is the one returned by `_read_fileobject` when `compressor != 'not-compressed'`.\n\n**Final Report:**\n- **Changes:** I identified that `NumpyArrayWrapper.read` fails to verify if the current file handle is a compressed stream before calling `read_mmap`. The fix involves adding a condition to `NumpyArrayWrapper.read` to fallback to `read_array` when the file is compressed, regardless of `mmap_mode` and `allow_mmap`.\n- **Checks ran:** I ran the `legacy` check suite, which confirmed the failure on historical compressed artifacts (`b093221441c2`, `27119ac02407`) with `ValueError: mmap length is greater than file size`.\n- **Unresolved:** The patch was not applied via `apply_edits` due to the transition to the final report phase. The logic for detecting the compressed state within `NumpyArrayWrapper.read` needs to be carefully implemented to avoid breaking other `mmap` use cases.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 36684,
+    "completion_tokens": 775,
+    "total_tokens": 37459,
+    "cost": 0.0039319,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0039319,
+      "upstream_inference_prompt_cost": 0.0036684,
+      "upstream_inference_completions_cost": 0.0002635
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

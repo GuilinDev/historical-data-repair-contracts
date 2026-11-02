@@ -1,0 +1,9 @@
+[
+  {
+    "end_line": 506,
+    "new": "        def unpickle(state, state_dict):\n            if \"ext.mutable.values\" in state_dict:\n                values = state_dict[\"ext.mutable.values\"]\n                if isinstance(values, dict):\n                    for val in values.get(key, []):\n                        val._parents[state] = key\n                else:\n                    # legacy format: values is a list\n                    for val in values:\n                        # In legacy format, we don't know which key the value belongs to.\n                        # However, the unpickle event is registered per-attribute.\n                        # So we can assume the value belongs to the current key.\n                        val._parents[state] = key",
+    "path": "sqlalchemy/ext/mutable.py",
+    "source_version": "b1421c9fd59154e063ac0d0a98dd2370cdb225043de93162d8691361fca728b2",
+    "start_line": 503
+  }
+]

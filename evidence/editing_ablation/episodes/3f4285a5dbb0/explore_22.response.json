@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793501253-4rh6RLrVgsQfME3MgjNl",
+  "object": "chat.completion",
+  "created": 1793501253,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `joblib`'s `read_mmap` method was calling `_ensure_native_byte_order`, which for non-native byte-order arrays (like big-endian arrays on little-endian systems) performs a `byteswap()`. Since `byteswap()` creates a copy of the array, the resulting object is no longer a memory-mapped array, breaking the `mmap_mode='r+'` contract where mutations must reach the underlying file.\n\nTo fix this, I modified `read_mmap` in `joblib/numpy_pickle.py` to avoid calling `_ensure_native_byte_order`. Instead, it now checks for byte-order mismatch using `_is_numpy_array_byte_order_mismatch`. If a mismatch is detected, it returns the memory-mapped array as-is, preserving its connection to the file. This ensures that the array remains a `memmap` object, allowing writable operations to be flushed to disk.\n\nThe fix preserves:\n1. Correct numeric values and shape (as the `dtype` remains correct for the data in the file).\n2. Writable `mmap` behavior (mutations reach the file).\n3. Ordinary `load` (which uses `read_array` and still calls `_ensure_native_byte_order`).\n4. Current dumps and resave/reload cycles.\n\n```python\n# joblib/numpy_pickle.py\n\n# ... (imports)\nfrom .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch\n\n# ... (inside NumpyArrayWrapper.read_mmap)\n        if (numpy_array_alignment_bytes is None and\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\n            # ... (warning message)\n            warnings.warn(message)\n\n        if _is_numpy_array_byte_order_mismatch(marray):\n            # We cannot use byteswap() on a memmap array because it would\n            # create a copy. To preserve the mmap connection, we return\n            # the array with its original (non-native) byte order.\n            return marray\n\n        return marray\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 36918,
+    "completion_tokens": 490,
+    "total_tokens": 37408,
+    "cost": 0.0038584,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 34048,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0038584,
+      "upstream_inference_prompt_cost": 0.0036918,
+      "upstream_inference_completions_cost": 0.0001666
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

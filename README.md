@@ -2,54 +2,54 @@
 
 **Guilin Zhang** · A Calibrated Resource for Compatibility and Persistence Repair
 
-[Read the paper](paper/historical-data-compatibility.pdf) · [Download v0.1.1](https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.1) · [Full reproduction guide](README.rst) · [CLI reference](CLI_USAGE.txt)
+[Paper](paper/historical-data-compatibility.pdf) · [Frozen v0.1.2 release](https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.2) · [Reproduction guide](README.rst)
 
-An old file can load successfully while losing a later mutation. An old format can also omit information that no reader can recover. This resource makes the accepted behavior explicit and tests loading, continued use, and persistence in fresh processes.
+Historical data may load successfully and still lose a later mutation. It may also omit information that no reader can recover. These executable contracts make accepted behavior explicit, including when compatibility must yield to an authorization boundary.
 
-| Included | Scale or result |
-| --- | --- |
-| Executable contracts | 8 defect lineages across 6 Python projects |
-| Historical artifacts | 65 distinct files; 17 public to the agent, 48 withheld from the agent during repair; all 65 are now released |
-| Frozen observations | 252 dependent checks, **not 252 independent bugs** |
-| Calibration | Two valid repairs: 84/84 each; a corrupting repair: 0/84 |
-| Literal reference equality | Accepts only 24/84 observations for the valid alternative |
-| Gemma baseline | All 32 attempts completed and evaluated; 4 pass semantics and source review |
-| Independent patch replay | 1,008 observations; the same 4 complete acceptances |
+| Evidence | Scope and completed result |
+|---|---|
+| Repair resource | Eight lineages, six Python projects, 65 historical files, 252 dependent observations |
+| Numeric calibration | Two valid repairs 84/84 each; literal equality rejects 60 observations for one; corrupting control 0/84 |
+| Original Gemma baseline | 32 completed attempts, 4 complete acceptances; unchanged from v0.1.1 |
+| New controlled experiment | 64 completed attempts on one deployment: exact text 10/32, version-checked span 4/32 |
+| Complete patch replay | All 64 complete-acceptance decisions stable; 4 rejected dtype attempts change partial observations |
+| Separate AI SDK calibration | One known defect, 54 related scenarios; upstream fix 54/54; all five implementations completed |
 
-The contribution is the executable resource and acceptance calibration. The motivating jsonpickle ambiguity was known upstream. The sample does not estimate general coding-agent ability. Calls used OpenRouter with each provider pinned and fallback disabled; provider/precision differences confound model comparisons.
+The editor result is negative for the tested interface package; it is not a universal editor ranking. The signature calibration is not a new vulnerability, a ninth Gemma task, or a full authorization-system audit. The original 32, new 64 and separate 54-scenario groups retain distinct denominators.
 
-## Start without a model API
+## Verify without a model API
 
-Download and extract the versioned archive, or clone this repository. Preserve file bytes; `.gitattributes` disables line-ending conversion. Python 3.10+ is sufficient for these static checks:
+Python 3.10+ suffices for static checks on any OS:
 
 ```sh
 python3 compat.py integrity
-python3 reproduce_main.py --records-only
+python3 reproduce_ablation.py --records-only
+python3 reproduce_approval.py --records-only
 python3 paper/verify_numbers.py
 ```
 
-Integrity verifies file identities; it does **not** rerun repair behavior. To execute a complete task, use **Linux ARM64 with Docker** (the qualified environment), then:
+To **execute** all new patches, use the qualified Linux ARM64/Docker environment:
 
 ```sh
 python3 compat.py bootstrap --pull
-python3 compat.py reproduce --task joblib_endian_1561 --controls base,fixed,reference
+python3 reproduce_ablation.py --output results/new64-check
 ```
 
-Bootstrap downloads a digest-pinned base image. Included wheels install the fixed dependencies. Candidate execution is network-disabled; these verification commands make no model API calls. Other architectures are not qualified. See the [full guide](README.rst) for all-task reproduction, patch evaluation and optional, explicitly paid model reruns.
+The signature calibration needs Node 22.22.3 or 24.22.1 (qualified), Python and no npm packages:
 
-## Inspect the evidence
+```sh
+python3 reproduce_approval.py --output results/approval-check
+```
 
-- [Tasks and source edit scopes](tasks.json), [frozen observations](oracle/), [historical artifacts and source](bundle/), and [upstream provenance and licenses](provenance/).
-- [Completed model results](evidence/main/summary.json), [source-policy audit](evidence/independent_review/main_audit.json), and [cold reproduction](validation/cold_reproduction_summary.json).
-- [Calibration witness](evidence/collision/summary.json), [trajectory verification](evidence/independent_review/clarity_revision_20261031/trajectory_verification.json), and [latest manuscript reviews](evidence/independent_review/patch_revision_20261031/).
-- [Manifest](release_manifest.json) and [SHA-256 file list](SHA256SUMS). The versioned release also contains the archive checksum and paper PDF.
+Each execution writes a fresh directory. These commands make **no model API calls**. Static checks validate recorded evidence; they do not execute patched library behavior. [Full commands and limitations](README.rst).
 
-Recorded logs have declared author-path redactions with original/exported hashes. No API keys or model weights are distributed. Frozen data and original verdicts are retained; this is an open research resource, not a secure hidden evaluation service.
+## Inspect and reuse
 
-## License and citation
+- [All 64 attempts, frozen plan, overlays and recoveries](evidence/editing_ablation/) and [independent final audit](evidence/editing_ablation/final_independent_audit.json).
+- [AI SDK fixtures, source, five controls and audit](extensions/approval_signature/).
+- [Original 32 baseline](evidence/main/) and [prior paper/attempt matrix](supplement/v0.1.1_paper/).
+- [Paper source, figures and alt text](paper/), [current independent publication reviews](evidence/independent_review/v012/), [file manifest](release_manifest.json).
 
-Original task definitions, verifier, documentation and manuscript are released under [Apache-2.0](LICENSE). Third-party artifacts retain their own terms; see [NOTICE](NOTICE) and [license copies](provenance/licenses/). Use [CITATION.cff](CITATION.cff) to cite the resource. Codex assistance and evaluated Gemma patches are disclosed in the paper.
+Every failed attempt is retained. Author-path redactions have original/exported hashes; source overlays remain byte-exact. Duplicate tar containers are replaced by reconstruction plus member hashes. Historical pending-status snapshots are retained; final independent audits and the portable verifier establish completion.
 
-## Editorial patch v0.1.1
-
-This patch clarifies artifact visibility and OpenRouter routing, uses the official competition citation, separates static checks from ARM64 execution, and moves the completed upstream-test comparison into Experiments. Frozen observations, model outputs, decisions and figures are unchanged. The paper cites this versioned release. Version v0.1.0 remains available.
+Original contributions use [Apache-2.0](LICENSE); upstream terms and attribution are retained in [NOTICE](NOTICE) and source license copies. No model weights or private credentials are distributed. See [CITATION.cff](CITATION.cff). Codex assistance is disclosed in the paper. The earlier [v0.1.1 release](https://github.com/GuilinDev/historical-data-repair-contracts/releases/tag/v0.1.1) remains available.

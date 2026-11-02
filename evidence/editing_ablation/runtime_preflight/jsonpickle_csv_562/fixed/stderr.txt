@@ -1,0 +1,12 @@
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))
+/harness/observe.py:68: UserWarning: jsonpickle versions at and above v3.4 have a different encoding scheme for pandas dataframes. If you're not decoding an object encoded in pre-v3.4 jsonpickle, please file a bug report on our GitHub!
+  return jsonpickle.decode(data.decode("utf-8"))

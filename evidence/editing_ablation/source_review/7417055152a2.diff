@@ -1,0 +1,14 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -284,9 +284,8 @@
+         column_level_names = meta.get("column_level_names", None)
+         df = (
+             pd.read_csv(StringIO(csv), **params)
+-            if data["values"].strip()
+-            else pd.DataFrame()
+-        )
++            if data.get("values") and data["values"].strip()
++            else pd.DataFrame()        )
+         for col in timedeltas:
+             df[col] = pd.to_timedelta(df[col])
+         df = df.astype(parse_datetime_v2)

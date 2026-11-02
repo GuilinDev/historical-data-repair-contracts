@@ -1,0 +1,15 @@
+{
+  "episode": "a0fadab880c7",
+  "family": "packaging_version_1163",
+  "project": "packaging",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 2,
+  "block": 26,
+  "arm": "exact",
+  "condition": "ordinary",
+  "protocol_complete": false,
+  "execution_status": "engineering_error",
+  "budget_truncated": false,
+  "error": "PermissionError: [WinError 5] 拒绝访问。: '<project>\\\\results\\\\editing_ablation\\\\20261101_v1\\\\budget_10usd.json.pending' -> '<project>\\\\results\\\\editing_ablation\\\\20261101_v1\\\\budget_10usd.json'"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "end_line": 287,
+    "new": "            if data.get(\"values\") and data[\"values\"].strip()",
+    "path": "jsonpickle/ext/pandas.py",
+    "source_version": "44b5b468cd204ed793a6bcfcf0b77aad5147be6ebb8d276d62322e743ed77bc1",
+    "start_line": 287
+  },
+  {
+    "end_line": 287,
+    "new": "            if data.get(\"values\") and data[\"values\"].strip()\n            else pd.DataFrame()",
+    "path": "jsonpickle/ext/pandas.py",
+    "source_version": "b369ce4f2d7d0cfc70d40673b1377fb878c63ae0184ee66af85b42dc14ef4bbd",
+    "start_line": 287
+  },
+  {
+    "end_line": 123,
+    "new": "            dtype[k] = v if v != 'object' else 'object'",
+    "path": "jsonpickle/ext/pandas.py",
+    "source_version": "d0f221796b076f05244a0fea5f495c0ae9df8f560718c2f2973434a69f88300f",
+    "start_line": 123
+  }
+]

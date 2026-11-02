@@ -913,5 +913,116 @@
     "46ae0e9c5565",
     "53394461271a"
   ],
-  "semantics": "Counts describe dependent observations and completed conversations, not independent bugs. Base is the fresh-installation control run; dtype baseline varies by process."
+  "semantics": "Counts describe dependent observations and completed conversations, not independent bugs. Base is the fresh-installation control run; dtype baseline varies by process.",
+  "controlled": {
+    "attrs_slot_state_1085": {
+      "exact": 2,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "joblib_compressed_1681": {
+      "exact": 0,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "joblib_endian_1561": {
+      "exact": 1,
+      "span": 1,
+      "attempts_per_arm": 4
+    },
+    "jsonpickle_csv_562": {
+      "exact": 2,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "jsonpickle_dtype_634": {
+      "exact": 0,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "packaging_version_1163": {
+      "exact": 0,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "pandas_pickle_56308": {
+      "exact": 2,
+      "span": 0,
+      "attempts_per_arm": 4
+    },
+    "sqlalchemy_mutable_8133": {
+      "exact": 3,
+      "span": 3,
+      "attempts_per_arm": 4
+    }
+  },
+  "controlled_arms": {
+    "exact": {
+      "attempts": 32,
+      "complete_acceptances": 10,
+      "unchanged": 6,
+      "edited_incomplete": 16,
+      "context_stops": 12,
+      "edit_rejections": {
+        "exact_match_rejection": 22,
+        "other_edit_rejection": 2,
+        "syntax_rejection": 1
+      },
+      "edit_calls": 88,
+      "successful_edit_calls": 63,
+      "attempts_with_edit_rejection": 9
+    },
+    "span": {
+      "attempts": 32,
+      "complete_acceptances": 4,
+      "unchanged": 19,
+      "edited_incomplete": 9,
+      "context_stops": 11,
+      "edit_rejections": {
+        "syntax_rejection": 49,
+        "stale_version_rejection": 1,
+        "other_edit_rejection": 10,
+        "span_rejection": 1
+      },
+      "edit_calls": 78,
+      "successful_edit_calls": 17,
+      "attempts_with_edit_rejection": 17
+    }
+  },
+  "signature_calibration": [
+    [
+      "Pre-fix upstream",
+      "17/37",
+      "12/17",
+      "29/54"
+    ],
+    [
+      "Upstream v7 fix",
+      "37/37",
+      "17/17",
+      "54/54"
+    ],
+    [
+      "Reject all legacy",
+      "20/37",
+      "17/17",
+      "37/54"
+    ],
+    [
+      "Unrestricted fallback",
+      "37/37",
+      "12/17",
+      "49/54"
+    ],
+    [
+      "Reject all control chars",
+      "16/37",
+      "17/17",
+      "33/54"
+    ]
+  ],
+  "new_source_sha256": {
+    "evidence/editing_ablation/analysis.json": "92ab156ba7eae33cef82f1d3be3d53e93e5767a40effcf67b1b25d5d27b6330f",
+    "extensions/approval_signature/summary.json": "f32c0d7cf97377b0f18ddc31b63d5f588c851dedd30a5f08b45cb12926557d72"
+  }
 }

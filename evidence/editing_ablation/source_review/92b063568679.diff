@@ -1,0 +1,24 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -120,8 +120,7 @@
+             timedeltas.append(k)
+             dtype[k] = 'object'
+         else:
+-            dtype[k] = v
+-
++            dtype[k] = v if v != 'object' else 'object'
+     return (
+         dict(
+             dtype=dtype, header=header, parse_dates=parse_dates, converters=converters
+@@ -284,9 +283,8 @@
+         column_level_names = meta.get("column_level_names", None)
+         df = (
+             pd.read_csv(StringIO(csv), **params)
+-            if data["values"].strip()
+-            else pd.DataFrame()
+-        )
++            if data.get("values") and data["values"].strip()
++            else pd.DataFrame()        )
+         for col in timedeltas:
+             df[col] = pd.to_timedelta(df[col])
+         df = df.astype(parse_datetime_v2)

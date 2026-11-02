@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498376-Rqm2sq0c3m878xY4b23y",
+  "object": "chat.completion",
+  "created": 1793498376,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-e26fa401-36ea-49a6-941a-0a1843d04e95",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"def new_block(\\n    values,\\n    placement: BlockPlacement,\\n    *,\\n    ndim: int,\\n    refs: BlockValuesRefs | None = None,\\n) -> Block:\\n    if not isinstance(placement, BlockPlacement):\\n        placement = BlockPlacement(placement)\\n    # caller is responsible for ensuring:\",\"old\":\"def new_block(\\n    values,\\n    placement: BlockPlacement,\\n    *,\\n    ndim: int,\\n    refs: BlockValuesRefs | None = None,\\n) -> Block:\\n    # caller is responsible for ensuring:\",\"path\":\"pandas/core/internals/blocks.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25359,
+    "completion_tokens": 163,
+    "total_tokens": 25522,
+    "cost": 0.00259132,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 24736,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00259132,
+      "upstream_inference_prompt_cost": 0.0025359,
+      "upstream_inference_completions_cost": 5.542e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -205,15 +205,12 @@
+     def restore(self, obj):
+         data_encoded, meta = self.pp.restore_pandas(obj)
+ 
++        # If this is a v3.3 DataFrame, it's stored as a CSV string in 'values'
++        # and doesn't have 'dtypes_rle' in meta.
++        if "dtypes_rle" not in meta:
++            return self.restore_v3_3(obj)
++
+         data_columns = decode(data_encoded, keys=True)
+-
+-        # get type codes, un-RLE-ed
+-        try:
+-            rle_types = meta["dtypes_rle"]
+-        except KeyError:
+-            # was encoded with pre-v3.4 scheme
+-            return self.restore_v3_3(obj)
+-        type_codes = rle_decode(rle_types)
+ 
+         # handle multicolumns
+         columns_decoded = decode(meta["columns"], keys=True)
+@@ -227,6 +224,7 @@
+         # progressively reconstruct dataframe as a dict
+         df_data = {}
+         dtypes = {}
++        type_codes = rle_decode(meta["dtypes_rle"])
+         for col, type_code in zip(columns, type_codes):
+             col_data = data_columns[col]
+             if type_code == "py/jp":
+@@ -284,7 +282,7 @@
+         column_level_names = meta.get("column_level_names", None)
+         df = (
+             pd.read_csv(StringIO(csv), **params)
+-            if data["values"].strip()
++            if data.get("values", "").strip()
+             else pd.DataFrame()
+         )
+         for col in timedeltas:

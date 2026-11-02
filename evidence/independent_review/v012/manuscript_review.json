@@ -1,0 +1,126 @@
+{
+  "reviewer": "calibration_reviewer",
+  "reviewed_utc": "2026-11-02T15:33:59.889141+00:00",
+  "decision": "PASS_MANUSCRIPT_PENDING_RELEASE_AUDIT",
+  "scientific_content": "PASS",
+  "readability_and_visual_layout": "PASS",
+  "publication_approved": false,
+  "publication_gate": "This is manuscript review only. Portable resource commands, redacted export identity, clean-checkout reproduction, licenses, new release links and final publication synchronization require the separate release audit.",
+  "scope": "Read the complete actual v0.1.2 structured manuscript, extracted all six PDF pages, initially inspected the six supplied renders, then independently rendered the corrected final PDF with Poppler at 120 DPI and visually inspected all six new pages. Checked all new result counts against final independent audit and original calibration score records, and checked figure-source hashes.",
+  "scientific_findings": [
+    "The main thesis remains executable historical-data acceptance contracts. The numeric and authorization cases express distinct acceptance boundaries rather than claimed new defects or repair algorithms.",
+    "AI SDK attribution points to the genuine public upstream PR. The text explicitly says known serialization ambiguity, not a newly discovered HMAC collision; it does not claim end-to-end authorization or an extra Gemma task.",
+    "The 54 related scenarios, 27 legacy and 27 fresh cases, 54 initial plus 54 fresh-process verifications per implementation, and 37 separately contract-eligible reissues are correctly distinguished. Reissue eligibility explicitly does not depend on the control's actual initial acceptance.",
+    "Table 2 matches all five score files by expected-accept, expected-reject and total groups. The lower three implementations are clearly labeled researcher-written controls. The text correctly states that restart adds no scenario rejections.",
+    "The old 32-attempt, two-deployment baseline remains distinct from the new 64-attempt controlled campaign. Table 1 retains A=1/16, B=3/16; no pooled improvement is claimed.",
+    "The new primary result is exact-text 10/32 versus version-checked spans 4/32. All eight lineage points agree with analysis. Whole-package scope, nested repetitions, selected public tasks and the lack of a general editor ranking are stated.",
+    "The 49 syntax/indentation rejections across 15 span attempts match the completed independent mechanics audit. The text explicitly declines causal attribution of the acceptance gap to those errors.",
+    "Both reviewed engineering recoveries, all 64 complete-acceptance decisions remaining stable, four partial dtype observation drifts, and both reported and conservative API costs are disclosed accurately.",
+    "The resource card separates the 252 original observations, 32 baseline attempts, 64 new attempts and 54 signature scenarios. The text does not treat those repetitions as independent defects.",
+    "SWE-Edit's official arXiv title, first author and scope support reference 17 and the modest related-work claim. This check is not a new exhaustive re-audit of all previously reviewed references."
+  ],
+  "visual_findings": [
+    "Page 1: title, author, abstract, Figure 1 and introduction are readable with no clipped diagram text.",
+    "Page 2: grouped master table and joblib code example remain legible; A/B totals are correct and unambiguous.",
+    "Page 3: numeric equation stays with its paragraph; Figure 2 values and Table 2 align and remain legible. No detached equation or missing sentence punctuation was observed.",
+    "Page 4: the replacement two-panel Figure 3 shows all eight shared rows, zero points, denominators and explicit totals; color and marker shape both distinguish interfaces. Text and caption are readable without collision.",
+    "Page 5: availability, limits and three concluding points fit coherently; caveats remain adjacent to applicable claims.",
+    "Page 6: all 17 references and the separate software acknowledgment are readable; no clipping or unresolved citation markers were found."
+  ],
+  "counts": {
+    "inclusive_structured_words_with_tables_figure_labels_captions_references": 2544,
+    "pdf_extracted_words_including_page_numbers": 2558,
+    "pages": 6,
+    "references": 17,
+    "main_figures": 3,
+    "main_tables": 2,
+    "table2_recomputed": [
+      {
+        "variant": "upstream_base",
+        "verified_cells": [
+          "17/37",
+          "12/17",
+          "29/54"
+        ]
+      },
+      {
+        "variant": "upstream_fixed",
+        "verified_cells": [
+          "37/37",
+          "17/17",
+          "54/54"
+        ]
+      },
+      {
+        "variant": "reject_all_legacy",
+        "verified_cells": [
+          "20/37",
+          "17/17",
+          "37/54"
+        ]
+      },
+      {
+        "variant": "unguarded_legacy",
+        "verified_cells": [
+          "37/37",
+          "12/17",
+          "49/54"
+        ]
+      },
+      {
+        "variant": "reject_control_chars",
+        "verified_cells": [
+          "16/37",
+          "17/17",
+          "33/54"
+        ]
+      }
+    ]
+  },
+  "must_fix_remaining": [],
+  "resolved_review_comments": [
+    "The author corrected stale v0.1.1 revision metadata to describe the new v0.1.2 evidence while preserving the old baseline and contracts.",
+    "The author adopted the optional abstract clarification API-free replay. The updated wording was checked in both structured content and the freshly rendered first PDF page."
+  ],
+  "remaining_release_claims_not_qualified_here": [
+    "Python 3.10+ static and saved-record commands on the actual exported resource",
+    "ARM64 Docker API-free replay from a clean exported checkout",
+    "Portable Node 22+ and Python reproduction for the exported calibration",
+    "Correct original/exported hash relationships for author-path-redacted logs",
+    "Public availability and synchronization of the eventual v0.1.2 release and PDF"
+  ],
+  "verified_primary_reference": {
+    "url": "https://arxiv.org/abs/2604.26102",
+    "title": "SWE-Edit: Rethinking Code Editing for Efficient SWE-Agent",
+    "authors_lead": "Yikai Zhang",
+    "claim_checked": "Studies editing interfaces and downstream software-repair outcomes"
+  },
+  "artifact_sha256": {
+    "paper/v0.1.2/final_content.json": "07745ece2668bd58dfde7d198e5290109649fba84a682f43fa5906743b27e03b",
+    "output/pdf/v0.1.2/historical-data-compatibility.pdf": "d244317a16c7450e47e99caa6e53c397cfacc65175ba005e388f55822b168ca0",
+    "paper/v0.1.2/figures/figure1_collision.pdf": "3dd31991c85fe5800ed8ef4523cc764a68f9a54e6f26b6d4d3da2db5b6c84871",
+    "paper/v0.1.2/figures/figure2_calibration.pdf": "8a9af7eb45f3d5c84a1c87d0ce68789bed7cf814bd8a5ba7b76bd1e3758bb907",
+    "paper/v0.1.2/figures/figure3_controlled.pdf": "6fa90fb543322af4bce1e52ea2af7f53ae9bcbaae88bb7ad21dec22cbd9b5088",
+    "results/editing_ablation/20261101_v1/analysis.json": "92ab156ba7eae33cef82f1d3be3d53e93e5767a40effcf67b1b25d5d27b6330f",
+    "results/editing_ablation/20261101_v1/final_independent_audit.json": "0e49ebb4f4b33d47709b93409554cb08a36a4224e6374505e9354d9d28263524",
+    "results/second_calibration/approval_signature_17493/independent_execution_review.json": "2a917519b8025638cbe2b4b255fb5f0f7426f0fc588f6b11e25229d4608d6118",
+    "results/second_calibration/approval_signature_17493/interpretation_clarification.json": "45ae4f1a195fa12733cfaaa22721ef3e04e5b39e76037bc804e04ea0a1e6aac2"
+  },
+  "visually_reviewed_render_sha256": {
+    "results/paper_review/v012/reviewed-1.png": "3eaeb9c3c23ea093427788f82943614f7420b795dbd003d38198b02188d6503b",
+    "results/paper_review/v012/reviewed-2.png": "30d3574e485186aa61c36277ed83b29dc1b91a443fc32e096e836d1b04475d02",
+    "results/paper_review/v012/reviewed-3.png": "b4ed76d9041c6089c9cc9b9025d149230ee957e6684d350b1dd8a30e453e60aa",
+    "results/paper_review/v012/reviewed-4.png": "ccee6f04025ad6af191e85ab842f355967affceb3c56f03cf776702d7a493d72",
+    "results/paper_review/v012/reviewed-5.png": "8e8055754c94ff8077d7989a9478f9d5298b0edb1601de3c1f02dcd856f3c48f",
+    "results/paper_review/v012/reviewed-6.png": "abe738b3a1545ccfe894a017088ae6f76b7f9a97aeccd1d26fd30bca61b8b6ef"
+  },
+  "review_script_sha256": "80804847010fdf145f9940e33d8a7b4f315b75f6e64f2cb3b89bc62c6c651b14",
+  "unchanged_v011_pdf_sha256": "4de2d5685175e1c4ed92c69362b910dfeab3e555501d6c3edb800a271a349064",
+  "actions": {
+    "paid_calls": 0,
+    "new_experiments": 0,
+    "manuscript_edits": 0,
+    "release_edits": 0,
+    "kaggle_edits": 0
+  }
+}

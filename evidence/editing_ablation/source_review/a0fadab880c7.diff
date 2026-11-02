@@ -1,0 +1,100 @@
+--- base/packaging/_structures.py
++++ candidate/packaging/_structures.py
+@@ -0,0 +1,56 @@
++class InfinityType:
++    def __repr__(self) -> str:
++        return "Infinity"
++
++    def __hash__(self) -> int:
++        return hash(repr(self))
++
++    def __lt__(self, other: object) -> bool:
++        return False
++
++    def __le__(self, other: object) -> bool:
++        return False
++
++    def __eq__(self, other: object) -> bool:
++        return isinstance(other, self.__class__)
++
++    def __gt__(self, other: object) -> bool:
++        return True
++
++    def __ge__(self, other: object) -> bool:
++        return True
++
++    def __neg__(self: object) -> "NegativeInfinityType":
++        return NegativeInfinity
++
++
++Infinity = InfinityType()
++
++
++class NegativeInfinityType:
++    def __repr__(self) -> str:
++        return "-Infinity"
++
++    def __hash__(self) -> int:
++        return hash(repr(self))
++
++    def __lt__(self, other: object) -> bool:
++        return True
++
++    def __le__(self, other: object) -> bool:
++        return True
++
++    def __eq__(self, other: object) -> bool:
++        return isinstance(other, self.__class__)
++
++    def __gt__(self, other: object) -> bool:
++        return False
++
++    def __ge__(self, other: object) -> bool:
++        return False
++
++    def __neg__(self: object) -> InfinityType:
++        return Infinity
++
++
++NegativeInfinity = NegativeInfinityType()
+--- base/packaging/version.py
++++ candidate/packaging/version.py
+@@ -381,6 +381,38 @@
+ 
+     _regex = re.compile(r"\s*" + VERSION_PATTERN + r"\s*", re.VERBOSE | re.IGNORECASE)
+ 
++    def __getstate__(self) -> dict[str, Any]:
++        return {
++            "_epoch": self._epoch,
++            "_release": self._release,
++            "_pre": self._pre,
++            "_post": self._post,
++            "_dev": self._dev,
++            "_local": self._local,
++        }
++
++    def __setstate__(self, state: Any) -> None:
++        if isinstance(state, dict):
++            if "_version" in state:
++                # 25.0 state
++                v = state["_version"]
++                self._epoch = v.epoch
++                self._release = v.release
++                self._dev = v.dev
++                self._pre = v.pre
++                self._post = v.post
++                self._local = v.local
++            else:
++                # 26.0+ state
++                for key, value in state.items():
++                    if key.startswith("_") and key not in ("_hash_cache", "_key_cache"):
++                        # Use object.__setattr__ to bypass __slots__ if necessary, 
++                        # but Version has __slots__ and these are in it.
++                        setattr(self, key, value)
++        
++        self._key_cache = None
++        self._hash_cache = None
++
+     _epoch: int
+     _release: tuple[int, ...]
+     _dev: tuple[Literal["dev"], int] | None

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793501263-DsZC1gQ9kuA7K39qOSfI",
+  "object": "chat.completion",
+  "created": 1793501263,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The repair addresses a bug where loading big-endian arrays with `mmap_mode='r+'` resulted in a detached copy instead of a memory-mapped array, because `_ensure_native_byte_order` calls `byteswap()`.\n\n### Changes\n- **`joblib/numpy_pickle.py`**:\n    - Imported `_is_numpy_array_byte_order_mismatch` from `.numpy_pickle_utils`.\n    - Modified `NumpyArrayWrapper.read_mmap` to remove the call to `_ensure_native_byte_order(marray)`.\n    - Added a check using `_is_numpy_array_byte_order_mismatch(marray)`. If a mismatch is found, the array is returned as-is. This preserves the `numpy.memmap` type and the link to the underlying file, ensuring that mutations in `r+` mode are persisted to disk.\n\n### Validation\n- Ran the `legacy` check suite, which includes:\n    - **Historical data**: Verified that arrays produced by joblib 1.2.0 (including big-endian ones) are loaded with correct values and shapes.\n    - **Fresh API**: Verified current loading behavior.\n    - **Current Roundtrip**: Verified that saving and loading arrays in the current version remains consistent.\n    - **Mmap Persistence**: The checks confirmed that mutations to the loaded big-endian arrays are visible in new processes, satisfying the `mmap_mode='r+'` requirement.\n\n### Unresolved Work\nNone. All specified requirements for numeric correctness, shape preservation, and writable mmap persistence for historical big-endian arrays have been met.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 36769,
+    "completion_tokens": 358,
+    "total_tokens": 37127,
+    "cost": 0.00379862,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00379862,
+      "upstream_inference_prompt_cost": 0.0036769,
+      "upstream_inference_completions_cost": 0.00012172
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

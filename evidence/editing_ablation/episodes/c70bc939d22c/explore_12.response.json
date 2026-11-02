@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498527-BqKBHq3mP84FwBInJXA7",
+  "object": "chat.completion",
+  "created": 1793498527,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-1545ce63-3333-4225-9396-f20bd6737c76",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # Detect byte order mismatch and swap as needed.\\n        # For memmapped arrays, we cannot use byteswap() as it creates a copy.\\n        # Instead, we change the dtype to the correct byte order.\\n        if _is_numpy_array_byte_order_mismatch(marray):\\n            marray = marray.view(marray.dtype.newbyteorder('='))\\n        return marray\",\"old\":\"        return _ensure_native_byte_order(marray)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27940,
+    "completion_tokens": 143,
+    "total_tokens": 28083,
+    "cost": 0.00284262,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 25600,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00284262,
+      "upstream_inference_prompt_cost": 0.002794,
+      "upstream_inference_completions_cost": 4.862e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

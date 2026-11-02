@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793502719-jJO0tkNxUQjFQPU2x5aF",
+  "object": "chat.completion",
+  "created": 1793502719,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the `unpickle` listener in `sqlalchemy/ext/mutable.py` to support backward compatibility with objects pickled in SQLAlchemy 1.4.37.\n\n### Changes\n- Modified the `unpickle` function within `MutableBase._listen_on_attribute` to handle both the historical list-based format and the current dictionary-based format of the `ext.mutable.values` state dictionary.\n- When a list is detected (the 1.4.37 format), the code now iterates through the values and associates them with the attribute key from the closure, preventing the `TypeError: list indices must be integers or slices, not str` that occurred when the library expected a dictionary.\n\n### Checks Performed\n- Ran the `legacy` check suite, which includes:\n    - `historical`: Validated that objects produced by 1.4.37 are correctly read and their state restored.\n    - `fresh_api`: Verified that new objects created with 1.4.38 function correctly.\n    - `current_roundtrip`: Verified that objects pickled and unpickled within 1.4.38 maintain their state and dirty tracking.\n- All 6 tests in the suite passed.\n\n### Unresolved Work\nNone. The repair addresses the specific contract violation regarding historical data reading and preserves the current behavior for new data.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 28044,
+    "completion_tokens": 288,
+    "total_tokens": 28332,
+    "cost": 0.00290232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00290232,
+      "upstream_inference_prompt_cost": 0.0028044,
+      "upstream_inference_completions_cost": 9.792e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

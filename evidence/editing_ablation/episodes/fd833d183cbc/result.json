@@ -1,0 +1,39 @@
+{
+  "episode": "fd833d183cbc",
+  "family": "joblib_endian_1561",
+  "project": "joblib",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 2,
+  "block": 2,
+  "arm": "span",
+  "condition": "ordinary",
+  "protocol_complete": true,
+  "answer": {
+    "report": "I repaired the issue where loading big-endian arrays with `mmap_mode='r+'` resulted in a detached copy instead of a writable memory map.\n\n### Changes\nIn `joblib/numpy_pickle.py`, I modified the `NumpyArrayWrapper.read_mmap` method to return the `marray` (the `numpy.memmap` object) directly instead of passing it through `_ensure_native_byte_order`. \n\nThe `_ensure_native_byte_order` function calls `.byteswap().view(...)` when a byte-order mismatch is detected. For `numpy.memmap` objects, this operation creates a new array in memory, breaking the link to the underlying file. By removing this call, the original memory-mapped array is preserved, allowing mutations to be written back to the file and visible across processes.\n\n### Checks Performed\n- **`run_checks(suite='legacy')`**: Verified that historical artifacts (produced by joblib 1.2.0) and current roundtrips are correctly loaded and that mutations persist in the file.\n- **`run_checks(suite='current')`**: Verified that current joblib behavior for native-endian arrays and standard loading remains unchanged.\n- **Source Analysis**: Compared the current implementation with the historical 1.2.0 source to ensure the regression was introduced by the addition of `_ensure_native_byte_order` in the `read_mmap` path.\n\n### Unresolved Work\nNone. All specified requirements (numeric correctness, shape preservation, and writable mmap persistence for big-endian arrays) are satisfied."
+  },
+  "tool_actions": 17,
+  "applied_edit_count": 1,
+  "all_checks_passed": true,
+  "groups": {
+    "historical": {
+      "passed": 7,
+      "n": 7
+    },
+    "fresh_api": {
+      "passed": 7,
+      "n": 7
+    },
+    "current_roundtrip": {
+      "passed": 7,
+      "n": 7
+    }
+  },
+  "passed": 21,
+  "n": 21,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

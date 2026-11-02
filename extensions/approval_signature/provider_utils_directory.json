@@ -1,0 +1,2002 @@
+[
+  {
+    "name": "__snapshots__",
+    "path": "packages/provider-utils/src/__snapshots__",
+    "sha": "3b97e1f5fa4bb7ad72826f87dc27dd8187cc5468",
+    "size": 0,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/__snapshots__?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/__snapshots__",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/trees/3b97e1f5fa4bb7ad72826f87dc27dd8187cc5468",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/__snapshots__?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/trees/3b97e1f5fa4bb7ad72826f87dc27dd8187cc5468",
+      "html": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/__snapshots__"
+    }
+  },
+  {
+    "name": "add-additional-properties-to-json-schema.test.ts",
+    "path": "packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts",
+    "sha": "7afe946f68072422b8a18e3a91f87ef97b219f74",
+    "size": 7370,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7afe946f68072422b8a18e3a91f87ef97b219f74",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7afe946f68072422b8a18e3a91f87ef97b219f74",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.test.ts"
+    }
+  },
+  {
+    "name": "add-additional-properties-to-json-schema.ts",
+    "path": "packages/provider-utils/src/add-additional-properties-to-json-schema.ts",
+    "sha": "3b1a5cdeb910939ba42f169dc44f618ba2334f70",
+    "size": 1509,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/add-additional-properties-to-json-schema.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/3b1a5cdeb910939ba42f169dc44f618ba2334f70",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/add-additional-properties-to-json-schema.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/3b1a5cdeb910939ba42f169dc44f618ba2334f70",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/add-additional-properties-to-json-schema.ts"
+    }
+  },
+  {
+    "name": "as-array.test.ts",
+    "path": "packages/provider-utils/src/as-array.test.ts",
+    "sha": "7cd609c2e4a3f32f7650c53abd438bc7652d4d65",
+    "size": 454,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/as-array.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7cd609c2e4a3f32f7650c53abd438bc7652d4d65",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/as-array.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7cd609c2e4a3f32f7650c53abd438bc7652d4d65",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.test.ts"
+    }
+  },
+  {
+    "name": "as-array.ts",
+    "path": "packages/provider-utils/src/as-array.ts",
+    "sha": "9d906d6fd2d1fbe2c07822110df338ec4311b720",
+    "size": 368,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/as-array.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/9d906d6fd2d1fbe2c07822110df338ec4311b720",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/as-array.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/9d906d6fd2d1fbe2c07822110df338ec4311b720",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/as-array.ts"
+    }
+  },
+  {
+    "name": "cancel-response-body.test.ts",
+    "path": "packages/provider-utils/src/cancel-response-body.test.ts",
+    "sha": "37c38c166020e9a951cfb3f0fe6a885e79b91b9b",
+    "size": 1178,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/cancel-response-body.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/37c38c166020e9a951cfb3f0fe6a885e79b91b9b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/cancel-response-body.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/37c38c166020e9a951cfb3f0fe6a885e79b91b9b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.test.ts"
+    }
+  },
+  {
+    "name": "cancel-response-body.ts",
+    "path": "packages/provider-utils/src/cancel-response-body.ts",
+    "sha": "67e31e0fb685abd4c7f54e60be469a421699e759",
+    "size": 791,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/cancel-response-body.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/67e31e0fb685abd4c7f54e60be469a421699e759",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/cancel-response-body.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/67e31e0fb685abd4c7f54e60be469a421699e759",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/cancel-response-body.ts"
+    }
+  },
+  {
+    "name": "combine-headers.ts",
+    "path": "packages/provider-utils/src/combine-headers.ts",
+    "sha": "5f842268d4044cea1269fbc637cb818c14da5d33",
+    "size": 329,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/combine-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/combine-headers.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/5f842268d4044cea1269fbc637cb818c14da5d33",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/combine-headers.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/combine-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/5f842268d4044cea1269fbc637cb818c14da5d33",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/combine-headers.ts"
+    }
+  },
+  {
+    "name": "connect-to-websocket.test.ts",
+    "path": "packages/provider-utils/src/connect-to-websocket.test.ts",
+    "sha": "be0e6f26a5cac8c4811951e0d0f5f1e37f9b2c3f",
+    "size": 6217,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/connect-to-websocket.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/be0e6f26a5cac8c4811951e0d0f5f1e37f9b2c3f",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/connect-to-websocket.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/be0e6f26a5cac8c4811951e0d0f5f1e37f9b2c3f",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.test.ts"
+    }
+  },
+  {
+    "name": "connect-to-websocket.ts",
+    "path": "packages/provider-utils/src/connect-to-websocket.ts",
+    "sha": "2373b4034ba2b36735a5812e28c92eaa16bcbfa9",
+    "size": 3667,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/connect-to-websocket.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2373b4034ba2b36735a5812e28c92eaa16bcbfa9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/connect-to-websocket.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2373b4034ba2b36735a5812e28c92eaa16bcbfa9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/connect-to-websocket.ts"
+    }
+  },
+  {
+    "name": "convert-async-iterator-to-readable-stream.test.ts",
+    "path": "packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts",
+    "sha": "dd5b82a532731659e74327d7365490d43439cd19",
+    "size": 2123,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/dd5b82a532731659e74327d7365490d43439cd19",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/dd5b82a532731659e74327d7365490d43439cd19",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.test.ts"
+    }
+  },
+  {
+    "name": "convert-async-iterator-to-readable-stream.ts",
+    "path": "packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts",
+    "sha": "dd1121ca1c15645a015a2fe4726e3018baac0620",
+    "size": 1334,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/dd1121ca1c15645a015a2fe4726e3018baac0620",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/dd1121ca1c15645a015a2fe4726e3018baac0620",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-async-iterator-to-readable-stream.ts"
+    }
+  },
+  {
+    "name": "convert-image-model-file-to-data-uri.test.ts",
+    "path": "packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts",
+    "sha": "d2efcdf5842c45e123e9673b7ebee64d088284de",
+    "size": 2609,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d2efcdf5842c45e123e9673b7ebee64d088284de",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d2efcdf5842c45e123e9673b7ebee64d088284de",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.test.ts"
+    }
+  },
+  {
+    "name": "convert-image-model-file-to-data-uri.ts",
+    "path": "packages/provider-utils/src/convert-image-model-file-to-data-uri.ts",
+    "sha": "815712c9f18f487f18b7507b9bf94d806c350727",
+    "size": 670,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-image-model-file-to-data-uri.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/815712c9f18f487f18b7507b9bf94d806c350727",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-image-model-file-to-data-uri.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/815712c9f18f487f18b7507b9bf94d806c350727",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-image-model-file-to-data-uri.ts"
+    }
+  },
+  {
+    "name": "convert-inline-file-data-to-uint8-array.ts",
+    "path": "packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts",
+    "sha": "47d4a0baa94fba61abeb6993c82bee07667040c9",
+    "size": 927,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/47d4a0baa94fba61abeb6993c82bee07667040c9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/47d4a0baa94fba61abeb6993c82bee07667040c9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-inline-file-data-to-uint8-array.ts"
+    }
+  },
+  {
+    "name": "convert-to-form-data.test.ts",
+    "path": "packages/provider-utils/src/convert-to-form-data.test.ts",
+    "sha": "ac2d14eb20807602101d319396de1b4d784ad9b9",
+    "size": 5111,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-to-form-data.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/ac2d14eb20807602101d319396de1b4d784ad9b9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-to-form-data.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/ac2d14eb20807602101d319396de1b4d784ad9b9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.test.ts"
+    }
+  },
+  {
+    "name": "convert-to-form-data.ts",
+    "path": "packages/provider-utils/src/convert-to-form-data.ts",
+    "sha": "c2459ef93301691bcf0b20c254cdf3f45c429200",
+    "size": 1779,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-to-form-data.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/c2459ef93301691bcf0b20c254cdf3f45c429200",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/convert-to-form-data.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/c2459ef93301691bcf0b20c254cdf3f45c429200",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/convert-to-form-data.ts"
+    }
+  },
+  {
+    "name": "create-tool-name-mapping.test.ts",
+    "path": "packages/provider-utils/src/create-tool-name-mapping.test.ts",
+    "sha": "49f01a9a815adc166932fb829b48c3767d1c8fe4",
+    "size": 4868,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/create-tool-name-mapping.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/49f01a9a815adc166932fb829b48c3767d1c8fe4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/create-tool-name-mapping.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/49f01a9a815adc166932fb829b48c3767d1c8fe4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.test.ts"
+    }
+  },
+  {
+    "name": "create-tool-name-mapping.ts",
+    "path": "packages/provider-utils/src/create-tool-name-mapping.ts",
+    "sha": "7835454f15e968e4f3cf1caff888098b4abba3a4",
+    "size": 2297,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/create-tool-name-mapping.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7835454f15e968e4f3cf1caff888098b4abba3a4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/create-tool-name-mapping.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7835454f15e968e4f3cf1caff888098b4abba3a4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/create-tool-name-mapping.ts"
+    }
+  },
+  {
+    "name": "delay.test.ts",
+    "path": "packages/provider-utils/src/delay.test.ts",
+    "sha": "2dc29c230a6fd2b247ba09ff006d7acb9385f490",
+    "size": 6154,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delay.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2dc29c230a6fd2b247ba09ff006d7acb9385f490",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delay.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2dc29c230a6fd2b247ba09ff006d7acb9385f490",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.test.ts"
+    }
+  },
+  {
+    "name": "delay.ts",
+    "path": "packages/provider-utils/src/delay.ts",
+    "sha": "a99ea5698fc70d58165f3e923310868de8327217",
+    "size": 1172,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delay.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/a99ea5698fc70d58165f3e923310868de8327217",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delay.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/a99ea5698fc70d58165f3e923310868de8327217",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delay.ts"
+    }
+  },
+  {
+    "name": "delayed-promise.test.ts",
+    "path": "packages/provider-utils/src/delayed-promise.test.ts",
+    "sha": "b0678ab70b46dcdf6911ba240ad4583523b05388",
+    "size": 4090,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delayed-promise.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b0678ab70b46dcdf6911ba240ad4583523b05388",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delayed-promise.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b0678ab70b46dcdf6911ba240ad4583523b05388",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.test.ts"
+    }
+  },
+  {
+    "name": "delayed-promise.ts",
+    "path": "packages/provider-utils/src/delayed-promise.ts",
+    "sha": "d25c8a2c549c4c221db3b7ef3cc02d360c7b103a",
+    "size": 1483,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delayed-promise.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d25c8a2c549c4c221db3b7ef3cc02d360c7b103a",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/delayed-promise.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d25c8a2c549c4c221db3b7ef3cc02d360c7b103a",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/delayed-promise.ts"
+    }
+  },
+  {
+    "name": "detect-media-type.test.ts",
+    "path": "packages/provider-utils/src/detect-media-type.test.ts",
+    "sha": "3725f0690506dc6e70af3d02d56dbf3cee895977",
+    "size": 24687,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/detect-media-type.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/3725f0690506dc6e70af3d02d56dbf3cee895977",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/detect-media-type.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/3725f0690506dc6e70af3d02d56dbf3cee895977",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.test.ts"
+    }
+  },
+  {
+    "name": "detect-media-type.ts",
+    "path": "packages/provider-utils/src/detect-media-type.ts",
+    "sha": "2ecbc588d0cc659ddac46d4b2b2d0de99b91a56e",
+    "size": 8667,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/detect-media-type.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2ecbc588d0cc659ddac46d4b2b2d0de99b91a56e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/detect-media-type.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2ecbc588d0cc659ddac46d4b2b2d0de99b91a56e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/detect-media-type.ts"
+    }
+  },
+  {
+    "name": "download-blob.test.ts",
+    "path": "packages/provider-utils/src/download-blob.test.ts",
+    "sha": "b2e10920c7185f941ab02c32143ba9ac83e23050",
+    "size": 14958,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-blob.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b2e10920c7185f941ab02c32143ba9ac83e23050",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-blob.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b2e10920c7185f941ab02c32143ba9ac83e23050",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.test.ts"
+    }
+  },
+  {
+    "name": "download-blob.ts",
+    "path": "packages/provider-utils/src/download-blob.ts",
+    "sha": "d2a64424ab70be40ce26c953ec9949b6e116f93b",
+    "size": 1820,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-blob.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d2a64424ab70be40ce26c953ec9949b6e116f93b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-blob.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d2a64424ab70be40ce26c953ec9949b6e116f93b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-blob.ts"
+    }
+  },
+  {
+    "name": "download-error.ts",
+    "path": "packages/provider-utils/src/download-error.ts",
+    "sha": "455e5b3772ac96878af6485b6e25e7dc075ecbf4",
+    "size": 934,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-error.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/455e5b3772ac96878af6485b6e25e7dc075ecbf4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-error.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/download-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/455e5b3772ac96878af6485b6e25e7dc075ecbf4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/download-error.ts"
+    }
+  },
+  {
+    "name": "extract-lines.test.ts",
+    "path": "packages/provider-utils/src/extract-lines.test.ts",
+    "sha": "0c3a61e247654b0f57b0ab4db53668468e92b0b4",
+    "size": 1426,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-lines.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/0c3a61e247654b0f57b0ab4db53668468e92b0b4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-lines.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/0c3a61e247654b0f57b0ab4db53668468e92b0b4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.test.ts"
+    }
+  },
+  {
+    "name": "extract-lines.ts",
+    "path": "packages/provider-utils/src/extract-lines.ts",
+    "sha": "326898558fb7751b39777954b17ebac3a04f9b5b",
+    "size": 1006,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-lines.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/326898558fb7751b39777954b17ebac3a04f9b5b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-lines.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/326898558fb7751b39777954b17ebac3a04f9b5b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-lines.ts"
+    }
+  },
+  {
+    "name": "extract-response-headers.ts",
+    "path": "packages/provider-utils/src/extract-response-headers.ts",
+    "sha": "4056ce2f57109a1506bfff3f6b0d3d8c87bc3075",
+    "size": 334,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-response-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-response-headers.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/4056ce2f57109a1506bfff3f6b0d3d8c87bc3075",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-response-headers.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/extract-response-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/4056ce2f57109a1506bfff3f6b0d3d8c87bc3075",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/extract-response-headers.ts"
+    }
+  },
+  {
+    "name": "fetch-function.ts",
+    "path": "packages/provider-utils/src/fetch-function.ts",
+    "sha": "f7882f90302f987939ccf8b076bf0ba021e59042",
+    "size": 126,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-function.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-function.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/f7882f90302f987939ccf8b076bf0ba021e59042",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-function.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-function.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/f7882f90302f987939ccf8b076bf0ba021e59042",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-function.ts"
+    }
+  },
+  {
+    "name": "fetch-with-validated-redirects.test.ts",
+    "path": "packages/provider-utils/src/fetch-with-validated-redirects.test.ts",
+    "sha": "d60c171e1c6f9327685dd5ab6198a4a8722ad0a0",
+    "size": 12305,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-with-validated-redirects.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d60c171e1c6f9327685dd5ab6198a4a8722ad0a0",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-with-validated-redirects.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d60c171e1c6f9327685dd5ab6198a4a8722ad0a0",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.test.ts"
+    }
+  },
+  {
+    "name": "fetch-with-validated-redirects.ts",
+    "path": "packages/provider-utils/src/fetch-with-validated-redirects.ts",
+    "sha": "bc721e9b333dfb6789f0eb485c2e692fdf69d10b",
+    "size": 6696,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-with-validated-redirects.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/bc721e9b333dfb6789f0eb485c2e692fdf69d10b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/fetch-with-validated-redirects.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/bc721e9b333dfb6789f0eb485c2e692fdf69d10b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/fetch-with-validated-redirects.ts"
+    }
+  },
+  {
+    "name": "filter-nullable.test.ts",
+    "path": "packages/provider-utils/src/filter-nullable.test.ts",
+    "sha": "7cd4b5344824c92d764879844908fe8bfd1d37a1",
+    "size": 462,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/filter-nullable.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7cd4b5344824c92d764879844908fe8bfd1d37a1",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/filter-nullable.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7cd4b5344824c92d764879844908fe8bfd1d37a1",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.test.ts"
+    }
+  },
+  {
+    "name": "filter-nullable.ts",
+    "path": "packages/provider-utils/src/filter-nullable.ts",
+    "sha": "d863b9adf71d093f5253b2115b7a508498b4a20d",
+    "size": 345,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/filter-nullable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d863b9adf71d093f5253b2115b7a508498b4a20d",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/filter-nullable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d863b9adf71d093f5253b2115b7a508498b4a20d",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/filter-nullable.ts"
+    }
+  },
+  {
+    "name": "generate-id.test.ts",
+    "path": "packages/provider-utils/src/generate-id.test.ts",
+    "sha": "812a85fbe9d9e8ca3b4a79643f34ec1a4ede42a9",
+    "size": 921,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/generate-id.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/812a85fbe9d9e8ca3b4a79643f34ec1a4ede42a9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/generate-id.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/812a85fbe9d9e8ca3b4a79643f34ec1a4ede42a9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.test.ts"
+    }
+  },
+  {
+    "name": "generate-id.ts",
+    "path": "packages/provider-utils/src/generate-id.ts",
+    "sha": "32a8a53befa54be3ad8a12e6f051a9a407570228",
+    "size": 1761,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/generate-id.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/32a8a53befa54be3ad8a12e6f051a9a407570228",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/generate-id.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/32a8a53befa54be3ad8a12e6f051a9a407570228",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/generate-id.ts"
+    }
+  },
+  {
+    "name": "get-error-message.ts",
+    "path": "packages/provider-utils/src/get-error-message.ts",
+    "sha": "8f76de501879de25c4dbe0f9fb55685cab859472",
+    "size": 52,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-error-message.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-error-message.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/8f76de501879de25c4dbe0f9fb55685cab859472",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-error-message.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-error-message.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/8f76de501879de25c4dbe0f9fb55685cab859472",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-error-message.ts"
+    }
+  },
+  {
+    "name": "get-from-api.test.ts",
+    "path": "packages/provider-utils/src/get-from-api.test.ts",
+    "sha": "0900fa119998bb96e9e27cc26cbc18219f12d15e",
+    "size": 14810,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-from-api.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/0900fa119998bb96e9e27cc26cbc18219f12d15e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-from-api.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/0900fa119998bb96e9e27cc26cbc18219f12d15e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.test.ts"
+    }
+  },
+  {
+    "name": "get-from-api.ts",
+    "path": "packages/provider-utils/src/get-from-api.ts",
+    "sha": "a864edc329771ed69fd45d1539fab339298e3858",
+    "size": 5178,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-from-api.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/a864edc329771ed69fd45d1539fab339298e3858",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-from-api.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/a864edc329771ed69fd45d1539fab339298e3858",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-from-api.ts"
+    }
+  },
+  {
+    "name": "get-runtime-environment-user-agent.test.ts",
+    "path": "packages/provider-utils/src/get-runtime-environment-user-agent.test.ts",
+    "sha": "92c78925666c1d151952b61abc1f524294f7c641",
+    "size": 1207,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-runtime-environment-user-agent.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/92c78925666c1d151952b61abc1f524294f7c641",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-runtime-environment-user-agent.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/92c78925666c1d151952b61abc1f524294f7c641",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.test.ts"
+    }
+  },
+  {
+    "name": "get-runtime-environment-user-agent.ts",
+    "path": "packages/provider-utils/src/get-runtime-environment-user-agent.ts",
+    "sha": "f553f735320bcdecf36a981f3e9eaa29acb12ca0",
+    "size": 611,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-runtime-environment-user-agent.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/f553f735320bcdecf36a981f3e9eaa29acb12ca0",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/get-runtime-environment-user-agent.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/f553f735320bcdecf36a981f3e9eaa29acb12ca0",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/get-runtime-environment-user-agent.ts"
+    }
+  },
+  {
+    "name": "handle-fetch-error.test.ts",
+    "path": "packages/provider-utils/src/handle-fetch-error.test.ts",
+    "sha": "375158096a42ca0d82fdc6faedcf2d95d8e22fbe",
+    "size": 4219,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/handle-fetch-error.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/375158096a42ca0d82fdc6faedcf2d95d8e22fbe",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/handle-fetch-error.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/375158096a42ca0d82fdc6faedcf2d95d8e22fbe",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.test.ts"
+    }
+  },
+  {
+    "name": "handle-fetch-error.ts",
+    "path": "packages/provider-utils/src/handle-fetch-error.ts",
+    "sha": "d9774ab6bf50bbb10a2d695d275e21ccd50df5e7",
+    "size": 1560,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/handle-fetch-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d9774ab6bf50bbb10a2d695d275e21ccd50df5e7",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/handle-fetch-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d9774ab6bf50bbb10a2d695d275e21ccd50df5e7",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/handle-fetch-error.ts"
+    }
+  },
+  {
+    "name": "has-required-key.test-d.ts",
+    "path": "packages/provider-utils/src/has-required-key.test-d.ts",
+    "sha": "60a4afa5a384bbe5f0655a6408920cfcb077b98b",
+    "size": 829,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/has-required-key.test-d.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.test-d.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/60a4afa5a384bbe5f0655a6408920cfcb077b98b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.test-d.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/has-required-key.test-d.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/60a4afa5a384bbe5f0655a6408920cfcb077b98b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.test-d.ts"
+    }
+  },
+  {
+    "name": "has-required-key.ts",
+    "path": "packages/provider-utils/src/has-required-key.ts",
+    "sha": "3914285e29b9ce65e148b6dc23b04f490b911ef3",
+    "size": 228,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/has-required-key.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/3914285e29b9ce65e148b6dc23b04f490b911ef3",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/has-required-key.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/3914285e29b9ce65e148b6dc23b04f490b911ef3",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/has-required-key.ts"
+    }
+  },
+  {
+    "name": "index.ts",
+    "path": "packages/provider-utils/src/index.ts",
+    "sha": "338179a23502ddde6e3db53b00fa7f6fd318d70b",
+    "size": 5359,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/index.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/index.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/338179a23502ddde6e3db53b00fa7f6fd318d70b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/index.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/index.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/338179a23502ddde6e3db53b00fa7f6fd318d70b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/index.ts"
+    }
+  },
+  {
+    "name": "inject-json-instruction.test.ts",
+    "path": "packages/provider-utils/src/inject-json-instruction.test.ts",
+    "sha": "b9bfbb1bb357be84375b31e8ce929d1fe3cce1fe",
+    "size": 11658,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/inject-json-instruction.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b9bfbb1bb357be84375b31e8ce929d1fe3cce1fe",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/inject-json-instruction.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b9bfbb1bb357be84375b31e8ce929d1fe3cce1fe",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.test.ts"
+    }
+  },
+  {
+    "name": "inject-json-instruction.ts",
+    "path": "packages/provider-utils/src/inject-json-instruction.ts",
+    "sha": "03c2750f6e25073b17e22729e216f9724235d217",
+    "size": 1622,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/inject-json-instruction.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/03c2750f6e25073b17e22729e216f9724235d217",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/inject-json-instruction.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/03c2750f6e25073b17e22729e216f9724235d217",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/inject-json-instruction.ts"
+    }
+  },
+  {
+    "name": "is-abort-error.ts",
+    "path": "packages/provider-utils/src/is-abort-error.ts",
+    "sha": "195c6e4737fbd3543c4351d1c9059ef40d768cee",
+    "size": 272,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-abort-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-abort-error.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/195c6e4737fbd3543c4351d1c9059ef40d768cee",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-abort-error.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-abort-error.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/195c6e4737fbd3543c4351d1c9059ef40d768cee",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-abort-error.ts"
+    }
+  },
+  {
+    "name": "is-async-iterable.ts",
+    "path": "packages/provider-utils/src/is-async-iterable.ts",
+    "sha": "1bd9ce1d3c240265631d3d8691fe000a9e9ba881",
+    "size": 153,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-async-iterable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-async-iterable.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/1bd9ce1d3c240265631d3d8691fe000a9e9ba881",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-async-iterable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-async-iterable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/1bd9ce1d3c240265631d3d8691fe000a9e9ba881",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-async-iterable.ts"
+    }
+  },
+  {
+    "name": "is-browser-runtime.test.ts",
+    "path": "packages/provider-utils/src/is-browser-runtime.test.ts",
+    "sha": "72a6e8161b9db5995acef1706024885d5bcec777",
+    "size": 558,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-browser-runtime.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/72a6e8161b9db5995acef1706024885d5bcec777",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-browser-runtime.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/72a6e8161b9db5995acef1706024885d5bcec777",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.test.ts"
+    }
+  },
+  {
+    "name": "is-browser-runtime.ts",
+    "path": "packages/provider-utils/src/is-browser-runtime.ts",
+    "sha": "f6e755549d38f5585b513d52b6dcf30ceb9455a5",
+    "size": 484,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-browser-runtime.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/f6e755549d38f5585b513d52b6dcf30ceb9455a5",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-browser-runtime.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/f6e755549d38f5585b513d52b6dcf30ceb9455a5",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-browser-runtime.ts"
+    }
+  },
+  {
+    "name": "is-buffer.ts",
+    "path": "packages/provider-utils/src/is-buffer.ts",
+    "sha": "d81b6d2b4daa931cdcd9102fe22ab04537d7e62a",
+    "size": 318,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-buffer.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-buffer.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d81b6d2b4daa931cdcd9102fe22ab04537d7e62a",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-buffer.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-buffer.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d81b6d2b4daa931cdcd9102fe22ab04537d7e62a",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-buffer.ts"
+    }
+  },
+  {
+    "name": "is-json-serializable.test.ts",
+    "path": "packages/provider-utils/src/is-json-serializable.test.ts",
+    "sha": "4e66848cd16ac4aeb2878190243938268d723569",
+    "size": 2091,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-json-serializable.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/4e66848cd16ac4aeb2878190243938268d723569",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-json-serializable.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/4e66848cd16ac4aeb2878190243938268d723569",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.test.ts"
+    }
+  },
+  {
+    "name": "is-json-serializable.ts",
+    "path": "packages/provider-utils/src/is-json-serializable.ts",
+    "sha": "0d224da1bc333b74e4e613e78df8d1a71bc9b7ec",
+    "size": 949,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-json-serializable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/0d224da1bc333b74e4e613e78df8d1a71bc9b7ec",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-json-serializable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/0d224da1bc333b74e4e613e78df8d1a71bc9b7ec",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-json-serializable.ts"
+    }
+  },
+  {
+    "name": "is-non-nullable.ts",
+    "path": "packages/provider-utils/src/is-non-nullable.ts",
+    "sha": "39963ded38ef4ec9eff9d9264e4434dc1d7a52d8",
+    "size": 376,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-non-nullable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-non-nullable.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/39963ded38ef4ec9eff9d9264e4434dc1d7a52d8",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-non-nullable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-non-nullable.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/39963ded38ef4ec9eff9d9264e4434dc1d7a52d8",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-non-nullable.ts"
+    }
+  },
+  {
+    "name": "is-provider-reference.test.ts",
+    "path": "packages/provider-utils/src/is-provider-reference.test.ts",
+    "sha": "705c808f4a6a77f7a1533142cf4a687d707ab8fb",
+    "size": 1483,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-provider-reference.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/705c808f4a6a77f7a1533142cf4a687d707ab8fb",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-provider-reference.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/705c808f4a6a77f7a1533142cf4a687d707ab8fb",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.test.ts"
+    }
+  },
+  {
+    "name": "is-provider-reference.ts",
+    "path": "packages/provider-utils/src/is-provider-reference.ts",
+    "sha": "1821e051d91bec19f51eca4403ac5a74b9cc7543",
+    "size": 617,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-provider-reference.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/1821e051d91bec19f51eca4403ac5a74b9cc7543",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-provider-reference.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/1821e051d91bec19f51eca4403ac5a74b9cc7543",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-provider-reference.ts"
+    }
+  },
+  {
+    "name": "is-same-origin.test.ts",
+    "path": "packages/provider-utils/src/is-same-origin.test.ts",
+    "sha": "77d3a1946961fcb7216157468610e247d6c39502",
+    "size": 1196,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-same-origin.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/77d3a1946961fcb7216157468610e247d6c39502",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-same-origin.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/77d3a1946961fcb7216157468610e247d6c39502",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.test.ts"
+    }
+  },
+  {
+    "name": "is-same-origin.ts",
+    "path": "packages/provider-utils/src/is-same-origin.ts",
+    "sha": "4f30f06966d099a636710b1fa797511904b4f8ef",
+    "size": 719,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-same-origin.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/4f30f06966d099a636710b1fa797511904b4f8ef",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-same-origin.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/4f30f06966d099a636710b1fa797511904b4f8ef",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-same-origin.ts"
+    }
+  },
+  {
+    "name": "is-url-supported.test.ts",
+    "path": "packages/provider-utils/src/is-url-supported.test.ts",
+    "sha": "06f2cf21011bd163581e7a35fee3d60622754fa5",
+    "size": 9895,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-url-supported.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/06f2cf21011bd163581e7a35fee3d60622754fa5",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-url-supported.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/06f2cf21011bd163581e7a35fee3d60622754fa5",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.test.ts"
+    }
+  },
+  {
+    "name": "is-url-supported.ts",
+    "path": "packages/provider-utils/src/is-url-supported.ts",
+    "sha": "cc5767e20a9ad8954ddff48e0b6ff4ac45909a9a",
+    "size": 2022,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-url-supported.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/cc5767e20a9ad8954ddff48e0b6ff4ac45909a9a",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/is-url-supported.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/cc5767e20a9ad8954ddff48e0b6ff4ac45909a9a",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/is-url-supported.ts"
+    }
+  },
+  {
+    "name": "load-api-key.ts",
+    "path": "packages/provider-utils/src/load-api-key.ts",
+    "sha": "086e3b85a4b01689b31666c6aa13a7da906dc708",
+    "size": 1269,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-api-key.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-api-key.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/086e3b85a4b01689b31666c6aa13a7da906dc708",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-api-key.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-api-key.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/086e3b85a4b01689b31666c6aa13a7da906dc708",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-api-key.ts"
+    }
+  },
+  {
+    "name": "load-optional-setting.ts",
+    "path": "packages/provider-utils/src/load-optional-setting.ts",
+    "sha": "bce841c02e968862449f584a648efdc925090425",
+    "size": 747,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-optional-setting.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-optional-setting.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/bce841c02e968862449f584a648efdc925090425",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-optional-setting.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-optional-setting.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/bce841c02e968862449f584a648efdc925090425",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-optional-setting.ts"
+    }
+  },
+  {
+    "name": "load-setting.ts",
+    "path": "packages/provider-utils/src/load-setting.ts",
+    "sha": "0e0dceb5652c07dc7943c3d71c61df212baa48b5",
+    "size": 1690,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-setting.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-setting.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/0e0dceb5652c07dc7943c3d71c61df212baa48b5",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-setting.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/load-setting.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/0e0dceb5652c07dc7943c3d71c61df212baa48b5",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/load-setting.ts"
+    }
+  },
+  {
+    "name": "map-reasoning-to-provider.test.ts",
+    "path": "packages/provider-utils/src/map-reasoning-to-provider.test.ts",
+    "sha": "cea848ee48290dd009e04339cf4e9fec0024eef4",
+    "size": 5307,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/map-reasoning-to-provider.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/cea848ee48290dd009e04339cf4e9fec0024eef4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/map-reasoning-to-provider.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/cea848ee48290dd009e04339cf4e9fec0024eef4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.test.ts"
+    }
+  },
+  {
+    "name": "map-reasoning-to-provider.ts",
+    "path": "packages/provider-utils/src/map-reasoning-to-provider.ts",
+    "sha": "fbaf5b46dca5d2f1cb1f957022538fa16ca2603a",
+    "size": 3002,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/map-reasoning-to-provider.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/fbaf5b46dca5d2f1cb1f957022538fa16ca2603a",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/map-reasoning-to-provider.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/fbaf5b46dca5d2f1cb1f957022538fa16ca2603a",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/map-reasoning-to-provider.ts"
+    }
+  },
+  {
+    "name": "maybe-promise-like.ts",
+    "path": "packages/provider-utils/src/maybe-promise-like.ts",
+    "sha": "1277acd67b58f6df04e6d8a034783f26ef78b500",
+    "size": 176,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/maybe-promise-like.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/maybe-promise-like.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/1277acd67b58f6df04e6d8a034783f26ef78b500",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/maybe-promise-like.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/maybe-promise-like.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/1277acd67b58f6df04e6d8a034783f26ef78b500",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/maybe-promise-like.ts"
+    }
+  },
+  {
+    "name": "media-type-to-extension.test.ts",
+    "path": "packages/provider-utils/src/media-type-to-extension.test.ts",
+    "sha": "530c26d453091a6bcee421e98e7f9157ac3ae74c",
+    "size": 731,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/media-type-to-extension.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/530c26d453091a6bcee421e98e7f9157ac3ae74c",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/media-type-to-extension.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/530c26d453091a6bcee421e98e7f9157ac3ae74c",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.test.ts"
+    }
+  },
+  {
+    "name": "media-type-to-extension.ts",
+    "path": "packages/provider-utils/src/media-type-to-extension.ts",
+    "sha": "40b475390b4a4bea233cdf9e5a479cb4c903dcaf",
+    "size": 642,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/media-type-to-extension.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/40b475390b4a4bea233cdf9e5a479cb4c903dcaf",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/media-type-to-extension.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/40b475390b4a4bea233cdf9e5a479cb4c903dcaf",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/media-type-to-extension.ts"
+    }
+  },
+  {
+    "name": "normalize-headers.test.ts",
+    "path": "packages/provider-utils/src/normalize-headers.test.ts",
+    "sha": "2b936d9e5f42e9b959d7fe883f0d1443ba66e0b3",
+    "size": 1645,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/normalize-headers.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2b936d9e5f42e9b959d7fe883f0d1443ba66e0b3",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/normalize-headers.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2b936d9e5f42e9b959d7fe883f0d1443ba66e0b3",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.test.ts"
+    }
+  },
+  {
+    "name": "normalize-headers.ts",
+    "path": "packages/provider-utils/src/normalize-headers.ts",
+    "sha": "ade0a34317f67bbc0e9344cf53cdf7112c2996d1",
+    "size": 965,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/normalize-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/ade0a34317f67bbc0e9344cf53cdf7112c2996d1",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/normalize-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/ade0a34317f67bbc0e9344cf53cdf7112c2996d1",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/normalize-headers.ts"
+    }
+  },
+  {
+    "name": "parse-json-event-stream.ts",
+    "path": "packages/provider-utils/src/parse-json-event-stream.ts",
+    "sha": "4769ebcf28c4b20ee46223137599ead2c6822db7",
+    "size": 929,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json-event-stream.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json-event-stream.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/4769ebcf28c4b20ee46223137599ead2c6822db7",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json-event-stream.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json-event-stream.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/4769ebcf28c4b20ee46223137599ead2c6822db7",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json-event-stream.ts"
+    }
+  },
+  {
+    "name": "parse-json.test.ts",
+    "path": "packages/provider-utils/src/parse-json.test.ts",
+    "sha": "43fdc2028a1877d59a0514a68516dd284a8efc91",
+    "size": 5335,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/43fdc2028a1877d59a0514a68516dd284a8efc91",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/43fdc2028a1877d59a0514a68516dd284a8efc91",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.test.ts"
+    }
+  },
+  {
+    "name": "parse-json.ts",
+    "path": "packages/provider-utils/src/parse-json.ts",
+    "sha": "8c650c78e937908020a5a967bc9cada38aabb9c9",
+    "size": 3320,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/8c650c78e937908020a5a967bc9cada38aabb9c9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-json.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/8c650c78e937908020a5a967bc9cada38aabb9c9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-json.ts"
+    }
+  },
+  {
+    "name": "parse-provider-options.ts",
+    "path": "packages/provider-utils/src/parse-provider-options.ts",
+    "sha": "7885246df166999fc7bdfed47837cc489f73fedc",
+    "size": 876,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-provider-options.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-provider-options.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7885246df166999fc7bdfed47837cc489f73fedc",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-provider-options.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/parse-provider-options.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7885246df166999fc7bdfed47837cc489f73fedc",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/parse-provider-options.ts"
+    }
+  },
+  {
+    "name": "post-to-api.ts",
+    "path": "packages/provider-utils/src/post-to-api.ts",
+    "sha": "520a7b0589dc9de0e940e91ef3f53ff01cc882d6",
+    "size": 4152,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/post-to-api.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/post-to-api.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/520a7b0589dc9de0e940e91ef3f53ff01cc882d6",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/post-to-api.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/post-to-api.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/520a7b0589dc9de0e940e91ef3f53ff01cc882d6",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/post-to-api.ts"
+    }
+  },
+  {
+    "name": "provider-defined-tool-factory.ts",
+    "path": "packages/provider-utils/src/provider-defined-tool-factory.ts",
+    "sha": "351112d55b12ca0ae1370bd6ffc992a8e8497ec3",
+    "size": 4096,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/provider-defined-tool-factory.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-defined-tool-factory.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/351112d55b12ca0ae1370bd6ffc992a8e8497ec3",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-defined-tool-factory.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/provider-defined-tool-factory.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/351112d55b12ca0ae1370bd6ffc992a8e8497ec3",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-defined-tool-factory.ts"
+    }
+  },
+  {
+    "name": "provider-executed-tool-factory.ts",
+    "path": "packages/provider-utils/src/provider-executed-tool-factory.ts",
+    "sha": "c00a07868539a10b59950e127d8b689be96820e4",
+    "size": 2086,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/provider-executed-tool-factory.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-executed-tool-factory.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/c00a07868539a10b59950e127d8b689be96820e4",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-executed-tool-factory.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/provider-executed-tool-factory.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/c00a07868539a10b59950e127d8b689be96820e4",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/provider-executed-tool-factory.ts"
+    }
+  },
+  {
+    "name": "read-response-with-size-limit.test.ts",
+    "path": "packages/provider-utils/src/read-response-with-size-limit.test.ts",
+    "sha": "9b93a208b9e1639d2070069c37dac55024c8f7d0",
+    "size": 5446,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/read-response-with-size-limit.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/9b93a208b9e1639d2070069c37dac55024c8f7d0",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/read-response-with-size-limit.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/9b93a208b9e1639d2070069c37dac55024c8f7d0",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.test.ts"
+    }
+  },
+  {
+    "name": "read-response-with-size-limit.ts",
+    "path": "packages/provider-utils/src/read-response-with-size-limit.ts",
+    "sha": "0c94992e596f93b7873e4c0c6bb53b0a02a63324",
+    "size": 2932,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/read-response-with-size-limit.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/0c94992e596f93b7873e4c0c6bb53b0a02a63324",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/read-response-with-size-limit.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/0c94992e596f93b7873e4c0c6bb53b0a02a63324",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/read-response-with-size-limit.ts"
+    }
+  },
+  {
+    "name": "remove-undefined-entries.test.ts",
+    "path": "packages/provider-utils/src/remove-undefined-entries.test.ts",
+    "sha": "e5d4d42fc1712180d7a08976921817e5307a237e",
+    "size": 1159,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/remove-undefined-entries.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/e5d4d42fc1712180d7a08976921817e5307a237e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/remove-undefined-entries.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/e5d4d42fc1712180d7a08976921817e5307a237e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.test.ts"
+    }
+  },
+  {
+    "name": "remove-undefined-entries.ts",
+    "path": "packages/provider-utils/src/remove-undefined-entries.ts",
+    "sha": "bf315fad8b4bcb37ee8f524850ee59f34e6afb36",
+    "size": 477,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/remove-undefined-entries.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/bf315fad8b4bcb37ee8f524850ee59f34e6afb36",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/remove-undefined-entries.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/bf315fad8b4bcb37ee8f524850ee59f34e6afb36",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/remove-undefined-entries.ts"
+    }
+  },
+  {
+    "name": "resolve-full-media-type.test.ts",
+    "path": "packages/provider-utils/src/resolve-full-media-type.test.ts",
+    "sha": "09d52da92511f4b43dd47db776e5b0da32554200",
+    "size": 3313,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-full-media-type.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/09d52da92511f4b43dd47db776e5b0da32554200",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-full-media-type.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/09d52da92511f4b43dd47db776e5b0da32554200",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.test.ts"
+    }
+  },
+  {
+    "name": "resolve-full-media-type.ts",
+    "path": "packages/provider-utils/src/resolve-full-media-type.ts",
+    "sha": "3b17044bcc2f8390a4d0c890035794f03a740127",
+    "size": 1540,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-full-media-type.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/3b17044bcc2f8390a4d0c890035794f03a740127",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-full-media-type.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/3b17044bcc2f8390a4d0c890035794f03a740127",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-full-media-type.ts"
+    }
+  },
+  {
+    "name": "resolve-provider-reference.test.ts",
+    "path": "packages/provider-utils/src/resolve-provider-reference.test.ts",
+    "sha": "5f0cd2fa5636bee2030430bdb2d35af26f3b6f4e",
+    "size": 2165,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-provider-reference.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/5f0cd2fa5636bee2030430bdb2d35af26f3b6f4e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-provider-reference.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/5f0cd2fa5636bee2030430bdb2d35af26f3b6f4e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.test.ts"
+    }
+  },
+  {
+    "name": "resolve-provider-reference.ts",
+    "path": "packages/provider-utils/src/resolve-provider-reference.ts",
+    "sha": "1c2705e2c359f7d3929eb679e6cb16b2412f92cb",
+    "size": 602,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-provider-reference.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/1c2705e2c359f7d3929eb679e6cb16b2412f92cb",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve-provider-reference.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/1c2705e2c359f7d3929eb679e6cb16b2412f92cb",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve-provider-reference.ts"
+    }
+  },
+  {
+    "name": "resolve.test.ts",
+    "path": "packages/provider-utils/src/resolve.test.ts",
+    "sha": "21a27f44f9288248965626dfafaa3f26d07d6a26",
+    "size": 4281,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/21a27f44f9288248965626dfafaa3f26d07d6a26",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/21a27f44f9288248965626dfafaa3f26d07d6a26",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.test.ts"
+    }
+  },
+  {
+    "name": "resolve.ts",
+    "path": "packages/provider-utils/src/resolve.ts",
+    "sha": "2868a4cb5963508f700dff3130d0d2676c69aedc",
+    "size": 1218,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2868a4cb5963508f700dff3130d0d2676c69aedc",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/resolve.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2868a4cb5963508f700dff3130d0d2676c69aedc",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/resolve.ts"
+    }
+  },
+  {
+    "name": "response-handler.test.ts",
+    "path": "packages/provider-utils/src/response-handler.test.ts",
+    "sha": "8762fcdda7eff593b9f4e52ab15f44ce277d1b02",
+    "size": 4793,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/response-handler.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/8762fcdda7eff593b9f4e52ab15f44ce277d1b02",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/response-handler.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/8762fcdda7eff593b9f4e52ab15f44ce277d1b02",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.test.ts"
+    }
+  },
+  {
+    "name": "response-handler.ts",
+    "path": "packages/provider-utils/src/response-handler.ts",
+    "sha": "69836ee1fac46cae1fd0e03fa4e1c7a3d33d3710",
+    "size": 5511,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/response-handler.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/69836ee1fac46cae1fd0e03fa4e1c7a3d33d3710",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/response-handler.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/69836ee1fac46cae1fd0e03fa4e1c7a3d33d3710",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/response-handler.ts"
+    }
+  },
+  {
+    "name": "retry-with-exponential-backoff.ts",
+    "path": "packages/provider-utils/src/retry-with-exponential-backoff.ts",
+    "sha": "b319b53cbcf72b8267f1192442bc78db422acc04",
+    "size": 3569,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/retry-with-exponential-backoff.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/retry-with-exponential-backoff.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b319b53cbcf72b8267f1192442bc78db422acc04",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/retry-with-exponential-backoff.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/retry-with-exponential-backoff.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b319b53cbcf72b8267f1192442bc78db422acc04",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/retry-with-exponential-backoff.ts"
+    }
+  },
+  {
+    "name": "sanitize-request-headers.ts",
+    "path": "packages/provider-utils/src/sanitize-request-headers.ts",
+    "sha": "97c06a13c1a84823157a623f2f730e1fb1cf8be9",
+    "size": 1462,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/sanitize-request-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/sanitize-request-headers.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/97c06a13c1a84823157a623f2f730e1fb1cf8be9",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/sanitize-request-headers.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/sanitize-request-headers.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/97c06a13c1a84823157a623f2f730e1fb1cf8be9",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/sanitize-request-headers.ts"
+    }
+  },
+  {
+    "name": "schema.test-d.ts",
+    "path": "packages/provider-utils/src/schema.test-d.ts",
+    "sha": "9dd8e86b8d679a731fdaae57aab788d5ce5150ca",
+    "size": 348,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.test-d.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test-d.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/9dd8e86b8d679a731fdaae57aab788d5ce5150ca",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test-d.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.test-d.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/9dd8e86b8d679a731fdaae57aab788d5ce5150ca",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test-d.ts"
+    }
+  },
+  {
+    "name": "schema.test.ts",
+    "path": "packages/provider-utils/src/schema.test.ts",
+    "sha": "03953cfdaa2e90191b46d308f93ba78141e8d16f",
+    "size": 14902,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/03953cfdaa2e90191b46d308f93ba78141e8d16f",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/03953cfdaa2e90191b46d308f93ba78141e8d16f",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.test.ts"
+    }
+  },
+  {
+    "name": "schema.ts",
+    "path": "packages/provider-utils/src/schema.ts",
+    "sha": "9a30db20a95daf2b774f43c42fe8cf14adce07f6",
+    "size": 8420,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/9a30db20a95daf2b774f43c42fe8cf14adce07f6",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/schema.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/9a30db20a95daf2b774f43c42fe8cf14adce07f6",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/schema.ts"
+    }
+  },
+  {
+    "name": "secure-json-parse.test.ts",
+    "path": "packages/provider-utils/src/secure-json-parse.test.ts",
+    "sha": "32388ed06a81f799574fe1045782660212bebdf8",
+    "size": 4568,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/secure-json-parse.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/32388ed06a81f799574fe1045782660212bebdf8",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/secure-json-parse.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/32388ed06a81f799574fe1045782660212bebdf8",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.test.ts"
+    }
+  },
+  {
+    "name": "secure-json-parse.ts",
+    "path": "packages/provider-utils/src/secure-json-parse.ts",
+    "sha": "ca18cbc544aa3208abb925ff205ca4ff12b0281b",
+    "size": 4055,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/secure-json-parse.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/ca18cbc544aa3208abb925ff205ca4ff12b0281b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/secure-json-parse.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/ca18cbc544aa3208abb925ff205ca4ff12b0281b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/secure-json-parse.ts"
+    }
+  },
+  {
+    "name": "serialize-model-options.test.ts",
+    "path": "packages/provider-utils/src/serialize-model-options.test.ts",
+    "sha": "55709a5cbe47e60ff02f860d2f9caac144dd0a44",
+    "size": 3527,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/serialize-model-options.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/55709a5cbe47e60ff02f860d2f9caac144dd0a44",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/serialize-model-options.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/55709a5cbe47e60ff02f860d2f9caac144dd0a44",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.test.ts"
+    }
+  },
+  {
+    "name": "serialize-model-options.ts",
+    "path": "packages/provider-utils/src/serialize-model-options.ts",
+    "sha": "faae1a71d9d8419e57b1833dfe571247a7f12e43",
+    "size": 1850,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/serialize-model-options.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/faae1a71d9d8419e57b1833dfe571247a7f12e43",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/serialize-model-options.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/faae1a71d9d8419e57b1833dfe571247a7f12e43",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/serialize-model-options.ts"
+    }
+  },
+  {
+    "name": "streaming-tool-call-tracker.test.ts",
+    "path": "packages/provider-utils/src/streaming-tool-call-tracker.test.ts",
+    "sha": "adf9873c6469acc4a3ab44075dc8b99af26e864e",
+    "size": 14687,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/streaming-tool-call-tracker.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/adf9873c6469acc4a3ab44075dc8b99af26e864e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/streaming-tool-call-tracker.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/adf9873c6469acc4a3ab44075dc8b99af26e864e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.test.ts"
+    }
+  },
+  {
+    "name": "streaming-tool-call-tracker.ts",
+    "path": "packages/provider-utils/src/streaming-tool-call-tracker.ts",
+    "sha": "37cbfc09cce8b2718bacd984ff6d1359a05ec1cb",
+    "size": 7196,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/streaming-tool-call-tracker.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/37cbfc09cce8b2718bacd984ff6d1359a05ec1cb",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/streaming-tool-call-tracker.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/37cbfc09cce8b2718bacd984ff6d1359a05ec1cb",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/streaming-tool-call-tracker.ts"
+    }
+  },
+  {
+    "name": "strip-file-extension.test.ts",
+    "path": "packages/provider-utils/src/strip-file-extension.test.ts",
+    "sha": "fcd342c9c8e042c7b0d2a98af04ee7b15d5e333e",
+    "size": 667,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/strip-file-extension.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/fcd342c9c8e042c7b0d2a98af04ee7b15d5e333e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/strip-file-extension.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/fcd342c9c8e042c7b0d2a98af04ee7b15d5e333e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.test.ts"
+    }
+  },
+  {
+    "name": "strip-file-extension.ts",
+    "path": "packages/provider-utils/src/strip-file-extension.ts",
+    "sha": "03b1c8f0d6715184c301ebcc2696e566798f801e",
+    "size": 360,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/strip-file-extension.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/03b1c8f0d6715184c301ebcc2696e566798f801e",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/strip-file-extension.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/03b1c8f0d6715184c301ebcc2696e566798f801e",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/strip-file-extension.ts"
+    }
+  },
+  {
+    "name": "test",
+    "path": "packages/provider-utils/src/test",
+    "sha": "11753c5820a9e70c000ce918121177a078b1086b",
+    "size": 0,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/test?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/test",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/trees/11753c5820a9e70c000ce918121177a078b1086b",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/test?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/trees/11753c5820a9e70c000ce918121177a078b1086b",
+      "html": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/test"
+    }
+  },
+  {
+    "name": "to-json-schema",
+    "path": "packages/provider-utils/src/to-json-schema",
+    "sha": "28d9aebb4d876b3fc60ba67b3865b12ca3aeba7d",
+    "size": 0,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/to-json-schema?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/to-json-schema",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/trees/28d9aebb4d876b3fc60ba67b3865b12ca3aeba7d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/to-json-schema?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/trees/28d9aebb4d876b3fc60ba67b3865b12ca3aeba7d",
+      "html": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/to-json-schema"
+    }
+  },
+  {
+    "name": "transcription-stream-envelope.test.ts",
+    "path": "packages/provider-utils/src/transcription-stream-envelope.test.ts",
+    "sha": "b619a28627362b006eedce438171fa44059ed71a",
+    "size": 14477,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/transcription-stream-envelope.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b619a28627362b006eedce438171fa44059ed71a",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/transcription-stream-envelope.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b619a28627362b006eedce438171fa44059ed71a",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.test.ts"
+    }
+  },
+  {
+    "name": "transcription-stream-envelope.ts",
+    "path": "packages/provider-utils/src/transcription-stream-envelope.ts",
+    "sha": "41849aae256b61c8257ddf1b96b4c69021c9750c",
+    "size": 10857,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/transcription-stream-envelope.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/41849aae256b61c8257ddf1b96b4c69021c9750c",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/transcription-stream-envelope.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/41849aae256b61c8257ddf1b96b4c69021c9750c",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/transcription-stream-envelope.ts"
+    }
+  },
+  {
+    "name": "types",
+    "path": "packages/provider-utils/src/types",
+    "sha": "d5a4eadf68b9206935c12ccb67b5d04fb7ccec07",
+    "size": 0,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/types?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/types",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/trees/d5a4eadf68b9206935c12ccb67b5d04fb7ccec07",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/types?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/trees/d5a4eadf68b9206935c12ccb67b5d04fb7ccec07",
+      "html": "https://github.com/vercel/ai/tree/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/types"
+    }
+  },
+  {
+    "name": "uint8-utils.ts",
+    "path": "packages/provider-utils/src/uint8-utils.ts",
+    "sha": "b8063097d5d56b3ea9e9534f0cbdbbc4900d810c",
+    "size": 978,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/uint8-utils.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/uint8-utils.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b8063097d5d56b3ea9e9534f0cbdbbc4900d810c",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/uint8-utils.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/uint8-utils.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b8063097d5d56b3ea9e9534f0cbdbbc4900d810c",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/uint8-utils.ts"
+    }
+  },
+  {
+    "name": "validate-base-url.test.ts",
+    "path": "packages/provider-utils/src/validate-base-url.test.ts",
+    "sha": "a45b634b5f8070ade1e727314f83e5d2aa47472f",
+    "size": 968,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-base-url.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/a45b634b5f8070ade1e727314f83e5d2aa47472f",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-base-url.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/a45b634b5f8070ade1e727314f83e5d2aa47472f",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.test.ts"
+    }
+  },
+  {
+    "name": "validate-base-url.ts",
+    "path": "packages/provider-utils/src/validate-base-url.ts",
+    "sha": "2ab254b6be5d61336b27dd699d79e87ac6f93271",
+    "size": 304,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-base-url.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2ab254b6be5d61336b27dd699d79e87ac6f93271",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-base-url.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2ab254b6be5d61336b27dd699d79e87ac6f93271",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-base-url.ts"
+    }
+  },
+  {
+    "name": "validate-download-url.test.ts",
+    "path": "packages/provider-utils/src/validate-download-url.test.ts",
+    "sha": "5ac4051cc846748d8cf94b80b68824e250fdb729",
+    "size": 12674,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-download-url.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/5ac4051cc846748d8cf94b80b68824e250fdb729",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-download-url.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/5ac4051cc846748d8cf94b80b68824e250fdb729",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.test.ts"
+    }
+  },
+  {
+    "name": "validate-download-url.ts",
+    "path": "packages/provider-utils/src/validate-download-url.ts",
+    "sha": "d1661fce8579f32ed52f1de82005f0745055967c",
+    "size": 7747,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-download-url.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/d1661fce8579f32ed52f1de82005f0745055967c",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-download-url.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/d1661fce8579f32ed52f1de82005f0745055967c",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-download-url.ts"
+    }
+  },
+  {
+    "name": "validate-types.test.ts",
+    "path": "packages/provider-utils/src/validate-types.test.ts",
+    "sha": "c58d53e3bbe86df937a121c44860c9f888b1f271",
+    "size": 2974,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-types.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/c58d53e3bbe86df937a121c44860c9f888b1f271",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-types.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/c58d53e3bbe86df937a121c44860c9f888b1f271",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.test.ts"
+    }
+  },
+  {
+    "name": "validate-types.ts",
+    "path": "packages/provider-utils/src/validate-types.ts",
+    "sha": "2355152c0bb0f404a825c73682ac6dbd3223e88b",
+    "size": 2533,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-types.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/2355152c0bb0f404a825c73682ac6dbd3223e88b",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/validate-types.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/2355152c0bb0f404a825c73682ac6dbd3223e88b",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/validate-types.ts"
+    }
+  },
+  {
+    "name": "version.ts",
+    "path": "packages/provider-utils/src/version.ts",
+    "sha": "7a35d46f5d20ac434ed19db49ace910901d14707",
+    "size": 235,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/version.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/version.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/7a35d46f5d20ac434ed19db49ace910901d14707",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/version.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/version.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/7a35d46f5d20ac434ed19db49ace910901d14707",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/version.ts"
+    }
+  },
+  {
+    "name": "websocket.test.ts",
+    "path": "packages/provider-utils/src/websocket.test.ts",
+    "sha": "6c08231aa8f3865f3c79afbc6e343bca09c36d89",
+    "size": 2491,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/websocket.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/6c08231aa8f3865f3c79afbc6e343bca09c36d89",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/websocket.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/6c08231aa8f3865f3c79afbc6e343bca09c36d89",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.test.ts"
+    }
+  },
+  {
+    "name": "websocket.ts",
+    "path": "packages/provider-utils/src/websocket.ts",
+    "sha": "b726ad9c9dccdfeb9dfb2b07a0495f4304befe91",
+    "size": 2769,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/websocket.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/b726ad9c9dccdfeb9dfb2b07a0495f4304befe91",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/websocket.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/b726ad9c9dccdfeb9dfb2b07a0495f4304befe91",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/websocket.ts"
+    }
+  },
+  {
+    "name": "with-user-agent-suffix.test.ts",
+    "path": "packages/provider-utils/src/with-user-agent-suffix.test.ts",
+    "sha": "a0c00d572fae460bf28a5af7b6e3cff98da9ee67",
+    "size": 2676,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/with-user-agent-suffix.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/a0c00d572fae460bf28a5af7b6e3cff98da9ee67",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/with-user-agent-suffix.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/a0c00d572fae460bf28a5af7b6e3cff98da9ee67",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.test.ts"
+    }
+  },
+  {
+    "name": "with-user-agent-suffix.ts",
+    "path": "packages/provider-utils/src/with-user-agent-suffix.ts",
+    "sha": "999795898a048404fb3d3f45aaf6399732b43064",
+    "size": 1049,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/with-user-agent-suffix.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/999795898a048404fb3d3f45aaf6399732b43064",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/with-user-agent-suffix.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/999795898a048404fb3d3f45aaf6399732b43064",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/with-user-agent-suffix.ts"
+    }
+  },
+  {
+    "name": "without-trailing-slash.test.ts",
+    "path": "packages/provider-utils/src/without-trailing-slash.test.ts",
+    "sha": "50dcbcdd385eaa754d3dda8ba97f0d4ae6f1aa18",
+    "size": 528,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/without-trailing-slash.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.test.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/50dcbcdd385eaa754d3dda8ba97f0d4ae6f1aa18",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.test.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/without-trailing-slash.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/50dcbcdd385eaa754d3dda8ba97f0d4ae6f1aa18",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.test.ts"
+    }
+  },
+  {
+    "name": "without-trailing-slash.ts",
+    "path": "packages/provider-utils/src/without-trailing-slash.ts",
+    "sha": "8d2ec1c042b68aa65d31331e9324a95efa8568c1",
+    "size": 100,
+    "url": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/without-trailing-slash.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "html_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.ts",
+    "git_url": "https://api.github.com/repos/vercel/ai/git/blobs/8d2ec1c042b68aa65d31331e9324a95efa8568c1",
+    "download_url": "https://raw.githubusercontent.com/vercel/ai/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/vercel/ai/contents/packages/provider-utils/src/without-trailing-slash.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "git": "https://api.github.com/repos/vercel/ai/git/blobs/8d2ec1c042b68aa65d31331e9324a95efa8568c1",
+      "html": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages/provider-utils/src/without-trailing-slash.ts"
+    }
+  }
+]

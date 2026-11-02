@@ -1,0 +1,66 @@
+[
+  {
+    "variant": "base",
+    "commit": "8b5250363f5901d8dd90278fd82e21562a840bd4",
+    "path": "packages/ai/src/generate-text/tool-approval-signature.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/8b5250363f5901d8dd90278fd82e21562a840bd4/packages/ai/src/generate-text/tool-approval-signature.ts",
+    "sha256": "f50918eafa5ec04b525e5cecd1f9245650e65d0e4ee28cac591050eb2c4ecf77",
+    "bytes": 2256
+  },
+  {
+    "variant": "base",
+    "commit": "8b5250363f5901d8dd90278fd82e21562a840bd4",
+    "path": "packages/ai/src/generate-text/tool-approval-signature.test.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/8b5250363f5901d8dd90278fd82e21562a840bd4/packages/ai/src/generate-text/tool-approval-signature.test.ts",
+    "sha256": "e5b659f7f44760c51b000aefdb59b70c65917dc30cd2665bfe4323a24896cdc6",
+    "bytes": 2833
+  },
+  {
+    "variant": "base",
+    "commit": "8b5250363f5901d8dd90278fd82e21562a840bd4",
+    "path": "packages/ai/src/util/canonical-hash.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/8b5250363f5901d8dd90278fd82e21562a840bd4/packages/ai/src/util/canonical-hash.ts",
+    "sha256": "b0f74ef7f025259bc9a301df1364c94299e514ab7e0840363ca5e7c017422c3d",
+    "bytes": 1351
+  },
+  {
+    "variant": "base",
+    "commit": "8b5250363f5901d8dd90278fd82e21562a840bd4",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/vercel/ai/8b5250363f5901d8dd90278fd82e21562a840bd4/LICENSE",
+    "sha256": "b4f9adb7c568904834d0dd6cc98d16c390d21ca32fc17ae7a267715269bd5529",
+    "bytes": 552
+  },
+  {
+    "variant": "fixed",
+    "commit": "294db3739a3de30adf82d836876f2296e9d2ad44",
+    "path": "packages/ai/src/generate-text/tool-approval-signature.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/294db3739a3de30adf82d836876f2296e9d2ad44/packages/ai/src/generate-text/tool-approval-signature.ts",
+    "sha256": "e45ed59ee094b5f688e67ddd9f601e27233ce4551e22cf1d895770886eb1087e",
+    "bytes": 3996
+  },
+  {
+    "variant": "fixed",
+    "commit": "294db3739a3de30adf82d836876f2296e9d2ad44",
+    "path": "packages/ai/src/generate-text/tool-approval-signature.test.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/294db3739a3de30adf82d836876f2296e9d2ad44/packages/ai/src/generate-text/tool-approval-signature.test.ts",
+    "sha256": "5cf372991b5d048313bb0c59e17a3328ab4268233ddacd2bb646956220443703",
+    "bytes": 7082
+  },
+  {
+    "variant": "fixed",
+    "commit": "294db3739a3de30adf82d836876f2296e9d2ad44",
+    "path": "packages/ai/src/util/canonical-hash.ts",
+    "url": "https://raw.githubusercontent.com/vercel/ai/294db3739a3de30adf82d836876f2296e9d2ad44/packages/ai/src/util/canonical-hash.ts",
+    "sha256": "b0f74ef7f025259bc9a301df1364c94299e514ab7e0840363ca5e7c017422c3d",
+    "bytes": 1351
+  },
+  {
+    "variant": "fixed",
+    "commit": "294db3739a3de30adf82d836876f2296e9d2ad44",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/vercel/ai/294db3739a3de30adf82d836876f2296e9d2ad44/LICENSE",
+    "sha256": "b4f9adb7c568904834d0dd6cc98d16c390d21ca32fc17ae7a267715269bd5529",
+    "bytes": 552
+  }
+]

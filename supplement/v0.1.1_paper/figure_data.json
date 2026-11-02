@@ -1,0 +1,917 @@
+{
+  "rows": [
+    {
+      "task": "packaging_version_1163",
+      "lineage": "packaging",
+      "versions": "25.0 / 26.0\n26.1 > 26.2",
+      "obligations": "Hash / comparison; collections",
+      "public": 2,
+      "files": 18,
+      "n": 36,
+      "historical": 18,
+      "fresh": 6,
+      "current": 12,
+      "base": 12,
+      "fixed": 36,
+      "reference": 36,
+      "A": 0,
+      "B": 0,
+      "development_exposed": true
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "lineage": "attrs",
+      "versions": "21.4.0\n22.2.0 > 23.1.0",
+      "obligations": "Slot state; cached hash",
+      "public": 1,
+      "files": 9,
+      "n": 36,
+      "historical": 9,
+      "fresh": 9,
+      "current": 18,
+      "base": 27,
+      "fixed": 36,
+      "reference": 36,
+      "A": 0,
+      "B": 0,
+      "development_exposed": true
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "lineage": "jsonpickle CSV",
+      "versions": "3.3.0\n4.1.0 > 4.1.1",
+      "obligations": "CSV text; mutated resave",
+      "public": 2,
+      "files": 6,
+      "n": 18,
+      "historical": 6,
+      "fresh": 6,
+      "current": 6,
+      "base": 12,
+      "fixed": 18,
+      "reference": 18,
+      "A": 0,
+      "B": 1,
+      "development_exposed": true
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "lineage": "SQLAlchemy",
+      "versions": "1.4.37\n1.4.38 > 1.4.39",
+      "obligations": "MutableDict; two commits",
+      "public": 2,
+      "files": 6,
+      "n": 18,
+      "historical": 6,
+      "fresh": 6,
+      "current": 6,
+      "base": 12,
+      "fixed": 18,
+      "reference": 18,
+      "A": 0,
+      "B": 0,
+      "development_exposed": true
+    },
+    {
+      "task": "joblib_endian_1561",
+      "lineage": "joblib endian",
+      "versions": "1.2.0\n1.4.2 > 1.5.0",
+      "obligations": "Writable mmap; flush",
+      "public": 3,
+      "files": 7,
+      "n": 21,
+      "historical": 7,
+      "fresh": 7,
+      "current": 7,
+      "base": 9,
+      "fixed": 21,
+      "reference": 21,
+      "A": 0,
+      "B": 2,
+      "development_exposed": false
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "lineage": "joblib compressed",
+      "versions": "1.2.0\n1.4.2 > 1.5.0",
+      "obligations": "Compressed load; raw mmap",
+      "public": 3,
+      "files": 7,
+      "n": 21,
+      "historical": 7,
+      "fresh": 7,
+      "current": 7,
+      "base": 9,
+      "fixed": 21,
+      "reference": 21,
+      "A": 1,
+      "B": 0,
+      "development_exposed": false
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "lineage": "jsonpickle dtype",
+      "versions": "4.1.1\n4.1.1 > e7d95a6",
+      "obligations": "Numeric kind / width",
+      "public": 2,
+      "files": 6,
+      "n": 84,
+      "historical": 72,
+      "fresh": 6,
+      "current": 6,
+      "base": 6,
+      "fixed": 84,
+      "reference": 84,
+      "A": 0,
+      "B": 0,
+      "development_exposed": false
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "lineage": "pandas",
+      "versions": "1.3.5\n2.1.0 > 2.1.4",
+      "obligations": "Frame operations; resave",
+      "public": 2,
+      "files": 6,
+      "n": 18,
+      "historical": 6,
+      "fresh": 6,
+      "current": 6,
+      "base": 12,
+      "fixed": 18,
+      "reference": 18,
+      "A": 0,
+      "B": 0,
+      "development_exposed": false
+    }
+  ],
+  "episodes": [
+    {
+      "episode": "bfe5bd58e4c2",
+      "family": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "49069b591f6e",
+      "family": "packaging_version_1163",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "107a49685be5",
+      "family": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "239561ed0d37",
+      "family": "packaging_version_1163",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 24,
+      "n": 36,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "f50ac29629d1",
+      "family": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 27,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "be55c0a529b4",
+      "family": "attrs_slot_state_1085",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 27,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "fef8c66a4f80",
+      "family": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 27,
+      "n": 36,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "15b1e2a9032d",
+      "family": "attrs_slot_state_1085",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 27,
+      "n": 36,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "bd7140c1d378",
+      "family": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "c62f9c414dc5",
+      "family": "jsonpickle_csv_562",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "46ae0e9c5565",
+      "family": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 18,
+      "n": 18,
+      "accepted": true,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "0a3c0db3ab2e",
+      "family": "jsonpickle_csv_562",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 0,
+      "n": 18,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": true
+    },
+    {
+      "episode": "640d76a1a31b",
+      "family": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "6beed2ca1c08",
+      "family": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "321218a25c02",
+      "family": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "22dfe50e4c2e",
+      "family": "sqlalchemy_mutable_8133",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": false
+    },
+    {
+      "episode": "7879243259c9",
+      "family": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 9,
+      "n": 21,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "e401d2c3a27d",
+      "family": "joblib_endian_1561",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 7,
+      "n": 21,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "53394461271a",
+      "family": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 21,
+      "n": 21,
+      "accepted": true,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "074ae1f3678a",
+      "family": "joblib_endian_1561",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 21,
+      "n": 21,
+      "accepted": true,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "0e72fdd94c31",
+      "family": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 21,
+      "n": 21,
+      "accepted": true,
+      "unchanged": false,
+      "context_stop": true
+    },
+    {
+      "episode": "183bc51919d5",
+      "family": "joblib_compressed_1681",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 9,
+      "n": 21,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "2210b787c234",
+      "family": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 9,
+      "n": 21,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": true
+    },
+    {
+      "episode": "783def885a40",
+      "family": "joblib_compressed_1681",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 9,
+      "n": 21,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "05cd04c17e21",
+      "family": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 0,
+      "n": 84,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "3d3f067e10a7",
+      "family": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 1,
+      "n": 84,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "8923ab804d14",
+      "family": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 0,
+      "n": 84,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "6160443aebd8",
+      "family": "jsonpickle_dtype_634",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 3,
+      "n": 84,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": true
+    },
+    {
+      "episode": "7f0bc12caf15",
+      "family": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "820d349186f5",
+      "family": "pandas_pickle_56308",
+      "model": "google/gemma-4-26b-a4b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": true,
+      "context_stop": true
+    },
+    {
+      "episode": "93f5c9999ee4",
+      "family": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 0,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": false
+    },
+    {
+      "episode": "b81cd8ba0bd8",
+      "family": "pandas_pickle_56308",
+      "model": "google/gemma-4-31b-it",
+      "replicate": 1,
+      "passed": 12,
+      "n": 18,
+      "accepted": false,
+      "unchanged": false,
+      "context_stop": true
+    }
+  ],
+  "calibration": [
+    {
+      "policy": "Conservative backport",
+      "admissible": 84,
+      "exact": 84,
+      "n": 84
+    },
+    {
+      "policy": "Document exclusion v2",
+      "admissible": 84,
+      "exact": 24,
+      "n": 84
+    },
+    {
+      "policy": "Explicit-width narrowing",
+      "admissible": 0,
+      "exact": 0,
+      "n": 84
+    }
+  ],
+  "collision": {
+    "complete": true,
+    "witness_found": true,
+    "witness": {
+      "attempts": [
+        4,
+        5
+      ],
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "artifact_paths": [
+        "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\04_float32.json",
+        "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\05_float64.json"
+      ],
+      "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+      "exact_full_bytes_equal": true,
+      "bytes": 267,
+      "distinct_original_widths": [
+        4,
+        8
+      ],
+      "both_genuine_self_roundtrips": true
+    },
+    "attempts_executed": 6,
+    "plan": {
+      "limit": 30,
+      "order": "alternate float32/float64 starting float32; stop on first exact-byte pair with both pd/f",
+      "inputs": {
+        "column": "x",
+        "values": [
+          1.125,
+          -3.25
+        ],
+        "dtypes": [
+          "float32",
+          "float64"
+        ]
+      },
+      "scope": "Targeted existence proof of non-injective historical encoding; not prevalence, not a new task; no hand-edited bytes, dtype-map/cache mutation or package changes."
+    },
+    "all_attempts": [
+      {
+        "attempt": 0,
+        "dtype": "float32",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float32",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\00_float32.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f",
+          "float64": "pd/f64"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\00_float32.json",
+        "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+        "bytes": 267
+      },
+      {
+        "attempt": 1,
+        "dtype": "float64",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float64",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\01_float64.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f",
+          "float64": "pd/f64"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f64",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\01_float64.json",
+        "sha256": "20dd7785c1ee1477fa9b5f6c5dafaab94430f6dfe11000637e2b4f37d35b93df",
+        "bytes": 269
+      },
+      {
+        "attempt": 2,
+        "dtype": "float32",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float32",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\02_float32.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f",
+          "float64": "pd/f64"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\02_float32.json",
+        "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+        "bytes": 267
+      },
+      {
+        "attempt": 3,
+        "dtype": "float64",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float64",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\03_float64.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f",
+          "float64": "pd/f64"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f64",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\03_float64.json",
+        "sha256": "20dd7785c1ee1477fa9b5f6c5dafaab94430f6dfe11000637e2b4f37d35b93df",
+        "bytes": 269
+      },
+      {
+        "attempt": 4,
+        "dtype": "float32",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float32",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\04_float32.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float32",
+          "itemsize": 4,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f",
+          "float64": "pd/f64"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\04_float32.json",
+        "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+        "bytes": 267
+      },
+      {
+        "attempt": 5,
+        "dtype": "float64",
+        "command": [
+          "<project>\\results\\ready_curation\\pythons\\cpython-3.10.20-windows-x86_64-none\\python.exe",
+          "-I",
+          "-B",
+          "<project>\\results\\ready_curation\\json_dtype_noninjectivity.py",
+          "worker",
+          "float64",
+          "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\05_float64.json"
+        ],
+        "exit_code": 0,
+        "python": "3.10.20 (main, Jul 18 2026, 17:08:20) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "1.26.4",
+        "pandas": "2.1.4",
+        "jsonpickle": "4.1.1",
+        "module_paths": {
+          "numpy": "<project>\\results\\ready_curation\\packages\\numpy126_310\\numpy\\__init__.py",
+          "pandas": "<project>\\results\\ready_curation\\packages\\pandas_2.1.4\\pandas\\__init__.py",
+          "jsonpickle": "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\__init__.py"
+        },
+        "input": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "decoded": {
+          "dtype": "float64",
+          "itemsize": 8,
+          "values": [
+            1.125,
+            -3.25
+          ]
+        },
+        "self_roundtrip_passed": true,
+        "mapping": {
+          "float32": "pd/f32",
+          "float64": "pd/f"
+        },
+        "raw_dtypes_rle": [
+          [
+            "pd/f",
+            1
+          ]
+        ],
+        "artifact": "<project>\\results\\ready_curation\\jsonpickle634_noninjectivity\\20261030T214814Z\\05_float64.json",
+        "sha256": "2f4332f6335755079257f9710aa14a459f0e2b7e284fecb0e3df819a29adb01a",
+        "bytes": 267
+      }
+    ],
+    "source_hashes": {
+      "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\tags_pd.py": "17ac053947d28e9df87bdd7013ca76e7edfb3e7e211fbcfb74e0bd0c46004212",
+      "<project>\\.cache\\compat_packages\\jsonpickle_4.1.1\\jsonpickle\\ext\\pandas.py": "b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb"
+    },
+    "source_unchanged": true,
+    "script_sha256": "c50a2008a3b18b28756513f46b236640db97100a1c4d22beb78bc2c25526b558",
+    "conclusion": "The original numeric width is not uniquely recoverable from these exact JSON bytes."
+  },
+  "source_sha256": {
+    "tasks.json": "520598ad53d85c271087aee4b2ad0f2a587428938838c421308cbe3a3fd068ab",
+    "evidence/main/summary.json": "25e7df4f3cc3e494650e750faa58b46eb17137f7caca334ad3d65fbd7523c556",
+    "evidence/independent_review/main_audit.json": "b2fc46194365200b436b925c906402d644391663038bb6288d522cc3bb730167",
+    "evidence/independent_review/main_diagnostics.json": "9d39b8b18db3cfeeaa32aa96e53d1e5678b1afe3ae22eaf47896325ccc4c965f",
+    "validation/cold_reproduction_summary.json": "327835cdf9720527e2c6774a23677ed6403bb14fce43d9ad70b325006afde129",
+    "validation/multisolution_entrypoint.json": "a6edd15fdd538a7df25144c267739f4bb7c3c4346a43b14bfc1707d83b4bdd3d",
+    "evidence/collision/summary.json": "d2eb9b5495a1e92ecc4103e6fd518ffb8ea1430a06c26162348762dab670f9a2",
+    "bundle/fixtures/packaging_version_1163/visible.json": "ea118520ce95d866652ca46f49a4894c4077332963bba0934fcc2d354892b84c",
+    "bundle/fixtures/attrs_slot_state_1085/visible.json": "e85f3536fc316b75b079167b1d473619010fc2a77cf8e3c85a8a8479d3b4f607",
+    "bundle/fixtures/jsonpickle_csv_562/visible.json": "22e9da799723c35e899423cbead931994c49d77ed140e3fcc35a9bd4e12559de",
+    "bundle/fixtures/sqlalchemy_mutable_8133/visible.json": "72d12b1ba60051c249eb17abc1459d315c416ced68790ed10f0b5136ae295395",
+    "bundle/fixtures/joblib_endian_1561/visible.json": "7959bb0a2814b76b790c9ba0e317f758007a70a2f3f617652b421e4e30fd9469",
+    "bundle/fixtures/joblib_compressed_1681/visible.json": "7ed0071477a5cc1d16ea2b68c414de87cb410be3be264e87f886a73e16fe53aa",
+    "bundle/fixtures/jsonpickle_dtype_634/visible.json": "c71db24da43d8a61ae47cef96e108bb0f4c91e30976692f5df6c3daf001ddd54",
+    "bundle/fixtures/pandas_pickle_56308/visible.json": "6eed0914d2282646115f3261b8e0fa066c6ec7568eaadb8a7dddf359a153f275"
+  },
+  "main_cost_usd": 0.7784818169999993,
+  "accepted_episode_ids": [
+    "074ae1f3678a",
+    "0e72fdd94c31",
+    "46ae0e9c5565",
+    "53394461271a"
+  ],
+  "semantics": "Counts describe dependent observations and completed conversations, not independent bugs. Base is the fresh-installation control run; dtype baseline varies by process."
+}

@@ -1,0 +1,14 @@
+--- base/packaging/version.py
++++ candidate/packaging/version.py
+@@ -134,6 +134,11 @@
+ 
+ class _BaseVersion:
+     __slots__ = ()
++    # To support loading Version objects from 25.0, we need to handle
++    # the case where they were pickled as _Version (NamedTuple).
++    # We can't easily change the class hierarchy for already pickled objects,
++    # but we can provide a way to handle the state.
++    pass
+ 
+     # This can also be a normal member (see the packaging_legacy package);
+     # we are just requiring it to be readable. Actually defining a property

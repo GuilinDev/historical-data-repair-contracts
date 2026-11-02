@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498920-OzsP8KJ24Ula2a2xBDMV",
+  "object": "chat.completion",
+  "created": 1793498920,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was a regression in `sqlalchemy/ext/mutable.py` where the unpickling logic for mutable scalars was updated to expect a dictionary of values (`state_dict[\"ext.mutable.values\"][key]`), while historical artifacts from version 1.4.37 stored these values in a flat list. This resulted in a `TypeError: list indices must be integers or slices, not str` when loading legacy objects.\n\n### Changes\nI modified the `unpickle` inner function within `MutableBase._listen_on_attribute` in `sqlalchemy/ext/mutable.py`. The updated logic checks the type of the `ext.mutable.values` entry in the `state_dict`:\n- If it is a `list` (legacy 1.4.37 format), it iterates through the list and associates each value with the current attribute key.\n- If it is a `dict` (current 1.4.38+ format), it continues to use the key-based lookup.\n\nThis ensures that the `_parents` weak dictionary is correctly restored for mutable objects, allowing dirty tracking and commits to function as expected after unpickling.\n\n### Checks Performed\n- **Legacy Suite**: Ran the `legacy` check suite, which includes:\n    - `historical`: Verified that objects produced by 1.4.37 are now correctly read and processed (previously failed).\n    - `fresh_api`: Verified that new objects are handled correctly.\n    - `current_roundtrip`: Verified that objects pickled and unpickled within the current version remain consistent.\n- All 6 tests in the legacy suite passed after the patch.\n\n### Unresolved Work\nNone. The specific contract for reading 1.4.37 artifacts and preserving `MutableDict` state has been fulfilled.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30580,
+    "completion_tokens": 382,
+    "total_tokens": 30962,
+    "cost": 0.00318788,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00318788,
+      "upstream_inference_prompt_cost": 0.003058,
+      "upstream_inference_completions_cost": 0.00012988
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

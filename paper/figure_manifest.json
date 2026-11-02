@@ -27,26 +27,18 @@
       "transformations": "No smoothing, uncertainty interval, sampling, or omitted attempts. Exact counts and source identities retained."
     },
     {
-      "id": "figure3_attempts",
-      "pdf": "figures/figure3_attempts.pdf",
-      "png": "figures/figure3_attempts.png",
-      "svg": "figures/figure3_attempts.svg",
+      "id": "figure3_controlled",
+      "pdf": "figures/figure3_controlled.pdf",
+      "png": "figures/figure3_controlled.png",
+      "svg": "figures/figure3_controlled.svg",
       "width_in": 6.9,
-      "height_in": 2.95,
-      "caption": "Figure 3. Every completed Gemma conversation, with passed/declared observations from the original final evaluation. The dashed line separates development-exposed lineages (above) from newly added lineages (below). Counts are dependent coverage, not partial task successes. Providers and precision differ between A and B.",
-      "alt": "Eight rows and four attempt columns show all 32 completed model attempts. Only four cells pass the entire contract: both B joblib endian attempts, one A joblib compressed attempt, and one B jsonpickle CSV attempt. Sixteen leave source unchanged and fifteen hit the exploration context bound. Full data and episode identities accompany the figure.",
-      "label_text": "A: 26B A4B / BF16 B: 31B / FP4\nAttempt 1 Attempt 2 Attempt 1 Attempt 2\npackaging 12/36 U C 12/36 U C 12/36 U 24/36 E\nattrs 27/36 U C 27/36 U C 27/36 U 27/36 E\njsonpickle CSV 12/18 U C 12/18 E 18/18 PASS 0/18 E C\nSQLAlchemy 12/18 U 12/18 U 12/18 U 12/18 U\njoblib endian 9/21 E 7/21 E 21/21 PASS 21/21 PASS\njoblib compressed 21/21 PASS C 9/21 E 9/21 E C 9/21 E\njsonpickle dtype 0/84 U C 1/84 U C 0/84 U C 3/84 E C\npandas 12/18 U C 12/18 U C 12/18 E 12/18 E C\nPASS: semantic + source acceptance; U: unchanged; E: edited, incomplete repair.\nC: exploration context bound; it can accompany U, E or PASS.",
-      "pdf_sha256": "3f2e4dc0b6d0cdf01b46067d0004f8a7fb39e3684654f5a0e3ba459cdc2999d4",
-      "transformations": "No smoothing, uncertainty interval, sampling, or omitted attempts. Exact counts and source identities retained."
+      "height_in": 2.9,
+      "caption": "Figure 3. Complete repair acceptance in all 64 new attempts. Each point counts four conversations on one lineage with the same Gemma 4 31B deployment. Circles: exact text, 10/32 total; squares: version-checked spans, 4/32. Repetitions are nested in eight selected lineages; these are observed counts, not a general editor ranking.",
+      "alt": "Eight paired rows show exact-text versus version-checked-span complete repairs out of four. packaging0/0, attrs2/0, CSV2/0, SQLAlchemy3/3, endian1/1, compressed0/0, dtype0/0, pandas2/0. Zero is shown explicitly; no missing attempts.",
+      "label_text": "0 1 2 3 4\npackaging\nattrs\njsonpickle CSV\nSQLAlchemy\njoblib endian\njoblib compressed\njsonpickle dtype\npandas\n0/4\n2/4\n2/4\n3/4\n1/4\n0/4\n0/4\n2/4\nExact text: 10/32\n0 1 2 3 4\n0/4\n0/4\n0/4\n3/4\n1/4\n0/4\n0/4\n0/4\nVersion-checked span: 4/32\nComplete repairs (four attempts per interface and lineage)",
+      "pdf_sha256": "6fa90fb543322af4bce1e52ea2af7f53ae9bcbaae88bb7ad21dec22cbd9b5088",
+      "transformations": "All64attempts included. Counts of actual source changes passing complete contracts and source review. No smoothing, normalization, omitted attempts, or inferential intervals. Underlying data and nested replicate structure retained."
     }
   ],
-  "data_sha256": "ff0a15c81b6e7446f09d2951246b8b00c3651a4745ea93307653ae18bed401bc",
-  "matplotlib_version": "3.11.2",
-  "dpi": 600,
-  "pdf_fonttype": 42,
-  "audience": "Gemma paper track manuscript; final width 6.9 inches; no publisher-specific style inferred",
-  "independence": "8 defect lineages in 6 projects; repeated files/checks/conversations are dependent",
-  "uncertainty": "No intervals: complete descriptive fixed-resource counts; no sampling inference",
-  "accessibility": "Direct labels, PASS text, U/C flags and hatching supplement color; alt text and source data included",
-  "software_acknowledgement": "Scientific Agent Skills, Kassis et al. (2026), https://doi.org/10.48550/arXiv.2609.00065"
+  "data_sha256": "91ca1379059c7a2ed36a0c006dae661150b82eff72d186e3f343b803b7fd488f"
 }

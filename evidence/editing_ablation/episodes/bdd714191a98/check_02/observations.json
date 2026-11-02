@@ -1,0 +1,189 @@
+{
+  "records": [
+    {
+      "id": "5b91226cc2ad",
+      "group": "historical",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "name": "alpha"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    },
+    {
+      "id": "ef5a4f0b4e5e",
+      "group": "fresh_api",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "name": "alpha"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    },
+    {
+      "id": "02bddc217e51",
+      "group": "current_roundtrip",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "name": "alpha"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    },
+    {
+      "id": "a523f49721e3",
+      "group": "historical",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "label": "visible"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "x": 17,
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    },
+    {
+      "id": "a5090cddbbd3",
+      "group": "fresh_api",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "label": "visible"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "x": 17,
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    },
+    {
+      "id": "e589bedacfe2",
+      "group": "current_roundtrip",
+      "semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "label": "visible"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "x": 17,
+          "continued": "first"
+        }
+      },
+      "restart_semantics": {
+        "id": 1,
+        "payload": {
+          "x": 17,
+          "continued": "first"
+        },
+        "payload_type": "MutableDict",
+        "dirty": true,
+        "session_modified": true,
+        "database_payload": {
+          "continued": "second"
+        }
+      },
+      "status": "observed"
+    }
+  ],
+  "python": "3.10.20 (main, Aug  5 2026, 01:18:03) [GCC 14.2.0]",
+  "status": "observed"
+}

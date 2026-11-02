@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793500991-NqwHwmsI5RCEKJUNUzLt",
+  "object": "chat.completion",
+  "created": 1793500991,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was caused by a change in the serialization format of `sqlalchemy.ext.mutable` between versions 1.4.37 and 1.4.38. In version 1.4.37, the `pickle` event for mutable attributes stored values in a simple list under the key `\"ext.mutable.values\"`. In version 1.4.38, this was changed to a dictionary mapping attribute keys to lists of values to support multiple mutable attributes on a single object.\n\nWhen loading an object pickled with 1.4.37 using 1.4.38, the `unpickle` listener attempted to access the `\"ext.mutable.values\"` entry as a dictionary (using `state_dict[\"ext.mutable.values\"][key]`), which resulted in a `TypeError: list indices must be integers or slices, not str` because the legacy data was a list.\n\nI repaired this by updating the `unpickle` method in `sqlalchemy/ext/mutable.py` to detect whether the stored values are in the legacy list format or the new dictionary format, ensuring backward compatibility with artifacts produced by version 1.4.37.\n\n```python\n        def unpickle(state, state_dict):\n            if \"ext.mutable.values\" in state_dict:\n                values = state_dict[\"ext.mutable.values\"]\n                if isinstance(values, list):\n                    # Legacy format: a simple list of values.\n                    for val in values:\n                        val._parents[state] = key\n                elif isinstance(values, dict):\n                    # New format: dict mapping key to list of values.\n                    for val in values.get(key, []):\n                        val._parents[state] = key\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23027,
+    "completion_tokens": 378,
+    "total_tokens": 23405,
+    "cost": 0.00243122,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 20320,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00243122,
+      "upstream_inference_prompt_cost": 0.0023027,
+      "upstream_inference_completions_cost": 0.00012852
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

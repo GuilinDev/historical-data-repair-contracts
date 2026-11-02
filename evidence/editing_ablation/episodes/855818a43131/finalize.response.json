@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498788-t5pwR5nsh1Pw9M5R12f6",
+  "object": "chat.completion",
+  "created": 1793498788,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `joblib`'s `read_mmap` method in `NumpyArrayWrapper` called `_ensure_native_byte_order` on the resulting `memmap` array. For big-endian arrays on little-endian systems, `_ensure_native_byte_order` performs a `byteswap()` and returns a new array view. While this correctly restores the numeric values, it detaches the array from the underlying memory-mapped file, making any subsequent mutations (and `flush()`) invisible to the file and other processes.\n\nTo fix this, I modified `joblib/numpy_pickle.py` to avoid calling `_ensure_native_byte_order` when `mmap_mode` is set to a writable mode (like `'r+'`). Instead, the array is returned with its original big-endian dtype. This ensures that the `memmap` remains linked to the file, allowing mutations to be persisted.\n\n**Changes:**\n- Modified `NumpyArrayWrapper.read_mmap` in `joblib/numpy_pickle.py` to conditionally call `_ensure_native_byte_order`. If `unpickler.mmap_mode` is `'r+'` (or other writable modes), the raw `memmap` array is returned to preserve the file link.\n\n**Checks performed:**\n- Ran `legacy` and `current` check suites.\n- Verified that historical big-endian arrays produced by joblib 1.2.0 are loaded with correct values and shapes.\n- Confirmed that writable `mmap_mode='r+'` preserves the connection to the underlying file for mutations.\n\n**Unresolved work:**\n- None. The repair addresses the contract for big-endian `memmap` arrays while preserving existing behavior for non-mmap loads and current dumps.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32734,
+    "completion_tokens": 388,
+    "total_tokens": 33122,
+    "cost": 0.00340532,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00340532,
+      "upstream_inference_prompt_cost": 0.0032734,
+      "upstream_inference_completions_cost": 0.00013192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

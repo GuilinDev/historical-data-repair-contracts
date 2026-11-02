@@ -1,0 +1,45 @@
+{
+  "decision": "PASS",
+  "plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "reviewer": "Independent protocol reviewer, separate from the campaign implementer",
+  "scope": "Permission gate for the frozen, user-authorized USD 10 campaign only. This does not approve an effectiveness claim or a manuscript/publication update.",
+  "must_fix_remaining": [],
+  "checks": {
+    "source_code_review": "Reviewed the new client, editor gateway and campaign runner, plus inherited finalization, scoring and candidate sandbox code.",
+    "executed_script_hashes_match_frozen_plan": 17,
+    "test_file_hashes_match_frozen_plan": 2,
+    "reviewer_reran_no_network_tests": {"passed": 15, "failed": 0},
+    "reviewer_additional_editor_boundary_checks": ["CRLF view/hash normalization", "Delete final line", "Insertion through line replacement", "Replacement without a final newline"],
+    "schedule": "64 unique episode IDs; eight lineages; four replicates per lineage/arm; all 32 blocks contain both arms of the same task/replicate.",
+    "budget": "Separate USD 10 ledger, shared-client thread lock, atomic pre-network reservations, unknown-cost retention, finite nonnegative cost validation, pinned provider/price ceilings, no-tools final detection, and reservation for remaining final reports.",
+    "budget_boundary_tests": "Insufficient budget prevents transport; process interruption retains reservation; retry errors are retained and secrets redacted; nonfinite cost cannot corrupt budget comparisons; provider mismatch/excess charge stops the request.",
+    "information_equality": "Non-editor tool schemas are equal. Both arms expose the same normalized source-version hash and line-numbered source. Only the editing interface differs.",
+    "editor_semantics": "Checked exact-match rejection, stale-version rejection, path authorization, inclusive span bounds, overlap rejection, same-original-version multi-span addressing, syntax validation, and all-or-nothing multi-file validation.",
+    "primary_metric": "Actual normalized source-text change, complete frozen semantics, authorized paths, and independent source-policy review. Byte-only newline changes or optional-test-only changes are not sufficient.",
+    "completion": "Budget/infrastructure interruption is retained separately and prevents an effectiveness conclusion. Non-transient engineering errors stop new blocks. Full replay and independent review are explicitly pending after ordinary execution.",
+    "scientific_assets": "Verified task metadata, data plan, local bundle manifest and oracle hashes; verified recorded remote snapshot hash and fixed ARM64 Docker identity.",
+    "preflight_controls_independently_regraded_from_recorded_observations": 16,
+    "fixed_contract_observations_passed": 252,
+    "base_controls_failing_full_acceptance": 8,
+    "preflight_execution_status": "All sixteen recorded Docker executions returned exit code zero and their scores were reproduced from observations with the frozen judge.",
+    "old_budget_and_submitted_pdf_hashes": "Match frozen plan; unchanged.",
+    "paid_calls_at_review": 0
+  },
+  "prior_review_resolution": {
+    "M1": "Resolved by isolated durable accounting and offline budget tests, including the added nonfinite-cost test.",
+    "M2": "Resolved for starting the bounded campaign by explicit completion gates, normalized source-change reporting and pending source-policy review. Automatic resumption is deliberately not implemented; partial runs must remain incomplete until separately audited engineering recovery.",
+    "M3": "Resolved by equal non-editor information and explicitly attributing any effect to the entire version-checked line-span interface, not line numbers alone.",
+    "M4": "Resolved by bound script/test/data-plan hashes, checked local/remote assets, non-overwriting preflight and required final replay."
+  },
+  "limits": [
+    "Execute one campaign process only. Two workers may share its single client/ledger; this is not a multi-process budget service.",
+    "Eight known public lineages are a small, dependent resource sample. Report each lineage and avoid treating 64 attempts or semantic observations as independent defects.",
+    "Replicate IDs are not evidence of matched model randomness. The schedule blocks and interleaves deployment conditions but does not establish a verified model-weight revision.",
+    "The intervention includes the editing schema, version checking and line addressing. A result cannot isolate any one component.",
+    "The existing 120000-byte exploration guard is unchanged; request bytes are not token counts or a model context-capacity measure.",
+    "Any interrupted attempt requires separate engineering recovery review before resumption; never restart to select a better semantic outcome.",
+    "No efficacy conclusion before all planned outcomes and full replay are complete. No update to the submitted paper until independent outcome/source-policy review and the user's subsequent decision."
+  ],
+  "new_model_calls_by_reviewer": 0,
+  "publication_changes_by_reviewer": false
+}

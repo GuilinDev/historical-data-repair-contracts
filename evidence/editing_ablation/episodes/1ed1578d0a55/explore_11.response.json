@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498887-udLycH1EGwBhWkETwuR4",
+  "object": "chat.completion",
+  "created": 1793498887,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-e71aea18-f942-4e41-8aa3-1591a7140600",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        def unpickle(state, state_dict):\\n            if \\\"ext.mutable.values\\\" in state_dict:\\n                values = state_dict[\\\"ext.mutable.values\\\"]\\n                if isinstance(values, list):\\n                    # Handle legacy 1.4.37 format where values was a list\\n                    # This is a fallback for when multiple attributes might have been pickled\\n                    # but the current version expects a dict.\\n                    # However, the 1.4.37 producer just appended values to a list.\\n                    # We need to know which value belongs to which key.\\n                    # In 1.4.37, the 'pickle' function just did:\\n                    # state_dict[\\\"ext.mutable.values\\\"].append(val)\\n                    # This means the list is ordered by the order of attributes being pickled.\\n                    # This is problematic if we don't know the order.\\n                    # But wait, the 1.4.37 'unpickle' did:\\n                    # for val in state_dict[\\\"ext.mutable.values\\\"]:\\n                    #     val._parents[state] = key\\n                    # This means EVERY value in the list was associated with the CURRENT key.\\n                    # That's definitely a bug in 1.4.37 if there were multiple mutable attributes.\\n                    # But for a single attribute, it works.\\n                    for val in values:\\n                        val._parents[state] = key\\n                elif isinstance(values, dict):\\n                    for val in values[key]:\\n                        val._parents[state] = key\",\"old\":\"        def unpickle(state, state_dict):\\n            if \\\"ext.mutable.values\\\" in state_dict:\\n                for val in state_dict[\\\"ext.mutable.values\\\"][key]:\\n                    val._parents[state] = key\",\"path\":\"sqlalchemy/ext/mutable.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30226,
+    "completion_tokens": 432,
+    "total_tokens": 30658,
+    "cost": 0.00316948,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 23264,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00316948,
+      "upstream_inference_prompt_cost": 0.0030226,
+      "upstream_inference_completions_cost": 0.00014688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

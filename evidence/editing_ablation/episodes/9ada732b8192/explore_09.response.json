@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498749-bk9kcRR6n4ykYVQhZgY1",
+  "object": "chat.completion",
+  "created": 1793498749,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-44d230e9-8049-483f-b85f-9f14a9534018",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # Detect byte order mismatch and swap as needed.\\n        # If the array is memmapped and has a byte order mismatch, we cannot\\n        # use byteswap() because it returns a copy. Instead, we must use\\n        # a view with the correct byte order.\\n        if (unpickler.mmap_mode is not None and\\n                _is_numpy_array_byte_order_mismatch(marray)):\\n            return marray.view(marray.dtype.newbyteorder('='))\\n        return _ensure_native_byte_order(marray)\",\"old\":\"        return _ensure_native_byte_order(marray)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20023,
+    "completion_tokens": 178,
+    "total_tokens": 20201,
+    "cost": 0.00206282,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 17920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00206282,
+      "upstream_inference_prompt_cost": 0.0020023,
+      "upstream_inference_completions_cost": 6.052e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

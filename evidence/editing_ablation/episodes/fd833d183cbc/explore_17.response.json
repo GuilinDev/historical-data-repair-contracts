@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498551-gz30hF5b0UKk5GEzJZSL",
+  "object": "chat.completion",
+  "created": 1793498551,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `read_mmap` in `joblib/numpy_pickle.py` was calling `_ensure_native_byte_order` on the resulting memory-mapped array. `_ensure_native_byte_order` performs a `byteswap().view(...)` operation when a byte-order mismatch is detected. For a standard `numpy.ndarray`, this creates a new array (a view with swapped bytes), but for a `numpy.memmap` object, this operation creates a detached copy of the data in memory.\n\nWhen `mmap_mode='r+'` was used, the intention was to allow in-place mutations of the file. However, because `_ensure_native_byte_order` returned a copy for big-endian arrays on little-endian systems, mutations were performed on the copy rather than the memory-mapped file, and `flush()` had no effect on the underlying disk storage.\n\nBy removing the call to `_ensure_native_byte_order` in `read_mmap`, the original `memmap` object is returned. This preserves the connection to the file, allowing mutations to be persisted to disk. The user is responsible for handling the byte order of the returned array if it differs from the native order, which is consistent with how `numpy.memmap` behaves.\n\n```python\n# joblib/numpy_pickle.py\n\n# Before:\n# return _ensure_native_byte_order(marray)\n\n# After:\n# return marray\n```\n\nThis fix ensures that big-endian arrays loaded with `mmap_mode='r+'` remain memory-mapped to the file, enabling correct mutation and persistence.\n\nFinal Report:\nThe repair involved removing the call to `_ensure_native_byte_order` in `NumpyArrayWrapper.read_mmap`. This prevents the creation of a detached copy when loading big-endian arrays on little-endian systems, thereby preserving the writable memory map and allowing mutations to reach the working file. All historical and current roundtrip checks now pass.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31626,
+    "completion_tokens": 434,
+    "total_tokens": 32060,
+    "cost": 0.00331016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 31456,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00331016,
+      "upstream_inference_prompt_cost": 0.0031626,
+      "upstream_inference_completions_cost": 0.00014756
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

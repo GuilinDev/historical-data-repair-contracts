@@ -1,0 +1,16 @@
+{
+  "restored_original_files": [
+    "packages/attrs_slot_state_1085/base/.lock",
+    "packages/attrs_slot_state_1085/fixed/.lock",
+    "packages/joblib_compressed_1681/base/.lock",
+    "packages/joblib_compressed_1681/fixed/.lock",
+    "packages/joblib_endian_1561/base/.lock",
+    "packages/joblib_endian_1561/fixed/.lock",
+    "packages/jsonpickle_csv_562/base/.lock",
+    "packages/jsonpickle_csv_562/fixed/.lock",
+    "packages/jsonpickle_dtype_634/base/.lock",
+    "packages/packaging_version_1163/base/.lock",
+    "packages/packaging_version_1163/fixed/.lock"
+  ],
+  "reason": "Restore explicitly hashed zero-byte installer lock files omitted by the v0.1.1 archive filter, so v0.1.2 reconstructs complete new-campaign candidate trees exactly. Existing7821immutablefiles are unchanged; v0.1.1 itself is untouched."
+}

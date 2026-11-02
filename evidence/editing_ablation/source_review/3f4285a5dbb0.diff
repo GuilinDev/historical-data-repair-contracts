@@ -1,0 +1,34 @@
+--- base/joblib/numpy_pickle.py
++++ candidate/joblib/numpy_pickle.py
+@@ -17,7 +17,7 @@
+                          XZCompressorWrapper, LZ4CompressorWrapper)
+ from .numpy_pickle_utils import Unpickler, Pickler
+ from .numpy_pickle_utils import _read_fileobject, _write_fileobject
+-from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE
++from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch
+ from .numpy_pickle_utils import _ensure_native_byte_order
+ from .numpy_pickle_compat import load_compatibility
+ from .numpy_pickle_compat import NDArrayWrapper
+@@ -229,7 +229,21 @@
+             )
+             warnings.warn(message)
+ 
+-        return _ensure_native_byte_order(marray)
++        if _is_numpy_array_byte_order_mismatch(marray):
++            # We cannot use byteswap() on a memmap array because it would
++            # create a copy. Instead, we use a view with the correct byte order.
++            # This is only possible if the array is not already in native byte order.
++            # However, for big-endian arrays on little-endian systems,
++            # we must use the dtype that reflects the actual byte order in the file.
++            # The current marray has the dtype from self.dtype, which is big-endian.
++            # To get a native-endian view, we need to use the native-endian dtype.
++            # But we also need to swap the bytes in the file, which we cannot do.
++            # The only way to have a writable mmap that is native-endian is to
++            # have the data in the file in native-endian.
++            # If the data is big-endian, we must keep it as big-endian.
++            return marray
++
++        return marray
+ 
+     def read(self, unpickler):
+         """Read the array corresponding to this wrapper.

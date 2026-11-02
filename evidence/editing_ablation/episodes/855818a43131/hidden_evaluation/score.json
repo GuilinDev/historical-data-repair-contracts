@@ -1,0 +1,2030 @@
+{
+  "execution_status": "observed",
+  "passed": 9,
+  "n": 21,
+  "groups": {
+    "historical": {
+      "passed": 1,
+      "n": 7
+    },
+    "fresh_api": {
+      "passed": 7,
+      "n": 7
+    },
+    "current_roundtrip": {
+      "passed": 1,
+      "n": 7
+    }
+  },
+  "records": [
+    {
+      "id": "6ab5bcd8a29e",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "6ab5bcd8a29e",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -791,
+              23,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -791,
+              91234,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088538
+          },
+          "inplace_restart": {
+            "values": [
+              -791,
+              23,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -791,
+            91234,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088538
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "6ab5bcd8a29e_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "6ab5bcd8a29e_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -791,
+              23,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              -791,
+              91234,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088538
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -791,
+            91234,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088538
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "6ab5bcd8a29e_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "6ab5bcd8a29e_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -791,
+              23,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -791,
+              91234,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088538
+          },
+          "inplace_restart": {
+            "values": [
+              -791,
+              23,
+              1000007,
+              -2035,
+              81,
+              42
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -791,
+            91234,
+            1000007,
+            -2035,
+            81,
+            42
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088538
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "55fe29031f23",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "55fe29031f23",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -784,
+                34,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -784,
+                91248,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088541
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -784,
+                34,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -784,
+              91248,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088541
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "55fe29031f23_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "55fe29031f23_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -784,
+                34,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              [
+                -784,
+                91248,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088541
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -784,
+              91248,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088541
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "55fe29031f23_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "55fe29031f23_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -784,
+                34,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -784,
+                91248,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088541
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -784,
+                34,
+                999976
+              ],
+              [
+                -2022,
+                80,
+                43
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -784,
+              91248,
+              999976
+            ],
+            [
+              -2022,
+              80,
+              43
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088541
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4f3092919cbf",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "4f3092919cbf",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -777,
+              45,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -777,
+              91262,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088544
+          },
+          "inplace_restart": {
+            "values": [
+              -777,
+              45,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -777,
+            91262,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088544
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4f3092919cbf_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "4f3092919cbf_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -777,
+              45,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              -777,
+              91262,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088544
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -777,
+            91262,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088544
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "4f3092919cbf_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "4f3092919cbf_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -777,
+              45,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -777,
+              91262,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088544
+          },
+          "inplace_restart": {
+            "values": [
+              -777,
+              45,
+              999945,
+              -2009,
+              79,
+              44
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -777,
+            91262,
+            999945,
+            -2009,
+            79,
+            44
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088544
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "78a1c70ab180",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "78a1c70ab180",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -770,
+                56,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -770,
+                91276,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088547
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -770,
+                56,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -770,
+              91276,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088547
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "78a1c70ab180_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "78a1c70ab180_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -770,
+                56,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              [
+                -770,
+                91276,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088547
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -770,
+              91276,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088547
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "78a1c70ab180_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "78a1c70ab180_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -770,
+                56,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -770,
+                91276,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088547
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -770,
+                56,
+                999914
+              ],
+              [
+                -1996,
+                78,
+                45
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -770,
+              91276,
+              999914
+            ],
+            [
+              -1996,
+              78,
+              45
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088547
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f180d87509a3",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "f180d87509a3",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -763,
+              67,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -763,
+              91290,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088550
+          },
+          "inplace_restart": {
+            "values": [
+              -763,
+              67,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -763,
+            91290,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088550
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f180d87509a3_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "f180d87509a3_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -763,
+              67,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              -763,
+              91290,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088550
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -763,
+            91290,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088550
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "f180d87509a3_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "f180d87509a3_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              -763,
+              67,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              -763,
+              91290,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088550
+          },
+          "inplace_restart": {
+            "values": [
+              -763,
+              67,
+              999883,
+              -1983,
+              77,
+              46
+            ],
+            "shape": [
+              6
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            -763,
+            91290,
+            999883,
+            -1983,
+            77,
+            46
+          ],
+          "shape": [
+            6
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088550
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "39d9330e4ec3",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "39d9330e4ec3",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -756,
+                78,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -756,
+                91304,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088553
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -756,
+                78,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -756,
+              91304,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088553
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "39d9330e4ec3_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "39d9330e4ec3_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -756,
+                78,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              [
+                -756,
+                91304,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088553
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -756,
+              91304,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088553
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "39d9330e4ec3_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "39d9330e4ec3_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                -756,
+                78,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                -756,
+                91304,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1088553
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                -756,
+                78,
+                999852
+              ],
+              [
+                -1970,
+                76,
+                47
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 997327
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              -756,
+              91304,
+              999852
+            ],
+            [
+              -1970,
+              76,
+              47
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 1088553
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3bb8fc1e1e1f",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3bb8fc1e1e1f",
+        "group": "historical",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                109,
+                -61,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1281
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                109,
+                4240,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 5582
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                109,
+                4240,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 5582
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3bb8fc1e1e1f_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3bb8fc1e1e1f_fresh_api",
+        "group": "fresh_api",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                109,
+                -61,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1281
+          },
+          "is_memmap": false,
+          "continued": {
+            "values": [
+              [
+                109,
+                4240,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 5582
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "3bb8fc1e1e1f_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "3bb8fc1e1e1f_current_roundtrip",
+        "group": "current_roundtrip",
+        "diagnostics": {
+          "warnings": [],
+          "observed_byteorder": "="
+        },
+        "semantics": {
+          "initial": {
+            "values": [
+              [
+                109,
+                -61,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 1281
+          },
+          "is_memmap": true,
+          "continued": {
+            "values": [
+              [
+                109,
+                4240,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 5582
+          },
+          "inplace_restart": {
+            "values": [
+              [
+                109,
+                4240,
+                503
+              ],
+              [
+                712,
+                31,
+                -13
+              ]
+            ],
+            "shape": [
+              2,
+              3
+            ],
+            "dtype": {
+              "kind": "i",
+              "itemsize": 4
+            },
+            "python_sum": 5582
+          }
+        },
+        "restart_semantics": {
+          "values": [
+            [
+              109,
+              4240,
+              503
+            ],
+            [
+              712,
+              31,
+              -13
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ],
+          "dtype": {
+            "kind": "i",
+            "itemsize": 4
+          },
+          "python_sum": 5582
+        },
+        "status": "observed"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "reviewed_utc": "2026-11-01T02:06:18.621309+00:00",
+  "passed": true,
+  "plan_sha256": "ad7eac81324c50ef0b5e37f734eaaa5bcacae20671b65023dea968334dbdbf62",
+  "runner_sha256": "efbef5a74e6c1f0115e16609f25ac6f8f7a798a210aaddefc6e0529ff51253fa",
+  "fixtures_sha256": "944d320cc03cc5b89ea06e264f8baf6750700928e6deb2268e3240e620430eab",
+  "independent_audit_script_sha256": "75eb3fef0f7c6b9bea83dfc1c29bfdd40493204f3b9ae2a7184ca1f58dac43a3",
+  "independent_node_replay_exit": 0,
+  "node_summary_identical_except_runtime_version": true,
+  "original_node": "v24.22.1",
+  "replay_node": "v22.22.3",
+  "replay_workspace": "workspace_20261101T020617",
+  "independent_python_hmac_observation_comparisons": 725,
+  "fixture_labels_independently_derived": 54,
+  "source_adaptation_checks": [
+    {
+      "variant": "upstream_base",
+      "only_declared_changes": true
+    },
+    {
+      "variant": "upstream_fixed",
+      "only_declared_changes": true
+    },
+    {
+      "variant": "reject_all_legacy",
+      "only_declared_changes": true
+    },
+    {
+      "variant": "unguarded_legacy",
+      "only_declared_changes": true
+    },
+    {
+      "variant": "reject_control_chars",
+      "only_declared_changes": true
+    }
+  ],
+  "collision_proofs": [
+    {
+      "different_tuples": true,
+      "old_payload_bytes_equal": true,
+      "new_payload_bytes_equal": false,
+      "old_payload_sha256": "3f87d16c55d6a95b97e9c2c88ef1e6859c2b4a603bc1fe8b21c4118ab1b8085b"
+    },
+    {
+      "different_tuples": true,
+      "old_payload_bytes_equal": true,
+      "new_payload_bytes_equal": false,
+      "old_payload_sha256": "529dd3e11fd2e8545ceac541b7748f4381c1a1d6393e9f6c201a9d692e6c71e5"
+    }
+  ],
+  "results": [
+    {
+      "variant": "upstream_base",
+      "passed": 29,
+      "total": 54,
+      "execution_complete": true
+    },
+    {
+      "variant": "upstream_fixed",
+      "passed": 54,
+      "total": 54,
+      "execution_complete": true
+    },
+    {
+      "variant": "reject_all_legacy",
+      "passed": 37,
+      "total": 54,
+      "execution_complete": true
+    },
+    {
+      "variant": "unguarded_legacy",
+      "passed": 49,
+      "total": 54,
+      "execution_complete": true
+    },
+    {
+      "variant": "reject_control_chars",
+      "passed": 33,
+      "total": 54,
+      "execution_complete": true
+    }
+  ],
+  "counts": {
+    "cases": 54,
+    "historical": 27,
+    "fresh": 27,
+    "expected_accept": 37,
+    "expected_reject": 17,
+    "unique_original_signatures": 42,
+    "verification_observations_per_variant": 145,
+    "variants": 5,
+    "semantic_defect_lineages": 1,
+    "model_runs": 0
+  },
+  "interpretation": [
+    "All 54 labels are independent of JavaScript candidate outputs.",
+    "The 37 reissued cases are expected-accept cases, even when a negative control initially rejected them.",
+    "54 conditions and 725 repeated verification observations are not independent defects or independent statistical samples.",
+    "Restart checks reproduced the initial decisions; no added rejection attributable to restart was observed."
+  ]
+}

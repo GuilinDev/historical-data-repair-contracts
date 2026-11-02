@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "task": "packaging_version_1163",
+      "variant": "base",
+      "passed": 12,
+      "n": 36
+    },
+    {
+      "task": "packaging_version_1163",
+      "variant": "fixed",
+      "passed": 36,
+      "n": 36
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "variant": "base",
+      "passed": 27,
+      "n": 36
+    },
+    {
+      "task": "attrs_slot_state_1085",
+      "variant": "fixed",
+      "passed": 36,
+      "n": 36
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "variant": "base",
+      "passed": 12,
+      "n": 18
+    },
+    {
+      "task": "jsonpickle_csv_562",
+      "variant": "fixed",
+      "passed": 18,
+      "n": 18
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "variant": "base",
+      "passed": 12,
+      "n": 18
+    },
+    {
+      "task": "sqlalchemy_mutable_8133",
+      "variant": "fixed",
+      "passed": 18,
+      "n": 18
+    },
+    {
+      "task": "joblib_endian_1561",
+      "variant": "base",
+      "passed": 9,
+      "n": 21
+    },
+    {
+      "task": "joblib_endian_1561",
+      "variant": "fixed",
+      "passed": 21,
+      "n": 21
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "variant": "base",
+      "passed": 9,
+      "n": 21
+    },
+    {
+      "task": "joblib_compressed_1681",
+      "variant": "fixed",
+      "passed": 21,
+      "n": 21
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "variant": "base",
+      "passed": 0,
+      "n": 84
+    },
+    {
+      "task": "jsonpickle_dtype_634",
+      "variant": "fixed",
+      "passed": 84,
+      "n": 84
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "variant": "base",
+      "passed": 12,
+      "n": 18
+    },
+    {
+      "task": "pandas_pickle_56308",
+      "variant": "fixed",
+      "passed": 18,
+      "n": 18
+    }
+  ]
+}

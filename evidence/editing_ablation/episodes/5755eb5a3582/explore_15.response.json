@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502448-98AZpSCFJvuDUFbkkVvP",
+  "object": "chat.completion",
+  "created": 1793502448,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-d02e1cd2-b5cb-4efe-9651-d9df8577f176",
+            "function": {
+              "name": "read_source",
+              "arguments": "{\"path\":\"jsonpickle/ext/pandas.py\",\"start_line\":160}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 38553,
+    "completion_tokens": 30,
+    "total_tokens": 38583,
+    "cost": 0.0038655,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 36160,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0038655,
+      "upstream_inference_prompt_cost": 0.0038553,
+      "upstream_inference_completions_cost": 1.02e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

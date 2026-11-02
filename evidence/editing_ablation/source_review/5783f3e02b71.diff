@@ -1,0 +1,11 @@
+--- base/pandas/compat/pickle_compat.py
++++ candidate/pandas/compat/pickle_compat.py
+@@ -52,7 +52,7 @@
+             cls = args[0]
+             stack[-1] = cls.__new__(*args)
+             return
+-        elif args and issubclass(args[0], PeriodArray):
++        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):
+             cls = args[0]
+             stack[-1] = NDArrayBacked.__new__(*args)
+             return

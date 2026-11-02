@@ -1,0 +1,7 @@
+{
+  "purpose": "Prevent conflating the new component calibration with the submitted benchmark's H/F/R definitions",
+  "submitted_benchmark": "H/F/R are input regimes: historical files, fresh API construction, current-format roundtrips. Each may include continuation and fresh-process reload; they are not successive time steps.",
+  "new_calibration_reporting": "Use legacy-signature scenarios (27), new-format-signature scenarios (27), fresh-process re-verification (54 per variant), and separate reissue/reload checks on 37 contract-eligible records. Avoid labeling these stages H/F/R or treating the internal fixture key fresh as exactly the submitted benchmark's fresh API construction regime.",
+  "fixture_origin": "Synthetic tuples and a public synthetic key, signed by pinned pre-fix and fixed upstream component sources; not production user approval records or a full SDK conversation.",
+  "effect_on_frozen_evidence": "None. No criteria, fixture labels, executable code, or observations have changed."
+}

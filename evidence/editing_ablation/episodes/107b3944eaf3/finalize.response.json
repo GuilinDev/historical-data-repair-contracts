@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793501781-6Fyo6LFcrdQkzws3WWWE",
+  "object": "chat.completion",
+  "created": 1793501781,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I have partially repaired the `packaging.version.Version` class to improve compatibility with historical artifacts.\n\n### Changes Made:\n1.  **Restored `packaging/_structures.py`**: I recreated the `InfinityType` and `NegativeInfinityType` classes and their singleton instances (`Infinity`, `NegativeInfinity`). These were required to unpickle `Version` objects produced by `packaging` 25.0, which relied on these types for comparison keys.\n\n### Checks Performed:\n-   Ran the `legacy` check suite.\n-   Observed that `fresh_api` and `current_roundtrip` tests passed.\n-   Observed that `historical` tests (25.0 and 26.0) still fail.\n\n### Unresolved Issues:\n-   **Pickle Compatibility (25.0)**: Artifacts from 25.0 fail with `AttributeError: 'Version' object has no attribute '__dict__'` (or previously `ModuleNotFoundError`). This is because `Version` in 25.0 was based on a `NamedTuple` (via `_Version`), whereas the current `Version` uses `__slots__`. Since `NamedTuple` and `__slots__` have different pickling/unpickling behaviors, a custom `__setstate__` or a compatibility layer for the old `_Version` structure is needed to fully restore 25.0 compatibility.\n-   **Pickle Compatibility (26.0)**: Artifacts from 26.0 fail with `AttributeError: 'Version' object has no attribute '_hash_cache'`. This indicates a mismatch between the expected slots/attributes during unpickling and the current class definition.\n\nThe repair of `_structures.py` solved the dependency issue, but the structural change of `Version` from a `NamedTuple` wrapper to a slotted class requires more complex state migration logic in `__setstate__` to be fully compatible with historical binary artifacts.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 34957,
+    "completion_tokens": 419,
+    "total_tokens": 35376,
+    "cost": 0.00363816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00363816,
+      "upstream_inference_prompt_cost": 0.0034957,
+      "upstream_inference_completions_cost": 0.00014246
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

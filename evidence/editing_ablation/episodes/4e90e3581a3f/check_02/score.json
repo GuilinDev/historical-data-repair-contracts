@@ -1,0 +1,79 @@
+{
+  "execution_status": "observed",
+  "passed": 0,
+  "n": 3,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 1
+    },
+    "fresh_api": {
+      "passed": 0,
+      "n": 1
+    },
+    "current_roundtrip": {
+      "passed": 0,
+      "n": 1
+    }
+  },
+  "records": [
+    {
+      "id": "119dbe50fb44",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "119dbe50fb44",
+        "group": "historical",
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute 'count'"
+      }
+    },
+    {
+      "id": "8fc411ebbc46",
+      "group": "fresh_api",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "8fc411ebbc46",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute '_cache_hash'"
+      }
+    },
+    {
+      "id": "d95a4a3e4b5c",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": false,
+      "passed": false,
+      "actual": {
+        "id": "d95a4a3e4b5c",
+        "group": "current_roundtrip",
+        "status": "program_error",
+        "error": "AttributeError: 'SlottedRecord' object has no attribute '_cache_hash'"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

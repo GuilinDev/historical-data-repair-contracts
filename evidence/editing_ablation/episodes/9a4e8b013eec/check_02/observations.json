@@ -1,0 +1,111 @@
+{
+  "records": [
+    {
+      "id": "119dbe50fb44",
+      "group": "historical",
+      "semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "restart_semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "8fc411ebbc46",
+      "group": "fresh_api",
+      "semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "restart_semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "d95a4a3e4b5c",
+      "group": "current_roundtrip",
+      "semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "restart_semantics": {
+        "count": 17,
+        "name": "historical-样例",
+        "count_type": "int",
+        "name_type": "str",
+        "mutation": {
+          "accepted": true,
+          "value": 18,
+          "type": "int"
+        },
+        "equal_to_fresh": true,
+        "equal_to_different": false,
+        "type_name": "compat_models.SlottedRecord",
+        "hashable": false
+      },
+      "status": "observed"
+    }
+  ],
+  "python": "3.10.20 (main, Aug  5 2026, 01:18:03) [GCC 14.2.0]",
+  "status": "observed"
+}

@@ -1,0 +1,28 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -203,9 +203,15 @@
+         return data
+ 
+     def restore(self, obj):
++        if isinstance(obj, dict) and obj.get('py/object') == 'pandas.core.frame.DataFrame':
++            # This is a v3.3.0 style DataFrame
++            data_encoded, meta = self.pp.restore_pandas(obj)
++            return self.restore_v3_3(obj)
++        
+         data_encoded, meta = self.pp.restore_pandas(obj)
+-
+         data_columns = decode(data_encoded, keys=True)
++        # ... (rest of the method)
++
+ 
+         # get type codes, un-RLE-ed
+         try:
+@@ -284,7 +290,7 @@
+         column_level_names = meta.get("column_level_names", None)
+         df = (
+             pd.read_csv(StringIO(csv), **params)
+-            if data["values"].strip()
++            if data.get("values") and data["values"].strip()
+             else pd.DataFrame()
+         )
+         for col in timedeltas:

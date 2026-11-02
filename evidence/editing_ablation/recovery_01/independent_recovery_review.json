@@ -1,0 +1,43 @@
+{
+  "decision": "PASS",
+  "reviewed_utc": "2026-11-01T02:41:25.889121+00:00",
+  "recovery_plan_sha256": "91197d3a851c0803307c2f51621c5909bf67188b5544f7bc4d7916569e68c060",
+  "original_plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "scope": "Engineering-only reconstruction of completed metadata and continuation of exactly the 24 unstarted frozen attempts under the same USD 10 ledger. No retrospective model restart, effect conclusion, or publication update.",
+  "must_fix_remaining": [],
+  "checks": {
+    "cause_independently_confirmed": "Allowed newly created packaging/_structures.py was absent in base; normalized metadata comparison raised after the original model episode, final report and hidden evaluation completed.",
+    "completed_original_episodes": 40,
+    "unchanged_other_derived_records": 39,
+    "corrected_derived_record": "8ed676066380",
+    "all_40_candidates_match_first_evaluation_tar": true,
+    "first_40_original_result_final_score_tool_journal_hashes_verified": true,
+    "original_17_scripts_and_scientific_assets_unchanged": true,
+    "remaining_frozen_schedule_length": 24,
+    "remaining_episode_directories_absent": true,
+    "same_ledger_preserved": true,
+    "ledger_finalized_episode_set_matches_first_40": true,
+    "accounted_usd_before_recovery": 1.630893199999999,
+    "pre_recovery_snapshots_bound": 5,
+    "reviewer_reran_regression_tests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "safe_diff_semantics": "Missing base or candidate text is None; existing-file comparisons and newline-only behavior remain unchanged; unauthorized new paths cannot become accepted source changes.",
+    "evidence_preservation": "Old results, summary, state, ledger and engineering error retained and hash-bound. Original episode campaign_result is retained; reconstructed metadata uses a separate filename.",
+    "continuation": "Only original schedule indices 40 through 63 are sent, in the original blocks, via the original client, tools, system, settings and evaluator. Same client ledger and budget cap are reused.",
+    "scientific_outcome_selection": "None: recovery eligibility follows a specific metadata exception and the frozen schedule, independent of semantic success."
+  },
+  "reviewed_recovery_code": {
+    "resume_editing_ablation.py": "7591baae8f67e77b100c1c8bb1dcf5446b18a8adfa3f24543f68e326f37ef411",
+    "test_ablation_recovery.py": "3de0b97734922c757cfc66f44a0b7e3014fc4659e8b50054752da089d397ca5f"
+  },
+  "limits": [
+    "Run one campaign process only; the same shared client controls its two workers.",
+    "Any further engineering failure stops new blocks and requires its own evidence-preserving review.",
+    "Full replay, source-policy review, cost reconciliation and independent final audit remain required.",
+    "The correction handles a lawful source-file creation; it does not establish that the created repair is semantically correct."
+  ],
+  "new_api_calls_by_reviewer": 0,
+  "effectiveness_conclusion": null
+}

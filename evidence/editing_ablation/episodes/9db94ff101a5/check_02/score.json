@@ -1,0 +1,151 @@
+{
+  "execution_status": "observed",
+  "passed": 3,
+  "n": 3,
+  "groups": {
+    "historical": {
+      "passed": 1,
+      "n": 1
+    },
+    "fresh_api": {
+      "passed": 1,
+      "n": 1
+    },
+    "current_roundtrip": {
+      "passed": 1,
+      "n": 1
+    }
+  },
+  "records": [
+    {
+      "id": "119dbe50fb44",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "119dbe50fb44",
+        "group": "historical",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "8fc411ebbc46",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "8fc411ebbc46",
+        "group": "fresh_api",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "d95a4a3e4b5c",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "d95a4a3e4b5c",
+        "group": "current_roundtrip",
+        "semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "restart_semantics": {
+          "count": 17,
+          "name": "historical-样例",
+          "count_type": "int",
+          "name_type": "str",
+          "mutation": {
+            "accepted": true,
+            "value": 18,
+            "type": "int"
+          },
+          "equal_to_fresh": true,
+          "equal_to_different": false,
+          "type_name": "compat_models.SlottedRecord",
+          "hashable": false
+        },
+        "status": "observed"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

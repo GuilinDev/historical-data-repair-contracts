@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499773-bDSpM6gj2QV7Cn78risZ",
+  "object": "chat.completion",
+  "created": 1793499773,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-86c7bba0-5070-49aa-83b2-559a9a82476c",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":2390,\"new\":\"    placement: BlockPlacement | Any,\",\"path\":\"pandas/core/internals/blocks.py\",\"source_version\":\"4e4d40a3b46c81850811fa62e8b23c4267cb53e93a161565ec7cf8e2b1f115a3\",\"start_line\":2390},{\"end_line\":2399,\"new\":\"    if not isinstance(placement, BlockPlacement):\\n        placement = BlockPlacement(placement)\\n    klass = get_block_type(values.dtype)\",\"path\":\"pandas/core/internals/blocks.py\",\"source_version\":\"4e4d40a3b46c81850811fa62e8b23c4267cb53e93a161565ec7cf8e2b1f115a3\",\"start_line\":2399}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29875,
+    "completion_tokens": 265,
+    "total_tokens": 30140,
+    "cost": 0.0030776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 29792,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030776,
+      "upstream_inference_prompt_cost": 0.0029875,
+      "upstream_inference_completions_cost": 9.01e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

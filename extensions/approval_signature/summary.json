@@ -1,0 +1,169 @@
+{
+  "completed": true,
+  "node_version": "v24.22.1",
+  "plan_sha256": "ad7eac81324c50ef0b5e37f734eaaa5bcacae20671b65023dea968334dbdbf62",
+  "frozen_before_execution": true,
+  "results": [
+    {
+      "variant": "upstream_base",
+      "total": 54,
+      "passed": 29,
+      "completed": 54,
+      "groups": {
+        "historical": {
+          "total": 27,
+          "passed": 22
+        },
+        "fresh": {
+          "total": 27,
+          "passed": 7
+        }
+      },
+      "failed_ids": [
+        "F_plain",
+        "H_LF_approvalId",
+        "F_LF_approvalId",
+        "H_LF_toolCallId",
+        "F_LF_toolCallId",
+        "H_LF_toolName",
+        "F_LF_toolName",
+        "F_CR_approvalId",
+        "F_CR_toolCallId",
+        "F_CR_toolName",
+        "F_TAB_approvalId",
+        "F_TAB_toolCallId",
+        "F_TAB_toolName",
+        "F_NUL_approvalId",
+        "F_NUL_toolCallId",
+        "F_NUL_toolName",
+        "F_QUOTE_approvalId",
+        "F_QUOTE_toolCallId",
+        "F_QUOTE_toolName",
+        "F_BACKSLASH_approvalId",
+        "F_BACKSLASH_toolCallId",
+        "F_BACKSLASH_toolName",
+        "H_retuple_0",
+        "H_retuple_1",
+        "fresh_key_order"
+      ]
+    },
+    {
+      "variant": "upstream_fixed",
+      "total": 54,
+      "passed": 54,
+      "completed": 54,
+      "groups": {
+        "historical": {
+          "total": 27,
+          "passed": 27
+        },
+        "fresh": {
+          "total": 27,
+          "passed": 27
+        }
+      },
+      "failed_ids": []
+    },
+    {
+      "variant": "reject_all_legacy",
+      "total": 54,
+      "passed": 37,
+      "completed": 54,
+      "groups": {
+        "historical": {
+          "total": 27,
+          "passed": 10
+        },
+        "fresh": {
+          "total": 27,
+          "passed": 27
+        }
+      },
+      "failed_ids": [
+        "H_plain",
+        "H_CR_approvalId",
+        "H_CR_toolCallId",
+        "H_CR_toolName",
+        "H_TAB_approvalId",
+        "H_TAB_toolCallId",
+        "H_TAB_toolName",
+        "H_NUL_approvalId",
+        "H_NUL_toolCallId",
+        "H_NUL_toolName",
+        "H_QUOTE_approvalId",
+        "H_QUOTE_toolCallId",
+        "H_QUOTE_toolName",
+        "H_BACKSLASH_approvalId",
+        "H_BACKSLASH_toolCallId",
+        "H_BACKSLASH_toolName",
+        "historical_key_order"
+      ]
+    },
+    {
+      "variant": "unguarded_legacy",
+      "total": 54,
+      "passed": 49,
+      "completed": 54,
+      "groups": {
+        "historical": {
+          "total": 27,
+          "passed": 22
+        },
+        "fresh": {
+          "total": 27,
+          "passed": 27
+        }
+      },
+      "failed_ids": [
+        "H_LF_approvalId",
+        "H_LF_toolCallId",
+        "H_LF_toolName",
+        "H_retuple_0",
+        "H_retuple_1"
+      ]
+    },
+    {
+      "variant": "reject_control_chars",
+      "total": 54,
+      "passed": 33,
+      "completed": 54,
+      "groups": {
+        "historical": {
+          "total": 27,
+          "passed": 18
+        },
+        "fresh": {
+          "total": 27,
+          "passed": 15
+        }
+      },
+      "failed_ids": [
+        "F_LF_approvalId",
+        "F_LF_toolCallId",
+        "F_LF_toolName",
+        "H_CR_approvalId",
+        "F_CR_approvalId",
+        "H_CR_toolCallId",
+        "F_CR_toolCallId",
+        "H_CR_toolName",
+        "F_CR_toolName",
+        "H_TAB_approvalId",
+        "F_TAB_approvalId",
+        "H_TAB_toolCallId",
+        "F_TAB_toolCallId",
+        "H_TAB_toolName",
+        "F_TAB_toolName",
+        "H_NUL_approvalId",
+        "F_NUL_approvalId",
+        "H_NUL_toolCallId",
+        "F_NUL_toolCallId",
+        "H_NUL_toolName",
+        "F_NUL_toolName"
+      ]
+    }
+  ],
+  "collision_pairs": 2,
+  "paid_calls": 0,
+  "independent_review": "pending",
+  "limitations": "Finite JSON-compatible input domain. Synthetic keys and inert tool-name strings; no actual tool invocation, approval UI, production account, model call, or full SDK execution. Legacy acceptance is part of this v7 upgrade contract; intentional removal in v8 is not classified as a defect."
+}

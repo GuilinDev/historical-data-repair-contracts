@@ -1,0 +1,27 @@
+--- base/joblib/numpy_pickle.py
++++ candidate/joblib/numpy_pickle.py
+@@ -17,7 +17,7 @@
+                          XZCompressorWrapper, LZ4CompressorWrapper)
+ from .numpy_pickle_utils import Unpickler, Pickler
+ from .numpy_pickle_utils import _read_fileobject, _write_fileobject
+-from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE
++from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch
+ from .numpy_pickle_utils import _ensure_native_byte_order
+ from .numpy_pickle_compat import load_compatibility
+ from .numpy_pickle_compat import NDArrayWrapper
+@@ -229,6 +229,15 @@
+             )
+             warnings.warn(message)
+ 
++        # Detect byte order mismatch and swap as needed.
++        # If the array is memmapped and we are in 'r+' mode, we cannot use
++        # byteswap() because it creates a copy. Instead, we must use a view
++        # with the correct byte order.
++        if (unpickler.mmap_mode == 'r+' and
++                _is_numpy_array_byte_order_mismatch(marray)):
++            # Use a view with the native byte order to avoid copying.
++            # This allows mutations to be written back to the file.
++            return marray.view(marray.dtype.newbyteorder('='))
+         return _ensure_native_byte_order(marray)
+ 
+     def read(self, unpickler):

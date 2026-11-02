@@ -1,0 +1,33 @@
+--- base/sqlalchemy/ext/mutable.py
++++ candidate/sqlalchemy/ext/mutable.py
+@@ -502,8 +502,28 @@
+ 
+         def unpickle(state, state_dict):
+             if "ext.mutable.values" in state_dict:
+-                for val in state_dict["ext.mutable.values"][key]:
+-                    val._parents[state] = key
++                values = state_dict["ext.mutable.values"]
++                if isinstance(values, list):
++                    # Handle legacy 1.4.37 format where values was a list
++                    # This is a fallback for when multiple attributes might have been pickled
++                    # but the current version expects a dict.
++                    # However, the 1.4.37 producer just appended values to a list.
++                    # We need to know which value belongs to which key.
++                    # In 1.4.37, the 'pickle' function just did:
++                    # state_dict["ext.mutable.values"].append(val)
++                    # This means the list is ordered by the order of attributes being pickled.
++                    # This is problematic if we don't know the order.
++                    # But wait, the 1.4.37 'unpickle' did:
++                    # for val in state_dict["ext.mutable.values"]:
++                    #     val._parents[state] = key
++                    # This means EVERY value in the list was associated with the CURRENT key.
++                    # That's definitely a bug in 1.4.37 if there were multiple mutable attributes.
++                    # But for a single attribute, it works.
++                    for val in values:
++                        val._parents[state] = key
++                elif isinstance(values, dict):
++                    for val in values[key]:
++                        val._parents[state] = key
+ 
+         event.listen(parent_cls, "load", load, raw=True, propagate=True)
+         event.listen(

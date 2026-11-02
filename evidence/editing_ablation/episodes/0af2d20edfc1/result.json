@@ -1,0 +1,39 @@
+{
+  "episode": "0af2d20edfc1",
+  "family": "sqlalchemy_mutable_8133",
+  "project": "sqlalchemy",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 3,
+  "block": 20,
+  "arm": "exact",
+  "condition": "ordinary",
+  "protocol_complete": true,
+  "answer": {
+    "report": "The issue was a regression in `sqlalchemy.ext.mutable.py` where the `unpickle` listener in version 1.4.38 failed to read objects serialized by version 1.4.37. Specifically, the serialization format for `ext.mutable.values` changed from a `list` to a `dict` (mapping attribute keys to lists of values). The 1.4.38 code attempted to index this value using the attribute key, causing a `TypeError` when encountering legacy list-based artifacts.\n\n**Changes:**\n- Modified `sqlalchemy/ext/mutable.py`: Updated the `unpickle` inner function within `_listen_on_attribute` to check the type of `state_dict[\"ext.mutable.values\"]`.\n- If the value is a `list` (legacy format), it iterates through all values and associates them with the current attribute key.\n- If the value is a `dict` (new format), it retrieves the list associated with the specific attribute key.\n\n**Checks performed:**\n- Ran the `legacy` check suite, which includes:\n    - `historical`: Validated that objects produced by 1.4.37 are now correctly read and their state restored.\n    - `fresh_api`: Verified that new objects created with 1.4.38 function correctly.\n    - `current_roundtrip`: Verified that objects pickled and unpickled within 1.4.38 maintain consistency.\n- All 6 tests in the suite passed.\n\n**Unresolved work:**\n- None. The repair restores the historical data contract and preserves the new format's behavior."
+  },
+  "tool_actions": 13,
+  "applied_edit_count": 1,
+  "all_checks_passed": true,
+  "groups": {
+    "historical": {
+      "passed": 6,
+      "n": 6
+    },
+    "fresh_api": {
+      "passed": 6,
+      "n": 6
+    },
+    "current_roundtrip": {
+      "passed": 6,
+      "n": 6
+    }
+  },
+  "passed": 18,
+  "n": 18,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

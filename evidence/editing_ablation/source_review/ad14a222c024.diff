@@ -1,0 +1,30 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -265,7 +265,26 @@
+         for col in df.columns:
+             dtype_str = dtypes.get(col, "object")
+             try:
+-                dtype = np.dtype(dtype_str)
++                if dtype_str.startswith("pd/"):
++                    # Handle legacy tags without explicit width
++                    tag = dtype_str[3:]
++                    if tag == "i":
++                        dtype = "int64"
++                    elif tag == "u":
++                        dtype = "uint64"
++                    elif tag == "f":
++                        dtype = "float64"
++                    elif tag == "in":
++                        dtype = "int64"
++                    else:
++                        # Fallback to numpy dtype if it's not one of the generic legacy tags
++                        # but still starts with pd/ (e.g., pd/i8)
++                        # We need to find the original numpy dtype name.
++                        # REVERSE_TYPE_MAP is used to get the original name.
++                        dtype = REVERSE_TYPE_MAP.get(dtype_str, "object")
++                else:
++                    dtype = dtype_str
++                
+                 df[col] = df[col].astype(dtype)
+             except Exception:
+                 msg = (

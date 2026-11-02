@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793500094-iJPoWil0pcQ1lNgjS6tf",
+  "object": "chat.completion",
+  "created": 1793500094,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-37677341-dde8-49a6-8af8-297af9ee6b20",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def restore(self, obj):\\n        if isinstance(obj, dict) and obj.get('py/object') == 'pandas.core.frame.DataFrame':\\n            # This is a v3.3.0 style DataFrame\\n            data_encoded, meta = self.pp.restore_pandas(obj)\\n            return self.restore_v3_3(obj)\\n        \\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n        data_columns = decode(data_encoded, keys=True)\\n        # ... (rest of the method)\\n\",\"old\":\"    def restore(self, obj):\\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n\\n        data_columns = decode(data_encoded, keys=True)\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21111,
+    "completion_tokens": 208,
+    "total_tokens": 21319,
+    "cost": 0.00218182,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 18464,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00218182,
+      "upstream_inference_prompt_cost": 0.0021111,
+      "upstream_inference_completions_cost": 7.072e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

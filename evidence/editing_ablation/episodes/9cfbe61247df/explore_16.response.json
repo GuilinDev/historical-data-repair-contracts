@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793501595-IhLx3S1WYFmpcYL2IHT7",
+  "object": "chat.completion",
+  "created": 1793501595,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-a9fd7f93-cfbd-4a00-b678-1176cd63e141",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def restore(self, obj):\\n        # The historical producer (v3.3.0) used a different structure for DataFrames.\\n        # It stored the CSV content directly in the 'values' key of the main object,\\n        # rather than inside a 'meta' dictionary or as a separate encoded string.\\n        if 'values' in obj and 'meta' in obj and 'dtypes_rle' not in obj['meta']:\\n            return self.restore_v3_3(obj)\\n\\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n\\n        data_columns = decode(data_encoded, keys=True)\\n\\n        # get type codes, un-RLE-ed\\\"}, {\\\"line\\\": 210, \\\"text\\\": \\\"        try:\\\"}, {\\\"line\\\": 211, \\\"text\\\": \\\"            rle_types = meta[\\\\\\\"dtypes_rle\\\\\\\"]\\\"}, {\\\"line\\\": 212, \\\"text\\\": \\\"        except KeyError:\\\"}, {\\\"line\\\": 213, \\\"text\\\": \\\"            # was encoded with pre-v3.4 scheme\\\"}, {\\\"line\\\": 214, \\\"text\\\": \\\"            return self.restore_v3_3(obj)\\\"}, {\\\"line\\\": 215, \\\"text\\\": \\\"        type_codes = rle_decode(rle_types)\\\"}, {\\\"line\\\": 216, \\\"text\\\": \\\"        # handle multicolumns\\\"}, {\\\"line\\\": 217, \\\"text\\\": \\\"        columns_decoded = decode(meta[\\\\\\\"columns\\\\\\\"], keys=True)\\\"}, {\\\"line\\\": 218, \\\"text\\\": \\\"        if meta.get(\\\\\\\"is_multicolumns\\\\\\\", False):\\\"}, {\\\"line\\\": 219, \\\"text\\\": \\\"            columns = pd.MultiIndex.from_tuples(\\\"}, {\\\"line\\\": 220, \\\"text\\\": \\\"                columns_decoded, names=meta.get(\\\\\\\"column_names\\\\\\\")\\\"}, {\\\"line\\\": 221, \\\"text\\\": \\\"            )\\\"}, {\\\"line\\\": 222, \\\"text\\\": \\\"        else:\\\"}, {\\\"line\\\": 223, \\\"text\\\": \\\"            columns = columns_decoded\\\"}, {\\\"line\\\": 224, \\\"text\\\": \\\"        # progressively reconstruct dataframe as a dict\\\"}, {\\\"line\\\": 225, \\\"text\\\": \\\"        df_data = {}\\\"}, {\\\"line\\\": 226, \\\"text\\\": \\\"        dtypes = {}\\\"}, {\\\"line\\\": 227, \\\"text\\\": \\\"        for col, type_code in zip(columns, type_codes):\\\"}, {\\\"line\\\": 228, \\\"text\\\": \\\"            col_data = data_columns[col]\\\"}, {\\\"line\\\": 229, \\\"text\\\": \\\"            if type_code == \\\\\\\"py/jp\\\\\\\":\\\"}, {\\\"line\\\": 230, \\\"text\\\": \\\"                # deserialize each item in the column\\\"}, {\\\"line\\\": 231, \\\"text\\\": \\\"                col_values = [decode(item) for item in col_data]\\\"}, {\\\"line\\\": 232, \\\"text\\\": \\\"                df_data[col] = col_values\\\"}, {\\\"line\\\": 233, \\\"text\\\": \\\"            else:\\\"}, {\\\"line\\\": 234, \\\"text\\\": \\\"                df_data[col] = col_data\\\"}, {\\\"line\\\": 235, \\\"text\\\": \\\"                # used later to get correct dtypes\\\"}, {\\\"line\\\": 236, \\\"text\\\": \\\"                dtype_str = REVERSE_TYPE_MAP.get(type_code, \\\\\\\"object\\\\\\\")\\\"}, {\\\"line\\\": 237, \\\"text\\\": \\\"                dtypes[col] = dtype_str\\\"}, {\\\"line\\\": 238, \\\"text\\\": \\\"        # turn dict into df\\\"}, {\\\"line\\\": 239, \\\"text\\\": \\\"        df = pd.DataFrame(df_data)\\\"}, {\\\"line\\\": 240, \\\"text\\\": \\\"        df.columns = columns\\\"}, {\\\"line\\\": 241, \\\"text\\\": \\\"        # apply dtypes\\\"}, {\\\"line\\\": 242, \\\"text\\\": \\\"        for col in df.columns:\\\"}, {\\\"line\\\": 243, \\\"text\\\": \\\"            dtype_str = dtypes.get(col, \\\\\\\"object\\\\\\\")\\\"}, {\\\"line\\\": 244, \\\"text\\\": \\\"            try:\\\"}, {\\\"line\\\": 245, \\\"text\\\": \\\"                dtype = np.dtype(dtype_str)\\\"}, {\\\"line\\\": 246, \\\"text\\\": \\\"                df[col] = df[col].astype(dtype)\\\"}, {\\\"line\\\": 247, \\\"text\\\": \\\"            except Exception:\\\"}, {\\\"line\\\": 248, \\\"text\\\": \\\"                msg = (\\\"}, {\\\"line\\\": 249, \\\"text\\\": \\\"                    f\\\\\\\"jsonpickle was unable to properly deserialize \\\\\\\"\\\"}, {\\\"line\\\": 250, \\\"text\\\": \\\"                    f\\\\\\\"the column {col} into its inferred dtype. \\\\\\\"\\\"}, {\\\"line\\\": 251, \\\"text\\\": \\\"                    f\\\\\\\"Please file a bugreport on the jsonpickle GitHub! \\\\\\\"\\\"}, {\\\"line\\\": 252, \\\"text\\\": \\\"                )\\\"}, {\\\"line\\\": 253, \\\"text\\\": \\\"                warnings.warn(msg)\\\"}, {\\\"line\\\": 254, \\\"text\\\": \\\"        # decode and set the index\\\"}, {\\\"line\\\": 255, \\\"text\\\": \\\"        index_values = decode(meta[\\\\\\\"index\\\\\\\"], keys=True)\\\"}, {\\\"line\\\": 256, \\\"text\\\": \\\"        if meta.get(\\\\\\\"is_multiindex\\\\\\\", False):\\\"}, {\\\"line\\\": 257, \\\"text\\\": \\\"            index = pd.MultiIndex.from_tuples(\\\"}, {\\\"line\\\": 258, \\\"text\\\": \\\"                index_values, names=meta.get(\\\\\\\"index_names\\\\\\\")\\\"}, {\\\"line\\\": 259, \\\"text\\\": \\\"            )\\\"}, {\\\"line\\\": 260, \\\"text\\\": \\\"        else:\\\"}, {\\\"line\\\": 261, \\\"text\\\": \\\"            index = pd.Index(index_values, name=meta.get(\\\\\\\"index_names\\\\\\\"))\\\"}, {\\\"line\\\": 262, \\\"text\\\": \\\"        df.index = index\\\"}, {\\\"line\\\": 263, \\\"text\\\": \\\"        # restore column names for easy readability\\\"}, {\\\"line\\\": 264, \\\"text\\\": \\\"        if \\\\\\\"column_names\\\\\\\" in meta:\\\"}, {\\\"line\\\": 265, \\\"text\\\": \\\"            if meta.get(\\\\\\\"is_multicolumns\\\\\\\", False):\\\"}, {\\\"line\\\": 266, \\\"text\\\": \\\"                df.columns.names = meta.get(\\\\\\\"column_names\\\\\\\")\\\"}, {\\\"line\\\": 267, \\\"text\\\": \\\"            else:\\\"}, {\\\"line\\\": 268, \\\"text\\\": \\\"                df.columns.name = meta.get(\\\\\\\"column_names\\\\\\\")\\\"}, {\\\"line\\\": 269, \\\"text\\\": \\\"        return df\",\"old\":\"    def restore(self, obj):\\n        data_encoded, meta = self.pp.restore_pandas(obj)\\n\\n        data_columns = decode(data_encoded, keys=True)\\n\\n        # get type codes, un-RLE-ed\\n        try:\\n            rle_types = meta[\\\"dtypes_rle\\\"]\\n        except KeyError:\\n            # was encoded with pre-v3.4 scheme\\n            return self.restore_v3_3(obj)\\n        type_codes = rle_decode(rle_types)\\n\\n        # handle multicolumns\\n        columns_decoded = decode(meta[\\\"columns\\\"], keys=True)\\n        if meta.get(\\\"is_multicolumns\\\", False):\\n            columns = pd.MultiIndex.from_tuples(\\n                columns_decoded, names=meta.get(\\\"column_names\\\")\\n            )\\n        else:\\n            columns = columns_decoded\\n\\n        # progressively reconstruct dataframe as a dict\\n        df_data = {}\\n        dtypes = {}\\n        for col, type_code in zip(columns, type_codes):\\n            col_data = data_columns[col]\\n            if type_code == \\\"py/jp\\\":\\n                # deserialize each item in the column\\n                col_values = [decode(item) for item in col_data]\\n                df_data[col] = col_values\\n            else:\\n                df_data[col] = col_data\\n                # used later to get correct dtypes\\n                dtype_str = REVERSE_TYPE_MAP.get(type_code, \\\"object\\\")\\n                dtypes[col] = dtype_str\\n\\n        # turn dict into df\\n        df = pd.DataFrame(df_data)\\n        df.columns = columns\\n\\n        # apply dtypes\\n        for col in df.columns:\\n            dtype_str = dtypes.get(col, \\\"object\\\")\\n            try:\\n                dtype = np.dtype(dtype_str)\\n                df[col] = df[col].astype(dtype)\\n            except Exception:\\n                msg = (\\n                    f\\\"jsonpickle was unable to properly deserialize \\\"\\n                    f\\\"the column {col} into its inferred dtype. \\\"\\n                    f\\\"Please file a bugreport on the jsonpickle GitHub! \\\"\\n                )\\n                warnings.warn(msg)\\n\\n        # decode and set the index\\n        index_values = decode(meta[\\\"index\\\"], keys=True)\\n        if meta.get(\\\"is_multiindex\\\", False):\\n            index = pd.MultiIndex.from_tuples(\\n                index_values, names=meta.get(\\\"index_names\\\")\\n            )\\n        else:\\n            index = pd.Index(index_values, name=meta.get(\\\"index_names\\\"))\\n        df.index = index\\n\\n        # restore column names for easy readability\\n        if \\\"column_names\\\" in meta:\\n            if meta.get(\\\"is_multicolumns\\\", False):\\n                df.columns.names = meta.get(\\\"column_names\\\")\\n            else:\\n                df.columns.name = meta.get(\\\"column_names\\\")\\n\\n        return df\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21664,
+    "completion_tokens": 2251,
+    "total_tokens": 23915,
+    "cost": 0.00293174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 19232,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00293174,
+      "upstream_inference_prompt_cost": 0.0021664,
+      "upstream_inference_completions_cost": 0.00076534
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

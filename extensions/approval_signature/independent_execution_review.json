@@ -1,0 +1,80 @@
+{
+  "reviewer": "calibration_reviewer",
+  "decision": "PASS_WITH_EXPLICIT_SCOPE_LIMITS",
+  "review_scope": "Complete independent execution and scientific interpretation audit of the additional signature-layer calibration only; not an audit of the separate 64-attempt paid editing experiment",
+  "plan_sha256": "ad7eac81324c50ef0b5e37f734eaaa5bcacae20671b65023dea968334dbdbf62",
+  "runner_sha256": "efbef5a74e6c1f0115e16609f25ac6f8f7a798a210aaddefc6e0529ff51253fa",
+  "fixture_sha256": "944d320cc03cc5b89ea06e264f8baf6750700928e6deb2268e3240e620430eab",
+  "source_manifest_sha256": "985bbd9a6171d2795e8254e0135f2c53dc5a625de808ca1d5ea4e8ef3043a8b0",
+  "interpretation_clarification_sha256": "45ae4f1a195fa12733cfaaa22721ef3e04e5b39e76037bc804e04ea0a1e6aac2",
+  "verification_artifact": "independent_replay/verification.json",
+  "independent_audit_script": "independent_replay/audit.py",
+  "independent_audit_script_sha256": "75eb3fef0f7c6b9bea83dfc1c29bfdd40493204f3b9ae2a7184ca1f58dac43a3",
+  "replay_workspace": "independent_replay/workspace_20261101T020617",
+  "findings": {
+    "frozen_input_identity": "PASS: source-manifest, all upstream sources, adapted executables, fixtures, runner and plan hashes matched",
+    "upstream_identity": "PASS: true merge 7fa85b2ca52da19b56b0809614cc8485edb42a0d and parent 34c53c0ff19b1567e79d45130f85c612006eacf6; signer, tests and canonical-hash bytes also matched this reviewer's independently downloaded source copies",
+    "source_adaptation": "PASS: upstream variants only change module import specifiers and normalize line endings; official uint8-utils bytes are unchanged. Three negative-control verifier changes exactly match their declared mutations, with no extra source changes.",
+    "expected_labels": "PASS: all 54 expected labels independently derived in Python from tuple equality, canonical input equality, wrong-key status and the published v7 legacy LF restriction; no candidate output was used to create those labels",
+    "cryptographic_crosscheck": "PASS: independently implemented Python JSON canonicalization/HMAC reproduced all persisted original signatures and all 725 verification observations in the declared finite fixture domain",
+    "collision_evidence": "PASS: two different tuple pairs independently produce identical old payload bytes, while new payload bytes differ; this proves a serialization ambiguity, not a cryptographic HMAC collision",
+    "node_replay": "PASS: copied the exact frozen runner and assets into an isolated workspace and ran the complete five-variant campaign. Every semantic artifact and summary field matched, apart from the actual Node version.",
+    "runtime_versions": {"original": "v24.22.1", "independent_replay": "v22.22.3"},
+    "completeness": "PASS: all five variants completed all initial, fresh-process and contract-eligible reissue verification calls; no missing observations or candidate execution failures",
+    "original_artifacts": "The frozen plan, runner, fixtures, executables and original observations were not changed by this review",
+    "new_paid_calls": 0
+  },
+  "counts": {
+    "known_defect_lineages": 1,
+    "dependent_scenarios": 54,
+    "historical_scenarios": 27,
+    "fresh_scenarios": 27,
+    "expected_accept": 37,
+    "expected_accept_historical": 17,
+    "expected_accept_fresh": 20,
+    "expected_reject": 17,
+    "unique_original_signatures": 42,
+    "initial_verifications_per_variant": 54,
+    "persisted_original_fresh_process_verifications_per_variant": 54,
+    "reissued_fresh_process_verifications_per_variant": 37,
+    "verification_observations_per_variant": 145,
+    "total_verification_observations_across_five_variants": 725,
+    "model_attempts": 0
+  },
+  "results": [
+    {"variant": "upstream_base", "complete": 54, "contract_passed": 29, "historical_passed": 22, "fresh_passed": 7},
+    {"variant": "upstream_fixed", "complete": 54, "contract_passed": 54, "historical_passed": 27, "fresh_passed": 27},
+    {"variant": "reject_all_legacy", "complete": 54, "contract_passed": 37, "historical_passed": 10, "fresh_passed": 27, "interpretation": "17 false rejections of benign historical approvals"},
+    {"variant": "unguarded_legacy", "complete": 54, "contract_passed": 49, "historical_passed": 22, "fresh_passed": 27, "interpretation": "5 false acceptances: three unsafe original LF-bearing tuples and two retupled signatures"},
+    {"variant": "reject_control_chars", "complete": 54, "contract_passed": 33, "historical_passed": 18, "fresh_passed": 15, "interpretation": "21 false rejections of permitted legacy non-LF controls or valid current signatures"}
+  ],
+  "interpretation_requirements": [
+    "The 37 reissued records are those expected to be accepted by the contract, not necessarily those actually accepted by each negative control. This is a separate candidate-signing/restart check, not a claim that every candidate naturally proceeded after its first verification. The supplied interpretation_clarification.json correctly resolves this wording ambiguity without altering the frozen experiment.",
+    "Restart and reissue checks confirm persistence stability here. They added zero failed scenario classifications beyond initial verification in this particular five-variant grid; do not claim incremental restart detection benefit.",
+    "The 54 scenarios, 42 original signatures and 725 verification observations are dependent probes of one known defect. None is a count of independent bugs, independent agent attempts, or evidence for a significance test.",
+    "The negative controls are authored specification mutations, not model-generated repairs or new observed developer mistakes. Passing the finite grid does not establish complete cryptographic correctness.",
+    "The repeated hash/signature agreement proves the stated finite-domain behavior. Do not claim HMAC itself is mathematically injective or collision-free; the defect is ambiguous serialization of fields before HMAC.",
+    "The new-format producer is the upstream fixed signer. Candidate signing is checked in the reissue stage; the initial fresh-format inputs are not produced independently by each candidate.",
+    "This is signature-layer validation with synthetic keys and inert names, not a measured full SDK message-history pipeline, human reauthorization UI, replay defense, expiration policy, actual tool execution, or a real service exploit.",
+    "Legacy acceptance is required by the pinned v7 upgrade contract. Intentional v8 removal of that compatibility remains outside the defect claim.",
+    "This extension is a rejection/compatibility boundary, not the original planned second example with two valid repair policies. It must remain separate from the eight-lineage Gemma experiment and its 252-observation denominator."
+  ],
+  "controls_assessment": {
+    "adequacy_for_declared_claim": "Adequate: authentic base/fixed pair plus three targeted controls independently separate compatibility false rejections, authorization false acceptances and overly broad character rejection.",
+    "not_claimed": "The suite is not an exhaustive security test, mutation score, random sample of possible repairs, or a measured estimate of real-world defect prevalence.",
+    "additional_experiment_required_for_this_calibration": false
+  },
+  "award_and_inclusion_assessment": {
+    "substantive_extension": true,
+    "scope_of_improvement": "Modest but real: a directly agent-related project supplies an independently sourced security-sensitive contrast to the existing value-preserving ambiguity calibration. The executable contract must accept safe historical records while rejecting unsafe ones; neither unconditional compatibility nor unconditional rejection suffices.",
+    "novelty_limit": "The public upstream fix and core regression tests predate this work. Novelty belongs only to the resource's explicit acceptance-boundary organization and replayable calibration, not vulnerability discovery or the repair algorithm.",
+    "recommendation": "Suitable for a concise additional calibration paragraph and small grouped table or supplementary resource section, if the overall revised paper remains clear and within the word limit. This alone does not warrant a broad claim of improved Gemma repair performance.",
+    "suggested_claim": "A separate AI SDK signature-layer calibration exposes the opposite boundary of historical compatibility: ambiguity in an authorization record requires rejection, while unambiguous pending approvals must remain valid across an upgrade. The upstream fix satisfies all 54 authored scenarios; removing safe legacy support rejects 17 valid scenarios, whereas unrestricted fallback accepts five invalid scenarios. All five implementations were fully executed and independently replayed. These are probes of one known defect, not additional model attempts.",
+    "publication_action": "Do not update the submitted version from this audit alone. Await completion and independent review of the separate paid experiment, then make a joint editorial decision as the user instructed."
+  },
+  "engineering_notes": [
+    "The first reviewer-local audit attempt encountered Windows text-decoding configuration and was corrected only in the reviewer script; no experiment sources changed.",
+    "A default-sandbox subprocess launch was denied before Node execution. Standard permission escalation succeeded; no automatic approval rejection was bypassed.",
+    "The first successful isolated execution differed from the original only in Node version. The final audit explicitly preserved that runtime difference and then completed the independent Python crosscheck. These were reviewer-environment issues, not scientific failures or discarded candidate outcomes."
+  ]
+}

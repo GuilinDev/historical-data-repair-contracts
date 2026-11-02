@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "H_plain",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_plain",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_LF_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "F_LF_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_LF_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "F_LF_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_LF_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "F_LF_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_CR_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_CR_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_CR_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_CR_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_CR_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_CR_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_TAB_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_TAB_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_TAB_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_TAB_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_TAB_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_TAB_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_NUL_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_NUL_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_NUL_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_NUL_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_NUL_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_NUL_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_QUOTE_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_QUOTE_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_QUOTE_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_QUOTE_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_QUOTE_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_QUOTE_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_BACKSLASH_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_BACKSLASH_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_BACKSLASH_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_BACKSLASH_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_BACKSLASH_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "F_BACKSLASH_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "H_retuple_0",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record\narchive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\ninspect_record",
+      "toolName": "archive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "F_retuple_0",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record\narchive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\ninspect_record",
+      "toolName": "archive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "H_retuple_1",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\nextra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha\ncall_alpha",
+      "toolCallId": "extra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "F_retuple_1",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\nextra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha\ncall_alpha",
+      "toolCallId": "extra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_tamper_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "different",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_tamper_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "different",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_tamper_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "different",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_tamper_input",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "beta"
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_wrong_key",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": true,
+    "eligible_continuation": false
+  },
+  {
+    "id": "historical_key_order",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "options": {
+          "enabled": true,
+          "limit": 3
+        },
+        "record": "alpha"
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  },
+  {
+    "id": "fresh_tamper_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "different",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "fresh_tamper_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "different",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "fresh_tamper_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "different",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "fresh_tamper_input",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "beta"
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false
+  },
+  {
+    "id": "fresh_wrong_key",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": true,
+    "eligible_continuation": false
+  },
+  {
+    "id": "fresh_key_order",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "options": {
+          "enabled": true,
+          "limit": 3
+        },
+        "record": "alpha"
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true
+  }
+]

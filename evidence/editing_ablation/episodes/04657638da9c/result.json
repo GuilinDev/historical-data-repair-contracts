@@ -1,0 +1,39 @@
+{
+  "episode": "04657638da9c",
+  "family": "jsonpickle_dtype_634",
+  "project": "jsonpickle",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 2,
+  "block": 15,
+  "arm": "span",
+  "condition": "ordinary",
+  "protocol_complete": true,
+  "answer": {
+    "report": "The issue was that `jsonpickle`'s pandas extension used a dynamic `TYPE_MAP` generated at runtime, which could lead to inconsistent dtype restoration across different processes or environments due to the non-deterministic order of `__subclasses__()` and `np.sctypeDict`. Additionally, legacy numeric tags without explicit widths (e.g., `pd/i`, `pd/u`, `pd/f`) were not being handled to allow for widening while preserving the numeric kind.\n\nI analyzed the `PandasDfHandler.restore` method and the `tags_pd.py` generation logic. The failures in the legacy checks showed that numeric dtypes were often restored as `object` or with incorrect widths because the `REVERSE_TYPE_MAP` lookup failed or mapped to an incorrect string that `np.dtype()` could not resolve to the original precision.\n\nTo repair this, I would have needed to:\n1.  Modify `jsonpickle/tags_pd.py` to ensure a deterministic mapping of dtypes to tags, possibly by sorting the input lists before generating substrings.\n2.  Update `jsonpickle/ext/pandas.py` in the `restore` method to handle legacy tags (`pd/i`, `pd/u`, `pd/f`, `pd/in`) by mapping them to a default safe width (like `int64`, `uint64`, `float64`) if the exact width was not specified, while ensuring that explicit width tags (like `pd/i8`) are strictly honored.\n\nHowever, since I cannot modify the source without applying edits and the exploration phase is over, I have identified the root cause: the reliance on a non-deterministic `TYPE_MAP` and the lack of fallback logic for generic numeric tags in the `restore` loop.\n\n**Final Report:**\n- **Changes:** No changes were applied to the source code in this session.\n- **Checks Ran:** I ran the `legacy` check suite, which failed across all groups (historical, fresh_api, current_roundtrip), confirming that numeric dtypes were not being restored correctly.\n- **Unresolved:** The repair of the `TYPE_MAP` generation and the `restore` logic for numeric dtypes remains unresolved. The library continues to fail the historical data contract for pandas numeric types."
+  },
+  "tool_actions": 15,
+  "applied_edit_count": 0,
+  "all_checks_passed": false,
+  "groups": {
+    "historical": {
+      "n": 72,
+      "passed": 0
+    },
+    "fresh_api": {
+      "n": 6,
+      "passed": 0
+    },
+    "current_roundtrip": {
+      "n": 6,
+      "passed": 0
+    }
+  },
+  "passed": 0,
+  "n": 84,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499763-q4RgbQakiAJUCk6n5OOw",
+  "object": "chat.completion",
+  "created": 1793499763,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-5c0b691b-ff98-46ca-a50f-4e06a5e3cfe0",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\\n            cls = args[0]\\n            stack[-1] = cls.__new__(*args)\\n            return\\n        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\\n            cls = args[0]\\n            stack[-1] = NDArrayBacked.__new__(*args)\\n            return\",\"old\":\"        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\\n            cls = args[0]\\n            stack[-1] = cls.__new__(*args)\\n            return\\n        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\\n            cls = args[0]\\n            stack[-1] = NDArrayBacked.__new__(*args)\\n            return\\n        elif args and issubclass(args[0], PeriodArray):\\n            cls = args[0]\\n            stack[-1] = NDArrayBacked.__new__(*args)\\n            return\",\"path\":\"pandas/compat/pickle_compat.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 28009,
+    "completion_tokens": 323,
+    "total_tokens": 28332,
+    "cost": 0.00291072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 25376,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00291072,
+      "upstream_inference_prompt_cost": 0.0028009,
+      "upstream_inference_completions_cost": 0.00010982
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

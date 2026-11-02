@@ -1,0 +1,9 @@
+[
+  {
+    "end_line": 506,
+    "new": "                vals = state_dict[\"ext.mutable.values\"].get(key, [])\n                for val in vals:\n                    val._parents[state] = key",
+    "path": "sqlalchemy/ext/mutable.py",
+    "source_version": "b1421c9fd59154e063ac0d0a98dd2370cdb225043de93162d8691361fca728b2",
+    "start_line": 505
+  }
+]

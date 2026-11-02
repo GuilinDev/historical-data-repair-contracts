@@ -1,0 +1,9 @@
+[
+  {
+    "end_line": 0,
+    "new": "# This file is dual licensed under the terms of the Apache License, Version\n# 2.0, and the BSD License. See the LICENSE file in the root of this repository\n# for complete details.\n\nimport typing\n\n@typing.final\nclass InfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return False\n\n    def __le__(self, other: object) -> bool:\n        return False\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return True\n\n    def __ge__(self, other: object) -> bool:\n        return True\n\n    def __neg__(self: object) -> \"NegativeInfinityType\":\n        return NegativeInfinity\n\n\nInfinity = InfinityType()\n\n\n@typing.final\nclass NegativeInfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"-Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return True\n\n    def __le__(self, other: object) -> bool:\n        return True\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return False\n\n    def __ge__(self, other: object) -> bool:\n        return False\n\n    def __neg__(self: object) -> InfinityType:\n        return Infinity\n\n\nNegativeInfinity = NegativeInfinityType()\n",
+    "path": "packaging/_structures.py",
+    "start_line": 0,
+    "source_version": "new"
+  }
+]

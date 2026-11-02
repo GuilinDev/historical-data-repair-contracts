@@ -1,0 +1,250 @@
+{
+  "execution_status": "observed",
+  "passed": 4,
+  "n": 6,
+  "groups": {
+    "historical": {
+      "passed": 0,
+      "n": 2
+    },
+    "fresh_api": {
+      "passed": 2,
+      "n": 2
+    },
+    "current_roundtrip": {
+      "passed": 2,
+      "n": 2
+    }
+  },
+  "records": [
+    {
+      "id": "5b91226cc2ad",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "5b91226cc2ad",
+        "group": "historical",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "name": "alpha"
+          },
+          "payload_type": "MutableDict",
+          "dirty": false,
+          "session_modified": false,
+          "database_payload": {
+            "name": "alpha"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "ef5a4f0b4e5e",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "ef5a4f0b4e5e",
+        "group": "fresh_api",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "name": "alpha"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "first"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "02bddc217e51",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "02bddc217e51",
+        "group": "current_roundtrip",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "name": "alpha"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "first"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "a523f49721e3",
+      "group": "historical",
+      "initial_semantics_passed": false,
+      "restart_semantics_passed": true,
+      "passed": false,
+      "actual": {
+        "id": "a523f49721e3",
+        "group": "historical",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "label": "visible"
+          },
+          "payload_type": "MutableDict",
+          "dirty": false,
+          "session_modified": false,
+          "database_payload": {
+            "x": 17,
+            "label": "visible"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "a5090cddbbd3",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "a5090cddbbd3",
+        "group": "fresh_api",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "label": "visible"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "x": 17,
+            "continued": "first"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "e589bedacfe2",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "e589bedacfe2",
+        "group": "current_roundtrip",
+        "semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "label": "visible"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "x": 17,
+            "continued": "first"
+          }
+        },
+        "restart_semantics": {
+          "id": 1,
+          "payload": {
+            "x": 17,
+            "continued": "first"
+          },
+          "payload_type": "MutableDict",
+          "dirty": true,
+          "session_modified": true,
+          "database_payload": {
+            "continued": "second"
+          }
+        },
+        "status": "observed"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

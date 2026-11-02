@@ -1,0 +1,7 @@
+[
+  {
+    "new": "        def unpickle(state, state_dict):\n            if \"ext.mutable.values\" in state_dict:\n                values = state_dict[\"ext.mutable.values\"]\n                if isinstance(values, dict) and key in values:\n                    for val in values[key]:\n                        val._parents[state] = key",
+    "old": "        def unpickle(state, state_dict):\n            if \"ext.mutable.values\" in state_dict:\n                for val in state_dict[\"ext.mutable.values\"][key]:\n                    val._parents[state] = key",
+    "path": "sqlalchemy/ext/mutable.py"
+  }
+]

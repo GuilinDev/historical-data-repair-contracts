@@ -1,0 +1,7 @@
+[
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\n            cls = args[0]\n            stack[-1] = cls.__new__(*args)\n            return\n        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "old": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\n            cls = args[0]\n            stack[-1] = cls.__new__(*args)\n            return\n        elif args and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "path": "pandas/compat/pickle_compat.py"
+  }
+]

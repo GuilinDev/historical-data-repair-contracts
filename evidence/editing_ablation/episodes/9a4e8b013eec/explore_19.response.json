@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498465-StSPPKi4WEEqqnDj6Uyw",
+  "object": "chat.completion",
+  "created": 1793498465,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-6c5497f3-5f6c-4b53-87da-38a172d6ff0b",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            return {name: getattr(self, name) for name in state_attr_names}\\n\\n        hash_caching_enabled = self._cache_hash\\n\\n        def slots_setstate(self, state):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            __bound_setattr = _obj_setattr.__get__(self)\\n            if isinstance(state, tuple):\\n                for name, value in zip(state_attr_names, state):\\n                    __bound_setattr(name, value)\\n            else:\\n                for name in state_attr_names:\\n                    if name in state:\\n                        __bound_setattr(name, state[name])\\n\\n            # The hash code cache is not included when the object is\\n            # serialized, but it still needs to be initialized to None to\\n            # indicate that the first call to __hash__ should be a cache\\n            # miss.\\n            if hash_caching_enabled:\\n                __bound_setattr(_hash_cache_field, None)\\n\",\"old\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            # In 21.4.0, this returned a tuple.\\n            # To maintain compatibility with 21.4.0, we should check if the class\\n            # was created with a version that used tuples.\\n            # However, the contract says \\\"Repair the current library according to the exact historical-data contract\\\".\\n            # The historical artifact 119dbe50fb44 was produced by 21.4.0 and it uses a tuple for state.\\n            # The current implementation uses a dict.\\n            # We need to support both.\\n            return {name: getattr(self, name) for name in state_attr_names}\\n\\n        hash_caching_enabled = self._cache_hash\\n\\n        def slots_setstate(self, state):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            __bound_setattr = _obj_setattr.__get__(self)\\n            for name in state_attr_names:\\n                if name in state:\\n                    __bound_setattr(name, state[name])\\n\\n            # The hash code cache is not included when the object is\\n            # serialized, but it still needs to be initialized to None to\\n            # indicate that the first call to __hash__ should be a cache\\n            # miss.\\n            if hash_caching_enabled:\\n                __bound_setattr(_hash_cache_field, None)\\n\",\"path\":\"attr/_make.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16267,
+    "completion_tokens": 620,
+    "total_tokens": 16887,
+    "cost": 0.0018375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13984,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018375,
+      "upstream_inference_prompt_cost": 0.0016267,
+      "upstream_inference_completions_cost": 0.0002108
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

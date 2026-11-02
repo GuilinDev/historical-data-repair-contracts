@@ -1,0 +1,9 @@
+[
+  {
+    "end_line": 136,
+    "new": "class _BaseVersion:\n    __slots__ = ()\n    # To support loading Version objects from 25.0, we need to handle\n    # the case where they were pickled as _Version (NamedTuple).\n    # We can't easily change the class hierarchy for already pickled objects,\n    # but we can provide a way to handle the state.\n    pass\n",
+    "path": "packaging/version.py",
+    "source_version": "e177d74d2921f748d05b270d269c094f8741b39f5149556f24f79bdf4b355675",
+    "start_line": 135
+  }
+]

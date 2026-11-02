@@ -1,0 +1,63 @@
+{
+  "decision": "PASS",
+  "scope": "Pre-execution review of final descriptive analysis logic only; no real campaign outcomes read or analyzed.",
+  "plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "analysis_script_sha256": "7c25a73af2728ee106fbeb693966430d9cfc678a42683cd4696ebd5fea3449ad",
+  "must_fix_remaining": [],
+  "checks": [
+    "64 unique plan, summary, replay, policy and review-index IDs agree; summary metadata matches schedule.",
+    "Plan is bound to the independent protocol review; policy is bound to the plan and outcome-masked review index.",
+    "Candidate and diff hashes are rechecked.",
+    "Policy decisions must be exactly 64 with boolean compliance fields; each lineage has four attempts per arm.",
+    "Primary acceptance requires actual source change, authorized paths, complete frozen semantics and independent source-policy compliance.",
+    "Editing errors, successful edits, context stops and unchanged source are secondary outcomes, not success surrogates.",
+    "Archived request hashes and all ledger destinations are reconciled; reported response costs and conservative unknown-cost reservations are summed separately.",
+    "All stated completion/replay/asset/ledger gates must pass before the report is written."
+  ],
+  "synthetic_validation": {
+    "status": "PASS",
+    "data": "Artificial 64-row temporary fixture only; no model execution or real outcome access.",
+    "cases": [
+      "Artificial lower-edit-error arm correctly remains lower in accepted repairs.",
+      "Semantic pass without source change is rejected.",
+      "Policy-noncompliant and unauthorized source changes are rejected.",
+      "String boolean policy and duplicate policy decisions are rejected."
+    ]
+  },
+  "limitations": [
+    "This is descriptive analysis of eight selected known lineages; no significance or universal improvement claim.",
+    "Actual numeric results, source-policy decisions and archived cost evidence still require independent final audit after the campaign completes."
+  ],
+  "paid_calls_by_reviewer": 0,
+  "interim_effectiveness_analysis_performed": false,
+  "reviewed_prior_script_sha256": [
+    "448aecfdd15ab044079d2dbf97977fcbfa128d229d19e0ce25aa23873be5642a",
+    "258e50e27e8c922bb813baf052102e20c59e7bbc441f1008c3f9d8686e5746cd"
+  ],
+  "recovery_binding_revision_review": "PASS: checks the independently approved engineering recovery and binds its evidence before replay/analysis; original scientific scoring and outcome calculations are unchanged.",
+  "recovery02_chain_revision": {
+    "decision": "PASS",
+    "implementation_note": "At the parent agent request, this reviewer added read-only recovery-chain assertions to these downstream audit scripts; the frozen executor, model settings, scoring, and primary outcome formula were not changed.",
+    "checks": [
+      "Both recovery plans, independent approvals, script/test identities, snapshots and parent-chain hashes are verified.",
+      "All 53 precompleted episode files remain bound; recovery01 original 40 records and archives remain bound.",
+      "The interrupted snapshot is preserved; previous requests/results/checks remain unchanged, while tool/edit journals must retain their old prefixes and only add rounds 15 through 23.",
+      "The resumed final report must stay within the original 24-round limit.",
+      "Reconstructed seed and actual continuation payload hashes match event 1146; the seed is annotated not-sent and has no response.",
+      "Original ledger event prefix and unused conservative reservation remain unchanged.",
+      "All other previously completed campaign records remain equal; resumed candidate changes are assessed by ordinary replay and source review."
+    ],
+    "artificial_chain_validation": {
+      "passed": 6,
+      "cases": [
+        "Valid continuation accepted",
+        "Changed old tool output rejected",
+        "Repeated prior-round action rejected",
+        "Removed old cost reservation rejected",
+        "Changed initial prompt rejected",
+        "Omitted recovery02 declaration rejected"
+      ]
+    },
+    "actual_campaign_effects_analyzed": false
+  }
+}

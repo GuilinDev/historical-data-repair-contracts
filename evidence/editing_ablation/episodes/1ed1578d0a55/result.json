@@ -1,0 +1,39 @@
+{
+  "episode": "1ed1578d0a55",
+  "family": "sqlalchemy_mutable_8133",
+  "project": "sqlalchemy",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 2,
+  "block": 5,
+  "arm": "exact",
+  "condition": "ordinary",
+  "protocol_complete": true,
+  "answer": {
+    "report": "The issue was a regression in `sqlalchemy/ext/mutable.py` where the unpickling logic for mutable scalars was updated to expect a dictionary of values (`state_dict[\"ext.mutable.values\"][key]`), while historical artifacts from version 1.4.37 stored these values in a flat list. This resulted in a `TypeError: list indices must be integers or slices, not str` when loading legacy objects.\n\n### Changes\nI modified the `unpickle` inner function within `MutableBase._listen_on_attribute` in `sqlalchemy/ext/mutable.py`. The updated logic checks the type of the `ext.mutable.values` entry in the `state_dict`:\n- If it is a `list` (legacy 1.4.37 format), it iterates through the list and associates each value with the current attribute key.\n- If it is a `dict` (current 1.4.38+ format), it continues to use the key-based lookup.\n\nThis ensures that the `_parents` weak dictionary is correctly restored for mutable objects, allowing dirty tracking and commits to function as expected after unpickling.\n\n### Checks Performed\n- **Legacy Suite**: Ran the `legacy` check suite, which includes:\n    - `historical`: Verified that objects produced by 1.4.37 are now correctly read and processed (previously failed).\n    - `fresh_api`: Verified that new objects are handled correctly.\n    - `current_roundtrip`: Verified that objects pickled and unpickled within the current version remain consistent.\n- All 6 tests in the legacy suite passed after the patch.\n\n### Unresolved Work\nNone. The specific contract for reading 1.4.37 artifacts and preserving `MutableDict` state has been fulfilled."
+  },
+  "tool_actions": 13,
+  "applied_edit_count": 1,
+  "all_checks_passed": true,
+  "groups": {
+    "historical": {
+      "passed": 6,
+      "n": 6
+    },
+    "fresh_api": {
+      "passed": 6,
+      "n": 6
+    },
+    "current_roundtrip": {
+      "passed": 6,
+      "n": 6
+    }
+  },
+  "passed": 18,
+  "n": 18,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

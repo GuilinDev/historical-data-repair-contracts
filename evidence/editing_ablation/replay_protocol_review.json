@@ -1,0 +1,55 @@
+{
+  "decision": "PASS",
+  "scope": "Static pre-review of the API-free complete-campaign replay and outcome-masked source-review exporter. This is not a result/effectiveness review.",
+  "plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "replay_script_sha256": "f2ad2eccb9ad954e5c166b3658380ba4c6857daedc1d856677dac814bed912d8",
+  "must_fix_remaining": [],
+  "checks": [
+    "Refuses to begin without 64 complete planned outcomes; checks all unique IDs, order, and frozen row metadata.",
+    "Checks final-report protocol status and final tool consumption.",
+    "Binds all executed frozen scripts/tests, task/data plans, oracle and bundle; recorded remote snapshot is now explicitly hash-bound to the plan.",
+    "Verifies candidate manifests before and after replay; full acceptance, per-record decisions and observation counts are compared.",
+    "Each replay exception is retained and all remaining future statuses are collected.",
+    "Full-acceptance inconsistency, immutable-asset drift, ledger change or incompleteness enters a discrepancy-required state.",
+    "Source-review packet includes task contract, allowed paths, original task rules and frozen system. Its original IDs remain linkable, so outcome-masked is the accurate label."
+  ],
+  "limitations": [
+    "Actual replay has not been run by this reviewer; full campaign is still in progress.",
+    "Partial per-record drift may be nondeterministic and is reported for diagnosis; full-acceptance drift blocks a normal final-review-ready state.",
+    "Publication eligibility still requires completed full replay, independent source-policy review and full outcome/cost audit."
+  ],
+  "paid_calls_by_reviewer": 0,
+  "interim_effectiveness_analysis_performed": false,
+  "previous_reviewed_replay_script_sha256": "172bde930a219863449abb2da3fae3cf5bfcd20726a5b2ce6a0c079eeca4bf12",
+  "metadata_revision_review": "PASS: adding plan_sha256 and replay_script_sha256 to replay summary leaves replay/scoring semantics unchanged.",
+  "reviewed_prior_script_sha256": [
+    "bad1f93cce37e3ece5ad88dad0845f899269e8ba0d3215f6a15414c76f78f581",
+    "9d7e20b9b7ead1ff9983b5412ef33bde84b99888e79f9aadf6b67d1ee0ac9027"
+  ],
+  "recovery_binding_revision_review": "PASS: checks the independently approved engineering recovery and binds its evidence before replay/analysis; original scientific scoring and outcome calculations are unchanged.",
+  "recovery02_chain_revision": {
+    "decision": "PASS",
+    "implementation_note": "At the parent agent request, this reviewer added read-only recovery-chain assertions to these downstream audit scripts; the frozen executor, model settings, scoring, and primary outcome formula were not changed.",
+    "checks": [
+      "Both recovery plans, independent approvals, script/test identities, snapshots and parent-chain hashes are verified.",
+      "All 53 precompleted episode files remain bound; recovery01 original 40 records and archives remain bound.",
+      "The interrupted snapshot is preserved; previous requests/results/checks remain unchanged, while tool/edit journals must retain their old prefixes and only add rounds 15 through 23.",
+      "The resumed final report must stay within the original 24-round limit.",
+      "Reconstructed seed and actual continuation payload hashes match event 1146; the seed is annotated not-sent and has no response.",
+      "Original ledger event prefix and unused conservative reservation remain unchanged.",
+      "All other previously completed campaign records remain equal; resumed candidate changes are assessed by ordinary replay and source review."
+    ],
+    "artificial_chain_validation": {
+      "passed": 6,
+      "cases": [
+        "Valid continuation accepted",
+        "Changed old tool output rejected",
+        "Repeated prior-round action rejected",
+        "Removed old cost reservation rejected",
+        "Changed initial prompt rejected",
+        "Omitted recovery02 declaration rejected"
+      ]
+    },
+    "actual_campaign_effects_analyzed": false
+  }
+}

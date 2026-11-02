@@ -1,0 +1,8 @@
+{
+  "scope": "Clarification of frozen stage labels; no fixture, criterion, executable, or observed result changed",
+  "reissue_population": "37 records that the declared contract says should be accepted (17 historical, 20 fresh), regardless of a particular negative control's observed acceptance",
+  "initial_and_restart_population": "All 54 records, including 17 expected rejects",
+  "continuation_interpretation": "Separately tests candidate signing and fresh-process verification on the contract-eligible population; does not claim a negative control naturally reached reissue after refusing the original record",
+  "not_measured": ["Human reauthorization", "Approval UI", "Actual tool execution", "Full AI SDK message-processing pipeline"],
+  "counting": "54 dependent scenarios within one known defect; 42 unique original signatures. Repeated process observations are not independent defects or new model attempts."
+}

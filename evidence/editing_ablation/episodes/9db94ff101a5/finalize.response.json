@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793500404-7ew5Kz4PIpnyEHs9PqBK",
+  "object": "chat.completion",
+  "created": 1793500404,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `attrs` version 22.2 changed the generated `__getstate__` for slotted classes to return a dictionary instead of a tuple. However, the corresponding `__setstate__` was only updated to handle dictionaries, breaking compatibility with instances serialized by version 21.4 (which used tuples).\n\nI modified `attr/_make.py` in the `_ClassBuilder._make_getstate_setstate` method. Specifically, I updated the generated `slots_setstate` function to check the type of the `state` argument. If `state` is a dictionary, it continues to use the new key-based lookup; if it is a tuple or list, it falls back to the historical positional assignment using `zip(state_attr_names, state)`.\n\n**Changes:**\n- Updated `slots_setstate` in `attr/_make.py` to support both dictionary and tuple/list state representations.\n\n**Checks performed:**\n- Ran the `legacy` check suite, which includes:\n    - `historical`: Verified restoration of instances saved by version 21.4.0 (Passed).\n    - `fresh_api`: Verified current version serialization/deserialization (Passed).\n    - `current_roundtrip`: Verified round-trip consistency in the current version (Passed).\n\n**Unresolved work:**\n- None. All specified historical and current compatibility checks passed.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30685,
+    "completion_tokens": 300,
+    "total_tokens": 30985,
+    "cost": 0.0031705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0031705,
+      "upstream_inference_prompt_cost": 0.0030685,
+      "upstream_inference_completions_cost": 0.000102
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

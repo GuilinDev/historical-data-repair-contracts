@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499210-RGqzayETeMAIgFq1cm7M",
+  "object": "chat.completion",
+  "created": 1793499210,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the `unpickle` listener in `sqlalchemy/ext/mutable.py` to support historical data produced by SQLAlchemy 1.4.37.\n\n### Changes\nThe `unpickle` function was updated to handle two different serialization formats for the `\"ext.mutable.values\"` state entry:\n1.  **Legacy Format (1.4.37):** A simple list of mutable values. The fix now detects if the value is a `list` and iterates through it to re-establish parent associations.\n2.  **New Format (1.4.38+):** A dictionary mapping attribute keys to lists of values. The fix continues to support this by using `.get(key, [])`.\n\nThis ensures that `MutableDict` (and other mutable types) correctly restore their `_parents` weak dictionary, allowing the ORM to track in-place mutations and trigger necessary database commits.\n\n### Checks Performed\n- **`run_checks(suite=\"legacy\")`**: Verified that historical artifacts produced by 1.4.37 now load without `TypeError` and maintain correct semantics (passed 6/6).\n- **`run_checks(suite=\"current\")`**: Verified that the change did not regress current 1.4.38 behavior or round-trip serialization (passed 4/4).\n- **Source Analysis**: Compared `sqlalchemy/ext/mutable.py` between versions 1.4.37 and 1.4.38 to identify the exact change in the `pickle`/`unpickle` logic.\n\n### Unresolved Work\nNone. All specified historical and current test cases passed.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27461,
+    "completion_tokens": 349,
+    "total_tokens": 27810,
+    "cost": 0.00286476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00286476,
+      "upstream_inference_prompt_cost": 0.0027461,
+      "upstream_inference_completions_cost": 0.00011866
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

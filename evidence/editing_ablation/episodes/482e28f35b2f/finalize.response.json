@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793502924-0RipU5AgseeiMD8zMEe8",
+  "object": "chat.completion",
+  "created": 1793502924,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired `jsonpickle/ext/pandas.py` to correctly handle the decoding of legacy (v3.3.0) pandas DataFrames stored as CSV-in-JSON.\n\n### Changes Made:\n1.  **`PandasDfHandler.restore`**: Moved the detection of legacy DataFrames (checking for the absence of `dtypes_rle` in metadata) to the beginning of the method. This prevents the library from attempting to `decode` the `values` field as a jsonpickle object when it is actually a raw CSV string, which previously caused a `JSONDecodeError`.\n2.  **`PandasDfHandler.restore`**: Restored the missing `type_codes = rle_decode(meta[\"dtypes_rle\"])` call that was accidentally removed during the logic reorganization, ensuring current RLE-based DataFrames still decode correctly.\n3.  **`PandasDfHandler.restore_v3_3`**: Updated the check for empty data from `data[\"values\"].strip()` to `data.get(\"values\", \"\").strip()` to prevent potential `KeyError` exceptions.\n\n### Checks Performed:\n-   **`run_checks(suite=\"legacy\")`**: Verified that historical artifacts from producer 3.3.0 (including those with quotes, commas, and newlines in text columns) now decode correctly.\n-   **`run_checks(suite=\"current\")`**: Verified that the current API and round-trip serialization for modern DataFrames remain intact.\n-   **Manual Source Review**: Compared the current implementation against the historical 3.3.0 source to ensure the `restore_v3_3` logic accurately mirrors the original producer's intent.\n\n### Unresolved Work:\nNone. All specified historical and current test cases passed.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24139,
+    "completion_tokens": 381,
+    "total_tokens": 24520,
+    "cost": 0.00254344,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00254344,
+      "upstream_inference_prompt_cost": 0.0024139,
+      "upstream_inference_completions_cost": 0.00012954
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

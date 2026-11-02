@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499887-Jql0MO4vEkA110QKPPyO",
+  "object": "chat.completion",
+  "created": 1793499887,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-37be51f1-eb3c-4524-b5f5-c10980bfbf21",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            if self._cache_hash:\\n                return {name: getattr(self, name) for name in state_attr_names}\\n            return tuple(getattr(self, name) for name in state_attr_names)\",\"old\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            return {name: getattr(self, name) for name in state_attr_names}\",\"path\":\"attr/_make.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25500,
+    "completion_tokens": 149,
+    "total_tokens": 25649,
+    "cost": 0.00260066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 20384,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00260066,
+      "upstream_inference_prompt_cost": 0.00255,
+      "upstream_inference_completions_cost": 5.066e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

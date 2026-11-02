@@ -1,0 +1,4 @@
+{
+  "policy": "Repeated candidate tar containers are omitted. Original archive SHA and every member SHA are retained. Final candidates reconstruct exactly from the existing base plus the published overlay; public intermediate edit transcripts permit inspecting earlier source states. No model output, score or attempted repair is selected out.",
+  "archives": []
+}

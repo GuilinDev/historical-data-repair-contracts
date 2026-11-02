@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499681-JMANuo70hebM8nrdnTDC",
+  "object": "chat.completion",
+  "created": 1793499681,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I have analyzed the issue where `attrs` 22.2 fails to restore slotted class instances saved by 21.4. The failure manifests as an `AttributeError` during unpickling because the state restoration logic in the current version does not correctly handle the tuple-based state produced by the historical version for slotted classes.\n\nSpecifically, the historical version (21.4.0) used a `__getstate__` that returned a tuple of attribute values for slotted classes. The current version's `__setstate__` (and the `slots_setstate` helper) expects a state that can be zipped with `__slots__`, but there is a discrepancy in how the state is handled or how the class is initialized during the unpickling process in the new version.\n\nHowever, I was unable to locate the exact `s` decorator definition (which is the primary entry point for `attrs` classes) in the provided `attr/_make.py` source using the search tools, although `attrs()` was found. I also observed that `_Nothing` was changed from a custom singleton class to an `enum.Enum` in 22.2, which might affect the restoration of default values if they were `NOTHING`.\n\nDue to the complexity of the `attrs` internal class generation and the inability to find the `s` alias in the provided source snippets, I could not implement a general fix that preserves all constraints (frozen behavior, cache-hash, and dictionary state) without risking regressions in the current version's behavior.\n\n**Changes:** None.\n**Checks ran:** `run_checks` (legacy suite), which confirmed the failure of the historical artifact `119dbe50fb44`.\n**Unresolved:** The restoration of slotted instances from 21.4.0 to 22.2 remains broken.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14569,
+    "completion_tokens": 390,
+    "total_tokens": 14959,
+    "cost": 0.0015895,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015895,
+      "upstream_inference_prompt_cost": 0.0014569,
+      "upstream_inference_completions_cost": 0.0001326
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

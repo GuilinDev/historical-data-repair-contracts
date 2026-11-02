@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793500451-ByjbGwuR9frOoodJmJQK",
+  "object": "chat.completion",
+  "created": 1793500451,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-c0708ab2-9219-48af-b16d-736280df4de6",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":0,\"new\":\"# This file is dual licensed under the terms of the Apache License, Version\\n# 2.0, and the BSD License. See the LICENSE file in the root of this repository\\n# for complete details.\\n\\nimport typing\\n\\n@typing.final\\nclass InfinityType:\\n    __slots__ = ()\\n\\n    def __repr__(self) -> str:\\n        return \\\"Infinity\\\"\\n\\n    def __hash__(self) -> int:\\n        return hash(repr(self))\\n\\n    def __lt__(self, other: object) -> bool:\\n        return False\\n\\n    def __le__(self, other: object) -> bool:\\n        return False\\n\\n    def __eq__(self, other: object) -> bool:\\n        return isinstance(other, self.__class__)\\n\\n    def __gt__(self, other: object) -> bool:\\n        return True\\n\\n    def __ge__(self, other: object) -> bool:\\n        return True\\n\\n    def __neg__(self: object) -> \\\"NegativeInfinityType\\\":\\n        return NegativeInfinity\\n\\nInfinity = InfinityType()\\n\\n@typing.final\\nclass NegativeInfinityType:\\n    __slots__ = ()\\n\\n    def __repr__(self) -> str:\\n        return \\\"-Infinity\\\"\\n\\n    def __hash__(self) -> int:\\n        return hash(repr(self))\\n\\n    def __lt__(self, other: object) -> bool:\\n        return True\\n\\n    def __le__(self, other: object) -> bool:\\n        return True\\n\\n    def __eq__(self, other: object) -> bool:\\n        return isinstance(other, self.__class__)\\n\\n    def __gt__(self, other: object) -> bool:\\n        return False\\n\\n    def __ge__(self, other: object) -> bool:\\n        return False\\n\\n    def __neg__(self: object) -> InfinityType:\\n        return Infinity\\n\\nNegativeInfinity = NegativeInfinityType()\\n\",\"path\":\"packaging/_structures.py\",\"source_version\":\"new\",\"start_line\":0}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18638,
+    "completion_tokens": 462,
+    "total_tokens": 19100,
+    "cost": 0.00202088,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 16480,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00202088,
+      "upstream_inference_prompt_cost": 0.0018638,
+      "upstream_inference_completions_cost": 0.00015708
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

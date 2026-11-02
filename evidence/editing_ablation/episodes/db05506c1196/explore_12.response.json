@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498634-50pU5cBPKPG8ytiMKqOy",
+  "object": "chat.completion",
+  "created": 1793498634,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-75d81296-1c71-4e9a-b431-d888e5447924",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # Detect byte order mismatch and swap as needed.\\n        # If the array is memmapped and we are in 'r+' mode, we cannot use\\n        # byteswap() because it creates a copy. Instead, we must use a view\\n        # with the correct byte order.\\n        if (unpickler.mmap_mode == 'r+' and\\n                _is_numpy_array_byte_order_mismatch(marray)):\\n            return marray.view(marray.dtype.newbyteorder('='))\\n        return _ensure_native_byte_order(marray)\",\"old\":\"        return _ensure_native_byte_order(marray)\",\"path\":\"joblib/numpy_pickle.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 26802,
+    "completion_tokens": 181,
+    "total_tokens": 26983,
+    "cost": 0.00274174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 20288,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00274174,
+      "upstream_inference_prompt_cost": 0.0026802,
+      "upstream_inference_completions_cost": 6.154e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

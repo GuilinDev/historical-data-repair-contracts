@@ -1,0 +1,60 @@
+[
+  {
+    "a": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record\narchive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "b": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\ninspect_record",
+      "toolName": "archive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "old_signature": "6PJ8BEieUy_KiSUpxkmRHu6damv-70KzjBUcsNFPKTU",
+    "old_signatures_equal": true,
+    "new_signatures_equal": false
+  },
+  {
+    "a": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\nextra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "b": {
+      "approvalId": "approval_alpha\ncall_alpha",
+      "toolCallId": "extra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "old_signature": "u9TgmoMtS8Aq-8XswCCjgRn79C9HkY14HnoIz36xU-Y",
+    "old_signatures_equal": true,
+    "new_signatures_equal": false
+  }
+]

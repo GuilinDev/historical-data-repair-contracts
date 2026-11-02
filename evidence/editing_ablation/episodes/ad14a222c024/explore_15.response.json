@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793501075-GhBvQqaQLhISRgFvDPD0",
+  "object": "chat.completion",
+  "created": 1793501075,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-8e8b53a4-13aa-43e3-9ac2-55bd92d9538d",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        # apply dtypes\\n        for col in df.columns:\\n            dtype_str = dtypes.get(col, \\\"object\\\")\\n            try:\\n                if dtype_str.startswith(\\\"pd/\\\"):\\n                    # Handle legacy tags without explicit width\\n                    tag = dtype_str[3:]\\n                    if tag == \\\"i\\\":\\n                        dtype = \\\"int64\\\"\\n                    elif tag == \\\"u\\\":\\n                        dtype = \\\"uint64\\\"\\n                    elif tag == \\\"f\\\":\\n                        dtype = \\\"float64\\\"\\n                    elif tag == \\\"in\\\":\\n                        dtype = \\\"int64\\\"\\n                    else:\\n                        # Fallback to numpy dtype if it's not one of the generic legacy tags\\n                        # but still starts with pd/ (e.g., pd/i8)\\n                        # We need to find the original numpy dtype name.\\n                        # REVERSE_TYPE_MAP is used to get the original name.\\n                        dtype = REVERSE_TYPE_MAP.get(dtype_str, \\\"object\\\")\\n                else:\\n                    dtype = dtype_str\\n                \\n                df[col] = df[col].astype(dtype)\\n            except Exception:\\n                msg = (\\n                    f\\\"jsonpickle was unable to properly deserialize \\\"\\n                    f\\\"the column {col} into its inferred dtype. \\\"\\n                    f\\\"Please file a bugreport on the jsonpickle GitHub! \\\"\\n                )\\n                warnings.warn(msg)\",\"old\":\"        # apply dtypes\\n        for col in df.columns:\\n            dtype_str = dtypes.get(col, \\\"object\\\")\\n            try:\\n                dtype = np.dtype(dtype_str)\\n                df[col] = df[col].astype(dtype)\\n            except Exception:\\n                msg = (\\n                    f\\\"jsonpickle was unable to properly deserialize \\\"\\n                    f\\\"the column {col} into its inferred dtype. \\\"\\n                    f\\\"Please file a bugreport on the jsonpickle GitHub! \\\"\\n                )\\n                warnings.warn(msg)\",\"path\":\"jsonpickle/ext/pandas.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 40637,
+    "completion_tokens": 479,
+    "total_tokens": 41116,
+    "cost": 0.00422656,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 38368,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00422656,
+      "upstream_inference_prompt_cost": 0.0040637,
+      "upstream_inference_completions_cost": 0.00016286
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

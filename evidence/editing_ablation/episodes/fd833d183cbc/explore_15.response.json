@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498538-6ozn3uXFpH3oPe6kk1ez",
+  "object": "chat.completion",
+  "created": 1793498538,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-5c7ff91b-3c37-4604-b7c5-39720054f287",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":232,\"new\":\"        return marray\",\"path\":\"joblib/numpy_pickle.py\",\"source_version\":\"e7f2fb11b3e0f784f789238311d922909363ff3daabe96586867a2f4794c0565\",\"start_line\":232}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31355,
+    "completion_tokens": 118,
+    "total_tokens": 31473,
+    "cost": 0.00317562,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 21920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00317562,
+      "upstream_inference_prompt_cost": 0.0031355,
+      "upstream_inference_completions_cost": 4.012e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,4 +1,4 @@
-Historical Data Compatibility Repair Resource v0.1.1
+Historical Data Compatibility Repair Resource v0.1.2
 ====================================================
 
 Eight localized repair tasks from six Python projects, with immutable artifacts
@@ -8,14 +8,81 @@ contract. There are 65 distinct historical files and 252 dependent observations,
 not 252 independent bugs. This resource does not claim a new upgrade-testing
 algorithm or stronger discrimination than authentic upstream regression tests.
 
-Quick start (free verification)
-------------------------------
+New in v0.1.2: complete evidence, including the negative result
+-------------------------------------------------------------
+
+The original eight tasks, 65 historical files, 252 observations and 32-attempt
+baseline remain unchanged. A separate 64-attempt controlled comparison uses
+Gemma 4 31B through OpenRouter, CoreWeave FP4 pinned, fallback disabled.
+Exact-text editing passes 10/32; the version-checked span package passes 4/32.
+All 64 attempts finish and are independently audited. All complete-acceptance
+decisions survive replay; four rejected dtype attempts change partial observations.
+This is a negative result for the tested package, not a universal editor ranking.
+
+A separate known Vercel AI SDK signature defect supplies 54 related scenarios.
+The pre-fix implementation satisfies 29/54, the upstream fix 54/54, and three
+authored negative controls 37/54, 49/54, 33/54. These are not new model tasks or
+independent bugs. The 37 reissue cases are contract-eligible records, not the
+records actually accepted by every control. Restart adds no scenario rejection.
+
+Free static checks (Python 3.10+, any OS; no Docker, SSH or model key)::
+
+    python3 compat.py integrity
+    python3 reproduce_main.py --records-only
+    python3 reproduce_ablation.py --records-only
+    python3 reproduce_approval.py --records-only
+    python3 paper/verify_numbers.py
+
+Fresh execution of all 64 new patches (qualified Linux ARM64 with Docker)::
+
+    python3 compat.py bootstrap --pull
+    python3 reproduce_ablation.py --output results/new64-check
+
+Fresh signature-layer execution (Node 22.22.3 or 24.22.1 qualified; no npm install)::
+
+    python3 reproduce_approval.py --output results/approval-check
+
+The last command uses an unchanged frozen Node runner in a new workspace and
+compares every semantic artifact. A separate Python HMAC/expected-label checker
+verifies all 725 observations. No tool is actually invoked and no live secret is used.
+
+Evidence navigation and identity
+-------------------------------
+
+evidence/editing_ablation/ contains every attempt, request, response, tool return,
+source overlay, observation, replay and independent review. Original and exported
+file hashes, plus original/exported serialized request hashes, are distinct in
+export_manifest.json. Redacted private bytes cannot be reconstructed from that
+attestation. Candidate source bytes are exact. Duplicate tar containers are
+replaced by base-plus-overlay reconstruction and a member-level SHA inventory in
+archived_omissions.json; no failed attempt or observation is omitted.
+
+Both engineering recoveries are retained: completed new-file metadata was repaired,
+then an identical partial request resumed after a pre-network ledger-write failure.
+No extra model rounds were added. 1380 response receipts report US$2.56366118;
+one known-unsent reservation of US$0.0091774 remains conservatively counted,
+giving US$2.57283858 against the authorized US$10 cap. The old budget is separate.
+
+Historical summary fields such as full_replay_complete=false or
+independent_review='pending' preserve the state when written. Final status comes
+from final_independent_audit.json, replay/summary.json, source_review/ and the
+portable verify_new_evidence.py check, not a rewritten historical receipt.
+
+extensions/approval_signature/ includes the 54 fixtures, all five implementations,
+pinned upstream source/license, observations and independent audit. Frozen research
+scripts are provenance, not portable author-machine commands; use the root entry
+points above. The original attempt figure and complete v0.1.1 paper are retained
+under supplement/v0.1.1_paper/. Current publication reviews are in
+evidence/independent_review/v012/.
+
+Original resource commands (also available)
+------------------------------------------
 
 Static integrity, saved-record and paper-number checks need Python 3.10+;
 they do not require Docker or ARM64. All 65 historical files are released;
 48 were withheld from the agent during repair only. To execute repair behavior,
-use a native Linux ARM64 machine with a working local Docker installation. The tested runtime is CPython3.10.20 with NumPy1.26.4 and
-pandas2.1.4. Native candidate binaries are ARM64. Other architectures have not
+use a native Linux ARM64 machine with a working local Docker installation. The tested runtime is CPython 3.10.20 with NumPy 1.26.4 and
+pandas 2.1.4. Native candidate binaries are ARM64. Other architectures have not
 been qualified. From this directory::
 
     python3 compat.py integrity
@@ -36,8 +103,8 @@ Reproduce the two valid policies and the incorrect nearby policy::
 
     python3 reproduce_multisolution.py --output results/multisolution-check
 
-The expected admissible counts are 84/84,84/84,0/84; literal reference equality
-gives 84/84,24/84,0/84. This is a constructed calibration on one lineage. The 60
+The expected admissible counts are 84/84, 84/84, 0/84; literal reference equality
+gives 84/84, 24/84, 0/84. This is a constructed calibration on one lineage. The 60
 different observation rows reuse five historical files in twelve processes;
 they are not 60 bugs, a natural failure frequency, or additional Gemma attempts.
 The comparator is literal fixed-reader equality, not authentic upstream tests.
@@ -86,15 +153,16 @@ Resource and result identities
   redacted. Original study evidence remains archived by the authors.
 
 Use the top-level integrity manifest as the identity of this distribution.
-Installed bytecode and installer lock files have been omitted from source copies;
-their exclusion is recorded rather than represented as unchanged package bytes.
+Installed bytecode is excluded. Version 0.1.2 restores the 11 explicitly hashed
+zero-byte installer lock files omitted by v0.1.1, permitting exact new-campaign
+candidate-tree reconstruction; see provenance/v012_bundle_restoration.json.
 Historical producer folders are explanatory source, not complete installations.
 Frozen generated bytes are provided for exact benchmark replay. Fresh artifact
 generation can vary with producer process ordering; it is a new sample.
 
 The jsonpickle dtype task deliberately permits value/kind-preserving widening
 only for declared historical numeric positions without explicit width suffixes.
-Explicit legacy widths and newly written widths remain exact. A recorded267-byte
+Explicit legacy widths and newly written widths remain exact. A recorded 267-byte
 float32/float64 collision motivates this admissibility boundary. Twelve fresh
 reader trials reuse six historical files; trials of public bytes remain public
 bytes. SQL covers one MutableDict property; CSV covers text/object frames.
@@ -102,7 +170,7 @@ bytes. SQL covers one MutableDict property; CSV covers text/object frames.
 Model reruns (optional and paid)
 -------------------------------
 
-The released outcomes come from two pinned Gemma deployments under one frozen
+The original 32-attempt baseline comes from two pinned Gemma deployments under one frozen
 bounded protocol. They differ in provider and precision as well as model size.
 The first four task lineages were development-exposed; four were introduced for
 the main run. No clean pretraining holdout or size-causal inference is claimed.
@@ -121,7 +189,7 @@ provider with fallback disabled and explicit price limits. Missing/failed cost
 receipts retain conservative reservations. A pre-existing run ledger cannot be
 silently reset. Calls stop at the budget bound; an insufficient budget can leave
 attempts incomplete, which is an execution outcome, not scientific repair failure.
-The protocol allows24 exploration rounds, a120KB exploration-context stop,
+The protocol allows 24 exploration rounds, a 120KB exploration-context stop,
 24KB shown-tool truncation, marked context compaction and a reserved final report.
 Full raw tool returns and actual request contexts are retained. Model reruns are
 stochastic and do not replace the published measurements.
@@ -145,12 +213,12 @@ can inspect released private-to-agent data outside the tool interface.
 Two tasks share joblib and two share jsonpickle. Artifacts, checks and model
 conversations are dependent, and historical fixes may be memorized. All empirical
 claims must use complete attempts and distinguish protocol, runtime, semantics
-and source-policy acceptance. The separate12-attempt development comparison
-observed the same2 accepts under genuine upstream tests and lifecycle checks;
+and source-policy acceptance. The separate 12-attempt development comparison
+observed the same 2 accepts under genuine upstream tests and lifecycle checks;
 there was no additional complete-patch rejection.
 
 Original task definitions, verifier and documentation are prepared under Apache
-License2.0. Third-party package/source/reference code retains its own license;
+License 2.0. Third-party package/source/reference code retains its own license;
 see LICENSE, NOTICE and provenance/licenses. No model weights are distributed.
 Author: Guilin Zhang. Source, data, paper and versioned download:
 https://github.com/GuilinDev/historical-data-repair-contracts
@@ -161,8 +229,8 @@ Manuscript source and numeric checks
 
 The paper/ directory includes the supplied PDF, audited structured content,
 BibTeX, text with versioned public figure links, and a portable renderer. Three vector
-figures and one complete resource/control/result table accompany the manuscript.
-The bibliography has fifteen research/model/upstream/tool-documentation sources;
+figures and two complete resource/control/result tables accompany the manuscript.
+The bibliography has seventeen research/model/upstream/tool-documentation sources;
 figure software is acknowledged separately. Figure data, generation code and alt text are included; see
 paper/FIGURES.rst. Check manuscript
 counts against the result records without Docker or API access::
@@ -174,12 +242,12 @@ To regenerate document layout (optional; separate from evaluation dependencies):
     python3 -m pip install -r paper/requirements-paper.txt
     python3 paper/render.py --output ./manuscript-rerender.pdf
 
-This renderer uses standard Times fonts. The supplied PDF uses embedded Times
-New Roman, so content is fixed but pagination/PDF bytes need not be identical.
+This renderer uses standard Times fonts. The supplied v0.1.2 PDF also uses standard Times body fonts and embedded vector-figure fonts.
+Content is fixed but rendering-library changes can change pagination or PDF bytes.
 
 
-Source-linked clarity diagnostics
---------------------------------
+Historical v0.1.1 clarity diagnostics
+------------------------------------
 
 The manuscript defines a defect lineage and distinguishes historical files,
 fresh API construction and current-format roundtrips from temporal stages. Its
@@ -194,8 +262,8 @@ are not represented as byte-identical originals. The round indices are zero-base
 No new paid experiment was run for this revision.
 
 
-Publication revision
---------------------
+Historical v0.1.1 publication revision
+-------------------------------------
 
 The signed manuscript includes a resource card, official tool-interface context,
 same-document ambiguity wording and three concluding takeaways. Final reviews

@@ -1,0 +1,20 @@
+test_crash_reservation_survives_reconstruction (test_ablation_api_client.BudgetTests.test_crash_reservation_survives_reconstruction) ... ok
+test_final_detected_without_tool_choice (test_ablation_api_client.BudgetTests.test_final_detected_without_tool_choice) ... ok
+test_hard_cap_blocks_network_and_protects_future_finals (test_ablation_api_client.BudgetTests.test_hard_cap_blocks_network_and_protects_future_finals) ... ok
+test_missing_cost_retains_conservative_reservation (test_ablation_api_client.BudgetTests.test_missing_cost_retains_conservative_reservation) ... ok
+test_nonfinite_cost_does_not_disable_budget (test_ablation_api_client.BudgetTests.test_nonfinite_cost_does_not_disable_budget) ... ok
+test_provider_mismatch_and_excess_charge_stop (test_ablation_api_client.BudgetTests.test_provider_mismatch_and_excess_charge_stop) ... ok
+test_reservation_is_durable_before_transport (test_ablation_api_client.BudgetTests.test_reservation_is_durable_before_transport) ... ok
+test_transport_retries_retained_and_errors_redacted (test_ablation_api_client.BudgetTests.test_transport_retries_retained_and_errors_redacted) ... ok
+test_atomic_across_files_and_syntax_failure (test_editing_ablation_tools.EditorTests.test_atomic_across_files_and_syntax_failure) ... ok
+test_bounds_overlap_and_unauthorized_paths (test_editing_ablation_tools.EditorTests.test_bounds_overlap_and_unauthorized_paths) ... ok
+test_duplicate_occurrence_selected_by_line (test_editing_ablation_tools.EditorTests.test_duplicate_occurrence_selected_by_line) ... ok
+test_multiple_spans_use_original_coordinates (test_editing_ablation_tools.EditorTests.test_multiple_spans_use_original_coordinates) ... ok
+test_new_file_and_existing_file_guard (test_editing_ablation_tools.EditorTests.test_new_file_and_existing_file_guard) ... ok
+test_read_visibility_identical_and_exact_guard_preserved (test_editing_ablation_tools.EditorTests.test_read_visibility_identical_and_exact_guard_preserved) ... ok
+test_stale_version_rejected_without_changes (test_editing_ablation_tools.EditorTests.test_stale_version_rejected_without_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.184s
+
+OK

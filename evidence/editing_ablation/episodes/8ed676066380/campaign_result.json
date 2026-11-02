@@ -1,0 +1,15 @@
+{
+  "episode": "8ed676066380",
+  "family": "packaging_version_1163",
+  "project": "packaging",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 3,
+  "block": 19,
+  "arm": "span",
+  "condition": "ordinary",
+  "protocol_complete": false,
+  "execution_status": "engineering_error",
+  "budget_truncated": false,
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '<project>\\\\results\\\\resource\\\\20261030T212309\\\\bundle\\\\packages\\\\packaging_version_1163\\\\base\\\\packaging\\\\_structures.py'"
+}

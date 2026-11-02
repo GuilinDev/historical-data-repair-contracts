@@ -1,0 +1,17 @@
+[
+  {
+    "new": "        df = (\n            pd.read_csv(StringIO(csv), **params)\n            if data.get(\"values\") and data[\"values\"].strip()\n            else pd.DataFrame()\n        )",
+    "old": "        df = (\n            pd.read_csv(StringIO(csv), **params)\n            if data[\"values\"].strip()\n            else pd.DataFrame()\n        )",
+    "path": "jsonpickle/ext/pandas.py"
+  },
+  {
+    "new": "        data_encoded, meta = self.pp.restore_pandas(obj)",
+    "old": "        data_encoded, meta = self.pp.restore_pandas(obj)",
+    "path": "jsonpickle/ext/pandas.py"
+  },
+  {
+    "new": "    def restore(self, obj):\n        if isinstance(obj, dict) and obj.get('py/object') == 'pandas.core.frame.DataFrame':\n            # This is a v3.3.0 style DataFrame\n            data_encoded, meta = self.pp.restore_pandas(obj)\n            return self.restore_v3_3(obj)\n        \n        data_encoded, meta = self.pp.restore_pandas(obj)\n        data_columns = decode(data_encoded, keys=True)\n        # ... (rest of the method)\n",
+    "old": "    def restore(self, obj):\n        data_encoded, meta = self.pp.restore_pandas(obj)\n\n        data_columns = decode(data_encoded, keys=True)",
+    "path": "jsonpickle/ext/pandas.py"
+  }
+]

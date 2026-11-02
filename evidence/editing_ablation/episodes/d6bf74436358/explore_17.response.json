@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502589-L9xuAtR02tt50gQwUZ6g",
+  "object": "chat.completion",
+  "created": 1793502589,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-d985a611-67f6-4abb-b515-79a118c5944f",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":377,\"new\":\"    __slots__ = (\\n        \\\\\\\"_dev\\\\\\\",\\n        \\\\\\\"_epoch\\\\\\\",\\n        \\\\\\\"_hash_cache\\\\\\\",\\n        \\\\\\\"_key_cache\\\\\\\",\\n        \\\\\\\"_local\\\\\\\",\\n        \\\\\\\"_post\\\\\\\",\\n        \\\\\\\"_pre\\\\\\\",\\n        \\\\\\\"_release\\\\\\\",\\n    )\\n    __match_args__ = (\\\\\\\"_str\\\\\\\",)\\n    \\\\\\\"\\\\\\\"\\\\\\\"\\n    Pattern matching is supported on Python 3.10+.\\n\\n    .. versionadded:: 26.0\\n\\n    :meta hide-value:\\n    \\\\\\\"\\\\\\\"\\\\\\\"\\n\\n    def __getstate__(self) -> dict[str, Any]:\\n        return {\\n            \\\\\\\"_epoch\\\\\\\": self._epoch,\\n            \\\\\\\"_release\\\\\\\": self._release,\\n            \\\\\\\"_dev\\\\\\\": self._dev,\\n            \\\\\\\"_pre\\\\\\\": self._pre,\\n            \\\\\\\"_post\\\\\\\": self._post,\\n            \\\\\\\"_local\\\\\\\": self._local,\\n        }\\n\\n    def __setstate__(self, state: dict[str, Any]) -> None:\\n        self._epoch = state.get(\\\\\\\"_epoch\\\\\\\", 0)\\n        self._release = state.get(\\\\\\\"_release\\\\\\\", ())\\n        self._dev = state.get(\\\\\\\"_dev\\\\\\\")\\n        self._pre = state.get(\\\\\\\"_pre\\\\\\\")\\n        self._post = state.get(\\\\\\\"_post\\\\\\\")\\n        self._local = state.get(\\\\\\\"_local\\\\\\\")\\n        self._key_cache = None\\n        self._hash_cache = None\\n\",\"path\":\"packaging/version.py\",\"source_version\":\"83dc7336af330d5fef446e5d74fb29d8a1a75df577a3ad1aeb50b919125a1b25\",\"start_line\":368}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25465,
+    "completion_tokens": 430,
+    "total_tokens": 25895,
+    "cost": 0.0026927,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 20960,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0026927,
+      "upstream_inference_prompt_cost": 0.0025465,
+      "upstream_inference_completions_cost": 0.0001462
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

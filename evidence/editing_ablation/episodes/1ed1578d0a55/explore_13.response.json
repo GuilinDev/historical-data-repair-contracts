@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498912-DYBJrW64J50f6zKr7NSZ",
+  "object": "chat.completion",
+  "created": 1793498912,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was caused by a change in how `sqlalchemy.ext.mutable` handled the pickling and unpickling of mutable scalar values between versions 1.4.37 and 1.4.38. In version 1.4.37, the `pickle` function stored mutable values in a simple list under the key `\"ext.mutable.values\"`, whereas version 1.4.38 changed this to a dictionary mapping attribute keys to lists of values. This caused a `TypeError` when attempting to unpickle objects produced by version 1.4.37, as the code expected a dictionary and attempted to access it using the attribute key.\n\nI repaired the `unpickle` function in `sqlalchemy/ext/mutable.py` to detect whether the stored values are in the legacy list format or the new dictionary format. If a list is encountered, it iterates through all values and associates them with the current attribute key, maintaining compatibility with the 1.4.37 producer's behavior.\n\n```python\n# Fixed unpickle implementation in sqlalchemy/ext/mutable.py\ndef unpickle(state, state_dict):\n    if \"ext.mutable.values\" in state_dict:\n        values = state_dict[\"ext.mutable.values\"]\n        if isinstance(values, list):\n            # Handle legacy 1.4.37 format where values was a list\n            for val in values:\n                val._parents[state] = key\n        elif isinstance(values, dict):\n            # Handle 1.4.38+ format where values is a dict\n            for val in values[key]:\n                val._parents[state] = key\n```\n\nThis fix ensures that ORM objects produced by SQLAlchemy 1.4.37 can be correctly read by 1.4.38, preserving the state of `MutableDict` properties and their associated dirty tracking.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30810,
+    "completion_tokens": 409,
+    "total_tokens": 31219,
+    "cost": 0.00322006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 30176,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00322006,
+      "upstream_inference_prompt_cost": 0.003081,
+      "upstream_inference_completions_cost": 0.00013906
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

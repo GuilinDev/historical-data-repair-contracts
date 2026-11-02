@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499802-nrV45IsRHnUZ8WmjwyVM",
+  "object": "chat.completion",
+  "created": 1793499802,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was caused by changes in the `new_block` function signature and the `Unpickler`'s handling of certain types during the deserialization of DataFrames saved with pandas 1.3.5. Specifically, historical pickles passed a `slice` object as the `placement` argument to `new_block`, whereas the current implementation expects a `BlockPlacement` object. Additionally, the `Unpickler` in `pandas/compat/pickle_compat.py` had a bug where it attempted to call `issubclass` on objects that were not necessarily classes, leading to `TypeError`.\n\nI repaired this by:\n1.  Updating `pandas/compat/pickle_compat.py` to ensure that `issubclass` is only called when the first argument is indeed a type.\n2.  Modifying `pandas/core/internals/blocks.py`'s `new_block` function to automatically convert the `placement` argument to a `BlockPlacement` object if it is not already one, restoring compatibility with the historical data format.\n\n```python\n# pandas/compat/pickle_compat.py\n# Fixed issubclass calls to prevent TypeError when args[0] is not a class.\n\n# pandas/core/internals/blocks.py\n# Added a check to ensure 'placement' is a BlockPlacement instance, \n# converting it if necessary (e.g., from a slice).\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31486,
+    "completion_tokens": 304,
+    "total_tokens": 31790,
+    "cost": 0.00325196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 31328,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00325196,
+      "upstream_inference_prompt_cost": 0.0031486,
+      "upstream_inference_completions_cost": 0.00010336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

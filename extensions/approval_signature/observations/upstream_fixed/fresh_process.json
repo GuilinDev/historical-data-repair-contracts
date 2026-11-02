@@ -1,0 +1,272 @@
+[
+  {
+    "id": "H_plain",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_plain",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_LF_approvalId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "F_LF_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_LF_toolCallId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "F_LF_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_LF_toolName",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "F_LF_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_CR_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_CR_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_CR_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_CR_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_CR_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_CR_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_TAB_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_TAB_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_TAB_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_TAB_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_TAB_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_TAB_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_NUL_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_NUL_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_NUL_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_NUL_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_NUL_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_NUL_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_QUOTE_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_QUOTE_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_QUOTE_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_QUOTE_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_QUOTE_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_QUOTE_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_BACKSLASH_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_BACKSLASH_approvalId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_BACKSLASH_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_BACKSLASH_toolCallId",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_BACKSLASH_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "F_BACKSLASH_toolName",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "H_retuple_0",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "F_retuple_0",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "H_retuple_1",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "F_retuple_1",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_tamper_approvalId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_tamper_toolCallId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_tamper_toolName",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_tamper_input",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_wrong_key",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "historical_key_order",
+    "accepted": true,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_tamper_approvalId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_tamper_toolCallId",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_tamper_toolName",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_tamper_input",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_wrong_key",
+    "accepted": false,
+    "execution_complete": true
+  },
+  {
+    "id": "fresh_key_order",
+    "accepted": true,
+    "execution_complete": true
+  }
+]

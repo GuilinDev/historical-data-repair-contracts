@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793502911-xkvs09Dvtho72d0gDyNf",
+  "object": "chat.completion",
+  "created": 1793502911,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `PandasDfHandler.restore` in `jsonpickle/ext/pandas.py` was attempting to `decode` the `data_encoded` value before checking if the object was a legacy (v3.3.0) DataFrame. In v3.3.0, the `values` field of the serialized DataFrame contains a CSV string rather than a jsonpickle-encoded dictionary of columns. Attempting to `decode` this CSV string as a jsonpickle object resulted in a `JSONDecodeError`.\n\nI have repaired this by moving the check for `dtypes_rle` (which distinguishes the new RLE-based encoding from the legacy CSV-based encoding) to the beginning of the `restore` method, ensuring that legacy DataFrames are routed to `restore_v3_3` before any attempt to decode the column data. I also fixed a bug in `restore_v3_3` where it accessed `data[\"values\"]` directly instead of using `.get()`, which could cause issues if the `values` key was missing.\n\nAdditionally, I corrected a missing `type_codes` definition in the updated `restore` method to ensure the RLE-based reconstruction continues to work correctly.\n\n```python\n# Summary of changes in jsonpickle/ext/pandas.py:\n# 1. In PandasDfHandler.restore:\n#    - Moved the check for \"dtypes_rle\" in meta to the top of the method.\n#    - Now calls restore_v3_3(obj) immediately if \"dtypes_rle\" is missing,\n#      preventing the JSONDecodeError when calling decode(data_encoded).\n#    - Added the missing type_codes = rle_decode(meta[\"dtypes_rle\"]) call.\n# 2. In PandasDfHandler.restore_v3_3:\n#    - Changed data[\"values\"].strip() to data.get(\"values\", \"\").strip() for robustness.\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24359,
+    "completion_tokens": 419,
+    "total_tokens": 24778,
+    "cost": 0.00257836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1600,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00257836,
+      "upstream_inference_prompt_cost": 0.0024359,
+      "upstream_inference_completions_cost": 0.00014246
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

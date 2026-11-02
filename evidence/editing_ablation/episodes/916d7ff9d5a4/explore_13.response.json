@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793500987-ZmHJR48PAkaT9UoRtoHo",
+  "object": "chat.completion",
+  "created": 1793500987,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-d5dd3805-286e-4636-b4b8-db10350598af",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":506,\"new\":\"        def unpickle(state, state_dict):\\n            if \\\"ext.mutable.values\\\" in state_dict:\\n                values = state_dict[\\\"ext.mutable.values\\\"]\\n                if isinstance(values, dict):\\n                    for val in values.get(key, []):\\n                        val._parents[state] = key\\n                else:\\n                    # legacy format: values is a list\\n                    for val in values:\\n                        # In legacy format, we don't know which key the value belongs to.\\n                        # However, the unpickle event is registered per-attribute.\\n                        # So we can assume the value belongs to the current key.\\n                        val._parents[state] = key\",\"path\":\"sqlalchemy/ext/mutable.py\",\"source_version\":\"b1421c9fd59154e063ac0d0a98dd2370cdb225043de93162d8691361fca728b2\",\"start_line\":503}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27764,
+    "completion_tokens": 264,
+    "total_tokens": 28028,
+    "cost": 0.00286616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 25504,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00286616,
+      "upstream_inference_prompt_cost": 0.0027764,
+      "upstream_inference_completions_cost": 8.976e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

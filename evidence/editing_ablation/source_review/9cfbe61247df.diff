@@ -1,0 +1,39 @@
+--- base/jsonpickle/ext/pandas.py
++++ candidate/jsonpickle/ext/pandas.py
+@@ -203,6 +203,12 @@
+         return data
+ 
+     def restore(self, obj):
++        # The historical producer (v3.3.0) used a different structure for DataFrames.
++        # It stored the CSV content directly in the 'values' key of the main object,
++        # rather than inside a 'meta' dictionary or as a separate encoded string.
++        if 'values' in obj and 'meta' in obj and 'dtypes_rle' not in obj['meta']:
++            return self.restore_v3_3(obj)
++
+         data_encoded, meta = self.pp.restore_pandas(obj)
+ 
+         data_columns = decode(data_encoded, keys=True)
+@@ -282,15 +288,21 @@
+         # None makes it compatible with objects serialized before
+         # column_levels_names has been introduced.
+         column_level_names = meta.get("column_level_names", None)
++        
++        # The historical producer used to_csv(index=False), so the CSV content 
++        # is just the data. We need to handle the case where the CSV is empty.
++        csv_content = csv if isinstance(csv, str) else csv.decode()
++        
+         df = (
+-            pd.read_csv(StringIO(csv), **params)
+-            if data["values"].strip()
++            pd.read_csv(StringIO(csv_content), **params)
++            if csv_content.strip()
+             else pd.DataFrame()
+         )
+         for col in timedeltas:
+             df[col] = pd.to_timedelta(df[col])
+         df = df.astype(parse_datetime_v2)
+ 
++        # The index is stored as a jsonpickle-encoded object in meta['index']
+         df.set_index(decode(meta["index"]), inplace=True)
+         # restore the column level(s) name(s)
+         if column_level_names:

@@ -1,0 +1,9 @@
+[
+  {
+    "end_line": 232,
+    "new": "        return marray if not _is_numpy_array_byte_order_mismatch(marray) else _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py",
+    "source_version": "e7f2fb11b3e0f784f789238311d922909363ff3daabe96586867a2f4794c0565",
+    "start_line": 232
+  }
+]

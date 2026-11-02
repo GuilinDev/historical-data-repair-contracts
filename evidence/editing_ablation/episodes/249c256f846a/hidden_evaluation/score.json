@@ -1,0 +1,3853 @@
+{
+  "execution_status": "observed",
+  "passed": 18,
+  "n": 18,
+  "groups": {
+    "historical": {
+      "passed": 6,
+      "n": 6
+    },
+    "fresh_api": {
+      "passed": 6,
+      "n": 6
+    },
+    "current_roundtrip": {
+      "passed": 6,
+      "n": 6
+    }
+  },
+  "records": [
+    {
+      "id": "17728a40150a",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "17728a40150a",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                919,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1313
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1320
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                933,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "17728a40150a_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "17728a40150a_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                919,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1313
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1320
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                933,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "17728a40150a_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "17728a40150a_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                919,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1313
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                926,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -37,
+          "aggregates": {
+            "amount": 1320
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                933,
+                -37,
+                431
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "57ece4ad1d82",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "57ece4ad1d82",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                1.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 131.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 138.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                15.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "57ece4ad1d82_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "57ece4ad1d82_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                1.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 131.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 138.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                15.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "57ece4ad1d82_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "57ece4ad1d82_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                1.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 131.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                8.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 201.5,
+          "aggregates": {
+            "alpha": 138.375,
+            "beta": 12.375
+          },
+          "continued": {
+            "columns": [
+              "alpha",
+              "beta"
+            ],
+            "columns_name": null,
+            "index": [
+              "a",
+              "b",
+              "c"
+            ],
+            "index_name": null,
+            "values": {
+              "alpha": [
+                15.125,
+                201.5,
+                -71.25
+              ],
+              "beta": [
+                -3.75,
+                0.625,
+                15.5
+              ]
+            },
+            "types": {
+              "alpha": [
+                "float",
+                "float",
+                "float"
+              ],
+              "beta": [
+                "float",
+                "float",
+                "float"
+              ]
+            },
+            "dtypes": {
+              "alpha": {
+                "kind": "f",
+                "itemsize": 8
+              },
+              "beta": {
+                "kind": "f",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "7a50dc9e15b4",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "7a50dc9e15b4",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                921,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1331
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1338
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                935,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "7a50dc9e15b4_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "7a50dc9e15b4_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                921,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1331
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1338
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                935,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "7a50dc9e15b4_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "7a50dc9e15b4_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                921,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1331
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                928,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -43,
+          "aggregates": {
+            "amount": 1338
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                935,
+                -43,
+                453
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "039706c668ef",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "039706c668ef",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                713,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1559,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1566,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                727,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "039706c668ef_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "039706c668ef_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                713,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1559,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1566,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                727,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "039706c668ef_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "039706c668ef_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                713,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1559,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                720,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": 29,
+          "aggregates": {
+            "stock": 1566,
+            "reserve": 533
+          },
+          "continued": {
+            "columns": [
+              "stock",
+              "reserve"
+            ],
+            "columns_name": null,
+            "index": [
+              "n",
+              "s",
+              "w"
+            ],
+            "index_name": null,
+            "values": {
+              "stock": [
+                727,
+                29,
+                817
+              ],
+              "reserve": [
+                -11,
+                501,
+                43
+              ]
+            },
+            "types": {
+              "stock": [
+                "int",
+                "int",
+                "int"
+              ],
+              "reserve": [
+                "int",
+                "int",
+                "int"
+              ]
+            },
+            "dtypes": {
+              "stock": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "reserve": {
+                "kind": "i",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1012b5a81d23",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1012b5a81d23",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                923,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1349
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1356
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                937,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1012b5a81d23_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1012b5a81d23_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                923,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1349
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1356
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                937,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "1012b5a81d23_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "1012b5a81d23_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                923,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1349
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                930,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -49,
+          "aggregates": {
+            "amount": 1356
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                937,
+                -49,
+                475
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "e01827266489",
+      "group": "historical",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "e01827266489",
+        "group": "historical",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                924,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1358
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1365
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                938,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "e01827266489_fresh_api",
+      "group": "fresh_api",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "e01827266489_fresh_api",
+        "group": "fresh_api",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                924,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1358
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1365
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                938,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    },
+    {
+      "id": "e01827266489_current_roundtrip",
+      "group": "current_roundtrip",
+      "initial_semantics_passed": true,
+      "restart_semantics_passed": true,
+      "passed": true,
+      "actual": {
+        "id": "e01827266489_current_roundtrip",
+        "group": "current_roundtrip",
+        "semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                924,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1358
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "restart_semantics": {
+          "initial": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                931,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          },
+          "selection": -52,
+          "aggregates": {
+            "amount": 1365
+          },
+          "continued": {
+            "columns": [
+              "amount",
+              "batch"
+            ],
+            "columns_name": null,
+            "index": [
+              "north",
+              "south",
+              "west"
+            ],
+            "index_name": null,
+            "values": {
+              "amount": [
+                938,
+                -52,
+                486
+              ],
+              "batch": [
+                "red",
+                "green",
+                "blue"
+              ]
+            },
+            "types": {
+              "amount": [
+                "int",
+                "int",
+                "int"
+              ],
+              "batch": [
+                "str",
+                "str",
+                "str"
+              ]
+            },
+            "dtypes": {
+              "amount": {
+                "kind": "i",
+                "itemsize": 8
+              },
+              "batch": {
+                "kind": "O",
+                "itemsize": 8
+              }
+            }
+          }
+        },
+        "status": "observed"
+      }
+    }
+  ],
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

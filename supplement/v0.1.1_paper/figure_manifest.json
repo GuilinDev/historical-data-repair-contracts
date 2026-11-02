@@ -1,0 +1,52 @@
+{
+  "figures": [
+    {
+      "id": "figure1_collision",
+      "pdf": "figures/figure1_collision.pdf",
+      "png": "figures/figure1_collision.png",
+      "svg": "figures/figure1_collision.svg",
+      "width_in": 6.9,
+      "height_in": 1.95,
+      "caption": "Figure 1. Two historical producer states yield the same complete document. Each state self-roundtrips with its original width, but the saved bytes cannot distinguish them. The pair was found in six targeted producer executions; this is an existence witness, not a collision-rate estimate.",
+      "alt": "A float32 frame and float64 frame with column x and values 1.125 and -3.25 both produce the identical 267-byte old JSON document. A reader cannot uniquely infer the original width from that document. Values and numeric kind remain mandatory; ambiguous widths may widen.",
+      "label_text": "State 1: float32\nx = [1.125, -3.25]\nState 2: float64\nx = [1.125, -3.25]\nIdentical saved bytes\njsonpickle 4.1.1; tag pd/f\n267 bytes\nSHA-256: 2f4332f63357...\nencode\nNo unique original width\nPreserve values and numeric kind.\nWiden when width is ambiguous.\nKeep explicit widths exact.\nOne file-only reader sees the same input.",
+      "pdf_sha256": "3dd31991c85fe5800ed8ef4523cc764a68f9a54e6f26b6d4d3da2db5b6c84871",
+      "transformations": "No smoothing, uncertainty interval, sampling, or omitted attempts. Exact counts and source identities retained."
+    },
+    {
+      "id": "figure2_calibration",
+      "pdf": "figures/figure2_calibration.pdf",
+      "png": "figures/figure2_calibration.png",
+      "svg": "figures/figure2_calibration.svg",
+      "width_in": 6.9,
+      "height_in": 2.35,
+      "caption": "Figure 2. Complete source-repair controls on the numeric-code lineage. All three load and restart 84/84 observations. The alternate valid repair differs from literal reference output on 60 observations (five old files, twelve processes). These are researcher-built controls; literal equality is not the upstream test suite.",
+      "alt": "Paired horizontal bars start at zero. Conservative backport: 84 of 84 admissible and exact. Document exclusion v2: 84 of 84 admissible, 24 of 84 exact. Explicit-width narrowing: zero under both criteria. No uncertainty intervals because these are complete fixed-corpus counts, not independent samples.",
+      "label_text": "0 24 48 72 84\nObservations satisfying the criterion (of 84)\nConservative backport\nDocument exclusion v2\nExplicit-width narrowing\n84/84\n84/84\n84/84\n24/84\n0/84\n0/84\nAdmissible contract Literal reference equality",
+      "pdf_sha256": "8a9af7eb45f3d5c84a1c87d0ce68789bed7cf814bd8a5ba7b76bd1e3758bb907",
+      "transformations": "No smoothing, uncertainty interval, sampling, or omitted attempts. Exact counts and source identities retained."
+    },
+    {
+      "id": "figure3_attempts",
+      "pdf": "figures/figure3_attempts.pdf",
+      "png": "figures/figure3_attempts.png",
+      "svg": "figures/figure3_attempts.svg",
+      "width_in": 6.9,
+      "height_in": 2.95,
+      "caption": "Figure 3. Every completed Gemma conversation, with passed/declared observations from the original final evaluation. The dashed line separates development-exposed lineages (above) from newly added lineages (below). Counts are dependent coverage, not partial task successes. Providers and precision differ between A and B.",
+      "alt": "Eight rows and four attempt columns show all 32 completed model attempts. Only four cells pass the entire contract: both B joblib endian attempts, one A joblib compressed attempt, and one B jsonpickle CSV attempt. Sixteen leave source unchanged and fifteen hit the exploration context bound. Full data and episode identities accompany the figure.",
+      "label_text": "A: 26B A4B / BF16 B: 31B / FP4\nAttempt 1 Attempt 2 Attempt 1 Attempt 2\npackaging 12/36 U C 12/36 U C 12/36 U 24/36 E\nattrs 27/36 U C 27/36 U C 27/36 U 27/36 E\njsonpickle CSV 12/18 U C 12/18 E 18/18 PASS 0/18 E C\nSQLAlchemy 12/18 U 12/18 U 12/18 U 12/18 U\njoblib endian 9/21 E 7/21 E 21/21 PASS 21/21 PASS\njoblib compressed 21/21 PASS C 9/21 E 9/21 E C 9/21 E\njsonpickle dtype 0/84 U C 1/84 U C 0/84 U C 3/84 E C\npandas 12/18 U C 12/18 U C 12/18 E 12/18 E C\nPASS: semantic + source acceptance; U: unchanged; E: edited, incomplete repair.\nC: exploration context bound; it can accompany U, E or PASS.",
+      "pdf_sha256": "3f2e4dc0b6d0cdf01b46067d0004f8a7fb39e3684654f5a0e3ba459cdc2999d4",
+      "transformations": "No smoothing, uncertainty interval, sampling, or omitted attempts. Exact counts and source identities retained."
+    }
+  ],
+  "data_sha256": "ff0a15c81b6e7446f09d2951246b8b00c3651a4745ea93307653ae18bed401bc",
+  "matplotlib_version": "3.11.2",
+  "dpi": 600,
+  "pdf_fonttype": 42,
+  "audience": "Gemma paper track manuscript; final width 6.9 inches; no publisher-specific style inferred",
+  "independence": "8 defect lineages in 6 projects; repeated files/checks/conversations are dependent",
+  "uncertainty": "No intervals: complete descriptive fixed-resource counts; no sampling inference",
+  "accessibility": "Direct labels, PASS text, U/C flags and hatching supplement color; alt text and source data included",
+  "software_acknowledgement": "Scientific Agent Skills, Kassis et al. (2026), https://doi.org/10.48550/arXiv.2609.00065"
+}

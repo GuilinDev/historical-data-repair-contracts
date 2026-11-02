@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499438-tNX2rNOVXyaZyUpUZpy5",
+  "object": "chat.completion",
+  "created": 1793499438,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-ace6e4dc-cab0-4b54-808b-539fccb277f9",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\\n            cls = args[0]\\n            stack[-1] = NDArrayBacked.__new__(*args)\\n            return\",\"old\":\"        elif args and issubclass(args[0], PeriodArray):\\n            cls = args[0]\\n            stack[-1] = NDArrayBacked.__new__(*args)\\n            return\",\"path\":\"pandas/compat/pickle_compat.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25765,
+    "completion_tokens": 131,
+    "total_tokens": 25896,
+    "cost": 0.00262104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 23136,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00262104,
+      "upstream_inference_prompt_cost": 0.0025765,
+      "upstream_inference_completions_cost": 4.454e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

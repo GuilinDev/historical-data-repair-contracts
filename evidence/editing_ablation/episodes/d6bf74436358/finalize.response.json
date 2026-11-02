@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793502626-p0fUurkKlkbt4bNhowA0",
+  "object": "chat.completion",
+  "created": 1793502626,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I attempted to repair `packaging.version.Version` to support loading objects pickled in versions 25.0 and 26.0.\n\n### Changes Made\n1.  **`packaging/version.py`**: Modified `_BaseVersion` to be a simple class with `__slots__ = ()` to avoid conflicts during unpickling of historical `_Version` (NamedTuple) objects.\n2.  **`packaging/version.py`**: Attempted to implement `__getstate__` and `__setstate__` in the `Version` class to handle both the `NamedTuple` state (from 25.0) and the `dict` state (from 26.0), while ensuring that process-local caches (`_key_cache`, `_hash_cache`) are reset to `None`.\n\n### Checks Performed\n- Ran the `legacy` check suite, which identified failures in loading historical artifacts from 25.0 (`ModuleNotFoundError: No module named 'packaging._structures'`) and 26.0 (`AttributeError: 'Version' object has no attribute '_hash_cache'`).\n\n### Unresolved Work\nDue to persistent `SyntaxError` issues during the `apply_edits` process (specifically related to line continuation characters in the `__slots__` tuple), I was unable to successfully commit the `__getstate__` and `__setstate__` implementation. Consequently, the repair for loading historical `Version` objects is incomplete. The `ModuleNotFoundError` for `packaging._structures` also remains unresolved as it requires a mapping or a dummy module to satisfy the unpickler for 25.0 artifacts.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 33870,
+    "completion_tokens": 354,
+    "total_tokens": 34224,
+    "cost": 0.00350736,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00350736,
+      "upstream_inference_prompt_cost": 0.003387,
+      "upstream_inference_completions_cost": 0.00012036
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

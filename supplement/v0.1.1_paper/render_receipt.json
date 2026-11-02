@@ -1,0 +1,51 @@
+{
+  "pages": 6,
+  "figure_positions": [
+    {
+      "page": 0,
+      "x": 63.6,
+      "y": 239.60000000000002,
+      "width": 496.8,
+      "height": 140.39999999999998,
+      "file": "figures/figure1_collision.pdf"
+    },
+    {
+      "page": 2,
+      "x": 63.6,
+      "y": 349.3,
+      "width": 496.8,
+      "height": 169.2,
+      "file": "figures/figure2_calibration.pdf"
+    },
+    {
+      "page": 3,
+      "x": 63.6,
+      "y": 332.6,
+      "width": 496.8,
+      "height": 212.4,
+      "file": "figures/figure3_attempts.pdf"
+    }
+  ],
+  "table_positions": [
+    {
+      "page": 1,
+      "x": 63.6,
+      "y": 256.35,
+      "width": 496,
+      "height": 368.0
+    }
+  ],
+  "figures_are_vector_pdf": true,
+  "embedded_body_fonts": true,
+  "api_calls": 0,
+  "structured_words_including_references_tables_figures": 2697,
+  "pdf_sha256": "4de2d5685175e1c4ed92c69362b910dfeab3e555501d6c3edb800a271a349064",
+  "visual_qa": "PASS",
+  "passed": true,
+  "visual_inspection": "All six final pages viewed at rendered size; no clipping, overlap, missing glyphs, or split main table.",
+  "pdf_extracted_whitespace_words": 2711,
+  "anonymous_review_copy": false,
+  "real_author_metadata_pending": false,
+  "author": "Guilin Zhang",
+  "affiliation": null
+}

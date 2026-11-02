@@ -1,0 +1,12 @@
+[
+  {
+    "new": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            if self._cache_hash:\n                return {name: getattr(self, name) for name in state_attr_names}\n            return tuple(getattr(self, name) for name in state_attr_names)",
+    "old": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            return {name: getattr(self, name) for name in state_attr_names}",
+    "path": "attr/_make.py"
+  },
+  {
+    "new": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            return {name: getattr(self, name) for name in state_attr_names}",
+    "old": "        def slots_getstate(self):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            if self._cache_hash:\n                return {name: getattr(self, name) for name in state_attr_names}\n            return tuple(getattr(self, name) for name in state_attr_names)",
+    "path": "attr/_make.py"
+  }
+]

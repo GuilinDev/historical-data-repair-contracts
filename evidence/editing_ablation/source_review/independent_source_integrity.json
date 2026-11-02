@@ -1,0 +1,1011 @@
+{
+  "review_index_sha256": "2516d1574f74b871ab1a6db5dd012b2f0e4af044323119c073a999968f0d7180",
+  "plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "complete_tree_checks": [
+    {
+      "episode": "9ba6ed1fdefa",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "249c256f846a",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "pandas/compat/pickle_compat.py",
+        "pandas/core/internals/blocks.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "pandas/compat/pickle_compat.py",
+        "pandas/core/internals/blocks.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9a4e8b013eec",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "attr/_make.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "attr/_make.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "fd434e00ad2d",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "c70bc939d22c",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "fd833d183cbc",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "db05506c1196",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "a5928cda677b",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "855818a43131",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9ada732b8192",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "1ed1578d0a55",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "7ae2729213ff",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "8dfdeb134434",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "96a35ffd2d19",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9e6440b240f4",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "849f4780f69d",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "79f5b3e9800c",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "e1d19f5fb450",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "a7f2334fe823",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "796db2dedec1",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "ca244e0b8983",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "5783f3e02b71",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "76e81cbc267a",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "da1cd77e06ac",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "89f78516a5ff",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "e5b8e7c04726",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "f11737a0d317",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "pandas/compat/pickle_compat.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "0f72ea1a9d11",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "pandas/compat/pickle_compat.py",
+        "pandas/core/internals/blocks.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "pandas/compat/pickle_compat.py",
+        "pandas/core/internals/blocks.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "4e90e3581a3f",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "attr/_make.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [
+        "attr/_make.py"
+      ],
+      "raw_byte_source_change_matches_index": false,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "6d153cb4588e",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "04657638da9c",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "e84f72434d74",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "7417055152a2",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "5931a4237cd4",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "08f6b1db34f3",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "c7629662c785",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9db94ff101a5",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "attr/_make.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "attr/_make.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "bbdc49d2bf91",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "8ed676066380",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/_structures.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/_structures.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "1388ebc56aa7",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "0af2d20edfc1",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "916d7ff9d5a4",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "72ea2c3f0bc7",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "ad14a222c024",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "d0224be12c45",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "3f4285a5dbb0",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "db4493821bda",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "2daf9a1da065",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/version.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/version.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "fbe3ae814660",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "232238c9db78",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9cfbe61247df",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "8e8e3441ef4c",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "107b3944eaf3",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/_structures.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/_structures.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "a0fadab880c7",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/_structures.py",
+        "packaging/version.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/_structures.py",
+        "packaging/version.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "49fb497640cd",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "5755eb5a3582",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "5c034927732b",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/_structures.py",
+        "packaging/version.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/_structures.py",
+        "packaging/version.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "d6bf74436358",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "packaging/version.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "packaging/version.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "bdd714191a98",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "9c35fbcc6ff2",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "sqlalchemy/ext/mutable.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "5a878ba4144f",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "d38d3f36c802",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [],
+      "newline_only_byte_changed_paths": [
+        "joblib/numpy_pickle.py"
+      ],
+      "raw_byte_source_change_matches_index": false,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "92b063568679",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    },
+    {
+      "episode": "482e28f35b2f",
+      "diff_sha256_matches": true,
+      "complete_tree_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "unauthorized_changed_paths": [],
+      "independent_normalized_diff_matches": true,
+      "candidate_regression_test_present": false,
+      "base_regression_test_present": false,
+      "normalized_changed_paths": [
+        "jsonpickle/ext/pandas.py"
+      ],
+      "newline_only_byte_changed_paths": [],
+      "raw_byte_source_change_matches_index": true,
+      "normalized_source_change_matches_index": true
+    }
+  ],
+  "description": "Independent whole-tree byte comparison, normalized unified-diff reconstruction, path-scope and patch-hash validation. Newline-only byte changes are recorded separately from normalized source changes."
+}

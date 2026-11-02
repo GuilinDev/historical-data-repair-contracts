@@ -1,0 +1,1012 @@
+{
+  "decision": "PASS_NO_EDITOR_IMPLEMENTATION_MISMATCH_IDENTIFIED",
+  "edit_calls_reproduced": 166,
+  "all_recorded_edit_results_match_scratch_execution": true,
+  "all_final_allowed_source_texts_match_delivered_candidates": true,
+  "span_compile_failures_independently_reconstructed_by_forward_character_offsets": 49,
+  "counts": [
+    {
+      "arm": "exact",
+      "kind": "KeyError",
+      "count": 1
+    },
+    {
+      "arm": "exact",
+      "kind": "SyntaxError",
+      "count": 1
+    },
+    {
+      "arm": "exact",
+      "kind": "ValueError",
+      "count": 23
+    },
+    {
+      "arm": "exact",
+      "kind": "successful",
+      "count": 63
+    },
+    {
+      "arm": "span",
+      "kind": "IndentationError",
+      "count": 27
+    },
+    {
+      "arm": "span",
+      "kind": "KeyError",
+      "count": 10
+    },
+    {
+      "arm": "span",
+      "kind": "SyntaxError",
+      "count": 22
+    },
+    {
+      "arm": "span",
+      "kind": "ValueError",
+      "count": 2
+    },
+    {
+      "arm": "span",
+      "kind": "successful",
+      "count": 17
+    }
+  ],
+  "diagnoses": [
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 13,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 15,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 16,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 18,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 19,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 20,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 21,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 22,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "9ba6ed1fdefa",
+      "family": "pandas_pickle_56308",
+      "round": 23,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "7ae2729213ff",
+      "family": "sqlalchemy_mutable_8133",
+      "round": 14,
+      "recorded_error": "SyntaxError: invalid syntax (mutable.py, line 508)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (mutable.py, line 508)",
+      "proposed_source_sha256": "022b8749f5a9f3a86109c0bb8445da7fef4c049088590d30690d20aeed975d83",
+      "spans": [
+        {
+          "path": "sqlalchemy/ext/mutable.py",
+          "start_line": 505,
+          "end_line": 505,
+          "original_first_line": "                for val in state_dict[\"ext.mutable.values\"][key]:",
+          "new_first_line": "                for key_val, vals in state_dict[\"ext.mutable.values\"].items():",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "7ae2729213ff",
+      "family": "sqlalchemy_mutable_8133",
+      "round": 20,
+      "recorded_error": "SyntaxError: invalid syntax (mutable.py, line 512)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (mutable.py, line 512)",
+      "proposed_source_sha256": "7073553ce34cff3255ab77338360c54a659011c91c660183b2d636dd5e602bd8",
+      "spans": [
+        {
+          "path": "sqlalchemy/ext/mutable.py",
+          "start_line": 505,
+          "end_line": 507,
+          "original_first_line": "                vals = state_dict[\"ext.mutable.values\"].get(key, [])",
+          "new_first_line": "                mutable_values = state_dict[\"ext.mutable.values\"]",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "8dfdeb134434",
+      "family": "joblib_compressed_1681",
+      "round": 15,
+      "recorded_error": "IndentationError: unexpected indent (numpy_pickle.py, line 250)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (numpy_pickle.py, line 250)",
+      "proposed_source_sha256": "62ca00aeda0903b224efef398642661c6441e0221a491866ff90981c4c20556c",
+      "spans": [
+        {
+          "path": "joblib/numpy_pickle.py",
+          "start_line": 249,
+          "end_line": 249,
+          "original_first_line": "        if unpickler.mmap_mode is not None and self.allow_mmap:",
+          "new_first_line": "        # When requested, only use memmap mode if allowed and the file is not compressed.",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        },
+        {
+          "path": "joblib/numpy_pickle.py",
+          "start_line": 250,
+          "end_line": 250,
+          "original_first_line": "            array = self.read_mmap(unpickler)",
+          "new_first_line": "        if unpickler.mmap_mode is not None and self.allow_mmap and not unpickler.buffered:",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "849f4780f69d",
+      "family": "jsonpickle_csv_562",
+      "round": 20,
+      "recorded_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "proposed_source_sha256": "06ab65efae32a60e21c60100fcfe57d42af31b060bd4c6dff4d678b65292902f",
+      "spans": [
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "start_line": 287,
+          "end_line": 288,
+          "original_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "new_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "849f4780f69d",
+      "family": "jsonpickle_csv_562",
+      "round": 22,
+      "recorded_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "proposed_source_sha256": "06ab65efae32a60e21c60100fcfe57d42af31b060bd4c6dff4d678b65292902f",
+      "spans": [
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "start_line": 287,
+          "end_line": 288,
+          "original_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "new_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "849f4780f69d",
+      "family": "jsonpickle_csv_562",
+      "round": 23,
+      "recorded_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (pandas.py, line 289)",
+      "proposed_source_sha256": "06ab65efae32a60e21c60100fcfe57d42af31b060bd4c6dff4d678b65292902f",
+      "spans": [
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "start_line": 287,
+          "end_line": 288,
+          "original_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "new_first_line": "            if data.get(\"values\") and data[\"values\"].strip()",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "e1d19f5fb450",
+      "family": "sqlalchemy_mutable_8133",
+      "round": 13,
+      "recorded_error": "SyntaxError: invalid syntax (mutable.py, line 515)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (mutable.py, line 515)",
+      "proposed_source_sha256": "58cb858642d721f765519ddd50b43b237fb352a0f04616b7929efdea0bbe05b2",
+      "spans": [
+        {
+          "path": "sqlalchemy/ext/mutable.py",
+          "start_line": 503,
+          "end_line": 505,
+          "original_first_line": "        def unpickle(state, state_dict):",
+          "new_first_line": "        def unpickle(state, state_dict):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 13,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 15,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 17,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 19,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 20,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 21,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "796db2dedec1",
+      "family": "pandas_pickle_56308",
+      "round": 22,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 13,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 15,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 17,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 19,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 20,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 21,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "ca244e0b8983",
+      "family": "pandas_pickle_56308",
+      "round": 22,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "76e81cbc267a",
+      "family": "jsonpickle_dtype_634",
+      "round": 17,
+      "recorded_error": "SyntaxError: invalid syntax (pandas.py, line 286)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (pandas.py, line 286)",
+      "proposed_source_sha256": "7d911537accc836c4f1e5bc2751e17d3564e7bad3e9ddffbefebf9e1a1347590",
+      "spans": [
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "start_line": 268,
+          "end_line": 269,
+          "original_first_line": "                dtype = np.dtype(dtype_str)",
+          "new_first_line": "                dtype = np.dtype(dtype_str)",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "f11737a0d317",
+      "family": "pandas_pickle_56308",
+      "round": 12,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "f11737a0d317",
+      "family": "pandas_pickle_56308",
+      "round": 14,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "f11737a0d317",
+      "family": "pandas_pickle_56308",
+      "round": 16,
+      "recorded_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "independently_reproduced_error": "IndentationError: unexpected indent (pickle_compat.py, line 56)",
+      "proposed_source_sha256": "f59cd7cc5a98bea7f7478be632115a297b9aeff6bd540fe27dc17aa24e7b72f9",
+      "spans": [
+        {
+          "path": "pandas/compat/pickle_compat.py",
+          "start_line": 55,
+          "end_line": 55,
+          "original_first_line": "        elif args and issubclass(args[0], PeriodArray):",
+          "new_first_line": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "f11737a0d317",
+      "family": "pandas_pickle_56308",
+      "round": 23,
+      "recorded_error": "SyntaxError: invalid syntax (blocks.py, line 2400)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (blocks.py, line 2400)",
+      "proposed_source_sha256": "ee44da799522d178dd671dd929011261bf4a2a2acfe0d6c416f3063bea6fbecf",
+      "spans": [
+        {
+          "path": "pandas/core/internals/blocks.py",
+          "start_line": 2390,
+          "end_line": 2390,
+          "original_first_line": "    placement: BlockPlacement,",
+          "new_first_line": "    placement: BlockPlacement | Any,",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        },
+        {
+          "path": "pandas/core/internals/blocks.py",
+          "start_line": 2399,
+          "end_line": 2399,
+          "original_first_line": "    klass = get_block_type(values.dtype)",
+          "new_first_line": "    if not isinstance(placement, BlockPlacement):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "7417055152a2",
+      "family": "jsonpickle_csv_562",
+      "round": 17,
+      "recorded_error": "SyntaxError: invalid syntax (pandas.py, line 215)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (pandas.py, line 215)",
+      "proposed_source_sha256": "ecbe47216352d108617a6677b74d36a4457dcf61f7442ec56f503c70543d6037",
+      "spans": [
+        {
+          "path": "jsonpickle/ext/pandas.py",
+          "start_line": 215,
+          "end_line": 215,
+          "original_first_line": "            return self.restore_v3_3(obj)",
+          "new_first_line": "            return self.restore_v3_3(obj)",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "8ed676066380",
+      "family": "packaging_version_1163",
+      "round": 20,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "55d55c69ae151b81d635ae1c0f37286606a6c64b9e9c644158da66c8f1f04c94",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "8ed676066380",
+      "family": "packaging_version_1163",
+      "round": 22,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "55d55c69ae151b81d635ae1c0f37286606a6c64b9e9c644158da66c8f1f04c94",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "d0224be12c45",
+      "family": "joblib_endian_1561",
+      "round": 19,
+      "recorded_error": "SyntaxError: invalid syntax (numpy_pickle.py, line 21)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (numpy_pickle.py, line 21)",
+      "proposed_source_sha256": "66c61020c593212d416a0211211577b282a3b71a556ca043f11b6c168f1c0406",
+      "spans": [
+        {
+          "path": "joblib/numpy_pickle.py",
+          "start_line": 21,
+          "end_line": 21,
+          "original_first_line": "from .numpy_pickle_utils import _ensure_native_byte_order",
+          "new_first_line": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _ensure_native_byte_order, _is_numpy_array_byte_order_mismatch",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "db4493821bda",
+      "family": "packaging_version_1163",
+      "round": 15,
+      "recorded_error": "SyntaxError: unexpected character after line continuation character (version.py, line 364)",
+      "independently_reproduced_error": "SyntaxError: unexpected character after line continuation character (version.py, line 364)",
+      "proposed_source_sha256": "f657d7204f99c1e9e9714f6419e4fa8192511da984b0ba39c1976c49c445be96",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "db4493821bda",
+      "family": "packaging_version_1163",
+      "round": 16,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "83fcc9e0929f2796826a27ae805d4d978448ad0c3412a75062e90bf0e16c95f5",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "db4493821bda",
+      "family": "packaging_version_1163",
+      "round": 18,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "83fcc9e0929f2796826a27ae805d4d978448ad0c3412a75062e90bf0e16c95f5",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "db4493821bda",
+      "family": "packaging_version_1163",
+      "round": 20,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "83fcc9e0929f2796826a27ae805d4d978448ad0c3412a75062e90bf0e16c95f5",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "db4493821bda",
+      "family": "packaging_version_1163",
+      "round": 22,
+      "recorded_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (version.py, line 373)",
+      "proposed_source_sha256": "83fcc9e0929f2796826a27ae805d4d978448ad0c3412a75062e90bf0e16c95f5",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 363,
+          "end_line": 372,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    },
+    {
+      "episode": "d6bf74436358",
+      "family": "packaging_version_1163",
+      "round": 17,
+      "recorded_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "independently_reproduced_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "proposed_source_sha256": "4902a1656e354949571e1ee6aafa0adb3ffb26c6ff8b3ede6edea2948285f7dd",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 368,
+          "end_line": 377,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": true
+        }
+      ]
+    },
+    {
+      "episode": "d6bf74436358",
+      "family": "packaging_version_1163",
+      "round": 18,
+      "recorded_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "independently_reproduced_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "proposed_source_sha256": "40393b9693ea6183001277a0fd3fa2d78399ab0852d0c8e9b6f86c322d29d138",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 368,
+          "end_line": 385,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": true
+        }
+      ]
+    },
+    {
+      "episode": "d6bf74436358",
+      "family": "packaging_version_1163",
+      "round": 20,
+      "recorded_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "independently_reproduced_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "proposed_source_sha256": "38672b71b2726b79fde7d5742176127a713c5aadbb426b13145b66d02c2a480f",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 368,
+          "end_line": 385,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": true
+        }
+      ]
+    },
+    {
+      "episode": "d6bf74436358",
+      "family": "packaging_version_1163",
+      "round": 22,
+      "recorded_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "independently_reproduced_error": "SyntaxError: unexpected character after line continuation character (version.py, line 369)",
+      "proposed_source_sha256": "e1d8a10ceac642b24df39b8b39ab7159a0579a8c29a0345aadc03777d7ccc28f",
+      "spans": [
+        {
+          "path": "packaging/version.py",
+          "start_line": 368,
+          "end_line": 385,
+          "original_first_line": "    __slots__ = (",
+          "new_first_line": "    __slots__ = (",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": true
+        }
+      ]
+    },
+    {
+      "episode": "bdd714191a98",
+      "family": "sqlalchemy_mutable_8133",
+      "round": 11,
+      "recorded_error": "SyntaxError: invalid syntax (mutable.py, line 531)",
+      "independently_reproduced_error": "SyntaxError: invalid syntax (mutable.py, line 531)",
+      "proposed_source_sha256": "21116a7b7aeea961132c5b7f98e26ec3c157e22bb95761007e40cb7fdd5bd104",
+      "spans": [
+        {
+          "path": "sqlalchemy/ext/mutable.py",
+          "start_line": 503,
+          "end_line": 505,
+          "original_first_line": "        def unpickle(state, state_dict):",
+          "new_first_line": "        def unpickle(state, state_dict):",
+          "replacement_has_literal_backslash_n": false,
+          "replacement_ends_with_newline": false
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "This reproduces input-to-editor behavior, not a causal explanation of final repair outcomes.",
+    "The tested interface requires explicit replacement newlines and correct original line spans; these formatting requirements are part of the intervention.",
+    "No result establishes that every location-aware editor is worse or that syntax rejections explain every failed repair."
+  ],
+  "new_api_calls": 0,
+  "candidate_code_executed_on_host": false
+}

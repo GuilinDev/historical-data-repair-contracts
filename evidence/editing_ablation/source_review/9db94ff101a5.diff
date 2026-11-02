@@ -1,0 +1,23 @@
+--- base/attr/_make.py
++++ candidate/attr/_make.py
+@@ -940,9 +940,17 @@
+             Automatically created by attrs.
+             """
+             __bound_setattr = _obj_setattr.__get__(self)
+-            for name in state_attr_names:
+-                if name in state:
+-                    __bound_setattr(name, state[name])
++            if isinstance(state, dict):
++                for name in state_attr_names:
++                    if name in state:
++                        __bound_setattr(name, state[name])
++            elif isinstance(state, (list, tuple)):
++                for name, value in zip(state_attr_names, state):
++                    __bound_setattr(name, value)
++            else:
++                # Fallback for other types of state, though unlikely in this context
++                for name, value in zip(state_attr_names, state):
++                    __bound_setattr(name, value)
+ 
+             # The hash code cache is not included when the object is
+             # serialized, but it still needs to be initialized to None to

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793502703-YybCv28EBHn5lJUVdvF3",
+  "object": "chat.completion",
+  "created": 1793502703,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was caused by a change in the pickling format of `sqlalchemy.ext.mutable` between versions 1.4.37 and 1.4.38. In version 1.4.37, the `ext.mutable.values` state was stored as a simple list of mutable values. In version 1.4.38, it was changed to a dictionary mapping attribute keys to lists of values to support multiple mutable attributes on a single object.\n\nWhen loading an object pickled with 1.4.37 into a 1.4.38 environment, the `unpickle` listener attempted to access the `ext.mutable.values` list using the attribute key as an index, leading to a `TypeError: list indices must be integers or slices, not str`.\n\nThe fix involves updating the `unpickle` function in `sqlalchemy/ext/mutable.py` to detect whether the stored state is a list (legacy format) or a dictionary (new format) and handle the parent association accordingly.\n\n```python\n        def unpickle(state, state_dict):\n            if \"ext.mutable.values\" in state_dict:\n                values = state_dict[\"ext.mutable.values\"]\n                if isinstance(values, list):\n                    for val in values:\n                        val._parents[state] = key\n                else:\n                    for val in values.get(key, []):\n                        val._parents[state] = key\n```\n\nThis ensures that objects produced by 1.4.37 are correctly read by 1.4.38 while preserving the new format for newer artifacts.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25986,
+    "completion_tokens": 350,
+    "total_tokens": 26336,
+    "cost": 0.0027176,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 25824,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0027176,
+      "upstream_inference_prompt_cost": 0.0025986,
+      "upstream_inference_completions_cost": 0.000119
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

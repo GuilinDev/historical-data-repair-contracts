@@ -1,0 +1,7 @@
+[
+  {
+    "new": "        def slots_setstate(self, state):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            __bound_setattr = _obj_setattr.__get__(self)\n            if isinstance(state, dict):\n                for name in state_attr_names:\n                    if name in state:\n                        __bound_setattr(name, state[name])\n            elif isinstance(state, (list, tuple)):\n                for name, value in zip(state_attr_names, state):\n                    __bound_setattr(name, value)\n            else:\n                # Fallback for other types of state, though unlikely in this context\n                for name, value in zip(state_attr_names, state):\n                    __bound_setattr(name, value)\n",
+    "old": "        def slots_setstate(self, state):\n            \"\"\"\n            Automatically created by attrs.\n            \"\"\"\n            __bound_setattr = _obj_setattr.__get__(self)\n            for name in state_attr_names:\n                if name in state:\n                    __bound_setattr(name, state[name])\n",
+    "path": "attr/_make.py"
+  }
+]

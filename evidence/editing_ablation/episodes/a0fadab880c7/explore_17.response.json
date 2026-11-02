@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502353-KPD6wvxrOM18dviygkdv",
+  "object": "chat.completion",
+  "created": 1793502353,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-9e2a3433-1d16-48ee-8492-d69d7f5ae8c5",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"    def __getstate__(self) -> dict[str, Any]:\\n        return {\\n            \\\"_epoch\\\": self._epoch,\\n            \\\"_release\\\": self._release,\\n            \\\"_pre\\\": self._pre,\\n            \\\"_post\\\": self._post,\\n            \\\"_dev\\\": self._dev,\\n            \\\"_local\\\": self._local,\\n        }\\n\\n    def __setstate__(self, state: Any) -> None:\\n        if isinstance(state, dict):\\n            # 26.0+ state\\n            for key, value in state.items():\\n                if key.startswith(\\\"_\\\") and key != \\\"_hash_cache\\\" and key != \\\"_key_cache\\\":\\n                    setattr(self, key, value)\\n        else:\\n            # 25.0 state: state is a dict with '_version' and '_key'\\n            # But wait, the artifact shows it's a dict.\\n            # Let's re-examine the artifact ab67abe0aa61.\\n            # It's a Version object, then a dict is created and SETITEMS is called.\\n            # So state IS a dict.\\n            pass\\n        \\n        self._key_cache = None\\n        self._hash_cache = None\\n\",\"old\":\"    _regex = re.compile(r\\\"\\\\\\\\s*\\\" + VERSION_PATTERN + r\\\"\\\\\\\\s*\\\", re.VERBOSE | re.IGNORECASE)\\n\",\"path\":\"packaging/version.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24086,
+    "completion_tokens": 339,
+    "total_tokens": 24425,
+    "cost": 0.00252386,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 23648,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00252386,
+      "upstream_inference_prompt_cost": 0.0024086,
+      "upstream_inference_completions_cost": 0.00011526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

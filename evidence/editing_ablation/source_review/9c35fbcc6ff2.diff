@@ -1,0 +1,18 @@
+--- base/sqlalchemy/ext/mutable.py
++++ candidate/sqlalchemy/ext/mutable.py
+@@ -502,8 +502,13 @@
+ 
+         def unpickle(state, state_dict):
+             if "ext.mutable.values" in state_dict:
+-                for val in state_dict["ext.mutable.values"][key]:
+-                    val._parents[state] = key
++                values = state_dict["ext.mutable.values"]
++                if isinstance(values, list):
++                    for val in values:
++                        val._parents[state] = key
++                elif isinstance(values, dict):
++                    for val in values.get(key, []):
++                        val._parents[state] = key
+ 
+         event.listen(parent_cls, "load", load, raw=True, propagate=True)
+         event.listen(

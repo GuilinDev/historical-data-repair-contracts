@@ -1,0 +1,22 @@
+[
+  {
+    "new": "        if (numpy_array_alignment_bytes is None and\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\n            message = (\n                f'The memmapped array {marray} loaded from the file '\n                f'{unpickler.file_handle.name} is not byte aligned. '\n                'This may cause segmentation faults if this memmapped array '\n                'is used in some libraries like BLAS or PyTorch. '\n                'To get rid of this warning, regenerate your pickle file '\n                'with joblib >= 1.2.0. '\n                'See https://github.com/joblib/joblib/issues/563 '\n                'for more details'\n            )\n            warnings.warn(message)\n\n        if _is_numpy_array_byte_order_mismatch(marray):\n            return marray.byteswap().view(marray.dtype.newbyteorder('='))\n\n        return marray",
+    "old": "        if (numpy_array_alignment_bytes is None and\n                current_pos % NUMPY_ARRAY_ALIGNMENT_BYTES != 0):\n            message = (\n                f'The memmapped array {marray} loaded from the file '\n                f'{unpickler.file_handle.name} is not byte aligned. '\n                'This may cause segmentation faults if this memmapped array '\n                'is used in some libraries like BLAS or PyTorch. '\n                'To get rid of this warning, regenerate your pickle file '\n                'with joblib >= 1.2.0. '\n                'See https://github.com/joblib/joblib/issues/563 '\n                'for more details'\n            )\n            warnings.warn(message)\n\n        return _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch",
+    "old": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        if _is_numpy_array_byte_order_mismatch(marray):\n            # We cannot use byteswap() on a memmap array because it would\n            # create a copy. Instead, we use a view with the correct byte order.\n            # This is only possible if the array is not already in native byte order.\n            return marray.view(marray.dtype.newbyteorder('='))\n\n        return marray",
+    "old": "        if _is_numpy_array_byte_order_mismatch(marray):\n            return marray.byteswap().view(marray.dtype.newbyteorder('='))\n\n        return marray",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        if _is_numpy_array_byte_order_mismatch(marray):\n            # We cannot use byteswap() on a memmap array because it would\n            # create a copy. Instead, we use a view with the correct byte order.\n            # This is only possible if the array is not already in native byte order.\n            # However, for big-endian arrays on little-endian systems,\n            # we must use the dtype that reflects the actual byte order in the file.\n            # The current marray has the dtype from self.dtype, which is big-endian.\n            # To get a native-endian view, we need to use the native-endian dtype.\n            # But we also need to swap the bytes in the file, which we cannot do.\n            # The only way to have a writable mmap that is native-endian is to\n            # have the data in the file in native-endian.\n            # If the data is big-endian, we must keep it as big-endian.\n            return marray\n\n        return marray",
+    "old": "        if _is_numpy_array_byte_order_mismatch(marray):\n            # We cannot use byteswap() on a memmap array because it would\n            # create a copy. Instead, we use a view with the correct byte order.\n            # This is only possible if the array is not already in native byte order.\n            return marray.view(marray.dtype.newbyteorder('='))\n\n        return marray",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-11-01T02:01:44.958Z",
+  "kind": "Additional signature-layer acceptance-boundary calibration",
+  "original_multi_solution_gate": "Not satisfied or claimed. Explicitly a second class of compatibility/security boundary.",
+  "upstream_fixed": "7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+  "upstream_parent": "34c53c0ff19b1567e79d45130f85c612006eacf6",
+  "source_manifest_sha256": "985bbd9a6171d2795e8254e0135f2c53dc5a625de808ca1d5ea4e8ef3043a8b0",
+  "executable_hashes": {
+    "upstream_base": {
+      "tool-approval-signature.ts": "424f957bf53847c4822b7c568acad20543e0c750e8af2f3d9716851653464ede",
+      "canonical-hash.ts": "6d0797cdcc3057ba488695bcb97230fc5d9d0ab3e5e996fd18f5b1efe4ff9ea7",
+      "uint8-utils.ts": "caa988faf8880498cec0342868fa6cd1564a0fdc82639dd99c0c4bd6d98f6d0e",
+      "package.json": "6dc1b06d6b093e9cccb20bee06a93836eee0420ae26803ca2ce4065d82f070d1"
+    },
+    "upstream_fixed": {
+      "tool-approval-signature.ts": "a7be08b0e1159ff1427f00debd77bb35d0bb623c6589dc316ef62b18a4d5a61e",
+      "canonical-hash.ts": "6d0797cdcc3057ba488695bcb97230fc5d9d0ab3e5e996fd18f5b1efe4ff9ea7",
+      "uint8-utils.ts": "caa988faf8880498cec0342868fa6cd1564a0fdc82639dd99c0c4bd6d98f6d0e",
+      "package.json": "6dc1b06d6b093e9cccb20bee06a93836eee0420ae26803ca2ce4065d82f070d1"
+    },
+    "reject_all_legacy": {
+      "tool-approval-signature.ts": "b7b9d5be7198a0ef6165ee7e42bf52c4bd51cf4bc7bad8a379b2cdd1f7ae580e",
+      "canonical-hash.ts": "6d0797cdcc3057ba488695bcb97230fc5d9d0ab3e5e996fd18f5b1efe4ff9ea7",
+      "uint8-utils.ts": "caa988faf8880498cec0342868fa6cd1564a0fdc82639dd99c0c4bd6d98f6d0e",
+      "package.json": "6dc1b06d6b093e9cccb20bee06a93836eee0420ae26803ca2ce4065d82f070d1"
+    },
+    "unguarded_legacy": {
+      "tool-approval-signature.ts": "a1aa76244c7a8f2ae8ba71251e96230ccfd0e930dbd69723fc41b761aff83252",
+      "canonical-hash.ts": "6d0797cdcc3057ba488695bcb97230fc5d9d0ab3e5e996fd18f5b1efe4ff9ea7",
+      "uint8-utils.ts": "caa988faf8880498cec0342868fa6cd1564a0fdc82639dd99c0c4bd6d98f6d0e",
+      "package.json": "6dc1b06d6b093e9cccb20bee06a93836eee0420ae26803ca2ce4065d82f070d1"
+    },
+    "reject_control_chars": {
+      "tool-approval-signature.ts": "e25b7d6414745a71ee0f7cb6a3bac307e6a17d124e7e6bda00d92ac8f1b7ff75",
+      "canonical-hash.ts": "6d0797cdcc3057ba488695bcb97230fc5d9d0ab3e5e996fd18f5b1efe4ff9ea7",
+      "uint8-utils.ts": "caa988faf8880498cec0342868fa6cd1564a0fdc82639dd99c0c4bd6d98f6d0e",
+      "package.json": "6dc1b06d6b093e9cccb20bee06a93836eee0420ae26803ca2ce4065d82f070d1"
+    }
+  },
+  "fixture_sha256": "944d320cc03cc5b89ea06e264f8baf6750700928e6deb2268e3240e620430eab",
+  "runner_sha256": "efbef5a74e6c1f0115e16609f25ac6f8f7a798a210aaddefc6e0529ff51253fa",
+  "variants": [
+    "upstream_base",
+    "upstream_fixed",
+    "reject_all_legacy",
+    "unguarded_legacy",
+    "reject_control_chars"
+  ],
+  "case_count": 54,
+  "expected_basis": "Published v7 fix: accept delimiter-free legacy signatures, reject LF-bearing legacy identifiers including their original tuple, preserve full tuple/input binding, accept current signatures even for LF-bearing identifiers, normalize JSON object-key ordering.",
+  "stages": [
+    "initial signature verification",
+    "same persisted records verified in a fresh Node process",
+    "accepted records reissued using that candidate signer, saved, and verified in a second fresh Node process"
+  ],
+  "scope": "Finite JSON-compatible input domain. Synthetic keys and inert tool-name strings; no actual tool invocation, approval UI, production account, model call, or full SDK execution.",
+  "adaptation": "Only module import specifiers and line endings adapted in upstream modules. Official uint8-utils source used without algorithm changes. Negative controls are explicit host-authored verifier mutations.",
+  "version_limit": "Legacy acceptance is part of this v7 upgrade contract; intentional removal in v8 is not classified as a defect.",
+  "collision_pairs": [
+    [
+      {
+        "approvalId": "approval_alpha",
+        "toolCallId": "call_alpha",
+        "toolName": "inspect_record\narchive_record",
+        "input": {
+          "record": "alpha",
+          "options": {
+            "limit": 3,
+            "enabled": true
+          }
+        }
+      },
+      {
+        "approvalId": "approval_alpha",
+        "toolCallId": "call_alpha\ninspect_record",
+        "toolName": "archive_record",
+        "input": {
+          "record": "alpha",
+          "options": {
+            "limit": 3,
+            "enabled": true
+          }
+        }
+      }
+    ],
+    [
+      {
+        "approvalId": "approval_alpha",
+        "toolCallId": "call_alpha\nextra",
+        "toolName": "inspect_record",
+        "input": {
+          "record": "alpha",
+          "options": {
+            "limit": 3,
+            "enabled": true
+          }
+        }
+      },
+      {
+        "approvalId": "approval_alpha\ncall_alpha",
+        "toolCallId": "extra",
+        "toolName": "inspect_record",
+        "input": {
+          "record": "alpha",
+          "options": {
+            "limit": 3,
+            "enabled": true
+          }
+        }
+      }
+    ]
+  ],
+  "paid_calls": 0
+}

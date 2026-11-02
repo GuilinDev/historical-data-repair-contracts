@@ -1,0 +1,17 @@
+[
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):",
+    "old": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):",
+    "path": "pandas/compat/pickle_compat.py"
+  },
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):",
+    "old": "        elif args and issubclass(args[0], PeriodArray):",
+    "path": "pandas/compat/pickle_compat.py"
+  },
+  {
+    "new": "def new_block(\n    values,\n    placement: BlockPlacement,\n    *,\n    ndim: int,\n    refs: BlockValuesRefs | None = None,\n) -> Block:\n    if not isinstance(placement, BlockPlacement):\n        placement = BlockPlacement(placement)\n    # caller is responsible for ensuring:",
+    "old": "def new_block(\n    values,\n    placement: BlockPlacement,\n    *,\n    ndim: int,\n    refs: BlockValuesRefs | None = None,\n) -> Block:\n    # caller is responsible for ensuring:",
+    "path": "pandas/core/internals/blocks.py"
+  }
+]

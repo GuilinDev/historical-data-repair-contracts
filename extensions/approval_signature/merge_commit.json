@@ -1,0 +1,125 @@
+{
+  "sha": "7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+  "node_id": "C_kwDOJmmzGdoAKDdmYTg1YjJjYTUyZGExOWI1NmIwODA5NjE0Y2M4NDg1ZWRiNDJhMGQ",
+  "commit": {
+    "author": {
+      "name": "Mukund Sarma",
+      "email": "23266464+dnukumamras@users.noreply.github.com",
+      "date": "2026-07-23T07:09:34Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-07-23T07:09:34Z"
+    },
+    "message": "fix(ai): use injective serialization for tool approval HMAC payload (#17493)\n\nThe tool approval signature payload was built by joining fields with\n`\\n`. Because fields like `toolName` and `toolCallId` can contain a\nnewline, two different field tuples could serialize to identical bytes \u2014\nso a signature issued for one tuple could verify against a different\none. The payload is now serialized with `JSON.stringify` (with a\nconstant domain-separation prefix), which escapes delimiter/control\ncharacters and makes the encoding injective.\n\nVerification stays backwards compatible: it falls back to the old\nnewline format only when no signed field contains a `\\n`, so approvals\nsigned by an older version still verify across an upgrade. This legacy\nfallback is marked `TODO: remove in v8`.\n\n**Happy path**\n- A valid approval signs and verifies for its own `(approvalId,\ntoolCallId, toolName, input)` tuple.\n- Input key ordering is still normalized, so equivalent inputs produce\nthe same signature.\n- A signature in the old newline format still verifies (delimiter-free\nfields), so a pending approval that straddles an upgrade is not\nrejected.\n\n**Unhappy path**\n- A tuple whose `toolName` contains a newline can no longer be retupled\ninto `toolCallId` to reuse the same signature for a different tool \u2014 in\nboth the new and the legacy fallback paths.\n- Any delimiter/control character (`\\n`, `\\r`, `\\t`, `\\0`, `\"`, `\\\\`)\nshifted across a field boundary fails verification.\n- A legacy signature over a newline-bearing field no longer verifies\n(the fallback is refused when a field contains `\\n`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>",
+    "tree": {
+      "sha": "a95c6fc9f9418f68871087abe7ce8a24e3626154",
+      "url": "https://api.github.com/repos/vercel/ai/git/trees/a95c6fc9f9418f68871087abe7ce8a24e3626154"
+    },
+    "url": "https://api.github.com/repos/vercel/ai/git/commits/7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqYb4uCRC1aQ7uu5UhlAAAkJEQAGeJHPeYbSynlDUfKuk3YFMu\ndlI1HE082JyTIRK1++4DEStBUBOrOa++ErIt7h4bQCqsY5JJzqvEllaDcrNTc1aI\nBBRmUDSpPexcb8wLGuEY2U7kMt70sPcGwI+1QeKFJDE2+S02NX4GfHTVGvNPqEnU\nXcYjBgCy5HR6iU/kUdg9aiEdHIfHirHKjfNwj9/FU2bpB4JEamQEUq99VYohL1zM\nNg/NKJksKXHS80l2zNzYI6yn9/J/vjtcJM9eEbE5iLsk/x1qWexsfzkgAChfW5xC\nWnJBOqJy43ER6VsaQOtsSW3SJ4WCCzt5q0uHGB+OqksK51AzcpP2f7GMqIZFeDr3\nRlD4CvEHf5xSL0xNBcpjK0zUh0olYwMf1FkZRFceyI8Kd6uLv1w6clBwCiOdmqrn\nZQxEftvraIAnEgn2mvMS+KjCPo49cFOG09Es1YETUfOhb9yY/M2NNRC82fYMMn0V\nHKy6M92J7FA+2BGg70kbwG3DFi5E1BiWh9eHncjJzR0j0+h7zuIIbS3E3gGhWtab\nmQr/rMXnPD/T5gbEr7TPNA1CXFypxE9F5x3wNQPeBPMjDRMQLYuJNu5XXSW7IgGW\nMJrThOIl0FxBLQ+H99hj0fvUDPLFu1EuEXfYkFpG9swqZc6wLxUbx7EAaEss+IA6\nfvI+oF8oSrS7Dk/K7rMI\n=rJHe\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree a95c6fc9f9418f68871087abe7ce8a24e3626154\nparent 34c53c0ff19b1567e79d45130f85c612006eacf6\nauthor Mukund Sarma <23266464+dnukumamras@users.noreply.github.com> 1784790574 -0700\ncommitter GitHub <noreply@github.com> 1784790574 +0200\n\nfix(ai): use injective serialization for tool approval HMAC payload (#17493)\n\nThe tool approval signature payload was built by joining fields with\n`\\n`. Because fields like `toolName` and `toolCallId` can contain a\nnewline, two different field tuples could serialize to identical bytes \u2014\nso a signature issued for one tuple could verify against a different\none. The payload is now serialized with `JSON.stringify` (with a\nconstant domain-separation prefix), which escapes delimiter/control\ncharacters and makes the encoding injective.\n\nVerification stays backwards compatible: it falls back to the old\nnewline format only when no signed field contains a `\\n`, so approvals\nsigned by an older version still verify across an upgrade. This legacy\nfallback is marked `TODO: remove in v8`.\n\n**Happy path**\n- A valid approval signs and verifies for its own `(approvalId,\ntoolCallId, toolName, input)` tuple.\n- Input key ordering is still normalized, so equivalent inputs produce\nthe same signature.\n- A signature in the old newline format still verifies (delimiter-free\nfields), so a pending approval that straddles an upgrade is not\nrejected.\n\n**Unhappy path**\n- A tuple whose `toolName` contains a newline can no longer be retupled\ninto `toolCallId` to reuse the same signature for a different tool \u2014 in\nboth the new and the legacy fallback paths.\n- Any delimiter/control character (`\\n`, `\\r`, `\\t`, `\\0`, `\"`, `\\\\`)\nshifted across a field boundary fails verification.\n- A legacy signature over a newline-bearing field no longer verifies\n(the fallback is refused when a field contains `\\n`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\n---------\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>",
+      "verified_at": "2026-07-23T07:09:35Z"
+    }
+  },
+  "url": "https://api.github.com/repos/vercel/ai/commits/7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+  "html_url": "https://github.com/vercel/ai/commit/7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+  "comments_url": "https://api.github.com/repos/vercel/ai/commits/7fa85b2ca52da19b56b0809614cc8485edb42a0d/comments",
+  "author": {
+    "login": "dnukumamras",
+    "id": 23266464,
+    "node_id": "MDQ6VXNlcjIzMjY2NDY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23266464?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dnukumamras",
+    "html_url": "https://github.com/dnukumamras",
+    "followers_url": "https://api.github.com/users/dnukumamras/followers",
+    "following_url": "https://api.github.com/users/dnukumamras/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dnukumamras/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dnukumamras/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dnukumamras/subscriptions",
+    "organizations_url": "https://api.github.com/users/dnukumamras/orgs",
+    "repos_url": "https://api.github.com/users/dnukumamras/repos",
+    "events_url": "https://api.github.com/users/dnukumamras/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dnukumamras/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "34c53c0ff19b1567e79d45130f85c612006eacf6",
+      "url": "https://api.github.com/repos/vercel/ai/commits/34c53c0ff19b1567e79d45130f85c612006eacf6",
+      "html_url": "https://github.com/vercel/ai/commit/34c53c0ff19b1567e79d45130f85c612006eacf6"
+    }
+  ],
+  "stats": {
+    "total": 205,
+    "additions": 203,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "b37c687430167c8fc27efbf2905650fa196f87ca",
+      "filename": ".changeset/tool-approval-injective-payload.md",
+      "status": "added",
+      "additions": 18,
+      "deletions": 0,
+      "changes": 18,
+      "blob_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/.changeset%2Ftool-approval-injective-payload.md",
+      "raw_url": "https://github.com/vercel/ai/raw/7fa85b2ca52da19b56b0809614cc8485edb42a0d/.changeset%2Ftool-approval-injective-payload.md",
+      "contents_url": "https://api.github.com/repos/vercel/ai/contents/.changeset%2Ftool-approval-injective-payload.md?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "patch": "@@ -0,0 +1,18 @@\n+---\n+'ai': patch\n+---\n+\n+fix(ai): use injective serialization for tool approval HMAC payload\n+\n+The tool approval signature (`experimental_toolApprovalSecret`) built its HMAC\n+payload by joining fields with `\\n`. Because fields such as `toolName` and\n+`toolCallId` can themselves contain a newline, distinct field tuples could\n+serialize to identical bytes, allowing a signed approval to verify against a\n+different tuple. The payload is now serialized with `JSON.stringify` (with a\n+versioned domain-separation prefix), which escapes delimiter/control characters\n+and makes the encoding injective.\n+\n+Verification remains backwards compatible: a signature in the old format still\n+verifies, but only when no field contains the `\\n` delimiter (the condition\n+that made the old format ambiguous), so a pending approval that straddles an\n+upgrade is not rejected while the collision stays closed."
+    },
+    {
+      "sha": "6bab85e35a050f1eb72df3335bc68e8e36cf8bde",
+      "filename": "packages/ai/src/generate-text/tool-approval-signature.test.ts",
+      "status": "modified",
+      "additions": 131,
+      "deletions": 0,
+      "changes": 131,
+      "blob_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.test.ts",
+      "raw_url": "https://github.com/vercel/ai/raw/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.test.ts",
+      "contents_url": "https://api.github.com/repos/vercel/ai/contents/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.test.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "patch": "@@ -1,11 +1,40 @@\n import { describe, expect, it } from 'vitest';\n+import { hashCanonical, toBase64url } from '../util/canonical-hash';\n import {\n   signToolApproval,\n   verifyToolApprovalSignature,\n } from './tool-approval-signature';\n \n const secret = 'test-secret-key-for-hmac-signing';\n \n+// Produces a signature in the legacy newline-joined payload format that the\n+// pre-JSON version emitted, so the backwards-compat fallback can be tested.\n+async function signLegacy({\n+  approvalId,\n+  toolCallId,\n+  toolName,\n+  input,\n+}: {\n+  approvalId: string;\n+  toolCallId: string;\n+  toolName: string;\n+  input: unknown;\n+}): Promise<string> {\n+  const inputDigest = await hashCanonical(input);\n+  const key = await crypto.subtle.importKey(\n+    'raw',\n+    new TextEncoder().encode(secret),\n+    { name: 'HMAC', hash: 'SHA-256' },\n+    false,\n+    ['sign'],\n+  );\n+  const payload = new TextEncoder().encode(\n+    `${approvalId}\\n${toolCallId}\\n${toolName}\\n${inputDigest}`,\n+  );\n+  const sig = await crypto.subtle.sign('HMAC', key, payload);\n+  return toBase64url(new Uint8Array(sig));\n+}\n+\n describe('signToolApproval + verifyToolApprovalSignature', () => {\n   const baseParams = {\n     approvalId: 'approval-1',\n@@ -94,4 +123,106 @@ describe('signToolApproval + verifyToolApprovalSignature', () => {\n     });\n     expect(sig1).toBe(sig2);\n   });\n+\n+  // A newline in toolName must not be retupleable into toolCallId to forge a\n+  // matching signature for a different tool.\n+  it('should not collide when a newline in toolName is retupled into toolCallId', async () => {\n+    const signed = {\n+      approvalId: 'approval-1',\n+      toolCallId: 'call-1',\n+      toolName: 'searchDocs\\ndeleteFile',\n+      input: { path: '/tmp/target' },\n+    };\n+    const retupled = {\n+      approvalId: 'approval-1',\n+      toolCallId: 'call-1\\nsearchDocs',\n+      toolName: 'deleteFile',\n+      input: { path: '/tmp/target' },\n+    };\n+\n+    const signature = await signToolApproval({ secret, ...signed });\n+\n+    // The signature issued for the newline-bearing tool must NOT verify against\n+    // the retupled tuple that targets a different registered tool.\n+    expect(\n+      await verifyToolApprovalSignature({ secret, signature, ...retupled }),\n+    ).toBe(false);\n+\n+    // The two tuples must produce distinct signatures.\n+    const retupledSignature = await signToolApproval({ secret, ...retupled });\n+    expect(signature).not.toBe(retupledSignature);\n+\n+    // Sanity: each signature still verifies against its own tuple.\n+    expect(\n+      await verifyToolApprovalSignature({ secret, signature, ...signed }),\n+    ).toBe(true);\n+    expect(\n+      await verifyToolApprovalSignature({\n+        secret,\n+        signature: retupledSignature,\n+        ...retupled,\n+      }),\n+    ).toBe(true);\n+  });\n+\n+  // Any delimiter/control character shifted across a field boundary must fail.\n+  it.each([\n+    ['newline', '\\n'],\n+    ['carriage return', '\\r'],\n+    ['tab', '\\t'],\n+    ['null byte', '\\0'],\n+    ['json quote', '\"'],\n+    ['json backslash', '\\\\'],\n+  ])('should not collide across the %s delimiter', async (_label, delim) => {\n+    const signed = {\n+      approvalId: 'approval-1',\n+      toolCallId: 'call-1',\n+      toolName: `alpha${delim}beta`,\n+      input: { path: '/tmp/target' },\n+    };\n+    const retupled = {\n+      approvalId: 'approval-1',\n+      toolCallId: `call-1${delim}alpha`,\n+      toolName: 'beta',\n+      input: { path: '/tmp/target' },\n+    };\n+    const signature = await signToolApproval({ secret, ...signed });\n+    expect(\n+      await verifyToolApprovalSignature({ secret, signature, ...retupled }),\n+    ).toBe(false);\n+  });\n+\n+  // Backwards compatibility with pre-JSON signatures.\n+  it('should still verify a legacy newline-format signature when no field contains a newline', async () => {\n+    const legacy = await signLegacy(baseParams);\n+    expect(\n+      await verifyToolApprovalSignature({\n+        secret,\n+        signature: legacy,\n+        ...baseParams,\n+      }),\n+    ).toBe(true);\n+  });\n+\n+  // The legacy fallback must not reopen the collision: a legacy signature over\n+  // a newline-bearing tool cannot be reused for a retupled tuple, because the\n+  // retupled tuple has a newline in a field and the fallback is refused.\n+  it('should not accept a legacy signature through the retupling collision', async () => {\n+    const legacy = await signLegacy({\n+      approvalId: 'approval-1',\n+      toolCallId: 'call-1',\n+      toolName: 'searchDocs\\ndeleteFile',\n+      input: { path: '/tmp/target' },\n+    });\n+    expect(\n+      await verifyToolApprovalSignature({\n+        secret,\n+        signature: legacy,\n+        approvalId: 'approval-1',\n+        toolCallId: 'call-1\\nsearchDocs',\n+        toolName: 'deleteFile',\n+        input: { path: '/tmp/target' },\n+      }),\n+    ).toBe(false);\n+  });\n });"
+    },
+    {
+      "sha": "13fa45b5e9fc07fe6db3c6d589da6375509848ff",
+      "filename": "packages/ai/src/generate-text/tool-approval-signature.ts",
+      "status": "modified",
+      "additions": 54,
+      "deletions": 2,
+      "changes": 56,
+      "blob_url": "https://github.com/vercel/ai/blob/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.ts",
+      "raw_url": "https://github.com/vercel/ai/raw/7fa85b2ca52da19b56b0809614cc8485edb42a0d/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.ts",
+      "contents_url": "https://api.github.com/repos/vercel/ai/contents/packages%2Fai%2Fsrc%2Fgenerate-text%2Ftool-approval-signature.ts?ref=7fa85b2ca52da19b56b0809614cc8485edb42a0d",
+      "patch": "@@ -18,11 +18,37 @@ async function importKey(secret: string | Uint8Array): Promise<CryptoKey> {\n   );\n }\n \n+// Serialize with JSON so the encoding is injective: fields may contain any\n+// character (including newlines), and escaping + array structure keeps field\n+// boundaries unambiguous. The version prefix provides domain separation.\n function buildPayload(\n   approvalId: string,\n   toolCallId: string,\n   toolName: string,\n   inputDigest: string,\n+): Uint8Array {\n+  return encoder.encode(\n+    JSON.stringify([\n+      'ai-sdk-tool-approval-v1',\n+      approvalId,\n+      toolCallId,\n+      toolName,\n+      inputDigest,\n+    ]),\n+  );\n+}\n+\n+// Legacy newline-joined payload. Ambiguous when any field contains the `\\n`\n+// delimiter, which is why it was replaced; only used as a verify-time fallback\n+// guarded on delimiter-free fields.\n+// TODO(#17494): remove in v8 when backwards compatibility with pre-JSON\n+// signatures (approvals signed before the injective format) is no longer\n+// needed.\n+function buildLegacyPayload(\n+  approvalId: string,\n+  toolCallId: string,\n+  toolName: string,\n+  inputDigest: string,\n ): Uint8Array {\n   return encoder.encode(\n     `${approvalId}\\n${toolCallId}\\n${toolName}\\n${inputDigest}`,\n@@ -66,9 +92,35 @@ export async function verifyToolApprovalSignature({\n }): Promise<boolean> {\n   const key = await importKey(secret);\n   const inputDigest = await hashCanonical(input);\n-  const payload = buildPayload(approvalId, toolCallId, toolName, inputDigest);\n   const sigBytes = fromBase64url(signature);\n-  return crypto.subtle.verify('HMAC', key, sigBytes, payload);\n+\n+  const payload = buildPayload(approvalId, toolCallId, toolName, inputDigest);\n+  if (await crypto.subtle.verify('HMAC', key, sigBytes, payload)) {\n+    return true;\n+  }\n+\n+  // Backwards compatibility: accept a signature produced by the legacy\n+  // newline-joined format, but only when no field contains the `\\n` delimiter\n+  // \u2014 the exact condition that made that format ambiguous. This keeps the\n+  // retupling collision closed (the attack requires a newline in a field)\n+  // while still verifying benign approvals signed by an older version, e.g. a\n+  // pending approval that straddles an upgrade.\n+  // TODO(#17494): remove in v8 (drop buildLegacyPayload and this fallback).\n+  if (\n+    !approvalId.includes('\\n') &&\n+    !toolCallId.includes('\\n') &&\n+    !toolName.includes('\\n')\n+  ) {\n+    const legacyPayload = buildLegacyPayload(\n+      approvalId,\n+      toolCallId,\n+      toolName,\n+      inputDigest,\n+    );\n+    return crypto.subtle.verify('HMAC', key, sigBytes, legacyPayload);\n+  }\n+\n+  return false;\n }\n \n export async function maybeSignApproval({"
+    }
+  ]
+}

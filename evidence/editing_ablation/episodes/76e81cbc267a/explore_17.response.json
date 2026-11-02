@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499558-WivfYGBju9fEMXCO5MhZ",
+  "object": "chat.completion",
+  "created": 1793499558,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-c65bffdb-02e3-4342-b149-44d42e3ffdf5",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":269,\"new\":\"                dtype = np.dtype(dtype_str)\\n                # If the dtype_str is a legacy tag without width (e.g., 'pd/i', 'pd/u', 'pd/f', 'pd/in'),\\n                # np.dtype might fail or not be the intended width.\\n                # However, the contract says widening is permitted for these, but kind and values must survive.\\n                # The current implementation uses np.dtype(dtype_str), which depends on REVERSE_TYPE_MAP.\\n                # If REVERSE_TYPE_MAP.get(type_code) is something like 'int64', np.dtype('int64') works.\\n                # If it's 'int', it's platform dependent.\\n                # The issue is that REVERSE_TYPE_MAP is generated dynamically and might not be stable\\n                # across processes if PYTHONHASHSEED is not set, although the input to get_smallest_unique_substrings\\n                # is a list (np_dtypes, pd_dtypes) which are sorted? No, they are from dict.fromkeys.\\n                # Wait, the problem is that the tags themselves are generated based on the order of dtypes.\\n                # If the order of dtypes in np_dtypes or pd_dtypes changes, the tags change.\\n                # But the historical artifacts use tags like 'pd/i8', 'pd/i', 'pd/i32'.\\n                # 'pd/i' is a tag for some integer type.\\n                # If we want to support these legacy tags, we should ensure that the mapping is stable.\\n                # But we cannot change tags_pd.py if it's not in allowed_source_paths?\\n                # Actually, jsonpickle/tags_pd.py IS in allowed_source_paths.\\n                # Let's check if we can make the dtype generation stable.\\n                df[col] = df[col].astype(dtype)\",\"path\":\"jsonpickle/ext/pandas.py\",\"source_version\":\"b9271dbdab41ae82586626ba5deae6f2dda2e5e199a42a613a966d20b367a6fb\",\"start_line\":268}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 40861,
+    "completion_tokens": 532,
+    "total_tokens": 41393,
+    "cost": 0.00426698,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 40768,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00426698,
+      "upstream_inference_prompt_cost": 0.0040861,
+      "upstream_inference_completions_cost": 0.00018088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

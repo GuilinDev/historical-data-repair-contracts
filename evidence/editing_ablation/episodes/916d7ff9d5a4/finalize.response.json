@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793501013-kzeh4c94Ix0mK1kD5deN",
+  "object": "chat.completion",
+  "created": 1793501013,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the `unpickle` event handler in `sqlalchemy/ext/mutable.py` to support historical data produced by SQLAlchemy 1.4.37.\n\n**Changes:**\n- Modified `unpickle(state, state_dict)` to handle both the new dictionary-based format and the legacy list-based format of `ext.mutable.values`.\n- Added a check using `isinstance(values, dict)` to determine the format.\n- For legacy lists, the handler now iterates through all values and associates them with the current attribute key, as the `unpickle` event is registered per-attribute.\n\n**Checks performed:**\n- Ran the `legacy` check suite, which includes:\n    - `historical`: Verified that objects pickled in 1.4.37 are correctly read and their `MutableDict` properties are restored.\n    - `fresh_api`: Verified that new objects created in 1.4.38 function correctly.\n    - `current_roundtrip`: Verified that objects pickled and unpickled within 1.4.38 maintain their state.\n- All 6 tests in the legacy suite passed.\n\n**Unresolved work:**\n- None. The repair addresses the reported `TypeError` and restores compatibility with the historical data contract.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27872,
+    "completion_tokens": 271,
+    "total_tokens": 28143,
+    "cost": 0.00287934,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00287934,
+      "upstream_inference_prompt_cost": 0.0027872,
+      "upstream_inference_completions_cost": 9.214e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

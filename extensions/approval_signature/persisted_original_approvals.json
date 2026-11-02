@@ -1,0 +1,1776 @@
+[
+  {
+    "id": "H_plain",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "F_plain",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "H_LF_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "jSPLBieE1vtc3j119cdOs5saqF52MT8BvUHTirBVamc"
+  },
+  {
+    "id": "F_LF_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\nafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "_hmOn851K47c4BNnPsfvKY-ssi-gc8af79en6u2EQ7c"
+  },
+  {
+    "id": "H_LF_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "OmWdkrTqsfES-SF-s0n8Kg6D6tDyj2Elnnz39w8fXYY"
+  },
+  {
+    "id": "F_LF_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\nafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "tV2YIokFtkdFNtVycjnyQHx6zVXxf_R0JT2TJDGLfC4"
+  },
+  {
+    "id": "H_LF_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "O5B4gSpsnBFgqjXtl_a8JwkZGTIU54sjWGZNh1XEL_s"
+  },
+  {
+    "id": "F_LF_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\nafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "E8kbETPHO65OxTUfw6zESQSHDvJRbvqndm_jwwIROJw"
+  },
+  {
+    "id": "H_CR_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "UH1hC0Hkoy7xfiKL4gaf0pn0uKNhwO8BxO9CJeS3nNo"
+  },
+  {
+    "id": "F_CR_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\rafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "bo3kz4PjhkHaOe2Wyn46xKUwu7_ae3WWd9V2EVZaYk4"
+  },
+  {
+    "id": "H_CR_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "rJ6FeE2FW6pssVGJzqD8VDjOFm1Z3rHGQyjZxMY0Qmc"
+  },
+  {
+    "id": "F_CR_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\rafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "gCOJZq_gkg6k40ZocMeSvZLulSL54h31ZSmQbCGFIeY"
+  },
+  {
+    "id": "H_CR_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "nfKkZqyVItxSD7Myhgygs_jp_VXw0LGI_DtQtlB4tuQ"
+  },
+  {
+    "id": "F_CR_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\rafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "i7HKpg_LiK6PsSiFD2xKeDPXWkt6ea11yAokTNIgQw8"
+  },
+  {
+    "id": "H_TAB_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "w60SV8FYeS6U81DrryWQ28oTLQL-g5SdiVMTnaDLr84"
+  },
+  {
+    "id": "F_TAB_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\tafter",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "WF1Jdju3DW57BhacT4mong-q1ejUsGiVaOMkvA1mrYU"
+  },
+  {
+    "id": "H_TAB_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "xAC3TRl62YjtNVA2TdSULVM1gXQxKC0M_S75zVXvctw"
+  },
+  {
+    "id": "F_TAB_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\tafter",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "mTEe2rx-KbBt2aajf7w6O7K_20giQ0zrlDRKdTNXvL4"
+  },
+  {
+    "id": "H_TAB_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "pDLhviP79nx6EJLO4QDlWODvpi6Tfis5hcgt9T6ANdA"
+  },
+  {
+    "id": "F_TAB_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\tafter",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "fFIG5ZOmjS1c16e8drYTzZqWXtQ-G1ihr2iR6BjQ0MY"
+  },
+  {
+    "id": "H_NUL_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "ujYN64Ez8cE5y-iRm1gPS_TwWRy0gkbvGrEKBs-HTuc"
+  },
+  {
+    "id": "F_NUL_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\u0000after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "owB3ibOF6TA5OBgZf9RZuBfVgoi3G3EwLnn17FBniwg"
+  },
+  {
+    "id": "H_NUL_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "UA1-lFhAda3iQxfspKNinI-3Df8hDy4mVbDHGS5iQJY"
+  },
+  {
+    "id": "F_NUL_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\u0000after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "dAYYQ1gwBf0Q0fVaFARJEAK8WkAe6uAZ-fJqmultK1k"
+  },
+  {
+    "id": "H_NUL_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "jHqSm6oeXTTiCNqbPVMEWJbvbe0DjNbNNgfwivFbAUQ"
+  },
+  {
+    "id": "F_NUL_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\u0000after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "eGkVSHh8mlruxdNyT1duspv3MQbAKHyR2hOmNWJGxcM"
+  },
+  {
+    "id": "H_QUOTE_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "8IGLqVc2wXD5aFEnkJQv_o0X9-0ggoXW2e9mpNadrUM"
+  },
+  {
+    "id": "F_QUOTE_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\"after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "VKQ9FZXgYRNoLDMHl3fwYjVkt_vdb0oda8O427OcUWE"
+  },
+  {
+    "id": "H_QUOTE_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "AhQRPfj43PUUZ0VIAEW_M_IiHQT-32QWpyTKX4KmqOw"
+  },
+  {
+    "id": "F_QUOTE_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\"after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "_6-Dsoo53XCxaGrSc9x7AdcvY4rzNwyL3hrDRc6Mf8Q"
+  },
+  {
+    "id": "H_QUOTE_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "NWtQBj5lxDPCNkRRsmXnTzgS-o7GAVh1LQCWm1e3iss"
+  },
+  {
+    "id": "F_QUOTE_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\"after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "PKxuB0_VFFfY3_HDc4hgEejcw7WM-E_a7Z8utayBKt0"
+  },
+  {
+    "id": "H_BACKSLASH_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "lunY-z7pWZgCZMj4ytw8q8tZ234u-QOY_ARmeIrrhg4"
+  },
+  {
+    "id": "F_BACKSLASH_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "before\\after",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "gTm3P8AWf44X2BZnHCJucB1XeKGjB7x1JEJAnegS7wY"
+  },
+  {
+    "id": "H_BACKSLASH_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "0PMQ_Pidlzz14PO_Xh4qO8NcELaSA07QHyCKT0aoypc"
+  },
+  {
+    "id": "F_BACKSLASH_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "before\\after",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "CD7IbBjcspqhDUT5zTzKmvzvWP3ijoQQLZ87obRT4cU"
+  },
+  {
+    "id": "H_BACKSLASH_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "mQIbSKKdiQmzlyK-C_un0kzzpKTKyslRe_Lv7MyNOK0"
+  },
+  {
+    "id": "F_BACKSLASH_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "before\\after",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "z1TzjyhsNP3GZybAyrmmeJDZ06kIVqtZrVkgYEhjTz4"
+  },
+  {
+    "id": "H_retuple_0",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record\narchive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\ninspect_record",
+      "toolName": "archive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "6PJ8BEieUy_KiSUpxkmRHu6damv-70KzjBUcsNFPKTU"
+  },
+  {
+    "id": "F_retuple_0",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record\narchive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\ninspect_record",
+      "toolName": "archive_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "N_1UtGeqgLrQFYN9-Iy_mdQk0Uy3KsYZ32_8Y_EjLBw"
+  },
+  {
+    "id": "H_retuple_1",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\nextra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha\ncall_alpha",
+      "toolCallId": "extra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "u9TgmoMtS8Aq-8XswCCjgRn79C9HkY14HnoIz36xU-Y"
+  },
+  {
+    "id": "F_retuple_1",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha\nextra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha\ncall_alpha",
+      "toolCallId": "extra",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "K5ik0bZe5WBPmQPE7uI_rOG1f55APtCKSdmYq1XtgEI"
+  },
+  {
+    "id": "historical_tamper_approvalId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "different",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "historical_tamper_toolCallId",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "different",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "historical_tamper_toolName",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "different",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "historical_tamper_input",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "beta"
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "historical_wrong_key",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": true,
+    "eligible_continuation": false,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "historical_key_order",
+    "group": "historical",
+    "producer": "base",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "options": {
+          "enabled": true,
+          "limit": 3
+        },
+        "record": "alpha"
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "GBISRtNJJafnOM7mUFlo5iBH3kZnheWRAiFSr2vb674"
+  },
+  {
+    "id": "fresh_tamper_approvalId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "different",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "fresh_tamper_toolCallId",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "different",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "fresh_tamper_toolName",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "different",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "fresh_tamper_input",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "beta"
+      }
+    },
+    "expected": false,
+    "wrongSecret": false,
+    "eligible_continuation": false,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "fresh_wrong_key",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "expected": false,
+    "wrongSecret": true,
+    "eligible_continuation": false,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  },
+  {
+    "id": "fresh_key_order",
+    "group": "fresh",
+    "producer": "fixed",
+    "signed": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "record": "alpha",
+        "options": {
+          "limit": 3,
+          "enabled": true
+        }
+      }
+    },
+    "verify": {
+      "approvalId": "approval_alpha",
+      "toolCallId": "call_alpha",
+      "toolName": "inspect_record",
+      "input": {
+        "options": {
+          "enabled": true,
+          "limit": 3
+        },
+        "record": "alpha"
+      }
+    },
+    "expected": true,
+    "wrongSecret": false,
+    "eligible_continuation": true,
+    "signature": "63943sAqnW_EsUjtC_yGMj13elmeWh6BzfV4hz8l_OI"
+  }
+]

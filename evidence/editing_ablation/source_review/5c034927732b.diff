@@ -1,0 +1,111 @@
+--- base/packaging/_structures.py
++++ candidate/packaging/_structures.py
+@@ -0,0 +1,65 @@
++# This file is dual licensed under the terms of the Apache License, Version
++# 2.0, and the BSD License. See the LICENSE file in the root of this repository
++# for complete details.
++
++import typing
++
++@typing.final
++class InfinityType:
++    __slots__ = ()
++
++    def __repr__(self) -> str:
++        return "Infinity"
++
++    def __hash__(self) -> int:
++        return hash(repr(self))
++
++    def __lt__(self, other: object) -> bool:
++        return False
++
++    def __le__(self, other: object) -> bool:
++        return False
++
++    def __eq__(self, other: object) -> bool:
++        return isinstance(other, self.__class__)
++
++    def __gt__(self, other: object) -> bool:
++        return True
++
++    def __ge__(self, other: object) -> bool:
++        return True
++
++    def __neg__(self: object) -> "NegativeInfinityType":
++        return NegativeInfinity
++
++Infinity = InfinityType()
++
++@typing.final
++class NegativeInfinityType:
++    __slots__ = ()
++
++    def __repr__(self) -> str:
++        return "-Infinity"
++
++    def __hash__(self) -> int:
++        return hash(repr(self))
++
++    def __lt__(self, other: object) -> bool:
++        return True
++
++    def __le__(self, other: object) -> bool:
++        return True
++
++    def __eq__(self, other: object) -> bool:
++        return isinstance(other, self.__class__)
++
++    def __gt__(self, other: object) -> bool:
++        return False
++
++    def __ge__(self, other: object) -> bool:
++        return False
++
++    def __neg__(self: object) -> InfinityType:
++        return Infinity
++
++NegativeInfinity = NegativeInfinityType()
+--- base/packaging/version.py
++++ candidate/packaging/version.py
+@@ -22,6 +22,14 @@
+     TypedDict,
+     Union,
+ )
++
++try:
++    from ._structures import Infinity, InfinityType, NegativeInfinity, NegativeInfinityType
++except ImportError:
++    # Backward compatibility for versions before 26.0 where _structures might not exist
++    # or was structured differently. In 26.1, we can define them here or in a new file.
++    # However, the task allows modifying packaging/_structures.py.
++    pass
+ 
+ if typing.TYPE_CHECKING:
+     from typing_extensions import Self, Unpack
+@@ -391,7 +399,24 @@
+     _hash_cache: int | None
+     _key_cache: CmpKey | None
+ 
+-    def __init__(self, version: str) -> None:
++    def __setstate__(self, state):
++        # Handle historical versions where state might be a dict or a tuple
++        if isinstance(state, dict):
++            for key, value in state.items():
++                if key in self.__slots__:
++                    setattr(self, key, value)
++        elif isinstance(state, tuple):
++            # This is for the NamedTuple _Version from 25.0
++            # epoch, release, dev, pre, post, local
++            self._epoch = state[0]
++            self._release = state[1]
++            self._dev = state[2]
++            self._pre = state[3]
++            self._post = state[4]
++            self._local = state[5]
++        
++        self._key_cache = None
++        self._hash_cache = None
+         """Initialize a Version object.
+ 
+         :param version:

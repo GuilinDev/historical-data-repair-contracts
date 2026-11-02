@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793502571-HOEmGts2A3510CF1LSuT",
+  "object": "chat.completion",
+  "created": 1793502571,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-52be89e3-a72a-4a96-87e5-e18e9d138cfa",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":136,\"new\":\"class _BaseVersion:\\n    __slots__ = ()\\n    # To support loading Version objects from 25.0, we need to handle\\n    # the case where they were pickled as _Version (NamedTuple).\\n    # We can't easily change the class hierarchy for already pickled objects,\\n    # but we can provide a way to handle the state.\\n    pass\\n\",\"path\":\"packaging/version.py\",\"source_version\":\"e177d74d2921f748d05b270d269c094f8741b39f5149556f24f79bdf4b355675\",\"start_line\":135}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21011,
+    "completion_tokens": 197,
+    "total_tokens": 21208,
+    "cost": 0.00216808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00216808,
+      "upstream_inference_prompt_cost": 0.0021011,
+      "upstream_inference_completions_cost": 6.698e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

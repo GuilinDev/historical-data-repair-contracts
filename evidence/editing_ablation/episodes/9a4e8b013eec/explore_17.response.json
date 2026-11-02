@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793498460-d61tqkgkJCjPDHAe9bdH",
+  "object": "chat.completion",
+  "created": 1793498460,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-f1862d9a-b505-46ef-9c24-b02a8746669c",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            # In 21.4.0, this returned a tuple.\\n            # To maintain compatibility with 21.4.0, we should check if the class\\n            # was created with a version that used tuples.\\n            # However, the contract says \\\"Repair the current library according to the exact historical-data contract\\\".\\n            # The historical artifact 119dbe50fb44 was produced by 21.4.0 and it uses a tuple for state.\\n            # The current implementation uses a dict.\\n            # We need to support both.\\n            return {name: getattr(self, name) for name in state_attr_names}\\n\",\"old\":\"        def slots_getstate(self):\\n            \\\"\\\"\\\"\\n            Automatically created by attrs.\\n            \\\"\\\"\\\"\\n            return {name: getattr(self, name) for name in state_attr_names}\\n\",\"path\":\"attr/_make.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13768,
+    "completion_tokens": 248,
+    "total_tokens": 14016,
+    "cost": 0.00146112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11552,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00146112,
+      "upstream_inference_prompt_cost": 0.0013768,
+      "upstream_inference_completions_cost": 8.432e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

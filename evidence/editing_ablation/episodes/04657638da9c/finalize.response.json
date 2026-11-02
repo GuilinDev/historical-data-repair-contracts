@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499961-FTMtXrODbaFrOd8LuiqH",
+  "object": "chat.completion",
+  "created": 1793499961,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `jsonpickle`'s pandas extension used a dynamic `TYPE_MAP` generated at runtime, which could lead to inconsistent dtype restoration across different processes or environments due to the non-deterministic order of `__subclasses__()` and `np.sctypeDict`. Additionally, legacy numeric tags without explicit widths (e.g., `pd/i`, `pd/u`, `pd/f`) were not being handled to allow for widening while preserving the numeric kind.\n\nI analyzed the `PandasDfHandler.restore` method and the `tags_pd.py` generation logic. The failures in the legacy checks showed that numeric dtypes were often restored as `object` or with incorrect widths because the `REVERSE_TYPE_MAP` lookup failed or mapped to an incorrect string that `np.dtype()` could not resolve to the original precision.\n\nTo repair this, I would have needed to:\n1.  Modify `jsonpickle/tags_pd.py` to ensure a deterministic mapping of dtypes to tags, possibly by sorting the input lists before generating substrings.\n2.  Update `jsonpickle/ext/pandas.py` in the `restore` method to handle legacy tags (`pd/i`, `pd/u`, `pd/f`, `pd/in`) by mapping them to a default safe width (like `int64`, `uint64`, `float64`) if the exact width was not specified, while ensuring that explicit width tags (like `pd/i8`) are strictly honored.\n\nHowever, since I cannot modify the source without applying edits and the exploration phase is over, I have identified the root cause: the reliance on a non-deterministic `TYPE_MAP` and the lack of fallback logic for generic numeric tags in the `restore` loop.\n\n**Final Report:**\n- **Changes:** No changes were applied to the source code in this session.\n- **Checks Ran:** I ran the `legacy` check suite, which failed across all groups (historical, fresh_api, current_roundtrip), confirming that numeric dtypes were not being restored correctly.\n- **Unresolved:** The repair of the `TYPE_MAP` generation and the `restore` logic for numeric dtypes remains unresolved. The library continues to fail the historical data contract for pandas numeric types.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41593,
+    "completion_tokens": 486,
+    "total_tokens": 42079,
+    "cost": 0.00432454,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00432454,
+      "upstream_inference_prompt_cost": 0.0041593,
+      "upstream_inference_completions_cost": 0.00016524
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

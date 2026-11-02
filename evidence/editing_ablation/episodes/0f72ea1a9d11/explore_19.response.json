@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499783-6tMPDV7o5adAuWGgLlRT",
+  "object": "chat.completion",
+  "created": 1793499783,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-92bd042d-ac84-4b59-af46-11510f6a727a",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"def new_block(\\n    values,\\n    placement: BlockPlacement,\\n    *,\\n    ndim: int,\\n    refs: BlockValuesRefs | None = None,\\n) -> Block:\\n    # compat\\n    if not isinstance(placement, BlockPlacement):\\n        placement = BlockPlacement(placement)\\n    # caller is responsible for ensuring:\\n    # - values is NOT a NumpyExtensionArray\\n    # - check_ndim/ensure_block_shape already checked\\n    # - maybe_coerce_values already called/unnecessary\\n    klass = get_block_type(values.dtype)\\n    return klass(values, ndim=ndim, placement=placement, refs=refs)\",\"old\":\"def new_block(\\n    values,\\n    placement: BlockPlacement,\\n    *,\\n    ndim: int,\\n    refs: BlockValuesRefs | None = None,\\n) -> Block:\\n    # caller is responsible for ensuring:\\n    # - values is NOT a NumpyExtensionArray\\n    # - check_ndim/ensure_block_shape already checked\\n    # - maybe_coerce_values already called/unnecessary\\n    klass = get_block_type(values.dtype)\\n    return klass(values, ndim=ndim, placement=placement, refs=refs)\",\"path\":\"pandas/core/internals/blocks.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31018,
+    "completion_tokens": 313,
+    "total_tokens": 31331,
+    "cost": 0.00320822,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 30944,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00320822,
+      "upstream_inference_prompt_cost": 0.0031018,
+      "upstream_inference_completions_cost": 0.00010642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

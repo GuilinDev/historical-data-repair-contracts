@@ -1,0 +1,17 @@
+[
+  {
+    "new": "        # Detect byte order mismatch and swap as needed.\n        # For memmapped arrays, we cannot use byteswap() as it creates a copy.\n        # Instead, we change the dtype to the correct byte order.\n        if _is_numpy_array_byte_order_mismatch(marray):\n            marray = marray.view(marray.dtype.newbyteorder('='))\n        return marray",
+    "old": "        return _ensure_native_byte_order(marray)",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _is_numpy_array_byte_order_mismatch",
+    "old": "from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        # Detect byte order mismatch and swap as needed.\n        # For memmapped arrays, we cannot use byteswap() as it creates a copy.\n        # Instead, we change the dtype to the correct byte order.\n        if _is_numpy_array_byte_order_mismatch(marray):\n            marray = marray.view(marray.dtype.newbyteorder('='))\n        return marray",
+    "old": "        # Detect byte order mismatch and swap as needed.\n        # For memmapped arrays, we cannot use byteswap() as it creates a copy.\n        # Instead, we change the dtype to the correct byte order.\n        if _is_numpy_array_byte_order_mismatch(marray):\n            marray = marray.view(marray.dtype.newbyteorder('='))\n        return marray",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

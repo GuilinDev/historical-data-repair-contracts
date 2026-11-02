@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793501208-Za651BHH26sgoEsuhUKs",
+  "object": "chat.completion",
+  "created": 1793501208,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-47a61cfd-515f-4e3f-9dd9-81ce3f77a546",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"end_line\":21,\"new\":\"from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE\",\"path\":\"joblib/numpy_pickle.py\",\"source_version\":\"2cc3df6765e32cb75823a91c6593264f673a86165924ef47815ff8295fbdb85b\",\"start_line\":21},{\"end_line\":21,\"new\":\"from .numpy_pickle_utils import _read_bytes, BUFFER_SIZE, _ensure_native_byte_order, _is_numpy_array_byte_order_mismatch\",\"path\":\"joblib/numpy_pickle.py\",\"source_version\":\"2cc3df6765e32cb75823a91c6593264f673a86165924ef47815ff8295fbdb85b\",\"start_line\":21}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 35638,
+    "completion_tokens": 261,
+    "total_tokens": 35899,
+    "cost": 0.00365254,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 34208,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00365254,
+      "upstream_inference_prompt_cost": 0.0035638,
+      "upstream_inference_completions_cost": 8.874e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

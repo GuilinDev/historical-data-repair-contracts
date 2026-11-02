@@ -1,0 +1,17 @@
+[
+  {
+    "new": "import typing\nfrom typing import (\n    Any,\n    Callable,\n    Literal,\n    NamedTuple,\n    SupportsInt,\n    Tuple,\n    TypedDict,\n    Union,\n)\n\ntry:\n    from ._structures import Infinity, InfinityType, NegativeInfinity, NegativeInfinityType\nexcept ImportError:\n    # Backward compatibility for versions before 26.0 where _structures might not exist\n    # or was structured differently. In 26.1, we can define them here or in a new file.\n    # However, the task allows modifying packaging/_structures.py.\n    pass\n",
+    "old": "import typing\nfrom typing import (\n    Any,\n    Callable,\n    Literal,\n    NamedTuple,\n    SupportsInt,\n    Tuple,\n    TypedDict,\n    Union,\n)\n",
+    "path": "packaging/version.py"
+  },
+  {
+    "new": "# This file is dual licensed under the terms of the Apache License, Version\n# 2.0, and the BSD License. See the LICENSE file in the root of this repository\n# for complete details.\n\nimport typing\n\n@typing.final\nclass InfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return False\n\n    def __le__(self, other: object) -> bool:\n        return False\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return True\n\n    def __ge__(self, other: object) -> bool:\n        return True\n\n    def __neg__(self: object) -> \"NegativeInfinityType\":\n        return NegativeInfinity\n\nInfinity = InfinityType()\n\n@typing.final\nclass NegativeInfinityType:\n    __slots__ = ()\n\n    def __repr__(self) -> str:\n        return \"-Infinity\"\n\n    def __hash__(self) -> int:\n        return hash(repr(self))\n\n    def __lt__(self, other: object) -> bool:\n        return True\n\n    def __le__(self, other: object) -> bool:\n        return True\n\n    def __eq__(self, other: object) -> bool:\n        return isinstance(other, self.__class__)\n\n    def __gt__(self, other: object) -> bool:\n        return False\n\n    def __ge__(self, other: object) -> bool:\n        return False\n\n    def __neg__(self: object) -> InfinityType:\n        return Infinity\n\nNegativeInfinity = NegativeInfinityType()\n",
+    "old": "",
+    "path": "packaging/_structures.py"
+  },
+  {
+    "new": "    def __setstate__(self, state):\n        # Handle historical versions where state might be a dict or a tuple\n        if isinstance(state, dict):\n            for key, value in state.items():\n                if key in self.__slots__:\n                    setattr(self, key, value)\n        elif isinstance(state, tuple):\n            # This is for the NamedTuple _Version from 25.0\n            # epoch, release, dev, pre, post, local\n            self._epoch = state[0]\n            self._release = state[1]\n            self._dev = state[2]\n            self._pre = state[3]\n            self._post = state[4]\n            self._local = state[5]\n        \n        self._key_cache = None\n        self._hash_cache = None\n",
+    "old": "    def __init__(self, version: str) -> None:\n",
+    "path": "packaging/version.py"
+  }
+]

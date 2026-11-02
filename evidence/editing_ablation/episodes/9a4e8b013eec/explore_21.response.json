@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498477-U6iXlZunw6oP7pc7edUT",
+  "object": "chat.completion",
+  "created": 1793498477,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `attrs` version 21.4.0 used a tuple for the state of slotted classes in `__getstate__` and `__setstate__`, whereas version 22.2 transitioned to using a dictionary. This caused `AttributeError` when attempting to restore instances saved with the older version, as the `slots_setstate` method in 22.2 expected a dictionary and failed to correctly process the tuple provided by the historical pickle artifact.\n\nI repaired this by modifying `attr/_make.py` to allow `slots_setstate` to handle both tuples (by zipping them with the known attribute names) and dictionaries. This restores compatibility with historical data while preserving the current behavior for new instances.\n\n```python\n# In attr/_make.py, within _make_getstate_setstate:\ndef slots_setstate(self, state):\n    \"\"\"\n    Automatically created by attrs.\n    \"\"\"\n    __bound_setattr = _obj_setattr.__get__(self)\n    if isinstance(state, tuple):\n        for name, value in zip(state_attr_names, state):\n            __bound_setattr(name, value)\n    else:\n        for name in state_attr_names:\n            if name in state:\n                __bound_setattr(name, state[name])\n    # ... (hash cache initialization remains)\n```\n\nThe fix was validated against the historical artifact `119dbe50fb44` and verified to maintain correct roundtrip behavior for current versions.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17037,
+    "completion_tokens": 338,
+    "total_tokens": 17375,
+    "cost": 0.00181862,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 16864,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00181862,
+      "upstream_inference_prompt_cost": 0.0017037,
+      "upstream_inference_completions_cost": 0.00011492
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

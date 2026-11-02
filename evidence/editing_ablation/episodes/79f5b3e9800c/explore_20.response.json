@@ -1,0 +1,57 @@
+{
+  "id": "gen-1793499219-Jtx3344suSVCvktVLm2W",
+  "object": "chat.completion",
+  "created": 1793499219,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "native_finish_reason": "tool_calls",
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call-87f1318b-a23a-43ed-a218-d4ce72586dee",
+            "function": {
+              "name": "apply_edits",
+              "arguments": "{\"edits\":[{\"new\":\"        def load(state, *args):\\n            \\\\\\\"\\\\\\\"\\\\\\\"Listen for objects loaded or refreshed.\\n\\n            Wrap the target data member's value with\\n            ``Mutable``.\\\"\\\"\\\"\\n            val = state.dict.get(key, None)\\n            if val is not None:\\n                if coerce:\\n                    val = cls.coerce(key, val)\\n                    state.dict[key] = val\\n                if not isinstance(val, MutableBase):\\n                    return\\n                val._parents[state] = key\",\"old\":\"        def load(state, *args):\\n            \\\\\\\"\\\\\\\"\\\\\\\"Listen for objects loaded or refreshed.\\n\\n            Wrap the target data member's value with\\n            ``Mutable``.\\\"\\\"\\\"\\n            val = state.dict.get(key, None)\\n            if val is not None:\\n                if coerce:\\n                    val = cls.coerce(key, val)\\n                    state.dict[key] = val\\n                val._parents[state] = key\",\"path\":\"sqlalchemy/ext/mutable.py\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32954,
+    "completion_tokens": 244,
+    "total_tokens": 33198,
+    "cost": 0.00337836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32640,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00337836,
+      "upstream_inference_prompt_cost": 0.0032954,
+      "upstream_inference_completions_cost": 8.296e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

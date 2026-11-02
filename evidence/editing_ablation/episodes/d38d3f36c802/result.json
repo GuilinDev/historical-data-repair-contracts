@@ -1,0 +1,39 @@
+{
+  "episode": "d38d3f36c802",
+  "family": "joblib_compressed_1681",
+  "project": "joblib",
+  "model": "google/gemma-4-31b-it",
+  "provider": "coreweave/fp4",
+  "replicate": 2,
+  "block": 30,
+  "arm": "exact",
+  "condition": "ordinary",
+  "protocol_complete": true,
+  "answer": {
+    "report": "I have analyzed the issue where `joblib` fails to read compressed arrays (zlib, gzip, bz2) when `mmap_mode='r'` is requested, resulting in a `ValueError: mmap length is greater than file size`. This happens because the code attempts to memory-map the compressed file directly, which is not possible since the data is not stored in an uncompressed contiguous block on disk.\n\nThe documented behavior for compressed files is that they should ignore the `mmap_mode` request and return ordinary arrays. In `joblib/numpy_pickle.py`, the `NumpyArrayWrapper` class determines if memory mapping is allowed via the `allow_mmap` attribute. During serialization, `allow_mmap` is set to `False` if the file is buffered (compressed). However, the `read` method in `NumpyArrayWrapper` only checks `self.allow_mmap` and `unpickler.mmap_mode`.\n\nI attempted to refine the check in `NumpyArrayWrapper.read` to explicitly avoid `read_mmap` when the file handle is buffered. However, my initial attempt used `unpickler.file_handle.buffered`, which caused an `AttributeError` on some file-like objects (e.g., `_io.BufferedReader`).\n\nSince the `allow_mmap` attribute is already correctly set to `False` during the `save` process for compressed arrays (line 307: `allow_mmap = not self.buffered and not array.dtype.hasobject`), the existing logic in `read` (line 249: `if unpickler.mmap_mode is not None and self.allow_mmap:`) should theoretically prevent `read_mmap` from being called for compressed arrays.\n\nThe failures in the legacy checks suggest that for some historical artifacts, `allow_mmap` might be `True` even though the data is compressed, or the `mmap_mode` is being forced.\n\nGiven the constraints and the observed errors, I have reverted my unsuccessful attempt to access `.buffered` on the file handle. The core issue is that `read_mmap` is being invoked for compressed data. The most robust fix would be to ensure `allow_mmap` is strictly respected or to detect compression at the time of reading.\n\n**Changes:**\n- I attempted to add a check for `unpickler.file_handle.buffered` in `NumpyArrayWrapper.read` to prevent `read_mmap` on compressed streams, but this introduced `AttributeError` and was reverted.\n\n**Checks run:**\n- `run_checks(suite='legacy')` was executed multiple times to verify the behavior against historical artifacts.\n\n**Unresolved:**\n- The `ValueError: mmap length is greater than file size` for compressed historical artifacts remains unresolved as the current `allow_mmap` logic is not preventing the call to `read_mmap` in those specific cases, and a direct check on the file handle's buffering status proved unstable across different Python IO types."
+  },
+  "tool_actions": 19,
+  "applied_edit_count": 4,
+  "all_checks_passed": false,
+  "groups": {
+    "historical": {
+      "passed": 1,
+      "n": 7
+    },
+    "fresh_api": {
+      "passed": 7,
+      "n": 7
+    },
+    "current_roundtrip": {
+      "passed": 1,
+      "n": 7
+    }
+  },
+  "passed": 9,
+  "n": 21,
+  "execution_status": "observed",
+  "submitted_tests": {
+    "present": false,
+    "executed": false
+  }
+}

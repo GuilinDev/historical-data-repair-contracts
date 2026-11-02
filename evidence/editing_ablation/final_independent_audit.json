@@ -1,0 +1,198 @@
+{
+  "decision": "PASS",
+  "scientific_result": "VALID_COMPLETED_DESCRIPTIVE_NEGATIVE_RESULT_FOR_THE_TESTED_SPAN_INTERFACE",
+  "reviewed_utc": "2026-11-01T03:32:29.004318+00:00",
+  "must_fix_remaining": [],
+  "coverage": {
+    "planned_and_completed_attempts": 64,
+    "final_reports_and_full_tool_transcripts_verified": 64,
+    "candidate_sources_reconstructed_from_edit_logs": 64,
+    "initial_observation_judgments_recomputed": 2016,
+    "replay_observation_judgments_recomputed": 2016,
+    "full_acceptance_replay_changes": 0,
+    "source_policy_decisions": 64,
+    "source_policy_exclusions": 0
+  },
+  "primary_results": {
+    "span": {
+      "attempts": 32,
+      "accepted": 4,
+      "accepted_percent": 12.5,
+      "unchanged": 19,
+      "edited_incomplete": 9
+    },
+    "exact": {
+      "attempts": 32,
+      "accepted": 10,
+      "accepted_percent": 31.25,
+      "unchanged": 6,
+      "edited_incomplete": 16
+    }
+  },
+  "difference_span_minus_exact": {
+    "accepted_attempts": -6,
+    "percentage_points": -18.75
+  },
+  "by_lineage": {
+    "attrs_slot_state_1085": {
+      "attempts_per_arm": 4,
+      "exact": 2,
+      "span": 0
+    },
+    "joblib_compressed_1681": {
+      "attempts_per_arm": 4,
+      "exact": 0,
+      "span": 0
+    },
+    "joblib_endian_1561": {
+      "attempts_per_arm": 4,
+      "exact": 1,
+      "span": 1
+    },
+    "jsonpickle_csv_562": {
+      "attempts_per_arm": 4,
+      "exact": 2,
+      "span": 0
+    },
+    "jsonpickle_dtype_634": {
+      "attempts_per_arm": 4,
+      "exact": 0,
+      "span": 0
+    },
+    "packaging_version_1163": {
+      "attempts_per_arm": 4,
+      "exact": 0,
+      "span": 0
+    },
+    "pandas_pickle_56308": {
+      "attempts_per_arm": 4,
+      "exact": 2,
+      "span": 0
+    },
+    "sqlalchemy_mutable_8133": {
+      "attempts_per_arm": 4,
+      "exact": 3,
+      "span": 3
+    }
+  },
+  "edit_mechanics": {
+    "all_166_calls_reproduced": true,
+    "implementation_mismatch_identified": false,
+    "all_49_span_compile_errors_reproduced_with_independent_character_offset_rendering": true,
+    "syntax_rejections_and_attempt_categories": {
+      "span": {
+        "rejections": 49,
+        "attempts": 15,
+        "U": 6,
+        "E": 7,
+        "PASS": 2
+      },
+      "exact": {
+        "rejections": 1,
+        "attempts": 1,
+        "E": 1
+      }
+    },
+    "interpretation": "Compilation/format errors are observed secondary outcomes, not an estimate of their causal contribution to the acceptance gap. The tested bundle requires explicit replacement newlines, original inclusive line spans and source-version hashes."
+  },
+  "partial_replay_drift": [
+    {
+      "episode": "da1cd77e06ac",
+      "family": "jsonpickle_dtype_634",
+      "arm": "exact",
+      "original_passed": 1,
+      "replay_passed": 0,
+      "n": 84,
+      "original_complete_acceptance": false,
+      "replay_complete_acceptance": false
+    },
+    {
+      "episode": "04657638da9c",
+      "family": "jsonpickle_dtype_634",
+      "arm": "span",
+      "original_passed": 0,
+      "replay_passed": 0,
+      "n": 84,
+      "original_complete_acceptance": false,
+      "replay_complete_acceptance": false
+    },
+    {
+      "episode": "e84f72434d74",
+      "family": "jsonpickle_dtype_634",
+      "arm": "exact",
+      "original_passed": 0,
+      "replay_passed": 1,
+      "n": 84,
+      "original_complete_acceptance": false,
+      "replay_complete_acceptance": false
+    },
+    {
+      "episode": "49fb497640cd",
+      "family": "jsonpickle_dtype_634",
+      "arm": "span",
+      "original_passed": 0,
+      "replay_passed": 0,
+      "n": 84,
+      "original_complete_acceptance": false,
+      "replay_complete_acceptance": false
+    }
+  ],
+  "cost": {
+    "ledger_events": 1381,
+    "actual_archived_responses": 1380,
+    "reported_usd": 2.5636611800000026,
+    "conservative_unsent_reservation_usd": 0.0091774,
+    "accounted_usd": 2.5728385799999973,
+    "authorized_cap_usd": 10.0,
+    "independently_reconciled_to_archived_responses": true
+  },
+  "deployment": {
+    "all_actual_responses_provider": "CoreWeave",
+    "all_actual_responses_model_alias": "google/gemma-4-31b-it",
+    "provider_and_model_consistency_checked": true,
+    "exact_weight_revision_verified": false
+  },
+  "engineering_recoveries": {
+    "recovery_01": "Metadata-only correction for an allowed newly created file; completed model actions and scores were preserved.",
+    "recovery_02": "Exact hash-matched continuation after a pre-network filesystem failure; no prior model action replayed; original conservative reservation retained.",
+    "wall_clock_pause_disclosure_required": true
+  },
+  "submission_preservation": {
+    "original_budget_unchanged": true,
+    "submitted_pdf_unchanged": true,
+    "publication_checkout_pdf_unchanged": true,
+    "publication_checkout_head": "ff9bfc04987436945107ab74909fc3334470c259",
+    "publication_checkout_worktree_clean_when_checked": true,
+    "publication_or_kaggle_modified_by_reviewer": false
+  },
+  "limitations": [
+    "The sample contains eight selected, public, previously exposed lineages with four attempts per arm; attempts and individual observations are not independent defects.",
+    "The whole version-checked span interface was changed, including formatting requirements; this is not an isolated causal effect of line numbers, version hashes, or one failure mode.",
+    "The observed 4/32 versus 10/32 result does not establish a universal editor ranking or statistical significance.",
+    "Four jsonpickle dtype attempts had partial per-record decision drift; all four remained complete-contract failures. Do not treat their partial pass totals as exactly reproducible continuous measurements.",
+    "Provider pinning and consistent response aliases do not cryptographically identify a weight revision.",
+    "The two reviewed engineering pauses must remain disclosed; no outcomes were discarded, restarted or chosen for success.",
+    "Source review was outcome-masked, not strictly blinded, and assessed delivered-source policy separately from semantic correctness."
+  ],
+  "recommended_use": "A concise, bounded resource-diagnostic ablation may be considered. Do not claim the span intervention improved repair, replace the old baseline selectively, or turn the secondary syntax counts into a universal/mediating causal claim. Keep the submitted version untouched pending the separate revision decision.",
+  "artifact_sha256": {
+    "plan.json": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+    "summary.json": "89d43fddb9dd7ac6825d66b753b60c73f4c70851e89d5b3d08de891c2db30e79",
+    "budget_10usd.json": "ee3c9568092b942e221c71597ed1c3ff941941cf8c8382ec676316df197695b0",
+    "replay/summary.json": "15767f863b585d03781c035e1681e29d0b1ca200301c1dfe994ce7f3df2bd201",
+    "analysis.json": "92ab156ba7eae33cef82f1d3be3d53e93e5767a40effcf67b1b25d5d27b6330f",
+    "source_review/independent_source_policy.json": "bc78e93b932ee379ced7894ead1c13b8dec402e603c00a8b2c9946f5b500aeea",
+    "source_review/independent_source_integrity.json": "2fb45a4bf5af11c83f0a83fadea32e4df5460726262ec7d3a292b47253a8dab1",
+    "source_review/outcome_masked_patch_index.json": "2516d1574f74b871ab1a6db5dd012b2f0e4af044323119c073a999968f0d7180",
+    "independent_evidence_audit.json": "b00a46c8bacc851f2d1eed1fae39a31372212e07bdffef5eb9abea63ef3cf9bc",
+    "independent_edit_mechanics.json": "51151ee0c24caf65a0215526a479fee3ba26d24c4161873edf38f46660df21ab",
+    "recovery_01/recovery_plan.json": "91197d3a851c0803307c2f51621c5909bf67188b5544f7bc4d7916569e68c060",
+    "recovery_01/independent_recovery_review.json": "fbb91135399306bc5fc68f6f752a12b4be76ff13ca16579c3e90e2cbc3e199eb",
+    "recovery_02/recovery_plan.json": "c187f0f03ff9b0642347100a2828b1d36e8e9f711bc7b2ccc23c44d9ca8cd782",
+    "recovery_02/independent_recovery_review.json": "190dfd83f8cc88e1b3feecc8945a0354dcff4fca59568d358a3a3f472de32024",
+    "independent_audit_evidence.py": "eb07629f5cc1b31098b56c5597f45289bedd8a8fb0ca5b5ee043c121c97a8b59",
+    "independent_edit_mechanics.py": "f7a7ccfa68080fae8e8022f76999c837957ac1db80dfc9105b68f92ccfae4534",
+    "finalize_independent_audit.py": "d42ea9d06007bfea74494fa16adb380090b9734be9b0a0de5b46c353181e0a33"
+  },
+  "new_api_calls_by_reviewer": 0
+}

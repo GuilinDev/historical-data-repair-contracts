@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793499903-4oifwcDWoKp7v0D7qocW",
+  "object": "chat.completion",
+  "created": 1793499903,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "The issue was that `attrs` 22.2 changed the default `__getstate__` for slotted classes from returning a `tuple` to returning a `dict`. This broke compatibility with instances serialized by `attrs` 21.4.0, which used tuples.\n\nI attempted to modify `slots_setstate` in `attr/_make.py` to handle both `dict` and `tuple` states. However, the `slots_setstate` implementation in the current version already iterates over `state_attr_names` and checks `if name in state:`, which should theoretically handle a dictionary. The failure `AttributeError: 'SlottedRecord' object has no attribute 'count'` during restoration of a historical artifact (which is a tuple) suggests that the `slots_setstate` logic is not correctly handling the tuple case, as it expects `state` to be a mapping.\n\nIn `attrs` 21.4.0, `slots_setstate` used `zip(state_attr_names, state)`, which works for tuples. In 22.2, it uses `if name in state:`, which fails for tuples.\n\nI attempted a fix by modifying `slots_getstate` (incorrectly) and then reverted it. I did not successfully implement a fix for `slots_setstate` to support both tuple and dict inputs.\n\n**Changes:**\n- Attempted to modify `slots_getstate` to conditionally return tuples, but this was reverted as it did not address the restoration of historical artifacts and introduced new errors.\n\n**Checks run:**\n- `run_checks(suite=\"legacy\")`\n\n**Unresolved:**\n- The restoration of slotted class instances saved by `attrs` 21.4.0 still fails because `slots_setstate` in 22.2 expects a dictionary and cannot handle the tuple state produced by 21.4.0. A proper fix would involve checking the type of `state` in `slots_setstate` and using `zip` if it is a tuple.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27892,
+    "completion_tokens": 436,
+    "total_tokens": 28328,
+    "cost": 0.00293744,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00293744,
+      "upstream_inference_prompt_cost": 0.0027892,
+      "upstream_inference_completions_cost": 0.00014824
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

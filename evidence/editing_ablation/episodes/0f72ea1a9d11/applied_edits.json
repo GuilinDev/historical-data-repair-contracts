@@ -1,0 +1,17 @@
+[
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return\n        elif args and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "old": "        elif args and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "path": "pandas/compat/pickle_compat.py"
+  },
+  {
+    "new": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\n            cls = args[0]\n            stack[-1] = cls.__new__(*args)\n            return\n        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "old": "        elif args and isinstance(args[0], type) and issubclass(args[0], BaseOffset):\n            # TypeError: object.__new__(Day) is not safe, use Day.__new__()\n            cls = args[0]\n            stack[-1] = cls.__new__(*args)\n            return\n        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return\n        elif args and issubclass(args[0], PeriodArray):\n            cls = args[0]\n            stack[-1] = NDArrayBacked.__new__(*args)\n            return",
+    "path": "pandas/compat/pickle_compat.py"
+  },
+  {
+    "new": "def new_block(\n    values,\n    placement: BlockPlacement,\n    *,\n    ndim: int,\n    refs: BlockValuesRefs | None = None,\n) -> Block:\n    # compat\n    if not isinstance(placement, BlockPlacement):\n        placement = BlockPlacement(placement)\n    # caller is responsible for ensuring:\n    # - values is NOT a NumpyExtensionArray\n    # - check_ndim/ensure_block_shape already checked\n    # - maybe_coerce_values already called/unnecessary\n    klass = get_block_type(values.dtype)\n    return klass(values, ndim=ndim, placement=placement, refs=refs)",
+    "old": "def new_block(\n    values,\n    placement: BlockPlacement,\n    *,\n    ndim: int,\n    refs: BlockValuesRefs | None = None,\n) -> Block:\n    # caller is responsible for ensuring:\n    # - values is NOT a NumpyExtensionArray\n    # - check_ndim/ensure_block_shape already checked\n    # - maybe_coerce_values already called/unnecessary\n    klass = get_block_type(values.dtype)\n    return klass(values, ndim=ndim, placement=placement, refs=refs)",
+    "path": "pandas/core/internals/blocks.py"
+  }
+]

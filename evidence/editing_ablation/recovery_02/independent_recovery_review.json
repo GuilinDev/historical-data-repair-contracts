@@ -1,0 +1,43 @@
+{
+  "decision": "PASS",
+  "reviewed_utc": "2026-11-01T03:05:17.822925+00:00",
+  "recovery_plan_sha256": "c187f0f03ff9b0642347100a2828b1d36e8e9f711bc7b2ccc23c44d9ca8cd782",
+  "original_plan_sha256": "80e3b4d8d8891a12f02bdefb31914c8bf6b022899a7be4363fdc63d47f15199e",
+  "scope": "Continue the single interrupted attempt from the exact unissued request at round 15, then run the ten unstarted planned attempts, under the existing USD 10 ledger. No model restart or publication authorization.",
+  "must_fix_remaining": [],
+  "checks": {
+    "failure_stage": "Pre-network ledger atomic replacement. Existing event 1146 is a retained reservation with no request/response archive; the frozen code sends HTTP only after successful ledger and request writes.",
+    "known_response_cost_usd": 2.1428539600000023,
+    "retained_unsent_reservation_usd": 0.0091774,
+    "accounted_usd_before_recovery": 2.15203136,
+    "ledger_events_independently_audited": 1159,
+    "archived_responses_independently_reconciled": 1158,
+    "event_request_sha256": "e5a927ed966475f0224c9054bc936d977ebfc36c33cf4d7862d429a766e2693a",
+    "reconstructed_request_matches_existing_hash": true,
+    "interrupted_directory_matches_full_pre_recovery_snapshot": true,
+    "completed_53_records_and_candidate_tar_manifests_verified": true,
+    "original_frozen_scripts_and_recovery01_code_unchanged": true,
+    "unstarted_planned_attempts": 10,
+    "reviewer_reran_offline_tests": {
+      "passed": 6,
+      "failed": 0
+    },
+    "gateway_state_restoration": "Loads existing source, edit history and public-check counter without invoking copytree or reapplying previous actions.",
+    "turn_and_context_preservation": "The original runner resumes at turn 15 with the exact reconstructed context and original remaining round limit. The first actual network call uses a unique ledger_recovery archive destination; subsequent calls use the ordinary client.",
+    "local_IO_retry_scope": "Only PermissionError from JSON atomic writes is retried, at most nine attempts. Network calls and budget reservations are not repeated by this retry helper.",
+    "cost_preservation": "The original unused reservation is retained conservatively without refund; the new actual request is independently charged and uniquely archived.",
+    "no_outcome_selection": "Eligibility derives from the filesystem exception and original schedule; the 53 completed conversations and completed paired partner are not rerun."
+  },
+  "reviewed_recovery_code": {
+    "resume_ablation_ledger.py": "1cca5d9c872be5d5cf715786e20eec2eface8219adabe37764a6298068adf334",
+    "test_ablation_ledger_recovery.py": "1047df8849e8823f6aff804051022805830eb25fc7059eefaffdd1851bf91a35"
+  },
+  "limitations": [
+    "The exact filesystem reader or process causing the transient Windows sharing failure has not been identified; do not attribute it to the model or provider.",
+    "The engineering pause changes wall-clock timing and must be disclosed; it does not change the restored messages, available source, tool interface or round allowance.",
+    "Any new failure must remain separate from semantic repair failure and be independently reviewed before further recovery.",
+    "Full replay and final source-policy/outcome/cost review remain required."
+  ],
+  "new_api_calls_by_reviewer": 0,
+  "interim_effectiveness_analysis_performed": false
+}

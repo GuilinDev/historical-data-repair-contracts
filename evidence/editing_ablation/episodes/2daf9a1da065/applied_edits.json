@@ -1,0 +1,7 @@
+[
+  {
+    "new": "    def __setstate__(self, state):\n        if isinstance(state, dict):\n            # 26.0+ state\n            for key, value in state.items():\n                setattr(self, key, value)\n        else:\n            # 25.0 state: (_version, _key)\n            # state is a tuple: (_version, _key)\n            # _version is a _Version NamedTuple: (epoch, release, dev, pre, post, local)\n            _version, _key = state\n            self._version = _version\n            # _key is not needed as it's a cache\n            self._key_cache = None\n            self._hash_cache = None\n",
+    "old": "    def __init__(self, version: str) -> None:\n",
+    "path": "packaging/version.py"
+  }
+]

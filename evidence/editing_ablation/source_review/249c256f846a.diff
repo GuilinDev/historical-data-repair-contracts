@@ -1,0 +1,22 @@
+--- base/pandas/compat/pickle_compat.py
++++ candidate/pandas/compat/pickle_compat.py
+@@ -52,7 +52,7 @@
+             cls = args[0]
+             stack[-1] = cls.__new__(*args)
+             return
+-        elif args and issubclass(args[0], PeriodArray):
++        elif args and isinstance(args[0], type) and issubclass(args[0], PeriodArray):
+             cls = args[0]
+             stack[-1] = NDArrayBacked.__new__(*args)
+             return
+--- base/pandas/core/internals/blocks.py
++++ candidate/pandas/core/internals/blocks.py
+@@ -2392,6 +2392,8 @@
+     ndim: int,
+     refs: BlockValuesRefs | None = None,
+ ) -> Block:
++    if not isinstance(placement, BlockPlacement):
++        placement = BlockPlacement(placement)
+     # caller is responsible for ensuring:
+     # - values is NOT a NumpyExtensionArray
+     # - check_ndim/ensure_block_shape already checked

@@ -1,0 +1,22 @@
+[
+  {
+    "new": "        # When requested, only use memmap mode if allowed and not buffered.",
+    "old": "        # When requested, only use memmap mode if allowed.",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        if unpickler.mmap_mode is not None and self.allow_mmap and not unpickler.file_handle.buffered:",
+    "old": "        if unpickler.mmap_mode is not None and self.allow_mmap:",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        # When requested, only use memmap mode if allowed.",
+    "old": "        # When requested, only use memmap mode if allowed and not buffered.",
+    "path": "joblib/numpy_pickle.py"
+  },
+  {
+    "new": "        if unpickler.mmap_mode is not None and self.allow_mmap:",
+    "old": "        if unpickler.mmap_mode is not None and self.allow_mmap and not unpickler.file_handle.buffered:",
+    "path": "joblib/numpy_pickle.py"
+  }
+]

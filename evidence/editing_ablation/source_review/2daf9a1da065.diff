@@ -1,0 +1,24 @@
+--- base/packaging/version.py
++++ candidate/packaging/version.py
+@@ -391,7 +391,20 @@
+     _hash_cache: int | None
+     _key_cache: CmpKey | None
+ 
+-    def __init__(self, version: str) -> None:
++    def __setstate__(self, state):
++        if isinstance(state, dict):
++            # 26.0+ state
++            for key, value in state.items():
++                setattr(self, key, value)
++        else:
++            # 25.0 state: (_version, _key)
++            # state is a tuple: (_version, _key)
++            # _version is a _Version NamedTuple: (epoch, release, dev, pre, post, local)
++            _version, _key = state
++            self._version = _version
++            # _key is not needed as it's a cache
++            self._key_cache = None
++            self._hash_cache = None
+         """Initialize a Version object.
+ 
+         :param version:

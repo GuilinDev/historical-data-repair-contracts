@@ -1,0 +1,46 @@
+{
+  "id": "gen-1793498559-j699OpZH4ntkqnAHNXCl",
+  "object": "chat.completion",
+  "created": 1793498559,
+  "model": "google/gemma-4-31b-it",
+  "provider": "CoreWeave",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "I repaired the issue where loading big-endian arrays with `mmap_mode='r+'` resulted in a detached copy instead of a writable memory map.\n\n### Changes\nIn `joblib/numpy_pickle.py`, I modified the `NumpyArrayWrapper.read_mmap` method to return the `marray` (the `numpy.memmap` object) directly instead of passing it through `_ensure_native_byte_order`. \n\nThe `_ensure_native_byte_order` function calls `.byteswap().view(...)` when a byte-order mismatch is detected. For `numpy.memmap` objects, this operation creates a new array in memory, breaking the link to the underlying file. By removing this call, the original memory-mapped array is preserved, allowing mutations to be written back to the file and visible across processes.\n\n### Checks Performed\n- **`run_checks(suite='legacy')`**: Verified that historical artifacts (produced by joblib 1.2.0) and current roundtrips are correctly loaded and that mutations persist in the file.\n- **`run_checks(suite='current')`**: Verified that current joblib behavior for native-endian arrays and standard loading remains unchanged.\n- **Source Analysis**: Compared the current implementation with the historical 1.2.0 source to ensure the regression was introduced by the addition of `_ensure_native_byte_order` in the `read_mmap` path.\n\n### Unresolved Work\nNone. All specified requirements (numeric correctness, shape preservation, and writable mmap persistence for big-endian arrays) are satisfied.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 31314,
+    "completion_tokens": 345,
+    "total_tokens": 31659,
+    "cost": 0.0032487,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0032487,
+      "upstream_inference_prompt_cost": 0.0031314,
+      "upstream_inference_completions_cost": 0.0001173
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
